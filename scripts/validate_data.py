@@ -120,8 +120,8 @@ def main() -> None:
           f"nodes={len(position_ids):,}, components={components}, isolated={isolated}")
 
     signal_counts = Counter(row[2] for row in layout_edges)
-    required_signals = {"semantic", "morphology", "spelling", "phonetic", "editorial_seed", "skeleton"}
-    check("六类制图信号", required_signals <= set(signal_counts),
+    required_signals = {"semantic", "derivation", "morphology", "spelling", "phonetic", "editorial_seed", "skeleton"}
+    check("七类制图信号", required_signals <= set(signal_counts),
           ", ".join(f"{name}={signal_counts[name]:,}" for name in sorted(signal_counts)))
 
     morphbase_promoted = conn.execute(
@@ -146,6 +146,57 @@ def main() -> None:
         "Lexique MorphoBase 不冒充派生关系",
         morphbase_promoted == 0 and regression["morphology_n"] == 1 and not regression["derivation_n"],
         f"promoted={morphbase_promoted}, division↔voir morphology={regression['morphology_n'] or 0}, derivation={regression['derivation_n'] or 0}",
+    )
+
+    demonette_candidates = conn.execute(
+        "SELECT COUNT(*) FROM edge_candidates WHERE source_id='demonette_2' AND signal='derivation' AND status='sourced'"
+    ).fetchone()[0]
+    demonette_official = conn.execute(
+        "SELECT COUNT(*) FROM official_edge_sources WHERE source_id='demonette_2'"
+    ).fetchone()[0]
+    demonette_same_pos = conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM official_edge_sources s
+        JOIN official_edges e ON e.id=s.edge_id
+        JOIN lexemes a ON a.id=e.a_id
+        JOIN lexemes b ON b.id=e.b_id
+        WHERE s.source_id='demonette_2' AND a.pos=b.pos
+        """
+    ).fetchone()[0]
+    demonette_report = ROOT / "data" / "processed" / "demonette-analysis.json"
+    report_gate = False
+    if demonette_report.exists():
+        report_gate = bool(json.loads(demonette_report.read_text(encoding="utf-8"))["meta"]["gate_passed"])
+    check(
+        "Démonette 跨词性派生通过质量门",
+        report_gate and demonette_candidates >= 100 and demonette_candidates == demonette_official and demonette_same_pos == 0,
+        f"gate={report_gate}, candidates={demonette_candidates:,}, sourced_official={demonette_official:,}, same_pos={demonette_same_pos}",
+    )
+
+    pair_regressions = {}
+    for left, left_pos, right, right_pos in (
+        ("affirmer", "VER", "affirmation", "NOM"),
+        ("voir", "VER", "vision", "NOM"),
+    ):
+        count = conn.execute(
+            """
+            SELECT COUNT(*)
+            FROM official_edges e
+            JOIN official_edge_sources s ON s.edge_id=e.id AND s.source_id='demonette_2'
+            JOIN lexemes a ON a.id=e.a_id
+            JOIN lexemes b ON b.id=e.b_id
+            WHERE e.relation='fam'
+              AND ((a.normalized=? AND a.pos=? AND b.normalized=? AND b.pos=?)
+                OR (b.normalized=? AND b.pos=? AND a.normalized=? AND a.pos=?))
+            """,
+            (left, left_pos, right, right_pos, left, left_pos, right, right_pos),
+        ).fetchone()[0]
+        pair_regressions[f"{left}↔{right}"] = count
+    check(
+        "核心跨词性词族回归",
+        all(count == 1 for count in pair_regressions.values()),
+        ", ".join(f"{pair}={count}" for pair, count in pair_regressions.items()),
     )
 
     eligible = conn.execute("SELECT COUNT(*) FROM lexemes WHERE status='eligible'").fetchone()[0]

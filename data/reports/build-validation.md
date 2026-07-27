@@ -1,20 +1,22 @@
 # maillage 构建验证
 
-> 12/12 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。
+> 14/14 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。
 
 | 检查 | 结果 | 证据 |
 |---|---|---|
-| 来源登记、许可与哈希 | 通过 | 4 个来源均完整 |
+| 来源登记、许可与哈希 | 通过 | 5 个来源均完整 |
 | 词汇单位唯一 | 通过 | 14,251 rows / 14,251 unique lemma+POS |
 | 500 条分层人工抽检 | 通过 | sample=500, unique=500, reviewed=500 |
 | 自动 eligible 规则 | 通过 | 结构违规=0, 无释义低频违规=0; 人工覆盖例外另有记录 |
 | 图端点与方向约束 | 通过 | foreign-key errors=0, invalid order=0 |
-| 官方边来源完整 | 通过 | 98/98 条有来源 |
+| 官方边来源完整 | 通过 | 1575/1575 条有来源 |
 | 稳定坐标与全图连通 | 通过 | nodes=7,371, components=1, isolated=0 |
-| 六类制图信号 | 通过 | editorial_seed=98, morphology=3,769, phonetic=5,998, semantic=3,622, skeleton=336, spelling=6,861 |
+| 七类制图信号 | 通过 | derivation=1,485, editorial_seed=98, morphology=3,769, phonetic=5,998, semantic=3,622, skeleton=328, spelling=6,861 |
 | Lexique MorphoBase 不冒充派生关系 | 通过 | promoted=0, division↔voir morphology=1, derivation=0 |
+| Démonette 跨词性派生通过质量门 | 通过 | gate=True, candidates=1,485, sourced_official=1,485, same_pos=0 |
+| 核心跨词性词族回归 | 通过 | affirmer↔affirmation=1, voir↔vision=1 |
 | 主词与支撑词分账 | 通过 | eligible=7,314, support=57, rendered=7,371 |
-| 静态运行时已导出 | 通过 | graph-data.js=1,016,311 bytes |
+| 静态运行时已导出 | 通过 | graph-data.js=1,262,963 bytes |
 | 前端不再依赖 CLUSTERS | 通过 | canvas 读取 graph-data.js 固定坐标 |
 
 ## 边界

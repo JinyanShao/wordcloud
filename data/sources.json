@@ -30,6 +30,21 @@
     "notes": "Used for lemma/POS alignment, corpus frequency, contextual diversity, IPA and morphology."
   },
   {
+    "id": "demonette_2",
+    "name": "Démonette 2.0",
+    "version": "official-download-2026-07-27",
+    "homepage_url": "https://demonette.fr/",
+    "download_url": "https://demonette.fr/demonext/controleurs/download_bd.php",
+    "license_id": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Namer et al. (2023), Démonette-2, Lexique 33, DOI:10.54563/lexique.1242",
+    "commercial_use": "yes",
+    "redistribution": "yes",
+    "local_path": "data/raw/demonette-2.0/demonette-2.0.zip",
+    "downloaded_at": "2026-07-27",
+    "notes": "Official form download. Archive SHA-256 ed14fe72c5328d470b33d3f83bef60f32bd458dde2e8f1817efd1132120ce8b7. Inner files: lexemes.csv 9e581c81e91ac8203dea4b479400ea1535217e1ded6b4951885ba9d503a1d381; relations.csv 761f98f3432e058f1e59d8c97a47e7bf47d0bdea9d794d2387bfe5e5b1f302c2; families.csv cbac0bc31f97da2ca045c14c8e1bcbc377ed915a5203120b106cbd64dcd69ddd; readme.txt c00b413fb3bfd336868374c9f2217c68d63321082b7ca2564c2e1ca93f1f329b. Used as the authoritative source for sourced derivational-family edges."
+  },
+  {
     "id": "cfdict_reverse_local",
     "name": "CFDICT French-to-Chinese reverse index",
     "version": "local-prototype",
@@ -60,4 +75,3 @@
     "notes": "Existing hand-authored nodes and edges. CLUSTERS are prototype-only and are not sourced from Lexique."
   }
 ]
-
