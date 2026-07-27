@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maillage · 法语词网</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="topbar">
+    <div class="brand">
+      <span class="wordmark">maillage</span>
+      <span class="tagline">法语词网 · prototype</span>
+    </div>
+    <div class="search-wrap">
+      <input id="search" type="text" placeholder="搜索单词…" autocomplete="off" spellcheck="false">
+      <div id="search-results" class="hidden"></div>
+    </div>
+    <div class="actions">
+      <button id="reset" class="btn ghost hidden">返回星图</button>
+    </div>
+  </header>
+
+  <main id="viewport">
+    <svg id="stage" xmlns="http://www.w3.org/2000/svg">
+      <defs></defs>
+      <g id="world">
+        <g id="clusters"></g>
+        <g id="edges"></g>
+        <g id="particles"></g>
+        <g id="nodes"></g>
+      </g>
+    </svg>
+
+    <div id="hint">每个灰点都是一个词 · 点击它，聚焦它的关系网</div>
+
+    <div id="trail" class="hidden"></div>
+
+    <aside id="history" class="hidden">
+      <div class="h-head">已探访</div>
+      <div id="history-items"></div>
+    </aside>
+
+    <button id="fab" aria-label="添加单词" title="添加一个词">+</button>
+
+    <div id="add-dialog" class="hidden">
+      <div class="dlg-mask"></div>
+      <div class="dlg card">
+        <div class="dlg-title">添加一个词</div>
+        <div class="dlg-field">
+          <span class="dlg-label">法语词</span>
+          <input id="add-word" type="text" placeholder="例：scruter" autocomplete="off" spellcheck="false">
+          <div id="add-sugg" class="sugg hidden"></div>
+        </div>
+        <div class="dlg-field">
+          <span class="dlg-label">中文释义</span>
+          <input id="add-gloss" type="text" placeholder="选择词典建议或手动填写" autocomplete="off">
+        </div>
+        <div class="dlg-field">
+          <span class="dlg-label">关系（可挂多个词）</span>
+          <div id="add-rels"></div>
+          <button id="add-rel-more" class="rel-more" type="button">＋ 再关联一个词</button>
+        </div>
+        <div class="dlg-field">
+          <span class="dlg-label">注记（可选）</span>
+          <input id="add-note" type="text" placeholder="例：广播里听到的" autocomplete="off">
+        </div>
+        <div class="dlg-actions">
+          <button id="add-cancel" class="btn ghost">取消</button>
+          <button id="add-ok" class="btn primary">加入词网</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tooltip" class="hidden"></div>
+
+    <aside id="legend" class="card">
+      <div class="card-title">关系图例</div>
+      <div id="legend-items"></div>
+      <div class="legend-hint">点击可单独高亮某类关系</div>
+      <div class="legend-attr">词典数据 <a href="https://chine.in/mandarin/dictionnaire/CFDICT/" target="_blank" rel="noopener">CFDICT</a> · CC BY-SA 3.0</div>
+    </aside>
+
+    <div id="stats"></div>
+
+    <aside id="panel" class="card hidden">
+      <button id="panel-close" aria-label="关闭">×</button>
+      <div id="panel-content"></div>
+    </aside>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
