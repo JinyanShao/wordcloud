@@ -23,7 +23,7 @@
   <main id="viewport">
     <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
     <div class="map-copy" id="map-copy">
-      <p>滚轮缩放 · 拖动画布 · 点击节点</p>
+      <p>中心更常用 · 外围更进阶 · 滚轮缩放</p>
     </div>
     <nav id="focus-bar" class="focus-bar hidden" aria-label="探索路径">
       <button id="focus-back" type="button" aria-label="返回全图" title="返回全图">←</button>
@@ -35,7 +35,8 @@
     <aside id="legend" class="legend">
       <button id="legend-toggle" type="button" aria-expanded="false">图的语言</button>
       <div id="legend-body" class="legend-body hidden">
-        <p><i class="line layout"></i><span>布局线索<br><small>只决定距离，不等于词义关系</small></span></p>
+        <p><i class="radial-key"></i><span>中心常用 · 外围进阶<br><small>半径由等级与频率决定</small></span></p>
+        <p><i class="line layout"></i><span>词群线索<br><small>只影响角度，不等于正式关系</small></span></p>
         <p><i class="line official"></i><span>maillage 审校关系</span></p>
         <p><i class="line personal"></i><span>我的词与关系</span></p>
         <p class="source">FLELex · Lexique 4 · CFDICT<br>当前数据仅用于非商业原型</p>
@@ -78,7 +79,7 @@
     </form>
   </div>
 
-  <script src="graph-data.js"></script>
-  <script src="app.js"></script>
+  <script src="graph-data.js?v=layout-v2"></script>
+  <script src="app.js?v=focus-v2"></script>
 </body>
 </html>
