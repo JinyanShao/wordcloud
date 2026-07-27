@@ -1,6 +1,6 @@
 # maillage 构建验证
 
-> 11/11 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。
+> 12/12 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。
 
 | 检查 | 结果 | 证据 |
 |---|---|---|
@@ -11,9 +11,10 @@
 | 图端点与方向约束 | 通过 | foreign-key errors=0, invalid order=0 |
 | 官方边来源完整 | 通过 | 98/98 条有来源 |
 | 稳定坐标与全图连通 | 通过 | nodes=7,371, components=1, isolated=0 |
-| 六类制图信号 | 通过 | derivation=3,769, editorial_seed=98, phonetic=5,998, semantic=3,622, skeleton=336, spelling=6,861 |
+| 六类制图信号 | 通过 | editorial_seed=98, morphology=3,769, phonetic=5,998, semantic=3,622, skeleton=336, spelling=6,861 |
+| Lexique MorphoBase 不冒充派生关系 | 通过 | promoted=0, division↔voir morphology=1, derivation=0 |
 | 主词与支撑词分账 | 通过 | eligible=7,314, support=57, rendered=7,371 |
-| 静态运行时已导出 | 通过 | graph-data.js=1,006,829 bytes |
+| 静态运行时已导出 | 通过 | graph-data.js=1,016,311 bytes |
 | 前端不再依赖 CLUSTERS | 通过 | canvas 读取 graph-data.js 固定坐标 |
 
 ## 边界

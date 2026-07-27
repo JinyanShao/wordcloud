@@ -16,7 +16,7 @@
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   const PERSONAL_KEY = "maillage.personal.v2";
 
-  const SIGNALS = [[1, "释义接近"], [2, "构词线索"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"]];
+  const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
   const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "派生", drift: "语义漂移", trap: "易混", ant: "反义", cause: "因果" };
   const RELATION_ORDER = ["fam", "syn", "compare", "drift", "ant", "cause", "trap", "personal"];
   const RELATION_STYLE = {
@@ -350,7 +350,7 @@
   function visualFor(edge) {
     if (edge.satellite) return { ...RELATION_STYLE.satellite, alpha: .34, label: "" };
     if (edge.kind === "personal") return { ...RELATION_STYLE.personal, alpha: .88, label: edge.label || "我的联想" };
-    if (edge.kind === "structural") return { ...RELATION_STYLE.fam, dash: [6, 5], alpha: .68, label: "构词线索 · 待核准" };
+    if (edge.kind === "structural") return { ...RELATION_STYLE.fam, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
     const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.syn;
     const rawLabel = edge.label || edge.relation || "已审校";
     return { ...style, alpha: .95, label: RELATION_NAMES[rawLabel] || rawLabel };
@@ -658,7 +658,7 @@
       ${official.length ? `<section class="panel-section"><h3>已审校关系 · ${official.length}</h3><div class="relation-list">${official.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${structural.length ? `<section class="panel-section"><h3>构词线索 · 待核准</h3><p class="candidate-note">来自 Lexique 形态结构，只在图中以蓝色虚线显示，不等同于已审校教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看自动制图近邻</summary><p class="candidate-note">这些词只因自动信号靠近，不进入中心发散图。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
+      ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
     `;
     panel.classList.remove("hidden");
     panelContent.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => enterFocus(button.dataset.node)));

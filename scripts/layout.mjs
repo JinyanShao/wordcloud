@@ -217,7 +217,7 @@ const output = {
     algorithm: "CEFR-frequency radial bands + Louvain + ForceAtlas2 angular topology",
     radial_meaning: "inward=easier and more frequent; outward=more advanced and less frequent",
     angular_signals: Object.keys(TOPOLOGY_FACTORS),
-    excluded_angular_signals: ["spelling", "phonetic", "skeleton"],
+    excluded_angular_signals: ["morphology", "spelling", "phonetic", "skeleton"],
     level_counts: levelCounts,
   },
   positions,

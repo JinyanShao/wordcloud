@@ -120,9 +120,33 @@ def main() -> None:
           f"nodes={len(position_ids):,}, components={components}, isolated={isolated}")
 
     signal_counts = Counter(row[2] for row in layout_edges)
-    required_signals = {"semantic", "derivation", "spelling", "phonetic", "editorial_seed", "skeleton"}
+    required_signals = {"semantic", "morphology", "spelling", "phonetic", "editorial_seed", "skeleton"}
     check("六类制图信号", required_signals <= set(signal_counts),
           ", ".join(f"{name}={signal_counts[name]:,}" for name in sorted(signal_counts)))
+
+    morphbase_promoted = conn.execute(
+        """
+        SELECT COUNT(*) FROM edge_candidates
+        WHERE source_id='lexique_400' AND signal='derivation'
+        """
+    ).fetchone()[0]
+    regression = conn.execute(
+        """
+        SELECT
+          SUM(l.signal='morphology') AS morphology_n,
+          SUM(l.signal='derivation') AS derivation_n
+        FROM layout_links l
+        JOIN lexemes a ON a.id=l.a_id
+        JOIN lexemes b ON b.id=l.b_id
+        WHERE (a.normalized='division' AND b.normalized='voir')
+           OR (a.normalized='voir' AND b.normalized='division')
+        """
+    ).fetchone()
+    check(
+        "Lexique MorphoBase 不冒充派生关系",
+        morphbase_promoted == 0 and regression["morphology_n"] == 1 and not regression["derivation_n"],
+        f"promoted={morphbase_promoted}, division↔voir morphology={regression['morphology_n'] or 0}, derivation={regression['derivation_n'] or 0}",
+    )
 
     eligible = conn.execute("SELECT COUNT(*) FROM lexemes WHERE status='eligible'").fetchone()[0]
     supports = conn.execute(
