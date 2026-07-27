@@ -1,0 +1,19 @@
+{
+  "name": "maillage-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "data:build": "node scripts/extract_seed.mjs && python3 scripts/build_data.py build",
+    "data:review": "python3 scripts/apply_audit_review.py && python3 scripts/build_data.py sync-review",
+    "graph:candidates": "node scripts/extract_seed.mjs && python3 scripts/build_graph.py",
+    "graph:layout": "node scripts/layout.mjs",
+    "graph:export": "python3 scripts/export_runtime.py",
+    "graph:build": "pnpm graph:candidates && pnpm graph:layout && pnpm graph:export",
+    "check": "python3 scripts/validate_data.py"
+  },
+  "devDependencies": {
+    "graphology": "^0.25.4",
+    "graphology-communities-louvain": "^2.0.2",
+    "graphology-layout-forceatlas2": "^0.10.1"
+  }
+}
