@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data" / "processed" / "maillage.sqlite"
 GRAPH_INPUT = ROOT / "data" / "processed" / "graph-input.json"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
+DEMONETTE_APPROVED_PATH = ROOT / "data" / "processed" / "demonette-approved.json"
 CREATED_AT = "2026-07-27T00:00:00Z"
 
 SIGNAL_CONFIG = {
@@ -239,6 +240,24 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
     return layout, official
 
 
+def demonette_edges(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    if not DEMONETTE_APPROVED_PATH.exists():
+        return []
+    payload = json.loads(DEMONETTE_APPROVED_PATH.read_text(encoding="utf-8"))
+    if not payload.get("meta", {}).get("gate_passed"):
+        raise SystemExit("Démonette approved payload does not carry a passing quality gate")
+    by_id = {int(row["id"]): row for row in nodes}
+    result = []
+    for edge in payload.get("edges", []):
+        a_id, b_id = int(edge["a_id"]), int(edge["b_id"])
+        if a_id not in by_id or b_id not in by_id:
+            raise SystemExit(f"Démonette edge endpoint drift: {a_id}, {b_id}")
+        if by_id[a_id]["pos"] == by_id[b_id]["pos"]:
+            raise SystemExit(f"Démonette v1 edge is not cross-POS: {a_id}, {b_id}")
+        result.append(edge)
+    return result
+
+
 def main() -> None:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
@@ -318,6 +337,12 @@ def main() -> None:
     # it auditable without promoting it to a learner-visible derivation claim.
     layouts["morphology"] = [(a, b, weight) for (a, b), weight in sorted(morphology_weights.items())]
 
+    sourced_derivations = demonette_edges(nodes)
+    layouts["derivation"] = [
+        (int(edge["a_id"]), int(edge["b_id"]), float(edge["weight"]))
+        for edge in sourced_derivations
+    ]
+
     editorial_layout, official = seed_edges(nodes)
     layouts["editorial_seed"] = editorial_layout
 
@@ -347,6 +372,28 @@ def main() -> None:
     )
     conn.executemany("INSERT OR IGNORE INTO layout_links VALUES(?,?,?,?,?,?)", layout_rows)
 
+    conn.executemany(
+        """
+        INSERT OR IGNORE INTO edge_candidates(
+          a_id,b_id,relation,signal,weight,source_id,details_json,status,created_at
+        ) VALUES(?,?,?,?,?,?,?,?,?)
+        """,
+        [
+            (
+                int(edge["a_id"]), int(edge["b_id"]), "fam", "derivation",
+                float(edge["weight"]), "demonette_2",
+                json.dumps({
+                    "generator": "demonette_2_exact_lemma_pos",
+                    "fid": edge["fid"], "rids": edge["source_records"],
+                    "complexity": edge["complexity"], "orientation": edge["orientation"],
+                    "subtype": edge["subtype"], "scheme": edge["scheme_2"],
+                }, ensure_ascii=False),
+                "sourced", CREATED_AT,
+            )
+            for edge in sourced_derivations
+        ],
+    )
+
     for item in official:
         cursor = conn.execute(
             """
@@ -366,6 +413,57 @@ def main() -> None:
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
                 (cursor.lastrowid, "maillage_editorial", f"{item['a']}:{item['b']}"),
             )
+
+    for item in sourced_derivations:
+        a_id, b_id = int(item["a_id"]), int(item["b_id"])
+        existing = conn.execute(
+            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation='fam' ORDER BY review_status='reviewed' DESC, id LIMIT 1",
+            (a_id, b_id),
+        ).fetchone()
+        if existing:
+            edge_id = existing["id"]
+        else:
+            direction = None
+            if item["base_id"] is not None:
+                direction = f"{int(item['base_id'])}->{int(item['derived_id'])}"
+            explanation = (
+                "Démonette 2.0：语义上是直接词族关系，但表面形式不是规则构词。"
+                if item["complexity"] == "motiv-sem"
+                else "Démonette 2.0 确认的直接派生或词性转换关系。"
+            )
+            cursor = conn.execute(
+                """
+                INSERT INTO official_edges(
+                  a_id,b_id,relation,dimension,subtype,direction,label,explanation,
+                  examples_json,confidence,review_status,reviewed_at,created_at
+                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
+                """,
+                (
+                    a_id, b_id, "fam", "derivational_morphology", item["subtype"],
+                    direction, item["label"], explanation, "[]", float(item["confidence"]),
+                    "sourced", None, CREATED_AT,
+                ),
+            )
+            edge_id = cursor.lastrowid
+        conn.execute(
+            "INSERT OR IGNORE INTO official_edge_sources(edge_id,source_id,source_record) VALUES(?,?,?)",
+            (
+                edge_id, "demonette_2",
+                json.dumps({
+                    "fid": item["fid"], "rids": item["source_records"],
+                    "complexity": item["complexity"], "orientation": item["orientation"],
+                    "scheme_1": item["scheme_1"], "scheme_2": item["scheme_2"],
+                }, ensure_ascii=False),
+            ),
+        )
+
+    if DEMONETTE_APPROVED_PATH.exists():
+        approved_payload = json.loads(DEMONETTE_APPROVED_PATH.read_text(encoding="utf-8"))
+        import_summary = {key: value for key, value in approved_payload.items() if key != "edges"}
+        conn.execute(
+            "INSERT OR REPLACE INTO build_metadata(key,value) VALUES('demonette_import_summary',?)",
+            (json.dumps(import_summary, ensure_ascii=False, separators=(",", ":")),),
+        )
 
     uf = UnionFind(ids)
     for edges in layouts.values():
