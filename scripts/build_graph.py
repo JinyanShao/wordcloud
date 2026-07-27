@@ -53,9 +53,6 @@ def semantic_features(gloss: str | None) -> set[str]:
         if chinese:
             if 1 < len(chinese) <= 6:
                 features.add("whole:" + chinese)
-            for char in chinese:
-                if char not in ZH_STOP:
-                    features.add("char:" + char)
             for index in range(len(chinese) - 1):
                 gram = chinese[index : index + 2]
                 if not all(char in ZH_STOP for char in gram):
@@ -434,6 +431,7 @@ def main() -> None:
             {
                 "source": str(a), "target": str(b), "weight": round(max(0.01, 1 - remaining), 6),
                 "signals": [signal for signal, _ in sorted(signals)],
+                "signal_weights": {signal: round(weight, 6) for signal, weight in sorted(signals)},
             }
         )
     graph_nodes = []
@@ -447,12 +445,16 @@ def main() -> None:
                 "x": round(math.cos(angle) * radius, 6),
                 "y": round(math.sin(angle) * radius, 6),
                 "size": round(1 + math.log1p(max(0, row["flelex_frequency"] or 0)) * 0.35, 4),
+                "level": row["cefr_level"] or "",
+                "frequency": round(max(0, row["flelex_frequency"] or 0), 6),
+                "diversity": round(max(0, row["contextual_diversity"] or 0), 6),
+                "status": row["status"],
             }
         )
     signal_counts = dict(conn.execute("SELECT signal,COUNT(*) FROM layout_links GROUP BY signal").fetchall())
     payload = {
         "meta": {
-            "version": "layout-v1",
+            "version": "layout-input-v2-learning-space",
             "created_at": CREATED_AT,
             "node_count": len(graph_nodes),
             "eligible_count": sum(row["status"] == "eligible" for row in nodes),

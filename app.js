@@ -519,7 +519,8 @@
   function drawGlobal(now) {
     ctx.lineCap = "round";
     for (const edge of baseLinks) {
-      if (edge.weight < .26) continue;
+      const learningTopology = edge.mask & (1 | 2 | 16);
+      if (!learningTopology || edge.weight < .26) continue;
       const a = nodeById.get(edge.a), b = nodeById.get(edge.b);
       if (!a || !b) continue;
       const pa = screen(a), pb = screen(b);
@@ -677,7 +678,7 @@
 
   function updateStats() {
     if (!selected) {
-      $("#stats").textContent = `${GRAPH_META.eligible_count.toLocaleString()} 主词 · ${GRAPH_META.support_node_count} 支撑词 · ${GRAPH_META.layout_link_count.toLocaleString()} 制图线索`;
+      $("#stats").textContent = `${GRAPH_META.eligible_count.toLocaleString()} 主词 · ${GRAPH_META.support_node_count} 支撑词 · ${GRAPH_META.edge_count.toLocaleString()} 词群线索`;
       return;
     }
     const officialCount = focusConnections.filter((edge) => edge.kind === "official").length;
