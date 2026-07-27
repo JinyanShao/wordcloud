@@ -101,6 +101,32 @@ CREATE INDEX IF NOT EXISTS idx_lexemes_status
 CREATE INDEX IF NOT EXISTS idx_lexemes_level_pos
   ON lexemes(cefr_level, pos);
 
+CREATE TABLE IF NOT EXISTS lexical_entries (
+  id TEXT PRIMARY KEY,
+  lexeme_id INTEGER NOT NULL REFERENCES lexemes(id) ON DELETE CASCADE,
+  entry_rank INTEGER NOT NULL,
+  source_id TEXT NOT NULL REFERENCES sources(id),
+  source_url TEXT NOT NULL,
+  UNIQUE (lexeme_id, entry_rank, source_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_lexical_entries_lexeme
+  ON lexical_entries(lexeme_id, entry_rank);
+
+CREATE TABLE IF NOT EXISTS lexeme_senses (
+  id TEXT PRIMARY KEY,
+  entry_id TEXT NOT NULL REFERENCES lexical_entries(id) ON DELETE CASCADE,
+  lexeme_id INTEGER NOT NULL REFERENCES lexemes(id) ON DELETE CASCADE,
+  sense_number TEXT NOT NULL,
+  definition_fr TEXT NOT NULL,
+  examples_json TEXT NOT NULL DEFAULT '[]',
+  source_id TEXT NOT NULL REFERENCES sources(id),
+  UNIQUE (entry_id, sense_number)
+);
+
+CREATE INDEX IF NOT EXISTS idx_lexeme_senses_lexeme
+  ON lexeme_senses(lexeme_id, entry_id, sense_number);
+
 CREATE TABLE IF NOT EXISTS aliases (
   lexeme_id INTEGER NOT NULL REFERENCES lexemes(id) ON DELETE CASCADE,
   form TEXT NOT NULL,

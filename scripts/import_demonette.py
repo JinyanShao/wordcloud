@@ -183,6 +183,7 @@ def analyze() -> dict[str, object]:
     row_identity_mismatches = 0
     matched_rows = 0
     matched_cross_pos_rows = 0
+    matched_same_pos_rows = 0
     orientation_counts = Counter()
     complexity_counts = Counter()
     withheld_rows = Counter()
@@ -216,15 +217,23 @@ def analyze() -> dict[str, object]:
                 withheld_rows["endpoint_not_in_rendered_lexicon"] += 1
                 continue
             matched_rows += 1
-            if left_match["pos"] == right_match["pos"]:
-                withheld_rows["same_pos"] += 1
-                continue
-            matched_cross_pos_rows += 1
+            same_pos = left_match["pos"] == right_match["pos"]
+            if same_pos:
+                matched_same_pos_rows += 1
+            else:
+                matched_cross_pos_rows += 1
             orientation = row["orientation"]
             complexity = row["complexite"]
-            is_direct = orientation == "as2des" and complexity in PUBLISHABLE_COMPLEXITY
+            is_cross_pos_direct = (
+                not same_pos and orientation == "as2des" and complexity in PUBLISHABLE_COMPLEXITY
+            )
+            is_same_pos_direct = (
+                same_pos and orientation == "as2des" and complexity == "simple"
+                and row["type_cstr_2"] in {"pre", "suf"}
+            )
+            is_direct = is_cross_pos_direct or is_same_pos_direct
             is_undirected_conversion = (
-                orientation == "NA" and complexity == "simple"
+                not same_pos and orientation == "NA" and complexity == "simple"
                 and row["type_cstr_1"] == "conv" and row["type_cstr_2"] == "conv"
             )
             if not (is_direct or is_undirected_conversion):
@@ -234,6 +243,8 @@ def analyze() -> dict[str, object]:
                     reason = complexity
                 elif orientation == "des2as":
                     reason = "reverse_record"
+                elif same_pos:
+                    reason = "same_pos_not_simple_affix"
                 else:
                     reason = "unsupported_direct_type"
                 withheld_rows[reason] += 1
@@ -380,6 +391,7 @@ def analyze() -> dict[str, object]:
     known_pairs = {
         "affirmer_VER→affirmation_NOM": find_pair("affirmer", "VER", "affirmation", "NOM"),
         "voir_VER→vision_NOM": find_pair("voir", "VER", "vision", "NOM"),
+        "poli_ADJ→impoli_ADJ": find_pair("poli", "ADJ", "impoli", "ADJ"),
     }
     direction_conflict_rate = len(direction_conflicts) / max(1, len(grouped))
     gates = {
@@ -392,6 +404,7 @@ def analyze() -> dict[str, object]:
         "publishable_cross_pos_edges_exist": len(approved) >= 100,
         "affirmer_affirmation_regression": known_pairs["affirmer_VER→affirmation_NOM"] is not None,
         "voir_vision_regression": known_pairs["voir_VER→vision_NOM"] is not None,
+        "poli_impoli_same_pos_regression": known_pairs["poli_ADJ→impoli_ADJ"] is not None,
     }
 
     analysis = {
@@ -422,6 +435,7 @@ def analyze() -> dict[str, object]:
             "matched_rendered_lexemes": len(matched_node_ids),
             "matched_relation_rows": matched_rows,
             "matched_cross_pos_rows": matched_cross_pos_rows,
+            "matched_same_pos_rows": matched_same_pos_rows,
             "raw_publishable_rows": len(candidate_rows),
             "unique_publishable_edges": len(approved),
             "duplicate_source_rows_collapsed": len(candidate_rows) - len(grouped),
@@ -480,9 +494,10 @@ def write_report(analysis: dict[str, object]) -> None:
         "## 发布口径",
         "",
         "- 发布 `orientation=as2des` 且 `complexite` 为 `simple` 或 `motiv-sem` 的跨词性关系。",
+        "- 同词性只发布方向明确、`simple`、且构式为前缀或后缀的直接派生；例如 `poli → impoli`。",
         "- `simple` 表示直接、形式与语义一致的派生；`motiv-sem` 表示语义上直接但形式不规则，前端标为“异形词族”。",
         "- 无法定向但两端均为 conversion 的 `simple` 跨词性关系，发布为无方向“词性转换”。",
-        "- `indirect`、`complexe`、`motiv-form`、`accidentel` 以及同词性关系本轮不发布；它们仍可作为以后第二级词族或审校候选。",
+        "- `indirect`、`complexe`、`motiv-form`、`accidentel` 以及非简单词缀的同词性关系不发布。",
         "",
         "## 跨词性覆盖",
         "",
@@ -509,7 +524,7 @@ def write_report(analysis: dict[str, object]) -> None:
         "",
         "多条原始记录通常来自 Démonette 合并的不同上游来源，不会在产品里重复成多条线；发布清单保留全部 `rid` 作为追溯记录。方向冲突词对整组暂缓，不参与发布。",
         "",
-        "## 两个回归样例",
+        "## 三个回归样例",
         "",
         "| 词对 | 是否进入发布清单 | Démonette 分类 | 产品显示 |",
         "|---|---|---|---|",
@@ -532,7 +547,7 @@ def write_report(analysis: dict[str, object]) -> None:
         "## 限制与下一步",
         "",
         "- 本报告只衡量 maillage 当前词表与 Démonette 的精确 lemma+POS 对齐；未命中不等于 Démonette 无该词，可能是词性粒度或词表范围不同。",
-        "- 本轮只发布跨词性直接关系，故意不把同词性前缀派生和间接同族一次性塞入图中。",
+        "- 同词性只放行简单前/后缀直接派生；间接同族和复杂构词仍暂缓。",
         "- `motiv-sem` 对学习者有价值，但必须保持“异形词族”标签，不能解释成规则性的拼写变化。",
         "- 发布后应再次验证官方边来源完整、全图连通、运行时导出以及样例词的焦点图。",
     ]
