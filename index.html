@@ -1,99 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>maillage · 法语词网</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="从疏密与连接中探索法语词汇。">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header id="topbar">
-    <div class="brand">
-      <span class="wordmark">maillage</span>
-      <span class="tagline">法语词网 · prototype</span>
+  <header class="topbar">
+    <a class="brand" href="#" id="brand" aria-label="返回全图">
+      <span>maillage</span>
+      <small>法语词网</small>
+    </a>
+    <div class="searchbox">
+      <input id="search" type="search" placeholder="搜索一个法语词" autocomplete="off" spellcheck="false" aria-label="搜索法语词">
+      <div id="search-results" class="search-results hidden" role="listbox"></div>
     </div>
-    <div class="search-wrap">
-      <input id="search" type="text" placeholder="搜索单词…" autocomplete="off" spellcheck="false">
-      <div id="search-results" class="hidden"></div>
-    </div>
-    <div class="actions">
-      <button id="reset" class="btn ghost hidden">返回星图</button>
-    </div>
+    <button id="reset" class="quiet-button" type="button">全图</button>
   </header>
 
   <main id="viewport">
-    <svg id="stage" xmlns="http://www.w3.org/2000/svg">
-      <defs></defs>
-      <g id="world">
-        <g id="clusters"></g>
-        <g id="edges"></g>
-        <g id="particles"></g>
-        <g id="nodes"></g>
-      </g>
-    </svg>
-
-    <div id="hint">每个灰点都是一个词 · 点击它，聚焦它的关系网</div>
-
-    <div id="trail" class="hidden"></div>
-
-    <aside id="history" class="hidden">
-      <div class="h-head">已探访</div>
-      <div id="history-items"></div>
-    </aside>
-
-    <button id="fab" aria-label="添加单词" title="添加一个词">+</button>
-
-    <div id="add-dialog" class="hidden">
-      <div class="dlg-mask"></div>
-      <div class="dlg card">
-        <div class="dlg-title">添加一个词</div>
-        <div class="dlg-field">
-          <span class="dlg-label">法语词</span>
-          <input id="add-word" type="text" placeholder="例：scruter" autocomplete="off" spellcheck="false">
-          <div id="add-sugg" class="sugg hidden"></div>
-        </div>
-        <div class="dlg-field">
-          <span class="dlg-label">中文释义</span>
-          <input id="add-gloss" type="text" placeholder="选择词典建议或手动填写" autocomplete="off">
-        </div>
-        <div class="dlg-field">
-          <span class="dlg-label">关系（可挂多个词）</span>
-          <div id="add-rels"></div>
-          <button id="add-rel-more" class="rel-more" type="button">＋ 再关联一个词</button>
-        </div>
-        <div class="dlg-field">
-          <span class="dlg-label">注记（可选）</span>
-          <input id="add-note" type="text" placeholder="例：广播里听到的" autocomplete="off">
-        </div>
-        <div class="dlg-actions">
-          <button id="add-cancel" class="btn ghost">取消</button>
-          <button id="add-ok" class="btn primary">加入词网</button>
-        </div>
-      </div>
+    <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
+    <div class="map-copy" id="map-copy">
+      <p>滚轮缩放 · 拖动画布 · 点击节点</p>
+      <strong>先看见结构，再看见词。</strong>
     </div>
+    <div id="tooltip" class="tooltip hidden"></div>
+    <div id="stats" class="stats"></div>
 
-    <div id="tooltip" class="hidden"></div>
-
-    <aside id="legend" class="card">
-      <div class="card-title">关系图例</div>
-      <div id="legend-items"></div>
-      <div class="legend-hint">点击可单独高亮某类关系</div>
-      <div class="legend-attr">词典数据 <a href="https://chine.in/mandarin/dictionnaire/CFDICT/" target="_blank" rel="noopener">CFDICT</a> · CC BY-SA 3.0</div>
+    <aside id="legend" class="legend">
+      <button id="legend-toggle" type="button" aria-expanded="false">图的语言</button>
+      <div id="legend-body" class="legend-body hidden">
+        <p><i class="line layout"></i><span>布局线索<br><small>只决定距离，不等于词义关系</small></span></p>
+        <p><i class="line official"></i><span>maillage 审校关系</span></p>
+        <p><i class="line personal"></i><span>我的词与关系</span></p>
+        <p class="source">FLELex · Lexique 4 · CFDICT<br>当前数据仅用于非商业原型</p>
+      </div>
     </aside>
 
-    <div id="stats"></div>
-
-    <aside id="panel" class="card hidden">
-      <button id="panel-close" aria-label="关闭">×</button>
+    <aside id="panel" class="panel hidden" aria-live="polite">
+      <button id="panel-close" class="panel-close" type="button" aria-label="关闭详情">×</button>
       <div id="panel-content"></div>
     </aside>
+
+    <button id="add-open" class="add-button" type="button" aria-label="添加自己的词">+</button>
   </main>
 
-  <script src="data.js"></script>
+  <div id="add-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="add-title">
+    <button class="dialog-mask" id="add-mask" type="button" aria-label="关闭"></button>
+    <form class="dialog-card" id="add-form">
+      <div class="eyebrow">我的词网</div>
+      <h2 id="add-title">添加一个词</h2>
+      <label>法语词<input id="add-word" required autocomplete="off" spellcheck="false" placeholder="例如 approfondir"></label>
+      <label>中文提示<input id="add-gloss" autocomplete="off" placeholder="用你自己的话"></label>
+      <label>连接到<input id="add-target" autocomplete="off" spellcheck="false" placeholder="输入一个已有词（可选）"></label>
+      <label>我为什么连接它们<input id="add-relation" autocomplete="off" placeholder="例如：总是一起想起"></label>
+      <p id="add-error" class="form-error"></p>
+      <div class="dialog-actions">
+        <button id="add-cancel" class="quiet-button" type="button">取消</button>
+        <button class="primary-button" type="submit">加入我的词网</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="graph-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

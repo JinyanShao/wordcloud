@@ -1,0 +1,63 @@
+[
+  {
+    "id": "flelex_beacco_tt",
+    "name": "FLELex / Beacco with TreeTagger POS",
+    "version": "downloaded-2026-07-27",
+    "homepage_url": "https://cental.uclouvain.be/cefrlex/flelex/download/",
+    "download_url": "https://cental.uclouvain.be/cefrlex/static/resources/fr/FleLex_TT_Beacco.tsv",
+    "license_id": "CC-BY-NC-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "François, Gala, Watrin & Fairon (2014); Pintard & François (2020)",
+    "commercial_use": "no",
+    "redistribution": "yes",
+    "local_path": "data/raw/FleLex_TT_Beacco.tsv",
+    "downloaded_at": "2026-07-27",
+    "notes": "Used for CEFR candidate levels. Non-commercial license is a product risk; do not ship commercially without replacement or permission."
+  },
+  {
+    "id": "lexique_400",
+    "name": "Lexique 4.00",
+    "version": "4.00",
+    "homepage_url": "https://www.lexique.org/",
+    "download_url": "https://lexique.org/databases/Lexique400/Lexique400.tsv",
+    "license_id": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "New, Pallier, Schalchli, Bourgin & Gimenes (2026)",
+    "commercial_use": "yes",
+    "redistribution": "yes",
+    "local_path": "data/raw/Lexique400.tsv",
+    "downloaded_at": "2026-07-27",
+    "notes": "Used for lemma/POS alignment, corpus frequency, contextual diversity, IPA and morphology."
+  },
+  {
+    "id": "cfdict_reverse_local",
+    "name": "CFDICT French-to-Chinese reverse index",
+    "version": "local-prototype",
+    "homepage_url": "https://chine.in/mandarin/dictionnaire/CFDICT/",
+    "download_url": null,
+    "license_id": "CC-BY-SA-3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "CFDICT contributors via chine.in; local reverse index",
+    "commercial_use": "yes",
+    "redistribution": "yes",
+    "local_path": "dict.js",
+    "downloaded_at": null,
+    "notes": "Used only as a Chinese gloss candidate. The reverse index contains proper nouns, brands, specialist terms and noisy translations, so presence is evidence rather than truth."
+  },
+  {
+    "id": "maillage_editorial",
+    "name": "maillage editorial seed",
+    "version": "prototype-v2",
+    "homepage_url": "local://data.js",
+    "download_url": null,
+    "license_id": "project-local",
+    "license_url": null,
+    "attribution": "maillage project",
+    "commercial_use": "local-only",
+    "redistribution": "local-only",
+    "local_path": "data.js",
+    "downloaded_at": null,
+    "notes": "Existing hand-authored nodes and edges. CLUSTERS are prototype-only and are not sourced from Lexique."
+  }
+]
+

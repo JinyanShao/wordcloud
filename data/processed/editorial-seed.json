@@ -1,0 +1,1212 @@
+{
+  "nodes": [
+    {
+      "id": "effondrer",
+      "pos": "v.t.",
+      "gloss": "使坍塌；压垮",
+      "note": "前缀 ef-（ex-，向外）+ fond（底部）——「砸穿底部」。及物：effondrer une barrière。"
+    },
+    {
+      "id": "s'effondrer",
+      "pos": "v.pr.",
+      "gloss": "倒塌；崩溃；垮掉",
+      "note": "自反形式最常用。Le marché s'effondre. 市场崩盘。Elle s'est effondrée en larmes. 她泪崩了。"
+    },
+    {
+      "id": "effondré",
+      "pos": "adj.",
+      "gloss": "崩溃的，被击垮的",
+      "note": "过去分词漂移为形容词：肉体坍塌 → 精神被击垮。Il était effondré à la nouvelle."
+    },
+    {
+      "id": "s'écrouler",
+      "pos": "v.pr.",
+      "gloss": "坍塌；垮掉；累垮",
+      "note": "词根 croûte（硬壳）——「外壳剥落而散架」。s'écrouler de fatigue 累瘫；écroulé de rire 笑瘫。"
+    },
+    {
+      "id": "crouler",
+      "pos": "v.i.",
+      "gloss": "摇摇欲坠；堆积如山",
+      "note": "écrouler 的裸词根。crouler sous les dettes 债台高筑。"
+    },
+    {
+      "id": "s'ébouler",
+      "pos": "v.pr.",
+      "gloss": "（岩壁、土坡）崩塌",
+      "note": "词根 boule（土块）——「碎成块状滚落」。专用于山体、陡坡。"
+    },
+    {
+      "id": "éboulement",
+      "pos": "n.m.",
+      "gloss": "塌方，滑坡",
+      "note": "un éboulement de terrain 山体滑坡。"
+    },
+    {
+      "id": "casser",
+      "pos": "v.t.",
+      "gloss": "打破，弄断",
+      "note": "最日常的「弄坏」。casser une branche；se casser la jambe（口语）摔断腿。"
+    },
+    {
+      "id": "briser",
+      "pos": "v.t.",
+      "gloss": "打碎（文学腔）",
+      "note": "比 casser 文雅，常带情感重量：briser un cœur 心碎；briser le silence 打破沉默。"
+    },
+    {
+      "id": "fracasser",
+      "pos": "v.t.",
+      "gloss": "猛力击碎",
+      "note": "casser → briser → fracasser：程度递增，一下子砸个粉碎。"
+    },
+    {
+      "id": "démolir",
+      "pos": "v.t.",
+      "gloss": "拆除；拆毁；痛击",
+      "note": "对建筑物是「拆」；口语里 démolir qn 是痛扁/痛批。"
+    },
+    {
+      "id": "tomber",
+      "pos": "v.i.",
+      "gloss": "落下，倒下",
+      "note": "下降轴的中间态：不受控但未崩解。tomber de fatigue 累倒。"
+    },
+    {
+      "id": "baisser",
+      "pos": "v.t./v.i.",
+      "gloss": "放低；下降",
+      "note": "下降轴的受控端：baisser la tête 低头；les prix baissent 价格下跌；se baisser 弯腰。"
+    },
+    {
+      "id": "fond",
+      "pos": "n.m.",
+      "gloss": "底部；深处；核心",
+      "note": "拉丁语 fundus。au fond de 在…深处；au fond 说到底。坍塌与建立两极共享的词根。"
+    },
+    {
+      "id": "fonder",
+      "pos": "v.t.",
+      "gloss": "创立，建立",
+      "note": "fundare「打下底部」。fonder une famille 成家；fonder une école 创校。"
+    },
+    {
+      "id": "fondation",
+      "pos": "n.f.",
+      "gloss": "地基；创立；基金会",
+      "note": "les fondations d'un immeuble 大楼地基；la Fondation Cartier 卡地亚基金会。"
+    },
+    {
+      "id": "fondateur",
+      "pos": "n.m.",
+      "gloss": "创始人",
+      "note": "le fondateur de l'entreprise 企业创始人。"
+    },
+    {
+      "id": "fondamental",
+      "pos": "adj.",
+      "gloss": "根本的，基础的",
+      "note": "经 fondement（fundamentum）而来。une différence fondamentale 根本差异。"
+    },
+    {
+      "id": "approfondir",
+      "pos": "v.t.",
+      "gloss": "加深；深入（研究）",
+      "note": "profond 同样来自 fundus 家族。approfondir une question 深入钻研一个问题。"
+    },
+    {
+      "id": "établir",
+      "pos": "v.t.",
+      "gloss": "建立，确立；制定",
+      "note": "词源 stabilire「使站稳」——和 effondrer 方向正相反！établir une règle 制定规则；s'établir 定居。"
+    },
+    {
+      "id": "établissement",
+      "pos": "n.m.",
+      "gloss": "机构；（尤指）学校",
+      "note": "由「建立」漂移为「被建立之物」：un établissement scolaire 学校；un établissement public 公立机构。"
+    },
+    {
+      "id": "rétablir",
+      "pos": "v.t.",
+      "gloss": "恢复，重建",
+      "note": "ré- + établir「重新立起来」。rétablir la santé 恢复健康；rétablir la vérité 澄清真相。"
+    },
+    {
+      "id": "édifier",
+      "pos": "v.t.",
+      "gloss": "建造（宏伟建筑）；教化",
+      "note": "拉丁语 aedificare（aedes 庙宇 + facere 造）。édifier une cathédrale；引申义「教育感化」。"
+    },
+    {
+      "id": "édifice",
+      "pos": "n.m.",
+      "gloss": "大厦，宏伟建筑",
+      "note": "正式语境的「大楼」：un édifice religieux；l'édifice social 社会大厦（比喻）。"
+    },
+    {
+      "id": "édifiant",
+      "pos": "adj.",
+      "gloss": "有教益的；常带讽刺",
+      "note": "由「教化」漂移：un spectacle édifiant 表面「有教育意义」，实际常讽刺「令人大跌眼镜」。"
+    },
+    {
+      "id": "ériger",
+      "pos": "v.t.",
+      "gloss": "竖立；把…树立为",
+      "note": "ériger un monument 立碑；ériger qch en principe 把某事奉为原则。"
+    },
+    {
+      "id": "bâtir",
+      "pos": "v.t.",
+      "gloss": "建造（房屋）",
+      "note": "建造轴最具体的一端：bâtir une maison；bâtir un empire（比喻）。"
+    },
+    {
+      "id": "bâtiment",
+      "pos": "n.m.",
+      "gloss": "建筑物；楼房",
+      "note": "通用词：un bâtiment de bureaux 办公楼；le bâtiment（行业）建筑业。"
+    },
+    {
+      "id": "construire",
+      "pos": "v.t.",
+      "gloss": "建造，构建",
+      "note": "最通用：construire une maison / une phrase / une théorie，具体抽象皆可。"
+    },
+    {
+      "id": "fondre",
+      "pos": "v.i./v.t.",
+      "gloss": "融化；熔解",
+      "note": "拉丁语 fundere（倾倒、熔化）——与 fond（fundus）毫无词源关系！faire fondre du beurre；fondre en larmes 突然哭出来。"
+    },
+    {
+      "id": "fondant",
+      "pos": "adj./n.m.",
+      "gloss": "入口即化的；熔岩蛋糕",
+      "note": "fondre 的现在分词。un fondant au chocolat 巧克力熔岩蛋糕；une neige fondante 松软易化的雪。"
+    },
+    {
+      "id": "demeurer",
+      "pos": "v.i.",
+      "gloss": "停留；居住（正式）",
+      "note": "拉丁语 demorari「耽搁」。Il demeure silencieux 他保持沉默；demeurer à Paris 住在巴黎（书面语）。"
+    },
+    {
+      "id": "demeure",
+      "pos": "n.f.",
+      "gloss": "住所（文学/正式）",
+      "note": "une demeure bourgeoise 一座气派的宅邸；mettre qn en demeure 正式催告（法律套语）。"
+    },
+    {
+      "id": "demeuré",
+      "pos": "adj.",
+      "gloss": "迟钝的，呆傻的",
+      "note": "过去分词的语义漂移：「脑子留在原地没跟上」。un garçon un peu demeuré。文学腔，带讽刺。"
+    },
+    {
+      "id": "abruti",
+      "pos": "adj./n.m.",
+      "gloss": "麻木迟钝的；蠢货",
+      "note": "abrutir 的过去分词：被摧残得麻木。abruti par le travail 被工作榨麻木；quel abruti ! 真是个蠢货！"
+    },
+    {
+      "id": "abrutir",
+      "pos": "v.t.",
+      "gloss": "使迟钝，使麻木",
+      "note": "a- + brut「使退化为禽兽」。La télé les abrutit. 电视把人看傻了。"
+    },
+    {
+      "id": "brut",
+      "pos": "adj./n.m.",
+      "gloss": "生的；粗野的；未加工的",
+      "note": "拉丁语 brutus「笨重、粗野」。diamant brut 原石；pétrole brut 原油；une brute 粗野的人。"
+    },
+    {
+      "id": "bête",
+      "pos": "adj.",
+      "gloss": "傻的，笨的（最通用）",
+      "note": "本义「畜生」。bête comme ses pieds 傻到家（口语）；C'est bête ! 真可惜/真傻！"
+    },
+    {
+      "id": "stupide",
+      "pos": "adj.",
+      "gloss": "愚蠢的",
+      "note": "比 bête 正式，评判更重：une erreur stupide 愚蠢的错误。"
+    },
+    {
+      "id": "débile",
+      "pos": "adj.",
+      "gloss": "低能的，弱智的（口语）",
+      "note": "拉丁语 debilis「虚弱」。口语贬义：C'est débile ! 太蠢了！亦作名词骂人。"
+    },
+    {
+      "id": "niais",
+      "pos": "adj.",
+      "gloss": "天真犯傻的，傻乎乎的",
+      "note": "niais 的傻是「不谙世事」：un sourire niais 傻笑；des propos niais 幼稚的话。"
+    },
+    {
+      "id": "borné",
+      "pos": "adj.",
+      "gloss": "狭隘愚钝的",
+      "note": "borne「界桩」→ 眼界被圈住：un esprit borné 狭隘的头脑。"
+    },
+    {
+      "id": "voir",
+      "pos": "v.t.",
+      "gloss": "看见；看到",
+      "note": "最通用的「看」。voir qch de ses propres yeux 亲眼所见；faire voir 让…看。"
+    },
+    {
+      "id": "regarder",
+      "pos": "v.t.",
+      "gloss": "看，注视",
+      "note": "主动把目光投向。regarder la télé 看电视；se regarder dans la glace 照镜子。"
+    },
+    {
+      "id": "observer",
+      "pos": "v.t.",
+      "gloss": "观察",
+      "note": "有目的、带分析地看。observer les étoiles；另一义 observer une règle 是「遵守」——观察和遵守，都是「盯着不放」。"
+    },
+    {
+      "id": "scruter",
+      "pos": "v.t.",
+      "gloss": "仔细搜寻地看",
+      "note": "拉丁语 scrutari「翻找」——目光在搜寻。scruter l'horizon 极目搜寻；scruter qn du regard 上下打量。"
+    },
+    {
+      "id": "contempler",
+      "pos": "v.t.",
+      "gloss": "凝视，欣赏地凝望",
+      "note": "带审美和沉思的看。contempler le coucher du soleil 凝望落日。"
+    },
+    {
+      "id": "surveiller",
+      "pos": "v.t.",
+      "gloss": "监视；照看",
+      "note": "sur-（在上）+ veiller（醒着）——「在上面盯着」。surveiller les enfants 照看孩子；surveiller sa ligne 注意身材。"
+    },
+    {
+      "id": "apercevoir",
+      "pos": "v.t.",
+      "gloss": "瞥见，无意中看见",
+      "note": "目光「抓住」一瞬。J'ai aperçu un cerf. 我瞥见一头鹿。s'apercevoir de qch 则漂移为「察觉到」。"
+    },
+    {
+      "id": "percevoir",
+      "pos": "v.t.",
+      "gloss": "感知；察觉；征收",
+      "note": "per-（透过）+ capere（抓）——透过感官抓住。percevoir un bruit；percevoir des impôts 征税（另一义）。"
+    },
+    {
+      "id": "remarquer",
+      "pos": "v.t.",
+      "gloss": "注意到",
+      "note": "re- + marquer「做标记」——在脑子里做了记号。Tu as remarqué ? 你注意到了吗？"
+    },
+    {
+      "id": "guetter",
+      "pos": "v.t.",
+      "gloss": "窥伺，守候着看",
+      "note": "埋伏式地看，等目标出现。guetter sa proie 窥伺猎物；guetter le facteur 等邮递员。"
+    },
+    {
+      "id": "entrevoir",
+      "pos": "v.t.",
+      "gloss": "隐约看见；隐约预感",
+      "note": "entre- + voir「隔着一层看见」。entrevoir une solution 隐约看到一线解决的可能。"
+    },
+    {
+      "id": "prévoir",
+      "pos": "v.t.",
+      "gloss": "预见；预计",
+      "note": "pré- + voir「预先看见」。prévoir la météo 预报天气；comme prévu 不出所料。"
+    },
+    {
+      "id": "revoir",
+      "pos": "v.t.",
+      "gloss": "再看；复习",
+      "note": "re- + voir。revoir ses leçons 复习功课；au revoir 再见——字面「直到再见」。"
+    },
+    {
+      "id": "voire",
+      "pos": "adv.",
+      "gloss": "甚至；诚然",
+      "note": "由 voir 的命令式演变来的语气词，早已和「看」无关：cher, voire très cher 贵，甚至很贵。形近必辨！"
+    },
+    {
+      "id": "parler",
+      "pos": "v.i./v.t.",
+      "gloss": "说，讲",
+      "note": "拉丁语 parabola「比喻、话语」。parler français 说法语；parler de qch 谈论某事。"
+    },
+    {
+      "id": "dire",
+      "pos": "v.t.",
+      "gloss": "说，说道",
+      "note": "接所说的内容：dire la vérité 说实话；se dire 心想；C'est-à-dire 也就是说。和 parler 的区别是学习者第一课。"
+    },
+    {
+      "id": "raconter",
+      "pos": "v.t.",
+      "gloss": "讲述，叙述",
+      "note": "叙事的说。raconter une histoire 讲故事；Qu'est-ce que tu racontes ?（口语）你瞎说什么呢？"
+    },
+    {
+      "id": "bavarder",
+      "pos": "v.i.",
+      "gloss": "闲聊，话多",
+      "note": "bave「口水」——喋喋不休。bavarder avec des amis；un enfant bavard 话多的小孩。轻微贬义。"
+    },
+    {
+      "id": "causer",
+      "pos": "v.i.",
+      "gloss": "聊（口语）",
+      "note": "法国口语里的闲聊，比 bavarder 中性。另一义 causer un accident 是「引起」——聊天和惹事共用一词。"
+    },
+    {
+      "id": "discuter",
+      "pos": "v.i./v.t.",
+      "gloss": "讨论；聊",
+      "note": "双向交换意见。discuter du problème 讨论问题；discuter le coup（口语）闲扯。"
+    },
+    {
+      "id": "converser",
+      "pos": "v.i.",
+      "gloss": "交谈（正式）",
+      "note": "正式的双向交谈。converser avec des érudits 与学者交谈。"
+    },
+    {
+      "id": "s'entretenir",
+      "pos": "v.pr.",
+      "gloss": "会谈，晤谈（正式）",
+      "note": "entre-（相互）+ tenir（保持）——正式的对话场合。s'entretenir avec le ministre 与部长会谈。"
+    },
+    {
+      "id": "chuchoter",
+      "pos": "v.i./v.t.",
+      "gloss": "低声耳语",
+      "note": "拟声词源：chu-chu。chuchoter à l'oreille de qn 在耳边低语。"
+    },
+    {
+      "id": "murmurer",
+      "pos": "v.i./v.t.",
+      "gloss": "低语，喃喃",
+      "note": "比 chuchoter 更柔更文学。murmurer des mots doux 喃喃情话；le murmure du ruisseau 溪水潺潺。"
+    },
+    {
+      "id": "crier",
+      "pos": "v.i./v.t.",
+      "gloss": "喊叫",
+      "note": "音量轴的另一端。crier au secours 呼救；crier après qn（口语）冲某人大喊。"
+    },
+    {
+      "id": "s'exprimer",
+      "pos": "v.pr.",
+      "gloss": "表达自己",
+      "note": "ex- + pressus「压出来」——把想法挤出成话。s'exprimer clairement 表达清晰。"
+    },
+    {
+      "id": "déclarer",
+      "pos": "v.t.",
+      "gloss": "宣布，声明",
+      "note": "dé-（完全）+ clarus（清楚）——使完全清楚。déclarer la guerre 宣战；déclarer ses impôts 报税。"
+    },
+    {
+      "id": "annoncer",
+      "pos": "v.t.",
+      "gloss": "宣布，告知",
+      "note": "ad- + nuntius（信使）——捎信来。annoncer une nouvelle 宣布消息；Ça annonce du beau !（反讽）这可没好事！"
+    },
+    {
+      "id": "parole",
+      "pos": "n.f.",
+      "gloss": "话，话语；发言权",
+      "note": "parler 的名词。prendre la parole 发言；tenir parole 信守诺言；la parole de Dieu 神的话语。"
+    },
+    {
+      "id": "contredire",
+      "pos": "v.t.",
+      "gloss": "反驳；与…矛盾",
+      "note": "contre- + dire「对着说」。contredire qn 反驳某人；se contredire 自相矛盾。"
+    },
+    {
+      "id": "interdire",
+      "pos": "v.t.",
+      "gloss": "禁止",
+      "note": "inter- + dire「在中间插话制止」——从「插话」漂移为「禁止」。interdire l'entrée 禁止入内。"
+    },
+    {
+      "id": "prédire",
+      "pos": "v.t.",
+      "gloss": "预言",
+      "note": "pré- + dire「预先说」。prédire l'avenir 预言未来。"
+    },
+    {
+      "id": "redire",
+      "pos": "v.t.",
+      "gloss": "再说；转述；挑剔",
+      "note": "re- + dire。redire qch à qn 转述；trouver à redire 吹毛求疵。"
+    },
+    {
+      "id": "marcher",
+      "pos": "v.i.",
+      "gloss": "走，步行；运转",
+      "note": "最通用的「走」。另一义「运转/奏效」：Ça marche ! 行！La voiture marche bien. 车跑得顺。"
+    },
+    {
+      "id": "se promener",
+      "pos": "v.pr.",
+      "gloss": "散步",
+      "note": "无目的的走，为了走而走。se promener le long de la Seine 沿塞纳河散步。"
+    },
+    {
+      "id": "flâner",
+      "pos": "v.i.",
+      "gloss": "闲逛，溜达",
+      "note": "无所事事地晃。flâner dans les rues；le flâneur 是巴黎文化里的「漫游者」。"
+    },
+    {
+      "id": "errer",
+      "pos": "v.i.",
+      "gloss": "游荡，漂泊",
+      "note": "无方向、带迷失感的走。errer dans les rues 街头游荡；une âme qui erre 漂泊的灵魂。"
+    },
+    {
+      "id": "déambuler",
+      "pos": "v.i.",
+      "gloss": "踱步，随意走（文学）",
+      "note": "拉丁语 ambulare（走）——文学腔的从容漫步。déambuler dans le musée 在博物馆里闲逛。"
+    },
+    {
+      "id": "randonner",
+      "pos": "v.i.",
+      "gloss": "徒步远足",
+      "note": "运动性的走。randonner en montagne 山里徒步；la randonnée 徒步（运动）。"
+    },
+    {
+      "id": "traîner",
+      "pos": "v.i./v.t.",
+      "gloss": "拖着脚走；磨蹭（口语）",
+      "note": "本义「拖」。traîner dans les rues 街头鬼混（贬）；Ça traîne ! 拖拖拉拉！"
+    },
+    {
+      "id": "cheminer",
+      "pos": "v.i.",
+      "gloss": "缓步前行（文学）",
+      "note": "chemin「路」→ 沿路而行，文学腔。cheminer vers la vérité 向真理缓步前行（比喻）。"
+    },
+    {
+      "id": "marche",
+      "pos": "n.f.",
+      "gloss": "步子；台阶；进程",
+      "note": "marcher 的名词：une marche d'escalier 一级台阶；la marche à suivre 操作步骤。"
+    },
+    {
+      "id": "démarche",
+      "pos": "n.f.",
+      "gloss": "步态；方法，举措",
+      "note": "从「走路的方式」漂移为「办事的方式」。une démarche élégante 优雅步态；faire des démarches 奔走办事。"
+    },
+    {
+      "id": "marché",
+      "pos": "n.m.",
+      "gloss": "市场",
+      "note": "拉丁语 mercatus（交易）——和 marcher 毫无词源关系！le marché aux puces 跳蚤市场；bon marché 便宜。"
+    },
+    {
+      "id": "marchand",
+      "pos": "n.m./adj.",
+      "gloss": "商人；商业的",
+      "note": "marché 家族：un marchand de fruits 水果商；la marine marchande 商船队。"
+    },
+    {
+      "id": "pas",
+      "pos": "n.m.",
+      "gloss": "脚步，步伐",
+      "note": "拉丁语 passus「一步」。faire un pas 迈一步；pas à pas 一步步地。否定词 pas 也来自它——「一步也不」的强调。"
+    },
+    {
+      "id": "partir",
+      "pos": "v.i.",
+      "gloss": "离开，出发",
+      "note": "拉丁语 partire「分」——出发就是「与大部队分开」。partir de Paris；partir en vacances 去度假。"
+    },
+    {
+      "id": "s'en aller",
+      "pos": "v.pr.",
+      "gloss": "走开，离去",
+      "note": "口语最常用的离开。Je m'en vais. 我走了。Va-t'en ! 走开！"
+    },
+    {
+      "id": "quitter",
+      "pos": "v.t.",
+      "gloss": "离开（某人/某地）",
+      "note": "及物：必须带离开的对象。quitter Paris 离开巴黎；quitter son mari 与丈夫分手。quitus「解脱」。"
+    },
+    {
+      "id": "sortir",
+      "pos": "v.i./v.t.",
+      "gloss": "出去；出门玩",
+      "note": "从内到外的离开。sortir de la pièce 走出房间；sortir avec des amis 和朋友出去玩；sortir avec qn 约会。"
+    },
+    {
+      "id": "filer",
+      "pos": "v.i.",
+      "gloss": "溜走，飞奔而去（口语）",
+      "note": "fil「线」——像线一样顺滑地溜掉。Il faut que je file. 我得溜了。口语 filer qch à qn 是「塞给」。"
+    },
+    {
+      "id": "décamper",
+      "pos": "v.i.",
+      "gloss": "溜之大吉（口语）",
+      "note": "dé- + camp「拆营跑路」。Il a décampé sans payer. 他没付钱就溜了。"
+    },
+    {
+      "id": "déguerpir",
+      "pos": "v.i.",
+      "gloss": "仓皇逃走（口语/诙谐）",
+      "note": "带狼狈、诙谐色彩的开溜。déguerpir de la fête 从聚会上溜之大吉。"
+    },
+    {
+      "id": "échapper",
+      "pos": "v.i./v.pr.",
+      "gloss": "逃脱；溜走",
+      "note": "ex- + cappa（斗篷）——挣脱斗篷溜走。s'échapper de prison 越狱；laisser échapper un mot 说漏嘴。"
+    },
+    {
+      "id": "départ",
+      "pos": "n.m.",
+      "gloss": "出发；起点",
+      "note": "partir 的名词。l'heure du départ 出发时间；au départ 起初（时间起点的比喻）。"
+    },
+    {
+      "id": "repartir",
+      "pos": "v.i.",
+      "gloss": "再出发；重新振作",
+      "note": "re- + partir。repartir à zéro 从头再来；repartir en courage 重拾勇气。"
+    },
+    {
+      "id": "partager",
+      "pos": "v.t.",
+      "gloss": "分享；分担",
+      "note": "和 partir 同根（partire「分」）：partir 是「各自分头」，partager 是「分东西」。partager un repas 分食一餐。"
+    }
+  ],
+  "edges": [
+    {
+      "a": "effondrer",
+      "b": "s'effondrer",
+      "type": "fam",
+      "label": "自反形式"
+    },
+    {
+      "a": "effondrer",
+      "b": "effondré",
+      "type": "drift",
+      "label": "分词 → 比喻义"
+    },
+    {
+      "a": "effondrer",
+      "b": "fond",
+      "type": "fam",
+      "label": "ef- + fond"
+    },
+    {
+      "a": "s'effondrer",
+      "b": "s'écrouler",
+      "type": "syn"
+    },
+    {
+      "a": "s'écrouler",
+      "b": "s'ébouler",
+      "type": "syn",
+      "label": "用于岩土"
+    },
+    {
+      "a": "s'écrouler",
+      "b": "crouler",
+      "type": "fam",
+      "label": "裸词根"
+    },
+    {
+      "a": "s'ébouler",
+      "b": "éboulement",
+      "type": "fam"
+    },
+    {
+      "a": "casser",
+      "b": "s'effondrer",
+      "type": "cause",
+      "label": "导致"
+    },
+    {
+      "a": "démolir",
+      "b": "s'effondrer",
+      "type": "cause"
+    },
+    {
+      "a": "casser",
+      "b": "briser",
+      "type": "axis",
+      "label": "语域：雅"
+    },
+    {
+      "a": "briser",
+      "b": "fracasser",
+      "type": "axis",
+      "label": "程度递增"
+    },
+    {
+      "a": "baisser",
+      "b": "tomber",
+      "type": "axis",
+      "label": "受控 → 失控"
+    },
+    {
+      "a": "tomber",
+      "b": "s'effondrer",
+      "type": "axis",
+      "label": "失控 → 崩解"
+    },
+    {
+      "a": "établir",
+      "b": "effondrer",
+      "type": "ant",
+      "label": "立 ↔ 塌"
+    },
+    {
+      "a": "fondre",
+      "b": "effondrer",
+      "type": "trap",
+      "label": "词源无关！"
+    },
+    {
+      "a": "fondre",
+      "b": "fond",
+      "type": "trap",
+      "label": "形近"
+    },
+    {
+      "a": "fondre",
+      "b": "fondant",
+      "type": "fam",
+      "label": "现在分词"
+    },
+    {
+      "a": "fond",
+      "b": "fonder",
+      "type": "fam"
+    },
+    {
+      "a": "fonder",
+      "b": "fondation",
+      "type": "fam"
+    },
+    {
+      "a": "fonder",
+      "b": "fondateur",
+      "type": "fam"
+    },
+    {
+      "a": "fond",
+      "b": "fondamental",
+      "type": "fam",
+      "label": "经 fondement"
+    },
+    {
+      "a": "fond",
+      "b": "approfondir",
+      "type": "fam",
+      "label": "profond 同族"
+    },
+    {
+      "a": "établir",
+      "b": "établissement",
+      "type": "drift",
+      "label": "动作 → 机构"
+    },
+    {
+      "a": "établir",
+      "b": "rétablir",
+      "type": "fam",
+      "label": "ré- 前缀"
+    },
+    {
+      "a": "fonder",
+      "b": "établir",
+      "type": "syn",
+      "label": "抽象建立"
+    },
+    {
+      "a": "édifier",
+      "b": "édifice",
+      "type": "fam"
+    },
+    {
+      "a": "édifier",
+      "b": "édifiant",
+      "type": "drift",
+      "label": "教化 → 讽刺"
+    },
+    {
+      "a": "bâtir",
+      "b": "bâtiment",
+      "type": "fam"
+    },
+    {
+      "a": "édifice",
+      "b": "bâtiment",
+      "type": "syn",
+      "label": "语域：正式 ↔ 通用"
+    },
+    {
+      "a": "bâtir",
+      "b": "construire",
+      "type": "axis",
+      "label": "具体 → 通用"
+    },
+    {
+      "a": "construire",
+      "b": "édifier",
+      "type": "axis",
+      "label": "通用 → 宏大"
+    },
+    {
+      "a": "édifier",
+      "b": "ériger",
+      "type": "axis",
+      "label": "宏大 → 仪典"
+    },
+    {
+      "a": "ériger",
+      "b": "fonder",
+      "type": "axis",
+      "label": "实物 → 制度"
+    },
+    {
+      "a": "bâtir",
+      "b": "démolir",
+      "type": "ant"
+    },
+    {
+      "a": "construire",
+      "b": "démolir",
+      "type": "ant"
+    },
+    {
+      "a": "demeurer",
+      "b": "demeure",
+      "type": "fam"
+    },
+    {
+      "a": "demeurer",
+      "b": "demeuré",
+      "type": "drift",
+      "label": "停留 → 呆"
+    },
+    {
+      "a": "demeuré",
+      "b": "abruti",
+      "type": "syn"
+    },
+    {
+      "a": "abruti",
+      "b": "abrutir",
+      "type": "fam",
+      "label": "分词"
+    },
+    {
+      "a": "abrutir",
+      "b": "brut",
+      "type": "fam",
+      "label": "词根"
+    },
+    {
+      "a": "demeuré",
+      "b": "bête",
+      "type": "syn"
+    },
+    {
+      "a": "bête",
+      "b": "stupide",
+      "type": "syn"
+    },
+    {
+      "a": "stupide",
+      "b": "débile",
+      "type": "syn",
+      "label": "语域：口语"
+    },
+    {
+      "a": "bête",
+      "b": "niais",
+      "type": "syn"
+    },
+    {
+      "a": "stupide",
+      "b": "borné",
+      "type": "syn"
+    },
+    {
+      "a": "demeure",
+      "b": "édifice",
+      "type": "syn",
+      "label": "语域：文学 ↔ 正式"
+    },
+    {
+      "a": "voir",
+      "b": "regarder",
+      "type": "syn",
+      "label": "看见 ↔ 注视"
+    },
+    {
+      "a": "regarder",
+      "b": "observer",
+      "type": "axis",
+      "label": "随意 → 有目的"
+    },
+    {
+      "a": "observer",
+      "b": "scruter",
+      "type": "axis",
+      "label": "观察 → 搜寻"
+    },
+    {
+      "a": "regarder",
+      "b": "contempler",
+      "type": "axis",
+      "label": "看 → 欣赏"
+    },
+    {
+      "a": "regarder",
+      "b": "surveiller",
+      "type": "axis",
+      "label": "看 → 警惕"
+    },
+    {
+      "a": "surveiller",
+      "b": "guetter",
+      "type": "syn",
+      "label": "监视 ↔ 守候"
+    },
+    {
+      "a": "voir",
+      "b": "apercevoir",
+      "type": "syn",
+      "label": "无意一瞥"
+    },
+    {
+      "a": "apercevoir",
+      "b": "percevoir",
+      "type": "fam",
+      "label": "ap- 前缀"
+    },
+    {
+      "a": "apercevoir",
+      "b": "remarquer",
+      "type": "syn",
+      "label": "瞥见 ↔ 注意到"
+    },
+    {
+      "a": "voir",
+      "b": "entrevoir",
+      "type": "fam",
+      "label": "entre- 前缀"
+    },
+    {
+      "a": "voir",
+      "b": "prévoir",
+      "type": "fam",
+      "label": "pré- 前缀"
+    },
+    {
+      "a": "voir",
+      "b": "revoir",
+      "type": "fam",
+      "label": "re- 前缀"
+    },
+    {
+      "a": "voir",
+      "b": "voire",
+      "type": "trap",
+      "label": "形近"
+    },
+    {
+      "a": "parler",
+      "b": "dire",
+      "type": "syn",
+      "label": "说话 ↔ 说道"
+    },
+    {
+      "a": "parler",
+      "b": "parole",
+      "type": "fam"
+    },
+    {
+      "a": "parler",
+      "b": "bavarder",
+      "type": "axis",
+      "label": "说 → 话多"
+    },
+    {
+      "a": "bavarder",
+      "b": "causer",
+      "type": "syn",
+      "label": "语域：贬 ↔ 口语"
+    },
+    {
+      "a": "parler",
+      "b": "discuter",
+      "type": "axis",
+      "label": "单向 → 双向"
+    },
+    {
+      "a": "discuter",
+      "b": "converser",
+      "type": "syn",
+      "label": "语域：正式"
+    },
+    {
+      "a": "converser",
+      "b": "s'entretenir",
+      "type": "syn",
+      "label": "更正式"
+    },
+    {
+      "a": "parler",
+      "b": "s'exprimer",
+      "type": "syn",
+      "label": "表达自己"
+    },
+    {
+      "a": "dire",
+      "b": "raconter",
+      "type": "axis",
+      "label": "陈述 → 叙事"
+    },
+    {
+      "a": "crier",
+      "b": "parler",
+      "type": "axis",
+      "label": "音量渐弱"
+    },
+    {
+      "a": "parler",
+      "b": "chuchoter",
+      "type": "axis",
+      "label": "音量渐弱"
+    },
+    {
+      "a": "chuchoter",
+      "b": "murmurer",
+      "type": "syn",
+      "label": "耳语 ↔ 呢喃"
+    },
+    {
+      "a": "déclarer",
+      "b": "annoncer",
+      "type": "syn",
+      "label": "宣布"
+    },
+    {
+      "a": "dire",
+      "b": "contredire",
+      "type": "fam",
+      "label": "contre- 前缀"
+    },
+    {
+      "a": "dire",
+      "b": "interdire",
+      "type": "drift",
+      "label": "插话 → 禁止"
+    },
+    {
+      "a": "dire",
+      "b": "prédire",
+      "type": "fam",
+      "label": "pré- 前缀"
+    },
+    {
+      "a": "dire",
+      "b": "redire",
+      "type": "fam",
+      "label": "re- 前缀"
+    },
+    {
+      "a": "marcher",
+      "b": "se promener",
+      "type": "axis",
+      "label": "抵达 → 消遣"
+    },
+    {
+      "a": "se promener",
+      "b": "flâner",
+      "type": "syn",
+      "label": "散步 ↔ 闲逛"
+    },
+    {
+      "a": "flâner",
+      "b": "errer",
+      "type": "axis",
+      "label": "从容 → 迷失"
+    },
+    {
+      "a": "se promener",
+      "b": "déambuler",
+      "type": "syn",
+      "label": "语域：文学"
+    },
+    {
+      "a": "marcher",
+      "b": "randonner",
+      "type": "syn",
+      "label": "徒步运动"
+    },
+    {
+      "a": "marcher",
+      "b": "traîner",
+      "type": "axis",
+      "label": "走 → 拖沓"
+    },
+    {
+      "a": "marcher",
+      "b": "cheminer",
+      "type": "syn",
+      "label": "语域：文学"
+    },
+    {
+      "a": "marcher",
+      "b": "marche",
+      "type": "fam"
+    },
+    {
+      "a": "marcher",
+      "b": "démarche",
+      "type": "drift",
+      "label": "步态 → 举措"
+    },
+    {
+      "a": "marcher",
+      "b": "marché",
+      "type": "trap",
+      "label": "词源无关！"
+    },
+    {
+      "a": "marché",
+      "b": "marchand",
+      "type": "fam"
+    },
+    {
+      "a": "marcher",
+      "b": "pas",
+      "type": "syn",
+      "label": "走 ↔ 脚步"
+    },
+    {
+      "a": "partir",
+      "b": "s'en aller",
+      "type": "syn",
+      "label": "语域：口语"
+    },
+    {
+      "a": "partir",
+      "b": "quitter",
+      "type": "syn",
+      "label": "不及物 ↔ 及物"
+    },
+    {
+      "a": "partir",
+      "b": "sortir",
+      "type": "syn",
+      "label": "从内到外"
+    },
+    {
+      "a": "partir",
+      "b": "filer",
+      "type": "axis",
+      "label": "走 → 溜"
+    },
+    {
+      "a": "filer",
+      "b": "décamper",
+      "type": "syn",
+      "label": "溜走"
+    },
+    {
+      "a": "décamper",
+      "b": "déguerpir",
+      "type": "axis",
+      "label": "溜 → 狼狈逃"
+    },
+    {
+      "a": "partir",
+      "b": "échapper",
+      "type": "syn",
+      "label": "逃脱"
+    },
+    {
+      "a": "partir",
+      "b": "départ",
+      "type": "fam"
+    },
+    {
+      "a": "partir",
+      "b": "repartir",
+      "type": "fam",
+      "label": "re- 前缀"
+    },
+    {
+      "a": "partir",
+      "b": "partager",
+      "type": "drift",
+      "label": "同源「分」"
+    }
+  ],
+  "edgeTypes": {
+    "syn": {
+      "name": "近义",
+      "color": "#9ca3af",
+      "dash": null,
+      "arrow": false
+    },
+    "axis": {
+      "name": "程度 · 渐变轴",
+      "color": "#d97706",
+      "dash": null,
+      "arrow": true
+    },
+    "fam": {
+      "name": "派生 · 义顺",
+      "color": "#2563eb",
+      "dash": null,
+      "arrow": false
+    },
+    "drift": {
+      "name": "派生 · 义漂移",
+      "color": "#2563eb",
+      "dash": "6 4",
+      "arrow": false
+    },
+    "trap": {
+      "name": "形近陷阱",
+      "color": "#e11d48",
+      "dash": null,
+      "arrow": false
+    },
+    "ant": {
+      "name": "反义",
+      "color": "#059669",
+      "dash": "7 4",
+      "arrow": false
+    },
+    "cause": {
+      "name": "因果",
+      "color": "#737373",
+      "dash": null,
+      "arrow": true
+    }
+  }
+}
