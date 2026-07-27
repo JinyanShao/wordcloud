@@ -164,20 +164,41 @@ def main() -> None:
         WHERE s.source_id='demonette_2' AND a.pos=b.pos
         """
     ).fetchone()[0]
+    demonette_invalid_same_pos = conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM official_edge_sources s
+        JOIN official_edges e ON e.id=s.edge_id
+        JOIN lexemes a ON a.id=e.a_id
+        JOIN lexemes b ON b.id=e.b_id
+        WHERE s.source_id='demonette_2' AND a.pos=b.pos
+          AND (
+            e.subtype NOT IN ('prefixation','suffixation')
+            OR json_extract(s.source_record, '$.complexity')!='simple'
+            OR json_extract(s.source_record, '$.orientation')!='as2des'
+          )
+        """
+    ).fetchone()[0]
     demonette_report = ROOT / "data" / "processed" / "demonette-analysis.json"
     report_gate = False
     if demonette_report.exists():
         report_gate = bool(json.loads(demonette_report.read_text(encoding="utf-8"))["meta"]["gate_passed"])
     check(
-        "Démonette 跨词性派生通过质量门",
-        report_gate and demonette_candidates >= 100 and demonette_candidates == demonette_official and demonette_same_pos == 0,
-        f"gate={report_gate}, candidates={demonette_candidates:,}, sourced_official={demonette_official:,}, same_pos={demonette_same_pos}",
+        "Démonette 直接派生通过质量门",
+        report_gate
+        and demonette_candidates >= 1_500
+        and demonette_candidates == demonette_official
+        and demonette_same_pos >= 100
+        and demonette_invalid_same_pos == 0,
+        f"gate={report_gate}, candidates={demonette_candidates:,}, sourced_official={demonette_official:,}, "
+        f"same_pos={demonette_same_pos}, invalid_same_pos={demonette_invalid_same_pos}",
     )
 
     pair_regressions = {}
     for left, left_pos, right, right_pos in (
         ("affirmer", "VER", "affirmation", "NOM"),
         ("voir", "VER", "vision", "NOM"),
+        ("poli", "ADJ", "impoli", "ADJ"),
     ):
         count = conn.execute(
             """
@@ -194,9 +215,100 @@ def main() -> None:
         ).fetchone()[0]
         pair_regressions[f"{left}↔{right}"] = count
     check(
-        "核心跨词性词族回归",
+        "核心词族回归",
         all(count == 1 for count in pair_regressions.values()),
         ", ".join(f"{pair}={count}" for pair, count in pair_regressions.items()),
+    )
+
+    dbnary_candidates = conn.execute(
+        "SELECT COUNT(*) FROM edge_candidates WHERE source_id='dbnary_fr' AND signal='semantic' AND status='sourced'"
+    ).fetchone()[0]
+    dbnary_official = conn.execute(
+        "SELECT COUNT(*) FROM official_edge_sources WHERE source_id='dbnary_fr'"
+    ).fetchone()[0]
+    dbnary_semantic_layout = conn.execute(
+        "SELECT COUNT(*) FROM layout_links WHERE signal='semantic'"
+    ).fetchone()[0]
+    cfdict_semantic_candidates = conn.execute(
+        "SELECT COUNT(*) FROM edge_candidates WHERE source_id='cfdict_reverse_local' AND signal='semantic' AND status='candidate'"
+    ).fetchone()[0]
+    dbnary_contradictions = conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM official_edges syn
+        JOIN official_edge_sources ss ON ss.edge_id=syn.id AND ss.source_id='dbnary_fr'
+        JOIN official_edges ant ON ant.a_id=syn.a_id AND ant.b_id=syn.b_id AND ant.relation='ant'
+        JOIN official_edge_sources sa ON sa.edge_id=ant.id AND sa.source_id='dbnary_fr'
+        WHERE syn.relation='syn'
+        """
+    ).fetchone()[0]
+    entry_count, sense_count, sense_lexemes = conn.execute(
+        """
+        SELECT
+          (SELECT COUNT(*) FROM lexical_entries),
+          (SELECT COUNT(*) FROM lexeme_senses),
+          (SELECT COUNT(DISTINCT lexeme_id) FROM lexeme_senses)
+        """
+    ).fetchone()
+    dbnary_report = ROOT / "data" / "processed" / "dbnary-analysis.json"
+    dbnary_gate = False
+    if dbnary_report.exists():
+        dbnary_gate = bool(json.loads(dbnary_report.read_text(encoding="utf-8"))["meta"]["gate_passed"])
+    check(
+        "DBnary 义项与语义关系通过质量门",
+        dbnary_gate
+        and entry_count >= 7_000
+        and sense_count >= 30_000
+        and sense_lexemes >= 7_000
+        and dbnary_candidates >= 2_500
+        and dbnary_candidates == dbnary_official == dbnary_semantic_layout
+        and dbnary_contradictions == 0,
+        f"gate={dbnary_gate}, entries={entry_count:,}, definitions={sense_count:,}, sense_lexemes={sense_lexemes:,}, "
+        f"semantic={dbnary_candidates:,}/{dbnary_official:,}/{dbnary_semantic_layout:,}, contradictions={dbnary_contradictions}",
+    )
+    check(
+        "中文释义相似只保留为候选",
+        cfdict_semantic_candidates > 0 and dbnary_semantic_layout == dbnary_official,
+        f"CFDICT candidates={cfdict_semantic_candidates:,}; visible semantic layout={dbnary_semantic_layout:,} (DBnary only)",
+    )
+
+    semantic_regressions = {}
+    for left, right, relation, expected in (
+        ("poli", "respectueux", "syn", 1),
+        ("poli", "impoli", "ant", 1),
+        ("seau", "nager", "syn", 0),
+    ):
+        count = conn.execute(
+            """
+            SELECT COUNT(*)
+            FROM official_edges e
+            JOIN official_edge_sources s ON s.edge_id=e.id AND s.source_id='dbnary_fr'
+            JOIN lexemes a ON a.id=e.a_id
+            JOIN lexemes b ON b.id=e.b_id
+            WHERE e.relation=?
+              AND ((a.normalized=? AND b.normalized=?) OR (a.normalized=? AND b.normalized=?))
+            """,
+            (relation, left, right, right, left),
+        ).fetchone()[0]
+        semantic_regressions[f"{left}↔{right} {relation}"] = (count, expected)
+    poli_entries, poli_senses = conn.execute(
+        """
+        SELECT
+          COUNT(DISTINCT le.id),
+          COUNT(DISTINCT ls.id)
+        FROM lexemes l
+        JOIN lexical_entries le ON le.lexeme_id=l.id
+        JOIN lexeme_senses ls ON ls.entry_id=le.id
+        WHERE l.normalized='poli' AND l.pos='ADJ'
+        """
+    ).fetchone()
+    check(
+        "语义样例与多义词回归",
+        all(count == expected for count, expected in semantic_regressions.values())
+        and poli_entries >= 2
+        and poli_senses >= 4,
+        ", ".join(f"{pair}={count} (expected {expected})" for pair, (count, expected) in semantic_regressions.items())
+        + f", poli entries/senses={poli_entries}/{poli_senses}",
     )
 
     eligible = conn.execute("SELECT COUNT(*) FROM lexemes WHERE status='eligible'").fetchone()[0]

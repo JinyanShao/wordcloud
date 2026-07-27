@@ -18,14 +18,15 @@
 
   const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
   const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "派生", drift: "语义漂移", trap: "易混", ant: "反义", cause: "因果" };
-  const RELATION_ORDER = ["fam", "syn", "compare", "drift", "ant", "cause", "trap", "personal"];
+  const RELATION_ORDER = ["syn", "ant", "compare", "drift", "cause", "trap", "fam", "personal"];
+  const FOCUS_LIMITS = { syn: 5, ant: 4, compare: 3, drift: 3, cause: 3, trap: 3, fam: 6, personal: 3 };
   const RELATION_STYLE = {
     syn: { color: "#7b8188", dash: [], arrow: false },
     compare: { color: "#c07a22", dash: [], arrow: true },
     fam: { color: "#3477b8", dash: [], arrow: false },
-    drift: { color: "#7859a6", dash: [7, 5], arrow: false },
+    drift: { color: "#7859a6", dash: [], arrow: false },
     trap: { color: "#c7465d", dash: [], arrow: false },
-    ant: { color: "#278867", dash: [8, 5], arrow: false },
+    ant: { color: "#278867", dash: [], arrow: false },
     cause: { color: "#6f647d", dash: [], arrow: true },
     personal: { color: "#b96d22", dash: [2, 5], arrow: false },
     satellite: { color: "#a8a69f", dash: [], arrow: false },
@@ -219,28 +220,58 @@
       }));
   }
 
+  function strongFormFor(id) {
+    const officialPairs = new Set((officialAdj.get(id) || []).map((edge) => pairKey(id, edge.other)));
+    return (layoutAdj.get(id) || [])
+      .filter((edge) => (edge.mask & 4) && (edge.mask & 8) && edge.weight >= .76 && !officialPairs.has(pairKey(id, edge.other)))
+      .filter((edge) => nodeById.get(edge.other)?.word !== nodeById.get(id)?.word)
+      .map((edge) => ({
+        ...edge, a: id, b: edge.other, other: edge.other, relation: "trap", label: "形音相近", kind: "form", review: "candidate",
+      }));
+  }
+
+  function relationRank(edge) {
+    const rank = RELATION_ORDER.indexOf(edge.relation);
+    return rank < 0 ? RELATION_ORDER.length : rank;
+  }
+
   function connectionsFor(id, limit = 16) {
     const byNeighbor = new Map();
-    const candidates = [
-      ...(officialAdj.get(id) || []).map((edge) => ({ ...edge, kind: "official" })),
-      ...personalFor(id),
-      ...strongStructuralFor(id),
-    ];
-    const priority = { official: 3, personal: 2, structural: 1 };
+    const officialByNeighbor = new Map();
+    for (const edge of officialAdj.get(id) || []) {
+      if (!officialByNeighbor.has(edge.other)) officialByNeighbor.set(edge.other, []);
+      officialByNeighbor.get(edge.other).push({ ...edge, kind: "official" });
+    }
+    for (const [other, relations] of officialByNeighbor) {
+      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(b.review === "reviewed") - Number(a.review === "reviewed"));
+      byNeighbor.set(other, { ...relations[0], relations });
+    }
+    const candidates = [...personalFor(id), ...strongFormFor(id), ...strongStructuralFor(id)];
+    const priority = { official: 4, personal: 3, form: 2, structural: 1 };
     for (const edge of candidates) {
       if (!nodeById.has(edge.other) || edge.other === id) continue;
       const existing = byNeighbor.get(edge.other);
       if (!existing || priority[edge.kind] > priority[existing.kind]) byNeighbor.set(edge.other, edge);
     }
-    return [...byNeighbor.values()]
+    const ordered = [...byNeighbor.values()]
       .sort((a, b) => {
         const pa = priority[a.kind], pb = priority[b.kind];
         if (pa !== pb) return pb - pa;
-        const ra = RELATION_ORDER.indexOf(a.relation), rb = RELATION_ORDER.indexOf(b.relation);
+        const ra = relationRank(a), rb = relationRank(b);
         if (ra !== rb) return ra - rb;
         return (nodeById.get(a.other)?.word || "").localeCompare(nodeById.get(b.other)?.word || "", "fr");
-      })
-      .slice(0, limit);
+      });
+    const counts = new Map();
+    const selected = [];
+    for (const edge of ordered) {
+      const key = edge.kind === "official" ? edge.relation : edge.kind;
+      const relationLimit = edge.kind === "official" ? (FOCUS_LIMITS[edge.relation] || 3) : edge.kind === "form" ? 2 : 3;
+      if ((counts.get(key) || 0) >= relationLimit) continue;
+      counts.set(key, (counts.get(key) || 0) + 1);
+      selected.push(edge);
+      if (selected.length >= limit) break;
+    }
+    return selected;
   }
 
   function focusScaleFor(count) {
@@ -288,7 +319,7 @@
     node.targetX = center.x; node.targetY = center.y;
     node.targetAlpha = 1; node.focusRole = "center"; node.focusColor = "#171816";
 
-    if (focusConnections.length <= 8) {
+    if (focusConnections.length <= 10) {
       positionRing(focusConnections, center, 215 / focusScale);
     } else {
       const split = Math.ceil(focusConnections.length / 2);
@@ -308,12 +339,14 @@
         if (satelliteIndex >= 16) break;
         const parent = nodeById.get(parentConnection.other);
         const satellites = connectionsFor(parent.id, 8)
-          .filter((edge) => !directIds.has(edge.other) && !usedSatellites.has(edge.other))
+          .filter((edge) => !directIds.has(String(edge.other))
+            && nodeById.get(String(edge.other))?.focusRole === "background"
+            && !usedSatellites.has(String(edge.other)))
           .slice(0, 2);
         satellites.forEach((edge, localIndex) => {
           if (satelliteIndex >= 16) return;
-          usedSatellites.add(edge.other);
-          const satellite = nodeById.get(edge.other);
+          usedSatellites.add(String(edge.other));
+          const satellite = nodeById.get(String(edge.other));
           const branchSpread = satellites.length > 1 ? .68 : 0;
           const angle = parent._focusAngle + (localIndex - (satellites.length - 1) / 2) * branchSpread;
           satellite.targetX = parent.targetX + Math.cos(angle) * 84 / focusScale;
@@ -351,6 +384,7 @@
     if (edge.satellite) return { ...RELATION_STYLE.satellite, alpha: .34, label: "" };
     if (edge.kind === "personal") return { ...RELATION_STYLE.personal, alpha: .88, label: edge.label || "我的联想" };
     if (edge.kind === "structural") return { ...RELATION_STYLE.fam, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
+    if (edge.kind === "form") return { ...RELATION_STYLE.trap, dash: [3, 5], alpha: .58, label: `${edge.label || "形音相近"} · 候选` };
     const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.syn;
     const rawLabel = edge.label || edge.relation || "已审校";
     return { ...style, alpha: .95, label: RELATION_NAMES[rawLabel] || rawLabel };
@@ -642,21 +676,51 @@
     return `<button class="relation-item ${edge.kind}" style="--relation-color:${visual.color}" data-node="${escapeHtml(node.id)}"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(visual.label)}</small></button>`;
   }
 
+  function renderSenseGroups(node) {
+    const groups = GRAPH_SENSES[node.id] || [];
+    if (!groups.length) return "";
+    const flattened = groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
+    const renderItems = (items) => items.map((sense) => `
+      <li><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><p>${escapeHtml(sense.definition)}</p></li>
+    `).join("");
+    const visible = flattened.slice(0, 5);
+    const hidden = flattened.slice(5);
+    const sourceUrl = groups[0]?.sourceUrl;
+    return `<section class="panel-section sense-section">
+      <h3>法语义项 · ${flattened.length}</h3>
+      <ol class="sense-list">${renderItems(visible)}</ol>
+      ${hidden.length ? `<details class="sense-more"><summary>查看其余 ${hidden.length} 个义项</summary><ol class="sense-list continued">${renderItems(hidden)}</ol></details>` : ""}
+      ${sourceUrl ? `<a class="sense-source" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Wiktionnaire 来源 ↗</a>` : ""}
+    </section>`;
+  }
+
   function renderPanel(node) {
-    const official = (officialAdj.get(node.id) || []).map((edge) => ({ edge: { ...edge, kind: "official" }, node: nodeById.get(edge.other) })).filter((item) => item.node);
+    const official = (officialAdj.get(node.id) || [])
+      .map((edge) => ({ edge: { ...edge, kind: "official" }, node: nodeById.get(edge.other) }))
+      .filter((item) => item.node)
+      .sort((a, b) => relationRank(a.edge) - relationRank(b.edge)
+        || Number(b.edge.review === "reviewed") - Number(a.edge.review === "reviewed")
+        || a.node.word.localeCompare(b.node.word, "fr"));
+    const reviewed = official.filter((item) => item.edge.review === "reviewed");
+    const sourced = official.filter((item) => item.edge.review !== "reviewed");
     const mine = personalFor(node.id).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
     const officialIds = new Set(official.map((item) => item.node.id));
+    const form = strongFormFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 8);
+    const formIds = new Set(form.map((item) => item.node.id));
     const structural = strongStructuralFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 16);
-    const nearby = (layoutAdj.get(node.id) || []).filter((edge) => !officialIds.has(edge.other) && !(edge.mask & 2))
+    const nearby = (layoutAdj.get(node.id) || []).filter((edge) => !officialIds.has(edge.other) && !formIds.has(edge.other) && !(edge.mask & 2))
       .sort((a, b) => b.weight - a.weight).slice(0, 5).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
     const badge = node.personal ? "我的词" : node.status === "eligible" ? `${node.level} 主词表` : "官方关系支撑词";
     panelContent.innerHTML = `
       <h1 class="word-title">${escapeHtml(node.word)}</h1>
       <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
-      <p class="word-gloss">${escapeHtml(node.gloss || "暂无中文提示")}</p>
+      <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
-      ${official.length ? `<section class="panel-section"><h3>已审校关系 · ${official.length}</h3><div class="relation-list">${official.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${renderSenseGroups(node)}
+      ${reviewed.length ? `<section class="panel-section"><h3>人工审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${form.length ? `<section class="panel-section"><h3>形音线索 · 自动候选</h3><p class="candidate-note">只显示同时形似且音近的少量词，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${structural.length ? `<section class="panel-section"><h3>构词线索 · 待核准</h3><p class="candidate-note">来自 Lexique 形态结构，只在图中以蓝色虚线显示，不等同于已审校教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
     `;
@@ -681,9 +745,12 @@
       $("#stats").textContent = `${GRAPH_META.eligible_count.toLocaleString()} 主词 · ${GRAPH_META.support_node_count} 支撑词 · ${GRAPH_META.edge_count.toLocaleString()} 词群线索`;
       return;
     }
-    const officialCount = focusConnections.filter((edge) => edge.kind === "official").length;
+    const officialCount = focusConnections
+      .filter((edge) => edge.kind === "official")
+      .reduce((total, edge) => total + (edge.relations?.length || 1), 0);
     const structuralCount = focusConnections.filter((edge) => edge.kind === "structural").length;
-    $("#stats").textContent = `${focusConnections.length} 条可见关系 · ${officialCount} 已审校 · ${structuralCount} 构词线索`;
+    const formCount = focusConnections.filter((edge) => edge.kind === "form").length;
+    $("#stats").textContent = `${focusConnections.length} 个相关词 · ${officialCount} 条正式关系 · ${formCount + structuralCount} 自动线索`;
   }
 
   function showTooltip(node, event) {

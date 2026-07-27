@@ -20,6 +20,7 @@ DB_PATH = ROOT / "data" / "processed" / "maillage.sqlite"
 GRAPH_INPUT = ROOT / "data" / "processed" / "graph-input.json"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
 DEMONETTE_APPROVED_PATH = ROOT / "data" / "processed" / "demonette-approved.json"
+DBNARY_APPROVED_PATH = ROOT / "data" / "processed" / "dbnary-approved.json"
 CREATED_AT = "2026-07-27T00:00:00Z"
 
 SIGNAL_CONFIG = {
@@ -252,10 +253,30 @@ def demonette_edges(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
         a_id, b_id = int(edge["a_id"]), int(edge["b_id"])
         if a_id not in by_id or b_id not in by_id:
             raise SystemExit(f"Démonette edge endpoint drift: {a_id}, {b_id}")
-        if by_id[a_id]["pos"] == by_id[b_id]["pos"]:
-            raise SystemExit(f"Démonette v1 edge is not cross-POS: {a_id}, {b_id}")
+        if by_id[a_id]["pos"] == by_id[b_id]["pos"] and not (
+            edge.get("complexity") == "simple" and edge.get("subtype") in {"prefixation", "suffixation"}
+        ):
+            raise SystemExit(f"Démonette same-POS edge is outside the approved simple-affix scope: {a_id}, {b_id}")
         result.append(edge)
     return result
+
+
+def dbnary_payload(nodes: list[sqlite3.Row]) -> dict[str, object]:
+    if not DBNARY_APPROVED_PATH.exists():
+        return {"entries": [], "senses": [], "edges": []}
+    payload = json.loads(DBNARY_APPROVED_PATH.read_text(encoding="utf-8"))
+    if not payload.get("meta", {}).get("gate_passed"):
+        raise SystemExit("DBnary approved payload does not carry a passing quality gate")
+    by_id = {int(row["id"]): row for row in nodes}
+    for edge in payload.get("edges", []):
+        a_id, b_id = int(edge["a_id"]), int(edge["b_id"])
+        if a_id not in by_id or b_id not in by_id:
+            raise SystemExit(f"DBnary edge endpoint drift: {a_id}, {b_id}")
+        if by_id[a_id]["pos"] != by_id[b_id]["pos"]:
+            raise SystemExit(f"DBnary semantic relation crossed POS unexpectedly: {a_id}, {b_id}")
+        if edge.get("relation") not in {"syn", "ant"}:
+            raise SystemExit(f"DBnary relation outside approved scope: {edge.get('relation')}")
+    return payload
 
 
 def main() -> None:
@@ -291,11 +312,12 @@ def main() -> None:
     conn.execute("DELETE FROM edge_candidates")
     conn.execute("DELETE FROM layout_links")
     conn.execute("DELETE FROM positions")
+    conn.execute("DELETE FROM lexeme_senses")
+    conn.execute("DELETE FROM lexical_entries")
 
     layouts: dict[str, list[tuple[int, int, float]]] = {}
     fallback_edges: list[tuple[int, int, float, str]] = []
     feature_builders = {
-        "semantic": lambda row: semantic_features(row["gloss_zh"]),
         "spelling": lambda row: spelling_features(row["lemma"]),
         "phonetic": lambda row: phonetic_features(row["phonetic_ipa"]),
     }
@@ -308,6 +330,17 @@ def main() -> None:
         edges = mutual_edges(directed)
         layouts[signal] = edges
         fallback_edges.extend((a, b, score, signal) for a, b, score in fallback)
+
+    # CFDICT gloss overlap remains auditable as a candidate only. It no longer
+    # determines global geometry or the learner-visible focus graph.
+    gloss_features = {row["id"]: semantic_features(row["gloss_zh"]) for row in nodes}
+    gloss_directed, _ = sparse_neighbors(
+        gloss_features,
+        k=SIGNAL_CONFIG["semantic"]["k"],
+        threshold=SIGNAL_CONFIG["semantic"]["threshold"],
+        max_df=SIGNAL_CONFIG["semantic"]["max_df"],
+    )
+    gloss_candidate_edges = mutual_edges(gloss_directed)
 
     by_lemma: dict[str, list[int]] = defaultdict(list)
     for row in nodes:
@@ -343,6 +376,12 @@ def main() -> None:
         for edge in sourced_derivations
     ]
 
+    sourced_semantics = dbnary_payload(nodes)
+    layouts["semantic"] = [
+        (int(edge["a_id"]), int(edge["b_id"]), float(edge["weight"]))
+        for edge in sourced_semantics.get("edges", [])
+    ]
+
     editorial_layout, official = seed_edges(nodes)
     layouts["editorial_seed"] = editorial_layout
 
@@ -353,7 +392,7 @@ def main() -> None:
             if a not in id_set or b not in id_set:
                 continue
             layout_rows.append((a, b, signal, weight, "{}", CREATED_AT))
-            if signal in {"semantic", "morphology", "spelling", "phonetic"}:
+            if signal in {"morphology", "spelling", "phonetic"}:
                 source = SIGNAL_CONFIG.get(signal, {}).get("source", "lexique_400")
                 candidate_rows.append(
                     (
@@ -362,6 +401,9 @@ def main() -> None:
                         "candidate", CREATED_AT,
                     )
                 )
+    sourced_semantic_pairs = {
+        (int(edge["a_id"]), int(edge["b_id"])) for edge in sourced_semantics.get("edges", [])
+    }
     conn.executemany(
         """
         INSERT OR IGNORE INTO edge_candidates(
@@ -369,6 +411,22 @@ def main() -> None:
         ) VALUES(?,?,?,?,?,?,?,?,?)
         """,
         candidate_rows,
+    )
+    conn.executemany(
+        """
+        INSERT OR IGNORE INTO edge_candidates(
+          a_id,b_id,relation,signal,weight,source_id,details_json,status,created_at
+        ) VALUES(?,?,?,?,?,?,?,?,?)
+        """,
+        [
+            (
+                a, b, "syn", "semantic", weight, "cfdict_reverse_local",
+                json.dumps({"generator": "cfdict_gloss_overlap_candidate_only"}),
+                "candidate", CREATED_AT,
+            )
+            for a, b, weight in gloss_candidate_edges
+            if (a, b) not in sourced_semantic_pairs
+        ],
     )
     conn.executemany("INSERT OR IGNORE INTO layout_links VALUES(?,?,?,?,?,?)", layout_rows)
 
@@ -391,6 +449,54 @@ def main() -> None:
                 "sourced", CREATED_AT,
             )
             for edge in sourced_derivations
+        ],
+    )
+
+    conn.executemany(
+        """
+        INSERT OR IGNORE INTO edge_candidates(
+          a_id,b_id,relation,signal,weight,source_id,details_json,status,created_at
+        ) VALUES(?,?,?,?,?,?,?,?,?)
+        """,
+        [
+            (
+                int(edge["a_id"]), int(edge["b_id"]), edge["relation"], "semantic",
+                float(edge["weight"]), "dbnary_fr",
+                json.dumps({
+                    "generator": "dbnary_explicit_lexical_relation",
+                    "subtype": edge["subtype"],
+                    "source_entries": edge["source_entry_ids"],
+                    "predicates": edge["source_predicates"],
+                }, ensure_ascii=False),
+                "sourced", CREATED_AT,
+            )
+            for edge in sourced_semantics.get("edges", [])
+        ],
+    )
+
+    conn.executemany(
+        "INSERT INTO lexical_entries(id,lexeme_id,entry_rank,source_id,source_url) VALUES(?,?,?,?,?)",
+        [
+            (
+                entry["id"], int(entry["lexeme_id"]), int(entry["entry_rank"]),
+                "dbnary_fr", entry["source_url"],
+            )
+            for entry in sourced_semantics.get("entries", [])
+        ],
+    )
+    conn.executemany(
+        """
+        INSERT INTO lexeme_senses(
+          id,entry_id,lexeme_id,sense_number,definition_fr,examples_json,source_id
+        ) VALUES(?,?,?,?,?,?,?)
+        """,
+        [
+            (
+                sense["id"], sense["entry_id"], int(sense["lexeme_id"]),
+                str(sense["sense_number"]), sense["definition_fr"],
+                json.dumps(sense.get("examples", []), ensure_ascii=False), "dbnary_fr",
+            )
+            for sense in sourced_semantics.get("senses", [])
         ],
     )
 
@@ -457,11 +563,59 @@ def main() -> None:
             ),
         )
 
+    for item in sourced_semantics.get("edges", []):
+        a_id, b_id = int(item["a_id"]), int(item["b_id"])
+        existing = conn.execute(
+            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation=? ORDER BY review_status='reviewed' DESC, id LIMIT 1",
+            (a_id, b_id, item["relation"]),
+        ).fetchone()
+        if existing:
+            edge_id = existing["id"]
+        else:
+            explanation = (
+                "Wiktionnaire 通过 DBnary 明示标注的近义关系。"
+                if item["relation"] == "syn"
+                else "Wiktionnaire 通过 DBnary 明示标注的反义关系。"
+            )
+            cursor = conn.execute(
+                """
+                INSERT INTO official_edges(
+                  a_id,b_id,relation,dimension,subtype,direction,label,explanation,
+                  examples_json,confidence,review_status,reviewed_at,created_at
+                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
+                """,
+                (
+                    a_id, b_id, item["relation"], "lexical_semantics", item["subtype"],
+                    None, item["label"], explanation, "[]", float(item["confidence"]),
+                    "sourced", None, CREATED_AT,
+                ),
+            )
+            edge_id = cursor.lastrowid
+        conn.execute(
+            "INSERT OR IGNORE INTO official_edge_sources(edge_id,source_id,source_record) VALUES(?,?,?)",
+            (
+                edge_id, "dbnary_fr",
+                json.dumps({
+                    "entries": item["source_entry_ids"],
+                    "predicates": item["source_predicates"],
+                }, ensure_ascii=False),
+            ),
+        )
+
     if DEMONETTE_APPROVED_PATH.exists():
         approved_payload = json.loads(DEMONETTE_APPROVED_PATH.read_text(encoding="utf-8"))
         import_summary = {key: value for key, value in approved_payload.items() if key != "edges"}
         conn.execute(
             "INSERT OR REPLACE INTO build_metadata(key,value) VALUES('demonette_import_summary',?)",
+            (json.dumps(import_summary, ensure_ascii=False, separators=(",", ":")),),
+        )
+    if DBNARY_APPROVED_PATH.exists():
+        import_summary = {
+            key: value for key, value in sourced_semantics.items()
+            if key not in {"entries", "senses", "edges"}
+        }
+        conn.execute(
+            "INSERT OR REPLACE INTO build_metadata(key,value) VALUES('dbnary_import_summary',?)",
             (json.dumps(import_summary, ensure_ascii=False, separators=(",", ":")),),
         )
 
