@@ -24,8 +24,11 @@
     <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
     <div class="map-copy" id="map-copy">
       <p>滚轮缩放 · 拖动画布 · 点击节点</p>
-      <strong>先看见结构，再看见词。</strong>
     </div>
+    <nav id="focus-bar" class="focus-bar hidden" aria-label="探索路径">
+      <button id="focus-back" type="button" aria-label="返回全图" title="返回全图">←</button>
+      <div id="trail"></div>
+    </nav>
     <div id="tooltip" class="tooltip hidden"></div>
     <div id="stats" class="stats"></div>
 
@@ -37,6 +40,17 @@
         <p><i class="line personal"></i><span>我的词与关系</span></p>
         <p class="source">FLELex · Lexique 4 · CFDICT<br>当前数据仅用于非商业原型</p>
       </div>
+    </aside>
+
+    <aside id="focus-legend" class="focus-legend hidden" aria-label="关系颜色图例">
+      <span><i style="--c:#7b8188"></i>近义</span>
+      <span><i style="--c:#3477b8"></i>派生</span>
+      <span><i style="--c:#c07a22"></i>对比</span>
+      <span><i style="--c:#7859a6"></i>漂移</span>
+      <span><i style="--c:#c7465d"></i>易混</span>
+      <span><i style="--c:#278867"></i>反义</span>
+      <span><i style="--c:#6f647d"></i>因果</span>
+      <small>虚线＝待核准</small>
     </aside>
 
     <aside id="panel" class="panel hidden" aria-live="polite">
