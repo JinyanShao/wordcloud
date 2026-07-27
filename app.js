@@ -240,12 +240,13 @@ function enterFocus(id, fromTrail) {
   if (!visitedOrder.includes(id)) visitedOrder.push(id);
   renderHistory();
 
+  const fromNebula = mode === "nebula";
   mode = "focus";
   focusId = id;
   hint.classList.add("gone");
 
-  // 冻结星云的此刻位置，作为退出后的归处
-  nodes.forEach((m) => { m.home.x = m.x; m.home.y = m.y; });
+  // 只有从星云进入时才更新"归处"；聚焦间游走时保留原星云位置，否则旁观者会滞留在旧中心周围
+  if (fromNebula) nodes.forEach((m) => { m.home.x = m.x; m.home.y = m.y; });
 
   // 中心词定在原位，邻居按关系类型排序后均匀辐散
   const cx = n.x, cy = n.y;
@@ -289,10 +290,12 @@ function enterFocus(id, fromTrail) {
     });
   });
 
-  // 状态：pillT / dim 目标
+  // 状态：pillT / dim 目标；非参与者退回星云原位
   nodes.forEach((m) => {
+    const participant = inEgo.has(m.id) || satelliteParent.has(m.id);
     m.pillTarget = inEgo.has(m.id) ? 1 : 0;
     m.dimTarget = inEgo.has(m.id) ? 1 : satelliteParent.has(m.id) ? 0.6 : 0.14;
+    if (!participant) { m.tx = m.home.x; m.ty = m.home.y; }
   });
 
   syncEdges();
@@ -345,6 +348,13 @@ function edgeWanted(e) {
 
 function syncEdges() {
   const now = performance.now();
+  // 全量重建：边的角色（辐条/发线）在焦点切换时会变，重建保证样式与角色一致
+  EDGES.forEach((e) => {
+    if (e.el) { e.el.remove(); e.el = null; }
+    if (e.chipEl) { e.chipEl.remove(); e.chipEl = null; }
+    if (e.markEl) { e.markEl.remove(); e.markEl = null; }
+    e.p = 0; e.targetP = 0; e.delay = 0;
+  });
   let i = 0;
   EDGES.forEach((e) => {
     if (edgeWanted(e) && !e.el) {
