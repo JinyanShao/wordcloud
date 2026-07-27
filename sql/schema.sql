@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS official_edge_sources (
 CREATE TABLE IF NOT EXISTS layout_links (
   a_id INTEGER NOT NULL REFERENCES lexemes(id),
   b_id INTEGER NOT NULL REFERENCES lexemes(id),
-  signal TEXT NOT NULL CHECK (signal IN ('semantic', 'derivation', 'spelling', 'phonetic', 'editorial_seed', 'skeleton')),
+  signal TEXT NOT NULL CHECK (signal IN ('semantic', 'derivation', 'morphology', 'spelling', 'phonetic', 'editorial_seed', 'skeleton')),
   weight REAL NOT NULL CHECK (weight >= 0 AND weight <= 1),
   details_json TEXT NOT NULL DEFAULT '{}',
   created_at TEXT NOT NULL,

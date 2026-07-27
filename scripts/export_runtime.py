@@ -22,6 +22,7 @@ SIGNAL_BITS = {
     "phonetic": 8,
     "editorial_seed": 16,
     "skeleton": 32,
+    "morphology": 64,
 }
 
 

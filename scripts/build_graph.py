@@ -186,7 +186,7 @@ class UnionFind:
 
 
 def relation_candidate(signal: str) -> str:
-    return {"semantic": "syn", "derivation": "fam", "spelling": "trap", "phonetic": "trap"}[signal]
+    return {"semantic": "syn", "morphology": "fam", "spelling": "trap", "phonetic": "trap"}[signal]
 
 
 def pos_from_seed(value: str) -> str | None:
@@ -293,7 +293,7 @@ def main() -> None:
     by_lemma: dict[str, list[int]] = defaultdict(list)
     for row in nodes:
         by_lemma[row["normalized"]].append(row["id"])
-    derivation_weights: dict[tuple[int, int], float] = {}
+    morphology_weights: dict[tuple[int, int], float] = {}
     score_by_id = {row["id"]: row["eligibility_score"] for row in nodes}
     derived_by_base: dict[str, list[int]] = defaultdict(list)
     for row in nodes:
@@ -304,7 +304,7 @@ def main() -> None:
         for base_id in by_lemma.get(base, [])[:3]:
             if base_id != row["id"]:
                 a, b = sorted((base_id, row["id"]))
-                derivation_weights[(a, b)] = max(0.94, derivation_weights.get((a, b), 0))
+                morphology_weights[(a, b)] = max(0.94, morphology_weights.get((a, b), 0))
     for base, derived in derived_by_base.items():
         if base in by_lemma or len(derived) < 2:
             continue
@@ -312,8 +312,11 @@ def main() -> None:
         for other in derived:
             if anchor != other:
                 a, b = sorted((anchor, other))
-                derivation_weights[(a, b)] = max(0.76, derivation_weights.get((a, b), 0))
-    layouts["derivation"] = [(a, b, weight) for (a, b), weight in sorted(derivation_weights.items())]
+                morphology_weights[(a, b)] = max(0.76, morphology_weights.get((a, b), 0))
+    # Lexique MorphoBase is a useful recall signal, but it mixes direct
+    # derivation, broader root analysis and occasional over-segmentation. Keep
+    # it auditable without promoting it to a learner-visible derivation claim.
+    layouts["morphology"] = [(a, b, weight) for (a, b), weight in sorted(morphology_weights.items())]
 
     editorial_layout, official = seed_edges(nodes)
     layouts["editorial_seed"] = editorial_layout
@@ -325,12 +328,12 @@ def main() -> None:
             if a not in id_set or b not in id_set:
                 continue
             layout_rows.append((a, b, signal, weight, "{}", CREATED_AT))
-            if signal in {"semantic", "derivation", "spelling", "phonetic"}:
+            if signal in {"semantic", "morphology", "spelling", "phonetic"}:
                 source = SIGNAL_CONFIG.get(signal, {}).get("source", "lexique_400")
                 candidate_rows.append(
                     (
                         a, b, relation_candidate(signal), signal, weight, source,
-                        json.dumps({"generator": "mutual_sparse_tfidf" if signal != "derivation" else "lexique_morph_base"}),
+                        json.dumps({"generator": "mutual_sparse_tfidf" if signal != "morphology" else "lexique_morph_base"}),
                         "candidate", CREATED_AT,
                     )
                 )
@@ -419,7 +422,7 @@ def main() -> None:
     for row in conn.execute("SELECT a_id,b_id,signal,weight FROM layout_links"):
         combined[(row["a_id"], row["b_id"])].append((row["signal"], row["weight"]))
     signal_factor = {
-        "semantic": 1.0, "derivation": 1.15, "spelling": 0.55,
+        "semantic": 1.0, "derivation": 1.15, "morphology": 0.35, "spelling": 0.55,
         "phonetic": 0.6, "editorial_seed": 1.3, "skeleton": 0.22,
     }
     graph_edges = []
