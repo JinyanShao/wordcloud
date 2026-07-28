@@ -21,6 +21,8 @@ GRAPH_INPUT = ROOT / "data" / "processed" / "graph-input.json"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
 DEMONETTE_APPROVED_PATH = ROOT / "data" / "processed" / "demonette-approved.json"
 DBNARY_APPROVED_PATH = ROOT / "data" / "processed" / "dbnary-approved.json"
+AI_COMPARE_DRAFTS_PATH = ROOT / "data" / "processed" / "ai-compare-drafts.json"
+AI_FIRST_EDGE_DRAFTS_PATH = ROOT / "data" / "processed" / "ai-first-edge-drafts.json"
 CREATED_AT = "2026-07-27T00:00:00Z"
 
 SIGNAL_CONFIG = {
@@ -241,6 +243,68 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
     return layout, official
 
 
+def reviewed_compare_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    """Re-apply human-accepted AI compare drafts from the durable JSON store."""
+    if not AI_COMPARE_DRAFTS_PATH.exists():
+        return []
+    payload = json.loads(AI_COMPARE_DRAFTS_PATH.read_text(encoding="utf-8"))
+    by_key = {(row["normalized"], row["pos"]): int(row["id"]) for row in nodes}
+    result = []
+    for item in payload.get("items", []):
+        review = item.get("review", {})
+        if review.get("status") != "accepted":
+            continue
+        draft = item.get("draft", {})
+        a_id = by_key.get((item["a"]["normalized"], item["a"]["pos"]))
+        b_id = by_key.get((item["b"]["normalized"], item["b"]["pos"]))
+        if a_id is None or b_id is None or a_id == b_id:
+            raise SystemExit(f"AI compare draft endpoint drift: {item.get('key')}")
+        if not str(draft.get("label", "")).strip():
+            raise SystemExit(f"AI compare draft missing label: {item.get('key')}")
+        a, b = sorted((a_id, b_id))
+        result.append({
+            "a": a, "b": b,
+            "dimension": draft.get("dimension"),
+            "label": str(draft["label"]).strip(),
+            "examples": [str(ex) for ex in draft.get("examples", [])][:2],
+            "reviewed_at": review.get("reviewed_at"),
+            "key": item.get("key"),
+            "model": item.get("model"),
+        })
+    return result
+
+
+def reviewed_first_edge_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    """Re-apply human-accepted AI first-edge proposals from the durable JSON store."""
+    if not AI_FIRST_EDGE_DRAFTS_PATH.exists():
+        return []
+    payload = json.loads(AI_FIRST_EDGE_DRAFTS_PATH.read_text(encoding="utf-8"))
+    by_key = {(row["normalized"], row["pos"]): int(row["id"]) for row in nodes}
+    result = []
+    for item in payload.get("items", []):
+        word = item.get("word", {})
+        a_id = by_key.get((word.get("normalized"), word.get("pos")))
+        for prop in item.get("proposals", []):
+            review = prop.get("review", {})
+            if review.get("status") != "accepted":
+                continue
+            b_id = by_key.get((prop.get("partner"), prop.get("partner_pos")))
+            relation = prop.get("relation")
+            label = str(prop.get("label", "")).strip()
+            if a_id is None or b_id is None or a_id == b_id:
+                raise SystemExit(f"AI first-edge draft endpoint drift: {item.get('key')}")
+            if relation not in {"syn", "ant", "fam"} or not label:
+                raise SystemExit(f"AI first-edge draft invalid relation/label: {item.get('key')}")
+            a, b = sorted((a_id, b_id))
+            result.append({
+                "a": a, "b": b, "relation": relation, "label": label,
+                "reviewed_at": review.get("reviewed_at"),
+                "key": f"{item.get('key')}->{prop.get('partner')}|{prop.get('partner_pos')}|{relation}",
+                "model": item.get("model"),
+            })
+    return result
+
+
 def demonette_edges(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
     if not DEMONETTE_APPROVED_PATH.exists():
         return []
@@ -298,9 +362,20 @@ def main() -> None:
             pos = pos_from_seed(item.get("pos", ""))
             if pos:
                 seed_keys.add((normalize(item["id"]), pos))
+    first_edge_partner_keys: set[tuple[str, str]] = set()
+    if AI_FIRST_EDGE_DRAFTS_PATH.exists():
+        first_edge_payload = json.loads(AI_FIRST_EDGE_DRAFTS_PATH.read_text(encoding="utf-8"))
+        for item in first_edge_payload.get("items", []):
+            for prop in item.get("proposals", []):
+                if prop.get("review", {}).get("status") == "accepted":
+                    first_edge_partner_keys.add((prop.get("partner"), prop.get("partner_pos")))
     nodes = [
         row for row in all_nodes
-        if row["status"] == "eligible" or (row["normalized"], row["pos"]) in seed_keys
+        if row["status"] == "eligible"
+        or (row["normalized"], row["pos"]) in seed_keys
+        # Accepted first-edge proposals may point at auxiliary lexemes (genre,
+        # type, milieu…); those enter the graph as support nodes.
+        or (row["status"] == "auxiliary" and (row["normalized"], row["pos"]) in first_edge_partner_keys)
     ]
     ids = [row["id"] for row in nodes]
     id_set = set(ids)
@@ -383,7 +458,9 @@ def main() -> None:
     ]
 
     editorial_layout, official = seed_edges(nodes)
-    layouts["editorial_seed"] = editorial_layout
+    compare_drafts = reviewed_compare_drafts(nodes)
+    first_edge_drafts = reviewed_first_edge_drafts(nodes)
+    layouts["editorial_seed"] = editorial_layout + [(d["a"], d["b"], 1.0) for d in first_edge_drafts]
 
     candidate_rows = []
     layout_rows = []
@@ -518,6 +595,60 @@ def main() -> None:
             conn.execute(
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
                 (cursor.lastrowid, "maillage_editorial", f"{item['a']}:{item['b']}"),
+            )
+
+    for item in compare_drafts:
+        cursor = conn.execute(
+            """
+            INSERT OR IGNORE INTO official_edges(
+              a_id,b_id,relation,dimension,subtype,direction,label,explanation,
+              examples_json,confidence,review_status,reviewed_at,created_at
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
+            """,
+            (
+                item["a"], item["b"], "compare", item["dimension"], None,
+                None, item["label"], None,
+                json.dumps(item["examples"], ensure_ascii=False), 0.8,
+                "reviewed", item["reviewed_at"] or CREATED_AT, CREATED_AT,
+            ),
+        )
+        if cursor.lastrowid:
+            conn.execute(
+                "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
+                (
+                    cursor.lastrowid, "maillage_editorial",
+                    json.dumps(
+                        {"origin": "ai_compare_draft", "key": item["key"], "model": item["model"]},
+                        ensure_ascii=False,
+                    ),
+                ),
+            )
+
+    for item in first_edge_drafts:
+        cursor = conn.execute(
+            """
+            INSERT OR IGNORE INTO official_edges(
+              a_id,b_id,relation,dimension,subtype,direction,label,explanation,
+              examples_json,confidence,review_status,reviewed_at,created_at
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
+            """,
+            (
+                item["a"], item["b"], item["relation"], None, None,
+                None, item["label"], None,
+                "[]", 0.7,
+                "reviewed", item["reviewed_at"] or CREATED_AT, CREATED_AT,
+            ),
+        )
+        if cursor.lastrowid:
+            conn.execute(
+                "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
+                (
+                    cursor.lastrowid, "maillage_editorial",
+                    json.dumps(
+                        {"origin": "ai_first_edge_draft", "key": item["key"], "model": item["model"]},
+                        ensure_ascii=False,
+                    ),
+                ),
             )
 
     for item in sourced_derivations:

@@ -67,6 +67,54 @@ Outputs:
 
 The current verified build contains 7,314 eligible nodes, 57 official support nodes, 20,270 combined browser layout edges, 98 reviewed prototype official edges, one connected component, and no layout islands.
 
+## Build the core-word gap list
+
+```bash
+python3 scripts/build_gap_list.py
+```
+
+Read-only against `data/processed/maillage.sqlite`; run it after any graph rebuild to refresh priorities.
+
+Outputs:
+
+- `data/reports/core-word-gap-list.csv`: sortable per-word gap table (`in_core=1` marks the current ~1,000 core words)
+- `data/reports/core-word-gap-list.md`: bucket counts, rules, and top examples
+
+Buckets follow the priority order in `handover/7.27-handover.md`: P1 high-frequency words with no official edge, P2 single-edge words, P3 multi-sense bridge words, P4 confusable candidates without a reviewed trap/compare edge, P5 B2–C1 words with DBnary senses but no syn/ant edge.
+
+## Draft `compare` relations with a completion API
+
+```bash
+python3 scripts/ai_compare_draft.py pairs            # inspect candidates, no API call
+python3 scripts/ai_compare_draft.py draft --dry-run  # inspect the first prompt
+MAILLAGE_API_KEY=... MAILLAGE_MODEL=... python3 scripts/ai_compare_draft.py draft --limit 30
+python3 scripts/ai_compare_draft.py stats
+```
+
+`MAILLAGE_API_BASE` defaults to `https://api.openai.com/v1`; any OpenAI-compatible chat completion endpoint works. Standard library only, no new dependency. Credentials can also go in a `.env.local` file at the project root (`MAILLAGE_API_KEY=...` / `MAILLAGE_MODEL=...` lines) — it is git-ignored and loaded automatically; never hardcode keys in tracked scripts.
+
+Candidates are official syn edges where both endpoints rank in the top 2,000 eligible lexemes by frequency and no compare edge exists yet (currently 412 pairs). Drafts are appended to `data/processed/ai-compare-drafts.json` — this JSON file is the durable store, because `build_graph.py` wipes and rebuilds `official_edges` on every run. The script is idempotent: keys already in the file are skipped, so interrupted runs and gap-filling re-runs cost nothing extra.
+
+Review and publish:
+
+1. Open `data/processed/ai-compare-drafts.json`, edit the draft text if needed, then set `review.status` to `accepted` or `rejected` (plus `reviewer` and `reviewed_at`).
+2. Re-run the graph build (`build_graph.py` → `layout.mjs` → `export_runtime.py` → `validate_data.py`). Accepted drafts are re-applied into `official_edges` as `relation='compare'`, `review_status='reviewed'`, sourced to `maillage_editorial` with the draft provenance (`origin`, `key`, `model`) in `source_record`.
+
+AI drafts never enter `official_edges` without the human review flip — that gate is part of the product, not an optional step.
+
+## Draft first edges for zero-relation core words (P1)
+
+```bash
+python3 scripts/ai_first_edge_draft.py words            # inspect candidates, no API call
+python3 scripts/ai_first_edge_draft.py draft --dry-run  # inspect the first prompt
+python3 scripts/ai_first_edge_draft.py draft --limit 30 # pilot batch
+python3 scripts/ai_first_edge_draft.py stats
+```
+
+Same credentials as the compare drafter (`.env.local` or env vars). Candidates are the top 1,000 eligible words by frequency with zero official edges — the `in_core` P1 set of the gap list. The model proposes up to 2 relations per word (`syn` / `ant` / `fam`) and is explicitly allowed to propose none. Every proposed partner is validated before it reaches the review file: the normalized lemma must exist as an `eligible` or `auxiliary` lexeme (auxiliary words like genre/type/milieu enter the graph as support nodes once a reviewed edge needs them), a wrong-POS guess falls back to a unique lexicon entry for that lemma, and anything else is discarded with a machine-readable reason recorded under `rejected` in the drafts file (`stats` shows the reason breakdown).
+
+Drafts live in `data/processed/ai-first-edge-drafts.json` (durable store, idempotent — words with zero proposals are also recorded so re-runs never re-bill them). Review each proposal individually (`review.status` → `accepted` / `rejected`), then rebuild the graph. Accepted proposals become `reviewed` official edges with confidence 0.7 and `origin: ai_first_edge_draft` provenance, and the pair is added to the `editorial_seed` layout signal so confirmed relations pull together in the global view.
+
 ## Data boundaries
 
 - `layout_links` influence cartography and do not count as official coverage.
