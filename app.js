@@ -386,8 +386,11 @@
     if (edge.kind === "structural") return { ...RELATION_STYLE.fam, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
     if (edge.kind === "form") return { ...RELATION_STYLE.trap, dash: [3, 5], alpha: .58, label: `${edge.label || "形音相近"} · 候选` };
     const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.syn;
-    const rawLabel = edge.label || edge.relation || "已审校";
-    return { ...style, alpha: .95, label: RELATION_NAMES[rawLabel] || rawLabel };
+    const mappedLabel = edge.label ? RELATION_NAMES[edge.label] : null;
+    const relationName = RELATION_NAMES[edge.relation] || edge.relation || "已审校";
+    // Canvas chips stay short (relation name only); custom teaching labels are
+    // surfaced on the word card via `note`, never drawn across an edge.
+    return { ...style, alpha: .95, label: mappedLabel || relationName, note: mappedLabel || !edge.label ? "" : edge.label };
   }
 
   function updateAnimations(now) {
@@ -673,7 +676,8 @@
 
   function relationButton(node, edge) {
     const visual = visualFor(edge);
-    return `<button class="relation-item ${edge.kind}" style="--relation-color:${visual.color}" data-node="${escapeHtml(node.id)}"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(visual.label)}</small></button>`;
+    const caption = visual.note ? `${visual.label} · ${visual.note}` : visual.label;
+    return `<button class="relation-item ${edge.kind}" style="--relation-color:${visual.color}" data-node="${escapeHtml(node.id)}"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(caption)}</small></button>`;
   }
 
   function renderSenseGroups(node) {

@@ -9,4 +9,6 @@ data/processed/demonette-analysis.json
 data/processed/demonette-approved.json
 data/processed/dbnary-analysis.json
 data/processed/dbnary-approved.json
+.env.local
+handover/
 .DS_Store
