@@ -15,6 +15,9 @@
   const focusLegend = $("#focus-legend");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   const PERSONAL_KEY = "maillage.personal.v2";
+  const MOBILE_BREAKPOINT = 720;
+  const CANVAS_FONT = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+  const CANVAS_PIXEL_BUDGET = { mobile: 3600000, desktop: 9000000 };
 
   const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
   const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "派生", drift: "语义漂移", trap: "易混", ant: "反义", cause: "因果" };
@@ -88,6 +91,8 @@
   let view = { x: 0, y: 0, scale: 1 };
   let homeView = { x: 0, y: 0, scale: 1 };
   let viewTween = null;
+  const activePointers = new Map();
+  let pinchStart = null;
 
   function loadPersonal() {
     try {
@@ -122,17 +127,30 @@
   const ys = officialNodes.map((node) => node.y);
   const bounds = { minX: Math.min(...xs), maxX: Math.max(...xs), minY: Math.min(...ys), maxY: Math.max(...ys) };
 
+  function isMobileLayout() {
+    return width <= MOBILE_BREAKPOINT;
+  }
+
+  function canvasDpr(cssWidth, cssHeight) {
+    const deviceDpr = Math.max(1, window.devicePixelRatio || 1);
+    const mobile = cssWidth <= MOBILE_BREAKPOINT;
+    const maxDpr = mobile ? 3 : 2.5;
+    const pixelBudget = mobile ? CANVAS_PIXEL_BUDGET.mobile : CANVAS_PIXEL_BUDGET.desktop;
+    const budgetDpr = Math.sqrt(pixelBudget / Math.max(1, cssWidth * cssHeight));
+    return Math.max(1, Math.min(deviceDpr, maxDpr, budgetDpr));
+  }
+
   function resize() {
     const rect = viewport.getBoundingClientRect();
     width = Math.max(1, rect.width);
     height = Math.max(1, rect.height);
-    dpr = Math.min(2, window.devicePixelRatio || 1);
+    dpr = canvasDpr(width, height);
     canvas.width = Math.round(width * dpr);
     canvas.height = Math.round(height * dpr);
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
-    if (!homeView.scale || homeView.scale === 1) fitHome(false);
-    else if (selected) enterFocus(selected, { addTrail: false, preserveCenter: true });
+    if (selected) enterFocus(selected, { addTrail: false, preserveCenter: true });
+    else fitHome(false);
     requestDraw();
   }
 
@@ -160,6 +178,7 @@
       node.focusRole = "global"; node.focusColor = null;
     }
     panel.classList.add("hidden");
+    viewport.classList.remove("is-focused", "panel-open");
     focusBar.classList.add("hidden");
     focusLegend.classList.add("hidden");
     $("#legend").classList.remove("focus-hidden");
@@ -275,9 +294,15 @@
   }
 
   function focusScaleFor(count) {
-    if (width < 720) return count > 8 ? .72 : .84;
+    if (isMobileLayout()) return count > 6 ? .88 : .96;
     if (count > 12) return .86;
     return 1.02;
+  }
+
+  function focusViewTarget(center, scale, panelVisible = true) {
+    const xShift = width > 900 ? 135 / scale : 0;
+    const yShift = isMobileLayout() && panelVisible ? height * .22 / scale : 0;
+    return { x: center.x + xShift, y: center.y + yShift, scale };
   }
 
   function positionRing(items, center, radius, startAngle = -Math.PI / 2) {
@@ -307,9 +332,8 @@
 
     selected = node.id;
     focusCenter = center;
-    focusConnections = connectionsFor(node.id);
+    focusConnections = connectionsFor(node.id, isMobileLayout() ? 8 : 16);
     const focusScale = focusScaleFor(focusConnections.length);
-    const centerShift = width > 900 ? 135 / focusScale : 0;
 
     for (const item of allNodes) {
       item.targetX = item.homeX; item.targetY = item.homeY;
@@ -320,7 +344,10 @@
     node.targetAlpha = 1; node.focusRole = "center"; node.focusColor = "#171816";
 
     if (focusConnections.length <= 10) {
-      positionRing(focusConnections, center, 215 / focusScale);
+      const screenRadius = isMobileLayout()
+        ? Math.max(108, Math.min(width * .32, height * .16))
+        : 215;
+      positionRing(focusConnections, center, screenRadius / focusScale);
     } else {
       const split = Math.ceil(focusConnections.length / 2);
       positionRing(focusConnections.slice(0, split), center, 178 / focusScale);
@@ -331,7 +358,7 @@
       ...edge, from: node.id, to: edge.other, satellite: false, delay: 100 + index * 86,
     }));
 
-    if (focusConnections.length && focusConnections.length <= 12) {
+    if (!isMobileLayout() && focusConnections.length && focusConnections.length <= 12) {
       const directIds = new Set([node.id, ...focusConnections.map((edge) => edge.other)]);
       const usedSatellites = new Set();
       let satelliteIndex = 0;
@@ -368,6 +395,7 @@
     focusStarted = performance.now();
     renderTrail();
     renderPanel(node);
+    viewport.classList.add("is-focused", "panel-open");
     $("#map-copy").classList.add("quiet");
     focusBar.classList.remove("hidden");
     focusLegend.classList.remove("hidden");
@@ -376,7 +404,7 @@
     searchResults.classList.add("hidden");
     search.blur();
     updateStats();
-    animateView({ x: center.x + centerShift, y: center.y, scale: focusScale }, 560);
+    animateView(focusViewTarget(center, focusScale, true), 560);
     requestDraw();
   }
 
@@ -447,12 +475,15 @@
 
   function drawEdgeChip(text, x, y, color, alpha) {
     if (!text) return;
-    ctx.font = "600 9.5px Inter, sans-serif";
-    const w = ctx.measureText(text).width + 16;
+    const mobile = isMobileLayout();
+    const fontSize = mobile ? 10.5 : 10;
+    const h = mobile ? 23 : 21;
+    ctx.font = `600 ${fontSize}px ${CANVAS_FONT}`;
+    const w = ctx.measureText(text).width + (mobile ? 20 : 17);
     ctx.globalAlpha = Math.min(1, alpha * .98);
-    roundedRect(x - w / 2, y - 10, w, 20, 10);
+    roundedRect(x - w / 2, y - h / 2, w, h, h / 2);
     ctx.fillStyle = "#fbfaf7"; ctx.fill();
-    ctx.strokeStyle = color; ctx.lineWidth = .8; ctx.stroke();
+    ctx.strokeStyle = color; ctx.lineWidth = mobile ? 1.25 : 1; ctx.stroke();
     ctx.fillStyle = color; ctx.textAlign = "center"; ctx.textBaseline = "middle";
     ctx.fillText(text, x, y + .5);
     ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
@@ -469,7 +500,7 @@
     const visual = visualFor(edge);
     ctx.globalAlpha = visual.alpha * Math.min(a.alpha, b.alpha);
     ctx.strokeStyle = visual.color;
-    ctx.lineWidth = edge.satellite ? .8 : edge.kind === "official" ? 1.75 : 1.35;
+    ctx.lineWidth = edge.satellite ? .9 : edge.kind === "official" ? 2 : 1.5;
     ctx.setLineDash(visual.dash);
     ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(end.x, end.y); ctx.stroke();
     ctx.setLineDash([]);
@@ -493,31 +524,39 @@
   }
 
   function drawFocusCard(node, point) {
-    ctx.font = node.focusRole === "center" ? "650 14px Inter, sans-serif" : "600 12px Inter, sans-serif";
+    const mobile = isMobileLayout();
+    const center = node.focusRole === "center";
+    const wordFont = `650 ${center ? (mobile ? 16 : 15) : (mobile ? 13.5 : 12.5)}px ${CANVAS_FONT}`;
+    const posFont = `550 ${mobile ? 9.5 : 9}px ${CANVAS_FONT}`;
+    ctx.font = wordFont;
     const wordWidth = ctx.measureText(node.word).width;
-    ctx.font = "500 8.5px Inter, sans-serif";
+    ctx.font = posFont;
     const posWidth = ctx.measureText(node.pos).width;
-    const h = node.focusRole === "center" ? 34 : 29;
-    const w = Math.max(64, wordWidth + posWidth + 28);
+    const h = center ? (mobile ? 40 : 36) : (mobile ? 35 : 31);
+    const leftPad = mobile ? 13 : 11;
+    const gap = mobile ? 6 : 4;
+    const rightPad = mobile ? 12 : 10;
+    const w = Math.max(mobile ? 76 : 68, wordWidth + posWidth + leftPad + gap + rightPad);
     const x = point.x - w / 2, y = point.y - h / 2;
     ctx.globalAlpha = node.alpha;
     roundedRect(x, y, w, h, h / 2);
-    if (node.focusRole === "center") {
+    if (center) {
       ctx.fillStyle = node.personal ? RELATION_STYLE.personal.color : "#171816";
       ctx.fill();
     } else {
       ctx.fillStyle = "rgba(251,250,247,.97)"; ctx.fill();
-      ctx.strokeStyle = node.focusColor || "#8f8e88"; ctx.lineWidth = 1.1; ctx.stroke();
+      ctx.strokeStyle = node.focusColor || "#777871"; ctx.lineWidth = mobile ? 1.5 : 1.25; ctx.stroke();
     }
-    ctx.font = node.focusRole === "center" ? "650 14px Inter, sans-serif" : "600 12px Inter, sans-serif";
-    ctx.fillStyle = node.focusRole === "center" ? "#fbfaf7" : "#20211e";
+    ctx.font = wordFont;
+    ctx.fillStyle = center ? "#fbfaf7" : "#20211e";
     ctx.textBaseline = "middle"; ctx.textAlign = "left";
-    ctx.fillText(node.word, x + 11, point.y + .3);
-    ctx.font = "500 8.5px Inter, sans-serif";
-    ctx.fillStyle = node.focusRole === "center" ? "rgba(251,250,247,.58)" : "#8a8982";
-    ctx.fillText(node.pos, x + 15 + wordWidth, point.y + .3);
+    ctx.fillText(node.word, x + leftPad, point.y + .3);
+    ctx.font = posFont;
+    ctx.fillStyle = center ? "rgba(251,250,247,.7)" : "#74756e";
+    ctx.fillText(node.pos, x + leftPad + wordWidth + gap, point.y + .3);
     ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
-    hitBoxes.set(node.id, { x, y, w, h });
+    const hitPadding = mobile ? 6 : 3;
+    hitBoxes.set(node.id, { x: x - hitPadding, y: y - hitPadding, w: w + hitPadding * 2, h: h + hitPadding * 2 });
   }
 
   function drawFocusNode(node) {
@@ -531,7 +570,7 @@
       ctx.globalAlpha = node.alpha;
       ctx.fillStyle = node.focusColor || "#8c8b84";
       ctx.beginPath(); ctx.arc(p.x, p.y, 3.2, 0, Math.PI * 2); ctx.fill();
-      ctx.font = "500 9px Inter, sans-serif"; ctx.fillStyle = "#73736d";
+      ctx.font = `500 9.5px ${CANVAS_FONT}`; ctx.fillStyle = "#686963";
       const labelWidth = ctx.measureText(node.word).width;
       const labelOnLeft = Math.cos(node._focusAngle || 0) < 0;
       ctx.textAlign = labelOnLeft ? "right" : "left";
@@ -546,9 +585,9 @@
     ctx.fillStyle = isHovered ? "#343530" : "#85857e";
     ctx.beginPath(); ctx.arc(p.x, p.y, isHovered ? 4.2 : Math.max(.8, nodeRadius(node) * .68), 0, Math.PI * 2); ctx.fill();
     if (isHovered) {
-      ctx.globalAlpha = .42; ctx.strokeStyle = "#343530"; ctx.lineWidth = 1;
+      ctx.globalAlpha = .48; ctx.strokeStyle = "#343530"; ctx.lineWidth = 1.2;
       ctx.beginPath(); ctx.arc(p.x, p.y, 7.2, 0, Math.PI * 2); ctx.stroke();
-      ctx.globalAlpha = .9; ctx.fillStyle = "#343530"; ctx.font = "600 10px Inter, sans-serif";
+      ctx.globalAlpha = .94; ctx.fillStyle = "#343530"; ctx.font = `600 ${isMobileLayout() ? 12 : 11}px ${CANVAS_FONT}`;
       ctx.fillText(node.word, p.x + 10, p.y - 5);
     }
   }
@@ -562,8 +601,8 @@
       if (!a || !b) continue;
       const pa = screen(a), pb = screen(b);
       if (!visible(pa, 30) && !visible(pb, 30)) continue;
-      ctx.globalAlpha = .027 + edge.weight * .023;
-      ctx.strokeStyle = "#9c9b95"; ctx.lineWidth = .5;
+      ctx.globalAlpha = (isMobileLayout() ? .032 : .045) + edge.weight * (isMobileLayout() ? .026 : .034);
+      ctx.strokeStyle = "#8f9089"; ctx.lineWidth = isMobileLayout() ? .62 : .68;
       ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y); ctx.stroke();
     }
     for (const edge of personalEdges) {
@@ -580,7 +619,7 @@
       if (!visible(p, 16)) continue;
       const radius = nodeRadius(node);
       ctx.globalAlpha = node.alpha;
-      ctx.fillStyle = node.personal ? RELATION_STYLE.personal.color : "#777770";
+      ctx.fillStyle = node.personal ? RELATION_STYLE.personal.color : "#686963";
       ctx.beginPath(); ctx.arc(p.x, p.y, radius, 0, Math.PI * 2); ctx.fill();
       const labelByZoom = (view.scale > 1.18 && node.size > 4.4) || (view.scale > 2.15 && node.size > 3.1) || view.scale > 4.5;
       if (node.id === hovered || labelByZoom) labels.push({ node, p, priority: node.id === hovered ? 90 : node.size });
@@ -588,7 +627,7 @@
     labels.sort((a, b) => b.priority - a.priority);
     const occupied = [];
     for (const item of labels.slice(0, 150)) {
-      ctx.font = item.priority >= 80 ? "600 12px Inter, sans-serif" : "500 10px Inter, sans-serif";
+      ctx.font = item.priority >= 80 ? `650 ${isMobileLayout() ? 13 : 12.5}px ${CANVAS_FONT}` : `550 ${isMobileLayout() ? 11 : 10.5}px ${CANVAS_FONT}`;
       const textWidth = ctx.measureText(item.node.word).width;
       const x = item.p.x + nodeRadius(item.node) + 5, y = item.p.y - 3;
       const box = { x, y: y - 11, w: textWidth + 4, h: 15 };
@@ -615,9 +654,9 @@
 
     if (!focusConnections.length && center) {
       const p = screen(center);
-      ctx.globalAlpha = .7; ctx.fillStyle = "#777770"; ctx.font = "500 11px Inter, sans-serif"; ctx.textAlign = "center";
+      ctx.globalAlpha = .76; ctx.fillStyle = "#686963"; ctx.font = `550 11.5px ${CANVAS_FONT}`; ctx.textAlign = "center";
       ctx.fillText("暂无可展示的可信关系", p.x, p.y + 44);
-      ctx.font = "400 9.5px Inter, sans-serif"; ctx.fillStyle = "#9b9a94";
+      ctx.font = `450 10px ${CANVAS_FONT}`; ctx.fillStyle = "#8d8e87";
       ctx.fillText("自动近邻仍在清理，不作为正式关系显示", p.x, p.y + 61);
       ctx.textAlign = "left";
     }
@@ -655,10 +694,12 @@
         if (x >= box.x && x <= box.x + box.w && y >= box.y && y <= box.y + box.h) return nodeById.get(id);
       }
     }
-    let best = null, bestDistance = selected ? 5 : 12;
+    const mobile = isMobileLayout();
+    let best = null, bestDistance = selected ? (mobile ? 9 : 5) : (mobile ? 18 : 12);
+    const coarseLimit = mobile ? 24 : 13;
     for (const node of allNodes) {
       const p = screen(node);
-      if (Math.abs(p.x - x) > 13 || Math.abs(p.y - y) > 13) continue;
+      if (Math.abs(p.x - x) > coarseLimit || Math.abs(p.y - y) > coarseLimit) continue;
       const hitRadius = selected && node.focusRole === "background" ? Math.max(2, nodeRadius(node) * .68) : nodeRadius(node);
       const distance = Math.hypot(p.x - x, p.y - y) - hitRadius;
       if (distance < bestDistance) { bestDistance = distance; best = node; }
@@ -765,11 +806,51 @@
     tooltip.classList.remove("hidden");
   }
 
+  function clampScale(scale) {
+    return Math.max(homeView.scale * .62, Math.min(7, scale));
+  }
+
+  function beginPinch() {
+    const points = [...activePointers.values()].slice(0, 2);
+    if (points.length < 2) return;
+    const centerX = (points[0].x + points[1].x) / 2;
+    const centerY = (points[0].y + points[1].y) / 2;
+    pinchStart = {
+      distance: Math.max(1, Math.hypot(points[1].x - points[0].x, points[1].y - points[0].y)),
+      scale: view.scale,
+      world: worldAt(centerX, centerY),
+    };
+    dragging = false;
+    moved = true;
+    viewTween = null;
+  }
+
   canvas.addEventListener("pointerdown", (event) => {
-    dragging = true; moved = false; canvas.setPointerCapture(event.pointerId); canvas.classList.add("dragging");
+    activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    canvas.setPointerCapture(event.pointerId);
+    canvas.classList.add("dragging");
+    if (activePointers.size >= 2) {
+      beginPinch();
+      return;
+    }
+    dragging = true;
+    moved = false;
     dragStart = { clientX: event.clientX, clientY: event.clientY, x: view.x, y: view.y };
   });
   canvas.addEventListener("pointermove", (event) => {
+    if (activePointers.has(event.pointerId)) activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (pinchStart && activePointers.size >= 2) {
+      const points = [...activePointers.values()].slice(0, 2);
+      const centerX = (points[0].x + points[1].x) / 2;
+      const centerY = (points[0].y + points[1].y) / 2;
+      const distance = Math.max(1, Math.hypot(points[1].x - points[0].x, points[1].y - points[0].y));
+      const rect = canvas.getBoundingClientRect();
+      view.scale = clampScale(pinchStart.scale * distance / pinchStart.distance);
+      view.x = pinchStart.world.x - (centerX - rect.left - width / 2) / view.scale;
+      view.y = pinchStart.world.y - (centerY - rect.top - height / 2) / view.scale;
+      requestDraw();
+      return;
+    }
     if (dragging) {
       const dx = event.clientX - dragStart.clientX, dy = event.clientY - dragStart.clientY;
       if (Math.hypot(dx, dy) > 3) moved = true;
@@ -783,8 +864,21 @@
     showTooltip(hit, event);
   });
   canvas.addEventListener("pointerup", (event) => {
-    if (!dragging) return;
-    dragging = false; canvas.releasePointerCapture(event.pointerId); canvas.classList.remove("dragging");
+    const wasPinching = Boolean(pinchStart) || activePointers.size > 1;
+    activePointers.delete(event.pointerId);
+    if (canvas.hasPointerCapture(event.pointerId)) canvas.releasePointerCapture(event.pointerId);
+    if (wasPinching) {
+      pinchStart = null;
+      dragging = false;
+      moved = true;
+      if (!activePointers.size) canvas.classList.remove("dragging");
+      return;
+    }
+    if (!dragging) {
+      if (!activePointers.size) canvas.classList.remove("dragging");
+      return;
+    }
+    dragging = false; canvas.classList.remove("dragging");
     if (!moved) {
       const hit = hitTest(event.clientX, event.clientY);
       if (!hit && selected) fitHome();
@@ -792,11 +886,18 @@
       else if (hit) enterFocus(hit.id);
     }
   });
+  canvas.addEventListener("pointercancel", (event) => {
+    activePointers.delete(event.pointerId);
+    pinchStart = null;
+    dragging = false;
+    moved = true;
+    canvas.classList.remove("dragging");
+  });
   canvas.addEventListener("pointerleave", () => { if (!dragging) { hovered = null; tooltip.classList.add("hidden"); requestDraw(); } });
   canvas.addEventListener("wheel", (event) => {
     event.preventDefault();
     const before = worldAt(event.clientX, event.clientY);
-    view.scale = Math.max(homeView.scale * .62, Math.min(7, view.scale * Math.exp(-event.deltaY * .00125)));
+    view.scale = clampScale(view.scale * Math.exp(-event.deltaY * .00125));
     const after = worldAt(event.clientX, event.clientY);
     view.x += before.x - after.x; view.y += before.y - after.y; viewTween = null;
     requestDraw();
@@ -822,7 +923,11 @@
     if (event.key === "Escape") searchResults.classList.add("hidden");
   });
 
-  $("#panel-close").addEventListener("click", () => panel.classList.add("hidden"));
+  $("#panel-close").addEventListener("click", () => {
+    panel.classList.add("hidden");
+    viewport.classList.remove("panel-open");
+    if (selected && focusCenter) animateView(focusViewTarget(focusCenter, focusScaleFor(focusConnections.length), false), 320);
+  });
   $("#reset").addEventListener("click", () => fitHome());
   $("#brand").addEventListener("click", (event) => { event.preventDefault(); fitHome(); });
   $("#focus-back").addEventListener("click", () => fitHome());
