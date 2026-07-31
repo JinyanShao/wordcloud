@@ -1,6 +1,6 @@
 {
-  "name": "Maillage - 法语词网",
-  "short_name": "Maillage",
+  "name": "Wordcloud - 法语词网",
+  "short_name": "Wordcloud",
   "description": "通过词汇关系探索和主动回忆学习法语。",
   "lang": "zh-CN",
   "start_url": "./index.html",

@@ -34,7 +34,7 @@ def main() -> None:
     current = version()
     replace_once(INDEX, r'graph-data\.js\?v=[^"\s]+', f"graph-data.js?v={current}")
     replace_once(INDEX, r'app\.js\?v=[^"\s]+', f"app.js?v={current}")
-    replace_once(SERVICE_WORKER, r'const CACHE_NAME = "maillage-learning-[^"]+";', f'const CACHE_NAME = "maillage-learning-{current}";')
+    replace_once(SERVICE_WORKER, r'const CACHE_NAME = "wordcloud-learning-[^"]+";', f'const CACHE_NAME = "wordcloud-learning-{current}";')
     replace_once(SERVICE_WORKER, r'graph-data\.js\?v=[^"\s]+', f"graph-data.js?v={current}")
     replace_once(SERVICE_WORKER, r'app\.js\?v=[^"\s]+', f"app.js?v={current}")
     print(current)

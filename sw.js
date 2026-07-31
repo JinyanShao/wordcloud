@@ -1,9 +1,9 @@
-const CACHE_NAME = "maillage-learning-dd9bfec7831b";
+const CACHE_NAME = "wordcloud-learning-4045189f5076";
 const APP_SHELL = [
   "./index.html",
   "./styles.css",
-  "./graph-data.js?v=dd9bfec7831b",
-  "./app.js?v=dd9bfec7831b",
+  "./graph-data.js?v=4045189f5076",
+  "./app.js?v=4045189f5076",
   "./manifest.webmanifest",
   "./icon.svg",
 ];

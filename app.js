@@ -14,8 +14,8 @@
   const trailEl = $("#trail");
   const focusLegend = $("#focus-legend");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-  const PERSONAL_KEY = "maillage.personal.v2";
-  const LEARNING_KEY = "maillage.learning.v1";
+  const PERSONAL_KEY = "wordcloud.personal.v2";
+  const LEARNING_KEY = "wordcloud.learning.v1";
   const MINUTE = 60 * 1000;
   const DAY = 24 * 60 * MINUTE;
   const MOBILE_BREAKPOINT = 720;

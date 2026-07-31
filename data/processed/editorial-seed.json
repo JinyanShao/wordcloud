@@ -1214,168 +1214,168 @@
       "id": "être",
       "pos": "VER",
       "gloss": "是；处于",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "avoir",
       "pos": "VER",
       "gloss": "有；拥有",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "faire",
       "pos": "VER",
       "gloss": "做；制作",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "aller",
       "pos": "VER",
       "gloss": "去；前往",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "devoir",
       "pos": "VER",
       "gloss": "必须；欠",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "pouvoir",
       "pos": "VER",
       "gloss": "能；可以",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "vouloir",
       "pos": "VER",
       "gloss": "想要；愿意",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "savoir",
       "pos": "VER",
       "gloss": "知道；会",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "venir",
       "pos": "VER",
       "gloss": "来；来到",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "prendre",
       "pos": "VER",
       "gloss": "拿；乘坐",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "donner",
       "pos": "VER",
       "gloss": "给；给予",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "dire",
       "pos": "VER",
       "gloss": "说；告诉",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "voir",
       "pos": "VER",
       "gloss": "看见；理解",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "mettre",
       "pos": "VER",
       "gloss": "放；穿上",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "trouver",
       "pos": "VER",
       "gloss": "找到；觉得",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "parler",
       "pos": "VER",
       "gloss": "说；交谈",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "aimer",
       "pos": "VER",
       "gloss": "喜欢；爱",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "demander",
       "pos": "VER",
       "gloss": "请求；问",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "rester",
       "pos": "VER",
       "gloss": "停留；保持",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "passer",
       "pos": "VER",
       "gloss": "经过；度过",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "croire",
       "pos": "VER",
       "gloss": "相信；认为",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "connaître",
       "pos": "VER",
       "gloss": "认识；了解",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "vivre",
       "pos": "VER",
       "gloss": "生活；经历",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
       "id": "partir",
       "pos": "VER",
       "gloss": "离开；出发",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     }
   ],
@@ -1384,7 +1384,7 @@
       "id": "être",
       "pos": "NOM",
       "gloss": "存在；生物",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     }
   ],
@@ -1392,8 +1392,8 @@
     {
       "id": "être",
       "pos": "VER",
-      "source": "maillage editorial v1",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30",
       "etymology": "来自拉丁语 esse（存在）；其法语变位保留了多个历史词干，因此形式高度不规则。",
       "collocations": [
@@ -1410,8 +1410,8 @@
     {
       "id": "avoir",
       "pos": "VER",
-      "source": "maillage editorial v1",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30",
       "etymology": "来自拉丁语 habere（持有、拥有）；在现代法语中同时承担拥有义和复合时态助动词功能。",
       "collocations": [
@@ -1428,8 +1428,8 @@
     {
       "id": "faire",
       "pos": "VER",
-      "source": "maillage editorial v1",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30",
       "etymology": "来自拉丁语 facere（做、制造）；法语中广泛承担“做、使、构成”等高频功能。",
       "collocations": [
@@ -1446,8 +1446,8 @@
     {
       "id": "voir",
       "pos": "VER",
-      "source": "maillage editorial v1",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30",
       "etymology": "来自拉丁语 videre（看见）；同源词包括 vision，提示“看”与“视觉”的词族联系。",
       "collocations": [
@@ -1464,8 +1464,8 @@
     {
       "id": "fond",
       "pos": "NOM",
-      "source": "maillage editorial v1",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30",
       "etymology": "来自拉丁语 fundus（底部、土地）；与 fonder、fondation 共享“基础”的词族线索。",
       "collocations": [
@@ -1482,8 +1482,8 @@
     {
       "id": "fonder",
       "pos": "VER",
-      "source": "maillage editorial v1",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30",
       "etymology": "经拉丁语 fundare（打下基础）而来；字面图像是“把底部安稳地放下”。",
       "collocations": [
@@ -1500,8 +1500,8 @@
     {
       "id": "établir",
       "pos": "VER",
-      "source": "maillage editorial v1",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30",
       "etymology": "来自拉丁语 stabilire（使站稳）；词根与 stable 同源，核心图像是“稳稳立起”。",
       "collocations": [
@@ -1518,8 +1518,8 @@
     {
       "id": "construire",
       "pos": "VER",
-      "source": "maillage editorial v1",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30",
       "etymology": "来自拉丁语 construere（堆叠、搭建）；可用于建筑、句子和抽象理论。",
       "collocations": [
@@ -1549,7 +1549,7 @@
         "Je dois venir demain."
       ],
       "source": "FLE editorial review: modalite (capacite/permission vs obligation/necessite).",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     },
     {
@@ -1566,7 +1566,7 @@
         "Va là-bas, s'il te plaît."
       ],
       "source": "FLE editorial review: opposition deictique venir/aller.",
-      "reviewer": "maillage editorial",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
     }
   ],
@@ -1574,8 +1574,8 @@
     {
       "id": "pouvoir",
       "pos": "VER",
-      "source": "maillage editorial v1 · FLE teaching examples",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1 · FLE teaching examples",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-31",
       "examples": [
         {
@@ -1591,8 +1591,8 @@
     {
       "id": "venir",
       "pos": "VER",
-      "source": "maillage editorial v1 · FLE teaching examples",
-      "reviewer": "maillage editorial",
+      "source": "wordcloud editorial v1 · FLE teaching examples",
+      "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-31",
       "examples": [
         {

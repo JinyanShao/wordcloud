@@ -19,7 +19,7 @@ from learning_lexicon import learning_lexeme_rows
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "data" / "raw" / "dbnary" / "fr_dbnary_ontolex.ttl.bz2"
-DB_PATH = ROOT / "data" / "processed" / "maillage.sqlite"
+DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
 ANALYSIS_PATH = ROOT / "data" / "processed" / "dbnary-analysis.json"
 APPROVED_PATH = ROOT / "data" / "processed" / "dbnary-approved.json"
@@ -421,7 +421,7 @@ def write_report(analysis: dict[str, object], report_path: Path = REPORT_PATH) -
         "",
         "## 限制",
         "",
-        "- DBnary 反映 Wiktionnaire 的明示关系，有来源但不等于已经 maillage 人工辨析。前端必须显示为“来源确认”，不得冒充“已审校”。",
+        "- DBnary 反映 Wiktionnaire 的明示关系，有来源但不等于已经 wordcloud 人工辨析。前端必须显示为“来源确认”，不得冒充“已审校”。",
         "- 语义关系只在目标词以相同词性存在于当前词表时发布，避免多词性词误连。",
         "- 本轮不导入 DBnary `derivedFrom`；构词关系仍由 Démonette 负责。",
     ]

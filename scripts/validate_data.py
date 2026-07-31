@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate generated maillage artifacts and write an inspectable build report."""
+"""Validate generated wordcloud artifacts and write an inspectable build report."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from learning_lexicon import learning_lexeme_rows
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "data" / "processed" / "maillage.sqlite"
+DB = ROOT / "data" / "processed" / "wordcloud.sqlite"
 REPORT = ROOT / "data" / "reports" / "build-validation.md"
 SEED = ROOT / "data" / "processed" / "editorial-seed.json"
 
@@ -36,7 +36,7 @@ def runtime_cache_errors(runtime: Path) -> list[str]:
     service_worker = (ROOT / "sw.js").read_text(encoding="utf-8")
     expected_url = f"graph-data.js?v={version}"
     expected_app_url = f"app.js?v={version}"
-    expected_cache = f'const CACHE_NAME = "maillage-learning-{version}";'
+    expected_cache = f'const CACHE_NAME = "wordcloud-learning-{version}";'
     errors = []
     if expected_url not in index:
         errors.append("index.html does not reference current graph-data hash")
@@ -318,7 +318,7 @@ def main() -> None:
     core_relation_count = conn.execute(
         """
         SELECT COUNT(*) FROM official_edge_sources
-        WHERE source_id='maillage_editorial' AND json_valid(source_record)
+        WHERE source_id='wordcloud_editorial' AND json_valid(source_record)
           AND json_extract(source_record, '$.origin')='editorial_relation'
           AND COALESCE(TRIM(json_extract(source_record, '$.reviewer')), '') != ''
           AND COALESCE(TRIM(json_extract(source_record, '$.reviewed_at')), '') != ''
@@ -572,7 +572,7 @@ def main() -> None:
 
     passed = sum(result for _, result, _ in checks)
     lines = [
-        "# maillage 构建验证",
+        "# wordcloud 构建验证",
         "",
         f"> {passed}/{len(checks)} 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。",
         "",

@@ -16,7 +16,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "data" / "processed" / "maillage.sqlite"
+DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 GRAPH_INPUT = ROOT / "data" / "processed" / "graph-input.json"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
 DEMONETTE_APPROVED_PATH = ROOT / "data" / "processed" / "demonette-approved.json"
@@ -536,7 +536,7 @@ def main() -> None:
             conn.execute(
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
                 (
-                    cursor.lastrowid, "maillage_editorial",
+                    cursor.lastrowid, "wordcloud_editorial",
                     json.dumps({
                         "origin": "editorial_relation" if item.get("kind") == "editorial" else "prototype_seed",
                         "reviewer": item.get("reviewer"), "reviewed_at": item.get("reviewed_at"),

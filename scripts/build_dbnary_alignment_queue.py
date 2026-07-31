@@ -19,7 +19,7 @@ from learning_lexicon import learning_lexeme_rows, normalize
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "data" / "processed" / "maillage.sqlite"
+DB = ROOT / "data" / "processed" / "wordcloud.sqlite"
 WIKT_OUTPUT = ROOT / "data" / "processed" / "wiktextract-gap-audit.jsonl"
 WIKT_DUMP = ROOT / "data" / "raw" / "wiktextract" / "frwiktionary-20260701-pages-articles.xml.bz2"
 QUEUE = ROOT / "data" / "processed" / "dbnary-alignment-review-queue.json"

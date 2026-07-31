@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write or verify the exact inputs and outputs of a maillage build."""
+"""Write or verify the exact inputs and outputs of a wordcloud build."""
 
 from __future__ import annotations
 

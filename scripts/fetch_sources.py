@@ -37,9 +37,10 @@ def verify_file(path: Path, expected: str, label: str) -> None:
 def download(source: dict[str, object], destination: Path) -> None:
     url = str(source["download_url"])
     fetch = source.get("fetch") if isinstance(source.get("fetch"), dict) else {}
-    form = fetch.get("form", [])
+    raw_form = fetch.get("form", [])
+    form = [tuple(item) for item in raw_form] if isinstance(raw_form, list) else []
     data = urlencode(form).encode("utf-8") if form else None
-    request = Request(url, data=data, headers={"User-Agent": "maillage-source-lock/1"})
+    request = Request(url, data=data, headers={"User-Agent": "wordcloud-source-lock/1"})
     destination.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(dir=destination.parent, delete=False) as stream:
         temporary = Path(stream.name)
@@ -47,6 +48,8 @@ def download(source: dict[str, object], destination: Path) -> None:
             with urlopen(request, timeout=120) as response:
                 while chunk := response.read(1024 * 1024):
                     stream.write(chunk)
+            stream.flush()
+            os.fsync(stream.fileno())
             expected = str(source["expected_sha256"])
             if sha256(temporary) != expected:
                 raise SystemExit(f"downloaded {source['id']} does not match the reviewed SHA-256")
@@ -70,6 +73,8 @@ def verify_archive_members(source: dict[str, object], archive: Path) -> None:
                         with bundle.open(name) as origin:
                             while chunk := origin.read(1024 * 1024):
                                 stream.write(chunk)
+                        stream.flush()
+                        os.fsync(stream.fileno())
                         if sha256(temporary) != expected:
                             raise SystemExit(f"archive member lock mismatch for {source['id']}:{name}")
                         os.replace(temporary, target)

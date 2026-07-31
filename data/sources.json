@@ -90,18 +90,18 @@
     "notes": "Used only as a Chinese gloss candidate. The reverse index contains proper nouns, brands, specialist terms and noisy translations, so presence is evidence rather than truth."
   },
   {
-    "id": "maillage_editorial",
-    "name": "maillage editorial seed",
+    "id": "wordcloud_editorial",
+    "name": "wordcloud editorial seed",
     "version": "prototype-v2",
     "homepage_url": "local://data.js",
     "download_url": null,
     "license_id": "project-local",
     "license_url": null,
-    "attribution": "maillage project",
+    "attribution": "wordcloud project",
     "commercial_use": "local-only",
     "redistribution": "local-only",
     "local_path": "data.js",
-    "expected_sha256": "0e0e61f0984adbf29b82d9fbe28df238e8fa741f83fd813cc24568225c4eac6a",
+    "expected_sha256": "d3296c0b316e7fb23b9d77d970211eff42e04b8e133152ef8678a2410a58bd36",
     "downloaded_at": null,
     "notes": "Existing hand-authored nodes and edges. CLUSTERS are prototype-only and are not sourced from Lexique."
   }

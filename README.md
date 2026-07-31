@@ -1,4 +1,4 @@
-# maillage
+# wordcloud
 
 面向中文母语者的法语词汇关系网络。不是词典，而是一张可以探索的词网：全景呈现学习进阶与自然词群，聚焦呈现每个词的正式关系、法语义项与教学辨析。
 
@@ -14,7 +14,7 @@
 
 ## 快速开始
 
-直接使用右侧已deploy的页面（amphibi-ch.github.io/maillage）；或者浏览器直接用静态文件即可，无需构建：
+项目仓库：[JinyanShao/wordcloud](https://github.com/JinyanShao/wordcloud)。本地预览可直接启动静态服务器，无需构建：
 
 ```bash
 python3 -m http.server 8000
@@ -62,9 +62,9 @@ python3 scripts/validate_data.py           # 数据、核心词与运行时不�
 当运行时学习词仍缺少 DBnary 法语定义时，可用固定版本的 [Wiktextract](https://github.com/tatuylonen/wiktextract) 对官方 French Wiktionary dump 做只读差异审计：它不自动写入 SQLite 或运行时词典。
 
 ```bash
-python3 -m venv /tmp/maillage-wiktextract
-/tmp/maillage-wiktextract/bin/pip install -r requirements-wiktextract-audit.txt
-WIKTWORDS_BIN=/tmp/maillage-wiktextract/bin/wiktwords pnpm wiktextract:audit
+python3 -m venv /tmp/wordcloud-wiktextract
+/tmp/wordcloud-wiktextract/bin/pip install -r requirements-wiktextract-audit.txt
+WIKTWORDS_BIN=/tmp/wordcloud-wiktextract/bin/wiktwords pnpm wiktextract:audit
 ```
 
 将对应月份的 dump 放入 `data/raw/wiktextract/`，再运行命令。报告会明确区分“较新快照有可用释义、但尚不能证明 DBnary 解析漏捕”、“lemma/POS 不匹配”与“该 dump 未覆盖”；原始 dump 和 JSONL 均不纳入 Git。
@@ -75,7 +75,7 @@ WIKTWORDS_BIN=/tmp/maillage-wiktextract/bin/wiktwords pnpm wiktextract:audit
 
 ### 本地学习循环
 
-“加入复习”会把词条保存在当前浏览器的本地学习循环中。新词立即到期；显示提示后可选择“不记得、模糊、记得、很熟”，分别安排 10 分钟、1 天、递增间隔和更长间隔后的下一次复习。学习记录不上传、不依赖账号；旧版本地复习队列会在读取时迁移为到期记录。
+“加入复习”会把词条保存在当前浏览器的本地学习循环中。新词立即到期；显示提示后可选择“不记得、模糊、记得、很熟”，分别安排 10 分钟、1 天、递增间隔和更长间隔后的下一次复习。学习记录不上传、不依赖账号。
 
 ## 数据来源与许可
 

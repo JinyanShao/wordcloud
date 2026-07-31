@@ -1,4 +1,4 @@
-# maillage data pipeline
+# wordcloud data pipeline
 
 The browser consumes generated static artifacts, but source alignment and review live in SQLite.
 
@@ -46,7 +46,7 @@ Inputs:
 
 Outputs:
 
-- `data/processed/maillage.sqlite`
+- `data/processed/wordcloud.sqlite`
 - `data/processed/eligible-lexicon.csv`
 - `data/reports/lexicon-audit-v1.md`
 - `data/reports/lexicon-audit-sample-500.csv`
@@ -88,7 +88,7 @@ The current verified counts are recorded in `data/reports/build-validation.md` a
 python3 scripts/build_gap_list.py
 ```
 
-Read-only against `data/processed/maillage.sqlite`; run it after any graph rebuild to refresh priorities.
+Read-only against `data/processed/wordcloud.sqlite`; run it after any graph rebuild to refresh priorities.
 
 Outputs:
 
@@ -102,9 +102,9 @@ Buckets follow the priority order in `handover/7.27-handover.md`: P1 high-freque
 This is a reproducible **audit** path, not an alternative runtime importer. It uses the upstream MIT-licensed [Wiktextract](https://github.com/tatuylonen/wiktextract) CLI against an official French Wiktionary dump to classify only the runtime learning lexemes that have no DBnary sense. It never inserts extracted glosses into SQLite or `graph-data.js`.
 
 ```bash
-python3 -m venv /tmp/maillage-wiktextract
-/tmp/maillage-wiktextract/bin/pip install -r requirements-wiktextract-audit.txt
-WIKTWORDS_BIN=/tmp/maillage-wiktextract/bin/wiktwords pnpm wiktextract:audit
+python3 -m venv /tmp/wordcloud-wiktextract
+/tmp/wordcloud-wiktextract/bin/pip install -r requirements-wiktextract-audit.txt
+WIKTWORDS_BIN=/tmp/wordcloud-wiktextract/bin/wiktwords pnpm wiktextract:audit
 ```
 
 Place the selected dump at `data/raw/wiktextract/frwiktionary-YYYYMMDD-pages-articles.xml.bz2` and set the `DUMP` constant in `scripts/audit_wiktextract.py` to that filename before the run. The generated report records the exact dump hash and extractor commit. A “Wiktionary usable differential” means the selected dump contains a same-POS gloss, but is not proof of a DBnary parser omission until DBnary is compared using a matching source snapshot. Raw dumps and JSONL output are intentionally ignored by Git; the Markdown report is the review artifact.
@@ -131,5 +131,5 @@ The queue is a review artifact, not an approval artifact: it only distinguishes 
 
 - `layout_links` influence cartography and do not count as official coverage.
 - `official_edges` are sourced or reviewed claims shown to learners.
-- `personal_links` remain browser-local under `maillage.personal.v2` and are not stored in this database.
+- `personal_links` remain browser-local under `wordcloud.personal.v2` and are not stored in this database.
 - `CLUSTERS` in the original `data.js` are hand-authored prototype scaffolding, not Lexique data.

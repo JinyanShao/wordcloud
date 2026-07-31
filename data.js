@@ -1,5 +1,5 @@
 /* ============================================================
- * maillage — 法语词网 · 种子数据
+ * wordcloud — 法语词网 · 种子数据
  * 手工整理：fond / effondrer 星团 + demeurer → abruti 漂移链
  *
  * 边的类型（edge types）：
