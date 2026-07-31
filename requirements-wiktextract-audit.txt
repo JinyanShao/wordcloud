@@ -1,0 +1,2 @@
+# Audit-only extractor; not a runtime dependency. Keep this pin aligned with the report.
+wiktextract @ git+https://github.com/tatuylonen/wiktextract.git@d9fa2335957c9089ce2c3fb110a075cf072903da

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "toolchain": {
+    "node": "v26.5.0",
+    "pnpm": "11.17.0",
+    "python": "Python 3.11.15"
+  },
+  "inputs": {
+    "data/sources.json": "34db124cf254bb732c9d56fc0553ae17c5f99b0d663284581fc952143ea64e51",
+    "data/audit-review-v1.json": "6c8547b27790d5e668d68c484a17efe8b1f3630aae9f2e12aa6c579365174a98",
+    "data/processed/editorial-seed.json": "2103d38c81c757da24560bec5c5dda0d6add1b7789e7fff0ec0c8fa6ca32566f",
+    "data.js": "0e0e61f0984adbf29b82d9fbe28df238e8fa741f83fd813cc24568225c4eac6a",
+    "dict.js": "78086b74ac024eef789af672af267430dd5e495a5df33cea939b079efdc38f1b",
+    "sql/schema.sql": "6b82bc0d4a54e8f0203f0b7a5e3407015a70730be7951f0aa650d1ee94c35494",
+    "requirements-build.txt": "81585a76c83ebe0ef08fc8b8ed2435ba55aedac27ba71da00058362d94a6777f",
+    "package.json": "ef9143993f3178839227637c801988a330df45d5b1ac3d233c5dbabed7dc8f9d",
+    "pnpm-lock.yaml": "59823911dfd76b61e089d00c1c4cd949cea0e64f82a631eb66446a45c837c231",
+    "scripts/apply_audit_review.py": "9fdd8055504640f194b0ab7eef99b6f31c0c6a2d6e08a0757fb3d50aab891d00",
+    "scripts/audit_wiktextract.py": "f233c09d630f7bfd76304ff2e157d819c037c22058022af4f309cb43ab34cd16",
+    "scripts/build_data.py": "d5571cfc2f8b9977d5fd572b38685203226dd86464aa48e41b2ad2e377d2f46e",
+    "scripts/build_dbnary_alignment_queue.py": "771cf6c56583e0bdd816e950af60228384b7cb82e1c8ee5c70a3027ab3cda6d9",
+    "scripts/build_gap_list.py": "1c40c6489b00c10e9c3bfdc9be6fa9b93c68facc73ac8609d57c087190e426cd",
+    "scripts/build_graph.py": "d88a8acdfaa11a98b09e7698fbc3e916d56a8d97b4b714cad1d0df32488b647d",
+    "scripts/build_verified.py": "91cc3b250cbe190948a0eb598c1888bafa57ab1661e07d2c6800c67d981b5d4a",
+    "scripts/export_runtime.py": "96346bd763fbe0c4b7b541ff9f44fe546ae04df905978bd31d9b8f40777d1de8",
+    "scripts/fetch_sources.py": "367a3365da2c4b955525464bba93527f99157392854560363c3600577b630939",
+    "scripts/import_dbnary.py": "72a49093d72b9e4f03c698922f4d2d36197afaf07ce144169ee3f01b17f66b94",
+    "scripts/import_demonette.py": "0d50d11c6a71321f6ef7a28baeb6924034e7ec93d57f5795305c6e9284d861b9",
+    "scripts/learning_lexicon.py": "919f22a41baa228f94e05637d384f8cb9d093036d3b37a5a658ed4c25fead3ff",
+    "scripts/update_runtime_cache.py": "3a3151074a90660d4ba4c7542c93952024be8ae4f377fabc0288c09108b790bf",
+    "scripts/validate_data.py": "08641f5bd0121cab1d6786759c57b3aa41f4e58765af1b06df3debe5e9067083",
+    "scripts/write_build_manifest.py": "698c345bac4fb81a65ce6877a9d742ee36e1b0c82f04fd2cedc290797f2c7c36",
+    "scripts/extract_seed.mjs": "331057e93fa4e3c897de12016660f9d84f2090c96e1c0a0a8bab6e031d9f6068",
+    "scripts/layout.mjs": "e14ccbc5c8075ba04448d6c949df77f43d2d2c478c71c1672a7806d54845e2ff"
+  },
+  "outputs": {
+    "graph-data.js": "25378f697c045c8486f3863d9acf9fa0ce82a2c57e86cadd352fbe232bdc4e2c",
+    "data/processed/eligible-lexicon.csv": "7537419a052aac128c0a07d8887302c949fe7d130f54555a43f3f5fc511d87df",
+    "data/reports/build-validation.md": "663f07f2f995923708cd0effdb17966048dee04fac4bada4426eaf49da7e9de4",
+    "data/reports/core-word-gap-list.csv": "17ff2d0992dcfa9716148ac601875484ed786b1bcad87841b09d5c3a169bae97",
+    "data/reports/core-word-gap-list.md": "d6fc9175f9923387b533072beb3110b68d4a48af22166b2801c02d433f12e014"
+  }
+}

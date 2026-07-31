@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>maillage · 法语词网</title>
+  <meta name="description" content="从疏密与连接中探索法语词汇。">
+  <meta name="theme-color" content="#f7f6f2">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" id="brand" aria-label="返回全图">
+      <span>maillage</span>
+      <small>法语词网</small>
+    </a>
+    <div class="searchbox">
+      <input id="search" type="search" placeholder="搜索一个法语词" autocomplete="off" spellcheck="false" aria-label="搜索法语词">
+      <div id="search-results" class="search-results hidden" role="listbox"></div>
+    </div>
+    <div class="topbar-actions">
+      <button id="review-open" class="quiet-button review-open" type="button">复习 <span id="review-count">0</span></button>
+      <button id="reset" class="quiet-button" type="button">全图</button>
+    </div>
+  </header>
+
+  <main id="viewport">
+    <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
+    <div class="map-copy" id="map-copy">
+      <p>中心更常用 · 外围更进阶 · 滚轮 / 双指缩放</p>
+    </div>
+    <nav id="focus-bar" class="focus-bar hidden" aria-label="探索路径">
+      <button id="focus-back" type="button" aria-label="返回全图" title="返回全图">←</button>
+      <div id="trail"></div>
+    </nav>
+    <div id="tooltip" class="tooltip hidden"></div>
+    <div id="stats" class="stats"></div>
+
+    <aside id="legend" class="legend">
+      <button id="legend-toggle" type="button" aria-expanded="false">图的语言</button>
+      <div id="legend-body" class="legend-body hidden">
+        <p><i class="radial-key"></i><span>中心常用 · 外围进阶<br><small>半径由等级与频率决定</small></span></p>
+        <p><i class="line layout"></i><span>词群线索<br><small>只影响角度，不等于正式关系</small></span></p>
+        <p><i class="line official"></i><span>来源确认 / 人工审校</span></p>
+        <p><i class="line personal"></i><span>我的词与关系</span></p>
+        <p class="source">FLELex · Lexique 4 · Démonette 2<br>Wiktionnaire / DBnary · CFDICT</p>
+      </div>
+    </aside>
+
+    <aside id="focus-legend" class="focus-legend hidden" aria-label="关系颜色图例">
+      <span><i style="--c:#7b8188"></i>近义</span>
+      <span><i style="--c:#3477b8"></i>派生</span>
+      <span><i style="--c:#c07a22"></i>对比</span>
+      <span><i style="--c:#7859a6"></i>漂移</span>
+      <span><i style="--c:#c7465d"></i>易混</span>
+      <span><i style="--c:#278867"></i>反义</span>
+      <span><i style="--c:#6f647d"></i>因果</span>
+      <small>细虚线＝自动候选 · 橙虚线＝我的关系</small>
+    </aside>
+
+    <aside id="panel" class="panel hidden" aria-live="polite">
+      <button id="panel-close" class="panel-close" type="button" aria-label="关闭详情">×</button>
+      <div id="panel-content"></div>
+    </aside>
+
+    <button id="add-open" class="add-button" type="button" aria-label="添加自己的词">+</button>
+  </main>
+
+  <div id="add-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="add-title">
+    <button class="dialog-mask" id="add-mask" type="button" aria-label="关闭"></button>
+    <form class="dialog-card" id="add-form">
+      <div class="eyebrow">我的词网</div>
+      <h2 id="add-title">添加一个词</h2>
+      <label>法语词<input id="add-word" required autocomplete="off" spellcheck="false" placeholder="例如 approfondir"></label>
+      <label>中文提示<input id="add-gloss" autocomplete="off" placeholder="用你自己的话"></label>
+      <label>连接到<input id="add-target" autocomplete="off" spellcheck="false" placeholder="输入一个已有词（可选）"></label>
+      <label>我为什么连接它们<input id="add-relation" autocomplete="off" placeholder="例如：总是一起想起"></label>
+      <p id="add-error" class="form-error"></p>
+      <div class="dialog-actions">
+        <button id="add-cancel" class="quiet-button" type="button">取消</button>
+        <button class="primary-button" type="submit">加入我的词网</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="review-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="review-title">
+    <button class="dialog-mask" id="review-mask" type="button" aria-label="点击遮罩关闭复习"></button>
+    <section class="dialog-card review-card">
+      <button id="review-close" class="dialog-close" type="button" aria-label="关闭复习">×</button>
+      <div class="eyebrow">主动回忆</div>
+      <h2 id="review-title">学习循环</h2>
+      <div id="review-content"></div>
+    </section>
+  </div>
+
+  <script src="graph-data.js?v=dd9bfec7831b"></script>
+  <script src="app.js?v=dd9bfec7831b"></script>
+</body>
+</html>

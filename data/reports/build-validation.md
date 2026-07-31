@@ -1,0 +1,35 @@
+# maillage 构建验证
+
+> 25/25 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。
+
+| 检查 | 结果 | 证据 |
+|---|---|---|
+| 来源登记、许可与哈希 | 通过 | 6 个来源均完整 |
+| 词汇单位唯一 | 通过 | 14,251 rows / 14,251 unique lemma+POS |
+| 500 条分层人工抽检 | 通过 | sample=500, unique=500, reviewed=500 |
+| 自动 eligible 规则 | 通过 | 结构违规=0, 无释义低频违规=0; 人工覆盖例外另有记录 |
+| 基础核心词词性、释义、义项与渲染回归 | 通过 | 24 entries verified |
+| 审校词源、搭配与义项例句 | 通过 | learning entries=8, collocations=16, sourced sense examples=37,570 |
+| 基础核心词教学例句 | 通过 | 2 个基础词、4 条短例句已导出 |
+| A1/A2 实词可检索但不强行入图 | 通过 | search-only=1,626, appartenir/VER=present, overlap=0 |
+| 运行时学习词范围、内容状态与词形搜索回归 | 通过 | learning=9,017, statuses=9,017, aliases=61,176 |
+| 图端点与方向约束 | 通过 | foreign-key errors=0, invalid order=0 |
+| 官方边来源完整 | 通过 | 4533/4533 条有来源 |
+| 核心词审校对比关系 | 通过 | 2/2 条具完整审校、来源与例句 |
+| 稳定坐标与全图连通 | 通过 | nodes=7,391, components=1, isolated=0 |
+| 七类制图信号 | 通过 | derivation=1,708, editorial_seed=100, morphology=3,797, phonetic=6,020, semantic=2,746, skeleton=325, spelling=6,872 |
+| Lexique MorphoBase 不冒充派生关系 | 通过 | promoted=0, division↔voir morphology=1, derivation=0 |
+| Démonette 直接派生通过质量门 | 通过 | gate=True, candidates=1,708, sourced_official=1,708, same_pos=197, invalid_same_pos=0 |
+| 核心词族回归 | 通过 | affirmer↔affirmation=1, voir↔vision=1, poli↔impoli=1 |
+| DBnary 义项与语义关系通过质量门 | 通过 | gate=True, entries=9,823, definitions=43,171, sense_lexemes=8,690, semantic=2,746/2,746/2,746, contradictions=0 |
+| 中文释义相似只保留为候选 | 通过 | CFDICT candidates=3,464; visible semantic layout=2,746 (DBnary only) |
+| 语义样例与多义词回归 | 通过 | poli↔respectueux syn=1 (expected 1), poli↔impoli ant=1 (expected 1), seau↔nager syn=0 (expected 0), poli entries/senses=2/4 |
+| 主词与支撑词分账 | 通过 | eligible=7,338, support=53, rendered=7,391 |
+| 静态运行时已导出 | 通过 | graph-data.js=18,076,742 bytes |
+| 前端不再依赖 CLUSTERS | 通过 | canvas 读取 graph-data.js 固定坐标 |
+| 学习表层已导出 | 通过 | 词源、搭配、DBnary 义项例句与可检索学习词进入静态运行时 |
+| 运行时图数据缓存按内容版本化 | 通过 | index.html 与 Service Worker 均引用当前 graph-data.js SHA-256 版本 |
+
+## 边界
+
+这份验证证明构建一致性、许可登记完整性和制图连通性，不证明自动候选等同于可靠语言学关系。只有 `official_edges` 才是产品可陈述关系；其余边继续保留候选或布局身份。
