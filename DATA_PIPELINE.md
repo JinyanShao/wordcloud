@@ -127,6 +127,23 @@ pnpm dbnary:alignment-queue -- --aligned-analysis data/processed/dbnary-aligned-
 
 The queue is a review artifact, not an approval artifact: it only distinguishes source coverage from a parser-capture signal. No Wiktextract text is copied into product data.
 
+## Review P0 Wiktextract definitions
+
+For the 59 A1–A2 lexemes confirmed absent from the aligned DBnary extract, reuse the pinned Wiktextract output to create a content-review queue:
+
+```bash
+pnpm wiktextract:p0:analyze
+```
+
+Review `data/processed/wiktextract-p0-review.json`, then record decisions in `data/reports/wiktextract-p0-review.csv`. Accepted rows require pipe-separated candidate sense IDs, a reviewer, and a review date. Merge and approve only after every row is decided:
+
+```bash
+pnpm wiktextract:p0:analyze
+pnpm wiktextract:p0:approve
+```
+
+The approved artifact is optional input to `build_graph.py`; pending candidates are never read by the build. The adapter aligns records and enforces review metadata, while all Wiktionary parsing remains upstream Wiktextract functionality.
+
 ## Data boundaries
 
 - `layout_links` influence cartography and do not count as official coverage.

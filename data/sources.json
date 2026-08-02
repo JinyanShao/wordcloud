@@ -74,6 +74,22 @@
     "notes": "Official DBnary OntoLex snapshot. SHA-256 aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f. Used for French lexical entries, sense definitions, explicit synonym, approximate-synonym and antonym relations. DBnary derivedFrom is deliberately not used because Démonette remains the morphology authority."
   },
   {
+    "id": "wiktionary_fr_wiktextract",
+    "name": "French Wiktionary dump parsed by Wiktextract",
+    "version": "frwiktionary-20260701-wiktextract-1.99.7",
+    "homepage_url": "https://fr.wiktionary.org/",
+    "download_url": "https://dumps.wikimedia.org/frwiktionary/20260701/frwiktionary-20260701-pages-articles.xml.bz2",
+    "license_id": "CC-BY-SA-3.0-or-later",
+    "license_url": "https://fr.wiktionary.org/wiki/Wiktionnaire:Licence",
+    "attribution": "Wiktionnaire contributors; structured extraction by Wiktextract",
+    "commercial_use": "yes",
+    "redistribution": "yes",
+    "local_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
+    "expected_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
+    "downloaded_at": "2026-08-02",
+    "notes": "P0 definition candidates only. Wiktextract code is pinned to commit d9fa2335957c9089ce2c3fb110a075cf072903da (MIT); lexical content remains Wiktionnaire CC BY-SA. Nothing is published without named, dated human review."
+  },
+  {
     "id": "cfdict_reverse_local",
     "name": "CFDICT French-to-Chinese reverse index",
     "version": "local-prototype",

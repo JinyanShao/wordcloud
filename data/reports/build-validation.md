@@ -1,6 +1,6 @@
 # wordcloud 构建验证
 
-> 26/26 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。
+> 27/27 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。
 
 | 检查 | 结果 | 证据 |
 |---|---|---|
@@ -30,6 +30,7 @@
 | 学习表层已导出 | 通过 | 词源、搭配、DBnary 义项例句与可检索学习词进入静态运行时 |
 | 运行时图数据缓存按内容版本化 | 通过 | index.html 与 Service Worker 均引用当前 graph-data.js SHA-256 版本 |
 | DBnary 同快照审校队列可复现且禁止误导入 | 通过 | items/csv=203/203, aligned_sha256=aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f, production_sha256=aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f |
+| Wiktextract P0 候选完整且人工批准门关闭 | 通过 | items/csv=59/59, pending=59 |
 
 ## 边界
 

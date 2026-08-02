@@ -69,6 +69,17 @@ WIKTWORDS_BIN=/tmp/wordcloud-wiktextract/bin/wiktwords pnpm wiktextract:audit
 
 将对应月份的 dump 放入 `data/raw/wiktextract/`，再运行命令。报告会明确区分“较新快照有可用释义、但尚不能证明 DBnary 解析漏捕”、“lemma/POS 不匹配”与“该 dump 未覆盖”；原始 dump 和 JSONL 均不纳入 Git。
 
+DBnary 同快照复核后，A1–A2 来源覆盖缺口使用同一份 Wiktextract JSONL 建立人工审校队列：
+
+```bash
+pnpm wiktextract:p0:analyze
+# 审校 data/reports/wiktextract-p0-review.csv
+pnpm wiktextract:p0:analyze
+pnpm wiktextract:p0:approve
+```
+
+`approve` 要求每个词均已决定，且被接受的词包含批准义项 ID、审核人和审核日期。待审候选不会进入 SQLite 或运行时。
+
 ### 学习表层
 
 词条详情将 DBnary 的法语义项及原始例句、编辑审校的常用搭配和编辑审校的词源线索分别呈现。`editorial-seed.json` 的 `editorialLearning` 必须按 lemma + POS 绑定，并携带来源标签、审校人和日期；它不会将自动生成的语言学断言伪装成审校内容。

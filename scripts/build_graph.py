@@ -21,6 +21,7 @@ GRAPH_INPUT = ROOT / "data" / "processed" / "graph-input.json"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
 DEMONETTE_APPROVED_PATH = ROOT / "data" / "processed" / "demonette-approved.json"
 DBNARY_APPROVED_PATH = ROOT / "data" / "processed" / "dbnary-approved.json"
+WIKTEXTRACT_P0_APPROVED_PATH = ROOT / "data" / "processed" / "wiktextract-p0-approved.json"
 CREATED_AT = "2026-07-27T00:00:00Z"
 
 SIGNAL_CONFIG = {
@@ -296,6 +297,15 @@ def dbnary_payload(nodes: list[sqlite3.Row]) -> dict[str, object]:
     return {**payload, "edges": graph_edges}
 
 
+def wiktextract_p0_payload() -> dict[str, object]:
+    if not WIKTEXTRACT_P0_APPROVED_PATH.exists():
+        return {"entries": [], "senses": []}
+    payload = json.loads(WIKTEXTRACT_P0_APPROVED_PATH.read_text(encoding="utf-8"))
+    if payload.get("meta", {}).get("source_id") != "wiktionary_fr_wiktextract":
+        raise SystemExit("Wiktextract P0 approved payload has an unexpected source")
+    return payload
+
+
 def main() -> None:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
@@ -395,6 +405,7 @@ def main() -> None:
     ]
 
     sourced_semantics = dbnary_payload(nodes)
+    sourced_p0 = wiktextract_p0_payload()
     layouts["semantic"] = [
         (int(edge["a_id"]), int(edge["b_id"]), float(edge["weight"]))
         for edge in sourced_semantics.get("edges", [])
@@ -497,9 +508,9 @@ def main() -> None:
         [
             (
                 entry["id"], int(entry["lexeme_id"]), int(entry["entry_rank"]),
-                "dbnary_fr", entry["source_url"],
+                entry.get("source_id", "dbnary_fr"), entry["source_url"],
             )
-            for entry in sourced_semantics.get("entries", [])
+            for entry in sourced_semantics.get("entries", []) + sourced_p0.get("entries", [])
         ],
     )
     conn.executemany(
@@ -512,9 +523,9 @@ def main() -> None:
             (
                 sense["id"], sense["entry_id"], int(sense["lexeme_id"]),
                 str(sense["sense_number"]), sense["definition_fr"],
-                json.dumps(sense.get("examples", []), ensure_ascii=False), "dbnary_fr",
+                json.dumps(sense.get("examples", []), ensure_ascii=False), sense.get("source_id", "dbnary_fr"),
             )
-            for sense in sourced_semantics.get("senses", [])
+            for sense in sourced_semantics.get("senses", []) + sourced_p0.get("senses", [])
         ],
     )
 

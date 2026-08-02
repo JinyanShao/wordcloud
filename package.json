@@ -13,6 +13,8 @@
     "dbnary:approve": "python3 scripts/import_dbnary.py approve",
     "wiktextract:audit": "python3 scripts/audit_wiktextract.py run && python3 scripts/audit_wiktextract.py report",
     "wiktextract:audit:report": "python3 scripts/audit_wiktextract.py report",
+    "wiktextract:p0:analyze": "python3 scripts/import_wiktextract_p0.py analyze",
+    "wiktextract:p0:approve": "python3 scripts/import_wiktextract_p0.py approve",
     "dbnary:alignment-queue": "python3 scripts/build_dbnary_alignment_queue.py",
     "graph:candidates": "node scripts/extract_seed.mjs && python3 scripts/build_graph.py",
     "graph:layout": "node scripts/layout.mjs",

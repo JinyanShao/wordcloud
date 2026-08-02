@@ -593,6 +593,21 @@ def main() -> None:
         f"items/csv={len(alignment_items)}/{len(csv_rows)}, aligned_sha256={alignment_hash}, production_sha256={production_hash}",
     )
 
+    p0_path = ROOT / "data" / "processed" / "wiktextract-p0-review.json"
+    p0_csv = ROOT / "data" / "reports" / "wiktextract-p0-review.csv"
+    p0 = json.loads(p0_path.read_text(encoding="utf-8"))
+    with p0_csv.open(encoding="utf-8", newline="") as stream:
+        p0_csv_rows = list(csv.DictReader(stream))
+    p0_items = p0["items"]
+    check(
+        "Wiktextract P0 候选完整且人工批准门关闭",
+        len(p0_items) == len(p0_csv_rows) == 59
+        and all(p0["gates"].values())
+        and all(item["candidate_entries"] for item in p0_items)
+        and all(item["review"]["status"] != "accepted" or (item["review"].get("approved_sense_ids") and item["review"].get("reviewer") and item["review"].get("reviewed_at")) for item in p0_items),
+        f"items/csv={len(p0_items)}/{len(p0_csv_rows)}, pending={sum(item['review']['status'] == 'pending' for item in p0_items)}",
+    )
+
     passed = sum(result for _, result, _ in checks)
     lines = [
         "# wordcloud 构建验证",
