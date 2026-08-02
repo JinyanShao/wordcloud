@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import csv
 import json
 import re
 import sqlite3
@@ -568,6 +569,28 @@ def main() -> None:
         "运行时图数据缓存按内容版本化",
         not cache_errors,
         "; ".join(cache_errors) or "index.html 与 Service Worker 均引用当前 graph-data.js SHA-256 版本",
+    )
+
+    alignment_path = ROOT / "data" / "processed" / "dbnary-alignment-review-queue.json"
+    alignment_csv = ROOT / "data" / "reports" / "dbnary-alignment-review-queue.csv"
+    alignment = json.loads(alignment_path.read_text(encoding="utf-8"))
+    alignment_items = alignment["items"]
+    with alignment_csv.open(encoding="utf-8", newline="") as stream:
+        csv_rows = list(csv.DictReader(stream))
+    alignment_hash = alignment["meta"].get("aligned_dbnary_source_sha256")
+    production_hash = json.loads(dbnary_report.read_text(encoding="utf-8"))["meta"]["source_sha256"]
+    check(
+        "DBnary 同快照审校队列可复现且禁止误导入",
+        len(alignment_items) == len(csv_rows) == 203
+        and alignment_hash == production_hash
+        and all(item["alignment_decision"] != "pending_aligned_dbnary_snapshot" for item in alignment_items)
+        and all(
+            item["import_eligibility"] == "parser_fix_candidate"
+            if item["alignment_decision"] == "dbnary_parser_capture_gap"
+            else item["import_eligibility"] == "blocked"
+            for item in alignment_items
+        ),
+        f"items/csv={len(alignment_items)}/{len(csv_rows)}, aligned_sha256={alignment_hash}, production_sha256={production_hash}",
     )
 
     passed = sum(result for _, result, _ in checks)

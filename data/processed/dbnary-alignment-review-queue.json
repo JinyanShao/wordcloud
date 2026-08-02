@@ -3,7 +3,8 @@
     "version": "dbnary-alignment-review-v1",
     "purpose": "audit only; never publish Wiktextract records directly",
     "wiktextract_dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
-    "aligned_dbnary_analysis": null
+    "aligned_dbnary_analysis": "data/processed/dbnary-analysis.json",
+    "aligned_dbnary_source_sha256": "aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f"
   },
   "items": [
     {
@@ -12,7 +13,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -20,7 +23,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -37,7 +40,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -45,7 +50,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -62,7 +67,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -70,7 +77,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -87,7 +94,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -95,7 +104,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -112,7 +121,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -120,7 +131,7 @@
         "glossed_senses": 10
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -137,7 +148,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -145,7 +158,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -162,7 +175,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -170,7 +185,7 @@
         "glossed_senses": 10
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -187,7 +202,9 @@
       "pos": "VER",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -195,7 +212,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -212,7 +229,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -220,7 +239,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -237,7 +256,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -245,7 +266,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -262,7 +283,9 @@
       "pos": "VER",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -270,7 +293,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -287,7 +310,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -295,7 +320,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -312,7 +337,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -320,7 +347,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -337,7 +364,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -345,7 +374,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -362,7 +391,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -370,7 +401,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -387,7 +418,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -395,7 +428,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -412,7 +445,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -420,7 +455,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -437,7 +472,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -445,7 +482,7 @@
         "glossed_senses": 9
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -462,7 +499,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -470,7 +509,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -487,7 +526,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -495,7 +536,7 @@
         "glossed_senses": 12
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -512,7 +553,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -520,7 +563,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -537,7 +580,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -545,7 +590,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -562,7 +607,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -570,7 +617,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -587,7 +634,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -595,7 +644,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -612,7 +661,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -620,7 +671,7 @@
         "glossed_senses": 11
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -637,7 +688,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -645,7 +698,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -662,7 +715,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -670,7 +725,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -687,7 +742,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -695,7 +752,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -712,7 +769,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -720,7 +779,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -737,7 +796,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -745,7 +806,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -762,7 +823,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -770,7 +833,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -787,7 +850,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -795,7 +860,7 @@
         "glossed_senses": 9
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -812,7 +877,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -820,7 +887,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -837,7 +904,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -845,7 +914,7 @@
         "glossed_senses": 14
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -862,7 +931,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -870,7 +941,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -887,7 +958,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -895,7 +968,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -912,7 +985,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -920,7 +995,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -937,7 +1012,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -945,7 +1022,7 @@
         "glossed_senses": 22
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -962,7 +1039,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -970,7 +1049,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -987,7 +1066,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -995,7 +1076,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1012,7 +1093,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1020,7 +1103,7 @@
         "glossed_senses": 22
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1037,7 +1120,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1045,7 +1130,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1062,7 +1147,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1070,7 +1157,7 @@
         "glossed_senses": 17
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1087,7 +1174,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1095,7 +1184,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1112,7 +1201,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1120,7 +1211,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1137,7 +1228,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1145,7 +1238,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1162,7 +1255,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1170,7 +1265,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1187,7 +1282,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1195,7 +1292,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1212,7 +1309,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1220,7 +1319,7 @@
         "glossed_senses": 11
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1237,7 +1336,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1245,7 +1346,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1262,7 +1363,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1270,7 +1373,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1287,7 +1390,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1295,7 +1400,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1312,7 +1417,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1320,7 +1427,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1337,7 +1444,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1345,7 +1454,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1362,7 +1471,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1370,7 +1481,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1387,7 +1498,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1395,7 +1508,7 @@
         "glossed_senses": 16
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1412,7 +1525,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1420,7 +1535,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1437,7 +1552,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1445,7 +1562,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1462,7 +1579,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1470,7 +1589,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1487,7 +1606,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1495,7 +1616,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1512,7 +1633,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1520,7 +1643,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1537,7 +1660,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1545,7 +1670,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1562,7 +1687,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1570,7 +1697,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1587,7 +1714,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1595,7 +1724,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1612,7 +1741,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1620,7 +1751,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1637,7 +1768,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1645,7 +1778,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1662,7 +1795,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1670,7 +1805,7 @@
         "glossed_senses": 10
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1687,7 +1822,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1695,7 +1832,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1712,7 +1849,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1720,7 +1859,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1737,7 +1876,9 @@
       "pos": "VER",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1745,7 +1886,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1762,7 +1903,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1770,7 +1913,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1787,7 +1930,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1795,7 +1940,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1812,7 +1957,9 @@
       "pos": "VER",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1820,7 +1967,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1837,7 +1984,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1845,7 +1994,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1862,7 +2011,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1870,7 +2021,7 @@
         "glossed_senses": 11
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1887,7 +2038,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1895,7 +2048,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1912,7 +2065,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1920,7 +2075,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1937,7 +2092,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1945,7 +2102,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1962,7 +2119,9 @@
       "pos": "VER",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1970,7 +2129,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -1987,7 +2146,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -1995,7 +2156,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2012,7 +2173,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2020,7 +2183,7 @@
         "glossed_senses": 12
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2037,7 +2200,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2045,7 +2210,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2062,7 +2227,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2070,7 +2237,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2087,7 +2254,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2095,7 +2264,7 @@
         "glossed_senses": 18
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2112,7 +2281,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2120,7 +2291,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2137,7 +2308,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2145,7 +2318,7 @@
         "glossed_senses": 12
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2162,7 +2335,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2170,7 +2345,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2187,7 +2362,9 @@
       "pos": "VER",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2195,7 +2372,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2212,7 +2389,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2220,7 +2399,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2237,7 +2416,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2245,7 +2426,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2262,7 +2443,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2270,7 +2453,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2287,7 +2470,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2295,7 +2480,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2312,7 +2497,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2320,7 +2507,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2337,7 +2524,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2345,7 +2534,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2362,7 +2551,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2370,7 +2561,7 @@
         "glossed_senses": 14
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2387,7 +2578,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2395,7 +2588,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2412,7 +2605,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2420,7 +2615,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2437,7 +2632,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2445,7 +2642,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2462,7 +2659,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2470,7 +2669,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2487,7 +2686,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2495,7 +2696,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2512,7 +2713,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2520,7 +2723,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2537,7 +2740,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2545,7 +2750,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2562,7 +2767,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2570,7 +2777,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2587,7 +2794,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2595,7 +2804,7 @@
         "glossed_senses": 18
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2612,7 +2821,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2620,7 +2831,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2637,7 +2848,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2645,7 +2858,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2662,7 +2875,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2670,7 +2885,7 @@
         "glossed_senses": 9
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2687,7 +2902,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2695,7 +2912,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2712,7 +2929,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2720,7 +2939,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2737,7 +2956,9 @@
       "pos": "VER",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2745,7 +2966,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2762,7 +2983,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2770,7 +2993,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2787,7 +3010,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2795,7 +3020,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2812,7 +3037,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2820,7 +3047,7 @@
         "glossed_senses": 9
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2837,7 +3064,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2845,7 +3074,7 @@
         "glossed_senses": 19
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2862,7 +3091,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2870,7 +3101,7 @@
         "glossed_senses": 16
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2887,7 +3118,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2895,7 +3128,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2912,7 +3145,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2920,7 +3155,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2937,7 +3172,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2945,7 +3182,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2962,7 +3199,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2970,7 +3209,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -2987,7 +3226,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -2995,7 +3236,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3012,7 +3253,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3020,7 +3263,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3037,7 +3280,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3045,7 +3290,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3062,7 +3307,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3070,7 +3317,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3087,7 +3334,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3095,7 +3344,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3112,7 +3361,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3120,7 +3371,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3137,7 +3388,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3145,7 +3398,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3162,7 +3415,9 @@
       "pos": "VER",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3170,7 +3425,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3187,7 +3442,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3195,7 +3452,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3212,7 +3469,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3220,7 +3479,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3237,7 +3496,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3245,7 +3506,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3262,7 +3523,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3270,7 +3533,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3287,7 +3550,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3295,7 +3560,7 @@
         "glossed_senses": 12
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3312,7 +3577,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3320,7 +3587,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3337,7 +3604,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3345,7 +3614,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3362,7 +3631,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3370,7 +3641,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3387,7 +3658,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3395,7 +3668,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3412,7 +3685,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3420,7 +3695,7 @@
         "glossed_senses": 10
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3437,7 +3712,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3445,7 +3722,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3462,7 +3739,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3470,7 +3749,7 @@
         "glossed_senses": 17
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3487,7 +3766,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3495,7 +3776,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3512,7 +3793,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3520,7 +3803,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3537,7 +3820,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3545,7 +3830,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3562,7 +3847,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3570,7 +3857,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3587,7 +3874,9 @@
       "pos": "VER",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3595,7 +3884,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3612,7 +3901,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3620,7 +3911,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3637,7 +3928,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3645,7 +3938,7 @@
         "glossed_senses": 13
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3662,7 +3955,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3670,7 +3965,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3687,7 +3982,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3695,7 +3992,7 @@
         "glossed_senses": 11
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3712,7 +4009,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3720,7 +4019,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3737,7 +4036,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3745,7 +4046,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3762,7 +4063,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3770,7 +4073,7 @@
         "glossed_senses": 12
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3787,7 +4090,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3795,7 +4100,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3812,7 +4117,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3820,7 +4127,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3837,7 +4144,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3845,7 +4154,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3862,7 +4171,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3870,7 +4181,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3887,7 +4198,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3895,7 +4208,7 @@
         "glossed_senses": 10
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3912,7 +4225,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3920,7 +4235,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3937,7 +4252,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3945,7 +4262,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3962,7 +4279,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3970,7 +4289,7 @@
         "glossed_senses": 9
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -3987,7 +4306,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -3995,7 +4316,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4012,7 +4333,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4020,7 +4343,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4037,7 +4360,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4045,7 +4370,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4062,7 +4387,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4070,7 +4397,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4087,7 +4414,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4095,7 +4424,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4112,7 +4441,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4120,7 +4451,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4137,7 +4468,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4145,7 +4478,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4162,7 +4495,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4170,7 +4505,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4187,7 +4522,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4195,7 +4532,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4212,7 +4549,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4220,7 +4559,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4237,7 +4576,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4245,7 +4586,7 @@
         "glossed_senses": 11
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4262,7 +4603,9 @@
       "pos": "VER",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4270,7 +4613,7 @@
         "glossed_senses": 21
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4287,7 +4630,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4295,7 +4640,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4312,7 +4657,9 @@
       "pos": "VER",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4320,7 +4667,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4337,7 +4684,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4345,7 +4694,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4362,7 +4711,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4370,7 +4721,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4387,7 +4738,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4395,7 +4748,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4412,7 +4765,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4420,7 +4775,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4437,7 +4792,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4445,7 +4802,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4462,7 +4819,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4470,7 +4829,7 @@
         "glossed_senses": 13
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4487,7 +4846,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4495,7 +4856,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4512,7 +4873,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4520,7 +4883,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4537,7 +4900,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4545,7 +4910,7 @@
         "glossed_senses": 16
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4562,7 +4927,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4570,7 +4937,7 @@
         "glossed_senses": 10
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4587,7 +4954,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4595,7 +4964,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4612,7 +4981,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4620,7 +4991,7 @@
         "glossed_senses": 6
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4637,7 +5008,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4645,7 +5018,7 @@
         "glossed_senses": 34
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4662,7 +5035,9 @@
       "pos": "NOM",
       "cefr_level": "C1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P3",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4670,7 +5045,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4687,7 +5062,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4695,7 +5072,7 @@
         "glossed_senses": 14
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4712,7 +5089,9 @@
       "pos": "VER",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4720,7 +5099,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4737,7 +5116,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4745,7 +5126,7 @@
         "glossed_senses": 10
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4762,7 +5143,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4770,7 +5153,7 @@
         "glossed_senses": 1
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4787,7 +5170,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4795,7 +5180,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4812,7 +5197,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4820,7 +5207,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4837,7 +5224,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4845,7 +5234,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4862,7 +5251,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4870,7 +5261,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4887,7 +5278,9 @@
       "pos": "NOM",
       "cefr_level": "A1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4895,7 +5288,7 @@
         "glossed_senses": 5
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4912,7 +5305,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4920,7 +5315,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4937,7 +5332,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4945,7 +5342,7 @@
         "glossed_senses": 3
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4962,7 +5359,9 @@
       "pos": "NOM",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4970,7 +5369,7 @@
         "glossed_senses": 7
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -4987,7 +5386,9 @@
       "pos": "VER",
       "cefr_level": "B1",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P1",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -4995,7 +5396,7 @@
         "glossed_senses": 2
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -5012,7 +5413,9 @@
       "pos": "NOM",
       "cefr_level": "A2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P0",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -5020,7 +5423,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -5037,7 +5440,9 @@
       "pos": "VER",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -5045,7 +5450,7 @@
         "glossed_senses": 4
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
@@ -5062,7 +5467,9 @@
       "pos": "NOM",
       "cefr_level": "B2",
       "status": "pending_human_review",
-      "alignment_decision": "pending_aligned_dbnary_snapshot",
+      "review_priority": "P2",
+      "alignment_decision": "dbnary_source_uncovered_same_snapshot",
+      "import_eligibility": "blocked",
       "wiktextract_evidence": {
         "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
         "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
@@ -5070,7 +5477,7 @@
         "glossed_senses": 8
       },
       "dbnary_evidence": {
-        "aligned_analysis": null,
+        "aligned_analysis": "data/processed/dbnary-analysis.json",
         "parsed_senses": 0,
         "matched_entries": 0
       },
