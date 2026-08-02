@@ -16,6 +16,7 @@ STEPS = [
     ["pnpm", "demonette:approve"],
     ["pnpm", "dbnary:analyze"],
     ["pnpm", "dbnary:approve"],
+    ["pnpm", "wiktextract:p0:approve"],
     ["pnpm", "graph:candidates"],
     ["pnpm", "graph:layout"],
     ["pnpm", "graph:export"],

@@ -19,6 +19,6 @@
 
 | 状态 | 数量 |
 |---|---:|
-| pending | 59 |
-| accepted | 0 |
-| rejected | 0 |
+| pending | 0 |
+| accepted | 58 |
+| rejected | 1 |

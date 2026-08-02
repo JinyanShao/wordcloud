@@ -1,0 +1,2178 @@
+{
+  "meta": {
+    "version": "wiktextract-p0-review-v1",
+    "source_id": "wiktionary_fr_wiktextract",
+    "dump_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
+    "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
+    "extractor": "Wiktextract 1.99.7",
+    "extractor_commit": "d9fa2335957c9089ce2c3fb110a075cf072903da",
+    "license_id": "CC-BY-SA-3.0-or-later",
+    "purpose": "human review queue; never publish pending candidates"
+  },
+  "entries": [
+    {
+      "id": "wikt-p0-entry-81",
+      "lexeme_id": 81,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/accident",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-129",
+      "lexeme_id": 129,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/achat",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-675",
+      "lexeme_id": 675,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/appartenir",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-895",
+      "lexeme_id": 895,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/assister",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-898",
+      "lexeme_id": 898,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/association",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-1052",
+      "lexeme_id": 1052,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/auteur",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-1228",
+      "lexeme_id": 1228,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/balle",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-1500",
+      "lexeme_id": 1500,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/bois",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-1641",
+      "lexeme_id": 1641,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/bowling",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-1828",
+      "lexeme_id": 1828,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/cacher",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-2389",
+      "lexeme_id": 2389,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/ch%C3%B4mage",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-2474",
+      "lexeme_id": 2474,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/classe",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-2497",
+      "lexeme_id": 2497,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/climat",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-2604",
+      "lexeme_id": 2604,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/collectionneur",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-2860",
+      "lexeme_id": 2860,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/conduire",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-3039",
+      "lexeme_id": 3039,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/continent",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-3643",
+      "lexeme_id": 3643,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/dessiner",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-3699",
+      "lexeme_id": 3699,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/dieu",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-3753",
+      "lexeme_id": 3753,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/directeur",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-4038",
+      "lexeme_id": 4038,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/d%C3%A9but",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-4107",
+      "lexeme_id": 4107,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/d%C3%A9cor",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-4812",
+      "lexeme_id": 4812,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/esclave",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-4819",
+      "lexeme_id": 4819,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/espace",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-5051",
+      "lexeme_id": 5051,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/fabriquer",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-5233",
+      "lexeme_id": 5233,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/fier",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-5365",
+      "lexeme_id": 5365,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/fonction",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-5389",
+      "lexeme_id": 5389,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/football",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-5702",
+      "lexeme_id": 5702,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/garder",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-5718",
+      "lexeme_id": 5718,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/gar%C3%A7on",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-5952",
+      "lexeme_id": 5952,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/groupe",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-6269",
+      "lexeme_id": 6269,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/humeur",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-7199",
+      "lexeme_id": 7199,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/jour",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-7231",
+      "lexeme_id": 7231,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/jumeau",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-7477",
+      "lexeme_id": 7477,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/litre",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-7848",
+      "lexeme_id": 7848,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/marche",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-7852",
+      "lexeme_id": 7852,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/march%C3%A9",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-8216",
+      "lexeme_id": 8216,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/moment",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-8441",
+      "lexeme_id": 8441,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/m%C3%A8tre",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-8677",
+      "lexeme_id": 8677,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/nombre",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-8723",
+      "lexeme_id": 8723,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/note",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-8765",
+      "lexeme_id": 8765,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/nuit",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-9353",
+      "lexeme_id": 9353,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/patron",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-9362",
+      "lexeme_id": 9362,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/pauvre",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-10096",
+      "lexeme_id": 10096,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/produit",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-10581",
+      "lexeme_id": 10581,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/quitter",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-10873",
+      "lexeme_id": 10873,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/regarder",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-11202",
+      "lexeme_id": 11202,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/rive",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-11708",
+      "lexeme_id": 11708,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/sapin",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-11739",
+      "lexeme_id": 11739,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/sauter",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-12072",
+      "lexeme_id": 12072,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/sommeil",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-12739",
+      "lexeme_id": 12739,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/temps",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-12878",
+      "lexeme_id": 12878,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/toit",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-12940",
+      "lexeme_id": 12940,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/toucher",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-13067",
+      "lexeme_id": 13067,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/travail",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-13074",
+      "lexeme_id": 13074,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/traverser",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-13558",
+      "lexeme_id": 13558,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/ville",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-13782",
+      "lexeme_id": 13782,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/%C3%A2ne",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    },
+    {
+      "id": "wikt-p0-entry-14099",
+      "lexeme_id": 14099,
+      "entry_rank": 1,
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_url": "https://fr.wiktionary.org/wiki/%C3%A9quipe",
+      "reviewer": "Jinyan Shao",
+      "reviewed_at": "2026-08-02"
+    }
+  ],
+  "senses": [
+    {
+      "id": "wikt-p0-sense-81-1",
+      "entry_id": "wikt-p0-entry-81",
+      "lexeme_id": 81,
+      "sense_number": "1",
+      "definition_fr": "Événement impromptu causant des dégâts corporels ou matériels.",
+      "examples": [
+        "Hier, aux alentours de 18 heures, un accident s’est produit sur l’autoroute A63 au niveau de Labouheyre, dans les Landes entre une voiture et un poids lourd."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-81-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-129-1",
+      "entry_id": "wikt-p0-entry-129",
+      "lexeme_id": 129,
+      "sense_number": "1",
+      "definition_fr": "Acquisition faite à prix d’argent.",
+      "examples": [
+        "Faire achat de marchandises.",
+        "Ce jeudi 9 janvier, la plus haute juridiction de l’Union européenne a statué que le fait d’exiger des passagers ferroviaires qu’ils déclarent leur genre lors de l’ achat d’un billet était contraire au règlement général sur la protection des données (RGPD) de l’UE."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-129-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-129-2",
+      "entry_id": "wikt-p0-entry-129",
+      "lexeme_id": 129,
+      "sense_number": "2",
+      "definition_fr": "Chose achetée.",
+      "examples": [
+        "Je veux vous faire voir mon dernier achat."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-129-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-675-1",
+      "entry_id": "wikt-p0-entry-675",
+      "lexeme_id": 675,
+      "sense_number": "1",
+      "definition_fr": "Être la propriété légitime de quelqu’un, que celui à qui est la chose l’ait en sa possession ou non.",
+      "examples": [
+        "Donc, primitivement, il y avait eu là quatre maisons distinctes qui n'en faisaient plus qu'une et qui devaient appartenir maintenant au même propriétaire.",
+        "Il m’en appartient une moitié."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-675-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-675-2",
+      "entry_id": "wikt-p0-entry-675",
+      "lexeme_id": 675,
+      "sense_number": "2",
+      "definition_fr": "Faire partie de.",
+      "examples": [
+        "Le Groenland, qui a la chance d'appartenir au Danemark, est, après l'Australie, la plus grande île du monde ; son étendue correspond approximativement au quart de celle de l'Europe.",
+        "Henri s'était rapidement familiarisé avec la plupart de ces messieurs. Grâce à Tacherot, il était accepté ; il appartenait maintenant à leur monde."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-675-1-6"
+    },
+    {
+      "id": "wikt-p0-sense-895-1",
+      "entry_id": "wikt-p0-entry-895",
+      "lexeme_id": 895,
+      "sense_number": "1",
+      "definition_fr": "Être présent ; être témoin ; être spectateur.",
+      "examples": [
+        "Au mois de janvier de cette année, me trouvant à Paris, […], je reçus de Maxime Du Camp l'invitation tout à fait inattendue d’assister à l'exécution de Troppmann.",
+        "Dieu a permis qu'uni au cercle des amis et serviteurs de sa maison ainsi que des autorités de notre ville, j’assistasse en priant à son dernier soupir."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-895-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-895-2",
+      "entry_id": "wikt-p0-entry-895",
+      "lexeme_id": 895,
+      "sense_number": "2",
+      "definition_fr": "Secourir ; aider.",
+      "examples": [
+        "Saint Grégoire de Nazianze nomme Ananias et Saphira des voleurs d'une nouvelle espèce, parce qu'ayant promis d'apporter tout le prix de leurs héritages aux apôtres, afin qu'ils en assistassent les pauvres; ils en retenaient une partie, et devenaient ainsi les voleurs de leur bien propre.",
+        "En Février, j’assistai le premier malade de la rougeole, un enfant de quatorze ans, chez lequel la maladie était compliquée de gastro-entérite et de laryngite; […]"
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-895-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-898-1",
+      "entry_id": "wikt-p0-entry-898",
+      "lexeme_id": 898,
+      "sense_number": "1",
+      "definition_fr": "Réunion de plusieurs personnes physiques ou de personnes morales dans un but, dans un intérêt commun.",
+      "examples": [
+        "Lorsque Rousseau demandait que la démo­cratie ne supportât dans son sein aucune association particulière, il raisonnait d'après la connaissance qu'il avait des républiques du Moyen Âge.",
+        "Vétérans chevronnés de la guerre des boutons, grands maraudeurs de pommes et abatteurs de noix, tous, garnements de dix à douze ans, nous avions ce printemps-là reformé notre association de bandits grimpeurs, pillards aériens et détrousseurs de nids."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-898-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-1052-1",
+      "entry_id": "wikt-p0-entry-1052",
+      "lexeme_id": 1052,
+      "sense_number": "1",
+      "definition_fr": "Personne qui est à l’origine de quelque chose.",
+      "examples": [
+        "Auteur d'un match époustouflant, Medvedev élimine Alcaraz en quatre manches.",
+        "Le sang coule à flots. Le gémissement des blessés, le murmure étouffé de ceux qui s’efforcent de se dégager de cette mêlée de mort et de mourants, navrent le cœur du soldat, auteur innocent de ce massacre, […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1052-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-1052-2",
+      "entry_id": "wikt-p0-entry-1052",
+      "lexeme_id": 1052,
+      "sense_number": "2",
+      "definition_fr": "Personne qui a rédigé un ouvrage de littérature, de science ou d’art.",
+      "examples": [
+        "D’autres auteurs ont été plus loin dans le domaine des suppositions.",
+        "Du coup, pour ce qui est de sa thèse, le livre fait pschitt. Il ne reste que des morceaux de bravoure au long desquels l’auteur s’en prend à son adversaire favori."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1052-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-1228-1",
+      "entry_id": "wikt-p0-entry-1228",
+      "lexeme_id": 1228,
+      "sense_number": "1",
+      "definition_fr": "Objet sphérique utilisé pour jouer.",
+      "examples": [
+        "Une balle de tennis.",
+        "Être ultra-resserré sans la balle et déployé avec, une stratégie qui permet de combler les lacunes individuelles quand le ballon est perdu."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1228-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-1228-2",
+      "entry_id": "wikt-p0-entry-1228",
+      "lexeme_id": 1228,
+      "sense_number": "2",
+      "definition_fr": "Projectile d’arme à feu.",
+      "examples": [
+        "Cela fait, le gars aux biques alla se poster à un créneau et se mit à envoyer aux tirailleurs allemands des balles bien dirigées.",
+        "On entendait incessamment sur le parc de Neuilly grêler les balles à travers les branches avec ce bruit des orages d'été que nous connaissons si bien."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1228-1-4"
+    },
+    {
+      "id": "wikt-p0-sense-1500-1",
+      "entry_id": "wikt-p0-entry-1500",
+      "lexeme_id": 1500,
+      "sense_number": "1",
+      "definition_fr": "Substance dure et fibreuse des arbres.",
+      "examples": [
+        "Le bois est un matériau noble, une matière vivante.",
+        "Les mines sont étançonnées et étayées avec du bois auquel on met le feu, ce qui fait tomber une partie des défenses de la barbacane."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1500-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-1500-2",
+      "entry_id": "wikt-p0-entry-1500",
+      "lexeme_id": 1500,
+      "sense_number": "2",
+      "definition_fr": "Ensemble d’arbres assez proches, délimité par une lisière.",
+      "examples": [
+        "La plupart des montagnes de Walachie sont garnies de bois composés de poiriers, de cerisiers, d’abricotiers et autres arbres fruitiers qui donnent aux forêts l’aspect d’immenses vergers.",
+        "Deux bois, l’un à son amorce, l’autre au mitan, chevauchent la longue articulation crayeuse qui porte le nom de plateau de Lorette."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1500-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-1641-1",
+      "entry_id": "wikt-p0-entry-1641",
+      "lexeme_id": 1641,
+      "sense_number": "1",
+      "definition_fr": "Jeu qui consiste à renverser dix quilles à l’aide d’une boule.",
+      "examples": [
+        "C’est le cas de Gwendoline Matos, également membre de l’équipe de France, mais de goalball (un mix de bowling et de handball qui n’a pas son équivalent chez les valides).",
+        "Après le boulot, rien de mieux qu’une partie de bowling zérogé avec des copains."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1641-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-1641-2",
+      "entry_id": "wikt-p0-entry-1641",
+      "lexeme_id": 1641,
+      "sense_number": "2",
+      "definition_fr": "Salle où l’on pratique ce jeu.",
+      "examples": [
+        "Se rendant tranquillement au bowling, du côté d’Auch (Gers), une femme a dû faire appel à la police après être tombée nez à nez avec un boa empereur, qui se baladait près de l’établissement de jeux, raconte-t-elle sur sa page Facebook."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1641-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-1828-1",
+      "entry_id": "wikt-p0-entry-1828",
+      "lexeme_id": 1828,
+      "sense_number": "1",
+      "definition_fr": "Mettre (une personne ou une chose) en un lieu où on ne peut pas la voir, la recouvrir.",
+      "examples": [
+        "Mais, que faisaient-ils de tant d'argent ? Ils le gaspillaient […]; ou bien ils cachaient leur trésor, l’enfouissant on ne sait où et l'y oubliant souvent au moment de mourir : il est si dangereux de passer pour riche!",
+        "[…], s'il y avoit quelques-uns entre eux qui eussent des sentiments contraires au service de Madame et qui fussent gens à brouiller, ils les envoyassent ailleurs, et faudroit prendre garde que les habitants ne cachassent leurs armes dans lesdites maisons religieuses ; […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1828-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-1828-2",
+      "entry_id": "wikt-p0-entry-1828",
+      "lexeme_id": 1828,
+      "sense_number": "2",
+      "definition_fr": "Taire ; celer ; dissimuler.",
+      "examples": [
+        "Quand Eugène fut parti, Félicité essaya de pénétrer le secret qu’on lui cachait.",
+        "Presque toujours un artiste cache une ambition secrète, étrangère à l'art. C'est la gloire qu'on poursuit souvent, la gloire rayonnante qui nous place, vivant, dans une apothéose, […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-1828-1-4"
+    },
+    {
+      "id": "wikt-p0-sense-2389-1",
+      "entry_id": "wikt-p0-entry-2389",
+      "lexeme_id": 2389,
+      "sense_number": "1",
+      "definition_fr": "Arrêt volontaire ou forcé du travail.",
+      "examples": [
+        "Il y a en Amérique, comme en tout pays, un chômage endémique et même avant la crise, on comptait environ deux millions de chômeurs. Mais quand, avec la baisse des prix, le manque de confiance, le krach de Wall Street, les gens cessèrent d’acheter, ce chômage augmenta en progression géométrique.",
+        "Après avoir été très élevé pendant la grande crise de 1929, le chômage américain a presque complètement disparu durant la guerre de 1940. Ce n’est que vers 1947 que celui-ci réapparaît."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-2389-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-2474-1",
+      "entry_id": "wikt-p0-entry-2474",
+      "lexeme_id": 2474,
+      "sense_number": "1",
+      "definition_fr": "Enseignement d’une année scolaire d’un niveau déterminé dans un système éducatif, dans un établissement scolaire.",
+      "examples": [
+        "Classes élémentaires, classes supérieures, entrer en classe de seconde, passer dans la classe supérieure, redoubler une classe etc.",
+        "En quelle classe es-tu au collège ?"
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-2474-1-16"
+    },
+    {
+      "id": "wikt-p0-sense-2474-2",
+      "entry_id": "wikt-p0-entry-2474",
+      "lexeme_id": 2474,
+      "sense_number": "2",
+      "definition_fr": "Ensemble des élèves suivant habituellement les cours ensemble.",
+      "examples": [
+        "Invariablement les fonctionnaires, arrivés récemment ici des autres parties de la France, éprouvent de l’étonnement en voyant ces classes drues, ces hordes de galopins qui déambulent par les routes.",
+        "Toute la classe a eu congé."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-2474-1-18"
+    },
+    {
+      "id": "wikt-p0-sense-2474-3",
+      "entry_id": "wikt-p0-entry-2474",
+      "lexeme_id": 2474,
+      "sense_number": "3",
+      "definition_fr": "Salle de cours dans une école.",
+      "examples": [
+        "La salle de réunion du conseil municipal avait autrefois servi de salle de classe pour les enfants du village. Le frontispice de l’édifice public comportait d’ailleurs toujours l’inscription « École-Mairie ».",
+        "J’ai oublié mon taille-crayon en classe."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-2474-1-19"
+    },
+    {
+      "id": "wikt-p0-sense-2497-1",
+      "entry_id": "wikt-p0-entry-2497",
+      "lexeme_id": 2497,
+      "sense_number": "1",
+      "definition_fr": "Ensemble des statistiques décrivant les conditions météorologiques moyennes (température, précipitations, humidité, vent, etc.) et leur variabilité dans une région donnée, observées sur une période d’au moins 30 ans.",
+      "examples": [
+        "L’influence des forêts sur le climat ne peut être mise en doute, et il est bien prouvé que depuis deux ou trois siècles le régime météorologique de la France a subi de très grandes variations dues au déboisement.",
+        "De tous les passagers, le plus amusant est sans contredit un bon bourgeois de Glasgow qui cherche dans les voyages un remède au spleen que lui cause le climat pluvieux de son pays."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-2497-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-2604-1",
+      "entry_id": "wikt-p0-entry-2604",
+      "lexeme_id": 2604,
+      "sense_number": "1",
+      "definition_fr": "Celui qui collectionne quelque chose ; celui qui fait des collections.",
+      "examples": [
+        "Picasso avait prévenu : un peintre, c’est un collectionneur qui veut se constituer une collection en faisant lui-même les tableaux qu’il aime chez les autres.",
+        "(Par apposition) — Il publia, en 1706, un recueil, Cent Vues de Venise, aux planches incisées avec une maestria qui lui fait le plus grand honneur et lui assure, aujourd’hui encore, l’admiration des iconophiles collectionneurs."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-2604-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-2860-1",
+      "entry_id": "wikt-p0-entry-2860",
+      "lexeme_id": 2860,
+      "sense_number": "1",
+      "definition_fr": "Mener, guider, diriger vers un lieu déterminé.",
+      "examples": [
+        "Désormais donc, les prévenus seront, au moment de leur arrestation, conduits directement à la Roquette, où, séparés les uns des autres, comme le sont les enfants jugés, ils n'auront pas à souffrir du contact de leurs co-détenus.",
+        "Les troupeaux transhumants appartiennent tantôt à de riches propriétaires ou capitalistes, tantôt à de petits cultivateurs de Provence, qui les confient à un bayle ou berger chef qui, à ses risques et périls, conduit les troupeaux, loue les pâturages, etc., en un mot se charge de l'estivage moyennant une redevance."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-2860-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-2860-2",
+      "entry_id": "wikt-p0-entry-2860",
+      "lexeme_id": 2860,
+      "sense_number": "2",
+      "definition_fr": "Piloter un véhicule. Être responsable de mener un véhicule (en évitant les accidents).",
+      "examples": [
+        "Conduire une charrette, une voiture, une automobile, etc.",
+        "Ce chauffeur conduit bien. — Vous ne savez pas conduire."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-2860-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-3039-1",
+      "entry_id": "wikt-p0-entry-3039",
+      "lexeme_id": 3039,
+      "sense_number": "1",
+      "definition_fr": "Très grande étendue de terre qui présente une vaste continuité géographique, et que les océans entourent en quasi-totalité.",
+      "examples": [
+        "[…] ; enfin Thorwaldsen comptait parmi ses ancêtres un certain Snorre Thorfinnson, qui naquit en Amérique en 1008 , plusieurs siècles avant que Christophe Colomb eût retrouvé ce continent, depuis longtemps connu des Islandais.",
+        "L'inlandsis du continent groenlandais se déversant lentement mais continuellement dans les fjords par des glaciers importants, vêle des icebergs de tailles variant à l'infini."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-3039-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-3643-1",
+      "entry_id": "wikt-p0-entry-3643",
+      "lexeme_id": 3643,
+      "sense_number": "1",
+      "definition_fr": "Représenter, reproduire par le dessin.",
+      "examples": [
+        "Quelles boules ! dit Bixiou à du Bruel, quelle belle caricature si on les dessinait sous forme de raies, de dorades, et de claquarts (nom vulgaire d’un coquillage) dansant une sarabande !",
+        "Dessiner une figure d’après nature."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-3643-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-3699-1",
+      "entry_id": "wikt-p0-entry-3699",
+      "lexeme_id": 3699,
+      "sense_number": "1",
+      "definition_fr": "Être surnaturel objet de déférence d’une religion.",
+      "examples": [
+        "Il s'avançait, précédé d'un escadron de mousquetaires Louis XIII, montés sur des chevaux de troupe, et suivi par un char monumental qui portait tous les dieux de l'Olympe, y compris le Temps, armé de la faux classique.",
+        "Rôde-t-il de par l’univers je ne sais quel dieu de la malédiction et du carnage ayant pouvoir à de certaines heures d’arracher de la vie les fils aînés de la famille humaine taillés pour lui faire obstacle ?"
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-3699-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-3753-1",
+      "entry_id": "wikt-p0-entry-3753",
+      "lexeme_id": 3753,
+      "sense_number": "1",
+      "definition_fr": "Celui qui dirige un établissement, un service, etc.",
+      "examples": [
+        "Quelles sont donc les causes de ces insuccès ? Il n'y en a qu'une : c'est que ces sociétés n'ont pas le directeur qu'il leur faut. Sans un directeur qui joue le rôle d’entrepreneur, ils ne peuvent pas réussir, […].",
+        "Je suis le directeur de ces messieurs, le directeur que l’on salue très bas et qui s’offre le délicat plaisir de faire attendre dans l’antichambre nombre de solliciteurs."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-3753-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-4038-1",
+      "entry_id": "wikt-p0-entry-4038",
+      "lexeme_id": 4038,
+      "sense_number": "1",
+      "definition_fr": "Commencement.",
+      "examples": [
+        "Le café noir très fort qu’il a pris au début de la veille, empêche Arsène André de s’endormir.",
+        "Après des débuts réussis, le FC Nantes s’est sèchement incliné, jeudi, (3-0) sur la pelouse du FC Qarabag, à Bakou (Azerbaïdjan)."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-4038-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-4107-1",
+      "entry_id": "wikt-p0-entry-4107",
+      "lexeme_id": 4107,
+      "sense_number": "1",
+      "definition_fr": "Ce qui enjolive, en parlant du papier, de la peinture, des ornements.",
+      "examples": [
+        "La porte du pullman de queue, fermée à clef, s'ouvrit : superbement, admirablement vide, la voiture offrait à ses visiteurs impromptus le plus admirable décor de marqueterie en bois de rose — jaune citron et carmin pâle — qui se pût imaginer."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-4107-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-4107-2",
+      "entry_id": "wikt-p0-entry-4107",
+      "lexeme_id": 4107,
+      "sense_number": "2",
+      "definition_fr": "Ensemble des installations, décorations, matériels, dans lesquels les acteurs d’une pièce de théâtre ou d’un film évoluent.",
+      "examples": [
+        "À l’inverse, la Metro Goldwyn Mayer revendique le luxe étincelant dans des décors de rêve, mettant en valeur son écurie de stars ultra-glamour."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-4107-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-4812-1",
+      "entry_id": "wikt-p0-entry-4812",
+      "lexeme_id": 4812,
+      "sense_number": "1",
+      "definition_fr": "Celui ou celle qui par sa naissance ou par sa capture n’est pas de condition libre ou que la violence a mis sous la puissance absolue d’un maître.",
+      "examples": [
+        "Le second document n’est pas plus exact que le premier, car il ne dit pas si tous les esclaves entrés dans le port de Rio ont été le produit d’un commerce direct entre cette place et l’Afrique.",
+        "Dans les premiers âges historiques, on ne voit pas seulement les maîtres frapper et fouetter leurs esclaves ; les rois eux-mêmes administrent le supplice de la bastonnade."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-4812-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-4819-1",
+      "entry_id": "wikt-p0-entry-4819",
+      "lexeme_id": 4819,
+      "sense_number": "1",
+      "definition_fr": "Étendue indéfinie.",
+      "examples": [
+        "Cet animal s'oriente dans l’espace par écholocation : il émet des sons de très haute fréquence et utilise l’écho renvoyé par les obstacles ou les proies pour les localiser.",
+        "Le temps et l’espace. — L’espace et la durée."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-4819-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-4819-2",
+      "entry_id": "wikt-p0-entry-4819",
+      "lexeme_id": 4819,
+      "sense_number": "2",
+      "definition_fr": "Étendue limitée et ordinairement superficielle.",
+      "examples": [
+        "L’Ardenne est presque entièrement couverte de bois, sauf dans quelques vallées étroites et quelques espaces situés près des villages et laissés à l’agriculture.",
+        "Cependant, au cours de nos travaux, l’espace libre se rétrécit, comme la peau de chagrin de Balzac, avec une déconcertante rapidité."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-4819-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-4819-3",
+      "entry_id": "wikt-p0-entry-4819",
+      "lexeme_id": 4819,
+      "sense_number": "3",
+      "definition_fr": "Endroit.",
+      "examples": [
+        "Grand espace.",
+        "Long espace."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-4819-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-4819-4",
+      "entry_id": "wikt-p0-entry-4819",
+      "lexeme_id": 4819,
+      "sense_number": "4",
+      "definition_fr": "Étendue qui embrasse l’univers, vide interplanétaire, intersidéral et intergalactique.",
+      "examples": [
+        "Dans l’espace, de graves dangers nous guettent, parmi lesquels : micrométéorites, radiations cosmiques mortelles et vieillissement accéléré en apesanteur.",
+        "Les corps célestes roulent dans l’espace."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-4819-1-5"
+    },
+    {
+      "id": "wikt-p0-sense-5051-1",
+      "entry_id": "wikt-p0-entry-5051",
+      "lexeme_id": 5051,
+      "sense_number": "1",
+      "definition_fr": "Exécuter ou faire exécuter certains ouvrages suivant les procédés d’un art mécanique, en atelier ou en usine.",
+      "examples": [
+        "Ce soir, le major Kémal nous dit qu'on vient de l'avertir de se tenir prêt, demain, à recevoir des blessés c'est donc qu'on va en fabriquer. Attendons-nous à une bataille.",
+        "A Arles, l'archevêque, qui avait le monopole de l'exploitation de la graine d'écarlate, avec laquelle on fabriquait le teinture rouge, ne traitait, pour la vente de ses récoltes, qu'avec les juifs."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5051-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-5051-2",
+      "entry_id": "wikt-p0-entry-5051",
+      "lexeme_id": 5051,
+      "sense_number": "2",
+      "definition_fr": "Transformer manuellement des matières premières en objets utilisables.",
+      "examples": [
+        "— Les forces, elles ne reviendront plus… Et pourtant il m’en faudrait bien au moins pour finir de rentrer mon bois et pour le fabriquer. Et puis, j’ai commencé le jardin…\nPaul l’interrompit :\n— Ton bois, je t’enverrai un homme demain pour le rentrer. Et on viendra aussi te le fabriquer…"
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5051-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-5233-1",
+      "entry_id": "wikt-p0-entry-5233",
+      "lexeme_id": 5233,
+      "sense_number": "1",
+      "definition_fr": "Remettre sa confiance en quelqu’un ou en quelque chose ; compter, faire fond sur quelqu’un ou sur quelque chose.",
+      "examples": [
+        "Il n’auroit pas fallu que les ordres supérieurs se fiassent à la parole que le tiers-état lui donna de conserver leurs privilèges honorifiques en l’engageant à se réunir à lui.",
+        "Les bénédictins dans cette occurrence péchèrent donc par orgueil. Ils se fièrent aux nombreux domestiques du couvent qu'ils croyaient capables de repousser une attaque. […]. Ils se fièrent aussi en Dieu, les pauvres moines, et en leur bonne cause."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5233-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-5365-1",
+      "entry_id": "wikt-p0-entry-5365",
+      "lexeme_id": 5365,
+      "sense_number": "1",
+      "definition_fr": "Activité qui tend à un but déterminé.",
+      "examples": [
+        "La fonction du philosophe consiste exclusivement dans la profanation des idées. Aucune violence n'égale par ses effets la violence théorique. Plus tard, l'action vient..."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5365-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-5365-2",
+      "entry_id": "wikt-p0-entry-5365",
+      "lexeme_id": 5365,
+      "sense_number": "2",
+      "definition_fr": "Actes qu’on fait pour s’acquitter des obligations, des devoirs d’un emploi, d’une charge ou pour en exercer les prérogatives.",
+      "examples": [
+        "Logeur, manager, élève d’Utrillo, M.G. cumulait ces fonctions de l’air le plus cérémonieux et le plus convaincu du monde."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5365-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-5365-3",
+      "entry_id": "wikt-p0-entry-5365",
+      "lexeme_id": 5365,
+      "sense_number": "3",
+      "definition_fr": "Cette charge, cet emploi même.",
+      "examples": [
+        "Pendant une année, celui-ci était exempt d’impôt; la ville faisait un cadeau à son épouse s'il se mariait lorsqu'il était en fonction, et un autre cadeau s'il lui naissait un fils aîné.",
+        "L’esclavage n'entraînait pas du reste un abaissement irrémédiable, et on voyait au makhzen des affranchis parvenir aux fonctions les plus élevées."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5365-1-4"
+    },
+    {
+      "id": "wikt-p0-sense-5389-1",
+      "entry_id": "wikt-p0-entry-5389",
+      "lexeme_id": 5389,
+      "sense_number": "1",
+      "definition_fr": "Sport opposant deux équipes de onze joueurs, dans lequel il faut faire pénétrer un ballon rond dans le but adverse sans le toucher de la main ou du bras, interdiction dont sont dispensés les gardiens de but, à l'intérieur de leurs surfaces de réparation respectives, pour protéger leurs buts.",
+      "examples": [
+        "— Ici, y a pas de football qui tienne, dit Blanchon. C’est de la roupie de sansonnet… Un jeu de petites filles… Vous ferez du rugby comme tout l’monde.",
+        "Des études ont montré, par exemple, que les supporters d'une équipe de football qui perd voient leur niveau de testostérone chuter, contrairement à celui des supporters de l'équipe vainqueure, dont le taux de testostérone augmente (sachant que les niveaux étaient comparables avant le match)."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5389-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-5702-1",
+      "entry_id": "wikt-p0-entry-5702",
+      "lexeme_id": 5702,
+      "sense_number": "1",
+      "definition_fr": "Veiller ou surveiller étroitement.",
+      "examples": [
+        "Contrairement à ses frères, […], qui marchaient dans les pas de leur géniteur, Michele ne se voyait pas toute sa vie garder les chèvres et les mulets, […].",
+        "Garder un retranchement, une position."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5702-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-5702-2",
+      "entry_id": "wikt-p0-entry-5702",
+      "lexeme_id": 5702,
+      "sense_number": "2",
+      "definition_fr": "Préserver de toute atteinte, de tout danger.",
+      "examples": [
+        "Certains prétendaient déjà que les casques leur feraient tomber les cheveux. D’autres entrevoyaient qu’ils les garderaient au contraire des rhumes de cerveau.",
+        "Il ne suffit pas de se laver les mains avant chaque repas et de respecter le Sabbat pour se garder du péché."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5702-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-5702-3",
+      "entry_id": "wikt-p0-entry-5702",
+      "lexeme_id": 5702,
+      "sense_number": "3",
+      "definition_fr": "Retenir en sa possession.",
+      "examples": [
+        "Ces gens là, quelque pitoyables que nous nous montrions pour eux, nous garderont jusqu'au bout la même haine inexpiable ; […].",
+        "Ne les trouvant pas, ils en concluraient qu’il les avait gardés et ils le pourchasseraient. Il n’avait donc qu’à rester tranquillement à l’affût… Est-ce que rien ne clochait dans ce plan ?"
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5702-1-4"
+    },
+    {
+      "id": "wikt-p0-sense-5702-4",
+      "entry_id": "wikt-p0-entry-5702",
+      "lexeme_id": 5702,
+      "sense_number": "4",
+      "definition_fr": "Mettre de côté, en réserve, conserver.",
+      "examples": [
+        "Vous ne savez pas ce que Dieu vous garde, ce que la Fortune vous garde, se dit à une personne qui est dans l’affliction, dans le malheur, pour faire entendre qu’il peut lui arriver des consolations, que sa condition peut devenir meilleure.",
+        "On se sert aussi de la même locution pour mettre en garde contre les chances mauvaises que peut réserver l’avenir."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5702-1-7"
+    },
+    {
+      "id": "wikt-p0-sense-5718-1",
+      "entry_id": "wikt-p0-entry-5718",
+      "lexeme_id": 5718,
+      "sense_number": "1",
+      "definition_fr": "Enfant ou adolescent homme, par opposition à fille.",
+      "examples": [
+        "De ces cervelles fines, la plus fine était la petite Brulette, emmi les filles, et des plus épaisses, la plus épaisse paraissait celle de Joseph, emmi les garçons.",
+        "Ses deux premières femmes n’avaient pas su lui donner de garçon : tant pis pour elles."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5718-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-5718-2",
+      "entry_id": "wikt-p0-entry-5718",
+      "lexeme_id": 5718,
+      "sense_number": "2",
+      "definition_fr": "Jeune homme.",
+      "examples": [
+        "Pendant la fête, elle ne quittait pas mon bras et refusait de danser avec les autres garçons du village.",
+        "Il accordait à son frère une grande habileté. Selon lui, ce gros garçon endormi ne sommeillait jamais que d’un œil, comme les chats à l’affût devant un trou de souris."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5718-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-5718-3",
+      "entry_id": "wikt-p0-entry-5718",
+      "lexeme_id": 5718,
+      "sense_number": "3",
+      "definition_fr": "Serveur d’un café, d’un restaurant ou d’un hôtel.",
+      "examples": [
+        "Nous nous mîmes à table. J’avais recommandé la carte au garçon : mes convives parurent contents.",
+        "Garçon !… garçon !… des pieds de mouton à la poulette, et servez chaud… Allons, vivement."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5718-1-6"
+    },
+    {
+      "id": "wikt-p0-sense-5952-1",
+      "entry_id": "wikt-p0-entry-5952",
+      "lexeme_id": 5952,
+      "sense_number": "1",
+      "definition_fr": "Ensemble de personnes, d’animaux.",
+      "examples": [
+        "[…] et en passant près de la guillotine, je remarquai sur la plate-forme le bourreau entouré d’un petit groupe de curieux.",
+        "Dans le passé, beaucoup de révolutions furent le résultat de coalitions entre groupes mécontents ; […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5952-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-5952-2",
+      "entry_id": "wikt-p0-entry-5952",
+      "lexeme_id": 5952,
+      "sense_number": "2",
+      "definition_fr": "Ensemble de musiciens, de chanteurs, faisant habituellement des spectacles ensemble.",
+      "examples": [
+        "Les groupes ukrainiens, mexicains, lettons et lituaniens, qui devaient y participer, n’ont finalement pas pu être présents pour entonner la Marseillaise."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5952-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-5952-3",
+      "entry_id": "wikt-p0-entry-5952",
+      "lexeme_id": 5952,
+      "sense_number": "3",
+      "definition_fr": "Plusieurs objets qui forment un tout ou peuvent être classés ensemble.",
+      "examples": [
+        "Une étude plus large et plus scientifique des dialectes locaux établira que, par son origine et par ses caractères essentiels, le slovaque appartient au groupe yougoslave.",
+        "Les leurres se classent du haut vers le bas, plus précisément par rapport à leurs paliers d’utilisation, c’est-à-dire suivant les différentes couches d’eau (ou strates) où ils évoluent. On obtient de la sorte trois grands groupes de poissons nageurs."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-5952-1-4"
+    },
+    {
+      "id": "wikt-p0-sense-6269-1",
+      "entry_id": "wikt-p0-entry-6269",
+      "lexeme_id": 6269,
+      "sense_number": "1",
+      "definition_fr": "État d’esprit plus ou moins durable, particulièrement en ce qu’il est plutôt agréable ou non.",
+      "examples": [
+        "Quoique très instruite, elle n'avoit ni les caprices, ni l’humeur qu'on attribue aux gens de lettres, qui tantôt se livrent à une loquacité importune, tantôt se renferment dans un silence méprisant.",
+        "[…] insensiblement la sombre humeur qu’on voyait sur leurs traits s’atténuait, s’effaçait. De menaçants, ils devenaient gouailleurs, puis doucereux, entreprenants."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-6269-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-7199-1",
+      "entry_id": "wikt-p0-entry-7199",
+      "lexeme_id": 7199,
+      "sense_number": "1",
+      "definition_fr": "Période de vingt-quatre heures, commençant généralement à minuit ; en certains lieux et à certaines époques, le jour commençait plutôt avec le lever ou le coucher du soleil.",
+      "examples": [
+        "C’est impossible, car le train va bientôt stopper à Ghéok-Tepé, puis à Askhabad, d’où il repartira aux premières lueurs du jour.",
+        "Le résultat de l’analyse sera connu dans deux jours. — Une semaine comporte sept jours."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7199-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-7199-2",
+      "entry_id": "wikt-p0-entry-7199",
+      "lexeme_id": 7199,
+      "sense_number": "2",
+      "definition_fr": "Date particulière du calendrier.",
+      "examples": [
+        "Lorsque la troupe des pastoureaux entra dans Orléans, le jour de saint Barnabas, l’évêque de cette ville interdit à tous ses clercs d’assister à ses prédications ; car, disait-il, ce sont les souricières du diable.",
+        "C’est le 6 avril 1917, le jour du Vendredi-Saint, une semaine avant l’offensive du Chemin des Dames, que le maréchal des logis Clérisse s’envola sur un Sopwith-Clerget […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7199-1-4"
+    },
+    {
+      "id": "wikt-p0-sense-7199-3",
+      "entry_id": "wikt-p0-entry-7199",
+      "lexeme_id": 7199,
+      "sense_number": "3",
+      "definition_fr": "Jour de la semaine. Un des sept noms de jour de chaque semaine.",
+      "examples": [
+        "Quel jour sommes-nous ?"
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7199-1-5"
+    },
+    {
+      "id": "wikt-p0-sense-7199-4",
+      "entry_id": "wikt-p0-entry-7199",
+      "lexeme_id": 7199,
+      "sense_number": "4",
+      "definition_fr": "Période durant laquelle le soleil apporte sa lumière, pour une zone donnée de la Terre.",
+      "examples": [
+        "Marthe n’était pas ordinairement matineuse, et elle n’avait pas l’habitude de voir lever le soleil pendant cette saison ; elle ne savait donc pas trop à quelle heure précise il serait jour.",
+        "Le lendemain, j’ai vu la chambre dans la simplicité de la lumière du jour."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7199-1-8"
+    },
+    {
+      "id": "wikt-p0-sense-7231-1",
+      "entry_id": "wikt-p0-entry-7231",
+      "lexeme_id": 7231,
+      "sense_number": "1",
+      "definition_fr": "Individu masculin né du même accouchement que son frère ou sa sœur.",
+      "examples": [
+        "Une nouvelle grossesse s’étant manifestée, une doctoresse pronostiqua la naissance de deux jumeaux.",
+        "Yama est un jumeau, son nom même a précisément ce sens."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7231-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-7477-1",
+      "entry_id": "wikt-p0-entry-7477",
+      "lexeme_id": 7477,
+      "sense_number": "1",
+      "definition_fr": "Unité de capacité du système métrique égale à un décimètre cube (dm³), couramment employé pour mesurer les volumes.",
+      "examples": [
+        "Un nouveau réservoir d’eau claire de 200 litres conservera l’eau, mieux que des barils de chêne.",
+        "Notre hydravion chargé de 2.600 litres d’essence accusait un poids de 5.500 kilogrammes."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7477-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-7848-1",
+      "entry_id": "wikt-p0-entry-7848",
+      "lexeme_id": 7848,
+      "sense_number": "1",
+      "definition_fr": "Ensemble de pas réalisés pour se déplacer.",
+      "examples": [
+        "Après les heures d’une marche pénible, le voyageur s’assied tristement.",
+        "Ce fut en l’année 574 que les troupes du roi d’Austrasie, après plusieurs jours de marche, arrivèrent près d’Arcis-sur-Aube."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7848-2-1"
+    },
+    {
+      "id": "wikt-p0-sense-7848-2",
+      "entry_id": "wikt-p0-entry-7848",
+      "lexeme_id": 7848,
+      "sense_number": "2",
+      "definition_fr": "Trajet réalisé à pied.",
+      "examples": [
+        "Après une longue marche nous arrivâmes à une espèce de broussaille, à des boyaux un peu plus creusés, et à un abri de capitaine, qui n'était guère solide.",
+        "En moins de dix heures nous avions parcouru 15 milles danois (115 kil.), y compris notre marche pédestre à travers les laves."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7848-2-5"
+    },
+    {
+      "id": "wikt-p0-sense-7848-3",
+      "entry_id": "wikt-p0-entry-7848",
+      "lexeme_id": 7848,
+      "sense_number": "3",
+      "definition_fr": "Fonctionnement d'une machine, d’un système quelconque.",
+      "examples": [
+        "En écrivant le récit de mes premières années d’épreuves, alors que la marche des événements se déroulait, mes yeux bien souvent ont cherché les vôtres.",
+        "En un mot, il n'y avait pas de Zodiaque égyptien; et on le conçoit aisément, puisque les Égyptiens, peu curieux de suivre la marche des planètes, ne se préoccupaient pas de leur route oblique et avaient adopté une année réglée sur le lever des constellations équatoriales."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7848-2-10"
+    },
+    {
+      "id": "wikt-p0-sense-7848-4",
+      "entry_id": "wikt-p0-entry-7848",
+      "lexeme_id": 7848,
+      "sense_number": "4",
+      "definition_fr": "Surface plane surélevée qui constitue l'un des degrés d'un escalier, sur laquelle on pose le pied pour monter ou descendre.",
+      "examples": [
+        "Il entra donc bravement dans cette allée où on n'y voyait goutte et, en poussant jusqu'au bout, il finit par mettre le pied sur une marche déjetée et la main sur une rampe branlante.",
+        "Une femme à l’aspect farouche, avec des yeux noirs et une tête brune échevelée, était assise sur les marches, dorlotant un bébé ; […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7848-2-13"
+    },
+    {
+      "id": "wikt-p0-sense-7852-1",
+      "entry_id": "wikt-p0-entry-7852",
+      "lexeme_id": 7852,
+      "sense_number": "1",
+      "definition_fr": "Lieu public où s’achètent et se vendent les denrées, les marchandises, les objets d’usage courant. → voir marché-gare et place du marché",
+      "examples": [
+        "On n’entend plus que les cris des volailles et des porcs saignés ; les cheminées fument, tout Ramscapelle s’emplit de la joyeuse animation d’un marché oriental.",
+        "Les charrettes et les chars étaient là dès potron-minet, voire dès la veille, car le marché était clappé dès prime ; il durait jusqu’à midi."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7852-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-7852-2",
+      "entry_id": "wikt-p0-entry-7852",
+      "lexeme_id": 7852,
+      "sense_number": "2",
+      "definition_fr": "Transaction entre un vendeur et un acheteur. → voir faire un marché et à bon marché",
+      "examples": [
+        "une fois conclu, le marché ne peut (plus) être suspendu ou déclaré dépourvu d’effets par l’instance de recours, quelle qu’elle soit."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7852-1-7"
+    },
+    {
+      "id": "wikt-p0-sense-7852-3",
+      "entry_id": "wikt-p0-entry-7852",
+      "lexeme_id": 7852,
+      "sense_number": "3",
+      "definition_fr": "Espace où se font ces transactions. → voir marché immobilier, marché financier, marché d’actions, marché de gros, marché de détail, marché de l’emploi et …",
+      "examples": [
+        "On achetait des avenues, des tours, des hôtels, des avions… Ensuite on restaurait le tout à grand frais, et on remettait l’ensemble sur le marché."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-7852-1-8"
+    },
+    {
+      "id": "wikt-p0-sense-8216-1",
+      "entry_id": "wikt-p0-entry-8216",
+      "lexeme_id": 8216,
+      "sense_number": "1",
+      "definition_fr": "Point dans le temps.",
+      "examples": [
+        "En outre, il est bien évident que, pour rendre l’acte licite et indifférent, il fallait que l'on ne copiât pas les monnaies courantes du moment, que l'on fabriquât, ou des pièces entièrement de fantaisie ou des imitations d’anciennes monnaies depuis longtemps sorties de la circulation.",
+        "Il y a présentement ce qu’on appelle une crise dans le monde. […]. Cette crise est arrivée au moment même où le monde se sentait de nouveau prospère et confiant, […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8216-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-8216-2",
+      "entry_id": "wikt-p0-entry-8216",
+      "lexeme_id": 8216,
+      "sense_number": "2",
+      "definition_fr": "Une certaine durée, qui n’est pas considérée comme très longue, mais malgré tout plus longue qu’un instant.",
+      "examples": [
+        "Soudain retentit un bruit lourd de roues ; et quelques moments après, on vint nous dire que la guillotine était arrivée.",
+        "L’avion revient vers nous, plane un moment sur nos têtes, glisse, remonte et, dans une dernière caracole, pique vers son hangar."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8216-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-8441-1",
+      "entry_id": "wikt-p0-entry-8441",
+      "lexeme_id": 8441,
+      "sense_number": "1",
+      "definition_fr": "Unité de mesure de longueur du Système international, dont le symbole est m. Le mètre est défini de manière universelle depuis 1983 par la longueur du trajet parcouru par la lumière dans le vide en 1/299 792 458 de seconde.",
+      "examples": [
+        "Nous profitons de la clarté pour faire l’ascension d'une montagne de 400 mètres de hauteur qui domine Thorshavn.",
+        "Le travail de filature consiste à retirer le fil du cocon dont la longueur est d’environ 480 mètres et à le dévider sans le briser."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8441-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-8441-2",
+      "entry_id": "wikt-p0-entry-8441",
+      "lexeme_id": 8441,
+      "sense_number": "2",
+      "definition_fr": "Instrument qui permet de mesurer cette longueur.",
+      "examples": [
+        "J’ai souvenir aussi, dit Lebrun, d’un mètre pliant avec lequel vous faisiez naître et mourir des triangles aussi mobiles que cette mer.",
+        "C’était Pierson. Il était agenouillé, et avec un mètre de couturière il paraissait très occupé à mesurer le sol. Ses manches étaient retroussées, ses mains tachées de terre, et il y avait une petite pelle à ses côtés."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8441-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-8677-1",
+      "entry_id": "wikt-p0-entry-8677",
+      "lexeme_id": 8677,
+      "sense_number": "1",
+      "definition_fr": "Objet de base des mathématiques, que l’on peut rapporter aux notions de pluralité, d’ensemble, de correspondance, mais qui n’est pas susceptible d’être strictement défini.",
+      "examples": [
+        "L’unité est le principe des nombres.",
+        "Les nombres réels peuvent servir à mesurer des quantités."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8677-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-8677-2",
+      "entry_id": "wikt-p0-entry-8677",
+      "lexeme_id": 8677,
+      "sense_number": "2",
+      "definition_fr": "Quantité indéterminée.",
+      "examples": [
+        "Des oiseaux qui parent encore agréablement les rives du Nil sont les hérons. Dans le nombre, on en distingue des espèces blanches, parmi lesquelles sont le garde-bœuf et l’aigrette.",
+        "Bert effleura successivement un bon nombre de métiers : il fut groom dans un magasin de nouveautés et chez un médecin, garçon de pharmacie, apprenti plombier, griffonneur d’adresses, garçon laitier, « golf caddie », et enfin aide-mécanicien chez un loueur et réparateur de bicyclettes."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8677-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-8723-1",
+      "entry_id": "wikt-p0-entry-8723",
+      "lexeme_id": 8723,
+      "sense_number": "1",
+      "definition_fr": "Marque que l’on inscrit en quelque endroit d’un livre, d’un écrit.",
+      "examples": [
+        "J’ai mis une note sur mon exemplaire, pour retrouver ce passage.",
+        "Je veux revoir quelques articles de ce compte, j’ai mis des notes en marge."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8723-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-8723-2",
+      "entry_id": "wikt-p0-entry-8723",
+      "lexeme_id": 8723,
+      "sense_number": "2",
+      "definition_fr": "Remarque, indication, sorte d’explication, de commentaire sur quelque passage d’un écrit, d’un livre.",
+      "examples": [
+        "On a imprimé ce poème avec des notes.",
+        "Notes marginales."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8723-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-8723-3",
+      "entry_id": "wikt-p0-entry-8723",
+      "lexeme_id": 8723,
+      "sense_number": "3",
+      "definition_fr": "Appréciation de la valeur d’un devoir fait par un élève, que le professeur exprime par un nombre.",
+      "examples": [
+        "Il a obtenu la note 15 sur 20 pour sa composition française.",
+        "Cet élève a mérité toute l’année des notes excellentes."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8723-1-6"
+    },
+    {
+      "id": "wikt-p0-sense-8723-4",
+      "entry_id": "wikt-p0-entry-8723",
+      "lexeme_id": 8723,
+      "sense_number": "4",
+      "definition_fr": "Caractères qui figurent la hauteur et la durée d’un son.",
+      "examples": [
+        "Si la note où se termine l’élévation de l’antienne, ou toute autre partie des offices, va en montant, avant d’entonner cette note, on attaque la note qui lui est supérieure, on descend à celle qui lui est inférieure, […].",
+        "Il écrit les dernières notes de sa sonate."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8723-1-9"
+    },
+    {
+      "id": "wikt-p0-sense-8723-5",
+      "entry_id": "wikt-p0-entry-8723",
+      "lexeme_id": 8723,
+      "sense_number": "5",
+      "definition_fr": "Le son lui-même.",
+      "examples": [
+        "Et, pour égayer le voyage, les chansons bientôt fusèrent d’elles-mêmes. Les notes joyeuses retentissaient au loin sur la terre nue […]",
+        "Note tonique : La Note principale ou fondamentale d’un ton."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8723-1-10"
+    },
+    {
+      "id": "wikt-p0-sense-8765-1",
+      "entry_id": "wikt-p0-entry-8765",
+      "lexeme_id": 8765,
+      "sense_number": "1",
+      "definition_fr": "Période qui s’écoule entre le coucher de soleil et le lever du soleil.",
+      "examples": [],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-8765-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-9353-1",
+      "entry_id": "wikt-p0-entry-9353",
+      "lexeme_id": 9353,
+      "sense_number": "1",
+      "definition_fr": "Chef d’entreprise artisanale ou commerciale.",
+      "examples": [
+        "À la caisse, le patron qui comptait sa recette, s’informa de notre commande, abandonna ses sous pour nous servir.",
+        "Il est son propre patron."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-9353-1-6"
+    },
+    {
+      "id": "wikt-p0-sense-9353-2",
+      "entry_id": "wikt-p0-entry-9353",
+      "lexeme_id": 9353,
+      "sense_number": "2",
+      "definition_fr": "Employeur.",
+      "examples": [
+        "Un radin d’ailleurs, ce compère, qui m’agréa pour un tout petit salaire, mais avec un contrat et des clauses longues comme ça, toutes à son avantage. Un patron en somme.",
+        "Philéas Beauvisage, garçon sage et plein de respect pour sa mère, eut bientôt conclu l’affaire avec son patron ; et comme il tenait de ses parents la bosse que les phrénologistes appellent l’acquisivité, son ardeur de jeunesse se porta sur ce commerce qui lui parut magnifique et qu’il voulut agrandir par la spéculation."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-9353-1-9"
+    },
+    {
+      "id": "wikt-p0-sense-9353-3",
+      "entry_id": "wikt-p0-entry-9353",
+      "lexeme_id": 9353,
+      "sense_number": "3",
+      "definition_fr": "Modèle, forme, sur quoi on fabrique certains objets.",
+      "examples": [
+        "Les tapissiers taillent aussi et découpent certaines pièces d’ameublement, d’après la forme et le contour de patrons."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-9353-1-14"
+    },
+    {
+      "id": "wikt-p0-sense-9362-1",
+      "entry_id": "wikt-p0-entry-9362",
+      "lexeme_id": 9362,
+      "sense_number": "1",
+      "definition_fr": "Personne qui vit dans la misère.",
+      "examples": [
+        "Cette quasi-religieuse allait à l’église tous les matins, elle accomplissait les austérités claustrales, et faisait des économies pour soulager les pauvres…",
+        "Le vieux marquis tolérait que les pauvres vinssent ramasser les branches mortes, […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-9362-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-9362-2",
+      "entry_id": "wikt-p0-entry-9362",
+      "lexeme_id": 9362,
+      "sense_number": "2",
+      "definition_fr": "Personne qui n’a pas de quoi subsister honorablement selon sa condition.",
+      "examples": [
+        "Cet homme fait le pauvre, il feint de n’avoir pas le nécessaire convenable à son état."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-9362-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-10096-1",
+      "entry_id": "wikt-p0-entry-10096",
+      "lexeme_id": 10096,
+      "sense_number": "1",
+      "definition_fr": "Résultat de l’activité humaine.",
+      "examples": [
+        "Or, ce que je vais découvrir en Amazonie, c'est le processus de destruction des environnements que l'on qualifie de \"naturels\"... mais qui sont en partie le produit d'actions humaines, comme l'ont montré mes travaux et ceux d'autres anthropologues."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10096-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-10096-2",
+      "entry_id": "wikt-p0-entry-10096",
+      "lexeme_id": 10096,
+      "sense_number": "2",
+      "definition_fr": "Ensemble de la production agricole ou industrielle, richesse, marchandise.",
+      "examples": [
+        "À présent voici les bazars avec les mille produits de la Perse, de la Chine, de la Turquie, de la Sibérie, de la Mongolie.",
+        "Chaque fjord islandais a un petit chef-lieu […]. Dans ces localités résident des marchands qui troquent contre les marchandises du Danemark les produits de l'Islande : poissons séchés, fourrures, peaux de phoque, huile de baleine, etc."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10096-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-10096-3",
+      "entry_id": "wikt-p0-entry-10096",
+      "lexeme_id": 10096,
+      "sense_number": "3",
+      "definition_fr": "Chacun des biens, articles, services, prestations de service, logiciels, solutions informatiques, applications, etc. produits en série et proposés, commercialisés ou distribués sous son nom ou une nom de marque par une entreprise ou une organisation donnée, généralement sous la responsabilité d'un chef de produit.",
+      "examples": [
+        "On appelle produit tout ce qui peut être offert sur un marché de façon à être remarqué, acquis, utilisé ou consommé et qui peut satisfaire un besoin. La notion de produit inclut les articles tangibles (automobiles, livres), les services (coiffeurs, transports, soins, loisirs), les personnalités (leaders politiques, célébrités), les endroits (la Côte d'Azur), les organisations (la Ligue contre le cancer, l'Olympique de Marseille) ou encore les idées (la Sécurité routière).",
+        "Offrir cinq cents flacons de vinaigre des quatre-voleurs comme produit désinfectant au bureau de bienfaisance du XIᵉ arrondissement, c'est un acte généreux ; faire savoir qu'il provient de la maison Maille, Robillard, Segond et Cie, cela devient de la réclame […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10096-1-5"
+    },
+    {
+      "id": "wikt-p0-sense-10096-4",
+      "entry_id": "wikt-p0-entry-10096",
+      "lexeme_id": 10096,
+      "sense_number": "4",
+      "definition_fr": "Résultat d’une multiplication. — Note d’usage : le mot “produit” peut être suivi de la préposition “de” et des facteurs du produit : les éléments sur lesquels opère la multiplication ; la préposition “par” peut séparer un premier facteur du second, ou des facteurs suivants.",
+      "examples": [
+        "Huit est le produit de deux et quatre, douze le produit de quatre par trois, vingt‑quatre celui de deux, trois et quatre."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10096-1-7"
+    },
+    {
+      "id": "wikt-p0-sense-10581-1",
+      "entry_id": "wikt-p0-entry-10581",
+      "lexeme_id": 10581,
+      "sense_number": "1",
+      "definition_fr": "Laisser quelqu’un quelque part ; se séparer de lui.",
+      "examples": [
+        "[…], et, songeant qu’il faudrait bientôt nous quitter, nous nous assîmes tristement près de l’âtre où dansait la flamme rouge.",
+        "Après deux jours d'absence, nous revenions à Rockall ramenant une nuée de mouettes qui avaient quitté leur îlot pour nous accompagner ; […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10581-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-10581-2",
+      "entry_id": "wikt-p0-entry-10581",
+      "lexeme_id": 10581,
+      "sense_number": "2",
+      "definition_fr": "Se retirer de quelque part.",
+      "examples": [
+        "Mais les Prussiens, qui, au nombre de 1.200, occupaient Sainte-Sabine, l’avaient déjà quittée et avaient rejoint le gros de leurs forces à Vandenesse.",
+        "C'est les Jésuites qui ont fait assassiner Henri IV ; c'est encore eux qui ont fait révoquer l’Édit de Nantes, à la suite de quoi tous les protestants ont été obligés de quitter la France; […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10581-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-10581-3",
+      "entry_id": "wikt-p0-entry-10581",
+      "lexeme_id": 10581,
+      "sense_number": "3",
+      "definition_fr": "Abandonner une chose, y renoncer, cesser de s’y appliquer, de s’y adonner. Se désister de quelque chose, y renoncer.",
+      "examples": [
+        "La veuve de Henri II était vêtue de ce deuil qu’elle n’avait point quitté depuis la mort de son mari.",
+        "Il y a déjà quelque temps que cet officier a quitté le service."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10581-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-10873-1",
+      "entry_id": "wikt-p0-entry-10873",
+      "lexeme_id": 10873,
+      "sense_number": "1",
+      "definition_fr": "Porter ses regards sur quelque chose ou quelqu’un.",
+      "examples": [
+        "[…] le chat gris, un peu sauvage, nous regardait de loin, à travers la balustrade de l’escalier au fond, sans oser descendre.",
+        "Bien des fois la nuit, de cette fenêtre tapissée de lierre, j’ai regardé avant de m’endormir le grand Orion inclinant vers l’ouest."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10873-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-10873-2",
+      "entry_id": "wikt-p0-entry-10873",
+      "lexeme_id": 10873,
+      "sense_number": "2",
+      "definition_fr": "Considérer ; examiner avec attention.",
+      "examples": [
+        "Toute la rue, pour peu qu’on regardât au-dessus des boutiques, conservait son aspect ancien.",
+        "Tant qu’on n’enseignera pas une arachnologie dans les écoles, tant que les araignées ne seront pas regardées dans chaque maison comme des animaux sacrés, et conservées avec le même respect que les hirondelles et les cigognes, l’agriculture n’atteindra jamais à un haut degré de perfection."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-10873-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-11202-1",
+      "entry_id": "wikt-p0-entry-11202",
+      "lexeme_id": 11202,
+      "sense_number": "1",
+      "definition_fr": "Terrain qui borde un fleuve, une rivière, un étang ou un lac.",
+      "examples": [
+        "La rive droite d’une rivière, d’un fleuve, est la rive qui est à droite d’une personne qui descend le cours de l’eau.",
+        "Démocrite aurait trouvé aux rives du Jourdain et aux grèves de la mer Morte un aspect enchanteur."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-11202-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-11202-2",
+      "entry_id": "wikt-p0-entry-11202",
+      "lexeme_id": 11202,
+      "sense_number": "2",
+      "definition_fr": "Littoral.",
+      "examples": [
+        "Le Musée de Préhistoire de Carnac expose les collections de référence issues des exceptionnels monuments mégalithiques des rives du Morbihan."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-11202-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-11708-1",
+      "entry_id": "wikt-p0-entry-11708",
+      "lexeme_id": 11708,
+      "sense_number": "1",
+      "definition_fr": "Conifère de grande taille de la famille des Abiétacées, dont les aiguilles, plates et disposées en une ou deux rangées autour du rameau, sont persistantes et dont les cônes sont dressés.",
+      "examples": [
+        "Quelle magnifique créature, que le sapin, et comme il est bien, ici, dans son cadre ! Comme il se sent dans son pays ! Autant il paraît bête et dépaysé en plaine, autant dans la montagne il dresse, superbe et dominateur, sa haute taille parmi les rochers qu’il pétrit de ses racines puissantes.",
+        "[…], puis il avait remonté les crêts par un des milles^([sic]) sentiers que l’ingéniosité des contrebandiers leur fait sans cesse frayer à travers ces prés-bois et ces boqueteaux de sapins."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-11708-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-11708-2",
+      "entry_id": "wikt-p0-entry-11708",
+      "lexeme_id": 11708,
+      "sense_number": "2",
+      "definition_fr": "Bois de cet arbre.",
+      "examples": [
+        "Le sapin est un bois blanc souvent utilisé en menuiserie et dans la fabrication du papier.",
+        "Dans l’excavation, […], on descendit les misérables bières de sapin, on les rangea l’une près de l’autre puis, […], les fossoyeurs saisirent leurs pelles et comblèrent la tranchée."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-11708-1-3"
+    },
+    {
+      "id": "wikt-p0-sense-11708-3",
+      "entry_id": "wikt-p0-entry-11708",
+      "lexeme_id": 11708,
+      "sense_number": "3",
+      "definition_fr": "Sapin de Noël.",
+      "examples": [
+        "Je suis venue dans votre belle maison pour profiter de vous, des petits tout excités qui gambadent et virevoltent comme des tourbillons de vie autour du lourd sapin que vous avez décoré de guirlandes, de boules de chocolat faites maison, de bonshommes en pain d'épice, illuminé de vraies bougies."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-11708-1-7"
+    },
+    {
+      "id": "wikt-p0-sense-11739-1",
+      "entry_id": "wikt-p0-entry-11739",
+      "lexeme_id": 11739,
+      "sense_number": "1",
+      "definition_fr": "S’élancer en l’air, soit pour retomber au même endroit, soit pour franchir un espace.",
+      "examples": [
+        "Souvent, il prenait l’envie au chef cuisinier du restaurant de prendre sa trial et de sauter les bosses et les fossés pour aller retrouver Gladys.",
+        "Le roi, en rocquant, ne doit sauter que deux cases, c'est à-dire, que la tour avec laquelle il rocque, se mettra sur la case attenant immédiatement au roi, et celui-ci, sautant par dessus, se placera de l'autre côté de la tour."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-11739-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-11739-2",
+      "entry_id": "wikt-p0-entry-11739",
+      "lexeme_id": 11739,
+      "sense_number": "2",
+      "definition_fr": "Franchir en s’élançant en l’air.",
+      "examples": [
+        "Sauter un fossé.",
+        "Sauter la barrière."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-11739-1-14"
+    },
+    {
+      "id": "wikt-p0-sense-12072-1",
+      "entry_id": "wikt-p0-entry-12072",
+      "lexeme_id": 12072,
+      "sense_number": "1",
+      "definition_fr": "État inconscient, souvent accompagné de rêves, dans lequel doivent obligatoirement se plonger les hommes et les animaux périodiquement pour des raisons psychologiques et physiologiques.",
+      "examples": [
+        "Alors que le Sommeil régne par tout le monde,\nMes yeux n’en peuvent estre clos,\nJe suis seul privé du repos\nDont jouïssent la terre & l’onde.",
+        "Il y eut encore entre ce moment de somnolence et le sommeil réel un intervalle pareil à celui du crépuscule, qui sépare le jour de la nuit, intervalle bizarre et indescriptible pendant lequel la réalité se confond avec le rêve, de manière qu’il n’y a ni rêve ni réalité."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12072-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-12072-2",
+      "entry_id": "wikt-p0-entry-12072",
+      "lexeme_id": 12072,
+      "sense_number": "2",
+      "definition_fr": "Grande envie, un grand besoin de dormir.",
+      "examples": [
+        "Il ne lui restait plus qu’à prendre un repos bien gagné, car il était à l’âge où le sommeil ne perd jamais ses droits et il avait bonne envie de dormir.",
+        "Le premier jour des vacances d’été, je me rendis à l’usine dès potron-minet. Le sommeil avait beau engourdir encore mes membres, j’étais résolu à ne pas décevoir mon père."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12072-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-12072-3",
+      "entry_id": "wikt-p0-entry-12072",
+      "lexeme_id": 12072,
+      "sense_number": "3",
+      "definition_fr": "Période durant laquelle on dort.",
+      "examples": [
+        "Allez les enfants, venez faire votre sommeil."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12072-1-8"
+    },
+    {
+      "id": "wikt-p0-sense-12739-1",
+      "entry_id": "wikt-p0-entry-12739",
+      "lexeme_id": 12739,
+      "sense_number": "1",
+      "definition_fr": "Durée des choses, marquée par certaines périodes, et principalement par la révolution apparente du soleil ; écart entre le déroulement de deux événements.",
+      "examples": [
+        "Le temps, « cette image mobile / De l’immobile éternité », mesuré ici-bas par la succession des êtres, qui sans cesse changent et se renouvellent, se voit, se sent, se compte, existe. Plus haut, il n’y a point de changement ni de succession, de nouveauté ni d’ancienneté, d’hier ni de lendemain : tout y paraît, et tout y est constamment le même.",
+        "Le seul recours contre le temps est de le mesurer à ce double pas, comme ceux qui ont affaire personnellement à lui, les sentinelles, les officiers de quart."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12739-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-12739-2",
+      "entry_id": "wikt-p0-entry-12739",
+      "lexeme_id": 12739,
+      "sense_number": "2",
+      "definition_fr": "Succession des jours, des heures, des moments, considérée par rapport aux différents travaux, aux diverses occupations des personnes.",
+      "examples": [
+        "J’aurais voulu visiter le fameux sanctuaire d’Atesh-Gâh ; mais il est à vingt-deux verstes de la ville, et le temps m’eût manqué.",
+        "Il s’acharnera au travail, il ne ménagera ni son temps, ni ses forces, à une époque où le radium et la radiothérapie profonde était encore inconnue."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12739-1-5"
+    },
+    {
+      "id": "wikt-p0-sense-12739-3",
+      "entry_id": "wikt-p0-entry-12739",
+      "lexeme_id": 12739,
+      "sense_number": "3",
+      "definition_fr": "Durée limitée.",
+      "examples": [
+        "Ce soldat a fait son temps de service. — Prêtez-moi cela pour quelque temps. — Cela n’a pas laissé de durer un certain tempsCe qui m’émerveillait le plus dans les premiers temps, c'était l’étonnante habileté de nos poneys à se tirer d'affaire au milieu d'un chaos de débris volcaniques où un piéton aurait pu difficilement trouver son chemin. — (Jules Leclercq, La Terre de glace, Féroë, Islande, les geysers, le mont Hékla, Paris : E. Plon & Cie, 1883, page 82)Quand Napoléon III fut empoigné à Boulogne pour avoir donné une seconde représentation du débarquement à Cannes, on le jeta au cachot et on l’emmena à Paris sans lui donner le temps de changer de chemise."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12739-1-6"
+    },
+    {
+      "id": "wikt-p0-sense-12739-4",
+      "entry_id": "wikt-p0-entry-12739",
+      "lexeme_id": 12739,
+      "sense_number": "4",
+      "definition_fr": "Disposition de l’air ; état de l’atmosphère ; climat du moment.",
+      "examples": [
+        "On établit un service aérostatique. Chaque jour, lorsque le temps le permet, un ou plusieurs ballons sont lancés.",
+        "Depuis quelques jours, le temps s’est enfin remis au beau."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12739-1-16"
+    },
+    {
+      "id": "wikt-p0-sense-12878-1",
+      "entry_id": "wikt-p0-entry-12878",
+      "lexeme_id": 12878,
+      "sense_number": "1",
+      "definition_fr": "Ouvrage constitué de la charpente et de la couverture qui sert à couvrir un bâtiment.",
+      "examples": [
+        "Les tuiles, soulevées, roulent sur le toit, tombent sur le sol détrempé ; dans la nuit, les pauvres arbres, sous l’effort du vent plus colère, gémissent et craquent.",
+        "Les cheminées et les toits de chaume, à droite et à gauche de la route, dépassaient à peine les montagnes de neige […]"
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12878-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-12878-2",
+      "entry_id": "wikt-p0-entry-12878",
+      "lexeme_id": 12878,
+      "sense_number": "2",
+      "definition_fr": "Maison, foyer.",
+      "examples": [
+        "Monsieur mon propriétaire\nComme je lui dévaste tout\nMe chasse de son toit, oui mais, de son toit, moi je m’en fous :\nJ’ai rendez-vous avec vous.",
+        "Loger sous le toit : Habiter au dernier étage d’une maison."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12878-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-12940-1",
+      "entry_id": "wikt-p0-entry-12940",
+      "lexeme_id": 12940,
+      "sense_number": "1",
+      "definition_fr": "Mettre la main sur quelque chose.",
+      "examples": [
+        "— Cette gueuse, répondit la Thénardier, s’est permis de toucher à la poupée des enfants !\n— Tout ce bruit pour cela ! dit l’homme. Eh bien, quand elle jouerait avec cette poupée ?\n— Elle y a touché avec ses mains sales ! poursuivit la Thénardier, avec ses affreuses mains !",
+        "Toucher doucement, légèrement."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12940-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-12940-2",
+      "entry_id": "wikt-p0-entry-12940",
+      "lexeme_id": 12940,
+      "sense_number": "2",
+      "definition_fr": "Mettre en contact avec un objet, de quelque autre manière que ce soit.",
+      "examples": [
+        "Joly avait l’habitude de se toucher le nez avec le bout de sa canne, ce qui est l’indice d’un esprit sagace.",
+        "Toucher du bras."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12940-1-5"
+    },
+    {
+      "id": "wikt-p0-sense-12940-3",
+      "entry_id": "wikt-p0-entry-12940",
+      "lexeme_id": 12940,
+      "sense_number": "3",
+      "definition_fr": "Atteindre.",
+      "examples": [
+        "– Père, j’ai vu cette nuit ma mère en songe. Elle avait deux grandes ailes. Ma mère dans sa vie doit avoir touché à la sainteté.",
+        "Toucher la bille de son adversaire."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12940-1-6"
+    },
+    {
+      "id": "wikt-p0-sense-12940-4",
+      "entry_id": "wikt-p0-entry-12940",
+      "lexeme_id": 12940,
+      "sense_number": "4",
+      "definition_fr": "Recevoir, en parlant d’une somme d’argent.",
+      "examples": [
+        "À propos, continua le roi, n’était-ce pas dix mille écus que vous deviez toucher de M. de Guise au cas où vous tueriez l’amiral ?",
+        "D’une dissidence à l’autre, Touly s’émeut également de ce que Mme Messier, épouse du plénipotentiaire PDG de Vivendi, puisse toucher quelques subsides de l’auguste maison."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12940-1-10"
+    },
+    {
+      "id": "wikt-p0-sense-12940-5",
+      "entry_id": "wikt-p0-entry-12940",
+      "lexeme_id": 12940,
+      "sense_number": "5",
+      "definition_fr": "Émouvoir.",
+      "examples": [
+        "Il se trouvait trop bon, trop doux, disons le mot, trop faible. Cette faiblesse l’avait entraîné à une concession imprudente. Il s’était laissé toucher. Il avait eu tort. Il aurait dû purement et simplement rejeter Jean Valjean.",
+        "Au moindre geste d’improbation, il nous apostrophait et nous imposait silence avec une fureur qui nous touchait sans nous convaincre ; […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-12940-1-13"
+    },
+    {
+      "id": "wikt-p0-sense-13067-1",
+      "entry_id": "wikt-p0-entry-13067",
+      "lexeme_id": 13067,
+      "sense_number": "1",
+      "definition_fr": "Labeur, application à une tâche, effort soutenu pour faire quelque chose, en parlant de l’esprit comme du corps.",
+      "examples": [
+        "L’homme qui vendait son travail, qui recevait un salaire, se dégradait au rang des esclaves, il se vendait comme esclave, il perdait sa dignité d’homme libre. Cette action dégradante est commise quotidiennement par les hommes libres de la société capitaliste. Les prolétaires de la main comme ceux de l’intelligence, n'ont qu’une unique préoccupation : se vendre, vendre leur travail manuel, vendre leur travail intellectuel, vendre la pensée, cette chose sacrée.",
+        "L’Écosse l’attendait bouche bée. Il arriva à Glasgow vers une heure, et l’on raconte que le travail ne fut pas repris avant deux heures et demie dans les docks et les manufactures de cette ruche industrielle."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13067-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-13067-2",
+      "entry_id": "wikt-p0-entry-13067",
+      "lexeme_id": 13067,
+      "sense_number": "2",
+      "definition_fr": "Activité professionnelle ; emploi.",
+      "examples": [
+        "Elle avait deux travails. Deux fatigues. Deux épuisements. Mais ça, elle savait faire et, la plupart du temps appréciait. Elle aimait travailler.",
+        "Mais on ne vous en voudra hélas pas si vous devez révéler que la crise vous force à avoir deux travails, oh que non."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13067-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-13067-3",
+      "entry_id": "wikt-p0-entry-13067",
+      "lexeme_id": 13067,
+      "sense_number": "3",
+      "definition_fr": "Ouvrage même, de quelque nature qu’il soit, qui est produit par le labeur.",
+      "examples": [
+        "L’oxydation relativement rapide du fer n’a pas permis de retrouver aisément, parmi les restes des travaux métalliques que l’antiquité a laissés derrière elle, un grand nombre d’objets fabriqués avec ce métal ; […].",
+        "Et alors on fera juger leurs deux travails."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13067-1-4"
+    },
+    {
+      "id": "wikt-p0-sense-13067-4",
+      "entry_id": "wikt-p0-entry-13067",
+      "lexeme_id": 13067,
+      "sense_number": "4",
+      "definition_fr": "Ouvrage qui est à faire ou auquel on travaille présentement.",
+      "examples": [
+        "C’était elle qui assumait dans la maison les travaux de l’homme que sa vieillesse lui eût rendus difficiles. Combien de ménagères auraient, d’elles-mêmes, pris cette initiative généreuse !",
+        "Distribuer le travail aux ouvriers."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13067-1-7"
+    },
+    {
+      "id": "wikt-p0-sense-13074-1",
+      "entry_id": "wikt-p0-entry-13074",
+      "lexeme_id": 13074,
+      "sense_number": "1",
+      "definition_fr": "Passer à travers, d’un côté à l’autre.",
+      "examples": [
+        "Des trois bandes ou régions qui divisaient devant nous la plaine d’Athènes, nous traversâmes les deux premières, la région inculte et la région cultivée.",
+        "Nous traversâmes un large guéret dont les mottes crevaient sous nos pas en poussière rouge ; […]."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13074-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-13074-2",
+      "entry_id": "wikt-p0-entry-13074",
+      "lexeme_id": 13074,
+      "sense_number": "2",
+      "definition_fr": "Changer de côté dans une rue, sur une route.",
+      "examples": [
+        "Quand il eut, non sans peine, repassé la barrière et qu’il se retrouva dans la rue, seul, sans gîte, sans toit, sans abri, chassé même de ce lit de paille et de cette niche misérable, il se laissa tomber plutôt qu’il ne s'assit sur une pierre, et il paraît qu’un passant qui traversait l'entendit s'écrier : – Je ne suis pas même un chien !",
+        "Place Charles-Surugue, des feldgendarmes apprennent aux Auxerrois à traverser dans les passages cloutés qu'ils semblaient ignorer. C'est une leçon de prévention routière avant la lettre."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13074-1-2"
+    },
+    {
+      "id": "wikt-p0-sense-13074-3",
+      "entry_id": "wikt-p0-entry-13074",
+      "lexeme_id": 13074,
+      "sense_number": "3",
+      "definition_fr": "Passer à travers, passer par.",
+      "examples": [
+        "Cette pensée lui traversa l’esprit.",
+        "Mille pensées le traversaient, mais elles continuaient de le fortifier dans sa résolution."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13074-1-5"
+    },
+    {
+      "id": "wikt-p0-sense-13558-1",
+      "entry_id": "wikt-p0-entry-13558",
+      "lexeme_id": 13558,
+      "sense_number": "1",
+      "definition_fr": "Assemblage ordonné d'un nombre assez considérable de maisons disposées par rues, et limitées parfois par une enceinte.",
+      "examples": [
+        "Oh ! caballero, la ville la plus belle et la plus grande de la vieille Europe est bien petite, bien sale et bien mesquine comparée au désert.",
+        "Il y a dans certaines villes jusqu’ici préservées, il y a de ces rues extraordinaires, remarquables tantôt par leur fourmillement et tantôt par leur silence, car la variétés des villes est infinie."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13558-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-13782-1",
+      "entry_id": "wikt-p0-entry-13782",
+      "lexeme_id": 13782,
+      "sense_number": "1",
+      "definition_fr": "Mammifère robuste de la famille des équidés, plus petit que le cheval mais qui possède de plus longues oreilles. Son petit est l’ânon. Son cri est le braiment (du verbe braire). Le croisement d’un âne avec une jument donne un mulet ; le croisement d’un cheval avec une ânesse donne un bardot.",
+      "examples": [
+        "De petits ânes aux naseaux fendus suivent [les chameaux], portant des peaux de bouc remplies d’huile. Ils trottent avec leur propriétaire à cheval sur l’arrière-train, à la naissance de la queue.",
+        "On le [Bacchus] représente ordinairement comme un vieillard à moitié ivre, monté sur un âne ou appuyé sur un thyrse."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-13782-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-14099-1",
+      "entry_id": "wikt-p0-entry-14099",
+      "lexeme_id": 14099,
+      "sense_number": "1",
+      "definition_fr": "Groupe de travailleurs attachés à un travail spécial.",
+      "examples": [
+        "Dévoiler la Joconde ? C'est l'objectif lascif d'une équipe scientifique, associée au Louvre pour percer le mystère du sfumato, qui a fait la célébrité de Léonard de Vinci.",
+        "Composer une équipe."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-14099-1-1"
+    },
+    {
+      "id": "wikt-p0-sense-14099-2",
+      "entry_id": "wikt-p0-entry-14099",
+      "lexeme_id": 14099,
+      "sense_number": "2",
+      "definition_fr": "Ensemble de joueurs divisés en camps rivaux.",
+      "examples": [
+        "La Canasta peut réunir de deux à six joueurs ; mais elle est surtout passionnante quand elle peut être pratiquée par deux équipes de deux joueurs."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-14099-1-4"
+    },
+    {
+      "id": "wikt-p0-sense-14099-3",
+      "entry_id": "wikt-p0-entry-14099",
+      "lexeme_id": 14099,
+      "sense_number": "3",
+      "definition_fr": "Groupe de sportifs qui agissent de concert pour une victoire commune.",
+      "examples": [
+        "Des études ont montré, par exemple, que les supporters d'une équipe de football qui perd voient leur niveau de testostérone chuter, contrairement à celui des supporters de l’équipe vainqueure, dont le taux de testostérone augmente (sachant que les niveaux étaient comparables avant le match).",
+        "Le directeur sportif s’était réjoui de découvrir en Kimball un joueur de lacrosse prêt à entraîner l’équipe. Il était rapidement devenu l'entraîneur en chef de l’équipe féminine."
+      ],
+      "source_id": "wiktionary_fr_wiktextract",
+      "source_candidate_id": "wikt-p0-14099-1-5"
+    }
+  ]
+}

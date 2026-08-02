@@ -19,7 +19,7 @@
     "graph:candidates": "node scripts/extract_seed.mjs && python3 scripts/build_graph.py",
     "graph:layout": "node scripts/layout.mjs",
     "graph:export": "python3 scripts/export_runtime.py && python3 scripts/update_runtime_cache.py",
-    "graph:build": "pnpm demonette:analyze && pnpm demonette:approve && pnpm dbnary:analyze && pnpm dbnary:approve && pnpm graph:candidates && pnpm graph:layout && pnpm graph:export",
+    "graph:build": "pnpm demonette:analyze && pnpm demonette:approve && pnpm dbnary:analyze && pnpm dbnary:approve && pnpm wiktextract:p0:approve && pnpm graph:candidates && pnpm graph:layout && pnpm graph:export",
     "check": "python3 scripts/validate_data.py",
     "build:verified": "python3 scripts/build_verified.py",
     "build:verify-manifest": "python3 scripts/write_build_manifest.py verify"

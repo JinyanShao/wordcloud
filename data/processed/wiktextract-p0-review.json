@@ -16,7 +16,8 @@
     "official_dump_hash_matches": true
   },
   "review_counts": {
-    "pending": 59
+    "accepted": 58,
+    "rejected": 1
   },
   "items": [
     {
@@ -134,11 +135,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-81-1-3"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；日常核心义：造成身体或物质损害的意外事件"
       }
     },
     {
@@ -176,11 +179,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-129-1-1",
+          "wikt-p0-129-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留购买行为与所购物品"
       }
     },
     {
@@ -288,11 +294,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-675-1-1",
+          "wikt-p0-675-1-6"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留属于某人及属于某集合"
       }
     },
     {
@@ -354,11 +363,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-895-1-1",
+          "wikt-p0-895-1-3"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留出席与帮助"
       }
     },
     {
@@ -447,11 +459,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-898-1-3"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留共同目标组织"
       }
     },
     {
@@ -563,11 +577,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-1052-1-1",
+          "wikt-p0-1052-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留创作者与作品作者"
       }
     },
     {
@@ -721,11 +738,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-1228-1-1",
+          "wikt-p0-1228-1-4"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留球与子弹"
       }
     },
     {
@@ -862,11 +882,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-1500-1-1",
+          "wikt-p0-1500-1-3"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留木材与树林"
       }
     },
     {
@@ -908,11 +931,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-1641-1-1",
+          "wikt-p0-1641-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留运动与场馆"
       }
     },
     {
@@ -985,11 +1011,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-1828-1-1",
+          "wikt-p0-1828-1-4"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留藏起与隐瞒"
       }
     },
     {
@@ -1056,11 +1085,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-2389-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留停止工作或失业状态"
       }
     },
     {
@@ -1309,11 +1340,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-2474-1-16",
+          "wikt-p0-2474-1-18",
+          "wikt-p0-2474-1-19"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留学校年级班级与教室"
       }
     },
     {
@@ -1367,11 +1402,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-2497-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留气候核心义"
       }
     },
     {
@@ -1399,11 +1436,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-2604-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；唯一且自足的核心义"
       }
     },
     {
@@ -1545,11 +1584,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-2860-1-1",
+          "wikt-p0-2860-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留带领与驾驶"
       }
     },
     {
@@ -1616,11 +1658,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-3039-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留大陆核心义"
       }
     },
     {
@@ -1716,11 +1760,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-3643-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留绘画核心义"
       }
     },
     {
@@ -1780,11 +1826,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-3699-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留宗教中的神"
       }
     },
     {
@@ -1856,11 +1904,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-3753-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留机构负责人"
       }
     },
     {
@@ -1924,11 +1974,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-4038-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留开始"
       }
     },
     {
@@ -2017,11 +2069,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-4107-1-1",
+          "wikt-p0-4107-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留装饰与舞台影视布景"
       }
     },
     {
@@ -2121,11 +2176,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-4812-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留失去自由并受主人支配的人"
       }
     },
     {
@@ -2267,11 +2324,16 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-4819-1-1",
+          "wikt-p0-4819-1-2",
+          "wikt-p0-4819-1-3",
+          "wikt-p0-4819-1-5"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留空间地点与外太空"
       }
     },
     {
@@ -2336,11 +2398,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-5051-1-1",
+          "wikt-p0-5051-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留工业制造与手工制作"
       }
     },
     {
@@ -2385,11 +2450,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-5233-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；对应 se fier à 的信任核心义；人工需确认词条展示形式"
       }
     },
     {
@@ -2532,11 +2599,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-5365-1-1",
+          "wikt-p0-5365-1-2",
+          "wikt-p0-5365-1-4"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留作用职责与职务"
       }
     },
     {
@@ -2572,11 +2643,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-5389-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留足球核心义"
       }
     },
     {
@@ -2675,11 +2748,16 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-5702-1-1",
+          "wikt-p0-5702-1-2",
+          "wikt-p0-5702-1-4",
+          "wikt-p0-5702-1-7"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留看守保护保有与保存"
       }
     },
     {
@@ -2770,11 +2848,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-5718-1-1",
+          "wikt-p0-5718-1-2",
+          "wikt-p0-5718-1-6"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留男孩年轻男子与服务员"
       }
     },
     {
@@ -2932,11 +3014,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-5952-1-1",
+          "wikt-p0-5952-1-2",
+          "wikt-p0-5952-1-4"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留人群乐队与物品集合"
       }
     },
     {
@@ -3036,11 +3122,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-6269-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留心情"
       }
     },
     {
@@ -3266,11 +3354,16 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-7199-1-1",
+          "wikt-p0-7199-1-4",
+          "wikt-p0-7199-1-5",
+          "wikt-p0-7199-1-8"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留一天日期星期与白昼"
       }
     },
     {
@@ -3311,11 +3404,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-7231-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留男性双胞胎"
       }
     },
     {
@@ -3385,11 +3480,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-7477-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留容量单位"
       }
     },
     {
@@ -3611,11 +3708,16 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-7848-2-1",
+          "wikt-p0-7848-2-5",
+          "wikt-p0-7848-2-10",
+          "wikt-p0-7848-2-13"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留行走步行运转与台阶"
       }
     },
     {
@@ -3809,11 +3911,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-7852-1-1",
+          "wikt-p0-7852-1-7",
+          "wikt-p0-7852-1-8"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留集市交易与经济市场"
       }
     },
     {
@@ -3873,11 +3979,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-8216-1-1",
+          "wikt-p0-8216-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留时刻与短暂时段"
       }
     },
     {
@@ -3980,11 +4089,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-8441-1-1",
+          "wikt-p0-8441-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留长度单位与测量工具"
       }
     },
     {
@@ -4014,11 +4126,11 @@
         }
       ],
       "review": {
-        "status": "pending",
+        "status": "rejected",
         "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；唯一候选只是 média 的复数跳转；不是自足定义"
       }
     },
     {
@@ -4100,11 +4212,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-8677-1-1",
+          "wikt-p0-8677-1-3"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留数与不定数量"
       }
     },
     {
@@ -4259,11 +4374,17 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-8723-1-1",
+          "wikt-p0-8723-1-2",
+          "wikt-p0-8723-1-6",
+          "wikt-p0-8723-1-9",
+          "wikt-p0-8723-1-10"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留笔记注释分数及音乐记号和声音"
       }
     },
     {
@@ -4322,11 +4443,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-8765-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留夜晚核心义"
       }
     },
     {
@@ -4522,11 +4645,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-9353-1-6",
+          "wikt-p0-9353-1-9",
+          "wikt-p0-9353-1-14"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留老板雇主与模板"
       }
     },
     {
@@ -4578,11 +4705,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-9362-1-1",
+          "wikt-p0-9362-1-3"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留贫困者"
       }
     },
     {
@@ -4728,11 +4858,16 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-10096-1-1",
+          "wikt-p0-10096-1-3",
+          "wikt-p0-10096-1-5",
+          "wikt-p0-10096-1-7"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留产物商品与乘积"
       }
     },
     {
@@ -4868,11 +5003,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-10581-1-1",
+          "wikt-p0-10581-1-2",
+          "wikt-p0-10581-1-3"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留离开人与地点及放弃"
       }
     },
     {
@@ -4986,11 +5125,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-10873-1-1",
+          "wikt-p0-10873-1-3"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留看与仔细观察"
       }
     },
     {
@@ -5054,11 +5196,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-11202-1-1",
+          "wikt-p0-11202-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留河湖岸与海岸"
       }
     },
     {
@@ -5163,11 +5308,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-11708-1-1",
+          "wikt-p0-11708-1-3",
+          "wikt-p0-11708-1-7"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留冷杉木材与圣诞树"
       }
     },
     {
@@ -5435,11 +5584,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-11739-1-1",
+          "wikt-p0-11739-1-14"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留跳跃与跳过障碍"
       }
     },
     {
@@ -5550,11 +5702,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-12072-1-1",
+          "wikt-p0-12072-1-2",
+          "wikt-p0-12072-1-8"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留睡眠状态困意与睡眠时段"
       }
     },
     {
@@ -5749,11 +5905,16 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-12739-1-1",
+          "wikt-p0-12739-1-5",
+          "wikt-p0-12739-1-6",
+          "wikt-p0-12739-1-16"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留时间可用时段与天气"
       }
     },
     {
@@ -5839,11 +6000,14 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-12878-1-1",
+          "wikt-p0-12878-1-2"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留屋顶与住所"
       }
     },
     {
@@ -6245,11 +6409,17 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-12940-1-1",
+          "wikt-p0-12940-1-5",
+          "wikt-p0-12940-1-6",
+          "wikt-p0-12940-1-10",
+          "wikt-p0-12940-1-13"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留触碰接触达到收款与感动"
       }
     },
     {
@@ -6428,11 +6598,16 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-13067-1-1",
+          "wikt-p0-13067-1-2",
+          "wikt-p0-13067-1-4",
+          "wikt-p0-13067-1-7"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留劳动工作成果与待办工作"
       }
     },
     {
@@ -6538,11 +6713,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-13074-1-1",
+          "wikt-p0-13074-1-2",
+          "wikt-p0-13074-1-5"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留穿过横穿马路与经过"
       }
     },
     {
@@ -6637,11 +6816,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-13558-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留城市核心义"
       }
     },
     {
@@ -6711,11 +6892,13 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-13782-1-1"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留驴这一动物义"
       }
     },
     {
@@ -6808,11 +6991,15 @@
         }
       ],
       "review": {
-        "status": "pending",
-        "approved_sense_ids": [],
-        "reviewer": null,
-        "reviewed_at": null,
-        "notes": null
+        "status": "accepted",
+        "approved_sense_ids": [
+          "wikt-p0-14099-1-1",
+          "wikt-p0-14099-1-4",
+          "wikt-p0-14099-1-5"
+        ],
+        "reviewer": "Jinyan Shao",
+        "reviewed_at": "2026-08-02",
+        "notes": "AI 预审建议经 Jinyan Shao 确认；保留工作团队与体育队"
       }
     }
   ]

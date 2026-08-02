@@ -608,6 +608,19 @@ def main() -> None:
         f"items/csv={len(p0_items)}/{len(p0_csv_rows)}, pending={sum(item['review']['status'] == 'pending' for item in p0_items)}",
     )
 
+    p0_approved = json.loads((ROOT / "data" / "processed" / "wiktextract-p0-approved.json").read_text(encoding="utf-8"))
+    approved_entries = p0_approved["entries"]
+    approved_senses = p0_approved["senses"]
+    check(
+        "Wiktextract P0 批准内容具名且仅含已选义项",
+        len(approved_entries) == 58
+        and len(approved_senses) == 128
+        and all(entry["reviewer"] == "Jinyan Shao" and entry["reviewed_at"] == "2026-08-02" for entry in approved_entries)
+        and all(sense["source_id"] == "wiktionary_fr_wiktextract" for sense in approved_senses)
+        and not any(entry["lexeme_id"] == 8465 for entry in approved_entries),
+        f"entries={len(approved_entries)}, senses={len(approved_senses)}, reviewers={sorted({entry['reviewer'] for entry in approved_entries})}",
+    )
+
     passed = sum(result for _, result, _ in checks)
     lines = [
         "# wordcloud 构建验证",
