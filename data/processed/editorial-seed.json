@@ -1532,6 +1532,114 @@
           "gloss": "组织一句话"
         }
       ]
+    },
+    {
+      "id": "aller",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · Wiktionnaire/DBnary review",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "etymology": "来自拉丁语 ambulare（行走）；现代法语中既表示移动，也常用 aller + infinitif 表示近未来。",
+      "collocations": [
+        {
+          "expression": "aller à l'école",
+          "gloss": "去学校"
+        },
+        {
+          "expression": "aller voir quelqu'un",
+          "gloss": "去看某人；去见某人"
+        }
+      ]
+    },
+    {
+      "id": "dire",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · Wiktionnaire/DBnary review",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "etymology": "来自拉丁语 dicere（说）；核心用法是把话语、想法或判断表达出来。",
+      "collocations": [
+        {
+          "expression": "dire que",
+          "gloss": "说……；表示……"
+        },
+        {
+          "expression": "dire quelque chose à quelqu'un",
+          "gloss": "对某人说某事"
+        }
+      ]
+    },
+    {
+      "id": "pouvoir",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · Wiktionnaire/DBnary review",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "etymology": "来自拉丁语 posse（能够）；现代法语中常用来表达能力、许可或可能性。",
+      "collocations": [
+        {
+          "expression": "pouvoir + infinitif",
+          "gloss": "能够/可以做某事"
+        },
+        {
+          "expression": "ne pas pouvoir",
+          "gloss": "不能；没法"
+        }
+      ]
+    },
+    {
+      "id": "devoir",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · Wiktionnaire/DBnary review",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "etymology": "来自拉丁语 debere（欠、应当）；现代法语中同时保留“欠”和“必须”的核心方向。",
+      "collocations": [
+        {
+          "expression": "devoir + infinitif",
+          "gloss": "必须/应该做某事"
+        },
+        {
+          "expression": "devoir de l'argent à quelqu'un",
+          "gloss": "欠某人钱"
+        }
+      ]
+    },
+    {
+      "id": "venir",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · Wiktionnaire/DBnary review",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "etymology": "来自拉丁语 venire（来）；用法上常指向说话者、参照点或刚刚发生的动作。",
+      "collocations": [
+        {
+          "expression": "venir de + infinitif",
+          "gloss": "刚刚做某事"
+        },
+        {
+          "expression": "venir chez quelqu'un",
+          "gloss": "到某人家里来"
+        }
+      ]
+    },
+    {
+      "id": "prendre",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · Wiktionnaire/DBnary review",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "etymology": "来自拉丁语 prendere / prehendere（抓住）；现代法语中从“拿取”延伸到交通、决定和抽象选择。",
+      "collocations": [
+        {
+          "expression": "prendre le train",
+          "gloss": "乘火车"
+        },
+        {
+          "expression": "prendre une décision",
+          "gloss": "做决定"
+        }
+      ]
     }
   ],
   "editorialRelations": [
@@ -1568,6 +1676,278 @@
       "source": "FLE editorial review: opposition deictique venir/aller.",
       "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-07-30"
+    },
+    {
+      "a": "savoir",
+      "aPos": "VER",
+      "b": "connaître",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "knowledge-scope",
+      "label": "savoir 表事实或技能；connaître 表熟悉的人、地点或作品。",
+      "explanation": "Savoir introduit une information, une réponse ou un savoir-faire. Connaître introduit quelqu'un, un lieu, une œuvre ou un domaine dont on a l'expérience.",
+      "examples": [
+        "Je sais la réponse.",
+        "Je connais cette ville."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "voir",
+      "aPos": "VER",
+      "b": "regarder",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "perception-attention",
+      "label": "voir 是看见；regarder 是主动看、注视。",
+      "explanation": "Voir marque la perception visuelle. Regarder ajoute une intention ou une direction de l'attention vers ce que l'on voit.",
+      "examples": [
+        "Je vois une lumière.",
+        "Je regarde le tableau."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "entendre",
+      "aPos": "VER",
+      "b": "écouter",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "auditory-attention",
+      "label": "entendre 是听见；écouter 是主动听。",
+      "explanation": "Entendre désigne la perception d'un son. Écouter implique que l'on prête attention à ce son ou à cette personne.",
+      "examples": [
+        "J'entends un bruit.",
+        "J'écoute la radio."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "dire",
+      "aPos": "VER",
+      "b": "parler",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "speech-act",
+      "label": "dire 强调说出的内容；parler 强调说话或交谈这件事。",
+      "explanation": "Dire prend souvent un message exprimé. Parler peut désigner l'activité de parler, une conversation ou la langue employée.",
+      "examples": [
+        "Elle dit bonjour.",
+        "Elle parle avec Paul."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "vouloir",
+      "aPos": "VER",
+      "b": "pouvoir",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "desire-capacity",
+      "label": "vouloir 表意愿；pouvoir 表能力、许可或可能性。",
+      "explanation": "Vouloir dit ce que le sujet souhaite faire. Pouvoir dit si l'action est possible, autorisée ou dans les capacités du sujet.",
+      "examples": [
+        "Je veux partir.",
+        "Je peux partir."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE modal contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "prendre",
+      "aPos": "VER",
+      "b": "apprendre",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "etymological-family",
+      "label": "apprendre 与 prendre 共享“抓取/掌握”的词族线索。",
+      "explanation": "Prendre garde le sens concret de prendre ou saisir. Apprendre prolonge cette image vers saisir par l'esprit, donc apprendre quelque chose.",
+      "examples": [
+        "Je prends le livre.",
+        "J'apprends le français."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire etymology check · FLE usage contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "faire",
+      "aPos": "VER",
+      "b": "refaire",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "prefix-repetition",
+      "label": "refaire 是 re- + faire，表示重新做或再做。",
+      "explanation": "Faire nomme l'action de faire ou fabriquer. Refaire ajoute l'idée de recommencer, réparer ou faire une nouvelle fois.",
+      "examples": [
+        "Je fais l'exercice.",
+        "Je refais l'exercice."
+      ],
+      "source": "wordcloud editorial review · Démonette relation already sourced · FLE prefix check.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "mettre",
+      "aPos": "VER",
+      "b": "remettre",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "prefix-return",
+      "label": "remettre 是 re- + mettre，常表示放回、重新放或交付。",
+      "explanation": "Mettre pose ou place quelque chose. Remettre ajoute selon le contexte l'idée de retour, de reprise ou de remise à quelqu'un.",
+      "examples": [
+        "Je mets le livre sur la table.",
+        "Je remets le livre à sa place."
+      ],
+      "source": "wordcloud editorial review · Démonette relation already sourced · FLE prefix check.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "bon",
+      "aPos": "ADJ",
+      "b": "bien",
+      "bPos": "ADV",
+      "type": "compare",
+      "dimension": "adjective-adverb",
+      "label": "bon 修饰名词；bien 修饰动作、状态或整句评价。",
+      "explanation": "Bon est surtout un adjectif: il qualifie une personne ou une chose. Bien est surtout un adverbe: il qualifie la manière, le degré ou l'appréciation.",
+      "examples": [
+        "C'est un bon livre.",
+        "Elle travaille bien."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE grammar contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "mauvais",
+      "aPos": "ADJ",
+      "b": "mal",
+      "bPos": "ADV",
+      "type": "compare",
+      "dimension": "adjective-adverb",
+      "label": "mauvais 修饰名词；mal 修饰动作、状态或方式。",
+      "explanation": "Mauvais est l'adjectif opposé à bon. Mal fonctionne surtout comme adverbe opposé à bien, ou comme nom dans certains emplois.",
+      "examples": [
+        "C'est un mauvais choix.",
+        "Il dort mal."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE grammar contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "aimer",
+      "aPos": "VER",
+      "b": "adorer",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "preference-intensity",
+      "label": "aimer 表喜欢或爱；adorer 强度更高，常是非常喜欢。",
+      "explanation": "Aimer couvre aimer, apprécier ou aimer d'amour selon le contexte. Adorer est plus intense et peut rester familier dans le sens aimer beaucoup.",
+      "examples": [
+        "J'aime ce film.",
+        "J'adore ce film."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "aimer",
+      "aPos": "VER",
+      "b": "détester",
+      "bPos": "VER",
+      "type": "ant",
+      "dimension": "preference-polarity",
+      "label": "aimer 与 détester 构成喜欢/讨厌的常用反向关系。",
+      "explanation": "Aimer exprime une appréciation positive. Détester exprime une appréciation négative forte, plus quotidienne que haïr pour de nombreux objets.",
+      "examples": [
+        "J'aime le café.",
+        "Je déteste le café."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE antonym check.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "entrer",
+      "aPos": "VER",
+      "b": "rentrer",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "entry-return",
+      "label": "entrer 是进入；rentrer 常表示回到原处或回家。",
+      "explanation": "Entrer marque le passage de l'extérieur vers l'intérieur. Rentrer ajoute souvent l'idée de retour vers un lieu familier ou quitté auparavant.",
+      "examples": [
+        "Elle entre dans la salle.",
+        "Elle rentre chez elle."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE motion contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "partir",
+      "aPos": "VER",
+      "b": "sortir",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "departure-exit",
+      "label": "partir 强调离开/出发；sortir 强调从里面到外面。",
+      "explanation": "Partir indique que l'on quitte un lieu ou commence un déplacement. Sortir met l'accent sur le passage hors d'un espace fermé ou d'une situation.",
+      "examples": [
+        "Je pars à huit heures.",
+        "Je sors de la maison."
+      ],
+      "source": "wordcloud editorial review · existing reviewed prototype relation · FLE motion contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "chercher",
+      "aPos": "VER",
+      "b": "trouver",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "search-result",
+      "label": "chercher 是寻找过程；trouver 是找到结果，也可表示觉得。",
+      "explanation": "Chercher décrit l'effort pour obtenir ou localiser quelque chose. Trouver indique le résultat trouvé, ou une opinion dans trouver quelque chose intéressant.",
+      "examples": [
+        "Je cherche mes clés.",
+        "Je trouve mes clés."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
+    },
+    {
+      "a": "comprendre",
+      "aPos": "VER",
+      "b": "apprendre",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "learning-understanding",
+      "label": "apprendre 是学习或获知；comprendre 是理解。",
+      "explanation": "Apprendre marque l'acquisition d'une information ou d'une compétence. Comprendre marque le fait d'en saisir le sens.",
+      "examples": [
+        "J'apprends une règle.",
+        "Je comprends la règle."
+      ],
+      "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE learning contrast.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04"
     }
   ],
   "editorialTeachingExamples": [
@@ -1602,6 +1982,74 @@
         {
           "text": "Paul vient chez moi ce soir.",
           "gloss": "保罗今晚来我家。"
+        }
+      ]
+    },
+    {
+      "id": "aller",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · FLE teaching examples",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "examples": [
+        {
+          "text": "Je vais à l'école à huit heures.",
+          "gloss": "我八点去学校。"
+        },
+        {
+          "text": "Nous allons voir Marie demain.",
+          "gloss": "我们明天去见玛丽。"
+        }
+      ]
+    },
+    {
+      "id": "dire",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · FLE teaching examples",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "examples": [
+        {
+          "text": "Il dit que le train arrive.",
+          "gloss": "他说火车到了。"
+        },
+        {
+          "text": "Dis-moi ton nom, s'il te plaît.",
+          "gloss": "请告诉我你的名字。"
+        }
+      ]
+    },
+    {
+      "id": "devoir",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · FLE teaching examples",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "examples": [
+        {
+          "text": "Je dois partir ce soir.",
+          "gloss": "我今晚必须离开。"
+        },
+        {
+          "text": "Elle doit dix euros à Paul.",
+          "gloss": "她欠保罗十欧元。"
+        }
+      ]
+    },
+    {
+      "id": "prendre",
+      "pos": "VER",
+      "source": "wordcloud editorial v1 · FLE teaching examples",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-04",
+      "examples": [
+        {
+          "text": "Je prends le train ce matin.",
+          "gloss": "我今天早上乘火车。"
+        },
+        {
+          "text": "Elle prend une décision demain.",
+          "gloss": "她明天做决定。"
         }
       ]
     }

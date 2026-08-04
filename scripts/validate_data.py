@@ -129,13 +129,14 @@ def editorial_teaching_example_errors() -> list[str]:
 def editorial_relation_errors() -> list[str]:
     payload = json.loads(SEED.read_text(encoding="utf-8"))
     errors: list[str] = []
+    allowed_types = {"syn", "compare", "fam", "drift", "trap", "ant", "cause"}
     for item in payload.get("editorialRelations", []):
         key = f"{item.get('a')}:{item.get('b')}"
         required = ("a", "aPos", "b", "bPos", "type", "dimension", "label", "explanation", "source", "reviewer", "reviewedAt")
         if any(not str(item.get(field) or "").strip() for field in required):
             errors.append(f"{key}: missing required metadata")
-        if item.get("type") != "compare":
-            errors.append(f"{key}: only reviewed compare relations are allowed in this core slice")
+        if item.get("type") not in allowed_types:
+            errors.append(f"{key}: relation type must be one of {', '.join(sorted(allowed_types))}")
         examples = item.get("examples")
         if not isinstance(examples, list) or len(examples) < 2 or not all(str(example).strip() for example in examples):
             errors.append(f"{key}: requires two minimal-context examples")
@@ -327,7 +328,7 @@ def main() -> None:
     ).fetchone()[0]
     expected_core_relations = len(json.loads(SEED.read_text(encoding="utf-8")).get("editorialRelations", []))
     check(
-        "核心词审校对比关系",
+        "核心词审校关系",
         not editorial_errors and core_relation_count == expected_core_relations,
         "; ".join(editorial_errors) or f"{core_relation_count}/{expected_core_relations} 条具完整审校、来源与例句",
     )

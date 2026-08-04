@@ -1,4 +1,5 @@
 node_modules/
+dist/
 data/raw/*.tsv
 data/raw/demonette-2.0/
 data/raw/dbnary/
