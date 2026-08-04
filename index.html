@@ -21,6 +21,9 @@
       <div id="search-results" class="search-results hidden" role="listbox"></div>
     </div>
     <div class="topbar-actions">
+      <button id="local-data-open" class="quiet-button" type="button">本地数据</button>
+      <button id="learning-progress-open" class="quiet-button" type="button" aria-label="打开学习进度" title="打开学习进度">学习进度</button>
+      <button id="draft-open" class="quiet-button" type="button">我的词卡</button>
       <button id="review-open" class="quiet-button review-open" type="button">复习 <span id="review-count">0</span></button>
       <button id="reset" class="quiet-button" type="button">全图</button>
     </div>
@@ -46,6 +49,7 @@
         <p><i class="line official"></i><span>来源确认 / 人工审校</span></p>
         <p><i class="line personal"></i><span>我的词与关系</span></p>
         <p class="source">FLELex · Lexique 4 · Démonette 2<br>Wiktionnaire / DBnary · CFDICT</p>
+        <p class="source-note">含非商业来源；本地记录只保存在当前浏览器。</p>
       </div>
     </aside>
 
@@ -95,7 +99,76 @@
     </section>
   </div>
 
-  <script src="graph-data.js?v=76bad64ce6cb"></script>
-  <script src="app.js?v=76bad64ce6cb"></script>
+  <div id="draft-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="draft-title">
+    <button class="dialog-mask" id="draft-mask" type="button" aria-label="关闭我的词卡"></button>
+    <section class="dialog-card draft-dialog-card">
+      <button id="draft-close" class="dialog-close" type="button" aria-label="关闭我的词卡">×</button>
+      <div class="eyebrow">个人记录</div>
+      <h2 id="draft-title">我的词卡</h2>
+      <p class="local-note">这些词卡只保存在当前浏览器，不会进入权威词网，也不会同步到其他设备。</p>
+      <p id="draft-storage-notice" class="storage-notice hidden"></p>
+      <div class="draft-grid">
+        <form id="draft-create-form" class="draft-create-form">
+          <label>法语词<input id="draft-lemma" required autocomplete="off" spellcheck="false" placeholder="例如 se lever"></label>
+          <label>词性<input id="draft-pos" autocomplete="off" spellcheck="false" placeholder="例如 VER"></label>
+          <label>中文提示<textarea id="draft-zh" rows="3" placeholder="用自己的话简短记录"></textarea></label>
+          <label>备注<textarea id="draft-note" rows="5" placeholder="记录搭配、联想或待确认问题"></textarea></label>
+          <p id="draft-create-error" class="form-error"></p>
+          <button class="primary-button" type="submit">创建词卡</button>
+        </form>
+        <div class="draft-workspace">
+          <div id="draft-list" class="draft-list"></div>
+          <div id="draft-detail" class="draft-detail"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="local-data-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="local-data-title">
+    <button class="dialog-mask" id="local-data-mask" type="button" aria-label="关闭本地数据"></button>
+    <section class="dialog-card local-data-card">
+      <button id="local-data-close" class="dialog-close" type="button" aria-label="关闭本地数据">×</button>
+      <div class="eyebrow">当前浏览器</div>
+      <h2 id="local-data-title">本地学习数据</h2>
+      <p class="local-note">这些内容只保存在当前浏览器。导出只读取本地数据，不会写入权威词网。</p>
+      <div id="local-data-notice" class="storage-notice hidden"></div>
+      <div class="release-boundary-list" aria-label="隐私与来源说明">
+        <article><strong>隐私</strong><span>没有账号、上传或同步。复习、我的词网和我的词卡只保存在当前浏览器。</span></article>
+        <article><strong>导出</strong><span>导出 JSON 只读取本地数据，方便你自己备份或检查；不会写入权威词库。</span></article>
+        <article><strong>来源</strong><span>词网使用 FLELex、Lexique、Démonette、Wiktionnaire / DBnary、CFDICT。FLELex 为非商业许可，公开使用时必须保留署名和许可边界。</span></article>
+      </div>
+      <div class="local-boundary-list" aria-label="本地数据边界">
+        <article><strong>复习</strong><span>词条、关系复习队列和间隔记录。</span><code>wordcloud.learning.v1</code></article>
+        <article><strong>我的词网</strong><span>个人添加的词和联想边。</span><code>wordcloud.personal.v2</code></article>
+        <article><strong>我的词卡</strong><span>中文提示和用法备注。</span><code>wordcloud.draft_cards.v1</code></article>
+      </div>
+      <div class="dialog-actions local-data-actions">
+        <button id="local-data-export" class="primary-button" type="button">生成导出 JSON</button>
+      </div>
+      <textarea id="local-data-output" class="local-data-output" readonly spellcheck="false" aria-label="本地学习数据导出 JSON"></textarea>
+    </section>
+  </div>
+
+  <div id="learning-progress-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="learning-progress-title">
+    <button class="dialog-mask" id="learning-progress-mask" type="button" aria-label="关闭学习进度"></button>
+    <section class="dialog-card learning-progress-card">
+      <button id="learning-progress-close" class="dialog-close" type="button" aria-label="关闭学习进度">×</button>
+      <div class="eyebrow">本地复习反馈</div>
+      <h2 id="learning-progress-title">学习进度</h2>
+      <p class="local-note">统计只读取当前浏览器的 wordcloud.learning.v1，不会创建新的权威数据或写入复习记录。</p>
+      <p id="learning-progress-notice" class="storage-notice hidden"></p>
+      <div id="learning-progress-summary" class="learning-progress-summary"></div>
+      <div class="learning-progress-columns">
+        <section><h3>词条分类</h3><div id="learning-word-categories" class="learning-progress-list"></div></section>
+        <section><h3>关系分类</h3><div id="learning-relation-categories" class="learning-progress-list"></div></section>
+      </div>
+      <section class="learning-progress-section"><h3>最近复习</h3><div id="learning-recent" class="learning-progress-list"></div></section>
+      <section class="learning-progress-section"><h3>探索路径</h3><div id="learning-paths" class="learning-progress-list"></div></section>
+    </section>
+  </div>
+
+  <script src="graph-data.js?v=978028a803ec"></script>
+  <script src="app.js?v=978028a803ec"></script>
+  <script src="src/draft-ui.js"></script>
 </body>
 </html>

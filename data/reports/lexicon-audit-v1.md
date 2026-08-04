@@ -75,30 +75,30 @@
 | excluded | missing_lexique_alignment_outside_target | 159 |
 | auxiliary | closed_class | 130 |
 | auxiliary | functional_adverb | 56 |
-| eligible | manual_audit_override:low_frequency_missing_gloss | 56 |
+| eligible | manual_audit_override:manual_audit_override:manual_audit_override:low_frequency_missing_gloss | 56 |
 | excluded | non_content_pos | 53 |
 | eligible | editorial_foundational_core:v1:wordcloud editorial:2026-07-30 | 24 |
-| excluded | manual_audit_override:low_frequency_missing_gloss | 18 |
-| eligible | manual_audit_override:advanced_tail | 17 |
+| excluded | manual_audit_override:manual_audit_override:manual_audit_override:low_frequency_missing_gloss | 18 |
+| eligible | manual_audit_override:manual_audit_override:manual_audit_override:advanced_tail | 17 |
 | auxiliary | editorial_seed_support | 15 |
-| auxiliary | manual_audit_override:advanced_tail | 11 |
-| excluded | manual_audit_override:missing_lexique_alignment | 8 |
-| excluded | manual_audit_override:target_content_high_frequency_missing_gloss | 4 |
-| needs_review | manual_audit_defer:advanced_tail | 4 |
-| eligible | manual_audit_override:outside_target_cefr | 3 |
-| auxiliary | manual_audit_override:missing_lexique_alignment | 2 |
-| auxiliary | manual_audit_override:missing_lexique_alignment_outside_target | 2 |
-| eligible | manual_audit_override:missing_lexique_alignment | 2 |
-| excluded | manual_audit_override:advanced_tail | 2 |
-| needs_review | manual_audit_defer:low_frequency_missing_gloss | 2 |
-| needs_review | manual_audit_defer:missing_lexique_alignment | 2 |
-| auxiliary | manual_audit_override:outside_target_cefr | 1 |
-| auxiliary | manual_audit_override:target_content_with_gloss | 1 |
+| auxiliary | manual_audit_override:manual_audit_override:manual_audit_override:advanced_tail | 11 |
+| excluded | manual_audit_override:manual_audit_override:manual_audit_override:missing_lexique_alignment | 8 |
+| excluded | manual_audit_override:manual_audit_override:manual_audit_override:target_content_high_frequency_missing_gloss | 4 |
+| needs_review | manual_audit_defer:manual_audit_defer:manual_audit_defer:advanced_tail | 4 |
+| eligible | manual_audit_override:manual_audit_override:manual_audit_override:outside_target_cefr | 3 |
+| auxiliary | manual_audit_override:manual_audit_override:manual_audit_override:missing_lexique_alignment | 2 |
+| auxiliary | manual_audit_override:manual_audit_override:manual_audit_override:missing_lexique_alignment_outside_target | 2 |
+| eligible | manual_audit_override:manual_audit_override:manual_audit_override:missing_lexique_alignment | 2 |
+| excluded | manual_audit_override:manual_audit_override:manual_audit_override:advanced_tail | 2 |
+| needs_review | manual_audit_defer:manual_audit_defer:manual_audit_defer:low_frequency_missing_gloss | 2 |
+| needs_review | manual_audit_defer:manual_audit_defer:manual_audit_defer:missing_lexique_alignment | 2 |
+| auxiliary | manual_audit_override:manual_audit_override:manual_audit_override:outside_target_cefr | 1 |
+| auxiliary | manual_audit_override:manual_audit_override:manual_audit_override:target_content_with_gloss | 1 |
 | excluded | invalid_surface | 1 |
-| excluded | manual_audit_override:complex_expression | 1 |
-| excluded | manual_audit_override:target_content_with_gloss | 1 |
-| needs_review | manual_audit_defer:missing_lexique_alignment_outside_target | 1 |
-| needs_review | manual_audit_defer:outside_target_cefr | 1 |
+| excluded | manual_audit_override:manual_audit_override:manual_audit_override:complex_expression | 1 |
+| excluded | manual_audit_override:manual_audit_override:manual_audit_override:target_content_with_gloss | 1 |
+| needs_review | manual_audit_defer:manual_audit_defer:manual_audit_defer:missing_lexique_alignment_outside_target | 1 |
+| needs_review | manual_audit_defer:manual_audit_defer:manual_audit_defer:outside_target_cefr | 1 |
 
 ## CFDICT 缺失但因高频保留的示例
 

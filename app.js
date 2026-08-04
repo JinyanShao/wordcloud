@@ -18,9 +18,12 @@
   const LEARNING_KEY = "wordcloud.learning.v1";
   const MINUTE = 60 * 1000;
   const DAY = 24 * 60 * MINUTE;
+  const PROGRESS_UPCOMING_DAYS = 7;
   const MOBILE_BREAKPOINT = 720;
   const CANVAS_FONT = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
   const CANVAS_PIXEL_BUDGET = { mobile: 3600000, desktop: 9000000 };
+  const VALID_REVIEW_RATINGS = new Set(["again", "hard", "good", "easy"]);
+  const REVIEW_RATING_LABELS = { again: "再复习", hard: "模糊", good: "记住", easy: "很熟" };
 
   const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
   const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "派生", drift: "语义漂移", trap: "易混", ant: "反义", cause: "因果" };
@@ -58,6 +61,9 @@
   const teachingExamples = GRAPH_TEACHING_EXAMPLES || {};
   const contentStatus = GRAPH_CONTENT_STATUS || {};
   const aliasesById = GRAPH_ALIASES || {};
+  let searchTools = null;
+  let wordCardTools = null;
+  let localDataTools = null;
   const nodeById = new Map(officialNodes.map((node) => [node.id, node]));
   for (const node of searchOnlyNodes) nodeById.set(node.id, node);
   const baseLinks = GRAPH_LINKS.map((row) => ({ a: String(row[0]), b: String(row[1]), mask: row[2], weight: row[3] }));
@@ -65,6 +71,7 @@
     a: String(row[0]), b: String(row[1]), relation: row[2], dimension: row[3], subtype: row[4], direction: row[5],
     label: row[6], explanation: row[7], examples: row[8], confidence: row[9], review: row[10], kind: "official",
   }));
+  const officialEdgeByReviewKey = new Map();
   const layoutAdj = new Map();
   const officialAdj = new Map();
 
@@ -81,8 +88,21 @@
     addAdj(officialAdj, edge.b, { ...edge, other: edge.a });
   }
 
-  let personal = loadPersonal();
-  let learning = loadLearning();
+  import("./src/search-tools.mjs").then((tools) => {
+    searchTools = tools;
+    if (search.value.trim()) doSearch();
+  }).catch(() => {});
+  import("./src/word-card-tools.mjs").then((tools) => {
+    wordCardTools = tools;
+    if (selected && !panel.classList.contains("hidden")) renderPanel(selected);
+  }).catch(() => {});
+  import("./src/local-data-tools.mjs").then((tools) => {
+    localDataTools = tools;
+    if (!$("#learning-progress-dialog").classList.contains("hidden")) renderLearningProgress();
+  }).catch(() => {});
+
+  let personal = { nodes: [], edges: [] };
+  let learning = { saved: {} };
   let personalNodes = [];
   let personalEdges = [];
   let allNodes = [];
@@ -106,30 +126,94 @@
   let viewTween = null;
   const activePointers = new Map();
   let pinchStart = null;
+  const localStorageWarnings = [];
+
+  function rememberLocalWarning(message) {
+    if (message && !localStorageWarnings.includes(message)) localStorageWarnings.push(message);
+  }
+
+  function localText(value, limit = 120) {
+    return String(value ?? "").trim().slice(0, limit);
+  }
 
   function loadPersonal() {
+    let raw = null;
     try {
-      const value = JSON.parse(localStorage.getItem(PERSONAL_KEY) || "{}");
-      return { nodes: Array.isArray(value.nodes) ? value.nodes : [], edges: Array.isArray(value.edges) ? value.edges : [] };
+      raw = localStorage.getItem(PERSONAL_KEY);
     } catch (_) {
+      rememberLocalWarning("我的词网：浏览器限制了本地存储读取。");
+      return { nodes: [], edges: [] };
+    }
+    if (!raw) return { nodes: [], edges: [] };
+    try {
+      const value = JSON.parse(raw);
+      const nodes = Array.isArray(value?.nodes) ? value.nodes.map((node) => ({
+        ...node,
+        id: localText(node?.id, 80),
+        word: localText(node?.word, 80),
+        pos: localText(node?.pos, 24) || "我的词",
+        gloss: localText(node?.gloss, 180),
+        note: localText(node?.note, 240),
+        x: Number.isFinite(Number(node?.x)) ? Number(node.x) : 0,
+        y: Number.isFinite(Number(node?.y)) ? Number(node.y) : 0,
+        size: Math.max(1, Number(node?.size) || 3.4),
+      })).filter((node) => node.id && node.word) : [];
+      const edges = Array.isArray(value?.edges) ? value.edges.map((edge) => ({
+        a: localText(edge?.a, 80),
+        b: localText(edge?.b, 80),
+        label: localText(edge?.label, 120) || "我的联想",
+      })).filter((edge) => edge.a && edge.b) : [];
+      if (!Array.isArray(value?.nodes) || !Array.isArray(value?.edges)) rememberLocalWarning("我的词网：部分本地数据格式不正确，已忽略缺失字段。");
+      return { nodes, edges };
+    } catch (_) {
+      rememberLocalWarning("我的词网：本地数据无法解析，已暂时忽略。");
       return { nodes: [], edges: [] };
     }
   }
 
   function savePersonal() {
-    localStorage.setItem(PERSONAL_KEY, JSON.stringify(personal));
+    try {
+      localStorage.setItem(PERSONAL_KEY, JSON.stringify(personal));
+    } catch (_) {
+      rememberLocalWarning("我的词网：无法保存到当前浏览器。");
+    }
   }
 
   function loadLearning() {
+    let raw = null;
     try {
-      const value = JSON.parse(localStorage.getItem(LEARNING_KEY) || "{}");
-      const saved = value.saved && typeof value.saved === "object" ? value.saved : {};
+      raw = localStorage.getItem(LEARNING_KEY);
+    } catch (_) {
+      rememberLocalWarning("复习：浏览器限制了本地存储读取。");
+      return { saved: {} };
+    }
+    if (!raw) return { saved: {} };
+    try {
+      const value = JSON.parse(raw);
+      const saved = value?.saved && typeof value.saved === "object" && !Array.isArray(value.saved) ? value.saved : {};
+      const savedRelations = value?.savedRelations
+        && typeof value.savedRelations === "object"
+        && !Array.isArray(value.savedRelations)
+        ? value.savedRelations
+        : {};
+      if (!value?.saved || Array.isArray(value.saved) || typeof value.saved !== "object") rememberLocalWarning("复习：本地数据格式不正确，已忽略缺失字段。");
+      if (value?.savedRelations !== undefined && (!value.savedRelations || Array.isArray(value.savedRelations) || typeof value.savedRelations !== "object")) {
+        rememberLocalWarning("复习：关系复习数据格式不正确，已忽略缺失字段。");
+      }
       const now = Date.now();
+      const normalizedRelations = Object.fromEntries(Object.entries(savedRelations)
+        .filter(([key]) => localText(key, 180))
+        .map(([key, record]) => [String(key), normalizeLearningRelationRecord(record, now)])
+        .filter(([, record]) => record.a && record.b && record.relation));
       return {
-        saved: Object.fromEntries(Object.entries(saved).map(([id, record]) => [id, normalizeLearningRecord(record, now)])),
+        saved: Object.fromEntries(Object.entries(saved)
+          .filter(([id]) => localText(id, 80))
+          .map(([id, record]) => [String(id), normalizeLearningRecord(record, now)])),
+        savedRelations: normalizedRelations,
       };
     } catch (_) {
-      return { saved: {} };
+      rememberLocalWarning("复习：本地数据无法解析，已暂时忽略。");
+      return { saved: {}, savedRelations: {} };
     }
   }
 
@@ -145,31 +229,90 @@
       intervalDays: Math.max(0, Number(raw.intervalDays) || 0),
       ease: Math.max(1.3, Number(raw.ease) || 2.3),
       lapses: Math.max(0, Number(raw.lapses) || 0),
-      lastRating: typeof raw.lastRating === "string" ? raw.lastRating : null,
+      lastRating: VALID_REVIEW_RATINGS.has(raw.lastRating) ? raw.lastRating : null,
+      trail: Array.isArray(raw.trail)
+        ? raw.trail.map((id) => localText(id, 80)).filter(Boolean).slice(-8)
+        : [],
+    };
+  }
+
+  function normalizeLearningRelationRecord(record, now = Date.now()) {
+    const raw = record && typeof record === "object" ? record : {};
+    return {
+      ...normalizeLearningRecord(raw, now),
+      a: localText(raw.a, 80),
+      b: localText(raw.b, 80),
+      relation: localText(raw.relation, 24),
+      dimension: localText(raw.dimension, 80),
     };
   }
 
   function saveLearning() {
-    localStorage.setItem(LEARNING_KEY, JSON.stringify(learning));
+    try {
+      localStorage.setItem(LEARNING_KEY, JSON.stringify(learning));
+    } catch (_) {
+      rememberLocalWarning("复习：无法保存到当前浏览器。");
+    }
   }
+
+  personal = loadPersonal();
+  learning = loadLearning();
+  learning.savedRelations ||= {};
 
   function savedIds() {
     return Object.keys(learning.saved).filter((id) => nodeById.has(id));
   }
 
+  function relationReviewEntries() {
+    return Object.entries(learning.savedRelations || {})
+      .map(([key, record]) => {
+        const edge = officialEdgeByReviewKey.get(key);
+        if (!edge) return null;
+        const left = nodeById.get(edge.a);
+        const right = nodeById.get(edge.b);
+        if (!left || !right) return null;
+        return { key, kind: "relation", edge, left, right, record };
+      })
+      .filter(Boolean);
+  }
+
+  function dueReviewEntries(now = Date.now()) {
+    const words = savedIds().map((id) => ({
+      key: id,
+      kind: "word",
+      node: nodeById.get(id),
+      record: learning.saved[id],
+    }));
+    const relations = relationReviewEntries();
+    const entries = [...words, ...relations]
+      .filter((entry) => entry.record.dueAt <= now)
+      .sort((a, b) => a.record.dueAt - b.record.dueAt
+        || a.record.addedAt - b.record.addedAt
+        || a.key.localeCompare(b.key));
+    return entries;
+  }
+
   function dueIds(now = Date.now()) {
-    return savedIds().filter((id) => learning.saved[id].dueAt <= now)
-      .sort((a, b) => learning.saved[a].dueAt - learning.saved[b].dueAt || learning.saved[a].addedAt - learning.saved[b].addedAt);
+    return dueReviewEntries(now).map((entry) => entry.key);
   }
 
   function isSaved(id) {
     return Boolean(learning.saved[String(id)]);
   }
 
+  function isRelationSaved(edge) {
+    return Boolean(learning.savedRelations?.[relationReviewKey(edge)]);
+  }
+
   function updateReviewCount() {
-    const due = dueIds().length;
+    const due = dueReviewEntries().length;
     $("#review-count").textContent = due;
     $("#review-open").setAttribute("aria-label", due ? `开始 ${due} 个到期复习` : "查看复习队列");
+  }
+
+  function refreshLearningProgress() {
+    const dialog = $("#learning-progress-dialog");
+    if (dialog && !dialog.classList.contains("hidden")) renderLearningProgress();
   }
 
   function formatDue(dueAt, now = Date.now()) {
@@ -202,16 +345,35 @@
     }
     next.reviews += 1;
     next.lastReviewedAt = now;
-    next.lastRating = rating;
+    next.lastRating = VALID_REVIEW_RATINGS.has(rating) ? rating : null;
     return next;
   }
 
   function toggleSaved(id) {
     const key = String(id);
     if (isSaved(key)) delete learning.saved[key];
-    else learning.saved[key] = normalizeLearningRecord({}, Date.now());
+    else learning.saved[key] = normalizeLearningRecord({ trail }, Date.now());
     saveLearning();
     updateReviewCount();
+    refreshLearningProgress();
+  }
+
+  function toggleRelationSaved(edge) {
+    const key = relationReviewKey(edge);
+    if (isRelationSaved(edge)) {
+      delete learning.savedRelations[key];
+    } else {
+      learning.savedRelations[key] = normalizeLearningRelationRecord({
+        a: edge.a,
+        b: edge.b,
+        relation: edge.relation,
+        dimension: edge.dimension,
+        trail,
+      }, Date.now());
+    }
+    saveLearning();
+    updateReviewCount();
+    refreshLearningProgress();
   }
 
   function rebuildPersonal() {
@@ -326,6 +488,15 @@
 
   function pairKey(a, b) {
     return a < b ? `${a}|${b}` : `${b}|${a}`;
+  }
+
+  function relationReviewKey(edge) {
+    const endpoints = [String(edge?.a || ""), String(edge?.b || "")].sort();
+    return `relation:${endpoints[0]}|${endpoints[1]}|${String(edge?.relation || "")}|${String(edge?.dimension || "")}`;
+  }
+
+  for (const edge of officialEdges) {
+    officialEdgeByReviewKey.set(relationReviewKey(edge), edge);
   }
 
   function personalFor(id) {
@@ -830,8 +1001,9 @@
 
   function renderSenseGroups(node) {
     const groups = GRAPH_SENSES[node.id] || [];
-    if (!groups.length) return "";
-    const flattened = groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
+    const flattened = wordCardTools?.flattenSenseGroups(groups)
+      || groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
+    if (!flattened.length) return "";
     const renderItems = (items, includeExamples = true) => items.map((sense) => `
       <li><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><div><p>${escapeHtml(sense.definition)}</p>${includeExamples && sense.examples?.length ? `<ul class="sense-examples">${sense.examples.map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}</div></li>
     `).join("");
@@ -844,6 +1016,38 @@
       ${hidden.length ? `<details class="sense-more"><summary>查看其余 ${hidden.length} 个义项</summary><ol class="sense-list continued">${renderItems(hidden, !foundationalCoreIds.has(node.id) && !node.searchOnly)}</ol></details>` : ""}
       ${(foundationalCoreIds.has(node.id) || node.searchOnly) && flattened.some((sense) => sense.examples?.length) ? `<details class="sense-more source-examples"><summary>查看来源原例句</summary><ol class="sense-list continued">${renderItems(flattened)}</ol></details>` : ""}
       ${sourceUrl ? `<a class="sense-source" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Wiktionnaire 来源 ↗</a>` : ""}
+    </section>`;
+  }
+
+  function renderSenseSummary(summary) {
+    if (!summary.senseTotal) return "";
+    return `<section class="panel-priority sense-priority" aria-label="法语释义摘要">
+      <h3>法语释义摘要 · ${summary.senseTotal}</h3>
+      <ol>${summary.sensePreview.map((sense) => `<li>${escapeHtml(sense.definition)}</li>`).join("")}</ol>
+    </section>`;
+  }
+
+  function renderUsageSummary(summary) {
+    if (!summary.hasLearningCues) return "";
+    const collocations = summary.collocationPreview.map((item) => `<li><strong>${escapeHtml(item.expression)}</strong><span>${escapeHtml(item.gloss || "")}</span></li>`).join("");
+    const examples = summary.teachingExamplePreview.map((item) => `<li><strong>${escapeHtml(item.text)}</strong><span>${escapeHtml(item.gloss || "")}</span></li>`).join("");
+    return `<section class="panel-priority usage-priority" aria-label="常用搭配和例句入口">
+      <h3>常用搭配 / 例句</h3>
+      <ul>${collocations}${examples}</ul>
+    </section>`;
+  }
+
+  function renderRelationEntry(summary, relationCounts) {
+    if (!summary.relationTotal) return "";
+    const items = [
+      relationCounts.reviewed ? `审校 ${relationCounts.reviewed}` : "",
+      relationCounts.sourced ? `来源 ${relationCounts.sourced}` : "",
+      relationCounts.mine ? `我的 ${relationCounts.mine}` : "",
+      relationCounts.form + relationCounts.structural ? `线索 ${relationCounts.form + relationCounts.structural}` : "",
+    ].filter(Boolean);
+    return `<section class="panel-priority relation-priority" aria-label="关系入口">
+      <h3>关系入口</h3>
+      <p>${escapeHtml(items.join(" · ") || "暂无关系")}</p>
     </section>`;
   }
 
@@ -861,16 +1065,54 @@
       ${learning.etymology ? `<section class="panel-section etymology-section"><h3>词源线索 · 审校</h3><p>${escapeHtml(learning.etymology.text)}</p><small>${escapeHtml(learning.etymology.source)} · ${escapeHtml(learning.etymology.reviewedAt)}</small></section>` : ""}`;
   }
 
-  function renderContrastNotes(items) {
-    const contrasts = items.filter(({ edge }) => edge.relation === "compare" && edge.explanation);
-    if (!contrasts.length) return "";
-    return `<section class="panel-section contrast-section"><h3>用法区分</h3>${contrasts.map(({ edge, node: other }) => `
+  function relationNotesFor(items) {
+    if (wordCardTools?.selectReviewedRelationNotes) return wordCardTools.selectReviewedRelationNotes(items);
+    return items
+      .filter(({ edge }) => edge.review === "reviewed" && edge.explanation && !edge.explanation.includes("requires production re-review"))
+      .map(({ edge, node: other }) => ({
+        a: edge.a,
+        b: edge.b,
+        word: other.word,
+        pos: other.pos,
+        relation: edge.relation,
+        dimension: edge.dimension,
+        label: edge.label,
+        explanation: edge.explanation,
+        examples: (() => {
+          try {
+            const parsed = JSON.parse(edge.examples || "[]");
+            return Array.isArray(parsed) ? parsed : [];
+          } catch {
+            return [];
+          }
+        })(),
+      }));
+  }
+
+  function renderReviewedRelationNotes(items) {
+    const notes = relationNotesFor(items);
+    if (!notes.length) return "";
+    return `<section class="panel-section contrast-section"><h3>用法区分 · 审校</h3>${notes.map((note) => `
       <article class="contrast-note">
-        <p><strong>${escapeHtml(other.word)}</strong> · ${escapeHtml(edge.label)}</p>
-        <p class="contrast-explanation">${escapeHtml(edge.explanation)}</p>
-        ${edge.examples ? `<ul class="contrast-examples">${JSON.parse(edge.examples || "[]").map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}
+        <p><strong>${escapeHtml(note.word)}</strong> · ${escapeHtml(note.label)}</p>
+        <p class="contrast-explanation">${escapeHtml(note.explanation)}</p>
+        ${note.examples?.length ? `<ul class="contrast-examples">${note.examples.map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}
+        <div class="contrast-actions">
+          <button class="${isRelationSaved(note) ? "quiet-button" : "primary-button"}" type="button" data-review-relation="${escapeHtml(relationReviewKey(note))}">${isRelationSaved(note) ? "移出复习" : "加入复习"}</button>
+        </div>
       </article>
     `).join("")}</section>`;
+  }
+
+  function openDraftCardForNode(node) {
+    const detail = {
+      sourceLexemeId: node.personal ? "" : node.id,
+      lemma: node.word,
+      pos: node.pos,
+      zhHint: node.gloss || "",
+    };
+    if (window.WordcloudDraftCards?.openFromWordCard) window.WordcloudDraftCards.openFromWordCard(detail);
+    else window.dispatchEvent(new CustomEvent("wordcloud:open-draft-card", { detail }));
   }
 
   function renderPanel(node) {
@@ -893,22 +1135,53 @@
       : node.searchOnly ? `${node.level} 可检索学习词`
       : node.status === "eligible" ? `${node.level} 主词表` : "官方关系支撑词";
     const saved = isSaved(node.id);
+    const relationCounts = {
+      reviewed: reviewed.length,
+      sourced: sourced.length,
+      mine: mine.length,
+      form: form.length,
+      structural: structural.length,
+    };
+    const summary = wordCardTools?.summarizeWordCard({
+      senseGroups: GRAPH_SENSES[node.id] || [],
+      learning: GRAPH_LEARNING[node.id],
+      teachingExamples: teachingExamples[node.id] || [],
+      relationCounts,
+    }) || {
+      senseTotal: 0,
+      sensePreview: [],
+      collocationPreview: [],
+      teachingExamplePreview: [],
+      hasLearningCues: false,
+      relationTotal: Object.values(relationCounts).reduce((sum, count) => sum + count, 0),
+    };
     panelContent.innerHTML = `
-      <h1 class="word-title">${escapeHtml(node.word)}</h1>
-      <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
-      <p class="content-status ${contentStatus[node.id] || "pending_definition"}">${contentStatus[node.id] === "has_definition" ? "词典状态 · 有法语定义" : "词典状态 · 待补定义"}</p>
-      <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
+      <header class="word-hero">
+        <h1 class="word-title">${escapeHtml(node.word)}</h1>
+        <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
+        <p class="content-status ${contentStatus[node.id] || "pending_definition"}">${contentStatus[node.id] === "has_definition" ? "词典状态 · 有法语定义" : "词典状态 · 待补定义"}</p>
+        <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
+      </header>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
       ${node.searchOnly ? `<section class="search-only-note"><strong>暂未建立学习关系</strong><span>这个词可搜索、查看义项并加入复习；它尚未进入关系图。</span></section>` : ""}
-      <section class="learning-action" aria-label="复习设置">
-        <div><span class="eyebrow">主动回忆</span><p>${saved ? `已加入学习循环 · ${formatDue(learning.saved[node.id].dueAt)}` : "把这个词留到下一次主动回忆"}</p></div>
-        <button id="save-word" class="${saved ? "quiet-button" : "primary-button"}" type="button">${saved ? "移出复习" : "加入复习"}</button>
-      </section>
+      ${renderSenseSummary(summary)}
+      ${renderUsageSummary(summary)}
+      ${renderRelationEntry(summary, relationCounts)}
+      <div class="learning-actions">
+        <section class="learning-action" aria-label="复习设置">
+          <div><span class="eyebrow">主动回忆</span><p>${saved ? `已加入学习循环 · ${formatDue(learning.saved[node.id].dueAt)}` : "把这个词留到下一次主动回忆"}</p></div>
+          <button id="save-word" class="${saved ? "quiet-button" : "primary-button"}" type="button">${saved ? "移出复习" : "加入复习"}</button>
+        </section>
+        <section class="learning-action" aria-label="我的词卡">
+          <div><span class="eyebrow">我的词卡</span><p>保存自己的中文提示和用法备注</p></div>
+          <button id="draft-word" class="quiet-button" type="button">加入 / 打开</button>
+        </section>
+      </div>
       ${renderSenseGroups(node)}
       ${renderTeachingExamples(node)}
       ${renderEditorialLearning(node)}
       ${reviewed.length ? `<section class="panel-section"><h3>人工审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${renderContrastNotes(reviewed)}
+      ${renderReviewedRelationNotes(reviewed)}
       ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${form.length ? `<section class="panel-section"><h3>形音线索 · 自动候选</h3><p class="candidate-note">只显示同时形似且音近的少量词，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
@@ -917,16 +1190,35 @@
     `;
     panel.classList.remove("hidden");
     panelContent.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => enterFocus(button.dataset.node)));
+    panelContent.querySelectorAll("[data-review-relation]").forEach((button) => button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const edge = officialEdgeByReviewKey.get(button.dataset.reviewRelation);
+      if (!edge) return;
+      toggleRelationSaved(edge);
+      renderPanel(node);
+    }));
     $("#save-word").addEventListener("click", () => { toggleSaved(node.id); renderPanel(node); });
+    $("#draft-word").addEventListener("click", () => openDraftCardForNode(node));
   }
 
   let reviewIndex = 0;
   let reviewRevealed = false;
 
-  function reviewNodes() {
-    return dueIds()
-      .map((id) => nodeById.get(id))
-      .filter(Boolean);
+  function relationExamples(value) {
+    if (Array.isArray(value)) return value.map((item) => String(item || "").trim()).filter(Boolean);
+    try {
+      const parsed = JSON.parse(value || "[]");
+      return Array.isArray(parsed) ? parsed.map((item) => String(item || "").trim()).filter(Boolean) : [];
+    } catch (_) {
+      return [];
+    }
+  }
+
+  function reviewTrailMarkup(record) {
+    const path = Array.isArray(record?.trail)
+      ? record.trail.map((id) => nodeById.get(id)?.word || id).filter(Boolean)
+      : [];
+    return path.length > 1 ? `<small class="review-path">探索路径 · ${escapeHtml(path.join(" › "))}</small>` : "";
   }
 
   function closeReviewDialog() {
@@ -934,32 +1226,54 @@
   }
 
   function renderReviewDialog() {
-    const nodes = reviewNodes();
+    const entries = dueReviewEntries();
     const content = $("#review-content");
-    if (!nodes.length) {
+    if (!entries.length) {
       const saved = savedIds().length;
-      content.innerHTML = `<div class="review-empty"><p>${saved ? "今天的复习已完成。" : "还没有学习词。"}</p><small>${saved ? "到期的词会自动回到这里。" : "打开一个词条后，选择“加入复习”。"}</small></div>`;
+      const relationSaved = relationReviewEntries().length;
+      const hasSaved = saved || relationSaved;
+      content.innerHTML = `<div class="review-empty"><p>${hasSaved ? "今天的复习已完成。" : "还没有学习词。"}</p><small>${hasSaved ? "到期的词条或关系会自动回到这里。" : "打开一个词条或审校关系后，选择“加入复习”。"}</small></div>`;
       return;
     }
-    if (reviewIndex >= nodes.length) reviewIndex = 0;
-    const node = nodes[reviewIndex];
-    const record = learning.saved[node.id];
+    if (reviewIndex >= entries.length) reviewIndex = 0;
+    const entry = entries[reviewIndex];
+    const record = entry.record;
+    const isRelation = entry.kind === "relation";
+    const relationName = isRelation ? (RELATION_NAMES[entry.edge.relation] || entry.edge.relation) : "";
+    const title = isRelation
+      ? `${entry.left.word} ↔ ${entry.right.word}`
+      : entry.node.word;
+    const pos = isRelation
+      ? `${relationName} · ${entry.left.pos} / ${entry.right.pos}`
+      : entry.node.pos;
+    const answer = isRelation
+      ? `<div class="review-answer relation-review-answer">
+          <span>${escapeHtml(relationName)} · 审校说明</span>
+          <p><strong>${escapeHtml(entry.edge.label)}</strong></p>
+          <p>${escapeHtml(entry.edge.explanation || "暂无说明")}</p>
+          ${relationExamples(entry.edge.examples).length ? `<ul class="review-relation-examples">${relationExamples(entry.edge.examples).map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}
+        </div>`
+      : `<div class="review-answer"><span>中文提示</span><p>${escapeHtml(entry.node.gloss || "暂无")}</p>${entry.node.note ? `<p class="review-note">${escapeHtml(entry.node.note)}</p>` : ""}</div>`;
     content.innerHTML = `
-      <p class="review-progress">今日到期 ${nodes.length} 个 · 第 ${reviewIndex + 1} 个 · 已复习 ${record.reviews || 0} 次</p>
-      <p class="review-prompt">先主动回忆它的意思和用法，再显示提示。</p>
-      <h3>${escapeHtml(node.word)}</h3>
-      <p class="review-pos">${escapeHtml(node.pos)}</p>
-      ${reviewRevealed ? `<div class="review-answer"><span>中文提示</span><p>${escapeHtml(node.gloss || "暂无")}</p></div>` : ""}
+      <p class="review-progress">到期 ${entries.length} 个 · 第 ${reviewIndex + 1} 个 · 已复习 ${record.reviews || 0} 次</p>
+      <p class="review-prompt">${isRelation ? "先回忆这两个词的区别和使用场景，再显示审校说明。" : "先主动回忆它的意思和用法，再显示提示。"}</p>
+      <h3>${escapeHtml(title)}</h3>
+      <p class="review-pos">${escapeHtml(pos)}</p>
+      ${reviewRevealed ? answer : ""}
+      ${reviewRevealed ? reviewTrailMarkup(record) : ""}
       <div class="review-actions">
-        ${reviewRevealed ? `<button id="review-again" class="quiet-button" type="button">不记得<br><small>10 分钟</small></button><button id="review-hard" class="quiet-button" type="button">模糊<br><small>1 天</small></button><button id="review-good" class="primary-button" type="button">记得<br><small>递增间隔</small></button><button id="review-easy" class="quiet-button" type="button">很熟<br><small>更长间隔</small></button>` : `<button id="review-reveal" class="primary-button" type="button">显示提示</button>`}
+        ${reviewRevealed ? `<button id="review-again" class="quiet-button" type="button">再复习<br><small>10 分钟</small></button><button id="review-hard" class="quiet-button" type="button">模糊<br><small>1 天</small></button><button id="review-good" class="primary-button" type="button">记住<br><small>递增间隔</small></button><button id="review-easy" class="quiet-button" type="button">很熟<br><small>更长间隔</small></button>` : `<button id="review-reveal" class="primary-button" type="button">显示提示</button>`}
       </div>
     `;
     if (!reviewRevealed) $("#review-reveal").addEventListener("click", () => { reviewRevealed = true; renderReviewDialog(); });
     else {
       ["again", "hard", "good", "easy"].forEach((rating) => $("#review-" + rating).addEventListener("click", () => {
-        learning.saved[node.id] = scheduleReview(record, rating);
+        const scheduled = scheduleReview(record, rating);
+        if (isRelation) learning.savedRelations[entry.key] = { ...record, ...scheduled };
+        else learning.saved[entry.key] = { ...record, ...scheduled };
         saveLearning();
         updateReviewCount();
+        refreshLearningProgress();
         reviewIndex = 0;
         reviewRevealed = false;
         renderReviewDialog();
@@ -974,6 +1288,160 @@
     $("#review-dialog").classList.remove("hidden");
     const firstAction = $("#review-content button");
     if (firstAction) firstAction.focus();
+  }
+
+  function closeLocalDataDialog() {
+    $("#local-data-dialog").classList.add("hidden");
+  }
+
+  function renderLocalDataNotice(messages = []) {
+    const notice = $("#local-data-notice");
+    const allMessages = [...new Set(localStorageWarnings.concat(messages).filter(Boolean))];
+    if (!allMessages.length) {
+      notice.classList.add("hidden");
+      notice.innerHTML = "";
+      return;
+    }
+    notice.innerHTML = allMessages.map((message) => `<p>${escapeHtml(message)}</p>`).join("");
+    notice.classList.remove("hidden");
+  }
+
+  function openLocalDataDialog() {
+    $("#local-data-dialog").classList.remove("hidden");
+    renderLocalDataNotice();
+    $("#local-data-export").focus();
+  }
+
+  function exportLocalData() {
+    const output = $("#local-data-output");
+    if (!localDataTools) {
+      output.value = "";
+      renderLocalDataNotice(["本地数据导出正在准备，请再试一次。"]);
+      return;
+    }
+    const exported = localDataTools.exportLocalLearningData(localStorage);
+    renderLocalDataNotice(exported.errors);
+    output.value = JSON.stringify(exported, null, 2);
+  }
+
+  function learningWordMeta() {
+    return Object.fromEntries([...nodeById.values()].map((node) => [String(node.id), {
+      label: node.word,
+      word: node.word,
+      pos: node.pos,
+      level: node.level,
+    }]));
+  }
+
+  function learningPathLabel(path) {
+    return (Array.isArray(path) ? path : [])
+      .map((id) => nodeById.get(String(id))?.word || String(id))
+      .join(" › ");
+  }
+
+  function progressStatusLabel(status) {
+    return { due: "已到期", upcoming: "即将到期", scheduled: "已安排" }[status] || "未安排";
+  }
+
+  function progressDate(value) {
+    const timestamp = Number(value);
+    if (!Number.isFinite(timestamp) || timestamp <= 0) return "时间未知";
+    return new Intl.DateTimeFormat("zh-CN", {
+      month: "numeric",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(new Date(timestamp));
+  }
+
+  function renderProgressCategoryList(categories, kind) {
+    const entries = Object.entries(categories || {}).sort(([a, left], [b, right]) => (
+      right.items - left.items
+      || right.completedReviews - left.completedReviews
+      || a.localeCompare(b, "zh")
+    ));
+    if (!entries.length) return `<p class="learning-progress-empty">还没有${kind === "word" ? "词条" : "关系"}复习记录。</p>`;
+    return `<ul>${entries.map(([key, value]) => `
+      <li class="learning-progress-item">
+        <strong>${escapeHtml(kind === "relation" ? (RELATION_NAMES[key] || key) : key)}</strong>
+        <span>${value.items} 项 · 已完成 ${value.completedReviews} 次 · 到期 ${value.due} · 7 天内 ${value.upcoming}</span>
+      </li>
+    `).join("")}</ul>`;
+  }
+
+  function renderProgressSummary(progress) {
+    const totals = progress.totals;
+    return [
+      ["累计完成", `${totals.completedReviews} 次`, "所有已保存复习记录的累计反馈"],
+      ["已加入", `${totals.saved} 项`, `词条 ${totals.words} · 关系 ${totals.relations}`],
+      ["到期", `${totals.due} 项`, "现在可以复习"],
+      ["7 天内到期", `${totals.upcoming} 项`, "已安排但即将回到复习队列"],
+    ].map(([label, value, note]) => `
+      <article class="learning-progress-stat">
+        <span>${escapeHtml(label)}</span>
+        <strong>${escapeHtml(value)}</strong>
+        <small>${escapeHtml(note)}</small>
+      </article>
+    `).join("");
+  }
+
+  function renderRecentProgress(progress) {
+    if (!progress.recent.length) return '<p class="learning-progress-empty">还没有完成过复习。</p>';
+    return `<ul>${progress.recent.map((item) => `
+      <li class="learning-progress-item">
+        <strong>${escapeHtml(item.label)}</strong>
+        <span>${item.kind === "relation" ? "关系" : "词条"} · ${escapeHtml(REVIEW_RATING_LABELS[item.rating] || "未记录反馈")} · ${escapeHtml(progressStatusLabel(item.status))}</span>
+        <small>最近 ${escapeHtml(progressDate(item.reviewedAt))} · 累计 ${item.reviews} 次 · ${escapeHtml(formatDue(item.dueAt, progress.asOf))}</small>
+      </li>
+    `).join("")}</ul>`;
+  }
+
+  function renderPathProgress(progress) {
+    if (!progress.paths.length) return '<p class="learning-progress-empty">完成一次探索并加入复习后，这里会显示路径进展。</p>';
+    return `<ul>${progress.paths.map((path) => {
+      const label = path.path.length ? learningPathLabel(path.path) : "未记录探索路径";
+      const latest = path.lastReviewedAt ? ` · 最近 ${progressDate(path.lastReviewedAt)}` : "";
+      return `<li class="learning-progress-item">
+        <strong>${escapeHtml(label)}</strong>
+        <span>${path.items} 项 · 已完成 ${path.completedReviews} 次 · 到期 ${path.due} · 7 天内 ${path.upcoming}</span>
+        <small>${path.reviewedItems} 项有复习反馈${escapeHtml(latest)}</small>
+      </li>`;
+    }).join("")}</ul>`;
+  }
+
+  function renderLearningProgress() {
+    const summary = $("#learning-progress-summary");
+    const notice = $("#learning-progress-notice");
+    if (!localDataTools?.summarizeLearningProgress) {
+      summary.innerHTML = '<p class="learning-progress-empty">学习进度正在准备，请稍后再打开。</p>';
+      notice.textContent = "本地统计工具尚未加载。";
+      notice.classList.remove("hidden");
+      return;
+    }
+    const progress = localDataTools.summarizeLearningProgress(learning, {
+      now: Date.now(),
+      upcomingDays: PROGRESS_UPCOMING_DAYS,
+      wordMeta: learningWordMeta(),
+      recentLimit: 12,
+    });
+    const messages = localStorageWarnings.filter(Boolean);
+    notice.innerHTML = messages.map((message) => `<p>${escapeHtml(message)}</p>`).join("");
+    notice.classList.toggle("hidden", messages.length === 0);
+    summary.innerHTML = renderProgressSummary(progress);
+    $("#learning-word-categories").innerHTML = renderProgressCategoryList(progress.categories.words, "word");
+    $("#learning-relation-categories").innerHTML = renderProgressCategoryList(progress.categories.relations, "relation");
+    $("#learning-recent").innerHTML = renderRecentProgress(progress);
+    $("#learning-paths").innerHTML = renderPathProgress(progress);
+  }
+
+  function openLearningProgressDialog() {
+    renderLearningProgress();
+    $("#learning-progress-dialog").classList.remove("hidden");
+    $("#learning-progress-close").focus();
+  }
+
+  function closeLearningProgressDialog() {
+    $("#learning-progress-dialog").classList.add("hidden");
   }
 
   function renderTrail() {
@@ -1107,27 +1575,39 @@
   }, { passive: false });
 
   function doSearch() {
-    const query = search.value.trim().toLocaleLowerCase("fr");
+    const query = searchTools?.normalizeSearchText(search.value) || search.value.trim();
     if (!query) { searchResults.classList.add("hidden"); return; }
-    const starts = [], contains = [];
-    for (const node of allNodes.concat(searchOnlyNodes)) {
-      const word = node.word.toLocaleLowerCase("fr");
-      const aliases = (aliasesById[node.id] || []).map((alias) => alias.toLocaleLowerCase("fr"));
-      const matchesStart = word.startsWith(query) || aliases.some((alias) => alias.startsWith(query));
-      const matchesContains = word.includes(query) || aliases.some((alias) => alias.includes(query));
-      if (matchesStart) starts.push(node); else if (matchesContains) contains.push(node);
-      if (starts.length + contains.length > 40) break;
+    if (!searchTools) {
+      searchResults.innerHTML = `<div class="search-result"><small>搜索正在准备，请再试一次。</small></div>`;
+      searchResults.classList.remove("hidden");
+      return;
     }
-    const results = starts.concat(contains).sort((a, b) => {
-      const aExact = a.word.toLocaleLowerCase("fr") === query;
-      const bExact = b.word.toLocaleLowerCase("fr") === query;
-      if (aExact !== bExact) return Number(bExact) - Number(aExact);
-      const aCore = aExact && foundationalCoreIds.has(a.id);
-      const bCore = bExact && foundationalCoreIds.has(b.id);
-      if (aCore !== bCore) return Number(bCore) - Number(aCore);
-      return b.freq - a.freq || a.pos.localeCompare(b.pos, "fr");
-    }).slice(0, 12);
-    searchResults.innerHTML = results.length ? results.map((node) => `<button class="search-result" data-node="${escapeHtml(node.id)}" role="option"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(node.gloss || (node.personal ? "我的词" : node.level))}${node.searchOnly ? " · 可检索词" : ""}</small></button>`).join("") : `<div class="search-result"><small>没有找到；你可以用右下角的 + 添加它。</small></div>`;
+    const entries = allNodes.concat(searchOnlyNodes).map((node) => ({
+      id: node.id,
+      word: node.word,
+      pos: node.pos,
+      gloss: node.gloss,
+      level: node.level,
+      freq: node.freq,
+      personal: node.personal,
+      searchOnly: node.searchOnly,
+      isCore: foundationalCoreIds.has(node.id),
+      aliases: aliasesById[node.id] || [],
+    }));
+    const searchState = searchTools.searchLexemes(entries, query, { limit: 12, suggestionLimit: 5 });
+    const renderResult = (result, suggestion = false) => {
+      const node = nodeById.get(result.entry.id);
+      const alias = result.matchType.includes("Alias") ? `词形匹配：${result.matchedText} → ${node.word}` : "";
+      const hint = suggestion ? `相近拼写：${result.matchedText}` : alias;
+      return `<button class="search-result" data-node="${escapeHtml(node.id)}" role="option"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml([node.gloss || (node.personal ? "我的词" : node.level), hint, node.searchOnly ? "可检索词" : ""].filter(Boolean).join(" · "))}</small></button>`;
+    };
+    if (searchState.results.length) {
+      searchResults.innerHTML = searchState.results.map((result) => renderResult(result)).join("");
+    } else if (searchState.suggestions.length) {
+      searchResults.innerHTML = `<div class="search-result search-empty"><small>没有精确匹配。你是不是想找：</small></div>${searchState.suggestions.map((result) => renderResult(result, true)).join("")}`;
+    } else {
+      searchResults.innerHTML = `<div class="search-result search-empty"><small>没有找到这个词。可以检查拼写，或用右下角的 + 加入自己的词网。</small></div>`;
+    }
     searchResults.classList.remove("hidden");
     searchResults.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => openSearchResult(button.dataset.node)));
   }
@@ -1156,6 +1636,13 @@
   $("#reset").addEventListener("click", () => fitHome());
   $("#brand").addEventListener("click", (event) => { event.preventDefault(); fitHome(); });
   $("#focus-back").addEventListener("click", () => fitHome());
+  $("#local-data-open").addEventListener("click", openLocalDataDialog);
+  $("#local-data-close").addEventListener("click", closeLocalDataDialog);
+  $("#local-data-mask").addEventListener("click", closeLocalDataDialog);
+  $("#local-data-export").addEventListener("click", exportLocalData);
+  $("#learning-progress-open").addEventListener("click", openLearningProgressDialog);
+  $("#learning-progress-close").addEventListener("click", closeLearningProgressDialog);
+  $("#learning-progress-mask").addEventListener("click", closeLearningProgressDialog);
   $("#review-open").addEventListener("click", openReviewDialog);
   $("#review-close").addEventListener("click", closeReviewDialog);
   $("#review-mask").addEventListener("click", closeReviewDialog);

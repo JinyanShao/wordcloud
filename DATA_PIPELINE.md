@@ -148,5 +148,7 @@ The approved artifact is optional input to `build_graph.py`; pending candidates 
 
 - `layout_links` influence cartography and do not count as official coverage.
 - `official_edges` are sourced or reviewed claims shown to learners.
+- `editorialRelations` in `data/processed/editorial-seed.json` are the reviewed teaching layer. Each entry must carry both endpoints, a supported relation type, a dimension, a label, an explanation, two minimal-context examples, a source, a reviewer, and a review date.
+- An A1/A2 auxiliary lexeme referenced by a reviewed editorial relation may enter the graph as a support node. This preserves the automatic main-lexicon boundary while keeping the reviewed relation navigable.
 - `personal_links` remain browser-local under `wordcloud.personal.v2` and are not stored in this database.
 - `CLUSTERS` in the original `data.js` are hand-authored prototype scaffolding, not Lexique data.

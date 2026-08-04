@@ -21,6 +21,19 @@ python3 -m http.server 8000
 # 打开 http://localhost:8000/index.html
 ```
 
+## 静态发布
+
+发布前先生成白名单静态包，避免把数据管线、审计报告和开发脚本一起发布：
+
+```bash
+pnpm check
+pnpm smoke:browser
+pnpm release:package
+WORDCLOUD_STATIC_ROOT=dist pnpm smoke:browser
+```
+
+发布目录是 `dist/`。上线步骤、发布包边界和回滚步骤见 [docs/static-deployment.md](docs/static-deployment.md)。
+
 ## 数据管线
 
 词网内容全部可重复构建，持久层是 `data/processed/` 下的 JSON 与 SQLite，浏览器只消费生成的 `graph-data.js`：
@@ -82,11 +95,21 @@ pnpm wiktextract:p0:approve
 
 ### 学习表层
 
-词条详情将 DBnary 的法语义项及原始例句、编辑审校的常用搭配和编辑审校的词源线索分别呈现。`editorial-seed.json` 的 `editorialLearning` 必须按 lemma + POS 绑定，并携带来源标签、审校人和日期；它不会将自动生成的语言学断言伪装成审校内容。
+词条详情将 DBnary 的法语义项及原始例句、编辑审校的常用搭配和编辑审校的词源线索分别呈现。`editorial-seed.json` 的 `editorialLearning` 必须按 lemma + POS 绑定，并携带来源标签、审校人和日期；它不会将未审校的语言学断言伪装成审校内容。
 
 ### 本地学习循环
 
 “加入复习”会把词条保存在当前浏览器的本地学习循环中。新词立即到期；显示提示后可选择“不记得、模糊、记得、很熟”，分别安排 10 分钟、1 天、递增间隔和更长间隔后的下一次复习。学习记录不上传、不依赖账号。
+
+## 隐私与本地数据
+
+当前版本是静态网页，没有账号、服务器写入或跨设备同步。用户数据只保存在当前浏览器的 `localStorage`：
+
+- `wordcloud.learning.v1`：复习队列、关系复习和间隔记录
+- `wordcloud.personal.v2`：我的词网节点和个人联想边
+- `wordcloud.draft_cards.v1`：我的词卡中文提示和备注
+
+“本地数据”里的导出 JSON 只读取这些本地记录，方便用户自查或备份；导出不会写入权威词库，也不会上传。清除浏览器站点数据会删除这些本地学习记录。
 
 ## 数据来源与许可
 
@@ -99,6 +122,8 @@ pnpm wiktextract:p0:approve
 | [CFDICT](https://chine.in/mandarin/dictionnaire/CFDICT/) | 中文释义提示 | CC BY-SA 3.0 |
 
 每个来源的版本、哈希与用途登记在 `data/sources.json`。
+
+上线展示必须保留来源与许可提示，尤其是 FLELex / Beacco 的 CC BY-NC-SA 4.0 非商业限制。若未来要商业化或提供再分发包，需要替换该来源、取得额外授权，或重新评估衍生数据许可边界。
 
 ## 许可
 

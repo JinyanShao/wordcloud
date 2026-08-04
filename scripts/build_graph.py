@@ -325,6 +325,12 @@ def main() -> None:
             pos = pos_from_seed(item.get("pos", ""))
             if pos:
                 seed_keys.add((normalize(item["id"]), pos))
+        for item in seed.get("editorialRelations", []):
+            for word_key, pos_key in (("a", "aPos"), ("b", "bPos")):
+                word = normalize(item.get(word_key, ""))
+                pos = pos_from_seed(str(item.get(pos_key, "")))
+                if word and pos:
+                    seed_keys.add((word, pos))
     nodes = [
         row for row in all_nodes
         if row["status"] == "eligible"

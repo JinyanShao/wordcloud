@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "version": "wiktextract-p0-form-of-v1",
+    "dump_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
+    "extractor_commit": "d9fa2335957c9089ce2c3fb110a075cf072903da",
+    "purpose": "Same-snapshot form-of resolution evidence"
+  },
+  "resolutions": [
+    {
+      "target_word": "médias",
+      "target_pos": "NOM",
+      "target_form_of": "média",
+      "source_word": "média",
+      "source_pos": "noun",
+      "source_pos_title": "Nom commun 1",
+      "source_forms": [
+        {
+          "form": "médias",
+          "tags": ["plural"]
+        }
+      ],
+      "senses": [
+        {
+          "glosses": ["Ensemble des moyens d’information."],
+          "raw_tags": ["Souvent au pluriel"],
+          "examples": [
+            {"text": "De la même façon que les médias et le Net créent un nouveau territoire entre info et fiction, la sondagite aiguë dont est frappée la France y ajoute le risque de confusion entre opinion réelle et opinion imaginaire."},
+            {"text": "En ce cas, cela veut dire que l’erreur béhachélienne était largement partagée, y compris dans les médias, où de nombreux articles étaient déjà parus avant qu’Aude Lancelin ne la signale."}
+          ]
+        },
+        {
+          "glosses": ["Moyen de communication."],
+          "examples": [
+            {"text": "Le blog est un média personnel."}
+          ]
+        }
+      ]
+    }
+  ]
+}
