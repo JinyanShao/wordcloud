@@ -1,5 +1,9 @@
 # wordcloud
 
+Live Demo: https://jinyanshao.github.io/wordcloud/
+
+An interactive French vocabulary graph demo built from DBnary/Wiktionary-derived lexical data.
+
 面向中文母语者的法语词汇关系网络。不是词典，而是一张可以探索的词网：全景呈现学习进阶与自然词群，聚焦呈现每个词的正式关系、法语义项与教学辨析。
 
 产品覆盖 A1–C1：A1/A2 只将人工审校的基础核心词提升到主图，B1–C1 实词按可解释规则进入主图。这样保留基础学习入口，同时避免把整套 A1/A2 词表未经审校地扩张到关系图中。
