@@ -26,13 +26,21 @@
       <button id="draft-open" class="quiet-button" type="button">我的词卡</button>
       <button id="review-open" class="quiet-button review-open" type="button">复习 <span id="review-count">0</span></button>
       <button id="reset" class="quiet-button" type="button">全图</button>
+      <button id="legend-open-mobile" class="quiet-button legend-mobile-open" type="button" aria-haspopup="true" aria-expanded="false">图例</button>
     </div>
   </header>
 
   <main id="viewport">
     <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
     <div class="map-copy" id="map-copy">
-      <p>中心更常用 · 外围更进阶 · 滚轮 / 双指缩放</p>
+      <p class="map-copy-intro">面向中文学习者的法语词汇关系网 · 搜索一个词开始，点击关联词继续探索</p>
+      <p class="map-copy-meta">中心更常用 · 外围更进阶 · 滚轮 / 双指缩放</p>
+      <div class="example-chips" role="group" aria-label="示例词，点击直接打开">
+        <span class="example-chips-label">试试</span>
+        <button type="button" class="example-chip" data-example-word="faire">faire</button>
+        <button type="button" class="example-chip" data-example-word="dire">dire</button>
+        <button type="button" class="example-chip" data-example-word="voir">voir</button>
+      </div>
     </div>
     <nav id="focus-bar" class="focus-bar hidden" aria-label="探索路径">
       <button id="focus-back" type="button" aria-label="返回全图" title="返回全图">←</button>
@@ -48,6 +56,7 @@
         <p><i class="line layout"></i><span>词群线索<br><small>只影响角度，不等于正式关系</small></span></p>
         <p><i class="line official"></i><span>来源确认 / 人工审校</span></p>
         <p><i class="line personal"></i><span>我的词与关系</span></p>
+        <div id="legend-relations" class="legend-relations" role="list" aria-label="关系颜色"></div>
         <p class="source">FLELex · Lexique 4 · Démonette 2<br>Wiktionnaire / DBnary · CFDICT</p>
         <p class="source-note">含非商业来源；本地记录只保存在当前浏览器。</p>
       </div>
@@ -167,8 +176,8 @@
     </section>
   </div>
 
-  <script src="graph-data.js?v=978028a803ec"></script>
-  <script src="app.js?v=978028a803ec"></script>
+  <script src="graph-data.js?v=ac0f8215d6ee"></script>
+  <script src="app.js?v=ac0f8215d6ee"></script>
   <script src="src/draft-ui.js"></script>
 </body>
 </html>
