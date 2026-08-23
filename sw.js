@@ -1,9 +1,9 @@
-const CACHE_NAME = "wordcloud-learning-3c2a7c4a69ef";
+const CACHE_NAME = "wordcloud-learning-4cced052ba76";
 const APP_SHELL = [
   "./index.html",
   "./styles.css",
-  "./graph-data.js?v=3c2a7c4a69ef",
-  "./app.js?v=3c2a7c4a69ef",
+  "./graph-data.js?v=4cced052ba76",
+  "./app.js?v=4cced052ba76",
   "./src/draft-ui.js",
   "./src/draft-tools.mjs",
   "./src/search-tools.mjs",

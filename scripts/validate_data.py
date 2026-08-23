@@ -12,6 +12,7 @@ from collections import Counter
 from pathlib import Path
 
 from learning_lexicon import learning_lexeme_rows
+from update_runtime_cache import version as runtime_cache_version
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,11 +29,8 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def runtime_cache_errors(runtime: Path) -> list[str]:
-    digest = hashlib.sha256()
-    digest.update(runtime.read_bytes())
-    digest.update((ROOT / "app.js").read_bytes())
-    version = digest.hexdigest()[:12]
+def runtime_cache_errors() -> list[str]:
+    version = runtime_cache_version()
     index = (ROOT / "index.html").read_text(encoding="utf-8")
     service_worker = (ROOT / "sw.js").read_text(encoding="utf-8")
     expected_url = f"graph-data.js?v={version}"
@@ -565,7 +563,7 @@ def main() -> None:
         and "sense.examples" in frontend_text,
         "词源、搭配、DBnary 义项例句与可检索学习词进入静态运行时",
     )
-    cache_errors = runtime_cache_errors(runtime)
+    cache_errors = runtime_cache_errors()
     check(
         "运行时图数据缓存按内容版本化",
         not cache_errors,
