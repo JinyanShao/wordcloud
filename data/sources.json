@@ -62,7 +62,7 @@
     "name": "DBnary French Wiktionary extract",
     "version": "official-snapshot-2026-07-25",
     "homepage_url": "https://kaiko.getalp.org/about-dbnary/",
-    "download_url": "https://kaiko.getalp.org/static/ontolex/latest/fr_dbnary_ontolex.ttl.bz2",
+    "download_url": "https://kaiko.getalp.org/static/ontolex/fr/fr_dbnary_ontolex_2026-07-01.ttl.bz2",
     "license_id": "CC-BY-SA-3.0-or-later",
     "license_url": "https://fr.wiktionary.org/wiki/Wiktionnaire:Licence",
     "attribution": "Wiktionnaire contributors; structured extraction by DBnary / GETALP",
