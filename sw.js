@@ -1,9 +1,9 @@
-const CACHE_NAME = "wordcloud-learning-84982cd8dffc";
+const CACHE_NAME = "wordcloud-learning-3c2a7c4a69ef";
 const APP_SHELL = [
   "./index.html",
   "./styles.css",
-  "./graph-data.js?v=84982cd8dffc",
-  "./app.js?v=84982cd8dffc",
+  "./graph-data.js?v=3c2a7c4a69ef",
+  "./app.js?v=3c2a7c4a69ef",
   "./src/draft-ui.js",
   "./src/draft-tools.mjs",
   "./src/search-tools.mjs",
@@ -15,7 +15,14 @@ const APP_SHELL = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => Promise.all(
+      APP_SHELL.map((url) => fetch(url, { cache: "reload" }).then((response) => {
+        if (!response.ok) throw new Error(`app shell fetch failed: ${url} (${response.status})`);
+        return cache.put(url, response);
+      }))
+    )).catch((error) => caches.delete(CACHE_NAME).then(() => { throw error; })).then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener("activate", (event) => {

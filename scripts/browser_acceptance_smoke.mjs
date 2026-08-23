@@ -81,6 +81,13 @@ includesAll("sw.js", worker, [
   "./src/word-card-tools.mjs",
   "./src/local-data-tools.mjs",
   "./src/review-tools.mjs",
+  'cache: "reload"',
 ]);
+assert.ok(
+  !worker.includes("cache.addAll(APP_SHELL)"),
+  "sw.js install handler must not repopulate the app shell with cache.addAll(APP_SHELL) alone " +
+    "(it lets stale HTTP-cached responses leak into a freshly named cache bucket); " +
+    "each app shell request must force revalidation, e.g. via cache: \"reload\"",
+);
 
 console.log("browser acceptance smoke passed: static shell and acceptance hooks are present");

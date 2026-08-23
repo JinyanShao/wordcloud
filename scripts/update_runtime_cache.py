@@ -19,6 +19,7 @@ def version() -> str:
     digest = hashlib.sha256()
     digest.update(RUNTIME.read_bytes())
     digest.update(APP.read_bytes())
+    digest.update(SERVICE_WORKER.read_bytes())
     return digest.hexdigest()[:12]
 
 
