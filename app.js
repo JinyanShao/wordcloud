@@ -1458,7 +1458,8 @@
 
   function updateStats() {
     if (!selected) {
-      $("#stats").textContent = `${GRAPH_META.eligible_count.toLocaleString()} 主词 · ${GRAPH_META.support_node_count} 支撑词 · ${GRAPH_META.edge_count.toLocaleString()} 词群线索`;
+      const wordTotal = GRAPH_META.eligible_count + GRAPH_META.support_node_count;
+      $("#stats").textContent = `收录 ${wordTotal.toLocaleString()} 个词 · ${GRAPH_META.edge_count.toLocaleString()} 条词汇关系`;
       return;
     }
     const officialCount = focusConnections
@@ -1576,6 +1577,7 @@
 
   function doSearch() {
     const query = searchTools?.normalizeSearchText(search.value) || search.value.trim();
+    $("#map-copy").classList.toggle("quiet", Boolean(query));
     if (!query) { searchResults.classList.add("hidden"); return; }
     if (!searchTools) {
       searchResults.innerHTML = `<div class="search-result"><small>搜索正在准备，请再试一次。</small></div>`;
@@ -1628,6 +1630,16 @@
     if (event.key === "Escape") searchResults.classList.add("hidden");
   });
 
+  document.querySelectorAll("[data-example-word]").forEach((button) => button.addEventListener("click", () => {
+    const word = button.dataset.exampleWord;
+    const match = allNodes.concat(searchOnlyNodes).find((node) => node.word === word && node.pos === "VER");
+    if (!match) return;
+    button.classList.add("example-chip-active");
+    setTimeout(() => button.classList.remove("example-chip-active"), 480);
+    search.value = match.word;
+    openSearchResult(match.id);
+  }));
+
   $("#panel-close").addEventListener("click", () => {
     panel.classList.add("hidden");
     viewport.classList.remove("panel-open");
@@ -1646,9 +1658,20 @@
   $("#review-open").addEventListener("click", openReviewDialog);
   $("#review-close").addEventListener("click", closeReviewDialog);
   $("#review-mask").addEventListener("click", closeReviewDialog);
-  $("#legend-toggle").addEventListener("click", (event) => {
-    const body = $("#legend-body"); body.classList.toggle("hidden"); event.currentTarget.setAttribute("aria-expanded", String(!body.classList.contains("hidden")));
-  });
+  function toggleLegendBody() {
+    const body = $("#legend-body");
+    const expanded = body.classList.contains("hidden");
+    body.classList.toggle("hidden");
+    $("#legend").classList.toggle("mobile-legend-open", expanded);
+    $("#legend-toggle").setAttribute("aria-expanded", String(expanded));
+    $("#legend-open-mobile").setAttribute("aria-expanded", String(expanded));
+  }
+  $("#legend-toggle").addEventListener("click", toggleLegendBody);
+  $("#legend-open-mobile").addEventListener("click", toggleLegendBody);
+  $("#legend-relations").innerHTML = RELATION_ORDER
+    .filter((key) => key !== "personal")
+    .map((key) => `<span><i style="--c:${RELATION_STYLE[key].color}"></i>${escapeHtml(RELATION_NAMES[key] || key)}</span>`)
+    .join("") + `<small>细虚线 = 自动候选 · 橙虚线 = 我的关系</small>`;
 
   function closeDialog() { $("#add-dialog").classList.add("hidden"); $("#add-error").textContent = ""; }
   $("#add-open").addEventListener("click", () => { $("#add-dialog").classList.remove("hidden"); $("#add-word").focus(); });
