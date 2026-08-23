@@ -1162,6 +1162,10 @@
         <p class="content-status ${contentStatus[node.id] || "pending_definition"}">${contentStatus[node.id] === "has_definition" ? "词典状态 · 有法语定义" : "词典状态 · 待补定义"}</p>
         <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
       </header>
+      <div class="panel-quick-actions" role="group" aria-label="常用操作">
+        <button id="save-word-quick" class="${saved ? "quiet-button" : "primary-button"}" type="button">${saved ? "移出复习" : "加入复习"}</button>
+        <button id="draft-word-quick" class="quiet-button" type="button">我的词卡</button>
+      </div>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
       ${node.searchOnly ? `<section class="search-only-note"><strong>暂未建立学习关系</strong><span>这个词可搜索、查看义项并加入复习；它尚未进入关系图。</span></section>` : ""}
       ${renderSenseSummary(summary)}
@@ -1199,6 +1203,8 @@
     }));
     $("#save-word").addEventListener("click", () => { toggleSaved(node.id); renderPanel(node); });
     $("#draft-word").addEventListener("click", () => openDraftCardForNode(node));
+    $("#save-word-quick").addEventListener("click", () => { toggleSaved(node.id); renderPanel(node); });
+    $("#draft-word-quick").addEventListener("click", () => openDraftCardForNode(node));
   }
 
   let reviewIndex = 0;
