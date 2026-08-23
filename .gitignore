@@ -1,5 +1,10 @@
 node_modules/
 dist/
+.next/
+.pytest_cache/
+.ruff_cache/
+*.tsbuildinfo
+*.log
 data/raw/*.tsv
 data/raw/demonette-2.0/
 data/raw/dbnary/
