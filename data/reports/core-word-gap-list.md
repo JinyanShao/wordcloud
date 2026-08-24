@@ -5,26 +5,26 @@
 ## 总览
 
 - eligible 主词：7,338
-- 存在至少一类缺口的词：7,268（99.0%）
+- 存在至少一类缺口的词：7,265（99.0%）
 - 本轮核心词目标：1,000 个，按缺口优先级与频率排序取前 1,000
 
 | 优先级 | 缺口类型 | 全部 | 进入核心词 |
 |---|---|---:|---:|
-| P1_no_official | 高频且没有任何官方关系 | 2,901 | 1,000 |
-| P2_single_edge | 高频且只有一条官方关系 | 2,352 | 0 |
-| P3_bridge | 多义项桥接词（义项多、连接少） | 629 | 0 |
-| P4_confusable | 易混淆候选（有形音候选、无正式 trap/compare） | 1,384 | 0 |
+| P1_no_official | 高频且没有任何官方关系 | 2,900 | 1,000 |
+| P2_single_edge | 高频且只有一条官方关系 | 2,345 | 0 |
+| P3_bridge | 多义项桥接词（义项多、连接少） | 631 | 0 |
+| P4_confusable | 易混淆候选（有形音候选、无正式 trap/compare） | 1,387 | 0 |
 | P5_b2c1_synset | B2–C1 近义集合缺口（有义项、无近/反义边） | 2 | 0 |
 
 一词可命中多类缺口；命中各类的总词数（不限主桶）如下：
 
 | 缺口类型 | 命中词数（含非主桶） |
 |---|---:|
-| P1_no_official | 2,901 |
-| P2_single_edge | 2,352 |
-| P3_bridge | 2,687 |
-| P4_confusable | 6,822 |
-| P5_b2c1_synset | 3,511 |
+| P1_no_official | 2,900 |
+| P2_single_edge | 2,345 |
+| P3_bridge | 2,682 |
+| P4_confusable | 6,816 |
+| P5_b2c1_synset | 3,510 |
 
 ## 判定规则
 
@@ -66,10 +66,7 @@
 |---|---|---|---:|---|---|
 | être | VER | A1 | 28371.5 | syn×1 | 是；处于 |
 | avoir | VER | A1 | 19212.1 | syn×1 | 有；拥有 |
-| pouvoir | VER | A1 | 3423.8 | other×1 | 能；可以 |
-| vouloir | VER | A1 | 1941.0 | fam×1 | 想要；愿意 |
 | venir | VER | A1 | 1547.0 | other×1 | 来；来到 |
-| trouver | VER | A1 | 1239.4 | syn×1 | 找到；觉得 |
 | demander | VER | A1 | 1037.2 | fam×1 | 请求；问 |
 | pauvre | ADJ | B1 | 139.2 | fam×1 | 可怜；困苦 |
 | état | NOM | B1 | 123.0 | syn×1 | 国家；国度 |
@@ -84,3 +81,6 @@
 | rejoindre | VER | B1 | 75.4 | fam×1 | 加入；加盟 |
 | tendance | NOM | B1 | 73.5 | fam×1 | 倾向；动向 |
 | affirmer | VER | B1 | 73.0 | fam×1 | 断定；断言 |
+| comportement | NOM | B1 | 72.9 | fam×1 | 为人；习性 |
+| majorité | NOM | B1 | 70.4 | fam×1 | 大多数 |
+| planète | NOM | B1 | 69.9 | fam×1 | 地球；星球 |

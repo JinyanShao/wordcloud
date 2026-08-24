@@ -104,7 +104,13 @@ def sparse_neighbors(
 ) -> tuple[dict[int, list[tuple[int, float]]], list[tuple[int, int, float]]]:
     postings: dict[str, list[int]] = defaultdict(list)
     for node_id, tokens in features.items():
-        for token in tokens:
+        # tokens is a set[str]; Python randomizes str hashing per process, so
+        # iterating it directly would insert into `postings` (and everything
+        # keyed off its iteration order downstream, including the
+        # floating-point pair_scores accumulation below) in a different order
+        # each run. Sorting pins that order so repeated builds on identical
+        # input are byte-identical.
+        for token in sorted(tokens):
             postings[token].append(node_id)
     total = max(1, len(features))
     weights = {
@@ -114,7 +120,11 @@ def sparse_neighbors(
     }
     norms: dict[int, float] = defaultdict(float)
     for node_id, tokens in features.items():
-        norms[node_id] = math.sqrt(sum(weights[token] ** 2 for token in tokens if token in weights))
+        # Same hash-randomization hazard as the postings loop above: summing
+        # floats in a different order changes the result in its last bit,
+        # which can flip an exact-score tie downstream. Sort for a fixed
+        # summation order.
+        norms[node_id] = math.sqrt(sum(weights[token] ** 2 for token in sorted(tokens) if token in weights))
     pair_scores: dict[tuple[int, int], float] = defaultdict(float)
     for token, weight in weights.items():
         ids = postings[token]
@@ -713,7 +723,7 @@ def main() -> None:
     conn.commit()
 
     combined: dict[tuple[int, int], list[tuple[str, float]]] = defaultdict(list)
-    for row in conn.execute("SELECT a_id,b_id,signal,weight FROM layout_links"):
+    for row in conn.execute("SELECT a_id,b_id,signal,weight FROM layout_links ORDER BY a_id, b_id, signal"):
         combined[(row["a_id"], row["b_id"])].append((row["signal"], row["weight"]))
     signal_factor = {
         "semantic": 1.0, "derivation": 1.15, "morphology": 0.35, "spelling": 0.55,
