@@ -197,6 +197,7 @@ button { color: inherit; }
 .relation-item small { grid-column: 1 / -1; color: var(--muted); font-size: 10px; }
 .relation-item.personal { border-left: 2px solid var(--amber); }
 .candidate-note { margin: 0 0 9px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.empty-relations-note { margin: 23px 0 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
 .candidate-details summary { color: var(--muted); cursor: pointer; font-size: 10px; }
 .candidate-details[open] summary { margin-bottom: 9px; }
 
