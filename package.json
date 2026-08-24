@@ -8,6 +8,7 @@
     "data:verify-sources": "python3 scripts/fetch_sources.py",
     "test:fetch-sources": "python3 scripts/test_fetch_sources.py",
     "test:sync-review": "python3 scripts/test_build_data_sync_review.py",
+    "test:graph-determinism": "python3 scripts/test_build_graph_determinism.py",
     "data:review": "python3 scripts/apply_audit_review.py && python3 scripts/build_data.py sync-review",
     "demonette:analyze": "node scripts/extract_seed.mjs && python3 scripts/import_demonette.py analyze",
     "demonette:approve": "python3 scripts/import_demonette.py approve",
@@ -29,7 +30,7 @@
     "test:local-data": "node tests/local-data-tools.test.mjs",
     "smoke:browser": "node scripts/browser_acceptance_smoke.mjs",
     "release:package": "node scripts/package_static_release.mjs",
-    "check": "pnpm test:fetch-sources && pnpm test:sync-review && python3 scripts/validate_data.py && pnpm test:drafts && pnpm test:search && pnpm test:word-card && pnpm test:review && pnpm test:local-data",
+    "check": "pnpm test:fetch-sources && pnpm test:sync-review && pnpm test:graph-determinism && python3 scripts/validate_data.py && pnpm test:drafts && pnpm test:search && pnpm test:word-card && pnpm test:review && pnpm test:local-data",
     "build:verified": "python3 scripts/build_verified.py",
     "build:verify-manifest": "python3 scripts/write_build_manifest.py verify"
   },

@@ -33,6 +33,25 @@ function stableUnit(value, salt = "") {
   return (hash >>> 0) / 4294967296;
 }
 
+// graphology-communities-louvain defaults its internal tie-breaking `rng` to
+// the global Math.random, which makes repeated builds on identical input
+// pick different (equally valid) local optima. mulberry32 is a small,
+// well-known deterministic PRNG: seeding it with a fixed constant gives
+// Louvain a reproducible rng without touching Math.random itself, so nothing
+// outside this layout pass is affected.
+function mulberry32(seed) {
+  let state = seed >>> 0;
+  return function random() {
+    state |= 0;
+    state = (state + 0x6d2b79f5) | 0;
+    let t = Math.imul(state ^ (state >>> 15), 1 | state);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+const LOUVAIN_SEED = 0x5747_4c56; // "WGLV" — arbitrary, fixed for reproducibility
+const louvainRng = mulberry32(LOUVAIN_SEED);
+
 function topologyWeight(edge) {
   let remaining = 1;
   for (const signal of edge.signals || []) {
@@ -65,6 +84,7 @@ for (let index = 0; index < input.edges.length; index += 1) {
 louvain.assign(graph, {
   resolution: 0.58,
   randomWalk: false,
+  rng: louvainRng,
   attributes: { community: "community", weight: "weight" },
 });
 
