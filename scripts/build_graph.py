@@ -198,6 +198,29 @@ class UnionFind:
         return True
 
 
+MIN_REVIEWED_EXAMPLES = 2
+
+
+def has_real_review_evidence(item: dict[str, object]) -> bool:
+    """A relation is fit for public display only with genuine human review
+    evidence: a real explanation, at least two example sentences, and a
+    named reviewer with a review date. The old prototype seed (EDGES in
+    data.js) has none of these -- it only carries a short label -- so it
+    must not be treated as reviewed just because it predates this check."""
+    explanation = str(item.get("explanation") or "").strip()
+    examples = item.get("examples")
+    reviewer = str(item.get("reviewer") or "").strip()
+    reviewed_at = str(item.get("reviewed_at") or "").strip()
+    return (
+        bool(explanation)
+        and "requires production re-review" not in explanation
+        and isinstance(examples, list)
+        and len(examples) >= MIN_REVIEWED_EXAMPLES
+        and bool(reviewer)
+        and bool(reviewed_at)
+    )
+
+
 def relation_candidate(signal: str) -> str:
     return {"semantic": "syn", "morphology": "fam", "spelling": "trap", "phonetic": "trap"}[signal]
 
@@ -546,6 +569,7 @@ def main() -> None:
     )
 
     for item in official:
+        reviewed = has_real_review_evidence(item)
         cursor = conn.execute(
             """
             INSERT OR IGNORE INTO official_edges(
@@ -555,8 +579,10 @@ def main() -> None:
             """,
             (
                 item["a"], item["b"], item["relation"], item["dimension"], item["subtype"],
-                item["direction"], item["label"], item.get("explanation") or "Prototype editorial seed; requires production re-review.",
-                json.dumps(item.get("examples", []), ensure_ascii=False), 0.9, "reviewed", item.get("reviewed_at") or CREATED_AT, CREATED_AT,
+                item["direction"], item["label"], item.get("explanation") or "",
+                json.dumps(item.get("examples", []), ensure_ascii=False), 0.9,
+                "reviewed" if reviewed else "sourced",
+                item.get("reviewed_at") if reviewed else None, CREATED_AT,
             ),
         )
         if cursor.lastrowid:

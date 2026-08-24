@@ -42,7 +42,6 @@ const summary = summarizeWordCard({
   ],
   relationCounts: {
     reviewed: 1,
-    sourced: 2,
     form: 3,
   },
 });
@@ -51,13 +50,13 @@ assert.equal(summary.senseTotal, 3);
 assert.equal(summary.sensePreview.length, 2);
 assert.equal(summary.collocationTotal, 2);
 assert.equal(summary.teachingExampleTotal, 1);
-assert.equal(summary.relationTotal, 6);
+assert.equal(summary.relationTotal, 4);
 assert.equal(summary.hasReliableRelations, true);
 assert.equal(summary.hasLearningCues, true);
 
 const order = wordCardSectionOrder({
   senseGroups,
-  relationCounts: { sourced: 1 },
+  relationCounts: { form: 1 },
 });
 assert.deepEqual(order.slice(0, 4), ["hero", "actions", "sense-summary", "relation-entry"]);
 assert.ok(order.indexOf("full-senses") < order.indexOf("reviewed-relations"));

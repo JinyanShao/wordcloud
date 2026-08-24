@@ -33,6 +33,29 @@ def compact_json(value: object) -> str:
     return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
 
 
+def dedupe_public_relations(rows: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Collapse duplicate/conflicting relations for the same word pair.
+
+    A pair may carry both a vague "syn" relation and a richer teaching
+    "compare" contrast (e.g. from an older auto-sourced pass alongside a
+    newer editorial review); keep only the more informative one. Every row
+    passed in must already be review_status == "reviewed" -- this function
+    only resolves conflicts between reviewed rows, it does not gate review
+    status itself (see has_real_review_evidence in build_graph.py)."""
+    by_pair: dict[tuple[int, int], list[dict[str, object]]] = defaultdict(list)
+    for row in rows:
+        by_pair[(row["a_id"], row["b_id"])].append(row)
+    kept: list[dict[str, object]] = []
+    for pair_rows in by_pair.values():
+        relations = {row["relation"] for row in pair_rows}
+        kept.extend(
+            row for row in pair_rows
+            if not (row["relation"] == "syn" and "compare" in relations)
+        )
+    kept.sort(key=lambda row: (row["a_id"], row["b_id"], row["relation"]))
+    return kept
+
+
 def main() -> None:
     layout = json.loads(POSITIONS_PATH.read_text(encoding="utf-8"))
     positions = {item["id"]: item for item in layout["positions"]}
@@ -106,19 +129,28 @@ def main() -> None:
             ]
         )
 
+    # Only relations with genuine human review evidence (see
+    # has_real_review_evidence in build_graph.py) are fit to show learners as
+    # language fact. Everything else -- auto-sourced DBnary/Démonette edges,
+    # the un-reviewed legacy prototype seed -- stays in the database for
+    # audit but must never reach the public runtime payload.
+    reviewed_rows = [
+        dict(row)
+        for row in conn.execute(
+            """
+            SELECT a_id,b_id,relation,dimension,subtype,direction,label,
+                   explanation,examples_json,confidence,review_status
+            FROM official_edges WHERE review_status='reviewed' ORDER BY id
+            """
+        )
+    ]
     official = [
         [
             row["a_id"], row["b_id"], row["relation"], row["dimension"] or "",
             row["subtype"] or "", row["direction"] or "", row["label"],
             row["explanation"] or "", row["examples_json"], row["confidence"], row["review_status"],
         ]
-        for row in conn.execute(
-            """
-            SELECT a_id,b_id,relation,dimension,subtype,direction,label,
-                   explanation,examples_json,confidence,review_status
-            FROM official_edges ORDER BY id
-            """
-        )
+        for row in dedupe_public_relations(reviewed_rows)
     ]
     sense_groups: dict[str, list[dict[str, object]]] = defaultdict(list)
     sense_rows = conn.execute(

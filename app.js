@@ -26,17 +26,19 @@
   const REVIEW_RATING_LABELS = { again: "再复习", hard: "模糊", good: "记住", easy: "很熟" };
 
   const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
-  const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "派生", drift: "语义漂移", trap: "易混", ant: "反义", cause: "因果" };
-  const RELATION_ORDER = ["syn", "ant", "compare", "drift", "cause", "trap", "fam", "personal"];
-  const FOCUS_LIMITS = { syn: 5, ant: 4, compare: 3, drift: 3, cause: 3, trap: 3, fam: 6, personal: 3 };
+  // "漂移"(drift) and "因果"(cause) were dropped from the public relation
+  // vocabulary: their meaning wasn't reliably explainable to learners, and
+  // no reviewed relation uses them (see has_real_review_evidence in
+  // build_graph.py). syn/ant/compare/trap/fam cover what's publishable.
+  const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "构词", trap: "易混", ant: "反义" };
+  const RELATION_ORDER = ["syn", "ant", "compare", "trap", "fam", "personal"];
+  const FOCUS_LIMITS = { syn: 5, ant: 4, compare: 3, trap: 3, fam: 6, personal: 3 };
   const RELATION_STYLE = {
     syn: { color: "#7b8188", dash: [], arrow: false },
     compare: { color: "#c07a22", dash: [], arrow: true },
     fam: { color: "#3477b8", dash: [], arrow: false },
-    drift: { color: "#7859a6", dash: [], arrow: false },
     trap: { color: "#c7465d", dash: [], arrow: false },
     ant: { color: "#278867", dash: [], arrow: false },
-    cause: { color: "#6f647d", dash: [], arrow: true },
     personal: { color: "#b96d22", dash: [2, 5], arrow: false },
     satellite: { color: "#a8a69f", dash: [], arrow: false },
   };
@@ -106,6 +108,10 @@
   let personalNodes = [];
   let personalEdges = [];
   let allNodes = [];
+  // Search-first entry point: the unlabeled full-word cloud is not the
+  // primary homepage content, so it stays hidden until a learner explicitly
+  // asks to browse it (the topbar "全图" control, or returning from a focus).
+  let cloudRevealed = false;
   let selected = null;
   let hovered = null;
   let focusConnections = [];
@@ -543,8 +549,12 @@
       relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(b.review === "reviewed") - Number(a.review === "reviewed"));
       byNeighbor.set(other, { ...relations[0], relations });
     }
-    const candidates = [...personalFor(id), ...strongFormFor(id), ...strongStructuralFor(id)];
-    const priority = { official: 4, personal: 3, form: 2, structural: 1 };
+    // Only reviewed relations and the learner's own personal links are shown
+    // in the focus graph. Auto-generated form/structural candidates are
+    // layout-only signal, never confirmed language fact, so they stay out of
+    // the graph entirely and surface (collapsed) in the word panel instead.
+    const candidates = personalFor(id);
+    const priority = { official: 4, personal: 3 };
     for (const edge of candidates) {
       if (!nodeById.has(edge.other) || edge.other === id) continue;
       const existing = byNeighbor.get(edge.other);
@@ -562,7 +572,7 @@
     const selected = [];
     for (const edge of ordered) {
       const key = edge.kind === "official" ? edge.relation : edge.kind;
-      const relationLimit = edge.kind === "official" ? (FOCUS_LIMITS[edge.relation] || 3) : edge.kind === "form" ? 2 : 3;
+      const relationLimit = edge.kind === "official" ? (FOCUS_LIMITS[edge.relation] || 3) : 3;
       if ((counts.get(key) || 0) >= relationLimit) continue;
       counts.set(key, (counts.get(key) || 0) + 1);
       selected.push(edge);
@@ -933,9 +943,7 @@
     if (!focusConnections.length && center) {
       const p = screen(center);
       ctx.globalAlpha = .76; ctx.fillStyle = "#686963"; ctx.font = `550 11.5px ${CANVAS_FONT}`; ctx.textAlign = "center";
-      ctx.fillText("暂无可展示的可信关系", p.x, p.y + 44);
-      ctx.font = `450 10px ${CANVAS_FONT}`; ctx.fillStyle = "#8d8e87";
-      ctx.fillText("自动近邻仍在清理，不作为正式关系显示", p.x, p.y + 61);
+      ctx.fillText("这个词目前还没有经过审查的词汇关系", p.x, p.y + 44);
       ctx.textAlign = "left";
     }
 
@@ -953,7 +961,8 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.fillStyle = "#f7f6f2"; ctx.fillRect(0, 0, width, height);
     hitBoxes = new Map();
-    if (selected) drawFocus(now); else drawGlobal(now);
+    if (selected) drawFocus(now);
+    else if (cloudRevealed) drawGlobal(now);
     ctx.globalAlpha = 1; ctx.setLineDash([]);
     if (active) requestDraw();
   }
@@ -1011,9 +1020,9 @@
     const hidden = flattened.slice(5);
     const sourceUrl = groups[0]?.sourceUrl;
     return `<section class="panel-section sense-section">
-      <h3>法语义项 · ${flattened.length}</h3>
+      <h3>法语义项</h3>
       <ol class="sense-list">${renderItems(visible, !foundationalCoreIds.has(node.id) && !node.searchOnly)}</ol>
-      ${hidden.length ? `<details class="sense-more"><summary>查看其余 ${hidden.length} 个义项</summary><ol class="sense-list continued">${renderItems(hidden, !foundationalCoreIds.has(node.id) && !node.searchOnly)}</ol></details>` : ""}
+      ${hidden.length ? `<details class="sense-more"><summary>更多词典义项（${hidden.length}）</summary><ol class="sense-list continued">${renderItems(hidden, !foundationalCoreIds.has(node.id) && !node.searchOnly)}</ol></details>` : ""}
       ${(foundationalCoreIds.has(node.id) || node.searchOnly) && flattened.some((sense) => sense.examples?.length) ? `<details class="sense-more source-examples"><summary>查看来源原例句</summary><ol class="sense-list continued">${renderItems(flattened)}</ol></details>` : ""}
       ${sourceUrl ? `<a class="sense-source" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Wiktionnaire 来源 ↗</a>` : ""}
     </section>`;
@@ -1022,7 +1031,7 @@
   function renderSenseSummary(summary) {
     if (!summary.senseTotal) return "";
     return `<section class="panel-priority sense-priority" aria-label="法语释义摘要">
-      <h3>法语释义摘要 · ${summary.senseTotal}</h3>
+      <h3>常用词义</h3>
       <ol>${summary.sensePreview.map((sense) => `<li>${escapeHtml(sense.definition)}</li>`).join("")}</ol>
     </section>`;
   }
@@ -1034,20 +1043,6 @@
     return `<section class="panel-priority usage-priority" aria-label="常用搭配和例句入口">
       <h3>常用搭配 / 例句</h3>
       <ul>${collocations}${examples}</ul>
-    </section>`;
-  }
-
-  function renderRelationEntry(summary, relationCounts) {
-    if (!summary.relationTotal) return "";
-    const items = [
-      relationCounts.reviewed ? `审校 ${relationCounts.reviewed}` : "",
-      relationCounts.sourced ? `来源 ${relationCounts.sourced}` : "",
-      relationCounts.mine ? `我的 ${relationCounts.mine}` : "",
-      relationCounts.form + relationCounts.structural ? `线索 ${relationCounts.form + relationCounts.structural}` : "",
-    ].filter(Boolean);
-    return `<section class="panel-priority relation-priority" aria-label="关系入口">
-      <h3>关系入口</h3>
-      <p>${escapeHtml(items.join(" · ") || "暂无关系")}</p>
     </section>`;
   }
 
@@ -1116,16 +1111,17 @@
   }
 
   function renderPanel(node) {
-    const official = (officialAdj.get(node.id) || [])
+    // GRAPH_OFFICIAL_EDGES only ever contains relations with real human
+    // review evidence (see has_real_review_evidence in build_graph.py), so
+    // everything reaching officialAdj here is already reviewed -- there is
+    // no separate "sourced but unreviewed" bucket to show learners.
+    const reviewed = (officialAdj.get(node.id) || [])
       .map((edge) => ({ edge: { ...edge, kind: "official" }, node: nodeById.get(edge.other) }))
       .filter((item) => item.node)
       .sort((a, b) => relationRank(a.edge) - relationRank(b.edge)
-        || Number(b.edge.review === "reviewed") - Number(a.edge.review === "reviewed")
         || a.node.word.localeCompare(b.node.word, "fr"));
-    const reviewed = official.filter((item) => item.edge.review === "reviewed");
-    const sourced = official.filter((item) => item.edge.review !== "reviewed");
     const mine = personalFor(node.id).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
-    const officialIds = new Set(official.map((item) => item.node.id));
+    const officialIds = new Set(reviewed.map((item) => item.node.id));
     const form = strongFormFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 8);
     const formIds = new Set(form.map((item) => item.node.id));
     const structural = strongStructuralFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 16);
@@ -1133,11 +1129,10 @@
       .sort((a, b) => b.weight - a.weight).slice(0, 5).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
     const badge = node.personal ? "我的词"
       : node.searchOnly ? `${node.level} 可检索学习词`
-      : node.status === "eligible" ? `${node.level} 主词表` : "官方关系支撑词";
+      : node.status === "eligible" ? `${node.level} 主词表` : "因审查关系收录";
     const saved = isSaved(node.id);
     const relationCounts = {
       reviewed: reviewed.length,
-      sourced: sourced.length,
       mine: mine.length,
       form: form.length,
       structural: structural.length,
@@ -1170,7 +1165,6 @@
       ${node.searchOnly ? `<section class="search-only-note"><strong>暂未建立学习关系</strong><span>这个词可搜索、查看义项并加入复习；它尚未进入关系图。</span></section>` : ""}
       ${renderSenseSummary(summary)}
       ${renderUsageSummary(summary)}
-      ${renderRelationEntry(summary, relationCounts)}
       <div class="learning-actions">
         <section class="learning-action" aria-label="复习设置">
           <div><span class="eyebrow">主动回忆</span><p>${saved ? `已加入学习循环 · ${formatDue(learning.saved[node.id].dueAt)}` : "把这个词留到下一次主动回忆"}</p></div>
@@ -1184,13 +1178,12 @@
       ${renderSenseGroups(node)}
       ${renderTeachingExamples(node)}
       ${renderEditorialLearning(node)}
-      ${reviewed.length ? `<section class="panel-section"><h3>人工审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${reviewed.length ? `<section class="panel-section"><h3>经过审查的词汇关系</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : `<p class="empty-relations-note">这个词目前还没有经过审查的词汇关系。</p>`}
       ${renderReviewedRelationNotes(reviewed)}
-      ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${form.length ? `<section class="panel-section"><h3>形音线索 · 自动候选</h3><p class="candidate-note">只显示同时形似且音近的少量词，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${structural.length ? `<section class="panel-section"><h3>构词线索 · 待核准</h3><p class="candidate-note">来自 Lexique 形态结构，只在图中以蓝色虚线显示，不等同于已审校教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
+      ${mine.length ? `<section class="panel-section"><h3>我的关系</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${form.length ? `<details class="panel-section candidate-details"><summary>形音相近的自动候选（未经审查）</summary><p class="candidate-note">只是形近且音近，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
+      ${structural.length ? `<details class="panel-section candidate-details"><summary>构词相近的自动候选（未经审查）</summary><p class="candidate-note">来自词形结构的自动匹配，不等同于已审查的教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
+      ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看更多自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
     `;
     panel.classList.remove("hidden");
     panelContent.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => enterFocus(button.dataset.node)));
@@ -1464,16 +1457,16 @@
 
   function updateStats() {
     if (!selected) {
+      // The layout-skeleton edge count isn't a count of reviewed relations,
+      // so showing it here would read as a quality signal it isn't.
       const wordTotal = GRAPH_META.eligible_count + GRAPH_META.support_node_count;
-      $("#stats").textContent = `收录 ${wordTotal.toLocaleString()} 个词 · ${GRAPH_META.edge_count.toLocaleString()} 条词汇关系`;
+      $("#stats").textContent = `收录 ${wordTotal.toLocaleString()} 个词`;
       return;
     }
     const officialCount = focusConnections
       .filter((edge) => edge.kind === "official")
       .reduce((total, edge) => total + (edge.relations?.length || 1), 0);
-    const structuralCount = focusConnections.filter((edge) => edge.kind === "structural").length;
-    const formCount = focusConnections.filter((edge) => edge.kind === "form").length;
-    $("#stats").textContent = `${focusConnections.length} 个相关词 · ${officialCount} 条正式关系 · ${formCount + structuralCount} 自动线索`;
+    $("#stats").textContent = officialCount ? `${focusConnections.length} 个相关词 · ${officialCount} 条已审查关系` : "";
   }
 
   function showTooltip(node, event) {
@@ -1559,7 +1552,7 @@
     dragging = false; canvas.classList.remove("dragging");
     if (!moved) {
       const hit = hitTest(event.clientX, event.clientY);
-      if (!hit && selected) fitHome();
+      if (!hit && selected) { cloudRevealed = true; fitHome(); }
       else if (hit?.focusRole === "background") enterFocus(hit.id, { resetTrail: true });
       else if (hit) enterFocus(hit.id);
     }
@@ -1651,9 +1644,9 @@
     viewport.classList.remove("panel-open");
     if (selected && focusCenter) animateView(focusViewTarget(focusCenter, focusScaleFor(focusConnections.length), false), 320);
   });
-  $("#reset").addEventListener("click", () => fitHome());
-  $("#brand").addEventListener("click", (event) => { event.preventDefault(); fitHome(); });
-  $("#focus-back").addEventListener("click", () => fitHome());
+  $("#reset").addEventListener("click", () => { cloudRevealed = true; fitHome(); });
+  $("#brand").addEventListener("click", (event) => { event.preventDefault(); cloudRevealed = true; fitHome(); });
+  $("#focus-back").addEventListener("click", () => { cloudRevealed = true; fitHome(); });
   $("#local-data-open").addEventListener("click", openLocalDataDialog);
   $("#local-data-close").addEventListener("click", closeLocalDataDialog);
   $("#local-data-mask").addEventListener("click", closeLocalDataDialog);

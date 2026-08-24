@@ -33,8 +33,8 @@
   <main id="viewport">
     <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
     <div class="map-copy" id="map-copy">
-      <p class="map-copy-intro">面向中文学习者的法语词汇关系网 · 搜索一个词开始，点击关联词继续探索</p>
-      <p class="map-copy-meta">中心更常用 · 外围更进阶 · 滚轮 / 双指缩放</p>
+      <p class="map-copy-intro">搜索一个法语词，查看词义、构词和用法区别</p>
+      <p class="map-copy-meta">关系经过人工审查 · 没有可靠关系时会明确说明，不会用自动候选填满页面</p>
       <div class="example-chips" role="group" aria-label="示例词，点击直接打开">
         <span class="example-chips-label">试试</span>
         <button type="button" class="example-chip" data-example-word="faire">faire</button>
@@ -53,8 +53,8 @@
       <button id="legend-toggle" type="button" aria-expanded="false">图的语言</button>
       <div id="legend-body" class="legend-body hidden">
         <p><i class="radial-key"></i><span>中心常用 · 外围进阶<br><small>半径由等级与频率决定</small></span></p>
-        <p><i class="line layout"></i><span>词群线索<br><small>只影响角度，不等于正式关系</small></span></p>
-        <p><i class="line official"></i><span>来源确认 / 人工审校</span></p>
+        <p><i class="line layout"></i><span>词群线索<br><small>只影响位置，不代表任何词汇关系</small></span></p>
+        <p><i class="line official"></i><span>经过人工审查的词汇关系</span></p>
         <p><i class="line personal"></i><span>我的词与关系</span></p>
         <div id="legend-relations" class="legend-relations" role="list" aria-label="关系颜色"></div>
         <p class="source">FLELex · Lexique 4 · Démonette 2<br>Wiktionnaire / DBnary · CFDICT</p>
@@ -64,13 +64,11 @@
 
     <aside id="focus-legend" class="focus-legend hidden" aria-label="关系颜色图例">
       <span><i style="--c:#7b8188"></i>近义</span>
-      <span><i style="--c:#3477b8"></i>派生</span>
+      <span><i style="--c:#3477b8"></i>构词</span>
       <span><i style="--c:#c07a22"></i>对比</span>
-      <span><i style="--c:#7859a6"></i>漂移</span>
       <span><i style="--c:#c7465d"></i>易混</span>
       <span><i style="--c:#278867"></i>反义</span>
-      <span><i style="--c:#6f647d"></i>因果</span>
-      <small>细虚线＝自动候选 · 橙虚线＝我的关系</small>
+      <small>橙虚线＝我的关系</small>
     </aside>
 
     <aside id="panel" class="panel hidden" aria-live="polite">
@@ -176,8 +174,8 @@
     </section>
   </div>
 
-  <script src="graph-data.js?v=7bfcf1df10f1"></script>
-  <script src="app.js?v=7bfcf1df10f1"></script>
+  <script src="graph-data.js?v=7bb153e67bf3"></script>
+  <script src="app.js?v=7bb153e67bf3"></script>
   <script src="src/draft-ui.js"></script>
 </body>
 </html>

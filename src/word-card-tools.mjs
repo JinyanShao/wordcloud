@@ -20,8 +20,10 @@ export function summarizeWordCard(input) {
   const collocations = asArray(learning.collocations).filter((item) => trimText(item?.expression));
   const teachingExamples = asArray(input?.teachingExamples).filter((item) => trimText(item?.text));
   const relationCounts = input?.relationCounts && typeof input.relationCounts === "object" ? input.relationCounts : {};
+  // relationCounts.reviewed is the only bucket with real review evidence
+  // (see has_real_review_evidence in build_graph.py); form/structural are
+  // unreviewed automatic candidates and must not read as reliable relations.
   const relationTotal = Number(relationCounts.reviewed || 0)
-    + Number(relationCounts.sourced || 0)
     + Number(relationCounts.mine || 0)
     + Number(relationCounts.form || 0)
     + Number(relationCounts.structural || 0);
@@ -34,7 +36,7 @@ export function summarizeWordCard(input) {
     teachingExampleTotal: teachingExamples.length,
     teachingExamplePreview: teachingExamples.slice(0, 1),
     relationTotal,
-    hasReliableRelations: Number(relationCounts.reviewed || 0) + Number(relationCounts.sourced || 0) > 0,
+    hasReliableRelations: Number(relationCounts.reviewed || 0) > 0,
     hasLearningCues: collocations.length > 0 || teachingExamples.length > 0,
   };
 }
@@ -77,6 +79,6 @@ export function wordCardSectionOrder(input) {
   if (summary.senseTotal) order.push("sense-summary");
   if (summary.hasLearningCues) order.push("usage-summary");
   if (summary.relationTotal) order.push("relation-entry");
-  order.push("full-senses", "examples", "learning", "reviewed-relations", "contrast", "sourced-relations", "personal-relations", "form-candidates", "structural-candidates", "nearby-candidates");
+  order.push("full-senses", "examples", "learning", "reviewed-relations", "contrast", "personal-relations", "form-candidates", "structural-candidates", "nearby-candidates");
   return order;
 }

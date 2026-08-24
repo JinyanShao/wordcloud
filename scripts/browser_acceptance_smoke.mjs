@@ -60,7 +60,13 @@ includesAll("app.js", app, [
   "summarizeLearningProgress",
   "wordcloud.learning.v1",
   "searchLexemes",
+  "cloudRevealed",
+  "这个词目前还没有经过审查的词汇关系",
 ]);
+assert.ok(
+  !app.includes("...strongFormFor(id), ...strongStructuralFor(id)"),
+  "unreviewed form/structural candidates must not be merged back into the focus graph's connection list",
+);
 includesAll("graph-data.js", graph, ["GRAPH_NODES", "GRAPH_ALIASES", "GRAPH_SEARCH_LEXEMES"]);
 includesAll("styles.css", styles, [
   "@media (max-width: 720px)",
