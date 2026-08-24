@@ -785,17 +785,52 @@ def build() -> None:
     print(f"built {DB_PATH.relative_to(ROOT)}")
 
 
-def sync_review() -> None:
-    path = REPORTS / "lexicon-audit-sample-500.csv"
-    conn = sqlite3.connect(DB_PATH)
-    rows = list(csv.DictReader(path.open(encoding="utf-8")))
-    if len(rows) != 500:
-        raise SystemExit(f"expected 500 audit rows, found {len(rows)}")
-    now = datetime.now(timezone.utc).isoformat()
+MANUAL_REASON_PREFIXES = ("manual_audit_override:", "manual_audit_defer:")
+
+
+def strip_manual_reason_prefixes(decision_reason: str | None) -> str:
+    """Peel off any already-applied manual-review prefixes, however many times
+    they were stacked (including a stale mix of override/defer), leaving the
+    original algorithmic decision_reason underneath untouched."""
+    base = decision_reason or ""
+    changed = True
+    while changed:
+        changed = False
+        for prefix in MANUAL_REASON_PREFIXES:
+            if base.startswith(prefix):
+                base = base[len(prefix):]
+                changed = True
+    return base
+
+
+def with_single_manual_prefix(decision_reason: str | None, prefix: str) -> str:
+    """Return decision_reason with exactly one `prefix` at the front.
+
+    Re-applying this to an already-prefixed value (from a prior sync-review
+    run, whether it ran once or was accidentally re-run several times) is a
+    no-op: the result is byte-identical, never a longer stack of prefixes.
+    """
+    return prefix + strip_manual_reason_prefixes(decision_reason)
+
+
+def apply_manual_decisions(conn: sqlite3.Connection, rows: list[dict], now: str) -> int:
+    """Apply each audit row's manual_decision to audit_samples and lexemes.
+
+    Idempotent: running this again with the same rows against the resulting
+    DB state produces byte-identical decision_reason values (and thus a
+    byte-identical audit_samples/lexemes state overall), because
+    with_single_manual_prefix always normalizes from the current stored
+    value rather than blindly concatenating onto it.
+
+    Returns the number of rows with a non-empty manual_decision.
+    """
+    synced = 0
     for row in rows:
         decision = row["manual_decision"].strip() or None
         reviewer = "Jinyan Shao" if decision else None
         lexeme_id = int(row["lexeme_id"])
+        if decision:
+            synced += 1
         conn.execute(
             """
             UPDATE audit_samples
@@ -809,23 +844,38 @@ def sync_review() -> None:
         )
         if decision and decision.startswith("override_"):
             target_status = decision.removeprefix("override_")
+            current_reason = conn.execute(
+                "SELECT decision_reason FROM lexemes WHERE id=?", (lexeme_id,)
+            ).fetchone()
+            new_reason = with_single_manual_prefix(
+                current_reason[0] if current_reason else None, "manual_audit_override:"
+            )
             conn.execute(
-                """
-                UPDATE lexemes
-                SET status=?, decision_reason='manual_audit_override:' || decision_reason
-                WHERE id=?
-                """,
-                (target_status, lexeme_id),
+                "UPDATE lexemes SET status=?, decision_reason=? WHERE id=?",
+                (target_status, new_reason, lexeme_id),
             )
         elif decision == "defer":
-            conn.execute(
-                """
-                UPDATE lexemes
-                SET status='needs_review', decision_reason='manual_audit_defer:' || decision_reason
-                WHERE id=?
-                """,
-                (lexeme_id,),
+            current_reason = conn.execute(
+                "SELECT decision_reason FROM lexemes WHERE id=?", (lexeme_id,)
+            ).fetchone()
+            new_reason = with_single_manual_prefix(
+                current_reason[0] if current_reason else None, "manual_audit_defer:"
             )
+            conn.execute(
+                "UPDATE lexemes SET status='needs_review', decision_reason=? WHERE id=?",
+                (new_reason, lexeme_id),
+            )
+    return synced
+
+
+def sync_review() -> None:
+    path = REPORTS / "lexicon-audit-sample-500.csv"
+    conn = sqlite3.connect(DB_PATH)
+    rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    if len(rows) != 500:
+        raise SystemExit(f"expected 500 audit rows, found {len(rows)}")
+    now = datetime.now(timezone.utc).isoformat()
+    synced = apply_manual_decisions(conn, rows, now)
     apply_foundational_core(conn)
     apply_editorial_gloss_overrides(conn)
     apply_editorial_learning(conn)
@@ -834,7 +884,7 @@ def sync_review() -> None:
     export_eligible(conn)
     conn.commit()
     conn.close()
-    print(f"synced {sum(bool(row['manual_decision'].strip()) for row in rows)} reviews")
+    print(f"synced {synced} reviews")
 
 
 def main() -> None:
