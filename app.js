@@ -107,6 +107,7 @@
   let personalNodes = [];
   let personalEdges = [];
   let allNodes = [];
+  let searchEntriesCache = null;
   let selected = null;
   let hovered = null;
   let focusConnections = [];
@@ -391,6 +392,7 @@
     personalEdges = personal.edges.map((edge) => ({ ...edge, a: String(edge.a), b: String(edge.b), kind: "personal", relation: "personal" }));
     for (const node of personalNodes) nodeById.set(node.id, node);
     allNodes = officialNodes.concat(personalNodes);
+    searchEntriesCache = null;
   }
   rebuildPersonal();
 
@@ -1556,6 +1558,24 @@
     requestDraw();
   }, { passive: false });
 
+  function getSearchEntries() {
+    if (!searchEntriesCache) {
+      searchEntriesCache = allNodes.concat(searchOnlyNodes).map((node) => ({
+        id: node.id,
+        word: node.word,
+        pos: node.pos,
+        gloss: node.gloss,
+        level: node.level,
+        freq: node.freq,
+        personal: node.personal,
+        searchOnly: node.searchOnly,
+        isCore: foundationalCoreIds.has(node.id),
+        aliases: aliasesById[node.id] || [],
+      }));
+    }
+    return searchEntriesCache;
+  }
+
   function doSearch() {
     stopOnboarding();
     const query = searchTools?.normalizeSearchText(search.value) || search.value.trim();
@@ -1566,19 +1586,7 @@
       searchResults.classList.remove("hidden");
       return;
     }
-    const entries = allNodes.concat(searchOnlyNodes).map((node) => ({
-      id: node.id,
-      word: node.word,
-      pos: node.pos,
-      gloss: node.gloss,
-      level: node.level,
-      freq: node.freq,
-      personal: node.personal,
-      searchOnly: node.searchOnly,
-      isCore: foundationalCoreIds.has(node.id),
-      aliases: aliasesById[node.id] || [],
-    }));
-    const searchState = searchTools.searchLexemes(entries, query, { limit: 12, suggestionLimit: 5 });
+    const searchState = searchTools.searchLexemes(getSearchEntries(), query, { limit: 12, suggestionLimit: 5 });
     const renderResult = (result, suggestion = false) => {
       const node = nodeById.get(result.entry.id);
       const alias = result.matchType.includes("Alias") ? `词形匹配：${result.matchedText} → ${node.word}` : "";
@@ -1606,7 +1614,20 @@
     }
     enterFocus(id, { resetTrail: true });
   }
-  search.addEventListener("input", doSearch);
+  // Debounced so a burst of fast keystrokes coalesces into one search pass
+  // instead of one full re-render per key; skipped mid-composition so an IME
+  // (e.g. typing accented letters or Chinese) doesn't get its in-progress,
+  // not-yet-committed text treated as a real query.
+  let searchDebounce = null;
+  let composing = false;
+  function scheduleSearch() {
+    if (composing) return;
+    clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(doSearch, 60);
+  }
+  search.addEventListener("compositionstart", () => { composing = true; });
+  search.addEventListener("compositionend", () => { composing = false; scheduleSearch(); });
+  search.addEventListener("input", scheduleSearch);
   search.addEventListener("keydown", (event) => {
     if (event.key === "Enter") { const first = searchResults.querySelector("[data-node]"); if (first) openSearchResult(first.dataset.node); }
     if (event.key === "Escape") searchResults.classList.add("hidden");
