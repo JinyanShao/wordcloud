@@ -27,13 +27,24 @@ function foldSearchText(value) {
     .replace(/[^0-9a-zA-Z]+/g, "");
 }
 
+// normalizeEntry does Unicode NFKC/NFD normalization and regex folding on
+// every word and every one of its aliases -- for the full ~9k-entry lexicon,
+// that's tens of thousands of string operations. The set of raw entry
+// objects is stable between keystrokes (the caller only rebuilds it when the
+// underlying word list actually changes), so caching by object identity
+// turns repeat searches into a cheap lookup instead of redoing that work on
+// every single keypress.
+const entryCache = new WeakMap();
+
 function normalizeEntry(raw) {
   if (!raw || typeof raw !== "object") return null;
+  const cached = entryCache.get(raw);
+  if (cached) return cached;
   const id = text(raw.id).trim();
   const word = text(raw.word).trim();
   if (!id || !word) return null;
   const aliases = Array.isArray(raw.aliases) ? raw.aliases.map(normalizeSearchText).filter(Boolean) : [];
-  return {
+  const entry = {
     ...raw,
     id,
     word,
@@ -43,6 +54,8 @@ function normalizeEntry(raw) {
     freq: Number(raw.freq) || 0,
     isCore: Boolean(raw.isCore),
   };
+  entryCache.set(raw, entry);
+  return entry;
 }
 
 function bestMatch(entry, query) {
