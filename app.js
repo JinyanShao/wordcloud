@@ -25,7 +25,7 @@
   const VALID_REVIEW_RATINGS = new Set(["again", "hard", "good", "easy"]);
   const REVIEW_RATING_LABELS = { again: "再复习", hard: "模糊", good: "记住", easy: "很熟" };
 
-  const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
+  const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "编辑关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
   // "漂移"(drift) and "因果"(cause) were dropped from the public relation
   // vocabulary: their meaning wasn't reliably explainable to learners, and
   // no reviewed relation uses them (see has_real_review_evidence in
@@ -40,7 +40,6 @@
     trap: { color: "#c7465d", dash: [], arrow: false },
     ant: { color: "#278867", dash: [], arrow: false },
     personal: { color: "#b96d22", dash: [2, 5], arrow: false },
-    satellite: { color: "#a8a69f", dash: [], arrow: false },
   };
   const NODE = { id: 0, word: 1, pos: 2, level: 3, gloss: 4, x: 5, y: 6, size: 7, community: 8, freq: 9, hasGloss: 10, status: 11, note: 12 };
 
@@ -108,17 +107,14 @@
   let personalNodes = [];
   let personalEdges = [];
   let allNodes = [];
-  // Search-first entry point: the unlabeled full-word cloud is not the
-  // primary homepage content, so it stays hidden until a learner explicitly
-  // asks to browse it (the topbar "全图" control, or returning from a focus).
-  let cloudRevealed = false;
   let selected = null;
   let hovered = null;
   let focusConnections = [];
   let focusEdges = [];
   let focusStarted = 0;
-  let focusCenter = null;
   let trail = [];
+  let onboardingTimer = null;
+  let onboardingHighlight = null;
   let width = 0;
   let height = 0;
   let dpr = 1;
@@ -424,7 +420,7 @@
     canvas.height = Math.round(height * dpr);
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
-    if (selected) enterFocus(selected, { addTrail: false, preserveCenter: true });
+    if (selected) enterFocus(selected, { addTrail: false });
     else fitHome(false);
     requestDraw();
   }
@@ -445,7 +441,6 @@
     hovered = null;
     focusConnections = [];
     focusEdges = [];
-    focusCenter = null;
     trail = [];
     for (const node of allNodes) {
       node.targetX = node.homeX; node.targetY = node.homeY;
@@ -458,7 +453,7 @@
     focusLegend.classList.add("hidden");
     $("#legend").classList.remove("focus-hidden");
     $("#map-copy").classList.remove("quiet");
-    $("#reset").textContent = "全图";
+    $("#reset").textContent = "重置视图";
     updateStats();
     if (animate) animateView(homeView, 520); else view = { ...homeView };
     requestDraw();
@@ -581,100 +576,57 @@
     return selected;
   }
 
-  function focusScaleFor(count) {
-    if (isMobileLayout()) return count > 6 ? .88 : .96;
-    if (count > 12) return .86;
-    return 1.02;
-  }
-
-  function focusViewTarget(center, scale, panelVisible = true) {
+  // The circular map stays the single source of truth for node position --
+  // a focused word and its reviewed relations are highlighted in place
+  // rather than re-laid-out into an isolated ring, so this only has to pick
+  // a view (pan/zoom) that frames the highlighted set on the real map.
+  function focusViewForIds(ids, panelVisible = true) {
+    const points = ids.map((value) => nodeById.get(value)).filter(Boolean);
+    if (!points.length) return { ...homeView };
+    const xs = points.map((node) => node.homeX), ys = points.map((node) => node.homeY);
+    const minX = Math.min(...xs), maxX = Math.max(...xs);
+    const minY = Math.min(...ys), maxY = Math.max(...ys);
+    const spanX = Math.max(24, maxX - minX), spanY = Math.max(24, maxY - minY);
+    const padding = isMobileLayout() ? 120 : 200;
+    const fitScale = Math.min((width - padding * 2) / spanX, (height - padding * 2) / spanY);
+    const scale = Math.max(homeView.scale * .55, Math.min(fitScale, homeView.scale * 6, 3.4));
+    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
     const xShift = width > 900 ? 135 / scale : 0;
-    const yShift = isMobileLayout() && panelVisible ? height * .22 / scale : 0;
-    return { x: center.x + xShift, y: center.y + yShift, scale };
-  }
-
-  function positionRing(items, center, radius, startAngle = -Math.PI / 2) {
-    items.forEach((connection, index) => {
-      const angle = startAngle + index / Math.max(1, items.length) * Math.PI * 2;
-      const node = nodeById.get(connection.other);
-      node.targetX = center.x + Math.cos(angle) * radius;
-      node.targetY = center.y + Math.sin(angle) * radius;
-      node._focusAngle = angle;
-      node.focusRole = "direct";
-      node.focusColor = visualFor(connection).color;
-      node.targetAlpha = 1;
-      connection.angle = angle;
-    });
+    const yShift = isMobileLayout() && panelVisible ? height * .2 / scale : 0;
+    return { x: cx + xShift, y: cy + yShift, scale };
   }
 
   function enterFocus(id, options = {}) {
     const node = nodeById.get(String(id));
     if (!node) return;
+    stopOnboarding();
     if (options.resetTrail) trail = [];
-    const previousSelected = selected;
-    const center = options.preserveCenter && focusCenter
-      ? focusCenter
-      : previousSelected && node.focusRole === "direct"
-        ? { x: node.drawX, y: node.drawY }
-        : { x: node.drawX, y: node.drawY };
-
     selected = node.id;
-    focusCenter = center;
     focusConnections = connectionsFor(node.id, isMobileLayout() ? 8 : 16);
-    const focusScale = focusScaleFor(focusConnections.length);
 
+    // Highlight in place on the real map rather than re-laying-out into an
+    // isolated ring: every node keeps its true circular-map position, the
+    // whole map stays visible (dimmed) as context, and only the searched
+    // word plus its reviewed/personal relations light up at full opacity.
     for (const item of allNodes) {
       item.targetX = item.homeX; item.targetY = item.homeY;
-      item.targetAlpha = .075;
+      item.targetAlpha = item.status === "eligible" || item.personal ? .16 : .05;
       item.focusRole = "background"; item.focusColor = null;
     }
-    node.targetX = center.x; node.targetY = center.y;
-    node.targetAlpha = 1; node.focusRole = "center"; node.focusColor = "#171816";
-
-    if (focusConnections.length <= 10) {
-      const screenRadius = isMobileLayout()
-        ? Math.max(108, Math.min(width * .32, height * .16))
-        : 215;
-      positionRing(focusConnections, center, screenRadius / focusScale);
-    } else {
-      const split = Math.ceil(focusConnections.length / 2);
-      positionRing(focusConnections.slice(0, split), center, 178 / focusScale);
-      positionRing(focusConnections.slice(split), center, 300 / focusScale, -Math.PI / 2 + Math.PI / Math.max(1, focusConnections.length - split));
+    node.targetAlpha = 1;
+    node.focusRole = "center";
+    node.focusColor = node.personal ? RELATION_STYLE.personal.color : "#171816";
+    for (const edge of focusConnections) {
+      const neighbor = nodeById.get(edge.other);
+      if (!neighbor) continue;
+      neighbor.targetAlpha = 1;
+      neighbor.focusRole = "direct";
+      neighbor.focusColor = visualFor(edge).color;
     }
 
     focusEdges = focusConnections.map((edge, index) => ({
-      ...edge, from: node.id, to: edge.other, satellite: false, delay: 100 + index * 86,
+      ...edge, from: node.id, to: edge.other, delay: 100 + index * 86,
     }));
-
-    if (!isMobileLayout() && focusConnections.length && focusConnections.length <= 12) {
-      const directIds = new Set([node.id, ...focusConnections.map((edge) => edge.other)]);
-      const usedSatellites = new Set();
-      let satelliteIndex = 0;
-      for (const parentConnection of focusConnections) {
-        if (satelliteIndex >= 16) break;
-        const parent = nodeById.get(parentConnection.other);
-        const satellites = connectionsFor(parent.id, 8)
-          .filter((edge) => !directIds.has(String(edge.other))
-            && nodeById.get(String(edge.other))?.focusRole === "background"
-            && !usedSatellites.has(String(edge.other)))
-          .slice(0, 2);
-        satellites.forEach((edge, localIndex) => {
-          if (satelliteIndex >= 16) return;
-          usedSatellites.add(String(edge.other));
-          const satellite = nodeById.get(String(edge.other));
-          const branchSpread = satellites.length > 1 ? .68 : 0;
-          const angle = parent._focusAngle + (localIndex - (satellites.length - 1) / 2) * branchSpread;
-          satellite.targetX = parent.targetX + Math.cos(angle) * 84 / focusScale;
-          satellite.targetY = parent.targetY + Math.sin(angle) * 84 / focusScale;
-          satellite._focusAngle = angle;
-          satellite.targetAlpha = .52;
-          satellite.focusRole = "satellite";
-          satellite.focusColor = visualFor(edge).color;
-          focusEdges.push({ ...edge, from: parent.id, to: edge.other, satellite: true, delay: 540 + satelliteIndex * 34 });
-          satelliteIndex += 1;
-        });
-      }
-    }
 
     if (options.addTrail !== false) {
       if (trail[trail.length - 1] !== node.id) trail.push(node.id);
@@ -688,22 +640,26 @@
     focusBar.classList.remove("hidden");
     focusLegend.classList.remove("hidden");
     $("#legend").classList.add("focus-hidden");
-    $("#reset").textContent = "返回全图";
+    $("#reset").textContent = "返回词网";
     searchResults.classList.add("hidden");
     search.blur();
     updateStats();
-    animateView(focusViewTarget(center, focusScale, true), 560);
+    animateView(focusViewForIds([node.id, ...focusConnections.map((edge) => edge.other)], true), 560);
     requestDraw();
   }
 
   function visualFor(edge) {
-    if (edge.satellite) return { ...RELATION_STYLE.satellite, alpha: .34, label: "" };
     if (edge.kind === "personal") return { ...RELATION_STYLE.personal, alpha: .88, label: edge.label || "我的联想" };
     if (edge.kind === "structural") return { ...RELATION_STYLE.fam, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
     if (edge.kind === "form") return { ...RELATION_STYLE.trap, dash: [3, 5], alpha: .58, label: `${edge.label || "形音相近"} · 候选` };
     const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.syn;
     const mappedLabel = edge.label ? RELATION_NAMES[edge.label] : null;
-    const relationName = RELATION_NAMES[edge.relation] || edge.relation || "已审校";
+    // Historical/Latin-root word-family links are real, but they are not
+    // the same claim as a transparent modern prefix (faire -> refaire):
+    // label them "词源" (etymology) instead of "构词" (word-formation) so
+    // the two are never conflated.
+    const isEtymological = edge.kind === "official" && String(edge.dimension || "").includes("etymological");
+    const relationName = isEtymological ? "词源" : (RELATION_NAMES[edge.relation] || edge.relation || "已整理");
     // Canvas chips stay short (relation name only); custom teaching labels are
     // surfaced on the word card via `note`, never drawn across an edge.
     return { ...style, alpha: .95, label: mappedLabel || relationName, note: mappedLabel || !edge.label ? "" : edge.label };
@@ -788,17 +744,17 @@
     const visual = visualFor(edge);
     ctx.globalAlpha = visual.alpha * Math.min(a.alpha, b.alpha);
     ctx.strokeStyle = visual.color;
-    ctx.lineWidth = edge.satellite ? .9 : edge.kind === "official" ? 2 : 1.5;
+    ctx.lineWidth = edge.kind === "official" ? 2 : 1.5;
     ctx.setLineDash(visual.dash);
     ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(end.x, end.y); ctx.stroke();
     ctx.setLineDash([]);
 
-    if (raw > .86 && visual.arrow && !edge.satellite) {
+    if (raw > .86 && visual.arrow) {
       const target = directionTarget(edge);
       if (target === edge.to) drawArrow(pa, pb, visual.color, visual.alpha);
       else drawArrow(pb, pa, visual.color, visual.alpha);
     }
-    if (raw > .68 && !edge.satellite) {
+    if (raw > .68) {
       const t = .52;
       const mx = pa.x + (pb.x - pa.x) * t, my = pa.y + (pb.y - pa.y) * t;
       if (edge.relation === "trap" && edge.kind === "official") {
@@ -854,20 +810,6 @@
       drawFocusCard(node, p);
       return;
     }
-    if (node.focusRole === "satellite") {
-      ctx.globalAlpha = node.alpha;
-      ctx.fillStyle = node.focusColor || "#8c8b84";
-      ctx.beginPath(); ctx.arc(p.x, p.y, 3.2, 0, Math.PI * 2); ctx.fill();
-      ctx.font = `500 9.5px ${CANVAS_FONT}`; ctx.fillStyle = "#686963";
-      const labelWidth = ctx.measureText(node.word).width;
-      const labelOnLeft = Math.cos(node._focusAngle || 0) < 0;
-      ctx.textAlign = labelOnLeft ? "right" : "left";
-      ctx.fillText(node.word, p.x + (labelOnLeft ? -6 : 6), p.y - 3);
-      const labelX = labelOnLeft ? p.x - labelWidth - 10 : p.x - 7;
-      hitBoxes.set(node.id, { x: labelX, y: p.y - 9, w: labelWidth + 17, h: 18 });
-      ctx.textAlign = "left";
-      return;
-    }
     const isHovered = node.id === hovered;
     ctx.globalAlpha = isHovered ? .92 : node.alpha;
     ctx.fillStyle = isHovered ? "#343530" : "#85857e";
@@ -880,8 +822,10 @@
     }
   }
 
-  function drawGlobal(now) {
-    ctx.lineCap = "round";
+  // Layout links only organize the map into a legible shape -- they are
+  // never a language relation -- so they always render as extremely faint
+  // gray, well below the visual weight of any reviewed relation.
+  function drawLayoutLines(opacityScale) {
     for (const edge of baseLinks) {
       const learningTopology = edge.mask & (1 | 2 | 16);
       if (!learningTopology || edge.weight < .26) continue;
@@ -889,10 +833,72 @@
       if (!a || !b) continue;
       const pa = screen(a), pb = screen(b);
       if (!visible(pa, 30) && !visible(pb, 30)) continue;
-      ctx.globalAlpha = (isMobileLayout() ? .032 : .045) + edge.weight * (isMobileLayout() ? .026 : .034);
+      ctx.globalAlpha = ((isMobileLayout() ? .02 : .028) + edge.weight * (isMobileLayout() ? .016 : .02)) * opacityScale;
       ctx.strokeStyle = "#8f9089"; ctx.lineWidth = isMobileLayout() ? .62 : .68;
       ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y); ctx.stroke();
     }
+  }
+
+  // A brief, gentle first-look cue: cycle through the map's 3 best-known
+  // reviewed relations so a new visitor sees what a confirmed relation
+  // looks like (a solid colored line) before touching anything. Runs once,
+  // stops as soon as the learner interacts, and is skipped entirely under
+  // prefers-reduced-motion.
+  const ONBOARDING_PAIRS = [["faire", "refaire"], ["dire", "parler"], ["voir", "regarder"]];
+
+  function findOfficialEdgeBetween(wordA, wordB) {
+    // A lemma can have multiple POS entries (e.g. "dire" NOM and VER); try
+    // every candidate pairing rather than assuming the first array match is
+    // the one that actually carries the reviewed relation.
+    for (const nodeA of officialNodes.filter((item) => item.word === wordA)) {
+      for (const nodeB of officialNodes.filter((item) => item.word === wordB)) {
+        const edge = (officialAdj.get(nodeA.id) || []).find((item) => item.other === nodeB.id);
+        if (edge) return { edge, a: nodeA, b: nodeB };
+      }
+    }
+    return null;
+  }
+
+  function stopOnboarding() {
+    if (onboardingTimer) { clearTimeout(onboardingTimer); onboardingTimer = null; }
+    if (onboardingHighlight) { onboardingHighlight = null; requestDraw(); }
+  }
+
+  function runOnboarding() {
+    if (reducedMotion.matches) return;
+    const pairs = ONBOARDING_PAIRS.map(([a, b]) => findOfficialEdgeBetween(a, b)).filter(Boolean);
+    if (!pairs.length) return;
+    const STEP_MS = 2400;
+    let index = 0;
+    const step = () => {
+      if (selected) { stopOnboarding(); return; }
+      onboardingHighlight = pairs[index];
+      requestDraw();
+      index += 1;
+      onboardingTimer = setTimeout(index < pairs.length ? step : stopOnboarding, STEP_MS);
+    };
+    onboardingTimer = setTimeout(step, 1100);
+  }
+
+  function drawOnboardingHighlight() {
+    if (!onboardingHighlight || selected) return;
+    const { edge, a, b } = onboardingHighlight;
+    const pa = screen(a), pb = screen(b);
+    const visual = visualFor(edge);
+    ctx.globalAlpha = .92; ctx.strokeStyle = visual.color; ctx.lineWidth = 2.4;
+    ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y); ctx.stroke();
+    for (const [node, p] of [[a, pa], [b, pb]]) {
+      ctx.globalAlpha = 1; ctx.fillStyle = "#171816";
+      ctx.beginPath(); ctx.arc(p.x, p.y, 4.5, 0, Math.PI * 2); ctx.fill();
+      ctx.font = `650 12px ${CANVAS_FONT}`; ctx.fillStyle = "#171816";
+      ctx.fillText(node.word, p.x + 8, p.y - 7);
+    }
+    drawEdgeChip(visual.label, (pa.x + pb.x) / 2, (pa.y + pb.y) / 2, visual.color, 1);
+  }
+
+  function drawGlobal(now) {
+    ctx.lineCap = "round";
+    drawLayoutLines(1);
     for (const edge of personalEdges) {
       const a = nodeById.get(edge.a), b = nodeById.get(edge.b);
       if (!a || !b) continue;
@@ -924,16 +930,16 @@
       occupied.push(box); ctx.globalAlpha = .9; ctx.fillStyle = item.node.personal ? "#9a5619" : "#282925";
       ctx.fillText(item.node.word, x, y);
     }
+    drawOnboardingHighlight();
   }
 
   function drawFocus(now) {
-    for (const edge of focusEdges) drawFocusEdge(edge, now);
+    ctx.lineCap = "round";
+    drawLayoutLines(.35);
     for (const node of allNodes) {
       if (node.focusRole === "background") drawFocusNode(node);
     }
-    for (const node of allNodes) {
-      if (node.focusRole === "satellite") drawFocusNode(node);
-    }
+    for (const edge of focusEdges) drawFocusEdge(edge, now);
     for (const node of allNodes) {
       if (node.focusRole === "direct") drawFocusNode(node);
     }
@@ -943,7 +949,7 @@
     if (!focusConnections.length && center) {
       const p = screen(center);
       ctx.globalAlpha = .76; ctx.fillStyle = "#686963"; ctx.font = `550 11.5px ${CANVAS_FONT}`; ctx.textAlign = "center";
-      ctx.fillText("这个词目前还没有经过审查的词汇关系", p.x, p.y + 44);
+      ctx.fillText("这个词目前还没有经过编辑整理的词汇关系", p.x, p.y + 44);
       ctx.textAlign = "left";
     }
 
@@ -961,8 +967,7 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.fillStyle = "#f7f6f2"; ctx.fillRect(0, 0, width, height);
     hitBoxes = new Map();
-    if (selected) drawFocus(now);
-    else if (cloudRevealed) drawGlobal(now);
+    if (selected) drawFocus(now); else drawGlobal(now);
     ctx.globalAlpha = 1; ctx.setLineDash([]);
     if (active) requestDraw();
   }
@@ -1008,48 +1013,34 @@
     return `<button class="relation-item ${edge.kind}" style="--relation-color:${visual.color}" data-node="${escapeHtml(node.id)}"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(caption)}</small></button>`;
   }
 
+  // Chinese-first: node.gloss (the one editorially reviewed Chinese meaning)
+  // is the panel's primary content, shown in the header. Everything below
+  // is raw Wiktionnaire/DBnary dictionary material -- useful, but never
+  // reviewed -- so it stays clearly labeled "词典原文" and collapsed by
+  // default rather than presented as if it were curated.
   function renderSenseGroups(node) {
     const groups = GRAPH_SENSES[node.id] || [];
     const flattened = wordCardTools?.flattenSenseGroups(groups)
       || groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
     if (!flattened.length) return "";
-    const renderItems = (items, includeExamples = true) => items.map((sense) => `
+    const includeExamples = !foundationalCoreIds.has(node.id) && !node.searchOnly;
+    const preview = flattened.slice(0, 3);
+    const sourceUrl = groups[0]?.sourceUrl;
+    const renderFull = (items) => items.map((sense) => `
       <li><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><div><p>${escapeHtml(sense.definition)}</p>${includeExamples && sense.examples?.length ? `<ul class="sense-examples">${sense.examples.map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}</div></li>
     `).join("");
-    const visible = flattened.slice(0, 5);
-    const hidden = flattened.slice(5);
-    const sourceUrl = groups[0]?.sourceUrl;
     return `<section class="panel-section sense-section">
-      <h3>法语义项</h3>
-      <ol class="sense-list">${renderItems(visible, !foundationalCoreIds.has(node.id) && !node.searchOnly)}</ol>
-      ${hidden.length ? `<details class="sense-more"><summary>更多词典义项（${hidden.length}）</summary><ol class="sense-list continued">${renderItems(hidden, !foundationalCoreIds.has(node.id) && !node.searchOnly)}</ol></details>` : ""}
-      ${(foundationalCoreIds.has(node.id) || node.searchOnly) && flattened.some((sense) => sense.examples?.length) ? `<details class="sense-more source-examples"><summary>查看来源原例句</summary><ol class="sense-list continued">${renderItems(flattened)}</ol></details>` : ""}
+      <h3>词典释义</h3>
+      <ol class="sense-preview-list">${preview.map((sense) => `<li>${escapeHtml(sense.definition)}</li>`).join("")}</ol>
+      <details class="sense-more"><summary>词典原文${flattened.length > 1 ? `（共 ${flattened.length} 条）` : ""}</summary><ol class="sense-list continued">${renderFull(flattened)}</ol></details>
       ${sourceUrl ? `<a class="sense-source" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Wiktionnaire 来源 ↗</a>` : ""}
-    </section>`;
-  }
-
-  function renderSenseSummary(summary) {
-    if (!summary.senseTotal) return "";
-    return `<section class="panel-priority sense-priority" aria-label="法语释义摘要">
-      <h3>常用词义</h3>
-      <ol>${summary.sensePreview.map((sense) => `<li>${escapeHtml(sense.definition)}</li>`).join("")}</ol>
-    </section>`;
-  }
-
-  function renderUsageSummary(summary) {
-    if (!summary.hasLearningCues) return "";
-    const collocations = summary.collocationPreview.map((item) => `<li><strong>${escapeHtml(item.expression)}</strong><span>${escapeHtml(item.gloss || "")}</span></li>`).join("");
-    const examples = summary.teachingExamplePreview.map((item) => `<li><strong>${escapeHtml(item.text)}</strong><span>${escapeHtml(item.gloss || "")}</span></li>`).join("");
-    return `<section class="panel-priority usage-priority" aria-label="常用搭配和例句入口">
-      <h3>常用搭配 / 例句</h3>
-      <ul>${collocations}${examples}</ul>
     </section>`;
   }
 
   function renderTeachingExamples(node) {
     const examples = teachingExamples[node.id] || [];
     if (!examples.length) return "";
-    return `<section class="panel-section teaching-examples"><h3>学习例句 · 审校</h3><ul>${examples.map((example) => `<li><strong>${escapeHtml(example.text)}</strong><span>${escapeHtml(example.gloss)}</span></li>`).join("")}</ul></section>`;
+    return `<section class="panel-section teaching-examples"><h3>学习例句 · 编辑整理</h3><ul>${examples.map((example) => `<li><strong>${escapeHtml(example.text)}</strong><span>${escapeHtml(example.gloss)}</span></li>`).join("")}</ul></section>`;
   }
 
   function renderEditorialLearning(node) {
@@ -1057,7 +1048,7 @@
     if (!learning) return "";
     const collocations = learning.collocations || [];
     return `${collocations.length ? `<section class="panel-section collocation-section"><h3>常用搭配与固定表达</h3><ul class="collocation-list">${collocations.map((item) => `<li><strong>${escapeHtml(item.expression)}</strong><span>${escapeHtml(item.gloss)}</span></li>`).join("")}</ul></section>` : ""}
-      ${learning.etymology ? `<section class="panel-section etymology-section"><h3>词源线索 · 审校</h3><p>${escapeHtml(learning.etymology.text)}</p><small>${escapeHtml(learning.etymology.source)} · ${escapeHtml(learning.etymology.reviewedAt)}</small></section>` : ""}`;
+      ${learning.etymology ? `<section class="panel-section etymology-section"><h3>词源线索 · 编辑整理</h3><p>${escapeHtml(learning.etymology.text)}</p><small>${escapeHtml(learning.etymology.source)} · ${escapeHtml(learning.etymology.reviewedAt)}</small></section>` : ""}`;
   }
 
   function relationNotesFor(items) {
@@ -1076,7 +1067,9 @@
         examples: (() => {
           try {
             const parsed = JSON.parse(edge.examples || "[]");
-            return Array.isArray(parsed) ? parsed : [];
+            return Array.isArray(parsed)
+              ? parsed.map((entry) => (entry && typeof entry === "object" ? { fr: entry.fr || "", zh: entry.zh || "" } : { fr: String(entry || ""), zh: "" }))
+              : [];
           } catch {
             return [];
           }
@@ -1084,19 +1077,33 @@
       }));
   }
 
-  function renderReviewedRelationNotes(items) {
-    const notes = relationNotesFor(items);
-    if (!notes.length) return "";
-    return `<section class="panel-section contrast-section"><h3>用法区分 · 审校</h3>${notes.map((note) => `
-      <article class="contrast-note">
-        <p><strong>${escapeHtml(note.word)}</strong> · ${escapeHtml(note.label)}</p>
-        <p class="contrast-explanation">${escapeHtml(note.explanation)}</p>
-        ${note.examples?.length ? `<ul class="contrast-examples">${note.examples.map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}
+  function contrastNoteArticle(note) {
+    return `<article class="contrast-note">
+        <p class="contrast-explanation"><strong>${escapeHtml(note.word)}</strong> · ${escapeHtml(note.label)}</p>
+        <p class="contrast-explanation-fr">${escapeHtml(note.explanation)}</p>
+        ${note.examples?.length ? `<ul class="contrast-examples">${note.examples.map((example) => `<li>${escapeHtml(example.fr)}${example.zh ? `<span class="contrast-example-zh">${escapeHtml(example.zh)}</span>` : ""}</li>`).join("")}</ul>` : ""}
         <div class="contrast-actions">
           <button class="${isRelationSaved(note) ? "quiet-button" : "primary-button"}" type="button" data-review-relation="${escapeHtml(relationReviewKey(note))}">${isRelationSaved(note) ? "移出复习" : "加入复习"}</button>
         </div>
-      </article>
-    `).join("")}</section>`;
+      </article>`;
+  }
+
+  function renderReviewedRelationNotes(items) {
+    const notes = relationNotesFor(items);
+    if (!notes.length) return "";
+    // Historical/Latin-root word-family links are real, but they are not
+    // the same claim as a live usage contrast, so they get their own
+    // clearly-labeled area with an explicit caveat rather than sitting
+    // alongside "用法区分" as if they described modern usage.
+    const etymological = notes.filter((note) => String(note.dimension || "").includes("etymological"));
+    const usage = notes.filter((note) => !etymological.includes(note));
+    // The Chinese label is the primary explanation (it already states why
+    // the two words relate/differ); the French sentence is supplementary
+    // detail for learners who want it, not the only account.
+    return `
+      ${usage.length ? `<section class="panel-section contrast-section"><h3>用法区分 · 编辑整理</h3>${usage.map(contrastNoteArticle).join("")}</section>` : ""}
+      ${etymological.length ? `<section class="panel-section contrast-section etymology-relation-section"><h3>词源联系 · 编辑整理</h3><p class="candidate-note">历史同源关系，说明两个词共享词根，不代表现代法语中意思相近或可以互换。</p>${etymological.map(contrastNoteArticle).join("")}</section>` : ""}
+    `;
   }
 
   function openDraftCardForNode(node) {
@@ -1129,42 +1136,17 @@
       .sort((a, b) => b.weight - a.weight).slice(0, 5).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
     const badge = node.personal ? "我的词"
       : node.searchOnly ? `${node.level} 可检索学习词`
-      : node.status === "eligible" ? `${node.level} 主词表` : "因审查关系收录";
+      : node.status === "eligible" ? `${node.level} 主词表` : "因编辑整理关系收录";
     const saved = isSaved(node.id);
-    const relationCounts = {
-      reviewed: reviewed.length,
-      mine: mine.length,
-      form: form.length,
-      structural: structural.length,
-    };
-    const summary = wordCardTools?.summarizeWordCard({
-      senseGroups: GRAPH_SENSES[node.id] || [],
-      learning: GRAPH_LEARNING[node.id],
-      teachingExamples: teachingExamples[node.id] || [],
-      relationCounts,
-    }) || {
-      senseTotal: 0,
-      sensePreview: [],
-      collocationPreview: [],
-      teachingExamplePreview: [],
-      hasLearningCues: false,
-      relationTotal: Object.values(relationCounts).reduce((sum, count) => sum + count, 0),
-    };
     panelContent.innerHTML = `
       <header class="word-hero">
         <h1 class="word-title">${escapeHtml(node.word)}</h1>
         <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
-        <p class="content-status ${contentStatus[node.id] || "pending_definition"}">${contentStatus[node.id] === "has_definition" ? "词典状态 · 有法语定义" : "词典状态 · 待补定义"}</p>
         <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
+        <p class="content-status ${contentStatus[node.id] || "pending_definition"}">${contentStatus[node.id] === "has_definition" ? "词典状态 · 有法语定义" : "词典状态 · 待补定义"}</p>
       </header>
-      <div class="panel-quick-actions" role="group" aria-label="常用操作">
-        <button id="save-word-quick" class="${saved ? "quiet-button" : "primary-button"}" type="button">${saved ? "移出复习" : "加入复习"}</button>
-        <button id="draft-word-quick" class="quiet-button" type="button">我的词卡</button>
-      </div>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
       ${node.searchOnly ? `<section class="search-only-note"><strong>暂未建立学习关系</strong><span>这个词可搜索、查看义项并加入复习；它尚未进入关系图。</span></section>` : ""}
-      ${renderSenseSummary(summary)}
-      ${renderUsageSummary(summary)}
       <div class="learning-actions">
         <section class="learning-action" aria-label="复习设置">
           <div><span class="eyebrow">主动回忆</span><p>${saved ? `已加入学习循环 · ${formatDue(learning.saved[node.id].dueAt)}` : "把这个词留到下一次主动回忆"}</p></div>
@@ -1178,11 +1160,11 @@
       ${renderSenseGroups(node)}
       ${renderTeachingExamples(node)}
       ${renderEditorialLearning(node)}
-      ${reviewed.length ? `<section class="panel-section"><h3>经过审查的词汇关系</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : `<p class="empty-relations-note">这个词目前还没有经过审查的词汇关系。</p>`}
+      ${reviewed.length ? `<section class="panel-section"><h3>经过编辑整理的词汇关系</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : `<p class="empty-relations-note">这个词目前还没有经过编辑整理的词汇关系。</p>`}
       ${renderReviewedRelationNotes(reviewed)}
       ${mine.length ? `<section class="panel-section"><h3>我的关系</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${form.length ? `<details class="panel-section candidate-details"><summary>形音相近的自动候选（未经审查）</summary><p class="candidate-note">只是形近且音近，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
-      ${structural.length ? `<details class="panel-section candidate-details"><summary>构词相近的自动候选（未经审查）</summary><p class="candidate-note">来自词形结构的自动匹配，不等同于已审查的教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
+      ${form.length ? `<details class="panel-section candidate-details"><summary>形音相近的自动候选（未经编辑整理）</summary><p class="candidate-note">只是形近且音近，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
+      ${structural.length ? `<details class="panel-section candidate-details"><summary>构词相近的自动候选（未经编辑整理）</summary><p class="candidate-note">来自词形结构的自动匹配，不等同于已编辑整理的教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
       ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看更多自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
     `;
     panel.classList.remove("hidden");
@@ -1196,8 +1178,6 @@
     }));
     $("#save-word").addEventListener("click", () => { toggleSaved(node.id); renderPanel(node); });
     $("#draft-word").addEventListener("click", () => openDraftCardForNode(node));
-    $("#save-word-quick").addEventListener("click", () => { toggleSaved(node.id); renderPanel(node); });
-    $("#draft-word-quick").addEventListener("click", () => openDraftCardForNode(node));
   }
 
   let reviewIndex = 0;
@@ -1231,7 +1211,7 @@
       const saved = savedIds().length;
       const relationSaved = relationReviewEntries().length;
       const hasSaved = saved || relationSaved;
-      content.innerHTML = `<div class="review-empty"><p>${hasSaved ? "今天的复习已完成。" : "还没有学习词。"}</p><small>${hasSaved ? "到期的词条或关系会自动回到这里。" : "打开一个词条或审校关系后，选择“加入复习”。"}</small></div>`;
+      content.innerHTML = `<div class="review-empty"><p>${hasSaved ? "今天的复习已完成。" : "还没有学习词。"}</p><small>${hasSaved ? "到期的词条或关系会自动回到这里。" : "打开一个词条或编辑整理关系后，选择“加入复习”。"}</small></div>`;
       return;
     }
     if (reviewIndex >= entries.length) reviewIndex = 0;
@@ -1247,7 +1227,7 @@
       : entry.node.pos;
     const answer = isRelation
       ? `<div class="review-answer relation-review-answer">
-          <span>${escapeHtml(relationName)} · 审校说明</span>
+          <span>${escapeHtml(relationName)} · 编辑整理说明</span>
           <p><strong>${escapeHtml(entry.edge.label)}</strong></p>
           <p>${escapeHtml(entry.edge.explanation || "暂无说明")}</p>
           ${relationExamples(entry.edge.examples).length ? `<ul class="review-relation-examples">${relationExamples(entry.edge.examples).map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}
@@ -1255,7 +1235,7 @@
       : `<div class="review-answer"><span>中文提示</span><p>${escapeHtml(entry.node.gloss || "暂无")}</p>${entry.node.note ? `<p class="review-note">${escapeHtml(entry.node.note)}</p>` : ""}</div>`;
     content.innerHTML = `
       <p class="review-progress">到期 ${entries.length} 个 · 第 ${reviewIndex + 1} 个 · 已复习 ${record.reviews || 0} 次</p>
-      <p class="review-prompt">${isRelation ? "先回忆这两个词的区别和使用场景，再显示审校说明。" : "先主动回忆它的意思和用法，再显示提示。"}</p>
+      <p class="review-prompt">${isRelation ? "先回忆这两个词的区别和使用场景，再显示编辑整理说明。" : "先主动回忆它的意思和用法，再显示提示。"}</p>
       <h3>${escapeHtml(title)}</h3>
       <p class="review-pos">${escapeHtml(pos)}</p>
       ${reviewRevealed ? answer : ""}
@@ -1466,12 +1446,13 @@
     const officialCount = focusConnections
       .filter((edge) => edge.kind === "official")
       .reduce((total, edge) => total + (edge.relations?.length || 1), 0);
-    $("#stats").textContent = officialCount ? `${focusConnections.length} 个相关词 · ${officialCount} 条已审查关系` : "";
+    $("#stats").textContent = officialCount ? `${focusConnections.length} 个相关词 · ${officialCount} 条编辑整理关系` : "";
   }
 
   function showTooltip(node, event) {
     if (!node || selected && ["center", "direct"].includes(node.focusRole)) { tooltip.classList.add("hidden"); return; }
-    tooltip.innerHTML = `<strong>${escapeHtml(node.word)}</strong><span>${escapeHtml(node.gloss || node.pos)}</span>`;
+    const meta = node.personal ? "我的词" : [node.pos, node.level].filter(Boolean).join(" · ");
+    tooltip.innerHTML = `<strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(meta)}</em><span>${escapeHtml(node.gloss || "中文提示待补")}</span>`;
     tooltip.style.left = `${Math.min(window.innerWidth - 230, event.clientX + 13)}px`;
     tooltip.style.top = `${Math.min(window.innerHeight - 70, event.clientY + 13)}px`;
     tooltip.classList.remove("hidden");
@@ -1497,6 +1478,7 @@
   }
 
   canvas.addEventListener("pointerdown", (event) => {
+    stopOnboarding();
     activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
     canvas.setPointerCapture(event.pointerId);
     canvas.classList.add("dragging");
@@ -1552,7 +1534,7 @@
     dragging = false; canvas.classList.remove("dragging");
     if (!moved) {
       const hit = hitTest(event.clientX, event.clientY);
-      if (!hit && selected) { cloudRevealed = true; fitHome(); }
+      if (!hit && selected) fitHome();
       else if (hit?.focusRole === "background") enterFocus(hit.id, { resetTrail: true });
       else if (hit) enterFocus(hit.id);
     }
@@ -1575,6 +1557,7 @@
   }, { passive: false });
 
   function doSearch() {
+    stopOnboarding();
     const query = searchTools?.normalizeSearchText(search.value) || search.value.trim();
     $("#map-copy").classList.toggle("quiet", Boolean(query));
     if (!query) { searchResults.classList.add("hidden"); return; }
@@ -1642,11 +1625,11 @@
   $("#panel-close").addEventListener("click", () => {
     panel.classList.add("hidden");
     viewport.classList.remove("panel-open");
-    if (selected && focusCenter) animateView(focusViewTarget(focusCenter, focusScaleFor(focusConnections.length), false), 320);
+    if (selected) animateView(focusViewForIds([selected, ...focusConnections.map((edge) => edge.other)], false), 320);
   });
-  $("#reset").addEventListener("click", () => { cloudRevealed = true; fitHome(); });
-  $("#brand").addEventListener("click", (event) => { event.preventDefault(); cloudRevealed = true; fitHome(); });
-  $("#focus-back").addEventListener("click", () => { cloudRevealed = true; fitHome(); });
+  $("#reset").addEventListener("click", () => fitHome());
+  $("#brand").addEventListener("click", (event) => { event.preventDefault(); fitHome(); });
+  $("#focus-back").addEventListener("click", () => fitHome());
   $("#local-data-open").addEventListener("click", openLocalDataDialog);
   $("#local-data-close").addEventListener("click", closeLocalDataDialog);
   $("#local-data-mask").addEventListener("click", closeLocalDataDialog);
@@ -1701,4 +1684,5 @@
     window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
   }
   resize();
+  runOnboarding();
 })();

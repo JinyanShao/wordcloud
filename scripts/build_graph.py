@@ -278,6 +278,7 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
                 "label": edge.get("label") or relation,
                 "explanation": edge.get("explanation"),
                 "examples": edge.get("examples", []),
+                "example_glosses": edge.get("exampleGlosses", []),
                 "reviewer": edge.get("reviewer"),
                 "reviewed_at": edge.get("reviewedAt"),
                 "source_note": edge.get("source"),
@@ -570,6 +571,16 @@ def main() -> None:
 
     for item in official:
         reviewed = has_real_review_evidence(item)
+        examples = item.get("examples") or []
+        glosses = item.get("example_glosses") or []
+        # Pair each French example with its Chinese gloss when one exists,
+        # so learners see the relation's examples in Chinese, not just
+        # French. Falls back to a bare string when no gloss was reviewed
+        # for that example.
+        examples_payload = [
+            {"fr": fr, "zh": glosses[index]} if index < len(glosses) else fr
+            for index, fr in enumerate(examples)
+        ]
         cursor = conn.execute(
             """
             INSERT OR IGNORE INTO official_edges(
@@ -580,7 +591,7 @@ def main() -> None:
             (
                 item["a"], item["b"], item["relation"], item["dimension"], item["subtype"],
                 item["direction"], item["label"], item.get("explanation") or "",
-                json.dumps(item.get("examples", []), ensure_ascii=False), 0.9,
+                json.dumps(examples_payload, ensure_ascii=False), 0.9,
                 "reviewed" if reviewed else "sourced",
                 item.get("reviewed_at") if reviewed else None, CREATED_AT,
             ),

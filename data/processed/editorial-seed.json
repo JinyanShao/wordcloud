@@ -1658,7 +1658,11 @@
       ],
       "source": "FLE editorial review: modalite (capacite/permission vs obligation/necessite).",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-07-30"
+      "reviewedAt": "2026-07-30",
+      "exampleGlosses": [
+        "我明天可以来。",
+        "我明天必须来。"
+      ]
     },
     {
       "a": "venir",
@@ -1675,7 +1679,11 @@
       ],
       "source": "FLE editorial review: opposition deictique venir/aller.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-07-30"
+      "reviewedAt": "2026-07-30",
+      "exampleGlosses": [
+        "请过来这里。",
+        "请去那边。"
+      ]
     },
     {
       "a": "savoir",
@@ -1692,7 +1700,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我知道答案。",
+        "我熟悉这座城市。"
+      ]
     },
     {
       "a": "voir",
@@ -1709,7 +1721,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我看见一道光。",
+        "我在看这幅画。"
+      ]
     },
     {
       "a": "entendre",
@@ -1726,7 +1742,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我听见一个声音。",
+        "我在听收音机。"
+      ]
     },
     {
       "a": "dire",
@@ -1743,7 +1763,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "她说了声你好。",
+        "她在和保罗说话。"
+      ]
     },
     {
       "a": "vouloir",
@@ -1760,7 +1784,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE modal contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我想走。",
+        "我可以走。"
+      ]
     },
     {
       "a": "prendre",
@@ -1777,7 +1805,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire etymology check · FLE usage contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我拿起这本书。",
+        "我在学法语。"
+      ]
     },
     {
       "a": "faire",
@@ -1794,7 +1826,11 @@
       ],
       "source": "wordcloud editorial review · Démonette relation already sourced · FLE prefix check.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我做这个练习。",
+        "我重新做这个练习。"
+      ]
     },
     {
       "a": "mettre",
@@ -1811,7 +1847,11 @@
       ],
       "source": "wordcloud editorial review · Démonette relation already sourced · FLE prefix check.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我把书放在桌子上。",
+        "我把书放回原处。"
+      ]
     },
     {
       "a": "bon",
@@ -1828,7 +1868,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE grammar contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "这是一本好书。",
+        "她工作做得好。"
+      ]
     },
     {
       "a": "mauvais",
@@ -1845,7 +1889,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE grammar contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "这是一个糟糕的选择。",
+        "他睡得不好。"
+      ]
     },
     {
       "a": "aimer",
@@ -1862,7 +1910,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我喜欢这部电影。",
+        "我非常喜欢这部电影。"
+      ]
     },
     {
       "a": "aimer",
@@ -1879,7 +1931,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE antonym check.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我喜欢咖啡。",
+        "我讨厌咖啡。"
+      ]
     },
     {
       "a": "entrer",
@@ -1896,7 +1952,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE motion contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "她走进房间。",
+        "她回家了。"
+      ]
     },
     {
       "a": "partir",
@@ -1913,7 +1973,11 @@
       ],
       "source": "wordcloud editorial review · existing reviewed prototype relation · FLE motion contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我八点出发。",
+        "我从家里出去。"
+      ]
     },
     {
       "a": "chercher",
@@ -1930,7 +1994,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE usage contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我在找我的钥匙。",
+        "我找到了我的钥匙。"
+      ]
     },
     {
       "a": "comprendre",
@@ -1947,7 +2015,11 @@
       ],
       "source": "wordcloud editorial review · Wiktionnaire/DBnary lexical entries · FLE learning contrast.",
       "reviewer": "wordcloud editorial",
-      "reviewedAt": "2026-08-04"
+      "reviewedAt": "2026-08-04",
+      "exampleGlosses": [
+        "我在学一条规则。",
+        "我理解这条规则。"
+      ]
     }
   ],
   "editorialTeachingExamples": [

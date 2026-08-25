@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#" id="brand" aria-label="返回全图">
+    <a class="brand" href="#" id="brand" aria-label="返回词网">
       <span>Wordcloud</span>
       <small>法语词网</small>
     </a>
@@ -25,7 +25,7 @@
       <button id="learning-progress-open" class="quiet-button" type="button" aria-label="打开学习进度" title="打开学习进度">学习进度</button>
       <button id="draft-open" class="quiet-button" type="button">我的词卡</button>
       <button id="review-open" class="quiet-button review-open" type="button">复习 <span id="review-count">0</span></button>
-      <button id="reset" class="quiet-button" type="button">全图</button>
+      <button id="reset" class="quiet-button" type="button">重置视图</button>
       <button id="legend-open-mobile" class="quiet-button legend-mobile-open" type="button" aria-haspopup="true" aria-expanded="false">图例</button>
     </div>
   </header>
@@ -34,7 +34,7 @@
     <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
     <div class="map-copy" id="map-copy">
       <p class="map-copy-intro">搜索一个法语词，查看词义、构词和用法区别</p>
-      <p class="map-copy-meta">关系经过人工审查 · 没有可靠关系时会明确说明，不会用自动候选填满页面</p>
+      <p class="map-copy-meta">关系经过编辑整理 · 没有可靠关系时会明确说明，不会用自动候选填满页面</p>
       <div class="example-chips" role="group" aria-label="示例词，点击直接打开">
         <span class="example-chips-label">试试</span>
         <button type="button" class="example-chip" data-example-word="faire">faire</button>
@@ -43,7 +43,7 @@
       </div>
     </div>
     <nav id="focus-bar" class="focus-bar hidden" aria-label="探索路径">
-      <button id="focus-back" type="button" aria-label="返回全图" title="返回全图">←</button>
+      <button id="focus-back" type="button" aria-label="返回词网" title="返回词网">←</button>
       <div id="trail"></div>
     </nav>
     <div id="tooltip" class="tooltip hidden"></div>
@@ -53,8 +53,8 @@
       <button id="legend-toggle" type="button" aria-expanded="false">图的语言</button>
       <div id="legend-body" class="legend-body hidden">
         <p><i class="radial-key"></i><span>中心常用 · 外围进阶<br><small>半径由等级与频率决定</small></span></p>
-        <p><i class="line layout"></i><span>词群线索<br><small>只影响位置，不代表任何词汇关系</small></span></p>
-        <p><i class="line official"></i><span>经过人工审查的词汇关系</span></p>
+        <p><i class="line layout"></i><span>浅灰色的地图连线<br><small>仅用于组织地图，不代表近义、派生或可互换</small></span></p>
+        <p><i class="line official"></i><span>经过编辑整理的词汇关系</span></p>
         <p><i class="line personal"></i><span>我的词与关系</span></p>
         <div id="legend-relations" class="legend-relations" role="list" aria-label="关系颜色"></div>
         <p class="source">FLELex · Lexique 4 · Démonette 2<br>Wiktionnaire / DBnary · CFDICT</p>
@@ -174,8 +174,8 @@
     </section>
   </div>
 
-  <script src="graph-data.js?v=7bb153e67bf3"></script>
-  <script src="app.js?v=7bb153e67bf3"></script>
+  <script src="graph-data.js?v=5bdca13f8377"></script>
+  <script src="app.js?v=5bdca13f8377"></script>
   <script src="src/draft-ui.js"></script>
 </body>
 </html>
