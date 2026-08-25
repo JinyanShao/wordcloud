@@ -207,12 +207,29 @@ function wrapAngle(angle) {
 // equivalent of a repulsion force that can't leak into the radial axis.
 // Fully deterministic: fixed iteration order, no Math.random (only the
 // existing stableUnit hash, for the zero-distance fallback direction).
+// Math.cos/Math.sin are IEEE 754-accurate but not bit-identical across CPU
+// architectures (their last-bit rounding is implementation-defined, unlike
+// +,-,*,/ which the standard requires to be exact) -- normally a ~1e-15
+// difference that rounds away to nothing, but declumpAngles runs the same
+// hard "dist >= minDist" threshold for 220 iterations, so on the rare pair
+// that lands almost exactly on that boundary, a 1e-15 difference is enough
+// to flip which side of it two platforms land on, and 220 iterations is
+// long enough for that single flip to cascade into a visibly different
+// final layout. Quantizing every cos/sin-derived coordinate to 1e-6 world
+// units (five to six orders of magnitude coarser than that noise, and far
+// finer than anything visible at this map's scale) makes the threshold
+// decision itself platform-independent, which is what CI's from-scratch
+// rebuild diff actually needs to match bit-for-bit.
+function quantize(value) {
+  return Math.round(value * 1e6) / 1e6;
+}
+
 function declumpAngles(items, { minDist = 48, iterations = 220, damping = 0.6 } = {}) {
   const cellSize = minDist;
   for (let iter = 0; iter < iterations; iter += 1) {
     const cart = items.map((item) => ({
-      x: Math.cos(item.angle) * item.radius,
-      y: Math.sin(item.angle) * item.radius,
+      x: quantize(Math.cos(item.angle) * item.radius),
+      y: quantize(Math.sin(item.angle) * item.radius),
     }));
     const grid = new Map();
     cart.forEach((point, index) => {
@@ -257,10 +274,10 @@ function declumpAngles(items, { minDist = 48, iterations = 220, damping = 0.6 } 
     for (let index = 0; index < items.length; index += 1) {
       if (!pushX[index] && !pushY[index]) continue;
       const item = items[index];
-      const tangentX = -Math.sin(item.angle), tangentY = Math.cos(item.angle);
+      const tangentX = quantize(-Math.sin(item.angle)), tangentY = quantize(Math.cos(item.angle));
       const tangential = pushX[index] * tangentX + pushY[index] * tangentY;
       const arcShift = (tangential / Math.max(item.radius, 1)) * damping;
-      item.angle = wrapAngle(item.angle + arcShift);
+      item.angle = quantize(wrapAngle(item.angle + arcShift));
     }
   }
 }
