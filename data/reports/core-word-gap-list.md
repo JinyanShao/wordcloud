@@ -5,26 +5,26 @@
 ## 总览
 
 - eligible 主词：7,338
-- 存在至少一类缺口的词：7,265（99.0%）
+- 存在至少一类缺口的词：7,262（99.0%）
 - 本轮核心词目标：1,000 个，按缺口优先级与频率排序取前 1,000
 
 | 优先级 | 缺口类型 | 全部 | 进入核心词 |
 |---|---|---:|---:|
-| P1_no_official | 高频且没有任何官方关系 | 2,900 | 1,000 |
-| P2_single_edge | 高频且只有一条官方关系 | 2,345 | 0 |
-| P3_bridge | 多义项桥接词（义项多、连接少） | 631 | 0 |
-| P4_confusable | 易混淆候选（有形音候选、无正式 trap/compare） | 1,387 | 0 |
-| P5_b2c1_synset | B2–C1 近义集合缺口（有义项、无近/反义边） | 2 | 0 |
+| P1_no_official | 高频且没有任何官方关系 | 2,899 | 1,000 |
+| P2_single_edge | 高频且只有一条官方关系 | 2,344 | 0 |
+| P3_bridge | 多义项桥接词（义项多、连接少） | 632 | 0 |
+| P4_confusable | 易混淆候选（有形音候选、无正式 trap/compare） | 1,384 | 0 |
+| P5_b2c1_synset | B2–C1 近义集合缺口（有义项、无近/反义边） | 3 | 0 |
 
 一词可命中多类缺口；命中各类的总词数（不限主桶）如下：
 
 | 缺口类型 | 命中词数（含非主桶） |
 |---|---:|
-| P1_no_official | 2,900 |
-| P2_single_edge | 2,345 |
-| P3_bridge | 2,682 |
-| P4_confusable | 6,816 |
-| P5_b2c1_synset | 3,510 |
+| P1_no_official | 2,899 |
+| P2_single_edge | 2,344 |
+| P3_bridge | 2,681 |
+| P4_confusable | 6,810 |
+| P5_b2c1_synset | 3,509 |
 
 ## 判定规则
 
@@ -67,7 +67,6 @@
 | être | VER | A1 | 28371.5 | syn×1 | 是；处于 |
 | avoir | VER | A1 | 19212.1 | syn×1 | 有；拥有 |
 | venir | VER | A1 | 1547.0 | other×1 | 来；来到 |
-| demander | VER | A1 | 1037.2 | fam×1 | 请求；问 |
 | pauvre | ADJ | B1 | 139.2 | fam×1 | 可怜；困苦 |
 | état | NOM | B1 | 123.0 | syn×1 | 国家；国度 |
 | commissaire | NOM | B1 | 117.9 | fam×1 | 专员；总监 |
@@ -84,3 +83,4 @@
 | comportement | NOM | B1 | 72.9 | fam×1 | 为人；习性 |
 | majorité | NOM | B1 | 70.4 | fam×1 | 大多数 |
 | planète | NOM | B1 | 69.9 | fam×1 | 地球；星球 |
+| atteindre | VER | B1 | 67.6 | fam×1 | 击中；到达 |

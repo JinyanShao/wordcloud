@@ -2020,6 +2020,126 @@
         "我在学一条规则。",
         "我理解这条规则。"
       ]
+    },
+    {
+      "a": "partir",
+      "aPos": "VER",
+      "b": "rester",
+      "bPos": "VER",
+      "type": "ant",
+      "dimension": "departure-stay-polarity",
+      "label": "在“离开某地/留在某地”的空间义项上，partir 与 rester 是反义词；这一关系仅限定在该空间义项。",
+      "explanation": "Dans le sens spatial de partir I.1a (quitter un lieu) et rester I (demeurer dans un lieu), les deux verbes décrivent des situations opposées. Cette relation d'antonymie est limitée à ce sens spatial précis et ne couvre pas nécessairement d'autres emplois de partir (ex. partir faire quelque chose) ou de rester (ex. rester + attribut, comme dans rester calme).",
+      "examples": [
+        "Léa part en vacances lundi.",
+        "Son frère reste à la maison.",
+        "Léa part, mais son frère reste."
+      ],
+      "exampleGlosses": [
+        "莱雅周一出发去度假。",
+        "她哥哥留在家里。",
+        "莱雅离开了，但她哥哥留下了。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · RL-fr V3.2 Lexical Function Anti (partir I.1a = ls:fr:node:28671 <-> rester I = ls:fr:node:29225, standardness=simple standard) · corroborated_by_existing_signal: edge_candidates row partir<->rester, relation=ant, signal=semantic, weight=0.86, source_id=dbnary_fr, status=sourced (independent DBnary antonym signal, not just the RL-fr link) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not RL-fr's literary citations.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "faire",
+      "aPos": "VER",
+      "b": "fabriquer",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "creation-manufacture-scope",
+      "label": "在“制作具体物品”的语境下，faire 与 fabriquer 可能重合；fabriquer 更明确强调制造、生产的过程。",
+      "explanation": "Faire est un verbe très général et polysémique ; l'un de ses emplois recouvre la fabrication d'un objet concret (faire I.1). Fabriquer désigne spécifiquement le fait de produire ou de fabriquer un objet matériel, en mettant l'accent sur le processus de production. Dans ce sens précis, les deux verbes peuvent se recouper, mais faire reste par ailleurs un verbe généraliste qui couvre de nombreux autres emplois sans rapport avec la fabrication (faire du sport, faire une erreur, etc.), où fabriquer ne s'applique pas.",
+      "examples": [
+        "Cet artisan fait des chaises en bois.",
+        "Cet artisan fabrique des chaises en bois.",
+        "Elle fait du sport tous les matins."
+      ],
+      "exampleGlosses": [
+        "这位工匠做木椅子。",
+        "这位工匠制作木椅子。",
+        "她每天早上做运动。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · RL-fr V3.2 Lexical Function Syn_∩ (faire I.1 = ls:fr:node:27494 <-> fabriquer = ls:fr:node:27480, standardness=simple standard) · corroborated_by_existing_signal: none found in edge_candidates/official_edges for faire<->fabriquer — score component correctly recorded as 0, no independent corroboration beyond the RL-fr link itself · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not RL-fr's literary citations.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "aimer",
+      "aPos": "VER",
+      "b": "apprécier",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "affection-appraisal-intensity",
+      "label": "aimer 既可以是日常的喜欢，也可以是爱；apprécier 表示喜欢、认可某事物，或认为它有价值，但通常不用来表达情侣间的爱情。二者在“喜欢”这一义项上有重叠，不是简单的强弱关系。",
+      "explanation": "Aimer couvre un large spectre : du simple goût pour une chose (aimer un plat, un lieu) jusqu'à l'amour entre personnes. Apprécier exprime le fait de trouver quelque chose agréable, de le reconnaître comme ayant de la valeur, ou de porter un jugement positif dessus. Dans le sens où aimer I.2 (goûter, trouver agréable) rejoint apprécier II, les deux verbes se recoupent et sont souvent interchangeables pour parler d'un lieu, d'un plat ou d'une activité. Apprécier ne convient en revanche pas pour exprimer l'amour entre personnes, registre propre à aimer ; ce n'est pas simplement une version « plus faible » ou « plus retenue » d'aimer, mais un verbe au sens distinct (reconnaissance de valeur/qualité) qui recoupe partiellement le sien.",
+      "examples": [
+        "J'aime beaucoup ce restaurant.",
+        "J'apprécie beaucoup ce restaurant.",
+        "Il aime sa femme depuis vingt ans."
+      ],
+      "exampleGlosses": [
+        "我很喜欢这家餐厅。",
+        "我对这家餐厅评价很高。",
+        "他爱他的妻子已经二十年了。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · RL-fr V3.2 Lexical Function Syn_∩ (aimer I.2 = ls:fr:node:54751 <-> apprécier II = ls:fr:node:30098, standardness=simple standard) · corroborated_by_existing_signal: edge_candidates row aimer<->apprécier, relation=syn, signal=semantic, weight=0.96, source_id=dbnary_fr, status=sourced (independent DBnary synonym signal, not just the RL-fr link) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not RL-fr's literary citations.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "demander",
+      "aPos": "VER",
+      "b": "solliciter",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "request-register-formality",
+      "label": "demander 兼有“询问”和“请求”两种用法；solliciter 只用于郑重地向某人或机构请求帮助、许可、会面等，并非简单地等于“更正式的 demander”。",
+      "explanation": "Demander a deux emplois principaux : poser une question (demander l'heure) et formuler une requête (demander un service, un rendez-vous). Solliciter est plus restreint : il s'utilise pour demander formellement une aide, un soutien, une autorisation, un entretien, etc., à une personne ou une institution, dans un registre soutenu ou administratif. Solliciter ne couvre donc pas l'emploi de demander au sens de « poser une question », et ne se limite pas à être une simple variante plus formelle de demander — c'est un verbe dont le champ d'emploi est structurellement plus étroit.",
+      "examples": [
+        "Elle a demandé un rendez-vous avec le directeur.",
+        "Elle a sollicité un rendez-vous avec le directeur.",
+        "L'enfant demande l'heure à sa mère."
+      ],
+      "exampleGlosses": [
+        "她向主任请求了一次会面。",
+        "她正式向主任请求了一次会面。",
+        "孩子向妈妈问几点了。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · RL-fr V3.2 Lexical Function Syn_∩ (demander III.1 = ls:fr:node:41512 <-> solliciter = ls:fr:node:53256, standardness=simple standard) · corroborated_by_existing_signal: edge_candidates row demander<->solliciter, relation=syn, signal=semantic, weight=0.707, source_id=cfdict_reverse_local, status=candidate — this is a heuristic reverse-dictionary match, NOT a sourced/reviewed independent confirmation; weaker evidence than a DBnary-sourced signal, noted honestly rather than treated as equal-strength corroboration · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not RL-fr's literary citations.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "mettre",
+      "aPos": "VER",
+      "b": "enfiler",
+      "bPos": "VER",
+      "type": "compare",
+      "dimension": "placement-scope-clothing",
+      "label": "mettre 泛指“放置、穿戴”，适用范围很广；enfiler 专指“套上、穿上”（可以套在身体部位上的衣物），范围更窄，仅限于这一具体义项对应的搭配。",
+      "explanation": "Dans le sens de mettre I.2a (revêtir un vêtement) et enfiler II (passer un vêtement ou glisser un membre dedans), les deux verbes se recoupent pour les vêtements qu'on enfile (des bas, un pantalon, des gants, un manteau, un pardessus, un pull). En dehors de ce sens précis, mettre reste un verbe beaucoup plus général (placer, poser, porter en général) qui n'a pas cette limitation, et enfiler ne peut pas le remplacer pour des objets qu'on ne fait pas glisser sur soi comme un vêtement.",
+      "examples": [
+        "Il met son manteau avant de sortir.",
+        "Il enfile son manteau avant de sortir.",
+        "Elle met la clé sur la table."
+      ],
+      "exampleGlosses": [
+        "他出门前穿上大衣。",
+        "他出门前套上大衣。",
+        "她把钥匙放在桌子上。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · RL-fr V3.2 Lexical Function Syn_∩ (mettre I.2a = ls:fr:node:30324 <-> enfiler II = ls:fr:node:38561, standardness=simple standard) · correction: an earlier version of this note incorrectly claimed the project's DBnary senses for enfiler lacked a clothing meaning. That was based on a truncated LIMIT-3 query. The full DBnary sense list has 11 entries; sense 10 (\"Mettre, passer un membre allongé... dans un vêtement (ex: des bas, un pantalon, des gants)\") and sense 11 (\"Mettre, passer un vêtement rapidement (ex: un manteau, un pardessus, un pull)\") do cover this exact clothing usage — sense 11 independently cites \"manteau\" as its own dictionary example, matching this relation's example word choice. No sense-gap exists; the word card for enfiler is not missing this meaning, though it is sense #11 of 11 in dictionary order and so appears only after expanding the collapsed \"词典原文\" list, not in the 3-item preview shown by default (a pre-existing, project-wide rendering behavior — first-N-by-source-order preview — not specific to this relation) · corroborated_by_existing_signal: edge_candidates row enfiler<->mettre, relation=syn, signal=semantic, weight=1.0, source_id=cfdict_reverse_local, status=candidate — a heuristic reverse-dictionary match, NOT a sourced/reviewed independent confirmation; weaker evidence than a DBnary-sourced signal, noted honestly rather than treated as equal-strength corroboration · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not RL-fr's literary citations.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
     }
   ],
   "editorialTeachingExamples": [
