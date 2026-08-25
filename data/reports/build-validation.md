@@ -25,7 +25,7 @@
 | 中文释义相似只保留为候选 | 通过 | CFDICT candidates=3,484; visible semantic layout=2,769 (DBnary only) |
 | 语义样例与多义词回归 | 通过 | poli↔respectueux syn=1 (expected 1), poli↔impoli ant=1 (expected 1), seau↔nager syn=0 (expected 0), poli entries/senses=2/4 |
 | 主词与支撑词分账 | 通过 | eligible=7,338, support=66, rendered=7,404 |
-| 静态运行时已导出 | 通过 | graph-data.js=17,458,781 bytes |
+| 静态运行时已导出 | 通过 | graph-data.js=17,460,135 bytes |
 | 前端不再依赖 CLUSTERS | 通过 | canvas 读取 graph-data.js 固定坐标 |
 | 学习表层已导出 | 通过 | 词源、搭配、DBnary 义项例句与可检索学习词进入静态运行时 |
 | 运行时图数据缓存按内容版本化 | 通过 | index.html 与 Service Worker 均引用当前 graph-data.js SHA-256 版本 |

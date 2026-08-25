@@ -66,6 +66,22 @@ def turtle_text(raw: str) -> str:
         return raw.replace(r'\"', '"').replace(r"\n", " ").replace(r"\t", " ").replace("\\\\", "\\")
 
 
+# DBnary occasionally prepends a stray numbered cross-reference fragment
+# before the real definition, e.g. "Faire (2) à manger.\n Créer, produire,
+# fabriquer, en parlant de toute œuvre matérielle." (the "(2)" is
+# Wiktionnaire's numbered-example citation marker, not part of the gloss).
+# Strip that leading fragment up to the first newline and keep only the
+# real definition that follows, unaltered.
+DEFINITION_CITATION_PREFIX_RE = re.compile(
+    r"^[A-ZÀ-Ý][\w'À-ÖØ-öø-ÿ-]*(?: [a-zà-öø-ÿ][\w'À-ÖØ-öø-ÿ-]*){0,2} \(\d+\)[^\n]*\n\s*"
+)
+
+
+def clean_definition(text: str) -> str:
+    match = DEFINITION_CITATION_PREFIX_RE.match(text)
+    return text[match.end():].strip() if match else text
+
+
 def stream_blocks(path: Path):
     block: list[str] = []
     with bz2.open(path, "rt", encoding="utf-8") as stream:
@@ -221,7 +237,7 @@ def analyze(
             "entry_id": entry_id,
             "lexeme_id": int(entries[entry_id]["lexeme_id"]),
             "sense_number": turtle_text(number_match.group(1)) if number_match else "?",
-            "definition_fr": turtle_text(definition_match.group(1)),
+            "definition_fr": clean_definition(turtle_text(definition_match.group(1))),
             "examples": examples,
         }
 

@@ -60,8 +60,7 @@ includesAll("app.js", app, [
   "summarizeLearningProgress",
   "wordcloud.learning.v1",
   "searchLexemes",
-  "cloudRevealed",
-  "这个词目前还没有经过审查的词汇关系",
+  "这个词目前还没有经过编辑整理的词汇关系",
 ]);
 assert.ok(
   !app.includes("...strongFormFor(id), ...strongStructuralFor(id)"),
