@@ -38,13 +38,13 @@
     "scripts/write_build_manifest.py": "55b8b1f2fed9200989ba9ff2b51d0e683a9fd8313d83f51f9f9c02e79b5f821e",
     "scripts/browser_acceptance_smoke.mjs": "2ab3d85b89e511fcf28b269a190eacd72f32f4422d9dcb036bffe72cd1b58f50",
     "scripts/extract_seed.mjs": "331057e93fa4e3c897de12016660f9d84f2090c96e1c0a0a8bab6e031d9f6068",
-    "scripts/layout.mjs": "3921cac9ef4cdf6ef06687e9e6318fac94352bc41e5732c7a2dbc2e6a66daf2b",
+    "scripts/layout.mjs": "222d1dc7f8a44ca0803c1242aaba12c8ffc920dccc6d681df61a25feaeee15fd",
     "scripts/package_static_release.mjs": "4865ad9e3754d0cfd0bc4eb45f2a7aab8afecba71a6cfd3f4138f2f25b3cfa78"
   },
   "outputs": {
-    "graph-data.js": "0ba3666415f9eb61b821e0370e3176ee441f1f614aae649a2a5fcb18042bd6cd",
+    "graph-data.js": "4e3f93985fad5d296a87de8c81e40e22b96bb71962b1ba65c109df06f043fbf1",
     "data/processed/eligible-lexicon.csv": "0b118f3d51fde3382fa948e8139e8fdaa89aec4682b6c9c130e8729b81844b65",
-    "data/reports/build-validation.md": "e5b5069e6c598249414e4948f67587e250444a2db8451342288cbc96386b8709",
+    "data/reports/build-validation.md": "42f21d0f4df2e2f9e5515eb6b263e059fa434dc344da0a36f32d8be6621ebcb7",
     "data/reports/core-word-gap-list.csv": "f455a75f080b3177432ecdd9fc7d3aac4e3489a6f0068af5cfd929ec4bd73ab3",
     "data/reports/core-word-gap-list.md": "407c9e294a4e40781cb02a37d3f7e7bdd50fea7631d64ca32b587c5ddbb7ad3e"
   }

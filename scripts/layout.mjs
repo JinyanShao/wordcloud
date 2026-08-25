@@ -196,7 +196,76 @@ function wrapAngle(angle) {
   return angle;
 }
 
-const positions = [];
+// Radius (CEFR/frequency) and angle (ForceAtlas2 community pull) are chosen
+// independently, so two nodes can legitimately land almost on top of each
+// other -- most visibly for strongly-pulled pairs like editorial relations,
+// but measurably for ~1% of all edges. This pass only ever adjusts angle: it
+// never touches radius, so "radius = learning progression" stays exactly
+// true. It repeatedly finds node pairs closer than MIN_DIST world units
+// (via a spatial hash grid, so it stays fast at 7k+ nodes) and nudges each
+// one along its own tangential direction, away from the other -- the polar
+// equivalent of a repulsion force that can't leak into the radial axis.
+// Fully deterministic: fixed iteration order, no Math.random (only the
+// existing stableUnit hash, for the zero-distance fallback direction).
+function declumpAngles(items, { minDist = 48, iterations = 220, damping = 0.6 } = {}) {
+  const cellSize = minDist;
+  for (let iter = 0; iter < iterations; iter += 1) {
+    const cart = items.map((item) => ({
+      x: Math.cos(item.angle) * item.radius,
+      y: Math.sin(item.angle) * item.radius,
+    }));
+    const grid = new Map();
+    cart.forEach((point, index) => {
+      const cellKey = `${Math.floor(point.x / cellSize)}:${Math.floor(point.y / cellSize)}`;
+      if (!grid.has(cellKey)) grid.set(cellKey, []);
+      grid.get(cellKey).push(index);
+    });
+    const pushX = new Array(items.length).fill(0);
+    const pushY = new Array(items.length).fill(0);
+    let violations = 0;
+    for (let index = 0; index < items.length; index += 1) {
+      const point = cart[index];
+      const cx = Math.floor(point.x / cellSize);
+      const cy = Math.floor(point.y / cellSize);
+      for (let dx = -1; dx <= 1; dx += 1) {
+        for (let dy = -1; dy <= 1; dy += 1) {
+          const bucket = grid.get(`${cx + dx}:${cy + dy}`);
+          if (!bucket) continue;
+          for (const j of bucket) {
+            if (j <= index) continue;
+            const other = cart[j];
+            let ddx = other.x - point.x;
+            let ddy = other.y - point.y;
+            let dist = Math.hypot(ddx, ddy);
+            if (dist >= minDist) continue;
+            violations += 1;
+            if (dist < 1e-6) {
+              const fallback = stableUnit(`${items[index].key}:${items[j].key}`, "declump-fallback") * Math.PI * 2;
+              ddx = Math.cos(fallback);
+              ddy = Math.sin(fallback);
+              dist = 1;
+            }
+            const nx = ddx / dist, ny = ddy / dist;
+            const overlap = (minDist - dist) * 0.5;
+            pushX[index] -= nx * overlap; pushY[index] -= ny * overlap;
+            pushX[j] += nx * overlap; pushY[j] += ny * overlap;
+          }
+        }
+      }
+    }
+    if (!violations) break;
+    for (let index = 0; index < items.length; index += 1) {
+      if (!pushX[index] && !pushY[index]) continue;
+      const item = items[index];
+      const tangentX = -Math.sin(item.angle), tangentY = Math.cos(item.angle);
+      const tangential = pushX[index] * tangentX + pushY[index] * tangentY;
+      const arcShift = (tangential / Math.max(item.radius, 1)) * damping;
+      item.angle = wrapAngle(item.angle + arcShift);
+    }
+  }
+}
+
+const angleItems = [];
 graph.forEachNode((key, attributes) => {
   const community = attributes.community ?? 0;
   const stat = communityStats.get(community);
@@ -208,12 +277,18 @@ graph.forEachNode((key, attributes) => {
     const communityAngle = Math.atan2(stat.y - forceCenter.y, stat.x - forceCenter.x);
     angle = communityAngle + wrapAngle(nodeAngle - communityAngle) * 0.72;
   }
-  const radius = radiusByNode.get(key);
+  angleItems.push({ key, angle, radius: radiusByNode.get(key) });
+});
+
+declumpAngles(angleItems);
+
+const positions = [];
+angleItems.forEach(({ key, angle, radius }) => {
   positions.push({
     id: Number(key),
     x: Math.round(Math.cos(angle) * radius * 1000) / 1000,
     y: Math.round(Math.sin(angle) * radius * 1000) / 1000,
-    community: Number(community),
+    community: Number(graph.getNodeAttribute(key, "community") ?? 0),
     degree: graph.degree(key),
     weightedDegree: Math.round(graph.reduceEdges(key, (sum, _edge, attrs) => sum + (attrs.weight ?? 1), 0) * 100000) / 100000,
     radius: Math.round(radius * 1000) / 1000,
