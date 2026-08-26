@@ -8,7 +8,7 @@
   "inputs": {
     "data/sources.json": "ec8d4a8d2ec00da7156f9ebd823e17135d65e55d9e65340d4b27ecf3fa796608",
     "data/audit-review-v1.json": "6c8547b27790d5e668d68c484a17efe8b1f3630aae9f2e12aa6c579365174a98",
-    "data/processed/editorial-seed.json": "ddce9ade5215c838b6387dc2248c6796ac6bb9ec9921fdc0015541010d8b4084",
+    "data/processed/editorial-seed.json": "04c143afd1bd471d98abf5bb1f5bc62ee89752103312322a5a8a883c1d1c3a6c",
     "data.js": "d3296c0b316e7fb23b9d77d970211eff42e04b8e133152ef8678a2410a58bd36",
     "dict.js": "78086b74ac024eef789af672af267430dd5e495a5df33cea939b079efdc38f1b",
     "sql/schema.sql": "bc17da194779dab8ba59e6d1ea3bf7223d17bc83e7ed1206808f00147055f366",
@@ -42,9 +42,9 @@
     "scripts/package_static_release.mjs": "c0addb32f40b34c710762b91bea2832ed2080843c7c64d7dbcbcc8de83d1b7d9"
   },
   "outputs": {
-    "graph-data.js": "e89a72752e0675a0ea3d59f4168d7f8fd9024028af29d6810dcefdc6a7f15ed1",
+    "graph-data.js": "de076933d413a5c14a7b0b3b02c44429b5d3db7f2f8106dc49a0bc0fa9dd0eb6",
     "data/processed/eligible-lexicon.csv": "0b118f3d51fde3382fa948e8139e8fdaa89aec4682b6c9c130e8729b81844b65",
-    "data/reports/build-validation.md": "16fd427fea54d860bcf5430ee90c88e8ced2586cebda12f97723514c167ce3d5",
+    "data/reports/build-validation.md": "ad20ba03c2b18f81f67794926256c83128de66d25850884374725c08da2285b5",
     "data/reports/core-word-gap-list.csv": "f455a75f080b3177432ecdd9fc7d3aac4e3489a6f0068af5cfd929ec4bd73ab3",
     "data/reports/core-word-gap-list.md": "407c9e294a4e40781cb02a37d3f7e7bdd50fea7631d64ca32b587c5ddbb7ad3e"
   }
