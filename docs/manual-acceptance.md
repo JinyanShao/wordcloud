@@ -11,25 +11,22 @@ python3 -m http.server 8123
 
 ## 桌面验收
 
-1. 首页加载后能看到词网 canvas、搜索框、`本地数据`、`学习进度`、`我的词卡`、`复习`、`全图`。
+1. 首页加载后能看到词网 canvas、搜索框、`本地数据`、`我的词卡`、`重置视图`。
 2. 搜索 `faire`，结果中出现 `faire`，点击后右侧中心词卡打开。
-3. 中心词卡首屏先显示法语词、词性、中文提示、法语释义摘要、常用搭配/例句入口、关系入口。
-4. 点击中心词卡里的 `加入 / 打开`，打开 `我的词卡`，并自动创建或定位当前词。
+3. 中心词卡首屏先显示法语词、词性、中文提示、关系绑定的具体法语义项、常用搭配/例句入口、关系入口。
+4. 点击中心词卡里的 `我的词卡 · 加入 / 打开`，打开 `我的词卡`，并自动创建或定位当前词。
 5. 在 `我的词卡` 中编辑中文提示和备注，保存后刷新页面，重新打开仍存在。
 6. 搜索 `suis`，结果显示 `être`，并标明词形匹配。
 7. 搜索 `fiare`，没有精确匹配时显示相近拼写建议。
-8. 点击 `复习`，弹窗打开；如果没有学习词，显示空状态；加入复习后可看到到期提示。
-9. 点击左下角 `图的语言`，展开后能看到来源名、非商业来源提醒和本地保存提醒。
-10. 点击 `本地数据`，弹窗显示隐私、导出、来源许可说明，以及复习、我的词网、我的词卡三类边界。
-11. 点击 `学习进度`，弹窗显示累计完成、已加入、到期、7 天内到期、词条/关系分类、最近复习和探索路径。
-12. 点击 `生成导出 JSON`，只读文本框中出现 JSON，包含 `learning`、`personal`、`draftCards`。
+8. 点击左下角 `图的语言`，展开后能看到来源名、非商业来源提醒和本地保存提醒。
+9. 点击 `本地数据`，弹窗显示隐私、导出、来源许可说明，以及我的词网、我的词卡两类边界。
+10. 点击 `生成导出 JSON`，只读文本框中出现 JSON，包含 `personal`、`draftCards`。
 
 ## 损坏数据验收
 
 在浏览器 DevTools Console 中执行：
 
 ```js
-localStorage.setItem("wordcloud.learning.v1", "{bad json");
 localStorage.setItem("wordcloud.personal.v2", JSON.stringify({ nodes: {}, edges: [] }));
 localStorage.setItem("wordcloud.draft_cards.v1", JSON.stringify({ drafts: {} }));
 location.reload();
@@ -44,7 +41,6 @@ location.reload();
 验收后可清理本地测试数据：
 
 ```js
-localStorage.removeItem("wordcloud.learning.v1");
 localStorage.removeItem("wordcloud.personal.v2");
 localStorage.removeItem("wordcloud.draft_cards.v1");
 location.reload();
@@ -57,7 +53,7 @@ location.reload();
 1. 顶部操作区仍可点击，不遮挡搜索框。
 2. 搜索结果不超出屏幕。
 3. 中心词卡从底部弹出，关闭按钮可点，正文可滚动。
-4. `复习`、`学习进度`、`我的词卡`、`本地数据` 四个弹窗宽度适配屏幕，文本不溢出。
+4. `我的词卡`、`本地数据` 两个弹窗宽度适配屏幕，文本不溢出。
 5. `我的词卡` 的列表和编辑区上下排列，保存后刷新仍恢复。
 6. `本地数据` 弹窗里的隐私、导出、来源许可说明在窄屏下逐行显示，不横向溢出。
 
@@ -72,7 +68,7 @@ WORDCLOUD_STATIC_ROOT=dist pnpm smoke:browser
 
 ## 部署后验收
 
-把 `http://localhost:8123/index.html` 换成线上 URL，重复桌面验收第 1、2、9、10、12 步和移动端验收第 1、4、6 步。完成后刷新页面一次，确认 Service Worker 没有继续展示旧资源。
+把 `http://localhost:8123/index.html` 换成线上 URL，重复桌面验收第 1、2、8、9、10 步和移动端验收第 1、4、6 步。完成后刷新页面一次，确认 Service Worker 没有继续展示旧资源。
 
 ## Playwright 决策
 
