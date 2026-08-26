@@ -269,6 +269,7 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
         a, b = sorted((original_a, original_b))
         layout.append((a, b, 1.0))
         relation = "compare" if edge["type"] == "axis" else edge["type"]
+        swapped = original_a != a
         official.append(
             {
                 "a": a, "b": b, "relation": relation,
@@ -283,6 +284,8 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
                 "reviewed_at": edge.get("reviewedAt"),
                 "source_note": edge.get("source"),
                 "kind": edge["_kind"],
+                "key_sense_a": edge.get("bSenseNumber") if swapped else edge.get("aSenseNumber"),
+                "key_sense_b": edge.get("aSenseNumber") if swapped else edge.get("bSenseNumber"),
             }
         )
     return layout, official
@@ -585,8 +588,9 @@ def main() -> None:
             """
             INSERT OR IGNORE INTO official_edges(
               a_id,b_id,relation,dimension,subtype,direction,label,explanation,
-              examples_json,confidence,review_status,reviewed_at,created_at
-            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
+              examples_json,confidence,review_status,reviewed_at,created_at,
+              key_sense_a,key_sense_b
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             (
                 item["a"], item["b"], item["relation"], item["dimension"], item["subtype"],
@@ -594,6 +598,7 @@ def main() -> None:
                 json.dumps(examples_payload, ensure_ascii=False), 0.9,
                 "reviewed" if reviewed else "sourced",
                 item.get("reviewed_at") if reviewed else None, CREATED_AT,
+                item.get("key_sense_a"), item.get("key_sense_b"),
             ),
         )
         if cursor.lastrowid:

@@ -428,7 +428,7 @@ def apply_foundational_core(conn: sqlite3.Connection) -> None:
             (
                 f"editorial_foundational_core:{FOUNDATIONAL_CORE_VERSION}:{item['reviewer']}:{item['reviewedAt']}",
                 item["gloss"],
-                "A1/A2 基础核心词；中文提示经人工审校，按 lemma + POS 覆盖自动词形匹配。",
+                "A1/A2 基础核心词；中文提示经编辑整理，按 lemma + POS 覆盖自动词形匹配。",
                 row[0],
             ),
         )

@@ -15,15 +15,9 @@
   const focusLegend = $("#focus-legend");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   const PERSONAL_KEY = "wordcloud.personal.v2";
-  const LEARNING_KEY = "wordcloud.learning.v1";
-  const MINUTE = 60 * 1000;
-  const DAY = 24 * 60 * MINUTE;
-  const PROGRESS_UPCOMING_DAYS = 7;
   const MOBILE_BREAKPOINT = 720;
   const CANVAS_FONT = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
   const CANVAS_PIXEL_BUDGET = { mobile: 3600000, desktop: 9000000 };
-  const VALID_REVIEW_RATINGS = new Set(["again", "hard", "good", "easy"]);
-  const REVIEW_RATING_LABELS = { again: "再复习", hard: "模糊", good: "记住", easy: "很熟" };
 
   const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "编辑关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
   // "漂移"(drift) and "因果"(cause) were dropped from the public relation
@@ -60,7 +54,6 @@
   }));
   const foundationalCoreIds = new Set((GRAPH_META.foundational_core_ids || []).map(String));
   const teachingExamples = GRAPH_TEACHING_EXAMPLES || {};
-  const contentStatus = GRAPH_CONTENT_STATUS || {};
   const aliasesById = GRAPH_ALIASES || {};
   let searchTools = null;
   let wordCardTools = null;
@@ -71,8 +64,8 @@
   const officialEdges = GRAPH_OFFICIAL_EDGES.map((row) => ({
     a: String(row[0]), b: String(row[1]), relation: row[2], dimension: row[3], subtype: row[4], direction: row[5],
     label: row[6], explanation: row[7], examples: row[8], confidence: row[9], review: row[10], kind: "official",
+    keySenseA: row[11] || "", keySenseB: row[12] || "",
   }));
-  const officialEdgeByReviewKey = new Map();
   const layoutAdj = new Map();
   const officialAdj = new Map();
 
@@ -99,11 +92,9 @@
   }).catch(() => {});
   import("./src/local-data-tools.mjs").then((tools) => {
     localDataTools = tools;
-    if (!$("#learning-progress-dialog").classList.contains("hidden")) renderLearningProgress();
   }).catch(() => {});
 
   let personal = { nodes: [], edges: [] };
-  let learning = { saved: {} };
   let personalNodes = [];
   let personalEdges = [];
   let allNodes = [];
@@ -180,203 +171,6 @@
     } catch (_) {
       rememberLocalWarning("我的词网：无法保存到当前浏览器。");
     }
-  }
-
-  function loadLearning() {
-    let raw = null;
-    try {
-      raw = localStorage.getItem(LEARNING_KEY);
-    } catch (_) {
-      rememberLocalWarning("复习：浏览器限制了本地存储读取。");
-      return { saved: {} };
-    }
-    if (!raw) return { saved: {} };
-    try {
-      const value = JSON.parse(raw);
-      const saved = value?.saved && typeof value.saved === "object" && !Array.isArray(value.saved) ? value.saved : {};
-      const savedRelations = value?.savedRelations
-        && typeof value.savedRelations === "object"
-        && !Array.isArray(value.savedRelations)
-        ? value.savedRelations
-        : {};
-      if (!value?.saved || Array.isArray(value.saved) || typeof value.saved !== "object") rememberLocalWarning("复习：本地数据格式不正确，已忽略缺失字段。");
-      if (value?.savedRelations !== undefined && (!value.savedRelations || Array.isArray(value.savedRelations) || typeof value.savedRelations !== "object")) {
-        rememberLocalWarning("复习：关系复习数据格式不正确，已忽略缺失字段。");
-      }
-      const now = Date.now();
-      const normalizedRelations = Object.fromEntries(Object.entries(savedRelations)
-        .filter(([key]) => localText(key, 180))
-        .map(([key, record]) => [String(key), normalizeLearningRelationRecord(record, now)])
-        .filter(([, record]) => record.a && record.b && record.relation));
-      return {
-        saved: Object.fromEntries(Object.entries(saved)
-          .filter(([id]) => localText(id, 80))
-          .map(([id, record]) => [String(id), normalizeLearningRecord(record, now)])),
-        savedRelations: normalizedRelations,
-      };
-    } catch (_) {
-      rememberLocalWarning("复习：本地数据无法解析，已暂时忽略。");
-      return { saved: {}, savedRelations: {} };
-    }
-  }
-
-  function normalizeLearningRecord(record, now = Date.now()) {
-    const raw = record && typeof record === "object" ? record : {};
-    const addedAt = Number(raw.addedAt) || now;
-    const lastReviewedAt = Number(raw.lastReviewedAt) || null;
-    return {
-      addedAt,
-      reviews: Math.max(0, Number(raw.reviews) || 0),
-      lastReviewedAt,
-      dueAt: Number(raw.dueAt) || lastReviewedAt || now,
-      intervalDays: Math.max(0, Number(raw.intervalDays) || 0),
-      ease: Math.max(1.3, Number(raw.ease) || 2.3),
-      lapses: Math.max(0, Number(raw.lapses) || 0),
-      lastRating: VALID_REVIEW_RATINGS.has(raw.lastRating) ? raw.lastRating : null,
-      trail: Array.isArray(raw.trail)
-        ? raw.trail.map((id) => localText(id, 80)).filter(Boolean).slice(-8)
-        : [],
-    };
-  }
-
-  function normalizeLearningRelationRecord(record, now = Date.now()) {
-    const raw = record && typeof record === "object" ? record : {};
-    return {
-      ...normalizeLearningRecord(raw, now),
-      a: localText(raw.a, 80),
-      b: localText(raw.b, 80),
-      relation: localText(raw.relation, 24),
-      dimension: localText(raw.dimension, 80),
-    };
-  }
-
-  function saveLearning() {
-    try {
-      localStorage.setItem(LEARNING_KEY, JSON.stringify(learning));
-    } catch (_) {
-      rememberLocalWarning("复习：无法保存到当前浏览器。");
-    }
-  }
-
-  personal = loadPersonal();
-  learning = loadLearning();
-  learning.savedRelations ||= {};
-
-  function savedIds() {
-    return Object.keys(learning.saved).filter((id) => nodeById.has(id));
-  }
-
-  function relationReviewEntries() {
-    return Object.entries(learning.savedRelations || {})
-      .map(([key, record]) => {
-        const edge = officialEdgeByReviewKey.get(key);
-        if (!edge) return null;
-        const left = nodeById.get(edge.a);
-        const right = nodeById.get(edge.b);
-        if (!left || !right) return null;
-        return { key, kind: "relation", edge, left, right, record };
-      })
-      .filter(Boolean);
-  }
-
-  function dueReviewEntries(now = Date.now()) {
-    const words = savedIds().map((id) => ({
-      key: id,
-      kind: "word",
-      node: nodeById.get(id),
-      record: learning.saved[id],
-    }));
-    const relations = relationReviewEntries();
-    const entries = [...words, ...relations]
-      .filter((entry) => entry.record.dueAt <= now)
-      .sort((a, b) => a.record.dueAt - b.record.dueAt
-        || a.record.addedAt - b.record.addedAt
-        || a.key.localeCompare(b.key));
-    return entries;
-  }
-
-  function dueIds(now = Date.now()) {
-    return dueReviewEntries(now).map((entry) => entry.key);
-  }
-
-  function isSaved(id) {
-    return Boolean(learning.saved[String(id)]);
-  }
-
-  function isRelationSaved(edge) {
-    return Boolean(learning.savedRelations?.[relationReviewKey(edge)]);
-  }
-
-  function updateReviewCount() {
-    const due = dueReviewEntries().length;
-    $("#review-count").textContent = due;
-    $("#review-open").setAttribute("aria-label", due ? `开始 ${due} 个到期复习` : "查看复习队列");
-  }
-
-  function refreshLearningProgress() {
-    const dialog = $("#learning-progress-dialog");
-    if (dialog && !dialog.classList.contains("hidden")) renderLearningProgress();
-  }
-
-  function formatDue(dueAt, now = Date.now()) {
-    const delta = dueAt - now;
-    if (delta <= 0) return "现在可复习";
-    if (delta < DAY) return `约 ${Math.ceil(delta / (60 * MINUTE))} 小时后`;
-    if (delta < 2 * DAY) return "明天复习";
-    return `${Math.ceil(delta / DAY)} 天后复习`;
-  }
-
-  function scheduleReview(record, rating, now = Date.now()) {
-    const next = normalizeLearningRecord(record, now);
-    const firstReview = next.reviews === 0;
-    if (rating === "again") {
-      next.intervalDays = 0;
-      next.ease = Math.max(1.3, next.ease - 0.2);
-      next.lapses += 1;
-      next.dueAt = now + 10 * MINUTE;
-    } else if (rating === "hard") {
-      next.intervalDays = Math.max(1, Math.round(Math.max(1, next.intervalDays) * 1.2));
-      next.ease = Math.max(1.3, next.ease - 0.15);
-      next.dueAt = now + next.intervalDays * DAY;
-    } else if (rating === "easy") {
-      next.intervalDays = firstReview ? 4 : Math.max(4, Math.round(Math.max(1, next.intervalDays) * next.ease * 1.3));
-      next.ease = Math.min(3.0, next.ease + 0.05);
-      next.dueAt = now + next.intervalDays * DAY;
-    } else {
-      next.intervalDays = firstReview ? 1 : Math.max(2, Math.round(Math.max(1, next.intervalDays) * next.ease));
-      next.dueAt = now + next.intervalDays * DAY;
-    }
-    next.reviews += 1;
-    next.lastReviewedAt = now;
-    next.lastRating = VALID_REVIEW_RATINGS.has(rating) ? rating : null;
-    return next;
-  }
-
-  function toggleSaved(id) {
-    const key = String(id);
-    if (isSaved(key)) delete learning.saved[key];
-    else learning.saved[key] = normalizeLearningRecord({ trail }, Date.now());
-    saveLearning();
-    updateReviewCount();
-    refreshLearningProgress();
-  }
-
-  function toggleRelationSaved(edge) {
-    const key = relationReviewKey(edge);
-    if (isRelationSaved(edge)) {
-      delete learning.savedRelations[key];
-    } else {
-      learning.savedRelations[key] = normalizeLearningRelationRecord({
-        a: edge.a,
-        b: edge.b,
-        relation: edge.relation,
-        dimension: edge.dimension,
-        trail,
-      }, Date.now());
-    }
-    saveLearning();
-    updateReviewCount();
-    refreshLearningProgress();
   }
 
   function rebuildPersonal() {
@@ -491,15 +285,6 @@
 
   function pairKey(a, b) {
     return a < b ? `${a}|${b}` : `${b}|${a}`;
-  }
-
-  function relationReviewKey(edge) {
-    const endpoints = [String(edge?.a || ""), String(edge?.b || "")].sort();
-    return `relation:${endpoints[0]}|${endpoints[1]}|${String(edge?.relation || "")}|${String(edge?.dimension || "")}`;
-  }
-
-  for (const edge of officialEdges) {
-    officialEdgeByReviewKey.set(relationReviewKey(edge), edge);
   }
 
   function personalFor(id) {
@@ -1020,13 +805,28 @@
   // is raw Wiktionnaire/DBnary dictionary material -- useful, but never
   // reviewed -- so it stays clearly labeled "词典原文" and collapsed by
   // default rather than presented as if it were curated.
+  // A reviewed relation can bind to one specific dictionary sense (e.g. the
+  // RL-fr node for "enfiler II" resolves to DBnary sense #11, "put on a
+  // coat") -- but dictionary sense order has nothing to do with that, so the
+  // plain first-N-by-source-order preview can show three senses totally
+  // unrelated to the relation the learner just clicked into. Collect every
+  // sense number a reviewed relation names for this node, from either side.
+  function keySenseNumbersFor(nodeId) {
+    const edges = officialAdj.get(nodeId) || [];
+    const hints = edges.map((edge) => (edge.a === nodeId ? edge.keySenseA : edge.keySenseB)).filter(Boolean);
+    return [...new Set(hints)];
+  }
+
   function renderSenseGroups(node) {
     const groups = GRAPH_SENSES[node.id] || [];
     const flattened = wordCardTools?.flattenSenseGroups(groups)
       || groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
     if (!flattened.length) return "";
     const includeExamples = !foundationalCoreIds.has(node.id) && !node.searchOnly;
-    const preview = flattened.slice(0, 3);
+    const keySenses = keySenseNumbersFor(node.id);
+    const preview = wordCardTools?.selectPreviewSenses
+      ? wordCardTools.selectPreviewSenses(flattened, keySenses, 3)
+      : flattened.slice(0, 3);
     const sourceUrl = groups[0]?.sourceUrl;
     const renderFull = (items) => items.map((sense) => `
       <li><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><div><p>${escapeHtml(sense.definition)}</p>${includeExamples && sense.examples?.length ? `<ul class="sense-examples">${sense.examples.map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}</div></li>
@@ -1042,15 +842,14 @@
   function renderTeachingExamples(node) {
     const examples = teachingExamples[node.id] || [];
     if (!examples.length) return "";
-    return `<section class="panel-section teaching-examples"><h3>学习例句 · 编辑整理</h3><ul>${examples.map((example) => `<li><strong>${escapeHtml(example.text)}</strong><span>${escapeHtml(example.gloss)}</span></li>`).join("")}</ul></section>`;
+    return `<section class="panel-section teaching-examples"><h3>学习例句 · 编辑例句</h3><ul>${examples.map((example) => `<li><strong>${escapeHtml(example.text)}</strong><span>${escapeHtml(example.gloss)}</span></li>`).join("")}</ul></section>`;
   }
 
   function renderEditorialLearning(node) {
     const learning = GRAPH_LEARNING[node.id];
     if (!learning) return "";
     const collocations = learning.collocations || [];
-    return `${collocations.length ? `<section class="panel-section collocation-section"><h3>常用搭配与固定表达</h3><ul class="collocation-list">${collocations.map((item) => `<li><strong>${escapeHtml(item.expression)}</strong><span>${escapeHtml(item.gloss)}</span></li>`).join("")}</ul></section>` : ""}
-      ${learning.etymology ? `<section class="panel-section etymology-section"><h3>词源线索 · 编辑整理</h3><p>${escapeHtml(learning.etymology.text)}</p><small>${escapeHtml(learning.etymology.source)} · ${escapeHtml(learning.etymology.reviewedAt)}</small></section>` : ""}`;
+    return collocations.length ? `<section class="panel-section collocation-section"><h3>常用搭配与固定表达</h3><ul class="collocation-list">${collocations.map((item) => `<li><strong>${escapeHtml(item.expression)}</strong><span>${escapeHtml(item.gloss)}</span></li>`).join("")}</ul></section>` : "";
   }
 
   function relationNotesFor(items) {
@@ -1083,10 +882,7 @@
     return `<article class="contrast-note">
         <p class="contrast-explanation"><strong>${escapeHtml(note.word)}</strong> · ${escapeHtml(note.label)}</p>
         <p class="contrast-explanation-fr">${escapeHtml(note.explanation)}</p>
-        ${note.examples?.length ? `<ul class="contrast-examples">${note.examples.map((example) => `<li>${escapeHtml(example.fr)}${example.zh ? `<span class="contrast-example-zh">${escapeHtml(example.zh)}</span>` : ""}</li>`).join("")}</ul>` : ""}
-        <div class="contrast-actions">
-          <button class="${isRelationSaved(note) ? "quiet-button" : "primary-button"}" type="button" data-review-relation="${escapeHtml(relationReviewKey(note))}">${isRelationSaved(note) ? "移出复习" : "加入复习"}</button>
-        </div>
+        ${note.examples?.length ? `<p class="example-tag">编辑例句</p><ul class="contrast-examples">${note.examples.map((example) => `<li>${escapeHtml(example.fr)}${example.zh ? `<span class="contrast-example-zh">${escapeHtml(example.zh)}</span>` : ""}</li>`).join("")}</ul>` : ""}
       </article>`;
   }
 
@@ -1139,24 +935,15 @@
     const badge = node.personal ? "我的词"
       : node.searchOnly ? `${node.level} 可检索学习词`
       : node.status === "eligible" ? `${node.level} 主词表` : "因编辑整理关系收录";
-    const saved = isSaved(node.id);
     panelContent.innerHTML = `
-      <header class="word-hero">
-        <h1 class="word-title">${escapeHtml(node.word)}</h1>
-        <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
-        <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
-        <p class="content-status ${contentStatus[node.id] || "pending_definition"}">${contentStatus[node.id] === "has_definition" ? "词典状态 · 有法语定义" : "词典状态 · 待补定义"}</p>
-      </header>
+      <h1 class="word-title">${escapeHtml(node.word)}</h1>
+      <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
+      <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
-      ${node.searchOnly ? `<section class="search-only-note"><strong>暂未建立学习关系</strong><span>这个词可搜索、查看义项并加入复习；它尚未进入关系图。</span></section>` : ""}
+      ${node.searchOnly ? `<section class="search-only-note"><strong>暂未建立学习关系</strong><span>这个词可搜索、查看义项；它尚未进入关系图。</span></section>` : ""}
       <div class="learning-actions">
-        <section class="learning-action" aria-label="复习设置">
-          <div><span class="eyebrow">主动回忆</span><p>${saved ? `已加入学习循环 · ${formatDue(learning.saved[node.id].dueAt)}` : "把这个词留到下一次主动回忆"}</p></div>
-          <button id="save-word" class="${saved ? "quiet-button" : "primary-button"}" type="button">${saved ? "移出复习" : "加入复习"}</button>
-        </section>
         <section class="learning-action" aria-label="我的词卡">
-          <div><span class="eyebrow">我的词卡</span><p>保存自己的中文提示和用法备注</p></div>
-          <button id="draft-word" class="quiet-button" type="button">加入 / 打开</button>
+          <button id="draft-word" class="quiet-button" type="button">我的词卡 · 加入 / 打开</button>
         </section>
       </div>
       ${renderSenseGroups(node)}
@@ -1171,104 +958,7 @@
     `;
     panel.classList.remove("hidden");
     panelContent.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => enterFocus(button.dataset.node)));
-    panelContent.querySelectorAll("[data-review-relation]").forEach((button) => button.addEventListener("click", (event) => {
-      event.stopPropagation();
-      const edge = officialEdgeByReviewKey.get(button.dataset.reviewRelation);
-      if (!edge) return;
-      toggleRelationSaved(edge);
-      renderPanel(node);
-    }));
-    $("#save-word").addEventListener("click", () => { toggleSaved(node.id); renderPanel(node); });
     $("#draft-word").addEventListener("click", () => openDraftCardForNode(node));
-  }
-
-  let reviewIndex = 0;
-  let reviewRevealed = false;
-
-  function relationExamples(value) {
-    if (Array.isArray(value)) return value.map((item) => String(item || "").trim()).filter(Boolean);
-    try {
-      const parsed = JSON.parse(value || "[]");
-      return Array.isArray(parsed) ? parsed.map((item) => String(item || "").trim()).filter(Boolean) : [];
-    } catch (_) {
-      return [];
-    }
-  }
-
-  function reviewTrailMarkup(record) {
-    const path = Array.isArray(record?.trail)
-      ? record.trail.map((id) => nodeById.get(id)?.word || id).filter(Boolean)
-      : [];
-    return path.length > 1 ? `<small class="review-path">探索路径 · ${escapeHtml(path.join(" › "))}</small>` : "";
-  }
-
-  function closeReviewDialog() {
-    $("#review-dialog").classList.add("hidden");
-  }
-
-  function renderReviewDialog() {
-    const entries = dueReviewEntries();
-    const content = $("#review-content");
-    if (!entries.length) {
-      const saved = savedIds().length;
-      const relationSaved = relationReviewEntries().length;
-      const hasSaved = saved || relationSaved;
-      content.innerHTML = `<div class="review-empty"><p>${hasSaved ? "今天的复习已完成。" : "还没有学习词。"}</p><small>${hasSaved ? "到期的词条或关系会自动回到这里。" : "打开一个词条或编辑整理关系后，选择“加入复习”。"}</small></div>`;
-      return;
-    }
-    if (reviewIndex >= entries.length) reviewIndex = 0;
-    const entry = entries[reviewIndex];
-    const record = entry.record;
-    const isRelation = entry.kind === "relation";
-    const relationName = isRelation ? (RELATION_NAMES[entry.edge.relation] || entry.edge.relation) : "";
-    const title = isRelation
-      ? `${entry.left.word} ↔ ${entry.right.word}`
-      : entry.node.word;
-    const pos = isRelation
-      ? `${relationName} · ${entry.left.pos} / ${entry.right.pos}`
-      : entry.node.pos;
-    const answer = isRelation
-      ? `<div class="review-answer relation-review-answer">
-          <span>${escapeHtml(relationName)} · 编辑整理说明</span>
-          <p><strong>${escapeHtml(entry.edge.label)}</strong></p>
-          <p>${escapeHtml(entry.edge.explanation || "暂无说明")}</p>
-          ${relationExamples(entry.edge.examples).length ? `<ul class="review-relation-examples">${relationExamples(entry.edge.examples).map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}
-        </div>`
-      : `<div class="review-answer"><span>中文提示</span><p>${escapeHtml(entry.node.gloss || "暂无")}</p>${entry.node.note ? `<p class="review-note">${escapeHtml(entry.node.note)}</p>` : ""}</div>`;
-    content.innerHTML = `
-      <p class="review-progress">到期 ${entries.length} 个 · 第 ${reviewIndex + 1} 个 · 已复习 ${record.reviews || 0} 次</p>
-      <p class="review-prompt">${isRelation ? "先回忆这两个词的区别和使用场景，再显示编辑整理说明。" : "先主动回忆它的意思和用法，再显示提示。"}</p>
-      <h3>${escapeHtml(title)}</h3>
-      <p class="review-pos">${escapeHtml(pos)}</p>
-      ${reviewRevealed ? answer : ""}
-      ${reviewRevealed ? reviewTrailMarkup(record) : ""}
-      <div class="review-actions">
-        ${reviewRevealed ? `<button id="review-again" class="quiet-button" type="button">再复习<br><small>10 分钟</small></button><button id="review-hard" class="quiet-button" type="button">模糊<br><small>1 天</small></button><button id="review-good" class="primary-button" type="button">记住<br><small>递增间隔</small></button><button id="review-easy" class="quiet-button" type="button">很熟<br><small>更长间隔</small></button>` : `<button id="review-reveal" class="primary-button" type="button">显示提示</button>`}
-      </div>
-    `;
-    if (!reviewRevealed) $("#review-reveal").addEventListener("click", () => { reviewRevealed = true; renderReviewDialog(); });
-    else {
-      ["again", "hard", "good", "easy"].forEach((rating) => $("#review-" + rating).addEventListener("click", () => {
-        const scheduled = scheduleReview(record, rating);
-        if (isRelation) learning.savedRelations[entry.key] = { ...record, ...scheduled };
-        else learning.saved[entry.key] = { ...record, ...scheduled };
-        saveLearning();
-        updateReviewCount();
-        refreshLearningProgress();
-        reviewIndex = 0;
-        reviewRevealed = false;
-        renderReviewDialog();
-      }));
-    }
-  }
-
-  function openReviewDialog() {
-    reviewIndex = 0;
-    reviewRevealed = false;
-    renderReviewDialog();
-    $("#review-dialog").classList.remove("hidden");
-    const firstAction = $("#review-content button");
-    if (firstAction) firstAction.focus();
   }
 
   function closeLocalDataDialog() {
@@ -1303,126 +993,6 @@
     const exported = localDataTools.exportLocalLearningData(localStorage);
     renderLocalDataNotice(exported.errors);
     output.value = JSON.stringify(exported, null, 2);
-  }
-
-  function learningWordMeta() {
-    return Object.fromEntries([...nodeById.values()].map((node) => [String(node.id), {
-      label: node.word,
-      word: node.word,
-      pos: node.pos,
-      level: node.level,
-    }]));
-  }
-
-  function learningPathLabel(path) {
-    return (Array.isArray(path) ? path : [])
-      .map((id) => nodeById.get(String(id))?.word || String(id))
-      .join(" › ");
-  }
-
-  function progressStatusLabel(status) {
-    return { due: "已到期", upcoming: "即将到期", scheduled: "已安排" }[status] || "未安排";
-  }
-
-  function progressDate(value) {
-    const timestamp = Number(value);
-    if (!Number.isFinite(timestamp) || timestamp <= 0) return "时间未知";
-    return new Intl.DateTimeFormat("zh-CN", {
-      month: "numeric",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    }).format(new Date(timestamp));
-  }
-
-  function renderProgressCategoryList(categories, kind) {
-    const entries = Object.entries(categories || {}).sort(([a, left], [b, right]) => (
-      right.items - left.items
-      || right.completedReviews - left.completedReviews
-      || a.localeCompare(b, "zh")
-    ));
-    if (!entries.length) return `<p class="learning-progress-empty">还没有${kind === "word" ? "词条" : "关系"}复习记录。</p>`;
-    return `<ul>${entries.map(([key, value]) => `
-      <li class="learning-progress-item">
-        <strong>${escapeHtml(kind === "relation" ? (RELATION_NAMES[key] || key) : key)}</strong>
-        <span>${value.items} 项 · 已完成 ${value.completedReviews} 次 · 到期 ${value.due} · 7 天内 ${value.upcoming}</span>
-      </li>
-    `).join("")}</ul>`;
-  }
-
-  function renderProgressSummary(progress) {
-    const totals = progress.totals;
-    return [
-      ["累计完成", `${totals.completedReviews} 次`, "所有已保存复习记录的累计反馈"],
-      ["已加入", `${totals.saved} 项`, `词条 ${totals.words} · 关系 ${totals.relations}`],
-      ["到期", `${totals.due} 项`, "现在可以复习"],
-      ["7 天内到期", `${totals.upcoming} 项`, "已安排但即将回到复习队列"],
-    ].map(([label, value, note]) => `
-      <article class="learning-progress-stat">
-        <span>${escapeHtml(label)}</span>
-        <strong>${escapeHtml(value)}</strong>
-        <small>${escapeHtml(note)}</small>
-      </article>
-    `).join("");
-  }
-
-  function renderRecentProgress(progress) {
-    if (!progress.recent.length) return '<p class="learning-progress-empty">还没有完成过复习。</p>';
-    return `<ul>${progress.recent.map((item) => `
-      <li class="learning-progress-item">
-        <strong>${escapeHtml(item.label)}</strong>
-        <span>${item.kind === "relation" ? "关系" : "词条"} · ${escapeHtml(REVIEW_RATING_LABELS[item.rating] || "未记录反馈")} · ${escapeHtml(progressStatusLabel(item.status))}</span>
-        <small>最近 ${escapeHtml(progressDate(item.reviewedAt))} · 累计 ${item.reviews} 次 · ${escapeHtml(formatDue(item.dueAt, progress.asOf))}</small>
-      </li>
-    `).join("")}</ul>`;
-  }
-
-  function renderPathProgress(progress) {
-    if (!progress.paths.length) return '<p class="learning-progress-empty">完成一次探索并加入复习后，这里会显示路径进展。</p>';
-    return `<ul>${progress.paths.map((path) => {
-      const label = path.path.length ? learningPathLabel(path.path) : "未记录探索路径";
-      const latest = path.lastReviewedAt ? ` · 最近 ${progressDate(path.lastReviewedAt)}` : "";
-      return `<li class="learning-progress-item">
-        <strong>${escapeHtml(label)}</strong>
-        <span>${path.items} 项 · 已完成 ${path.completedReviews} 次 · 到期 ${path.due} · 7 天内 ${path.upcoming}</span>
-        <small>${path.reviewedItems} 项有复习反馈${escapeHtml(latest)}</small>
-      </li>`;
-    }).join("")}</ul>`;
-  }
-
-  function renderLearningProgress() {
-    const summary = $("#learning-progress-summary");
-    const notice = $("#learning-progress-notice");
-    if (!localDataTools?.summarizeLearningProgress) {
-      summary.innerHTML = '<p class="learning-progress-empty">学习进度正在准备，请稍后再打开。</p>';
-      notice.textContent = "本地统计工具尚未加载。";
-      notice.classList.remove("hidden");
-      return;
-    }
-    const progress = localDataTools.summarizeLearningProgress(learning, {
-      now: Date.now(),
-      upcomingDays: PROGRESS_UPCOMING_DAYS,
-      wordMeta: learningWordMeta(),
-      recentLimit: 12,
-    });
-    const messages = localStorageWarnings.filter(Boolean);
-    notice.innerHTML = messages.map((message) => `<p>${escapeHtml(message)}</p>`).join("");
-    notice.classList.toggle("hidden", messages.length === 0);
-    summary.innerHTML = renderProgressSummary(progress);
-    $("#learning-word-categories").innerHTML = renderProgressCategoryList(progress.categories.words, "word");
-    $("#learning-relation-categories").innerHTML = renderProgressCategoryList(progress.categories.relations, "relation");
-    $("#learning-recent").innerHTML = renderRecentProgress(progress);
-    $("#learning-paths").innerHTML = renderPathProgress(progress);
-  }
-
-  function openLearningProgressDialog() {
-    renderLearningProgress();
-    $("#learning-progress-dialog").classList.remove("hidden");
-    $("#learning-progress-close").focus();
-  }
-
-  function closeLearningProgressDialog() {
-    $("#learning-progress-dialog").classList.add("hidden");
   }
 
   function renderTrail() {
@@ -1655,12 +1225,6 @@
   $("#local-data-close").addEventListener("click", closeLocalDataDialog);
   $("#local-data-mask").addEventListener("click", closeLocalDataDialog);
   $("#local-data-export").addEventListener("click", exportLocalData);
-  $("#learning-progress-open").addEventListener("click", openLearningProgressDialog);
-  $("#learning-progress-close").addEventListener("click", closeLearningProgressDialog);
-  $("#learning-progress-mask").addEventListener("click", closeLearningProgressDialog);
-  $("#review-open").addEventListener("click", openReviewDialog);
-  $("#review-close").addEventListener("click", closeReviewDialog);
-  $("#review-mask").addEventListener("click", closeReviewDialog);
   function toggleLegendBody() {
     const body = $("#legend-body");
     const expanded = body.classList.contains("hidden");
@@ -1700,7 +1264,6 @@
   });
 
   window.addEventListener("resize", resize);
-  updateReviewCount();
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
   }
