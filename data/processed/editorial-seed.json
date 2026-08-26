@@ -2144,6 +2144,446 @@
       "source": "wordcloud editorial review · RL-fr V3.2 Lexical Function Syn_∩ (mettre I.2a = ls:fr:node:30324 <-> enfiler II = ls:fr:node:38561, standardness=simple standard) · sense binding: mettre sense_number=5 (\"Revêtir, enfiler sur soi, en parlant de ce qui sert à l'habillement\"), enfiler sense_number=11 (\"Mettre, passer un vêtement rapidement (ex: un manteau, un pardessus, un pull)\" — independently cites \"manteau\" as its own dictionary example, matching this relation's example word choice). An earlier version of this note incorrectly claimed enfiler's DBnary senses lacked a clothing meaning (based on a truncated LIMIT-3 query); a later pass found the sense exists but is #11 of 11 in dictionary order, so it never reached the default 3-item preview; the word card was showing threading/game/instrument senses that look inconsistent with this relation even though the underlying data was fine. Fixed at the mechanism level: aSenseNumber/bSenseNumber on this relation now make the word-card preview show the bound sense first, for mettre and enfiler both, instead of relying on dictionary order · corroborated_by_existing_signal: edge_candidates row enfiler<->mettre, relation=syn, signal=semantic, weight=1.0, source_id=cfdict_reverse_local, status=candidate — a heuristic reverse-dictionary match, NOT a sourced/reviewed independent confirmation; weaker evidence than a DBnary-sourced signal, noted honestly rather than treated as equal-strength corroboration · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not RL-fr's literary citations.",
       "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "vivre",
+      "aPos": "VER",
+      "b": "vivant",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "vivre 是动词“生活、活着”；vivant 由 vivre 的现在分词转化为形容词，表示“活着的、有生命的”，不加额外后缀，只是词性转换。",
+      "explanation": "Vivre est un verbe (« être en vie », « exister »). Vivant est son participe présent devenu adjectif : « qui est en vie », « qui a de la vitalité ». C'est une conversion de catégorie grammaticale (verbe → adjectif) sans suffixe supplémentaire, un cas très courant en français.",
+      "examples": [
+        "Ce poisson est encore vivant.",
+        "Il faut apprendre à vivre au jour le jour."
+      ],
+      "exampleGlosses": [
+        "这条鱼还活着。",
+        "得学会活在当下。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f243645, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "parler",
+      "aPos": "VER",
+      "b": "parole",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "parler 是动词“说话”；parole 是同词根的名词，表示“话语、言语”，动词和名词直接同根，没有中间加后缀的过程。",
+      "explanation": "Parler (verbe, « s'exprimer par la voix ») et parole (nom, « ce qui est dit », « le langage parlé ») partagent la même racine latine (parabola). C'est un couple verbe/nom très fréquent où il faut mémoriser les deux formes ensemble plutôt que d'attendre une règle de suffixe régulière.",
+      "examples": [
+        "Il aime parler de politique.",
+        "Elle a tenu parole."
+      ],
+      "exampleGlosses": [
+        "他喜欢谈论政治。",
+        "她信守了诺言。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f83772, scheme=X->X, complexity=motiv-sem) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "voir",
+      "aPos": "VER",
+      "b": "vision",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "voir 是动词“看见”；vision 和它同属一个古老词族（都来自拉丁语 videre），意思上明显相关（视力、看待事物的方式），但 vision 不是把 voir 直接加 -ion 后缀规律构成的——这类词形上不整齐但语义上一看就有联系的词族，Démonette 标注为“语义关联但非规则构词”，需要单独记住而不是套用一般规则。",
+      "explanation": "Voir et vision partagent la même racine latine (videre), d'où leur lien sémantique évident. Mais contrairement à exploser→explosion, vision n'est pas dérivé de voir par simple ajout du suffixe -ion selon une règle synchronique régulière du français actuel : c'est un emprunt savant parallèle. Démonette classe ce type de paire comme « motiv-sem » (motivée sémantiquement, non régulière en surface) plutôt que « simple ».",
+      "examples": [
+        "Sans lunettes, sa vision est floue.",
+        "Il a une vision optimiste de l'avenir."
+      ],
+      "exampleGlosses": [
+        "不戴眼镜的话，他视力模糊。",
+        "他对未来的看法很乐观。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f158043, scheme=X->Xion, complexity=motiv-sem) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "exploser",
+      "aPos": "VER",
+      "b": "explosion",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "exploser 是动词“爆炸”；explosion 加 -ion 后缀构成名词，表示“爆炸（这个事件或结果）”。",
+      "explanation": "Exploser (verbe) + -ion → explosion (nom d'action/résultat). Même schéma que voir→vision : le verbe décrit l'action, le nom en -ion désigne l'événement ou son résultat.",
+      "examples": [
+        "La bombe a explosé au milieu de la nuit.",
+        "L'explosion a été entendue à des kilomètres."
+      ],
+      "exampleGlosses": [
+        "炸弹在半夜爆炸了。",
+        "这次爆炸几公里外都能听到。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f135753, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "traiter",
+      "aPos": "VER",
+      "b": "traitement",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xment",
+      "label": "traiter 是动词“处理、治疗”；traitement 加 -ment 后缀构成名词，表示“处理、治疗的过程或方式”。注意这里的 -ment 是“动词变名词”的后缀，和“形容词加 -ment 变副词”（如 rapide→rapidement）是两个不同的规则，拼写一样但功能不同。",
+      "explanation": "Traiter (verbe) + -ment → traitement (nom d'action/procédé). Ce -ment nominal (verbe → nom de procédé) est un suffixe différent du -ment adverbial (adjectif → adverbe, ex. rapide → rapidement) malgré l'orthographe identique.",
+      "examples": [
+        "Ce traitement médical dure trois semaines.",
+        "Comment traite-t-on ce genre de problème ?"
+      ],
+      "exampleGlosses": [
+        "这个医疗方案要持续三周。",
+        "这种问题该怎么处理？"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f157742, scheme=X->Xment, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "digne",
+      "aPos": "ADJ",
+      "b": "dignité",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xité",
+      "label": "digne 是形容词“值得尊重的、有尊严的”；dignité 加 -ité 后缀构成名词，表示这种性质本身，即“尊严”。",
+      "explanation": "Digne (adjectif) + -ité → dignité (nom de qualité abstraite). Le suffixe -ité transforme un adjectif en nom désignant la qualité ou l'état décrit par l'adjectif.",
+      "examples": [
+        "Il a accepté la défaite avec dignité.",
+        "C'est un homme digne de confiance."
+      ],
+      "exampleGlosses": [
+        "他有尊严地接受了失败。",
+        "他是个值得信赖的人。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f124929, scheme=X->Xité, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "chasser",
+      "aPos": "VER",
+      "b": "chasseur",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xeur",
+      "label": "chasser 是动词“打猎、追赶”；chasseur 加 -eur 后缀构成名词，表示“做这个动作的人”，即“猎人”。",
+      "explanation": "Chasser (verbe) + -eur → chasseur (nom d'agent). Le suffixe -eur forme un nom désignant la personne (ou l'outil) qui accomplit l'action du verbe.",
+      "examples": [
+        "Le chasseur a suivi les traces toute la matinée.",
+        "Ils sont partis chasser dans la forêt."
+      ],
+      "exampleGlosses": [
+        "猎人跟着脚印追了一上午。",
+        "他们去森林里打猎了。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f109586, scheme=X->Xeur, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "abus",
+      "aPos": "NOM",
+      "b": "abusif",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xif",
+      "label": "abus 是名词“滥用”；abusif 加 -if 后缀构成形容词，表示“属于滥用性质的、过度的”。",
+      "explanation": "Abus (nom) + -if → abusif (adjectif). Le suffixe -if transforme un nom (souvent d'action) en adjectif exprimant la tendance ou le rapport à cette notion.",
+      "examples": [
+        "Le prix demandé est abusif.",
+        "Il a fait un usage abusif de son pouvoir."
+      ],
+      "exampleGlosses": [
+        "要价太离谱了。",
+        "他滥用了自己的权力。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f76837, scheme=X->Xif, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "magie",
+      "aPos": "NOM",
+      "b": "magique",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xique",
+      "label": "magie 是名词“魔法”；magique 加 -ique 后缀构成形容词，表示“与魔法有关的、魔法般的”。",
+      "explanation": "Magie (nom) + -ique → magique (adjectif). Le suffixe -ique forme un adjectif signifiant « relatif à » ou « ayant les caractéristiques de » le nom de base.",
+      "examples": [
+        "Ce spectacle de magie est impressionnant.",
+        "Elle a vécu un moment magique."
+      ],
+      "exampleGlosses": [
+        "这场魔术表演很震撼。",
+        "她度过了一个奇妙的时刻。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f168444, scheme=X->Xique, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "voir",
+      "aPos": "VER",
+      "b": "revoir",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "derivation-re",
+      "label": "voir 是“看见”；revoir 加前缀 re- 表示“再一次、重新”，即“再看一次、重新见面”。",
+      "explanation": "Préfixe re- + voir → revoir : « voir de nouveau » ou « rencontrer de nouveau ». Le préfixe re- exprime la répétition ou le retour à un état antérieur.",
+      "examples": [
+        "J'aimerais revoir ce film.",
+        "On se revoit demain ?"
+      ],
+      "exampleGlosses": [
+        "我想再看一遍这部电影。",
+        "我们明天再见面吗？"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f158043, scheme=X->reX, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "meurtre",
+      "aPos": "NOM",
+      "b": "meurtrier",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xier",
+      "label": "meurtre 是名词“谋杀”；meurtrier 加 -ier 后缀构成名词，表示“实施这个行为的人”，即“凶手”。",
+      "explanation": "Meurtre (nom) + -ier → meurtrier (nom d'agent). Le suffixe -ier forme ici un nom désignant la personne liée à l'action ou à l'objet de base — un usage proche de -eur mais typiquement associé à ce type de dérivés.",
+      "examples": [
+        "La police cherche le meurtrier.",
+        "C'est un meurtre prémédité."
+      ],
+      "exampleGlosses": [
+        "警方在追查凶手。",
+        "这是一起预谋杀人案。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f172977, scheme=X->Xier, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "légal",
+      "aPos": "ADJ",
+      "b": "illégal",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-in",
+      "label": "légal 是形容词“合法的”；illégal 加前缀 in-（在 l 前变成 il-）表示否定，即“不合法的”。",
+      "explanation": "Préfixe in- (assimilé en il- devant l) + légal → illégal : négation de l'adjectif de base. C'est le même préfixe négatif que dans inacceptable, inhabituel, inconscient ; sa forme s'adapte à la première lettre du mot (in-, il-, im-, ir-).",
+      "examples": [
+        "Ce parking est illégal ici.",
+        "Vendre ce produit sans licence est illégal."
+      ],
+      "exampleGlosses": [
+        "这里停车是违法的。",
+        "没有许可证卖这种产品是违法的。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f154978, scheme=X->inX, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "témoigner",
+      "aPos": "VER",
+      "b": "témoignage",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xage",
+      "label": "témoigner 是动词“作证、见证”；témoignage 加 -age 后缀构成名词，表示这个行为的结果，即“证词、见证”。",
+      "explanation": "Témoigner (verbe) + -age → témoignage (nom d'action/résultat). Le suffixe -age forme un nom désignant le processus ou le résultat concret de l'action verbale.",
+      "examples": [
+        "Son témoignage a convaincu le juge.",
+        "Elle a accepté de témoigner au procès."
+      ],
+      "exampleGlosses": [
+        "她的证词说服了法官。",
+        "她同意出庭作证。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f240173, scheme=X->Xage, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "douleur",
+      "aPos": "NOM",
+      "b": "douloureux",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xeux",
+      "label": "douleur 是名词“疼痛”；douloureux 加 -eux 后缀构成形容词，表示“带有这种性质的、令人疼痛的”。",
+      "explanation": "Douleur (nom) + -eux → douloureux (adjectif). Le suffixe -eux forme un adjectif signifiant « qui a la qualité de » ou « qui cause » ce que désigne le nom.",
+      "examples": [
+        "J'ai le genou douloureux depuis la chute.",
+        "C'est un souvenir douloureux pour elle."
+      ],
+      "exampleGlosses": [
+        "摔倒之后我的膝盖一直很疼。",
+        "这对她来说是段痛苦的回忆。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f126235, scheme=X->Xeux, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "stable",
+      "aPos": "ADJ",
+      "b": "stabiliser",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "derivation-x-to-xiser",
+      "label": "stable 是形容词“稳定的”；stabiliser 加 -iser 后缀构成动词，表示“使变得稳定”。",
+      "explanation": "Stable (adjectif) + -iser → stabiliser (verbe causatif). Le suffixe -iser forme un verbe signifiant « rendre » ou « faire devenir » ce que décrit l'adjectif de base.",
+      "examples": [
+        "Il faut stabiliser la situation avant d'agir.",
+        "Le médecin a réussi à stabiliser son état."
+      ],
+      "exampleGlosses": [
+        "得先稳定住局面才能采取行动。",
+        "医生成功让他的病情稳定下来了。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f227996, scheme=X->Xiser, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "tendre",
+      "aPos": "VER",
+      "b": "détendre",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "derivation-dé",
+      "label": "tendre 是动词“拉紧、绷紧”；détendre 加前缀 dé- 表示“取消这个动作”，即“放松、使松弛”。",
+      "explanation": "Préfixe dé- + tendre → détendre : le préfixe dé- exprime l'annulation ou l'inverse de l'action du verbe de base, ici le relâchement de ce qui était tendu.",
+      "examples": [
+        "Ce bain chaud va te détendre.",
+        "Il faut détendre la corde avant de la ranger."
+      ],
+      "exampleGlosses": [
+        "泡个热水澡会让你放松下来。",
+        "收绳子之前得先把它放松。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f233689, scheme=X->dé1X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "aimer",
+      "aPos": "VER",
+      "b": "aimable",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xable",
+      "label": "aimer 是动词“喜欢、爱”；aimable 加 -able 后缀构成形容词，表示“讨人喜欢的、和蔼可亲的”（字面是“容易被人喜欢的”）。",
+      "explanation": "Aimer (verbe) + -able → aimable (adjectif). Le suffixe -able signifie généralement « qui peut être l'objet du verbe » ; ici il a évolué vers le sens plus large de « qui inspire la sympathie, gentil ».",
+      "examples": [
+        "Le serveur a été très aimable avec nous.",
+        "C'est aimable à vous de m'aider."
+      ],
+      "exampleGlosses": [
+        "服务员对我们很友善。",
+        "你愿意帮我，真是太好了。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f130143, scheme=X->Xable, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "fuir",
+      "aPos": "VER",
+      "b": "enfuir",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "derivation-en",
+      "label": "fuir 是动词“逃跑”；enfuir（常用自反式 s'enfuir）加前缀 en- 强调“从某处逃离、逃走”。",
+      "explanation": "Préfixe en- + fuir → (s')enfuir. Le préfixe en- renforce ici l'idée de mouvement hors d'un lieu ; s'enfuir insiste sur l'acte de fuite plus que fuir seul.",
+      "examples": [
+        "Le chat s'est enfui par la fenêtre.",
+        "Les prisonniers ont tenté de s'enfuir."
+      ],
+      "exampleGlosses": [
+        "猫从窗户跑掉了。",
+        "囚犯们试图逃跑。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f141195, scheme=X->enX, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "réel",
+      "aPos": "ADJ",
+      "b": "réaliste",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xiste",
+      "label": "réel 是形容词“真实的、现实的”；réaliste 加 -iste 后缀构成形容词/名词，表示“符合现实的，或坚持现实态度的人”。",
+      "explanation": "Réel (adjectif) + -iste → réaliste. Le suffixe -iste forme souvent un nom ou adjectif désignant une personne (ou une attitude) attachée à une doctrine, une pratique ou, ici, une approche fondée sur le réel.",
+      "examples": [
+        "Sois réaliste, ce projet prendra plus d'un an.",
+        "C'est un plan réaliste et bien préparé."
+      ],
+      "exampleGlosses": [
+        "现实点吧，这个项目要花一年多时间。",
+        "这是个现实可行、准备充分的计划。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f130048, scheme=X->Xiste, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "race",
+      "aPos": "NOM",
+      "b": "racisme",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xisme",
+      "label": "race 是名词“种族”；racisme 加 -isme 后缀构成名词，表示围绕这个概念形成的一种意识形态或态度，即“种族主义”。",
+      "explanation": "Race (nom) + -isme → racisme (nom de doctrine/attitude). Le suffixe -isme forme un nom désignant un système de pensée, une doctrine ou une pratique organisée autour de la notion de base.",
+      "examples": [
+        "Le racisme reste un problème grave dans de nombreux pays.",
+        "Cette loi vise à lutter contre le racisme."
+      ],
+      "exampleGlosses": [
+        "种族主义在许多国家依然是个严重问题。",
+        "这项法律旨在打击种族主义。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f83874, scheme=X->Xisme, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-25"
     }
   ],
   "editorialTeachingExamples": [
