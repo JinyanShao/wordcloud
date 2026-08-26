@@ -3244,6 +3244,666 @@
       "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f81721, scheme=X->Xique, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
       "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "faire",
+      "aPos": "VER",
+      "b": "fait",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "fait 是动词 faire（做）的过去分词，也可以直接当形容词用，表示“做好的、既成的”。这是法语很常见的规律：动词过去分词可以直接转用作形容词。",
+      "explanation": "Fait est le participe passé de faire, employé aussi comme adjectif : « qui a été fait, achevé » (ex. un fait accompli).",
+      "examples": [
+        "C'est un fait accompli.",
+        "Il a fait ses devoirs avant le dîner."
+      ],
+      "exampleGlosses": [
+        "这已经是既成事实了。",
+        "他晚饭前做完了作业。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f136229, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "dire",
+      "aPos": "VER",
+      "b": "dit",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "dit 是动词 dire（说）的过去分词，也可以当形容词用，表示“所说的、上述的”，常见搭配“ledit”（上述的，法律文书常用）。",
+      "explanation": "Dit est le participe passé de dire, employé aussi comme adjectif : « qui a été dit, mentionné » (ex. ledit, en langage juridique).",
+      "examples": [
+        "Le fameux magasin dit « Chez Paul » a fermé.",
+        "Elle a dit la vérité."
+      ],
+      "exampleGlosses": [
+        "那家人称“Chez Paul”的著名商店关门了。",
+        "她说了实话。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f124674, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "connaître",
+      "aPos": "VER",
+      "b": "connu",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "connu 是动词 connaître（认识、知道）的过去分词，也可以当形容词用，表示“知名的、众所周知的”。",
+      "explanation": "Connu est le participe passé de connaître, employé aussi comme adjectif : « qui est su, célèbre ».",
+      "examples": [
+        "C'est un acteur très connu.",
+        "Je ne connais pas cette rue."
+      ],
+      "exampleGlosses": [
+        "他是一位很有名的演员。",
+        "我不认识这条街。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f206371, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "partir",
+      "aPos": "VER",
+      "b": "parti",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "parti 是动词 partir（离开、出发）的过去分词，也可以当形容词用，表示“已经离开的、走了的”。",
+      "explanation": "Parti est le participe passé de partir, employé aussi comme adjectif : « qui est déjà parti ».",
+      "examples": [
+        "Le train est déjà parti.",
+        "Il faut partir avant midi."
+      ],
+      "exampleGlosses": [
+        "火车已经开走了。",
+        "得在中午之前出发。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f129681, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "vivre",
+      "aPos": "VER",
+      "b": "vécu",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "vécu 是动词 vivre（生活、经历）的过去分词，也可以当形容词或名词用，表示“亲身经历过的（事）”。",
+      "explanation": "Vécu est le participe passé de vivre, employé aussi comme adjectif/nom : « qui a été réellement vécu, une expérience personnelle ».",
+      "examples": [
+        "C'est une histoire vécue.",
+        "Elle a vécu dix ans à Lyon."
+      ],
+      "exampleGlosses": [
+        "这是一个真实经历过的故事。",
+        "她在里昂生活了十年。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f243645, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "prendre",
+      "aPos": "VER",
+      "b": "pris",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "pris 是动词 prendre（拿、乘坐）的过去分词，也可以当形容词用，表示“被占用的、已经确定的”，比如“je suis pris”（我今晚没空、已经有安排了）。",
+      "explanation": "Pris est le participe passé de prendre, employé aussi comme adjectif : « occupé, déjà engagé » (ex. je suis pris ce soir).",
+      "examples": [
+        "Désolé, je suis pris ce soir.",
+        "Il a pris le train de huit heures."
+      ],
+      "exampleGlosses": [
+        "抱歉，我今晚没空。",
+        "他坐了八点的火车。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f129845, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "savoir",
+      "aPos": "VER",
+      "b": "savant",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "savant 是形容词“博学的”，也可作名词“学者、科学家”；来自动词 savoir（知道、懂得）古老的现在分词形式演变而来（savoir 现在规范的现在分词是 sachant，savant 是保留下来的旧形式，词义已经专门化）。",
+      "explanation": "Savant (adjectif/nom) provient de l'ancien participe présent de savoir (aujourd'hui remplacé par sachant) : « qui sait beaucoup, érudit ».",
+      "examples": [
+        "C'est un savant reconnu dans son domaine.",
+        "Elle sait parler quatre langues."
+      ],
+      "exampleGlosses": [
+        "他是这个领域公认的学者。",
+        "她会说四种语言。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f210241, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "croire",
+      "aPos": "VER",
+      "b": "croyant",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "croyant 是动词 croire（相信、信仰）的现在分词，也可以当形容词或名词用，表示“信教的（人）”。",
+      "explanation": "Croyant est le participe présent de croire, employé aussi comme adjectif/nom : « qui a la foi ».",
+      "examples": [
+        "C'est une famille croyante.",
+        "Elle croit encore au Père Noël."
+      ],
+      "exampleGlosses": [
+        "这是一个信教的家庭。",
+        "她还相信圣诞老人。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f120437, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "rester",
+      "aPos": "VER",
+      "b": "restant",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "restant 是动词 rester（留下、剩余）的现在分词，也可以当形容词用，表示“剩余的”。",
+      "explanation": "Restant est le participe présent de rester, employé aussi comme adjectif : « qui reste, qui subsiste ».",
+      "examples": [
+        "Voici le montant restant à payer.",
+        "Il reste deux places dans la salle."
+      ],
+      "exampleGlosses": [
+        "这是剩下要付的金额。",
+        "大厅里还剩两个位子。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f210529, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "regard",
+      "aPos": "NOM",
+      "b": "regarder",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "regard 是名词“目光、眼神”；和动词 regarder（看）同一个词根，中间没有额外的后缀变化，属于法语里常见的“名词和动词同根不加后缀”现象。",
+      "explanation": "Regard (nom) et regarder (verbe) partagent la même racine, sans suffixe supplémentaire — un cas fréquent de nom et verbe de même famille en français.",
+      "examples": [
+        "Son regard était plein de tristesse.",
+        "Elle regarde par la fenêtre."
+      ],
+      "exampleGlosses": [
+        "他的眼神里满是悲伤。",
+        "她望着窗外。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f158345, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "don",
+      "aPos": "NOM",
+      "b": "donner",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "don 是名词“礼物、天赋”；和动词 donner（给）同一个词根，中间没有额外的后缀变化。",
+      "explanation": "Don (nom) et donner (verbe) partagent la même racine, sans suffixe supplémentaire.",
+      "examples": [
+        "Il a un don pour la musique.",
+        "Peux-tu me donner ton adresse ?"
+      ],
+      "exampleGlosses": [
+        "他有音乐天赋。",
+        "你能给我你的地址吗？"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f126385, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "marche",
+      "aPos": "NOM",
+      "b": "marcher",
+      "bPos": "VER",
+      "type": "fam",
+      "dimension": "derivation-x-to-x",
+      "label": "marche 是名词“步行、台阶”；和动词 marcher（走路、运转）同一个词根，中间没有额外的后缀变化。",
+      "explanation": "Marche (nom) et marcher (verbe) partagent la même racine, sans suffixe supplémentaire.",
+      "examples": [
+        "La marche dure environ une heure.",
+        "Attention à la marche en sortant."
+      ],
+      "exampleGlosses": [
+        "这段步行大约要一个小时。",
+        "出门时小心台阶。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f170288, scheme=X->X, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "améliorer",
+      "aPos": "VER",
+      "b": "amélioration",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "améliorer 是动词“改善、改进”；加 -ation 后缀构成名词 amélioration，表示“改善这个过程或其结果”。",
+      "explanation": "Amélioration (nom) vient de améliorer + -ation : « l'action d'améliorer, ou son résultat ».",
+      "examples": [
+        "On note une nette amélioration de la situation.",
+        "Il faut améliorer la qualité du service."
+      ],
+      "exampleGlosses": [
+        "情况有明显改善。",
+        "得提高服务质量。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f172177, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "augmenter",
+      "aPos": "VER",
+      "b": "augmentation",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "augmenter 是动词“增加、提高”；加 -ation 后缀构成名词 augmentation，表示“增加这个过程或结果”。",
+      "explanation": "Augmentation (nom) vient de augmenter + -ation.",
+      "examples": [
+        "Elle a obtenu une augmentation de salaire.",
+        "Les prix augmentent chaque année."
+      ],
+      "exampleGlosses": [
+        "她获得了加薪。",
+        "价格每年都在上涨。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f88162, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "observer",
+      "aPos": "VER",
+      "b": "observation",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "observer 是动词“观察、遵守”；加 -ation 后缀构成名词 observation，表示“观察这个行为或其结果”。",
+      "explanation": "Observation (nom) vient de observer + -ation.",
+      "examples": [
+        "Cette observation confirme notre hypothèse.",
+        "Les scientifiques observent le ciel toute la nuit."
+      ],
+      "exampleGlosses": [
+        "这项观察证实了我们的假设。",
+        "科学家们整夜观测星空。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f184447, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "réduire",
+      "aPos": "VER",
+      "b": "réduction",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "réduire 是动词“减少、缩小”；加 -tion 后缀构成名词 réduction，表示“减少这个行为或其结果”。",
+      "explanation": "Réduction (nom) vient de réduire + -tion : « l'action de réduire ».",
+      "examples": [
+        "J'ai eu une réduction de 20% sur ce produit.",
+        "Il faut réduire les dépenses."
+      ],
+      "exampleGlosses": [
+        "这件商品我拿到了八折优惠。",
+        "得削减开支。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f214897, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "tendre",
+      "aPos": "VER",
+      "b": "tension",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "tendre 是动词“拉紧、伸出”；加 -sion 后缀构成名词 tension，表示“拉紧的状态”，引申出“紧张、电压”等意思。",
+      "explanation": "Tension (nom) vient de tendre + -sion : « l'état de ce qui est tendu », d'où les sens de « tension nerveuse » ou « tension électrique ».",
+      "examples": [
+        "La tension monte entre les deux pays.",
+        "Elle tend la main pour saluer."
+      ],
+      "exampleGlosses": [
+        "两国之间的紧张局势在升级。",
+        "她伸出手打招呼。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f233689, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "éditer",
+      "aPos": "VER",
+      "b": "édition",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "éditer 是动词“出版、编辑”；加 -tion 后缀构成名词 édition，表示“出版这个行为或出版物本身”。",
+      "explanation": "Édition (nom) vient de éditer + -tion.",
+      "examples": [
+        "Cette édition est épuisée.",
+        "La maison va éditer ce roman l'année prochaine."
+      ],
+      "exampleGlosses": [
+        "这个版本已经卖完了。",
+        "这家出版社明年要出版这部小说。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f250307, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "importer",
+      "aPos": "VER",
+      "b": "importation",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "importer 是动词“进口”；加 -ation 后缀构成名词 importation，表示“进口这个行为”。",
+      "explanation": "Importation (nom) vient de importer + -ation.",
+      "examples": [
+        "Ce pays limite les importations de voitures.",
+        "Nous importons ce produit d'Italie."
+      ],
+      "exampleGlosses": [
+        "这个国家限制汽车进口。",
+        "我们从意大利进口这个产品。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f186955, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "estimer",
+      "aPos": "VER",
+      "b": "estimation",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "estimer 是动词“估计、认为”；加 -ation 后缀构成名词 estimation，表示“估计这个行为或估算的结果”。",
+      "explanation": "Estimation (nom) vient de estimer + -ation.",
+      "examples": [
+        "Selon les premières estimations, il y a eu peu de dégâts.",
+        "J'estime que ce projet prendra six mois."
+      ],
+      "exampleGlosses": [
+        "根据最初的估算，损失不大。",
+        "我估计这个项目要花六个月。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f134752, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "prévoir",
+      "aPos": "VER",
+      "b": "prévision",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "prévoir 是动词“预见、预测”；加 -sion 后缀构成名词 prévision，表示“预测这个行为或预测结果”。",
+      "explanation": "Prévision (nom) vient de prévoir + -sion.",
+      "examples": [
+        "Les prévisions météo annoncent de la pluie.",
+        "Il est difficile de prévoir l'avenir."
+      ],
+      "exampleGlosses": [
+        "天气预报说要下雨。",
+        "很难预见未来。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f158043, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "constituer",
+      "aPos": "VER",
+      "b": "constitution",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "constituer 是动词“构成、组成”；加 -tion 后缀构成名词 constitution，表示“构成这个行为”，也常指国家的“宪法”（构成国家的根本法）。",
+      "explanation": "Constitution (nom) vient de constituer + -tion : « l'action de constituer », d'où le sens de « loi fondamentale d'un pays ».",
+      "examples": [
+        "Cet article constitue une violation du contrat.",
+        "La constitution garantit ces droits."
+      ],
+      "exampleGlosses": [
+        "这一条款构成了对合同的违反。",
+        "宪法保障这些权利。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f155973, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "affirmer",
+      "aPos": "VER",
+      "b": "affirmation",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "affirmer 是动词“肯定、断言”；加 -ation 后缀构成名词 affirmation，表示“肯定/断言这个行为或内容”。",
+      "explanation": "Affirmation (nom) vient de affirmer + -ation.",
+      "examples": [
+        "Cette affirmation n'est pas prouvée.",
+        "Il affirme qu'il n'était pas là."
+      ],
+      "exampleGlosses": [
+        "这个说法没有得到证实。",
+        "他坚称自己当时不在场。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f214349, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "disposer",
+      "aPos": "VER",
+      "b": "disposition",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "disposer 是动词“安排、支配”；加 -ition 后缀构成名词 disposition，表示“安排的方式”，也常指“心情、意愿”（être disposé à = 愿意）。",
+      "explanation": "Disposition (nom) vient de disposer + -ition.",
+      "examples": [
+        "Je suis à votre disposition.",
+        "Il faut disposer les chaises en cercle."
+      ],
+      "exampleGlosses": [
+        "我随时听候您的吩咐。",
+        "得把椅子摆成一圈。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f156206, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "signifier",
+      "aPos": "VER",
+      "b": "signification",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "signifier 是动词“表示、意味着”；加 -ation 后缀构成名词 signification，表示“（词语等的）含义”。",
+      "explanation": "Signification (nom) vient de signifier + -ation.",
+      "examples": [
+        "Quelle est la signification de ce symbole ?",
+        "Ce mot signifie « maison » en italien."
+      ],
+      "exampleGlosses": [
+        "这个符号是什么意思？",
+        "这个词在意大利语里表示“房子”。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f224643, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "opposer",
+      "aPos": "VER",
+      "b": "opposition",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "opposer 是动词“使对立、反对”；加 -ition 后缀构成名词 opposition，表示“对立、反对（这个立场）”。",
+      "explanation": "Opposition (nom) vient de opposer + -ition.",
+      "examples": [
+        "Le parti d'opposition a critiqué cette loi.",
+        "Elle s'oppose à ce projet."
+      ],
+      "exampleGlosses": [
+        "反对党批评了这项法律。",
+        "她反对这个项目。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f185943, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "révéler",
+      "aPos": "VER",
+      "b": "révélation",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "révéler 是动词“揭示、显露”；加 -ation 后缀构成名词 révélation，表示“揭示这个行为或被揭示的事”。",
+      "explanation": "Révélation (nom) vient de révéler + -ation.",
+      "examples": [
+        "Cette révélation a choqué tout le pays.",
+        "Le résultat révèle un problème sérieux."
+      ],
+      "exampleGlosses": [
+        "这个爆料震惊了全国。",
+        "这个结果揭示了一个严重的问题。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f158453, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "condamner",
+      "aPos": "VER",
+      "b": "condamnation",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "condamner 是动词“判刑、谴责”；加 -ation 后缀构成名词 condamnation，表示“判刑/谴责这个行为或结果”。",
+      "explanation": "Condamnation (nom) vient de condamner + -ation.",
+      "examples": [
+        "Il a reçu une condamnation à deux ans de prison.",
+        "Nous condamnons fermement cette violence."
+      ],
+      "exampleGlosses": [
+        "他被判了两年监禁。",
+        "我们坚决谴责这种暴力行为。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f115561, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "obtenir",
+      "aPos": "VER",
+      "b": "obtention",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "obtenir 是动词“获得”；加 -tion 后缀构成名词 obtention，表示“获得这个行为”，常见于行政语境（如“obtention du diplôme”取得文凭）。",
+      "explanation": "Obtention (nom) vient de obtenir + -tion, fréquent dans un registre administratif (obtention du diplôme).",
+      "examples": [
+        "L'obtention du visa a pris trois mois.",
+        "Il a obtenu son diplôme cette année."
+      ],
+      "exampleGlosses": [
+        "办理签证花了三个月。",
+        "他今年拿到了文凭。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f184492, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "tenter",
+      "aPos": "VER",
+      "b": "tentation",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xion",
+      "label": "tenter 是动词“尝试、诱惑”；加 -ation 后缀构成名词 tentation，表示“诱惑（这件事本身）”。",
+      "explanation": "Tentation (nom) vient de tenter + -ation : « ce qui tente, l'attrait vers quelque chose ».",
+      "examples": [
+        "Résister à la tentation n'est pas facile.",
+        "Il tente sa chance une dernière fois."
+      ],
+      "exampleGlosses": [
+        "抵抗诱惑不容易。",
+        "他最后再试一次运气。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f233750, scheme=X->Xion, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
     }
   ],
   "editorialTeachingExamples": [
