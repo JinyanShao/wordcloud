@@ -1,28 +1,29 @@
 {
   "schema_version": 1,
   "toolchain": {
-    "node": "v26.5.0",
-    "pnpm": "11.17.0",
-    "python": "Python 3.11.15"
+    "node": "v22.23.2",
+    "pnpm": "11.21.0",
+    "python": "Python 3.14.6"
   },
   "inputs": {
     "data/sources.json": "d8eceb0e86a422844bc55a259deecb89c8d8138b6aa08967ac8246fc6fd6f333",
     "data/audit-review-v1.json": "6c8547b27790d5e668d68c484a17efe8b1f3630aae9f2e12aa6c579365174a98",
-    "data/processed/editorial-seed.json": "a7484130ec5442458aa2da71a00fe3713a0cdab9ae567241fd561622e6dcfd40",
+    "data/processed/editorial-seed.json": "8deb672294b51ba5ede1fdab19186ca8d6baa4b2bad41c9258b96f50407d2547",
     "data.js": "d3296c0b316e7fb23b9d77d970211eff42e04b8e133152ef8678a2410a58bd36",
     "dict.js": "78086b74ac024eef789af672af267430dd5e495a5df33cea939b079efdc38f1b",
-    "sql/schema.sql": "bc17da194779dab8ba59e6d1ea3bf7223d17bc83e7ed1206808f00147055f366",
+    "sql/schema.sql": "d153862fa90fc70deec32b22daaba743712bd4a036ad2d46341eec4350ec1cc4",
     "requirements-build.txt": "81585a76c83ebe0ef08fc8b8ed2435ba55aedac27ba71da00058362d94a6777f",
-    "package.json": "6dec4a5bbe4c0bb0bdfdf400684030c7dd360cc22af0511f52f8338ca17577d8",
+    "package.json": "a32b83bdc14e3ef15db424682839e7f5e0e8da898548127a391962fafb00ad77",
     "pnpm-lock.yaml": "59823911dfd76b61e089d00c1c4cd949cea0e64f82a631eb66446a45c837c231",
     "scripts/apply_audit_review.py": "9fdd8055504640f194b0ab7eef99b6f31c0c6a2d6e08a0757fb3d50aab891d00",
     "scripts/audit_wiktextract.py": "1641f571deac6650fa88ed4cf38ac6272a89b428942853bb40a0bbdc791a7b18",
+    "scripts/build_core_families.py": "3fc82f62af25bc72fa8d1bc928d1fbbec4e9ddaf1a4d3f2ee06a49f43e0a37d4",
     "scripts/build_data.py": "68b2d2d2646398d14703e44de693df5846ed0c5d7685f98712373c9f5e1f4ecb",
     "scripts/build_dbnary_alignment_queue.py": "77a722852407be4e521fdd6f473ab57aa6efe51c0443500c2d009be1893ceb73",
     "scripts/build_gap_list.py": "34d2f2e1d1f68956f744dd206883a531df0eda25f70196b8d1539a1b0e60759b",
-    "scripts/build_graph.py": "f579d59514b6755850eb7d35a5f102000d5c55e8acc0e082b5d6a957f1402317",
+    "scripts/build_graph.py": "03c707fb7792d044d80db389bbdf64488f234e613a51e0f60f00680d94ddb33e",
     "scripts/build_verified.py": "7c8af5278f35ddfbb5ffe51c9371082a1c80cc4fff852290ea8206fd4a4e616e",
-    "scripts/export_runtime.py": "db792fd4d47e8d5448a5e0defb49ebd40012c193923b913e855c948c3281f74c",
+    "scripts/export_runtime.py": "6dcc054a36a4cb5603842856e762ecff46304858111976baf091d01e7e60d2c3",
     "scripts/fetch_sources.py": "db4209274dfd39c7da03961e165a8db1d6bc94545b91f21250041e6a17d47b59",
     "scripts/import_dbnary.py": "ad0a714871d894995bf8d88c83a50e5ecae16e8988ccc248702ec5a6ef5bcb5d",
     "scripts/import_demonette.py": "7b1f0cf6ea7757990d70b79f9d36d363ff978d90594452f9646c7da9c6c780e7",
@@ -32,9 +33,9 @@
     "scripts/test_build_graph_determinism.py": "ac8e12e9617c69318f487774d1c5ccdb133b75025a536d560df702f437f7833d",
     "scripts/test_fetch_sources.py": "aef179552bedb16ecb4215613753f259e33f75e0b4443056f34dbde31067652a",
     "scripts/test_import_dbnary.py": "5aab4191297409277cc6ae97ea92ba782558a88ad9b823c16604539bdb380f92",
-    "scripts/test_relation_quality.py": "0d9e7b3d9818eaa67b55bfba863a8335bb9795444282169280885d2ab1e81e83",
+    "scripts/test_relation_quality.py": "a8168c74524980597049099c509eeee1deb46bff511826d26843e22835425cfe",
     "scripts/update_runtime_cache.py": "447330fb5c612e9d710aa2f2e2406aca10d2260d3c9631b1adbdc2c32b93f1bc",
-    "scripts/validate_data.py": "1afcdcb21c20600a7ad5f9032d470bcac8141581f27b96a9fad2c14dccb981c6",
+    "scripts/validate_data.py": "125289730ed9ef91212737ea33bbc5c1e0b3a959a97e5c02297a805ea7dda131",
     "scripts/write_build_manifest.py": "55b8b1f2fed9200989ba9ff2b51d0e683a9fd8313d83f51f9f9c02e79b5f821e",
     "scripts/browser_acceptance_smoke.mjs": "a7e3c016f44c5d59a36e95237a9022e64299815ac9a36f6b1df9837e5298df4c",
     "scripts/extract_seed.mjs": "331057e93fa4e3c897de12016660f9d84f2090c96e1c0a0a8bab6e031d9f6068",
@@ -42,10 +43,10 @@
     "scripts/package_static_release.mjs": "c0addb32f40b34c710762b91bea2832ed2080843c7c64d7dbcbcc8de83d1b7d9"
   },
   "outputs": {
-    "graph-data.js": "dca059462eef6dc0e9540e46aea8eaebf01e699908e74200fc73a4f80a4a8f35",
-    "data/processed/eligible-lexicon.csv": "0b118f3d51fde3382fa948e8139e8fdaa89aec4682b6c9c130e8729b81844b65",
-    "data/reports/build-validation.md": "cf9a0a11621ad196e3f7be7c983cb2999201bfabee6db0acfb3dc0d3cdd933c2",
-    "data/reports/core-word-gap-list.csv": "f455a75f080b3177432ecdd9fc7d3aac4e3489a6f0068af5cfd929ec4bd73ab3",
-    "data/reports/core-word-gap-list.md": "407c9e294a4e40781cb02a37d3f7e7bdd50fea7631d64ca32b587c5ddbb7ad3e"
+    "graph-data.js": "0da0c873dec080c5b580e7ce78ad299519ac28b57d266762a82a7fce1b5c6294",
+    "data/processed/eligible-lexicon.csv": "6f99bdcef9a5aaf5d4b32ec506308ad708e719a30c4bd41a1b41702d311efcb9",
+    "data/reports/build-validation.md": "87572eda005cb98fa61f93edad7e959ddee4f997cd30f1aefd3a13f907f921a0",
+    "data/reports/core-word-gap-list.csv": "43939eada300ba5b415652686f522af837fba4cde0dd7433f3c7873c3af74f79",
+    "data/reports/core-word-gap-list.md": "464107b816a3f0005ba9087879602bfc929f15f7e66b2a35dd4c93f7ec017e77"
   }
 }

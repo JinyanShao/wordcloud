@@ -17,6 +17,7 @@ DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 POSITIONS_PATH = ROOT / "data" / "processed" / "layout-positions.json"
 RUNTIME_PATH = ROOT / "graph-data.js"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
+CORE_FAMILIES_PATH = ROOT / "data" / "processed" / "core-families-100.json"
 
 SIGNAL_BITS = {
     "semantic": 1,
@@ -36,7 +37,7 @@ def compact_json(value: object) -> str:
 def dedupe_public_relations(rows: list[dict[str, object]]) -> list[dict[str, object]]:
     """Collapse duplicate/conflicting relations for the same word pair.
 
-    A pair may carry both a vague "syn" relation and a richer teaching
+    A pair may carry both a vague synonym relation and a richer teaching
     "compare" contrast (e.g. from an older auto-sourced pass alongside a
     newer editorial review); keep only the more informative one. Every row
     passed in must already be review_status == "reviewed" -- this function
@@ -50,7 +51,7 @@ def dedupe_public_relations(rows: list[dict[str, object]]) -> list[dict[str, obj
         relations = {row["relation"] for row in pair_rows}
         kept.extend(
             row for row in pair_rows
-            if not (row["relation"] == "syn" and "compare" in relations)
+            if not (row["relation"] in {"syn", "synonym"} and "compare" in relations)
         )
     kept.sort(key=lambda row: (row["a_id"], row["b_id"], row["relation"]))
     return kept
@@ -251,6 +252,7 @@ def main() -> None:
         "signal_counts": signal_counts,
         "source_notice": "FLELex/Beacco CC BY-NC-SA 4.0 · Lexique 4 CC BY-SA 4.0 · Démonette 2 CC BY-SA 4.0 · Wiktionnaire/DBnary CC BY-SA · CFDICT CC BY-SA 3.0",
     }
+    core_families = json.loads(CORE_FAMILIES_PATH.read_text(encoding="utf-8")) if CORE_FAMILIES_PATH.exists() else {"meta": {}, "families": []}
     payload = (
         "/* Runtime lexical payload. */\n"
         f"const GRAPH_META={compact_json(meta)};\n"
@@ -263,6 +265,7 @@ def main() -> None:
         f"const GRAPH_ALIASES={compact_json(aliases)};\n"
         f"const GRAPH_LEARNING={compact_json(learning)};\n"
         f"const GRAPH_TEACHING_EXAMPLES={compact_json(teaching_examples)};\n"
+        f"const GRAPH_CORE_FAMILIES={compact_json(core_families)};\n"
     )
     RUNTIME_PATH.write_text(payload, encoding="utf-8")
     conn.execute("INSERT OR REPLACE INTO build_metadata VALUES('layout_version',?)", (layout["meta"]["version"],))

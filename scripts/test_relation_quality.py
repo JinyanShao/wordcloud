@@ -98,31 +98,31 @@ class DedupePublicRelations(unittest.TestCase):
         return base
 
     def test_syn_dropped_when_compare_exists_for_same_pair(self):
-        rows = [self.row(1, 2, "syn"), self.row(1, 2, "compare")]
+        rows = [self.row(1, 2, "synonym"), self.row(1, 2, "compare")]
         kept = dedupe_public_relations(rows)
         self.assertEqual([row["relation"] for row in kept], ["compare"])
 
     def test_syn_kept_when_no_compare_for_that_pair(self):
-        rows = [self.row(1, 2, "syn")]
+        rows = [self.row(1, 2, "synonym")]
         kept = dedupe_public_relations(rows)
-        self.assertEqual([row["relation"] for row in kept], ["syn"])
+        self.assertEqual([row["relation"] for row in kept], ["synonym"])
 
     def test_unrelated_pairs_are_independent(self):
-        rows = [self.row(1, 2, "syn"), self.row(3, 4, "compare")]
+        rows = [self.row(1, 2, "synonym"), self.row(3, 4, "compare")]
         kept = dedupe_public_relations(rows)
         self.assertEqual(len(kept), 2)
 
     def test_non_syn_relations_for_same_pair_are_not_deduped(self):
-        rows = [self.row(1, 2, "fam"), self.row(1, 2, "ant")]
+        rows = [self.row(1, 2, "derivation"), self.row(1, 2, "antonym")]
         kept = dedupe_public_relations(rows)
-        self.assertEqual({row["relation"] for row in kept}, {"fam", "ant"})
+        self.assertEqual({row["relation"] for row in kept}, {"derivation", "antonym"})
 
     def test_output_is_sorted_and_deterministic(self):
-        rows = [self.row(3, 4, "ant"), self.row(1, 2, "compare"), self.row(1, 2, "syn")]
+        rows = [self.row(3, 4, "antonym"), self.row(1, 2, "compare"), self.row(1, 2, "synonym")]
         kept = dedupe_public_relations(rows)
         self.assertEqual(
             [(row["a_id"], row["b_id"], row["relation"]) for row in kept],
-            [(1, 2, "compare"), (3, 4, "ant")],
+            [(1, 2, "compare"), (3, 4, "antonym")],
         )
 
 
@@ -140,8 +140,7 @@ class BuiltDatabaseInvariants(unittest.TestCase):
     def public_rows(self):
         return self.conn.execute(
             """
-            SELECT oe.a_id, oe.b_id, oe.relation, oe.dimension, oe.explanation,
-                   oe.examples_json, oe.reviewed_at
+            SELECT oe.*
             FROM official_edges oe WHERE oe.review_status='reviewed'
             """
         ).fetchall()
@@ -166,8 +165,54 @@ class BuiltDatabaseInvariants(unittest.TestCase):
 
     def test_syn_relations_bind_a_sense_dimension(self):
         for row in self.public_rows():
-            if row["relation"] == "syn":
+            if row["relation"] == "synonym":
                 self.assertTrue((row["dimension"] or "").strip(), (row["a_id"], row["b_id"]))
+
+    def lexeme(self, lemma, pos):
+        return self.conn.execute(
+            "SELECT id,lemma,pos,gloss_zh FROM lexemes WHERE normalized=? AND pos=?",
+            (lemma, pos),
+        ).fetchone()
+
+    def public_relation(self, left, right):
+        a, b = sorted((left, right))
+        return self.conn.execute(
+            "SELECT * FROM official_edges WHERE a_id=? AND b_id=? AND review_status='reviewed'",
+            (a, b),
+        ).fetchone()
+
+    def test_faire_fait_adjective_is_not_nominal_or_derivational(self):
+        faire = self.lexeme("faire", "VER")
+        fait_adj = self.lexeme("fait", "ADJ")
+        fait_nom = self.lexeme("fait", "NOM")
+        self.assertEqual(fait_adj["gloss_zh"], "做好的；既成的")
+        self.assertNotEqual(fait_adj["gloss_zh"], fait_nom["gloss_zh"])
+        edge = self.public_relation(faire["id"], fait_adj["id"])
+        self.assertEqual(edge["relation"], "conversion_or_lexicalization")
+        self.assertNotIn("fait accompli", edge["examples_json"])
+
+    def test_dire_dit_adjective_is_conversion_not_inflection_node_claim(self):
+        dire = self.lexeme("dire", "VER")
+        dit = self.lexeme("dit", "ADJ")
+        self.assertEqual(dit["gloss_zh"], "所说的；上述的")
+        edge = self.public_relation(dire["id"], dit["id"])
+        self.assertEqual(edge["relation"], "conversion_or_lexicalization")
+        self.assertEqual(edge["example_status"], "edited_example")
+
+    def test_voir_vision_is_etymological_family_not_derivation(self):
+        voir = self.lexeme("voir", "VER")
+        vision = self.lexeme("vision", "NOM")
+        edge = self.public_relation(voir["id"], vision["id"])
+        self.assertEqual(edge["relation"], "etymological_family")
+        self.assertEqual(edge["productive_rule"], 0)
+        self.assertIn("不是现代法语里把 voir 加 -ion", edge["label"])
+
+    def test_public_relations_use_formal_vocabulary_and_sources(self):
+        allowed = {"derivation", "conversion_or_lexicalization", "etymological_family", "synonym", "antonym", "compare", "trap"}
+        for row in self.public_rows():
+            self.assertIn(row["relation"], allowed, (row["a_id"], row["b_id"], row["relation"]))
+            sources = self.conn.execute("SELECT COUNT(*) FROM official_edge_sources WHERE edge_id=(SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation=? LIMIT 1)", (row["a_id"], row["b_id"], row["relation"])).fetchone()[0]
+            self.assertGreater(sources, 0)
 
     def test_reviewed_relations_are_always_backed_by_editorial_review(self):
         # An auto-source (Démonette/DBnary) may additionally corroborate an

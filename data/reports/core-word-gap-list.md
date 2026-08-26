@@ -5,26 +5,26 @@
 ## 总览
 
 - eligible 主词：7,338
-- 存在至少一类缺口的词：7,262（99.0%）
+- 存在至少一类缺口的词：7,318（99.7%）
 - 本轮核心词目标：1,000 个，按缺口优先级与频率排序取前 1,000
 
 | 优先级 | 缺口类型 | 全部 | 进入核心词 |
 |---|---|---:|---:|
 | P1_no_official | 高频且没有任何官方关系 | 2,899 | 1,000 |
-| P2_single_edge | 高频且只有一条官方关系 | 2,344 | 0 |
-| P3_bridge | 多义项桥接词（义项多、连接少） | 632 | 0 |
-| P4_confusable | 易混淆候选（有形音候选、无正式 trap/compare） | 1,384 | 0 |
-| P5_b2c1_synset | B2–C1 近义集合缺口（有义项、无近/反义边） | 3 | 0 |
+| P2_single_edge | 高频且只有一条官方关系 | 2,343 | 0 |
+| P3_bridge | 多义项桥接词（义项多、连接少） | 633 | 0 |
+| P4_confusable | 易混淆候选（有形音候选、无正式 trap/compare） | 1,383 | 0 |
+| P5_b2c1_synset | B2–C1 近义集合缺口（有义项、无近/反义边） | 60 | 0 |
 
 一词可命中多类缺口；命中各类的总词数（不限主桶）如下：
 
 | 缺口类型 | 命中词数（含非主桶） |
 |---|---:|
 | P1_no_official | 2,899 |
-| P2_single_edge | 2,344 |
+| P2_single_edge | 2,343 |
 | P3_bridge | 2,681 |
-| P4_confusable | 6,810 |
-| P5_b2c1_synset | 3,509 |
+| P4_confusable | 6,809 |
+| P5_b2c1_synset | 5,430 |
 
 ## 判定规则
 
@@ -64,23 +64,23 @@
 
 | 词 | 词性 | CEFR | 频率 | 已有关系 | 中文提示 |
 |---|---|---|---:|---|---|
-| être | VER | A1 | 28371.5 | syn×1 | 是；处于 |
-| avoir | VER | A1 | 19212.1 | syn×1 | 有；拥有 |
+| être | VER | A1 | 28371.5 | other×1 | 是；处于 |
+| avoir | VER | A1 | 19212.1 | other×1 | 有；拥有 |
 | venir | VER | A1 | 1547.0 | other×1 | 来；来到 |
-| pauvre | ADJ | B1 | 139.2 | fam×1 | 可怜；困苦 |
-| état | NOM | B1 | 123.0 | syn×1 | 国家；国度 |
-| commissaire | NOM | B1 | 117.9 | fam×1 | 专员；总监 |
-| assurer | VER | B1 | 103.5 | syn×1 | 保证；保障 |
-| crime | NOM | B1 | 92.0 | fam×1 | 犯罪；犯罪行为 |
-| valoir | VER | B1 | 91.4 | fam×1 | 值得；有价值 |
-| terme | NOM | B2 | 89.5 | ant×1 | 尽头；届满 |
-| contraire | NOM | B1 | 88.3 | syn×1 | 反义；相反 |
-| formation | NOM | B1 | 82.4 | syn×1 | 地层；教养 |
-| événement | NOM | B1 | 79.8 | syn×1 |  |
-| rejoindre | VER | B1 | 75.4 | fam×1 | 加入；加盟 |
-| tendance | NOM | B1 | 73.5 | fam×1 | 倾向；动向 |
-| affirmer | VER | B1 | 73.0 | fam×1 | 断定；断言 |
-| comportement | NOM | B1 | 72.9 | fam×1 | 为人；习性 |
-| majorité | NOM | B1 | 70.4 | fam×1 | 大多数 |
-| planète | NOM | B1 | 69.9 | fam×1 | 地球；星球 |
-| atteindre | VER | B1 | 67.6 | fam×1 | 击中；到达 |
+| pauvre | ADJ | B1 | 139.2 | other×1 | 可怜；困苦 |
+| état | NOM | B1 | 123.0 | other×1 | 国家；国度 |
+| commissaire | NOM | B1 | 117.9 | other×1 | 专员；总监 |
+| assurer | VER | B1 | 103.5 | other×1 | 保证；保障 |
+| crime | NOM | B1 | 92.0 | other×1 | 犯罪；犯罪行为 |
+| valoir | VER | B1 | 91.4 | other×1 | 值得；有价值 |
+| terme | NOM | B2 | 89.5 | other×1 | 尽头；届满 |
+| contraire | NOM | B1 | 88.3 | other×1 | 反义；相反 |
+| formation | NOM | B1 | 82.4 | other×1 | 地层；教养 |
+| événement | NOM | B1 | 79.8 | other×1 |  |
+| rejoindre | VER | B1 | 75.4 | other×1 | 加入；加盟 |
+| tendance | NOM | B1 | 73.5 | other×1 | 倾向；动向 |
+| affirmer | VER | B1 | 73.0 | other×1 | 断定；断言 |
+| comportement | NOM | B1 | 72.9 | other×1 | 为人；习性 |
+| majorité | NOM | B1 | 70.4 | other×1 | 大多数 |
+| planète | NOM | B1 | 69.9 | other×1 | 地球；星球 |
+| atteindre | VER | B1 | 67.6 | other×1 | 击中；到达 |

@@ -3654,7 +3654,7 @@ id,lemma,normalized,pos,cefr_level,flelex_frequency,lexique_frequency,contextual
 3318,cramponner,cramponner,VER,B2,1.0134,1.297,0.20821,kʁɑ̃pone,crampe,0-1-2,/cramp(e).on[n].er,绑住,target_content_with_gloss,0.765638,1
 11044,repère,repère,NOM,B2,1.0134,4.285,2.04991,ʁəpɛʁ,repère,0-1-1,/repèr(e).e,窝子,target_content_with_gloss,0.765638,1
 13794,éboueur,éboueur,NOM,B2,1.0134,2.063,0.36742,ebwœʁ,boue,1-1-1,_é/bou(e).eur,清洁工,target_content_with_gloss,0.765638,1
-5086,fait,fait,ADJ,B2,1.0122,66.975,99.11359,fɛ,faire,0-1-1,/fai(re).t,事实；功绩,target_content_with_gloss,0.765611,1
+5086,fait,fait,ADJ,B2,1.0122,66.975,99.11359,fɛ,faire,0-1-1,/fai(re).t,做好的；既成的,target_content_with_gloss,0.765611,1
 4021,débiteur,débiteur,ADJ,B2,1.0113,0.127,0.1684,debitœʁ,débit,0-1-1,/débit.eur,债务人；债户,target_content_with_gloss,0.76559,1
 7351,largeur,largeur,NOM,B2,1.0113,1.351,0.55573,laʁʒœʁ,large,0-1-1,/larg(e).eur,宽度,target_content_with_gloss,0.76559,1
 741,arbitraire,arbitraire,ADJ,B2,1.0112,1.215,0.44091,aʁbitʁɛʁ,arbitre,0-1-1,/arbitr(e).aire,专制；擅断,target_content_with_gloss,0.765588,1
@@ -6922,7 +6922,7 @@ id,lemma,normalized,pos,cefr_level,flelex_frequency,lexique_frequency,contextual
 4494,effervescent,effervescent,ADJ,B2,1.5205,0.139,0.02296,efɛʁvesɑ̃,effervescence,0-1-1,/effervesc(ence).ent,,target_content_high_frequency_missing_gloss,0.555922,0
 6532,impérativement,impérativement,ADV,B2,1.5204,0.329,0.15309,ɛ̃peʁativəmɑ̃,impératif,0-1-1,/impétati(f)/ve.ment,,target_content_high_frequency_missing_gloss,0.55592,0
 10743,ravage,ravage,NOM,B2,1.5204,2.006,0.81139,ʁavaʒ,ravir,0-1-1,/rav(ir).age,,target_content_high_frequency_missing_gloss,0.55592,0
-3835,dit,dit,ADJ,B2,1.5189,23.212,97.61482,di,dire,0-1-1,/di(re).t,,target_content_high_frequency_missing_gloss,0.555893,0
+3835,dit,dit,ADJ,B2,1.5189,23.212,97.61482,di,dire,0-1-1,/di(re).t,所说的；上述的,target_content_high_frequency_missing_gloss,0.555893,0
 2008,caritatif,caritatif,ADJ,B2,1.5176,2.684,0.50214,kaʁitatif,charité,0-1-0,/caritatif,,target_content_high_frequency_missing_gloss,0.555869,0
 3003,consultatif,consultatif,ADJ,B2,1.5175,0.307,0.09951,kɔ̃syltatif,consulter,0-1-1,/consult(er).atif,,target_content_high_frequency_missing_gloss,0.555867,0
 1276,barbu,barbu,ADJ,B2,1.5164,1.38,0.77312,baʁby,barbe,0-1-1,/barb(e).u,,target_content_high_frequency_missing_gloss,0.555847,0
