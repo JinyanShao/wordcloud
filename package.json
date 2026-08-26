@@ -24,6 +24,7 @@
     "graph:candidates": "node scripts/extract_seed.mjs && python3 scripts/build_graph.py",
     "graph:layout": "node scripts/layout.mjs",
     "graph:export": "python3 scripts/export_runtime.py && python3 scripts/update_runtime_cache.py",
+    "families:build": "python3 scripts/build_core_families.py",
     "graph:build": "pnpm demonette:analyze && pnpm demonette:approve && pnpm dbnary:analyze && pnpm dbnary:approve && pnpm wiktextract:p0:approve && pnpm graph:candidates && pnpm graph:layout && pnpm graph:export",
     "test:drafts": "node tests/draft-tools.test.mjs",
     "test:search": "node tests/search-tools.test.mjs",
@@ -31,7 +32,7 @@
     "test:local-data": "node tests/local-data-tools.test.mjs",
     "smoke:browser": "node scripts/browser_acceptance_smoke.mjs",
     "release:package": "node scripts/package_static_release.mjs",
-    "check": "pnpm test:fetch-sources && pnpm test:sync-review && pnpm test:graph-determinism && pnpm test:relation-quality && pnpm test:import-dbnary && python3 scripts/validate_data.py && pnpm test:drafts && pnpm test:search && pnpm test:word-card && pnpm test:local-data",
+    "check": "pnpm test:fetch-sources && pnpm test:sync-review && pnpm test:graph-determinism && pnpm test:relation-quality && pnpm test:import-dbnary && python3 scripts/validate_data.py && pnpm families:build && pnpm test:drafts && pnpm test:search && pnpm test:word-card && pnpm test:local-data",
     "build:verified": "python3 scripts/build_verified.py",
     "build:verify-manifest": "python3 scripts/write_build_manifest.py verify"
   },

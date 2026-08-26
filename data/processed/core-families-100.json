@@ -1,0 +1,5145 @@
+{
+  "meta": {
+    "version": "core-families-100-v1",
+    "selection_count": 100,
+    "independent_lexeme_count": 447,
+    "default_member_count": 443,
+    "extended_member_count": 4,
+    "public_review_status_counts": {
+      "reviewed": 103,
+      "sourced": 4480
+    },
+    "selection_basis": [
+      "FLELex frequency",
+      "CEFR",
+      "modern member count",
+      "POS coverage",
+      "teaching value",
+      "source completeness"
+    ]
+  },
+  "families": [
+    {
+      "core": {
+        "id": 5081,
+        "lemma": "faire",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "做；制作"
+      },
+      "score": 487.9727,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 5081,
+          "lemma": "faire",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "做；制作"
+        },
+        {
+          "id": 5066,
+          "lemma": "facture",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "出厂价；单据"
+        },
+        {
+          "id": 10853,
+          "lemma": "refaire",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "再作；再做"
+        },
+        {
+          "id": 4147,
+          "lemma": "défaire",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "拆开；撤销"
+        },
+        {
+          "id": 4148,
+          "lemma": "défaite",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "弊"
+        },
+        {
+          "id": 5063,
+          "lemma": "faction",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "帮派；派别"
+        },
+        {
+          "id": 5086,
+          "lemma": "fait",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "做好的；既成的"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 3,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 2,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 3749,
+        "lemma": "dire",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "说；告诉"
+      },
+      "score": 344.5769,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 3749,
+          "lemma": "dire",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "说；告诉"
+        },
+        {
+          "id": 6933,
+          "lemma": "interdire",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "禁止"
+        },
+        {
+          "id": 3063,
+          "lemma": "contradiction",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "矛盾；辩驳"
+        },
+        {
+          "id": 3064,
+          "lemma": "contradictoire",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "矛盾"
+        },
+        {
+          "id": 3835,
+          "lemma": "dit",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "所说的；上述的"
+        },
+        {
+          "id": 6932,
+          "lemma": "interdiction",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "禁令；禁制"
+        },
+        {
+          "id": 6936,
+          "lemma": "interdit",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "被禁；被禁止"
+        },
+        {
+          "id": 10284,
+          "lemma": "prédiction",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "预估"
+        },
+        {
+          "id": 10286,
+          "lemma": "prédire",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "预言"
+        },
+        {
+          "id": 3090,
+          "lemma": "contredire",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "反驳；与…矛盾"
+        },
+        {
+          "id": 6935,
+          "lemma": "interdit",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "被禁；被禁止"
+        }
+      ],
+      "extendedMembers": [
+        {
+          "id": 10840,
+          "lemma": "redire",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "再说；转述；挑剔"
+        }
+      ],
+      "relationCounts": {
+        "conversion_or_lexicalization": 4,
+        "derivation": 4,
+        "etymological_family": 4
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 11
+    },
+    {
+      "core": {
+        "id": 406,
+        "lemma": "aller",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "去；前往"
+      },
+      "score": 330.7405,
+      "reason": "入口词高频低级别；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 406,
+          "lemma": "aller",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "去；前往"
+        },
+        {
+          "id": 405,
+          "lemma": "aller",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "出国；刚要"
+        },
+        {
+          "id": 429,
+          "lemma": "allée",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "小巷；小径"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 13641,
+        "lemma": "voir",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "看见；理解"
+      },
+      "score": 246.494,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 10364,
+          "lemma": "prévoir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "预见；预计"
+        },
+        {
+          "id": 11141,
+          "lemma": "revoir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "再看；复习"
+        },
+        {
+          "id": 13641,
+          "lemma": "voir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "看见；理解"
+        },
+        {
+          "id": 7050,
+          "lemma": "invisible",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "无形；看不见"
+        },
+        {
+          "id": 10362,
+          "lemma": "prévision",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "预报；预见"
+        },
+        {
+          "id": 11143,
+          "lemma": "revue",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "刊物；复查"
+        },
+        {
+          "id": 13594,
+          "lemma": "vision",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "愿景；目光"
+        },
+        {
+          "id": 11580,
+          "lemma": "réviser",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "修改；修正"
+        },
+        {
+          "id": 11581,
+          "lemma": "révision",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "复习；大修"
+        },
+        {
+          "id": 13592,
+          "lemma": "visible",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "在即；有形"
+        },
+        {
+          "id": 13695,
+          "lemma": "voyant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "刺目；打眼"
+        },
+        {
+          "id": 4766,
+          "lemma": "entrevoir",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "隐约看见；隐约预感"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "antonym": 1,
+        "conversion_or_lexicalization": 2,
+        "derivation": 7,
+        "etymological_family": 3
+      },
+      "reviewedRelations": 3,
+      "sourcedRelations": 10
+    },
+    {
+      "core": {
+        "id": 13685,
+        "lemma": "vouloir",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "想要；愿意"
+      },
+      "score": 169.1267,
+      "reason": "入口词高频低级别；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 13685,
+          "lemma": "vouloir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "想要；愿意"
+        },
+        {
+          "id": 13684,
+          "lemma": "vouloir",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "想要；愿意"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 11753,
+        "lemma": "savoir",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "知道；会"
+      },
+      "score": 150.8545,
+      "reason": "入口词高频低级别；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 11753,
+          "lemma": "savoir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "知道；会"
+        },
+        {
+          "id": 11750,
+          "lemma": "savant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "博学；博雅"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 0
+    },
+    {
+      "core": {
+        "id": 9997,
+        "lemma": "prendre",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "拿；乘坐"
+      },
+      "score": 147.6983,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 692,
+          "lemma": "apprendre",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "习得；取经"
+        },
+        {
+          "id": 9997,
+          "lemma": "prendre",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "拿；乘坐"
+        },
+        {
+          "id": 10045,
+          "lemma": "prise",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "把柄；插口"
+        },
+        {
+          "id": 9998,
+          "lemma": "preneur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 10044,
+          "lemma": "pris",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "抓到"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 1,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 3,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 9249,
+        "lemma": "parler",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "说；交谈"
+      },
+      "score": 137.4628,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 9249,
+          "lemma": "parler",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "说；交谈"
+        },
+        {
+          "id": 9258,
+          "lemma": "parole",
+          "pos": "NOM",
+          "cefr": "A2",
+          "gloss": "话，话语；发言权"
+        },
+        {
+          "id": 9248,
+          "lemma": "parler",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "搭嘴；说上"
+        },
+        {
+          "id": 9245,
+          "lemma": "parlement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "国会；议会"
+        },
+        {
+          "id": 9247,
+          "lemma": "parlementaire",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "议员"
+        },
+        {
+          "id": 9246,
+          "lemma": "parlementaire",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "议员"
+        },
+        {
+          "id": 11007,
+          "lemma": "reparler",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "再说"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 5
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 6
+    },
+    {
+      "core": {
+        "id": 9311,
+        "lemma": "passer",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "经过；度过"
+      },
+      "score": 136.4691,
+      "reason": "入口词高频低级别；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 9298,
+          "lemma": "pas",
+          "pos": "NOM",
+          "cefr": "A1",
+          "gloss": "脚步，步伐"
+        },
+        {
+          "id": 9311,
+          "lemma": "passer",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "经过；度过"
+        },
+        {
+          "id": 9305,
+          "lemma": "passe",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "传球；赌注"
+        },
+        {
+          "id": 11012,
+          "lemma": "repasser",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "烙；烫"
+        },
+        {
+          "id": 9313,
+          "lemma": "passeur",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "船夫"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 8039,
+        "lemma": "mettre",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "放；穿上"
+      },
+      "score": 132.9774,
+      "reason": "入口词高频低级别；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 8039,
+          "lemma": "mettre",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "放；穿上"
+        },
+        {
+          "id": 8146,
+          "lemma": "mise",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "穿着"
+        },
+        {
+          "id": 10936,
+          "lemma": "remettre",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "交付；交纳"
+        },
+        {
+          "id": 13992,
+          "lemma": "émettre",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "出具；发出"
+        },
+        {
+          "id": 8038,
+          "lemma": "metteur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 8147,
+          "lemma": "miser",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "赌博；赌钱"
+        },
+        {
+          "id": 10937,
+          "lemma": "remise",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "减免；折扣"
+        },
+        {
+          "id": 13991,
+          "lemma": "émetteur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "发行人"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 3,
+        "derivation": 4
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 6
+    },
+    {
+      "core": {
+        "id": 3672,
+        "lemma": "devoir",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "必须；欠"
+      },
+      "score": 126.7929,
+      "reason": "入口词高频低级别；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 3672,
+          "lemma": "devoir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "必须；欠"
+        },
+        {
+          "id": 4019,
+          "lemma": "débit",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "流量；码率"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 9287,
+        "lemma": "partir",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "离开；出发"
+      },
+      "score": 109.6146,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 4296,
+          "lemma": "départ",
+          "pos": "NOM",
+          "cefr": "A1",
+          "gloss": "出发；起点"
+        },
+        {
+          "id": 9264,
+          "lemma": "partager",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "分享；分担"
+        },
+        {
+          "id": 9287,
+          "lemma": "partir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "离开；出发"
+        },
+        {
+          "id": 11008,
+          "lemma": "repartir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "再出发；重新振作"
+        },
+        {
+          "id": 9263,
+          "lemma": "partage",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 9270,
+          "lemma": "parti",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "党派"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 3
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 3902,
+        "lemma": "donner",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "给；给予"
+      },
+      "score": 107.2358,
+      "reason": "入口词高频低级别；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 3902,
+          "lemma": "donner",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "给；给予"
+        },
+        {
+          "id": 3898,
+          "lemma": "don",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "才分；才干"
+        },
+        {
+          "id": 10844,
+          "lemma": "redonner",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 351,
+        "lemma": "aimer",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "喜欢；爱"
+      },
+      "score": 102.6855,
+      "reason": "入口词高频低级别；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 351,
+          "lemma": "aimer",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "喜欢；爱"
+        },
+        {
+          "id": 348,
+          "lemma": "aimable",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "乖巧；亲切"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 0
+    },
+    {
+      "core": {
+        "id": 10873,
+        "lemma": "regarder",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "看，注视"
+      },
+      "score": 100.6024,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 10873,
+          "lemma": "regarder",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "看，注视"
+        },
+        {
+          "id": 10871,
+          "lemma": "regard",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "目光；眼神"
+        },
+        {
+          "id": 10872,
+          "lemma": "regardant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 3587,
+        "lemma": "demander",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "请求；问"
+      },
+      "score": 98.5266,
+      "reason": "入口词高频低级别；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 3587,
+          "lemma": "demander",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "请求；问"
+        },
+        {
+          "id": 3588,
+          "lemma": "demandeur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "申请人"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 0
+    },
+    {
+      "core": {
+        "id": 11085,
+        "lemma": "rester",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "停留；保持"
+      },
+      "score": 92.7847,
+      "reason": "入口词高频低级别；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 11085,
+          "lemma": "rester",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "停留；保持"
+        },
+        {
+          "id": 11077,
+          "lemma": "restant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "余下；余额"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 0
+    },
+    {
+      "core": {
+        "id": 2928,
+        "lemma": "connaître",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "认识；了解"
+      },
+      "score": 91.2032,
+      "reason": "入口词高频低级别；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 2928,
+          "lemma": "connaître",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "认识；了解"
+        },
+        {
+          "id": 2934,
+          "lemma": "connu",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "所知；有名"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 0
+    },
+    {
+      "core": {
+        "id": 5373,
+        "lemma": "fond",
+        "pos": "NOM",
+        "cefr": "A2",
+        "gloss": "底部；深处；核心"
+      },
+      "score": 85.4834,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 4503,
+          "lemma": "effondrer",
+          "pos": "VER",
+          "cefr": "A2",
+          "gloss": "使坍塌；压垮"
+        },
+        {
+          "id": 5373,
+          "lemma": "fond",
+          "pos": "NOM",
+          "cefr": "A2",
+          "gloss": "底部；深处；核心"
+        },
+        {
+          "id": 5380,
+          "lemma": "fonder",
+          "pos": "VER",
+          "cefr": "A2",
+          "gloss": "创立，建立"
+        },
+        {
+          "id": 5363,
+          "lemma": "foncier",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 699,
+          "lemma": "approfondir",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "加深；深入（研究）"
+        },
+        {
+          "id": 4661,
+          "lemma": "enfoncer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "压住；按下"
+        },
+        {
+          "id": 5374,
+          "lemma": "fondamental",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "根本的，基础的"
+        },
+        {
+          "id": 5377,
+          "lemma": "fondateur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "创始人"
+        },
+        {
+          "id": 5378,
+          "lemma": "fondation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "地基；创立；基金会"
+        },
+        {
+          "id": 5379,
+          "lemma": "fondement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "依据；地脚"
+        },
+        {
+          "id": 5382,
+          "lemma": "fondre",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "融化；熔解"
+        },
+        {
+          "id": 5384,
+          "lemma": "fondu",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "融合的"
+        },
+        {
+          "id": 5387,
+          "lemma": "fonte",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "解冻；铣铁"
+        },
+        {
+          "id": 5605,
+          "lemma": "fuser",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "迸发"
+        },
+        {
+          "id": 5608,
+          "lemma": "fusion",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "溶化；熔化"
+        },
+        {
+          "id": 4502,
+          "lemma": "effondrement",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "獘"
+        }
+      ],
+      "extendedMembers": [
+        {
+          "id": 14238,
+          "lemma": "effondré",
+          "pos": "ADJ",
+          "cefr": null,
+          "gloss": "崩溃的，被击垮的"
+        },
+        {
+          "id": 14242,
+          "lemma": "fondant",
+          "pos": "ADJ",
+          "cefr": null,
+          "gloss": "入口即化的；熔岩蛋糕"
+        },
+        {
+          "id": 14237,
+          "lemma": "s'effondrer",
+          "pos": "VER",
+          "cefr": null,
+          "gloss": "倒塌；崩溃；垮掉"
+        }
+      ],
+      "relationCounts": {
+        "conversion_or_lexicalization": 3,
+        "derivation": 16,
+        "trap": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 21
+    },
+    {
+      "core": {
+        "id": 12108,
+        "lemma": "sortir",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "出去；出门玩"
+      },
+      "score": 77.9777,
+      "reason": "入口词高频低级别；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 12108,
+          "lemma": "sortir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "出去；出门玩"
+        },
+        {
+          "id": 11073,
+          "lemma": "ressort",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "发条；弹簧"
+        },
+        {
+          "id": 11074,
+          "lemma": "ressortir",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "烘托；突出"
+        },
+        {
+          "id": 12107,
+          "lemma": "sortir",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "出去；出外"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 3371,
+        "lemma": "croire",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "相信；认为"
+      },
+      "score": 77.0708,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 3371,
+          "lemma": "croire",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "相信；认为"
+        },
+        {
+          "id": 3392,
+          "lemma": "croyance",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "信仰；信念"
+        },
+        {
+          "id": 3394,
+          "lemma": "croyant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "教徒"
+        },
+        {
+          "id": 3421,
+          "lemma": "crédit",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "信用；信贷"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 13623,
+        "lemma": "vivre",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "生活；经历"
+      },
+      "score": 77.0066,
+      "reason": "入口词高频低级别；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 13623,
+          "lemma": "vivre",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "生活；经历"
+        },
+        {
+          "id": 11140,
+          "lemma": "revivre",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "复活；复苏"
+        },
+        {
+          "id": 13621,
+          "lemma": "vivant",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "传神；活泼"
+        },
+        {
+          "id": 13715,
+          "lemma": "vécu",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "经历"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 1
+      },
+      "reviewedRelations": 2,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 12890,
+        "lemma": "tomber",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "落下，倒下"
+      },
+      "score": 53.339,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 12890,
+          "lemma": "tomber",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "落下，倒下"
+        },
+        {
+          "id": 11103,
+          "lemma": "retomber",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "回落"
+        },
+        {
+          "id": 12893,
+          "lemma": "tombée",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 11104,
+          "lemma": "retombée",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 12887,
+          "lemma": "tombant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "低垂"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 3,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 5243,
+        "lemma": "fil",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "线缆；话头"
+      },
+      "score": 47.7078,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 5243,
+          "lemma": "fil",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "线缆；话头"
+        },
+        {
+          "id": 5248,
+          "lemma": "file",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "纵队；行列"
+        },
+        {
+          "id": 4166,
+          "lemma": "défiler",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 4167,
+          "lemma": "défilé",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "巡游"
+        },
+        {
+          "id": 4657,
+          "lemma": "enfiler",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "穿上"
+        },
+        {
+          "id": 5249,
+          "lemma": "filer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "溜走，飞奔而去（口语）"
+        },
+        {
+          "id": 5250,
+          "lemma": "filet",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "网罗"
+        },
+        {
+          "id": 5254,
+          "lemma": "filière",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "板牙"
+        },
+        {
+          "id": 5244,
+          "lemma": "filage",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "纺丝"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 3,
+        "derivation": 9
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 12
+    },
+    {
+      "core": {
+        "id": 3346,
+        "lemma": "crier",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "喊叫"
+      },
+      "score": 41.8661,
+      "reason": "入口词高频低级别；含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 3346,
+          "lemma": "crier",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "喊叫"
+        },
+        {
+          "id": 13870,
+          "lemma": "écrier",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "呼喊；喊叫"
+        },
+        {
+          "id": 3342,
+          "lemma": "criard",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "大红大绿；花哨"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 2997,
+        "lemma": "construire",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "建造，构建"
+      },
+      "score": 41.4929,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 2997,
+          "lemma": "construire",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "建造，构建"
+        },
+        {
+          "id": 2993,
+          "lemma": "constructeur",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "制造者；建设者"
+        },
+        {
+          "id": 2992,
+          "lemma": "constructeur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "制造者；建设者"
+        },
+        {
+          "id": 2995,
+          "lemma": "constructif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "建设性"
+        },
+        {
+          "id": 10807,
+          "lemma": "reconstruire",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "再造；翻盖"
+        },
+        {
+          "id": 10806,
+          "lemma": "reconstruction",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "重构"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 5
+      },
+      "reviewedRelations": 2,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 7849,
+        "lemma": "marcher",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "走，步行；运转"
+      },
+      "score": 41.4589,
+      "reason": "入口词高频低级别；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 7848,
+          "lemma": "marche",
+          "pos": "NOM",
+          "cefr": "A1",
+          "gloss": "步子；台阶；进程"
+        },
+        {
+          "id": 7849,
+          "lemma": "marcher",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "走，步行；运转"
+        },
+        {
+          "id": 4237,
+          "lemma": "démarche",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "步态；方法，举措"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 13900,
+        "lemma": "égal",
+        "pos": "ADJ",
+        "cefr": "B1",
+        "gloss": "一律；一模一样"
+      },
+      "score": 39.8338,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 13900,
+          "lemma": "égal",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "一律；一模一样"
+        },
+        {
+          "id": 7062,
+          "lemma": "inégal",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "不均；参差不齐"
+        },
+        {
+          "id": 7065,
+          "lemma": "inégalité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "不平等；不等"
+        },
+        {
+          "id": 13903,
+          "lemma": "égalitaire",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 13905,
+          "lemma": "égalité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "不变；平手"
+        },
+        {
+          "id": 14102,
+          "lemma": "équitable",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "公允；公正"
+        },
+        {
+          "id": 14105,
+          "lemma": "équité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "公道"
+        },
+        {
+          "id": 13902,
+          "lemma": "égaler",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "匹敌；媲美"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "antonym": 1,
+        "conversion_or_lexicalization": 1,
+        "derivation": 5,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 7
+    },
+    {
+      "core": {
+        "id": 12748,
+        "lemma": "tendre",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "交给；亲爱"
+      },
+      "score": 39.7302,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 4437,
+          "lemma": "détendre",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "伸开；放松"
+        },
+        {
+          "id": 12746,
+          "lemma": "tendance",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "倾向；动向"
+        },
+        {
+          "id": 12748,
+          "lemma": "tendre",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "交给；亲爱"
+        },
+        {
+          "id": 4439,
+          "lemma": "détente",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "扳机；缓和"
+        },
+        {
+          "id": 12755,
+          "lemma": "tension",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "张力"
+        },
+        {
+          "id": 12751,
+          "lemma": "tendu",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "吃紧；紧张"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 3
+      },
+      "reviewedRelations": 2,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 13320,
+        "lemma": "usage",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "习俗；惯例"
+      },
+      "score": 39.3969,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 13320,
+          "lemma": "usage",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "习俗；惯例"
+        },
+        {
+          "id": 13324,
+          "lemma": "user",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "消磨；消耗"
+        },
+        {
+          "id": 13322,
+          "lemma": "usager",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "使用者"
+        },
+        {
+          "id": 13323,
+          "lemma": "usagé",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "废旧"
+        },
+        {
+          "id": 13328,
+          "lemma": "usure",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "磨损"
+        },
+        {
+          "id": 13331,
+          "lemma": "usé",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "废旧；衰退的"
+        },
+        {
+          "id": 13329,
+          "lemma": "usurier",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "大耳窿"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 5
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 6
+    },
+    {
+      "core": {
+        "id": 7430,
+        "lemma": "lier",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "捆绑；接上"
+      },
+      "score": 36.3705,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 7430,
+          "lemma": "lier",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "捆绑；接上"
+        },
+        {
+          "id": 10909,
+          "lemma": "relier",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "交接；搭连"
+        },
+        {
+          "id": 7404,
+          "lemma": "liaison",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "绑定；联系"
+        },
+        {
+          "id": 7494,
+          "lemma": "lié",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "相关"
+        },
+        {
+          "id": 10895,
+          "lemma": "relatif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "相对"
+        },
+        {
+          "id": 10900,
+          "lemma": "relativité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "相对论"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 3,
+        "etymological_family": 1,
+        "synonym": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 6
+    },
+    {
+      "core": {
+        "id": 13890,
+        "lemma": "édition",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "出版；版本"
+      },
+      "score": 36.0945,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 13889,
+          "lemma": "éditeur",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "出版者；发行人"
+        },
+        {
+          "id": 13890,
+          "lemma": "édition",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "出版；版本"
+        },
+        {
+          "id": 13887,
+          "lemma": "édit",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "敕"
+        },
+        {
+          "id": 13888,
+          "lemma": "éditer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "修改；出版"
+        },
+        {
+          "id": 13892,
+          "lemma": "éditorial",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "社论"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 3
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 6432,
+        "lemma": "immobile",
+        "pos": "ADJ",
+        "cefr": "B1",
+        "gloss": "一动不动；一成不变"
+      },
+      "score": 34.6248,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 6432,
+          "lemma": "immobile",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "一动不动；一成不变"
+        },
+        {
+          "id": 8172,
+          "lemma": "mobiliser",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "动员；发动"
+        },
+        {
+          "id": 8174,
+          "lemma": "mobylette",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 8167,
+          "lemma": "mobile",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "床铃；活动"
+        },
+        {
+          "id": 8171,
+          "lemma": "mobilisation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 8173,
+          "lemma": "mobilité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 5
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 5
+    },
+    {
+      "core": {
+        "id": 152,
+        "lemma": "action",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "举动；举措"
+      },
+      "score": 34.1559,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 152,
+          "lemma": "action",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "举动；举措"
+        },
+        {
+          "id": 11344,
+          "lemma": "réaction",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "反动；反应"
+        },
+        {
+          "id": 11351,
+          "lemma": "réagir",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 153,
+          "lemma": "actionnaire",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "公司股东；股东"
+        },
+        {
+          "id": 154,
+          "lemma": "actionner",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "牵动"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 13951,
+        "lemma": "élever",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "上涨；举起"
+      },
+      "score": 32.7182,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 13951,
+          "lemma": "élever",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "上涨；举起"
+        },
+        {
+          "id": 13950,
+          "lemma": "élevage",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "养殖业；牧业"
+        },
+        {
+          "id": 13952,
+          "lemma": "éleveur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "饲养员"
+        },
+        {
+          "id": 13953,
+          "lemma": "élevé",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "高昂；高架"
+        },
+        {
+          "id": 13978,
+          "lemma": "élévation",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "举起；升高"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 3
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 13007,
+        "lemma": "traiter",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "主治；从事"
+      },
+      "score": 32.0907,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 11115,
+          "lemma": "retraiter",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 13007,
+          "lemma": "traiter",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "主治；从事"
+        },
+        {
+          "id": 11117,
+          "lemma": "retraité",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "离休；退休人"
+        },
+        {
+          "id": 13006,
+          "lemma": "traitement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "待遇；薪水"
+        },
+        {
+          "id": 13009,
+          "lemma": "traité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "条约；论文"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 866,
+        "lemma": "assassin",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "凶手；刺客"
+      },
+      "score": 30.7099,
+      "reason": "覆盖动词/名词/形容词等多词性；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 866,
+          "lemma": "assassin",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "凶手；刺客"
+        },
+        {
+          "id": 867,
+          "lemma": "assassin",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "凶手；刺客"
+        },
+        {
+          "id": 868,
+          "lemma": "assassinat",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "暗杀；谋杀"
+        },
+        {
+          "id": 869,
+          "lemma": "assassiner",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "刺杀；干掉"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 7852,
+        "lemma": "marché",
+        "pos": "NOM",
+        "cefr": "A1",
+        "gloss": "市场"
+      },
+      "score": 30.5554,
+      "reason": "入口词高频低级别；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 7852,
+          "lemma": "marché",
+          "pos": "NOM",
+          "cefr": "A1",
+          "gloss": "市场"
+        },
+        {
+          "id": 7844,
+          "lemma": "marchand",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "商人；商家"
+        },
+        {
+          "id": 7843,
+          "lemma": "marchand",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "商人；商业的"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 6489,
+        "lemma": "imposer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "强求；征收"
+      },
+      "score": 30.3267,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 6488,
+          "lemma": "imposant",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "威猛；威风"
+        },
+        {
+          "id": 6489,
+          "lemma": "imposer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "强求；征收"
+        },
+        {
+          "id": 6535,
+          "lemma": "impôt",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "税制；税务"
+        },
+        {
+          "id": 6490,
+          "lemma": "imposition",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 11585,
+        "lemma": "révolution",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "回转；革命"
+      },
+      "score": 30.3034,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 11585,
+          "lemma": "révolution",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "回转；革命"
+        },
+        {
+          "id": 11587,
+          "lemma": "révolutionnaire",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "革命；革命性"
+        },
+        {
+          "id": 11588,
+          "lemma": "révolutionner",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 11586,
+          "lemma": "révolutionnaire",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "革命；革命性"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 5274,
+        "lemma": "financier",
+        "pos": "ADJ",
+        "cefr": "B1",
+        "gloss": "财政"
+      },
+      "score": 29.8532,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 5272,
+          "lemma": "financer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "出资；出钱"
+        },
+        {
+          "id": 5274,
+          "lemma": "financier",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "财政"
+        },
+        {
+          "id": 5270,
+          "lemma": "finance",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "现款；理财"
+        },
+        {
+          "id": 5271,
+          "lemma": "financement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "供资；融资"
+        },
+        {
+          "id": 5273,
+          "lemma": "financier",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "财政"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 652,
+        "lemma": "apercevoir",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "瞥见，无意中看见"
+      },
+      "score": 29.8218,
+      "reason": "入口词高频低级别；含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 652,
+          "lemma": "apercevoir",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "瞥见，无意中看见"
+        },
+        {
+          "id": 9416,
+          "lemma": "perception",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "感受；感知"
+        },
+        {
+          "id": 9418,
+          "lemma": "percevoir",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "感知；察觉；征收"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 1843,
+        "lemma": "cadre",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "干部；框架"
+      },
+      "score": 29.6356,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 1843,
+          "lemma": "cadre",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "干部；框架"
+        },
+        {
+          "id": 1844,
+          "lemma": "cadrer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 4600,
+          "lemma": "encadrement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 4601,
+          "lemma": "encadrer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 13896,
+        "lemma": "éducation",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "家教；教养"
+      },
+      "score": 28.9837,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 13895,
+          "lemma": "éducatif",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 13896,
+          "lemma": "éducation",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "家教；教养"
+        },
+        {
+          "id": 13894,
+          "lemma": "éducateur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "导师；教育家"
+        },
+        {
+          "id": 13899,
+          "lemma": "éduquer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "培养；培育"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 4
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 10707,
+        "lemma": "rapport",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "人情；关系"
+      },
+      "score": 28.8009,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 10707,
+          "lemma": "rapport",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "人情；关系"
+        },
+        {
+          "id": 10708,
+          "lemma": "rapporter",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "反映；报告"
+        },
+        {
+          "id": 10709,
+          "lemma": "rapporteur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 5146,
+        "lemma": "faute",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "不是；差池"
+      },
+      "score": 28.6673,
+      "reason": "覆盖动词/名词/形容词等多词性；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 3241,
+          "lemma": "coupable",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "主犯；罪人"
+        },
+        {
+          "id": 5146,
+          "lemma": "faute",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "不是；差池"
+        },
+        {
+          "id": 3240,
+          "lemma": "coupable",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "主犯；罪人"
+        },
+        {
+          "id": 3465,
+          "lemma": "culpabiliser",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "自责"
+        },
+        {
+          "id": 3466,
+          "lemma": "culpabilité",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "有罪；罪名"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "etymological_family": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 14139,
+        "lemma": "étendre",
+        "pos": "VER",
+        "cefr": "B2",
+        "gloss": "伸展；伸开"
+      },
+      "score": 28.3705,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 4959,
+          "lemma": "expansif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "粗放"
+        },
+        {
+          "id": 4960,
+          "lemma": "expansion",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "扩展；扩张"
+        },
+        {
+          "id": 5015,
+          "lemma": "extension",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "伸开；分机"
+        },
+        {
+          "id": 14139,
+          "lemma": "étendre",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "伸展；伸开"
+        },
+        {
+          "id": 14140,
+          "lemma": "étendue",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "广度；广袤"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1,
+        "etymological_family": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 10930,
+        "lemma": "remarquer",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "注意到"
+      },
+      "score": 27.9903,
+      "reason": "入口词高频低级别；覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 10930,
+          "lemma": "remarquer",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "注意到"
+        },
+        {
+          "id": 10929,
+          "lemma": "remarque",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "加注；发觉"
+        },
+        {
+          "id": 10927,
+          "lemma": "remarquable",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "不简单；优异"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 2256,
+        "lemma": "chauffer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "加热"
+      },
+      "score": 27.9777,
+      "reason": "含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 2256,
+          "lemma": "chauffer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "加热"
+        },
+        {
+          "id": 2254,
+          "lemma": "chauffage",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "供暖；加温"
+        },
+        {
+          "id": 2257,
+          "lemma": "chauffeur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "司机；驾驶员"
+        },
+        {
+          "id": 11375,
+          "lemma": "réchauffement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "升温"
+        },
+        {
+          "id": 11376,
+          "lemma": "réchauffer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "加热"
+        },
+        {
+          "id": 13812,
+          "lemma": "échauffer",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "发怒；热身"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 5
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 5
+    },
+    {
+      "core": {
+        "id": 12254,
+        "lemma": "stabilité",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "稳定性"
+      },
+      "score": 27.886,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 12254,
+          "lemma": "stabilité",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "稳定性"
+        },
+        {
+          "id": 6859,
+          "lemma": "instabilité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 6860,
+          "lemma": "instable",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "不稳；不稳定"
+        },
+        {
+          "id": 12255,
+          "lemma": "stable",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "安定；安稳"
+        },
+        {
+          "id": 12253,
+          "lemma": "stabiliser",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "安定；稳住"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "antonym": 1,
+        "derivation": 4
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 2437,
+        "lemma": "circuler",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "循环；流传"
+      },
+      "score": 27.8457,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 2436,
+          "lemma": "circulation",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "交通；周转"
+        },
+        {
+          "id": 2437,
+          "lemma": "circuler",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "循环；流传"
+        },
+        {
+          "id": 2139,
+          "lemma": "cercle",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "圆圈；圈子"
+        },
+        {
+          "id": 2435,
+          "lemma": "circulaire",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "回转；圆形"
+        },
+        {
+          "id": 2140,
+          "lemma": "cercler",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "箍"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1,
+        "etymological_family": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 2227,
+        "lemma": "charger",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "冲锋；加载"
+      },
+      "score": 27.4384,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 2225,
+          "lemma": "charge",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "充电；包袱"
+        },
+        {
+          "id": 2227,
+          "lemma": "charger",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "冲锋；加载"
+        },
+        {
+          "id": 2226,
+          "lemma": "chargement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "上机；上船"
+        },
+        {
+          "id": 10783,
+          "lemma": "recharger",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "充值；充电"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 11949,
+        "lemma": "signifier",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "代指；意味着"
+      },
+      "score": 27.3638,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 11949,
+          "lemma": "signifier",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "代指；意味着"
+        },
+        {
+          "id": 11947,
+          "lemma": "significatif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "意味；有意义"
+        },
+        {
+          "id": 11948,
+          "lemma": "signification",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "含义；含意"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 3
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 203,
+        "lemma": "adopter",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "摆出；过房"
+      },
+      "score": 27.2291,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 203,
+          "lemma": "adopter",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "摆出；过房"
+        },
+        {
+          "id": 204,
+          "lemma": "adoptif",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "义"
+        },
+        {
+          "id": 205,
+          "lemma": "adoption",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "收养；领养"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 3
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 986,
+        "lemma": "attirer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "吸引；唤起"
+      },
+      "score": 27.2177,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 986,
+          "lemma": "attirer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "吸引；唤起"
+        },
+        {
+          "id": 989,
+          "lemma": "attractif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "吸引人；颜值高"
+        },
+        {
+          "id": 990,
+          "lemma": "attraction",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "名堂；吸力"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 1,
+        "etymological_family": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 11408,
+        "lemma": "réduire",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "减削；减小"
+      },
+      "score": 27.0905,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 11408,
+          "lemma": "réduire",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "减削；减小"
+        },
+        {
+          "id": 11407,
+          "lemma": "réduction",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "折扣；特惠"
+        },
+        {
+          "id": 11409,
+          "lemma": "réduit",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 10890,
+        "lemma": "rejoindre",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "加入；加盟"
+      },
+      "score": 27.0821,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 7182,
+          "lemma": "joindre",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "交接；加上"
+        },
+        {
+          "id": 10890,
+          "lemma": "rejoindre",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "加入；加盟"
+        },
+        {
+          "id": 6799,
+          "lemma": "injonction",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 4680,
+          "lemma": "enjoindre",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "吩咐"
+        },
+        {
+          "id": 7183,
+          "lemma": "joint",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "连带"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 3493,
+        "lemma": "cycle",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "周期"
+      },
+      "score": 27.0819,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 3493,
+          "lemma": "cycle",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "周期"
+        },
+        {
+          "id": 3496,
+          "lemma": "cycliste",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "单车族"
+        },
+        {
+          "id": 10832,
+          "lemma": "recyclage",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "再造"
+        },
+        {
+          "id": 10833,
+          "lemma": "recycler",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "回收；还魂"
+        },
+        {
+          "id": 3497,
+          "lemma": "cycliste",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "单车族"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 11887,
+        "lemma": "serrer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "夹紧；拢攥"
+      },
+      "score": 26.7994,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 11887,
+          "lemma": "serrer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "夹紧；拢攥"
+        },
+        {
+          "id": 11886,
+          "lemma": "serre",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "温室"
+        },
+        {
+          "id": 11889,
+          "lemma": "serré",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "密密；密密麻麻"
+        },
+        {
+          "id": 11072,
+          "lemma": "resserrer",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "收紧；紧缩"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 11592,
+        "lemma": "révéler",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "公开；制成"
+      },
+      "score": 26.6149,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 11591,
+          "lemma": "révélation",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "启示；天启"
+        },
+        {
+          "id": 11592,
+          "lemma": "révéler",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "公开；制成"
+        },
+        {
+          "id": 11589,
+          "lemma": "révélateur",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 8835,
+        "lemma": "observer",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "观察"
+      },
+      "score": 26.5613,
+      "reason": "入口词高频低级别；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 8835,
+          "lemma": "observer",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "观察"
+        },
+        {
+          "id": 8832,
+          "lemma": "observateur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "旁观者"
+        },
+        {
+          "id": 8833,
+          "lemma": "observation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "批示；观察"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 2679,
+        "lemma": "commissaire",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "专员；总监"
+      },
+      "score": 26.5297,
+      "reason": "含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 2679,
+          "lemma": "commissaire",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "专员；总监"
+        },
+        {
+          "id": 2678,
+          "lemma": "commettre",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "委任"
+        },
+        {
+          "id": 2681,
+          "lemma": "commission",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "佣金；回扣"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 120,
+        "lemma": "accès",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "入口；准入"
+      },
+      "score": 26.3923,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 120,
+          "lemma": "accès",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "入口；准入"
+        },
+        {
+          "id": 121,
+          "lemma": "accéder",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "接入"
+        },
+        {
+          "id": 78,
+          "lemma": "accessible",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 79,
+          "lemma": "accession",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1,
+        "etymological_family": 1,
+        "synonym": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 236,
+        "lemma": "affectif",
+        "pos": "ADJ",
+        "cefr": "B2",
+        "gloss": ""
+      },
+      "score": 26.3827,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 234,
+          "lemma": "affectation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "友爱；委任"
+        },
+        {
+          "id": 235,
+          "lemma": "affecter",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "委任；影响"
+        },
+        {
+          "id": 236,
+          "lemma": "affectif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 237,
+          "lemma": "affection",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "亲情；人情味"
+        },
+        {
+          "id": 238,
+          "lemma": "affectionner",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "爱"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 4
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 5
+    },
+    {
+      "core": {
+        "id": 2990,
+        "lemma": "constitution",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "体格；体质"
+      },
+      "score": 26.367,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 2990,
+          "lemma": "constitution",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "体格；体质"
+        },
+        {
+          "id": 2989,
+          "lemma": "constituer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "构成；组建"
+        },
+        {
+          "id": 2991,
+          "lemma": "constitutionnel",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 10804,
+          "lemma": "reconstituer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "重组"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 3
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 3115,
+        "lemma": "convention",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "习俗；公约"
+      },
+      "score": 26.3464,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 3114,
+          "lemma": "convenir",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "适合"
+        },
+        {
+          "id": 3115,
+          "lemma": "convention",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "习俗；公约"
+        },
+        {
+          "id": 3116,
+          "lemma": "conventionnel",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "传统"
+        },
+        {
+          "id": 3113,
+          "lemma": "convenance",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "相配；礼节"
+        },
+        {
+          "id": 3118,
+          "lemma": "convenu",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "旧调重弹"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 9838,
+        "lemma": "pompier",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": ""
+      },
+      "score": 26.2292,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 9838,
+          "lemma": "pompier",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 9835,
+          "lemma": "pompe",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "帮浦；泵浦"
+        },
+        {
+          "id": 9836,
+          "lemma": "pomper",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "唧；抽"
+        },
+        {
+          "id": 9837,
+          "lemma": "pompeux",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "奢华；虚夸"
+        },
+        {
+          "id": 9839,
+          "lemma": "pompier",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 2719,
+        "lemma": "comparer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "对照；比拟"
+      },
+      "score": 26.1426,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 2715,
+          "lemma": "comparaison",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 2719,
+          "lemma": "comparer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "对照；比拟"
+        },
+        {
+          "id": 2714,
+          "lemma": "comparable",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "可比"
+        },
+        {
+          "id": 6589,
+          "lemma": "incomparable",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "举世无双；无出其右"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "antonym": 1,
+        "derivation": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 2446,
+        "lemma": "citoyen",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "国民"
+      },
+      "score": 25.9956,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 2446,
+          "lemma": "citoyen",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "国民"
+        },
+        {
+          "id": 2453,
+          "lemma": "civil",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "小民；民事"
+        },
+        {
+          "id": 2454,
+          "lemma": "civilisation",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "人类文明；文化"
+        },
+        {
+          "id": 2455,
+          "lemma": "civiliser",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "教化"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 9199,
+        "lemma": "paraître",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "出笼"
+      },
+      "score": 25.8962,
+      "reason": "含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 9199,
+          "lemma": "paraître",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "出笼"
+        },
+        {
+          "id": 9294,
+          "lemma": "parution",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "发表；放人"
+        },
+        {
+          "id": 11006,
+          "lemma": "reparaître",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 13045,
+        "lemma": "transmettre",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "传承；传染"
+      },
+      "score": 25.8293,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 13045,
+          "lemma": "transmettre",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "传承；传染"
+        },
+        {
+          "id": 13047,
+          "lemma": "transmission",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "传动；传输"
+        },
+        {
+          "id": 13046,
+          "lemma": "transmissible",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 11119,
+          "lemma": "retransmettre",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "转播"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 301,
+        "lemma": "agresser",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "拦劫"
+      },
+      "score": 25.7901,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 301,
+          "lemma": "agresser",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "拦劫"
+        },
+        {
+          "id": 303,
+          "lemma": "agressif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "咄咄逼人；好胜"
+        },
+        {
+          "id": 304,
+          "lemma": "agression",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "侵略"
+        },
+        {
+          "id": 302,
+          "lemma": "agresseur",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "侵略者；施虐者"
+        },
+        {
+          "id": 305,
+          "lemma": "agressivité",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "霸气"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 5
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 5
+    },
+    {
+      "core": {
+        "id": 13092,
+        "lemma": "trembler",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "发抖；哆嗦"
+      },
+      "score": 25.4194,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 13089,
+          "lemma": "tremblant",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "栗然"
+        },
+        {
+          "id": 13092,
+          "lemma": "trembler",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "发抖；哆嗦"
+        },
+        {
+          "id": 12589,
+          "lemma": "séisme",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "地震"
+        },
+        {
+          "id": 13091,
+          "lemma": "tremblement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "颤动"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 7012,
+        "lemma": "intégrer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "并入；整合"
+      },
+      "score": 25.3254,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 7012,
+          "lemma": "intégrer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "并入；整合"
+        },
+        {
+          "id": 7011,
+          "lemma": "intégration",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "一体化；主流化"
+        },
+        {
+          "id": 7015,
+          "lemma": "intégré",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "集成"
+        },
+        {
+          "id": 11468,
+          "lemma": "réintégrer",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "重回"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 3216,
+        "lemma": "cou",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "头颈；脖子"
+      },
+      "score": 25.3054,
+      "reason": "含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 3216,
+          "lemma": "cou",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "头颈；脖子"
+        },
+        {
+          "id": 2597,
+          "lemma": "colle",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "胶水；胶粘剂"
+        },
+        {
+          "id": 2611,
+          "lemma": "collier",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "项链"
+        },
+        {
+          "id": 4089,
+          "lemma": "décollage",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "升空"
+        },
+        {
+          "id": 4090,
+          "lemma": "décoller",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "升空；启航"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 4
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 6664,
+        "lemma": "individu",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "个人；个体"
+      },
+      "score": 25.2567,
+      "reason": "含现代派生规律；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 6664,
+          "lemma": "individu",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "个人；个体"
+        },
+        {
+          "id": 6668,
+          "lemma": "individualiste",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 6672,
+          "lemma": "individuel",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "个别；单人"
+        },
+        {
+          "id": 6670,
+          "lemma": "individualité",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "个性"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 3376,
+        "lemma": "croissance",
+        "pos": "NOM",
+        "cefr": "B2",
+        "gloss": "发育；增殖"
+      },
+      "score": 24.9376,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 3376,
+          "lemma": "croissance",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "发育；增殖"
+        },
+        {
+          "id": 3378,
+          "lemma": "croissant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "可颂；往上"
+        },
+        {
+          "id": 3395,
+          "lemma": "croître",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 3401,
+          "lemma": "crue",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "山洪；洪水"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 9773,
+        "lemma": "pointe",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "尖头；尖端"
+      },
+      "score": 24.8909,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 9773,
+          "lemma": "pointe",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "尖头；尖端"
+        },
+        {
+          "id": 9769,
+          "lemma": "poindre",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 9774,
+          "lemma": "pointer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "指针；枪口"
+        },
+        {
+          "id": 9779,
+          "lemma": "pointu",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "剑尖；尖尖"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 5553,
+        "lemma": "front",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "前方；前端"
+      },
+      "score": 24.8233,
+      "reason": "含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 270,
+          "lemma": "affronter",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "对峙；正视"
+        },
+        {
+          "id": 5553,
+          "lemma": "front",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "前方；前端"
+        },
+        {
+          "id": 5555,
+          "lemma": "frontière",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "临界；关口"
+        },
+        {
+          "id": 269,
+          "lemma": "affrontement",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "豗"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 3
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 1812,
+        "lemma": "bête",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "傻乎乎；少根筋"
+      },
+      "score": 24.8173,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 1811,
+          "lemma": "bête",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "傻的，笨的（最通用）"
+        },
+        {
+          "id": 1812,
+          "lemma": "bête",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "傻乎乎；少根筋"
+        },
+        {
+          "id": 4553,
+          "lemma": "embêter",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "为难；打扰"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 4860,
+        "lemma": "estimer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "估价；估计"
+      },
+      "score": 24.7766,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 4860,
+          "lemma": "estimer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "估价；估计"
+        },
+        {
+          "id": 4858,
+          "lemma": "estimation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "估价；估值"
+        },
+        {
+          "id": 4859,
+          "lemma": "estime",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "估价"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1,
+        "synonym": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 9715,
+        "lemma": "plier",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "合拢；折叠"
+      },
+      "score": 24.7698,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 9711,
+          "lemma": "pli",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "皱纹"
+        },
+        {
+          "id": 9715,
+          "lemma": "plier",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "合拢；折叠"
+        },
+        {
+          "id": 11021,
+          "lemma": "replier",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 4321,
+          "lemma": "déplier",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "打开；摊开"
+        },
+        {
+          "id": 11020,
+          "lemma": "repli",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "襞"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "antonym": 1,
+        "conversion_or_lexicalization": 2,
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 5
+    },
+    {
+      "core": {
+        "id": 9363,
+        "lemma": "pauvre",
+        "pos": "ADJ",
+        "cefr": "B1",
+        "gloss": "可怜；困苦"
+      },
+      "score": 24.7365,
+      "reason": "含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 9363,
+          "lemma": "pauvre",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "可怜；困苦"
+        },
+        {
+          "id": 9365,
+          "lemma": "pauvreté",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "穷苦；贫乏"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 584,
+        "lemma": "annoncer",
+        "pos": "VER",
+        "cefr": "A1",
+        "gloss": "宣布，告知"
+      },
+      "score": 24.7222,
+      "reason": "入口词高频低级别；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 584,
+          "lemma": "annoncer",
+          "pos": "VER",
+          "cefr": "A1",
+          "gloss": "宣布，告知"
+        },
+        {
+          "id": 583,
+          "lemma": "annonce",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "公告；启事"
+        },
+        {
+          "id": 585,
+          "lemma": "annonceur",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "广告商；播音员"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 7988,
+        "lemma": "menacer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "吓唬；威胁"
+      },
+      "score": 24.7018,
+      "reason": "覆盖动词/名词/形容词等多词性；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 7987,
+          "lemma": "menace",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "威胁"
+        },
+        {
+          "id": 7988,
+          "lemma": "menacer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "吓唬；威胁"
+        },
+        {
+          "id": 7989,
+          "lemma": "menaçant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "逼人"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 2601,
+        "lemma": "collectif",
+        "pos": "ADJ",
+        "cefr": "B1",
+        "gloss": "集体"
+      },
+      "score": 24.6853,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 2601,
+          "lemma": "collectif",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "集体"
+        },
+        {
+          "id": 2607,
+          "lemma": "collectivité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "社区；集体"
+        },
+        {
+          "id": 2598,
+          "lemma": "collecte",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "僎"
+        },
+        {
+          "id": 2599,
+          "lemma": "collecter",
+          "pos": "VER",
+          "cefr": "C1",
+          "gloss": "搜罗；收取"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 10241,
+        "lemma": "provoquer",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "叫阵；引发"
+      },
+      "score": 24.6036,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 10241,
+          "lemma": "provoquer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "叫阵；引发"
+        },
+        {
+          "id": 10239,
+          "lemma": "provocateur",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "刺激性；火辣"
+        },
+        {
+          "id": 10240,
+          "lemma": "provocation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "挑拨；教唆"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 2
+    },
+    {
+      "core": {
+        "id": 12981,
+        "lemma": "trace",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "印记；屈雷丝"
+      },
+      "score": 24.6012,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 11109,
+          "lemma": "retracer",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": ""
+        },
+        {
+          "id": 12981,
+          "lemma": "trace",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "印记；屈雷丝"
+        },
+        {
+          "id": 12982,
+          "lemma": "tracer",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "追踪"
+        },
+        {
+          "id": 12986,
+          "lemma": "tracé",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "划线；绘图"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 14087,
+        "lemma": "épuiser",
+        "pos": "VER",
+        "cefr": "B2",
+        "gloss": "期满；用光"
+      },
+      "score": 24.58,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 10414,
+          "lemma": "puiser",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "汲取"
+        },
+        {
+          "id": 10420,
+          "lemma": "puits",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "水井"
+        },
+        {
+          "id": 14085,
+          "lemma": "épuisant",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "费劲"
+        },
+        {
+          "id": 14087,
+          "lemma": "épuiser",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "期满；用光"
+        },
+        {
+          "id": 14086,
+          "lemma": "épuisement",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "衰竭"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 2,
+        "derivation": 2
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 8846,
+        "lemma": "obtenir",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "取得；弄到"
+      },
+      "score": 24.4975,
+      "reason": "含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 8846,
+          "lemma": "obtenir",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "取得；弄到"
+        },
+        {
+          "id": 8847,
+          "lemma": "obtention",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 0
+    },
+    {
+      "core": {
+        "id": 9217,
+        "lemma": "parent",
+        "pos": "NOM",
+        "cefr": "B2",
+        "gloss": "亲戚；亲眷"
+      },
+      "score": 24.4453,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 8241,
+          "lemma": "monoparental",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 9218,
+          "lemma": "parent",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "亲戚；亲眷"
+        },
+        {
+          "id": 9217,
+          "lemma": "parent",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "亲戚；亲眷"
+        },
+        {
+          "id": 9219,
+          "lemma": "parental",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 9221,
+          "lemma": "parenté",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "亲属；亲眷"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 1469,
+        "lemma": "blesser",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "伤人；伤害"
+      },
+      "score": 24.4269,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 1469,
+          "lemma": "blesser",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "伤人；伤害"
+        },
+        {
+          "id": 1472,
+          "lemma": "blessé",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "伤员；伤感"
+        },
+        {
+          "id": 13712,
+          "lemma": "vulnérable",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "不堪一击；弱势"
+        },
+        {
+          "id": 13711,
+          "lemma": "vulnérabilité",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "弱点；无助"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 1,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 3
+    },
+    {
+      "core": {
+        "id": 12791,
+        "lemma": "terroriser",
+        "pos": "VER",
+        "cefr": "B2",
+        "gloss": ""
+      },
+      "score": 24.384,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 12781,
+          "lemma": "terreur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "恐怖"
+        },
+        {
+          "id": 12791,
+          "lemma": "terroriser",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": ""
+        },
+        {
+          "id": 12792,
+          "lemma": "terrorisme",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "恐怖主义"
+        },
+        {
+          "id": 12794,
+          "lemma": "terroriste",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "恐怖分子"
+        },
+        {
+          "id": 12793,
+          "lemma": "terroriste",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "恐怖分子"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 4
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 5
+    },
+    {
+      "core": {
+        "id": 7443,
+        "lemma": "limiter",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "制约；定格"
+      },
+      "score": 24.3774,
+      "reason": "含现代派生规律；含词类转换/词汇化提醒",
+      "defaultMembers": [
+        {
+          "id": 7442,
+          "lemma": "limite",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "尽头；底止"
+        },
+        {
+          "id": 7443,
+          "lemma": "limiter",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "制约；定格"
+        },
+        {
+          "id": 4215,
+          "lemma": "délimiter",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "划定；界定"
+        },
+        {
+          "id": 7441,
+          "lemma": "limitation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "局限性；限制"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2,
+        "synonym": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 5461,
+        "lemma": "fournir",
+        "pos": "VER",
+        "cefr": "B2",
+        "gloss": "作出；供应"
+      },
+      "score": 24.2344,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含词类转换/词汇化提醒；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 5459,
+          "lemma": "fourni",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "预装"
+        },
+        {
+          "id": 5461,
+          "lemma": "fournir",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "作出；供应"
+        },
+        {
+          "id": 5462,
+          "lemma": "fournisseur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "供应商；供货商"
+        },
+        {
+          "id": 10014,
+          "lemma": "prestataire",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "提供商"
+        },
+        {
+          "id": 10015,
+          "lemma": "prestation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "conversion_or_lexicalization": 1,
+        "derivation": 2,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 12763,
+        "lemma": "tenter",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "尝试；引诱"
+      },
+      "score": 24.1633,
+      "reason": "含现代派生规律；含历史同源但非规则派生；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 12763,
+          "lemma": "tenter",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "尝试；引诱"
+        },
+        {
+          "id": 12760,
+          "lemma": "tentation",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "诱惑力"
+        },
+        {
+          "id": 12761,
+          "lemma": "tentative",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": ""
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 1,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 3415,
+        "lemma": "création",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "创作；原图"
+      },
+      "score": 24.1603,
+      "reason": "含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 3415,
+          "lemma": "création",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "创作；原图"
+        },
+        {
+          "id": 3414,
+          "lemma": "créatif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "创意"
+        },
+        {
+          "id": 3416,
+          "lemma": "créativité",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "创新精神；创造力"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 2
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 1
+    },
+    {
+      "core": {
+        "id": 11337,
+        "lemma": "règle",
+        "pos": "NOM",
+        "cefr": "B1",
+        "gloss": "尺子；常规"
+      },
+      "score": 24.1425,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；含历史同源但非规则派生",
+      "defaultMembers": [
+        {
+          "id": 11337,
+          "lemma": "règle",
+          "pos": "NOM",
+          "cefr": "B1",
+          "gloss": "尺子；常规"
+        },
+        {
+          "id": 11455,
+          "lemma": "régulier",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "固定；均匀"
+        },
+        {
+          "id": 11449,
+          "lemma": "régulariser",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "调节"
+        },
+        {
+          "id": 7099,
+          "lemma": "irrégulier",
+          "pos": "ADJ",
+          "cefr": "C1",
+          "gloss": "不定期；不规范"
+        },
+        {
+          "id": 11450,
+          "lemma": "régularité",
+          "pos": "NOM",
+          "cefr": "C1",
+          "gloss": "匀称；规律"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "antonym": 1,
+        "derivation": 3,
+        "etymological_family": 1
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 5
+    },
+    {
+      "core": {
+        "id": 12367,
+        "lemma": "successif",
+        "pos": "ADJ",
+        "cefr": "B1",
+        "gloss": "有序；连续"
+      },
+      "score": 24.1255,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律",
+      "defaultMembers": [
+        {
+          "id": 12367,
+          "lemma": "successif",
+          "pos": "ADJ",
+          "cefr": "B1",
+          "gloss": "有序；连续"
+        },
+        {
+          "id": 12366,
+          "lemma": "successeur",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "接棒人；接班人"
+        },
+        {
+          "id": 12368,
+          "lemma": "succession",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "继承；连环"
+        },
+        {
+          "id": 12376,
+          "lemma": "succéder",
+          "pos": "VER",
+          "cefr": "B2",
+          "gloss": "后继"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 4
+      },
+      "reviewedRelations": 0,
+      "sourcedRelations": 4
+    },
+    {
+      "core": {
+        "id": 4979,
+        "lemma": "exploser",
+        "pos": "VER",
+        "cefr": "B1",
+        "gloss": "发怒；爆发"
+      },
+      "score": 24.1216,
+      "reason": "覆盖动词/名词/形容词等多词性；含现代派生规律；有编辑审校关系可直接教学",
+      "defaultMembers": [
+        {
+          "id": 4979,
+          "lemma": "exploser",
+          "pos": "VER",
+          "cefr": "B1",
+          "gloss": "发怒；爆发"
+        },
+        {
+          "id": 4980,
+          "lemma": "explosif",
+          "pos": "ADJ",
+          "cefr": "B2",
+          "gloss": "炸药；爆炸性"
+        },
+        {
+          "id": 4981,
+          "lemma": "explosion",
+          "pos": "NOM",
+          "cefr": "B2",
+          "gloss": "爆炸；爆裂"
+        }
+      ],
+      "extendedMembers": [],
+      "relationCounts": {
+        "derivation": 3
+      },
+      "reviewedRelations": 1,
+      "sourcedRelations": 2
+    }
+  ]
+}

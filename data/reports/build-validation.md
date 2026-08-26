@@ -14,7 +14,7 @@
 | A1/A2 实词可检索但不强行入图 | 通过 | search-only=1,612, appartenir/VER=present, overlap=0 |
 | 运行时学习词范围、内容状态与词形搜索回归 | 通过 | learning=9,017, statuses=9,017, aliases=61,176 |
 | 图端点与方向约束 | 通过 | foreign-key errors=0, invalid order=0 |
-| 官方边来源完整 | 通过 | 4577/4577 条有来源 |
+| 官方边来源完整 | 通过 | 4583/4583 条有来源 |
 | 核心词审校关系 | 通过 | 103/103 条具完整审校、来源与例句 |
 | 稳定坐标与全图连通 | 通过 | nodes=7,405, components=1, isolated=0 |
 | 七类制图信号 | 通过 | derivation=1,708, editorial_seed=195, morphology=3,840, phonetic=6,033, semantic=2,770, skeleton=322, spelling=6,889 |
@@ -22,10 +22,10 @@
 | Démonette 直接派生通过质量门 | 通过 | gate=True, candidates=1,708, sourced_official=1,708, same_pos=197, invalid_same_pos=0 |
 | 核心词族回归 | 通过 | affirmer↔affirmation=1, voir↔vision=1, poli↔impoli=1 |
 | DBnary 义项与语义关系通过质量门 | 通过 | gate=True, entries=9,881, definitions=43,299, sense_lexemes=8,748, semantic=2,770/2,770/2,770, contradictions=0 |
-| 中文释义相似只保留为候选 | 通过 | CFDICT candidates=3,487; visible semantic layout=2,770 (DBnary only) |
-| 语义样例与多义词回归 | 通过 | poli↔respectueux syn=1 (expected 1), poli↔impoli ant=1 (expected 1), seau↔nager syn=0 (expected 0), poli entries/senses=2/4 |
+| 中文释义相似只保留为候选 | 通过 | CFDICT candidates=3,486; visible semantic layout=2,770 (DBnary only) |
+| 语义样例与多义词回归 | 通过 | poli↔respectueux synonym=1 (expected 1), poli↔impoli antonym=1 (expected 1), seau↔nager synonym=0 (expected 0), poli entries/senses=2/4 |
 | 主词与支撑词分账 | 通过 | eligible=7,338, support=67, rendered=7,405 |
-| 静态运行时已导出 | 通过 | graph-data.js=17,511,874 bytes |
+| 静态运行时已导出 | 通过 | graph-data.js=17,583,629 bytes |
 | 前端不再依赖 CLUSTERS | 通过 | canvas 读取 graph-data.js 固定坐标 |
 | 学习表层已导出 | 通过 | 词源、搭配、DBnary 义项例句与可检索学习词进入静态运行时 |
 | 运行时图数据缓存按内容版本化 | 通过 | index.html 与 Service Worker 均引用当前 graph-data.js SHA-256 版本 |

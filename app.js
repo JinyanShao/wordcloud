@@ -20,21 +20,25 @@
   const CANVAS_PIXEL_BUDGET = { mobile: 3600000, desktop: 9000000 };
 
   const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "编辑关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
-  // "漂移"(drift) and "因果"(cause) were dropped from the public relation
-  // vocabulary: their meaning wasn't reliably explainable to learners, and
-  // no reviewed relation uses them (see has_real_review_evidence in
-  // build_graph.py). syn/ant/compare/trap/fam cover what's publishable.
-  const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "构词", trap: "易混", ant: "反义" };
-  const RELATION_ORDER = ["syn", "ant", "compare", "trap", "fam", "personal"];
-  const FOCUS_LIMITS = { syn: 5, ant: 4, compare: 3, trap: 3, fam: 6, personal: 3 };
+  // Public relations use the formal word-family model; old build artifacts
+  // are normalized through LEGACY_RELATION during load.
+  const RELATION_NAMES = {
+    synonym: "近义", antonym: "反义", compare: "对比", trap: "易混",
+    derivation: "构词", conversion_or_lexicalization: "转类", etymological_family: "词源",
+  };
+  const RELATION_ORDER = ["synonym", "antonym", "compare", "trap", "derivation", "conversion_or_lexicalization", "etymological_family", "personal"];
+  const FOCUS_LIMITS = { synonym: 5, antonym: 4, compare: 3, trap: 3, derivation: 6, conversion_or_lexicalization: 4, etymological_family: 4, personal: 3 };
   const RELATION_STYLE = {
-    syn: { color: "#7b8188", dash: [], arrow: false },
+    synonym: { color: "#7b8188", dash: [], arrow: false },
     compare: { color: "#c07a22", dash: [], arrow: true },
-    fam: { color: "#3477b8", dash: [], arrow: false },
+    derivation: { color: "#3477b8", dash: [], arrow: false },
+    conversion_or_lexicalization: { color: "#3477b8", dash: [4, 4], arrow: false },
+    etymological_family: { color: "#3477b8", dash: [2, 5], arrow: false },
     trap: { color: "#c7465d", dash: [], arrow: false },
-    ant: { color: "#278867", dash: [], arrow: false },
+    antonym: { color: "#278867", dash: [], arrow: false },
     personal: { color: "#b96d22", dash: [2, 5], arrow: false },
   };
+  const LEGACY_RELATION = { syn: "synonym", ant: "antonym", fam: "derivation", drift: "derivation" };
   const NODE = { id: 0, word: 1, pos: 2, level: 3, gloss: 4, x: 5, y: 6, size: 7, community: 8, freq: 9, hasGloss: 10, status: 11, note: 12 };
 
   function runtimeNode(row) {
@@ -62,7 +66,7 @@
   for (const node of searchOnlyNodes) nodeById.set(node.id, node);
   const baseLinks = GRAPH_LINKS.map((row) => ({ a: String(row[0]), b: String(row[1]), mask: row[2], weight: row[3] }));
   const officialEdges = GRAPH_OFFICIAL_EDGES.map((row) => ({
-    a: String(row[0]), b: String(row[1]), relation: row[2], dimension: row[3], subtype: row[4], direction: row[5],
+    a: String(row[0]), b: String(row[1]), relation: LEGACY_RELATION[row[2]] || row[2], dimension: row[3], subtype: row[4], direction: row[5],
     label: row[6], explanation: row[7], examples: row[8], confidence: row[9], review: row[10], kind: "official",
     keySenseA: row[11] || "", keySenseB: row[12] || "",
   }));
@@ -238,6 +242,12 @@
     focusConnections = [];
     focusEdges = [];
     trail = [];
+    search.value = "";
+    searchResults.innerHTML = "";
+    searchResults.classList.add("hidden");
+    panelContent.innerHTML = "";
+    tooltip.classList.add("hidden");
+    search.blur();
     for (const node of allNodes) {
       node.targetX = node.homeX; node.targetY = node.homeY;
       node.targetAlpha = node.status === "eligible" || node.personal ? 1 : .44;
@@ -301,7 +311,7 @@
       .filter((edge) => (edge.mask & 2) && edge.weight >= .72 && !officialPairs.has(pairKey(id, edge.other)))
       .filter((edge) => nodeById.get(edge.other)?.word !== nodeById.get(id)?.word)
       .map((edge) => ({
-        ...edge, a: id, b: edge.other, other: edge.other, relation: "fam", label: "构词线索", kind: "structural", review: "candidate",
+        ...edge, a: id, b: edge.other, other: edge.other, relation: "derivation", label: "构词线索", kind: "structural", review: "candidate",
       }));
   }
 
@@ -323,9 +333,26 @@
   function connectionsFor(id, limit = 16) {
     const byNeighbor = new Map();
     const officialByNeighbor = new Map();
+    const familyRelations = new Set(["derivation", "conversion_or_lexicalization", "etymological_family"]);
+    const familyQueue = [id];
+    const familySeen = new Set([id]);
+    for (let index = 0; index < familyQueue.length && familySeen.size < 80; index += 1) {
+      for (const edge of officialAdj.get(familyQueue[index]) || []) {
+        if (!familyRelations.has(edge.relation) || familySeen.has(edge.other)) continue;
+        familySeen.add(edge.other);
+        familyQueue.push(edge.other);
+      }
+    }
     for (const edge of officialAdj.get(id) || []) {
       if (!officialByNeighbor.has(edge.other)) officialByNeighbor.set(edge.other, []);
       officialByNeighbor.get(edge.other).push({ ...edge, kind: "official" });
+    }
+    for (const member of familySeen) {
+      if (member === id) continue;
+      const edge = (officialAdj.get(id) || []).find((item) => item.other === member)
+        || { a: id, b: member, other: member, relation: "etymological_family", label: "同一词族", explanation: "", examples: "[]", review: "reviewed" };
+      if (!officialByNeighbor.has(member)) officialByNeighbor.set(member, []);
+      officialByNeighbor.get(member).push({ ...edge, kind: "official" });
     }
     for (const [other, relations] of officialByNeighbor) {
       relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(b.review === "reviewed") - Number(a.review === "reviewed"));
@@ -437,15 +464,15 @@
 
   function visualFor(edge) {
     if (edge.kind === "personal") return { ...RELATION_STYLE.personal, alpha: .88, label: edge.label || "我的联想" };
-    if (edge.kind === "structural") return { ...RELATION_STYLE.fam, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
+    if (edge.kind === "structural") return { ...RELATION_STYLE.derivation, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
     if (edge.kind === "form") return { ...RELATION_STYLE.trap, dash: [3, 5], alpha: .58, label: `${edge.label || "形音相近"} · 候选` };
-    const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.syn;
+    const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.synonym;
     const mappedLabel = edge.label ? RELATION_NAMES[edge.label] : null;
     // Historical/Latin-root word-family links are real, but they are not
     // the same claim as a transparent modern prefix (faire -> refaire):
     // label them "词源" (etymology) instead of "构词" (word-formation) so
     // the two are never conflated.
-    const isEtymological = edge.kind === "official" && String(edge.dimension || "").includes("etymological");
+    const isEtymological = edge.relation === "etymological_family" || edge.kind === "official" && String(edge.dimension || "").includes("etymological");
     const relationName = isEtymological ? "词源" : (RELATION_NAMES[edge.relation] || edge.relation || "已整理");
     // Canvas chips stay short (relation name only); custom teaching labels are
     // surfaced on the word card via `note`, never drawn across an edge.
@@ -954,7 +981,7 @@
       ${mine.length ? `<section class="panel-section"><h3>我的关系</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${form.length ? `<details class="panel-section candidate-details"><summary>形音相近的自动候选（未经编辑整理）</summary><p class="candidate-note">只是形近且音近，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
       ${structural.length ? `<details class="panel-section candidate-details"><summary>构词相近的自动候选（未经编辑整理）</summary><p class="candidate-note">来自词形结构的自动匹配，不等同于已编辑整理的教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
-      ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看更多自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
+      ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看更多自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "derivation", label: signals(edge.mask) })).join("")}</div></details>` : ""}
     `;
     panel.classList.remove("hidden");
     panelContent.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => enterFocus(button.dataset.node)));

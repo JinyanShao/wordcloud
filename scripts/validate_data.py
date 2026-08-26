@@ -127,7 +127,11 @@ def editorial_teaching_example_errors() -> list[str]:
 def editorial_relation_errors() -> list[str]:
     payload = json.loads(SEED.read_text(encoding="utf-8"))
     errors: list[str] = []
-    allowed_types = {"syn", "compare", "fam", "drift", "trap", "ant", "cause"}
+    allowed_types = {
+        "inflection", "derivation", "conversion_or_lexicalization",
+        "etymological_family", "synonym", "antonym", "compare", "trap",
+        "syn", "fam", "drift", "ant", "cause",
+    }
     for item in payload.get("editorialRelations", []):
         key = f"{item.get('a')}:{item.get('b')}"
         required = ("a", "aPos", "b", "bPos", "type", "dimension", "label", "explanation", "source", "reviewer", "reviewedAt")
@@ -437,7 +441,7 @@ def main() -> None:
             JOIN official_edge_sources s ON s.edge_id=e.id AND s.source_id='demonette_2'
             JOIN lexemes a ON a.id=e.a_id
             JOIN lexemes b ON b.id=e.b_id
-            WHERE e.relation='fam'
+            WHERE e.relation IN ('derivation','conversion_or_lexicalization','etymological_family')
               AND ((a.normalized=? AND a.pos=? AND b.normalized=? AND b.pos=?)
                 OR (b.normalized=? AND b.pos=? AND a.normalized=? AND a.pos=?))
             """,
@@ -467,9 +471,9 @@ def main() -> None:
         SELECT COUNT(*)
         FROM official_edges syn
         JOIN official_edge_sources ss ON ss.edge_id=syn.id AND ss.source_id='dbnary_fr'
-        JOIN official_edges ant ON ant.a_id=syn.a_id AND ant.b_id=syn.b_id AND ant.relation='ant'
+        JOIN official_edges ant ON ant.a_id=syn.a_id AND ant.b_id=syn.b_id AND ant.relation='antonym'
         JOIN official_edge_sources sa ON sa.edge_id=ant.id AND sa.source_id='dbnary_fr'
-        WHERE syn.relation='syn'
+        WHERE syn.relation='synonym'
         """
     ).fetchone()[0]
     entry_count, sense_count, sense_lexemes = conn.execute(
@@ -504,9 +508,9 @@ def main() -> None:
 
     semantic_regressions = {}
     for left, right, relation, expected in (
-        ("poli", "respectueux", "syn", 1),
-        ("poli", "impoli", "ant", 1),
-        ("seau", "nager", "syn", 0),
+        ("poli", "respectueux", "synonym", 1),
+        ("poli", "impoli", "antonym", 1),
+        ("seau", "nager", "synonym", 0),
     ):
         count = conn.execute(
             """

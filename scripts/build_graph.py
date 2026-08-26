@@ -222,7 +222,35 @@ def has_real_review_evidence(item: dict[str, object]) -> bool:
 
 
 def relation_candidate(signal: str) -> str:
-    return {"semantic": "syn", "morphology": "fam", "spelling": "trap", "phonetic": "trap"}[signal]
+    return {"semantic": "synonym", "morphology": "derivation", "spelling": "trap", "phonetic": "trap"}[signal]
+
+
+def formal_relation(value: str, dimension: str | None = None, subtype: str | None = None) -> str:
+    if value in {"syn", "synonym"}:
+        return "synonym"
+    if value in {"ant", "antonym"}:
+        return "antonym"
+    if value in {"fam", "drift"}:
+        if "etymological" in str(dimension or ""):
+            return "etymological_family"
+        if str(subtype or "") == "conversion" or str(dimension or "").endswith("x-to-x"):
+            return "conversion_or_lexicalization"
+        return "derivation"
+    if value == "cause":
+        return "compare"
+    return value
+
+
+def decomposition_payload(subtype: str | None, label: str | None) -> str:
+    text = label or ""
+    payload: dict[str, str] = {}
+    if subtype == "prefixation" or "前缀" in text:
+        payload["prefix"] = text.split("·")[-1].strip() if "·" in text else text
+    elif subtype == "suffixation" or "后缀" in text:
+        payload["suffix"] = text.split("·")[-1].strip() if "·" in text else text
+    elif subtype == "conversion":
+        payload["conversion"] = "same written form"
+    return json.dumps(payload, ensure_ascii=False)
 
 
 def pos_from_seed(value: str) -> str | None:
@@ -243,6 +271,7 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
         return [], []
     seed = json.loads(SEED_PATH.read_text(encoding="utf-8"))
     by_key = {(row["normalized"], row["pos"]): row["id"] for row in nodes}
+    by_id = {row["id"]: row for row in nodes}
     by_word: dict[str, list[int]] = defaultdict(list)
     for row in nodes:
         by_word[row["normalized"]].append(row["id"])
@@ -267,9 +296,11 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
         if original_a is None or original_b is None or original_a == original_b:
             continue
         a, b = sorted((original_a, original_b))
-        layout.append((a, b, 1.0))
-        relation = "compare" if edge["type"] == "axis" else edge["type"]
         swapped = original_a != a
+        source_id, target_id = original_a, original_b
+        source_row, target_row = by_id[source_id], by_id[target_id]
+        layout.append((a, b, 1.0))
+        relation = formal_relation("compare" if edge["type"] == "axis" else edge["type"], edge.get("dimension"), edge.get("subtype"))
         official.append(
             {
                 "a": a, "b": b, "relation": relation,
@@ -286,6 +317,17 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
                 "kind": edge["_kind"],
                 "key_sense_a": edge.get("bSenseNumber") if swapped else edge.get("aSenseNumber"),
                 "key_sense_b": edge.get("aSenseNumber") if swapped else edge.get("bSenseNumber"),
+                "source_lemma": source_row["lemma"],
+                "source_pos": source_row["pos"],
+                "source_sense": edge.get("aSenseNumber"),
+                "target_lemma": target_row["lemma"],
+                "target_pos": target_row["pos"],
+                "target_sense": edge.get("bSenseNumber"),
+                "productive_rule": bool(edge.get("productiveRule")),
+                "word_parts": edge.get("wordParts") or {},
+                "zh_status": edge.get("zhStatus") or "edited",
+                "example_status": edge.get("exampleStatus") or ("edited_example" if edge.get("examples") else "source"),
+                "family_scope": edge.get("familyScope") or "default",
             }
         )
     return layout, official
@@ -510,7 +552,7 @@ def main() -> None:
         """,
         [
             (
-                int(edge["a_id"]), int(edge["b_id"]), "fam", "derivation",
+                int(edge["a_id"]), int(edge["b_id"]), formal_relation("fam", "derivational_morphology", edge.get("subtype")), "derivation",
                 float(edge["weight"]), "demonette_2",
                 json.dumps({
                     "generator": "demonette_2_exact_lemma_pos",
@@ -588,13 +630,20 @@ def main() -> None:
             """
             INSERT OR IGNORE INTO official_edges(
               a_id,b_id,relation,dimension,subtype,direction,label,explanation,
+              source_lemma,source_pos,source_sense,target_lemma,target_pos,target_sense,
+              word_parts_json,productive_rule,zh_status,example_status,family_scope,
               examples_json,confidence,review_status,reviewed_at,created_at,
               key_sense_a,key_sense_b
-            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             (
                 item["a"], item["b"], item["relation"], item["dimension"], item["subtype"],
                 item["direction"], item["label"], item.get("explanation") or "",
+                item.get("source_lemma"), item.get("source_pos"), item.get("source_sense"),
+                item.get("target_lemma"), item.get("target_pos"), item.get("target_sense"),
+                json.dumps(item.get("word_parts") or {}, ensure_ascii=False), int(bool(item.get("productive_rule"))),
+                item.get("zh_status") or "edited", item.get("example_status") or "source",
+                item.get("family_scope") or "default",
                 json.dumps(examples_payload, ensure_ascii=False), 0.9,
                 "reviewed" if reviewed else "sourced",
                 item.get("reviewed_at") if reviewed else None, CREATED_AT,
@@ -617,7 +666,7 @@ def main() -> None:
     for item in sourced_derivations:
         a_id, b_id = int(item["a_id"]), int(item["b_id"])
         existing = conn.execute(
-            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation='fam' ORDER BY review_status='reviewed' DESC, id LIMIT 1",
+            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation IN ('derivation','conversion_or_lexicalization','etymological_family') ORDER BY review_status='reviewed' DESC, id LIMIT 1",
             (a_id, b_id),
         ).fetchone()
         if existing:
@@ -631,16 +680,20 @@ def main() -> None:
                 if item["complexity"] == "motiv-sem"
                 else "Démonette 2.0 确认的直接派生或词性转换关系。"
             )
+            relation = formal_relation("fam", "etymological_family" if item["complexity"] == "motiv-sem" else "derivational_morphology", item["subtype"])
             cursor = conn.execute(
                 """
                 INSERT INTO official_edges(
                   a_id,b_id,relation,dimension,subtype,direction,label,explanation,
+                  word_parts_json,productive_rule,zh_status,example_status,family_scope,
                   examples_json,confidence,review_status,reviewed_at,created_at
-                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
+                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 (
-                    a_id, b_id, "fam", "derivational_morphology", item["subtype"],
-                    direction, item["label"], explanation, "[]", float(item["confidence"]),
+                    a_id, b_id, relation, "etymological_family" if relation == "etymological_family" else "derivational_morphology", item["subtype"],
+                    direction, item["label"], explanation,
+                    decomposition_payload(item["subtype"], item.get("label")), int(item["complexity"] == "simple"),
+                    "source", "source", "default", "[]", float(item["confidence"]),
                     "sourced", None, CREATED_AT,
                 ),
             )
@@ -671,6 +724,7 @@ def main() -> None:
                 if item["relation"] == "syn"
                 else "Wiktionnaire 通过 DBnary 明示标注的反义关系。"
             )
+            relation = formal_relation(item["relation"])
             cursor = conn.execute(
                 """
                 INSERT INTO official_edges(
@@ -679,7 +733,7 @@ def main() -> None:
                 ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 (
-                    a_id, b_id, item["relation"], "lexical_semantics", item["subtype"],
+                    a_id, b_id, relation, "lexical_semantics", item["subtype"],
                     None, item["label"], explanation, "[]", float(item["confidence"]),
                     "sourced", None, CREATED_AT,
                 ),
