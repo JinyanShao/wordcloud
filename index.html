@@ -22,9 +22,7 @@
     </div>
     <div class="topbar-actions">
       <button id="local-data-open" class="quiet-button" type="button">本地数据</button>
-      <button id="learning-progress-open" class="quiet-button" type="button" aria-label="打开学习进度" title="打开学习进度">学习进度</button>
       <button id="draft-open" class="quiet-button" type="button">我的词卡</button>
-      <button id="review-open" class="quiet-button review-open" type="button">复习 <span id="review-count">0</span></button>
       <button id="reset" class="quiet-button" type="button">重置视图</button>
       <button id="legend-open-mobile" class="quiet-button legend-mobile-open" type="button" aria-haspopup="true" aria-expanded="false">图例</button>
     </div>
@@ -96,16 +94,6 @@
     </form>
   </div>
 
-  <div id="review-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="review-title">
-    <button class="dialog-mask" id="review-mask" type="button" aria-label="点击遮罩关闭复习"></button>
-    <section class="dialog-card review-card">
-      <button id="review-close" class="dialog-close" type="button" aria-label="关闭复习">×</button>
-      <div class="eyebrow">主动回忆</div>
-      <h2 id="review-title">学习循环</h2>
-      <div id="review-content"></div>
-    </section>
-  </div>
-
   <div id="draft-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="draft-title">
     <button class="dialog-mask" id="draft-mask" type="button" aria-label="关闭我的词卡"></button>
     <section class="dialog-card draft-dialog-card">
@@ -140,12 +128,11 @@
       <p class="local-note">这些内容只保存在当前浏览器。导出只读取本地数据，不会写入权威词网。</p>
       <div id="local-data-notice" class="storage-notice hidden"></div>
       <div class="release-boundary-list" aria-label="隐私与来源说明">
-        <article><strong>隐私</strong><span>没有账号、上传或同步。复习、我的词网和我的词卡只保存在当前浏览器。</span></article>
+        <article><strong>隐私</strong><span>没有账号、上传或同步。我的词网和我的词卡只保存在当前浏览器。</span></article>
         <article><strong>导出</strong><span>导出 JSON 只读取本地数据，方便你自己备份或检查；不会写入权威词库。</span></article>
         <article><strong>来源</strong><span>词网使用 FLELex、Lexique、Démonette、Wiktionnaire / DBnary、CFDICT。FLELex 为非商业许可，公开使用时必须保留署名和许可边界。</span></article>
       </div>
       <div class="local-boundary-list" aria-label="本地数据边界">
-        <article><strong>复习</strong><span>词条、关系复习队列和间隔记录。</span><code>wordcloud.learning.v1</code></article>
         <article><strong>我的词网</strong><span>个人添加的词和联想边。</span><code>wordcloud.personal.v2</code></article>
         <article><strong>我的词卡</strong><span>中文提示和用法备注。</span><code>wordcloud.draft_cards.v1</code></article>
       </div>
@@ -156,26 +143,8 @@
     </section>
   </div>
 
-  <div id="learning-progress-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="learning-progress-title">
-    <button class="dialog-mask" id="learning-progress-mask" type="button" aria-label="关闭学习进度"></button>
-    <section class="dialog-card learning-progress-card">
-      <button id="learning-progress-close" class="dialog-close" type="button" aria-label="关闭学习进度">×</button>
-      <div class="eyebrow">本地复习反馈</div>
-      <h2 id="learning-progress-title">学习进度</h2>
-      <p class="local-note">统计只读取当前浏览器的 wordcloud.learning.v1，不会创建新的权威数据或写入复习记录。</p>
-      <p id="learning-progress-notice" class="storage-notice hidden"></p>
-      <div id="learning-progress-summary" class="learning-progress-summary"></div>
-      <div class="learning-progress-columns">
-        <section><h3>词条分类</h3><div id="learning-word-categories" class="learning-progress-list"></div></section>
-        <section><h3>关系分类</h3><div id="learning-relation-categories" class="learning-progress-list"></div></section>
-      </div>
-      <section class="learning-progress-section"><h3>最近复习</h3><div id="learning-recent" class="learning-progress-list"></div></section>
-      <section class="learning-progress-section"><h3>探索路径</h3><div id="learning-paths" class="learning-progress-list"></div></section>
-    </section>
-  </div>
-
-  <script src="graph-data.js?v=e53f72d9d402"></script>
-  <script src="app.js?v=e53f72d9d402"></script>
+  <script src="graph-data.js?v=275a297e64fa"></script>
+  <script src="app.js?v=275a297e64fa"></script>
   <script src="src/draft-ui.js"></script>
 </body>
 </html>

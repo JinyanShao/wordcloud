@@ -191,6 +191,14 @@ CREATE TABLE IF NOT EXISTS official_edges (
   review_status TEXT NOT NULL CHECK (review_status IN ('sourced', 'reviewed')),
   reviewed_at TEXT,
   created_at TEXT NOT NULL,
+  -- Which dictionary sense (lexeme_senses.sense_number) each side of this
+  -- relation is actually bound to, when the editorial source names one (e.g.
+  -- an RL-fr node/sense id resolved to a specific DBnary sense). NULL when
+  -- no specific sense was named. Lets the word-card preview show the sense
+  -- the relation is actually about instead of just the first few by
+  -- dictionary order, which can be a completely unrelated sense.
+  key_sense_a TEXT,
+  key_sense_b TEXT,
   CHECK (a_id < b_id),
   UNIQUE (a_id, b_id, relation, dimension, subtype)
 );

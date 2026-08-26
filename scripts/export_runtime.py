@@ -139,7 +139,8 @@ def main() -> None:
         for row in conn.execute(
             """
             SELECT a_id,b_id,relation,dimension,subtype,direction,label,
-                   explanation,examples_json,confidence,review_status
+                   explanation,examples_json,confidence,review_status,
+                   key_sense_a,key_sense_b
             FROM official_edges WHERE review_status='reviewed' ORDER BY id
             """
         )
@@ -149,6 +150,7 @@ def main() -> None:
             row["a_id"], row["b_id"], row["relation"], row["dimension"] or "",
             row["subtype"] or "", row["direction"] or "", row["label"],
             row["explanation"] or "", row["examples_json"], row["confidence"], row["review_status"],
+            row["key_sense_a"] or "", row["key_sense_b"] or "",
         ]
         for row in dedupe_public_relations(reviewed_rows)
     ]

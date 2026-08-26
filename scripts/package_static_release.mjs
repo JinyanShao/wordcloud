@@ -18,7 +18,6 @@ const assets = [
   "src/search-tools.mjs",
   "src/word-card-tools.mjs",
   "src/local-data-tools.mjs",
-  "src/review-tools.mjs",
 ];
 
 const requiredSnippets = [
@@ -26,7 +25,6 @@ const requiredSnippets = [
   ["index.html", "没有账号、上传或同步"],
   ["index.html", "FLELex、Lexique、Démonette"],
   ["sw.js", "wordcloud-learning-"],
-  ["sw.js", "./src/review-tools.mjs"],
 ];
 
 async function assertFile(path) {

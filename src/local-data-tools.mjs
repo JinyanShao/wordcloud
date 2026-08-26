@@ -1,20 +1,6 @@
 import { normalizeDraft } from "./draft-tools.mjs";
-import {
-  normalizeLearningRecord,
-  normalizeLearningState,
-  normalizeRelationReviewRecord,
-  summarizeLearningProgress,
-} from "./review-tools.mjs";
-
-export {
-  normalizeLearningRecord,
-  normalizeLearningState,
-  normalizeRelationReviewRecord,
-  summarizeLearningProgress,
-};
 
 export const LOCAL_DATA_KEYS = {
-  learning: "wordcloud.learning.v1",
   personal: "wordcloud.personal.v2",
   draftCards: "wordcloud.draft_cards.v1",
 };
@@ -72,11 +58,6 @@ export function normalizePersonalState(value) {
   return { nodes, edges };
 }
 
-export function loadLearningState(storage, key = LOCAL_DATA_KEYS.learning, now = Date.now()) {
-  const parsed = parseStoredJson(storage, key, "复习");
-  return { data: normalizeLearningState(parsed.value, now), error: parsed.error };
-}
-
 export function loadPersonalState(storage, key = LOCAL_DATA_KEYS.personal) {
   const parsed = parseStoredJson(storage, key, "我的词网");
   return { data: normalizePersonalState(parsed.value), error: parsed.error };
@@ -85,10 +66,8 @@ export function loadPersonalState(storage, key = LOCAL_DATA_KEYS.personal) {
 export function exportLocalLearningData(storage, options = {}) {
   const now = Number(options.now) || Date.now();
   const errors = [];
-  const learning = loadLearningState(storage, LOCAL_DATA_KEYS.learning, now);
   const personal = loadPersonalState(storage, LOCAL_DATA_KEYS.personal);
   const draftRead = parseStoredJson(storage, LOCAL_DATA_KEYS.draftCards, "我的词卡");
-  recordError(errors, learning.error);
   recordError(errors, personal.error);
   recordError(errors, draftRead.error);
 
@@ -104,14 +83,12 @@ export function exportLocalLearningData(storage, options = {}) {
 
   return {
     exportedAt: new Date(now).toISOString(),
-    schema: "wordcloud.local-learning-export.v1",
+    schema: "wordcloud.local-learning-export.v2",
     boundaries: {
-      learning: "复习队列和间隔记录，只保存词条或关系引用与复习状态。",
       personal: "我的词网节点和个人联想边，只显示在当前浏览器。",
       draftCards: "我的词卡，只保存用户自己的中文提示和备注。",
     },
     storageKeys: { ...LOCAL_DATA_KEYS },
-    learning: learning.data,
     personal: personal.data,
     draftCards,
     errors,
