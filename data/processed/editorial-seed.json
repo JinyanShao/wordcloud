@@ -2584,6 +2584,666 @@
       "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f83874, scheme=X->Xisme, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
       "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-08-25"
+    },
+    {
+      "a": "mouvoir",
+      "aPos": "VER",
+      "b": "mouvement",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xment",
+      "label": "mouvement 是名词“运动、动作”；由动词 mouvoir（使…移动，较文学化，日常法语更常用 bouger 或反身式 se mouvoir）加 -ment 后缀构成，表示“移动这个动作或其结果”。mouvoir 本身不常单独使用，但它的家族词很常见，比如 émouvoir（感动）、promouvoir（推广）都来自同一个词根。",
+      "explanation": "Mouvement (nom) vient du verbe mouvoir (littéraire, rarement employé seul au quotidien — on dit plutôt bouger) + -ment : « l'action ou le résultat de mouvoir ». Le verbe de base est rare, mais sa famille (émouvoir, promouvoir) est très courante.",
+      "examples": [
+        "Le mouvement de foule a bloqué la sortie.",
+        "Cette pièce mécanique se meut à peine."
+      ],
+      "exampleGlosses": [
+        "人群的移动堵住了出口。",
+        "这个机械零件几乎不怎么动。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f129488, scheme=X->Xment, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "comporter",
+      "aPos": "VER",
+      "b": "comportement",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xment",
+      "label": "comportement 是名词“行为、举止”；由动词 comporter（常用反身式 se comporter，“表现、行事”）加 -ment 后缀构成，表示“这种行为方式本身”。",
+      "explanation": "Comportement (nom) vient de (se) comporter + -ment : « la manière de se comporter ».",
+      "examples": [
+        "Son comportement a surpris tout le monde.",
+        "Il s'est bien comporté pendant la réunion."
+      ],
+      "exampleGlosses": [
+        "他的行为让所有人都很意外。",
+        "他在会议上表现得很好。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f102489, scheme=X->Xment, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "échapper",
+      "aPos": "VER",
+      "b": "échappement",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xment",
+      "label": "échappement 是名词，常见搭配“排气管”（pot d'échappement），也指“逃逸、逸出”；由动词 échapper（逃脱、溜走，常用 s'échapper）加 -ment 后缀构成，字面是“逃逸这个动作”，引申出汽车排出废气这个具体用法。",
+      "explanation": "Échappement (nom) vient de (s')échapper + -ment : littéralement « l'action de s'échapper », d'où le sens concret de gaz qui s'échappe (pot d'échappement).",
+      "examples": [
+        "Le pot d'échappement de la voiture est cassé.",
+        "Le gaz s'échappe par cette petite fissure."
+      ],
+      "exampleGlosses": [
+        "汽车的排气管坏了。",
+        "气体从这条小裂缝里漏出来。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f134006, scheme=X->Xment, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "déplacer",
+      "aPos": "VER",
+      "b": "déplacement",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xment",
+      "label": "déplacement 是名词“移动、出差”；由动词 déplacer（移动某物、使…挪位）加 -ment 后缀构成，表示“移动这个动作或过程”。",
+      "explanation": "Déplacement (nom) vient de déplacer + -ment : « l'action de déplacer (quelque chose ou soi-même) ».",
+      "examples": [
+        "Ce déplacement professionnel dure trois jours.",
+        "Il faut déplacer cette armoire vers le mur."
+      ],
+      "exampleGlosses": [
+        "这次出差要持续三天。",
+        "得把这个柜子挪到墙边。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f96174, scheme=X->Xment, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "charger",
+      "aPos": "VER",
+      "b": "chargement",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xment",
+      "label": "chargement 是名词“装货、装载（的货物）”；由动词 charger（装载、给…充电）加 -ment 后缀构成，表示“装载这个动作或装载的内容”。",
+      "explanation": "Chargement (nom) vient de charger + -ment : « l'action de charger, ou ce qui est chargé ».",
+      "examples": [
+        "Le chargement du camion a pris une heure.",
+        "N'oublie pas de charger ton téléphone ce soir."
+      ],
+      "exampleGlosses": [
+        "卡车装货花了一个小时。",
+        "今晚别忘了给手机充电。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f109345, scheme=X->Xment, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "juger",
+      "aPos": "VER",
+      "b": "jugement",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xment",
+      "label": "jugement 是名词“判断、判决”；由动词 juger（判断、评判、审判）加 -ment 后缀构成，表示“判断这个行为或其结果”。",
+      "explanation": "Jugement (nom) vient de juger + -ment : « l'action de juger, ou son résultat ».",
+      "examples": [
+        "Le tribunal a rendu son jugement ce matin.",
+        "Il ne faut pas juger les gens trop vite."
+      ],
+      "exampleGlosses": [
+        "法庭今天上午做出了判决。",
+        "不该太快对别人下判断。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f160092, scheme=X->Xment, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "majeur",
+      "aPos": "ADJ",
+      "b": "majorité",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xité",
+      "label": "majeur 是形容词“主要的、成年的”；加 -ité 后缀构成名词 majorité，根据上下文表示“多数”或“成年（达到法定年龄）这个状态”。",
+      "explanation": "Majorité (nom) vient de majeur (adjectif, « majeur, principal ») + -ité : selon le contexte, « la plus grande partie » ou « l'état d'être majeur (juridiquement) ».",
+      "examples": [
+        "La majorité des étudiants a voté pour ce projet.",
+        "Il a fêté sa majorité à dix-huit ans."
+      ],
+      "exampleGlosses": [
+        "大多数学生投票支持这个项目。",
+        "他十八岁那年庆祝了自己成年。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f168924, scheme=X->Xité, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "égal",
+      "aPos": "ADJ",
+      "b": "égalité",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xité",
+      "label": "égal 是形容词“相等的、平等的”；加 -ité 后缀构成名词 égalité，表示“相等、平等这种性质本身”。",
+      "explanation": "Égalité (nom) vient de égal (adjectif) + -ité : « l'état ou la qualité d'être égal ».",
+      "examples": [
+        "Ils luttent pour l'égalité des salaires.",
+        "Les deux équipes sont à égalité."
+      ],
+      "exampleGlosses": [
+        "他们在争取薪资平等。",
+        "两队打成平手。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f129673, scheme=X->Xité, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "collectif",
+      "aPos": "ADJ",
+      "b": "collectivité",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xité",
+      "label": "collectif 是形容词“集体的、共同的”；加 -ité 后缀构成名词 collectivité，表示“集体这种性质”，在行政语境里常指“地方政府、社区团体”（如 collectivités locales 地方行政单位）。",
+      "explanation": "Collectivité (nom) vient de collectif (adjectif) + -ité : « la qualité d'être collectif », d'où le sens administratif de « communauté, collectivité locale ».",
+      "examples": [
+        "Ce projet vise l'intérêt collectif.",
+        "La collectivité locale finance ce parc."
+      ],
+      "exampleGlosses": [
+        "这个项目着眼于集体利益。",
+        "这座公园由地方政府出资。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f114466, scheme=X->Xité, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "municipal",
+      "aPos": "ADJ",
+      "b": "municipalité",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xité",
+      "label": "municipal 是形容词“市立的、市政的”；加 -ité 后缀构成名词 municipalité，表示“市政当局、市镇本身”。",
+      "explanation": "Municipalité (nom) vient de municipal (adjectif) + -ité : « l'administration municipale, la commune elle-même ».",
+      "examples": [
+        "La bibliothèque municipale est ouverte le samedi.",
+        "La municipalité a voté un nouveau budget."
+      ],
+      "exampleGlosses": [
+        "市立图书馆周六开放。",
+        "市政府通过了新预算。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f115024, scheme=X->Xité, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "efficace",
+      "aPos": "ADJ",
+      "b": "efficacité",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xité",
+      "label": "efficace 是形容词“有效的、高效的”；加 -ité 后缀构成名词 efficacité，表示“有效这种性质本身”，即“效率、成效”。",
+      "explanation": "Efficacité (nom) vient de efficace (adjectif) + -ité : « la qualité d'être efficace ».",
+      "examples": [
+        "Ce médicament a prouvé son efficacité.",
+        "Elle travaille avec beaucoup d'efficacité."
+      ],
+      "exampleGlosses": [
+        "这种药已证明了它的疗效。",
+        "她做事很有效率。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f131408, scheme=X->Xité, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "total",
+      "aPos": "ADJ",
+      "b": "totalité",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xité",
+      "label": "total 是形容词“全部的、总的”；加 -ité 后缀构成名词 totalité，表示“全部、整体”。",
+      "explanation": "Totalité (nom) vient de total (adjectif) + -ité : « l'ensemble complet, le tout ».",
+      "examples": [
+        "La totalité du budget a été dépensée.",
+        "Le montant total dépasse mille euros."
+      ],
+      "exampleGlosses": [
+        "预算全部花完了。",
+        "总金额超过一千欧元。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f236229, scheme=X->Xité, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "prendre",
+      "aPos": "VER",
+      "b": "preneur",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xeur",
+      "label": "prendre 是动词“拿、乘坐”；加 -eur 后缀构成名词 preneur，表示“接受/买下某物的人”。常见搭配“être preneur”（我有兴趣接手、我要了）。",
+      "explanation": "Preneur (nom) vient de prendre + -eur : « celui qui prend », d'où l'expression courante « être preneur » (être intéressé, vouloir prendre).",
+      "examples": [
+        "Cet appartement a déjà trouvé un preneur.",
+        "Si le prix baisse, je suis preneur."
+      ],
+      "exampleGlosses": [
+        "这套公寓已经有人要了。",
+        "如果价格降了，我就要。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f129845, scheme=X->Xeur, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "passer",
+      "aPos": "VER",
+      "b": "passeur",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xeur",
+      "label": "passer 是动词“经过、传递”；加 -eur 后缀构成名词 passeur，表示“帮人渡河/带人偷渡过境的人”，在新闻里常指人口偷渡的“蛇头”。",
+      "explanation": "Passeur (nom) vient de passer + -eur : « celui qui fait passer (une rivière, une frontière) », sens fréquent dans l'actualité migratoire.",
+      "examples": [
+        "Le passeur transportait des migrants la nuit.",
+        "Ils ont payé un passeur pour traverser la frontière."
+      ],
+      "exampleGlosses": [
+        "蛇头在夜里运送移民。",
+        "他们花钱请蛇头带他们越境。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f190159, scheme=X->Xeur, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "demander",
+      "aPos": "VER",
+      "b": "demandeur",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xeur",
+      "label": "demander 是动词“请求、询问”；加 -eur 后缀构成名词 demandeur，表示“提出请求的人”。常见搭配“demandeur d'emploi”（求职者），法律语境里指“原告”。",
+      "explanation": "Demandeur (nom) vient de demander + -eur : « celui qui demande », courant dans « demandeur d'emploi » (chercheur d'emploi) ou en droit (le plaignant).",
+      "examples": [
+        "Il est demandeur d'emploi depuis trois mois.",
+        "Le demandeur a porté plainte contre son voisin."
+      ],
+      "exampleGlosses": [
+        "他失业求职已经三个月了。",
+        "原告对邻居提起了诉讼。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f123517, scheme=X->Xeur, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "construire",
+      "aPos": "VER",
+      "b": "constructeur",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xeur",
+      "label": "constructeur 是名词“制造商、建造者”；由动词 construire（建造、构建）加 -eur 后缀构成，表示“从事建造/制造这件事的人或公司”。",
+      "explanation": "Constructeur (nom) vient de construire + -eur : « celui qui construit », très courant pour désigner un fabricant (constructeur automobile).",
+      "examples": [
+        "Ce constructeur automobile lance un nouveau modèle.",
+        "Il faut construire cette maison avant l'hiver."
+      ],
+      "exampleGlosses": [
+        "这家汽车制造商推出了新车型。",
+        "这栋房子得在冬天之前盖好。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f155973, scheme=X->Xeur, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "élever",
+      "aPos": "VER",
+      "b": "éleveur",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xeur",
+      "label": "élever 是动词“饲养、抚养、提高”；加 -eur 后缀构成名词 éleveur，表示“从事饲养（动物）这件事的人”，即“饲养员、养殖户”。",
+      "explanation": "Éleveur (nom) vient de élever + -eur : « celui qui élève des animaux ».",
+      "examples": [
+        "Cet éleveur produit du fromage de chèvre.",
+        "Il élève des moutons dans les Alpes."
+      ],
+      "exampleGlosses": [
+        "这位养殖户生产山羊奶酪。",
+        "他在阿尔卑斯山养羊。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f250813, scheme=X->Xeur, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "employer",
+      "aPos": "VER",
+      "b": "employeur",
+      "bPos": "NOM",
+      "type": "fam",
+      "dimension": "derivation-x-to-xeur",
+      "label": "employer 是动词“雇用、使用”；加 -eur 后缀构成名词 employeur，表示“雇用别人的人或机构”，即“雇主”，和“employé（被雇用的人，员工）”正好相对。",
+      "explanation": "Employeur (nom) vient de employer + -eur : « celui qui emploie », à l'opposé de employé (celui qui est employé).",
+      "examples": [
+        "Son employeur lui a proposé une augmentation.",
+        "Elle a employé cette méthode avec succès."
+      ],
+      "exampleGlosses": [
+        "她的雇主给她提出了加薪。",
+        "她成功地采用了这个方法。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f156443, scheme=X->Xeur, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "construire",
+      "aPos": "VER",
+      "b": "constructif",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xif",
+      "label": "constructif 是形容词“建设性的”；由动词 construire 通过词根变化构成（construire → constructif，和 réduire→réductif、produire→productif 属于同一类 -uire 动词变 -uctif 形容词的规律），表示“有建设性的、能促成结果的”。",
+      "explanation": "Constructif (adjectif) dérive de construire via le radical latin -struct- (comme réduire → réductif, produire → productif) : « qui contribue à construire, positif ».",
+      "examples": [
+        "Merci pour cette critique constructive.",
+        "Il faut construire un dialogue plus ouvert."
+      ],
+      "exampleGlosses": [
+        "谢谢你提出这么有建设性的意见。",
+        "应该建立更开放的对话。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f155973, scheme=X->Xif, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "création",
+      "aPos": "NOM",
+      "b": "créatif",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xif",
+      "label": "créatif 是形容词“有创意的”；和名词 création（创作、创造）同源，都来自动词 créer（创造），遵循法语里常见的“-ation 名词 → -atif 形容词”规律（如 information→informatif）。",
+      "explanation": "Créatif (adjectif) et création (nom) viennent tous deux de créer ; le passage -ation → -atif est un schéma productif du français (ex. information → informatif).",
+      "examples": [
+        "Elle travaille dans une agence créative.",
+        "Ce film est une vraie création originale."
+      ],
+      "exampleGlosses": [
+        "她在一家创意机构工作。",
+        "这部电影是真正的原创作品。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f120726, scheme=X->Xif, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "éducation",
+      "aPos": "NOM",
+      "b": "éducatif",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xif",
+      "label": "éducatif 是形容词“教育性的”；和名词 éducation（教育）同源，同样遵循“-ation 名词 → -atif 形容词”的规律。",
+      "explanation": "Éducatif (adjectif) dérive de éducation (nom) selon le même schéma -ation → -atif.",
+      "examples": [
+        "Ce jeu vidéo est très éducatif.",
+        "Son éducation a été très stricte."
+      ],
+      "exampleGlosses": [
+        "这款电子游戏很有教育意义。",
+        "他从小接受的教育很严格。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f216316, scheme=X->Xif, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "expression",
+      "aPos": "NOM",
+      "b": "expressif",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xif",
+      "label": "expressif 是形容词“传神的、富有表现力的”；和名词 expression（表达、表情）同源，把词尾 -ion 换成 -if 构成形容词，表示“善于表达、富有表现力的”。",
+      "explanation": "Expressif (adjectif) dérive de expression (nom) en remplaçant -ion par -if : « qui a beaucoup d'expression ».",
+      "examples": [
+        "Son visage est très expressif.",
+        "Cette phrase manque d'expression."
+      ],
+      "exampleGlosses": [
+        "他的表情很丰富。",
+        "这句话缺乏表现力。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f135789, scheme=X->Xif, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "représentation",
+      "aPos": "NOM",
+      "b": "représentatif",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xif",
+      "label": "représentatif 是形容词“有代表性的”；和名词 représentation（表演、代表）同源，把词尾 -ion 换成 -if 构成形容词。",
+      "explanation": "Représentatif (adjectif) dérive de représentation (nom) en remplaçant -ion par -if : « qui représente bien, typique ».",
+      "examples": [
+        "Ce sondage n'est pas représentatif de la population.",
+        "La représentation théâtrale commence à vingt heures."
+      ],
+      "exampleGlosses": [
+        "这份民调不能代表整体人口。",
+        "这场戏剧演出晚上八点开始。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f199794, scheme=X->Xif, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "adopter",
+      "aPos": "VER",
+      "b": "adoptif",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xif",
+      "label": "adopter 是动词“收养、采纳”；加 -if 后缀构成形容词 adoptif，表示“通过收养而形成的”，常见搭配“père adoptif（养父）”。",
+      "explanation": "Adoptif (adjectif) vient de adopter + -if : « qui résulte d'une adoption », courant dans « père/mère adoptif(ve) ».",
+      "examples": [
+        "Il a grandi avec ses parents adoptifs.",
+        "Ils ont décidé d'adopter un enfant."
+      ],
+      "exampleGlosses": [
+        "他和养父母一起长大。",
+        "他们决定收养一个孩子。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f78183, scheme=X->Xif, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "système",
+      "aPos": "NOM",
+      "b": "systématique",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xique",
+      "label": "système 是名词“体系、系统”；加 -ique 后缀构成形容词 systématique，表示“系统性的、有条理的”，引申出“一贯如此的”。",
+      "explanation": "Systématique (adjectif) vient de système (nom) + -ique : « qui relève d'un système, méthodique », d'où le sens de « constant, régulier ».",
+      "examples": [
+        "Il procède de manière systématique.",
+        "Ce système informatique est très ancien."
+      ],
+      "exampleGlosses": [
+        "他做事很有条理。",
+        "这套信息系统已经很老旧了。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f231311, scheme=X->Xique, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "électron",
+      "aPos": "NOM",
+      "b": "électronique",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xique",
+      "label": "électron 是名词“电子”（物理粒子）；加 -ique 后缀构成形容词 électronique，表示“与电子有关的”，现在也常直接当名词用，指“电子产品、电子学”。",
+      "explanation": "Électronique (adjectif, et souvent nom) vient de électron + -ique : « relatif aux électrons, à l'électronique ».",
+      "examples": [
+        "La musique électronique est très populaire ici.",
+        "Un électron porte une charge négative."
+      ],
+      "exampleGlosses": [
+        "电子音乐在这里很流行。",
+        "一个电子带负电荷。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f250740, scheme=X->Xique, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "démocratie",
+      "aPos": "NOM",
+      "b": "démocratique",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xique",
+      "label": "démocratie 是名词“民主”（制度）；加 -ique 后缀构成形容词 démocratique，表示“民主的、与民主有关的”。",
+      "explanation": "Démocratique (adjectif) vient de démocratie (nom) + -ique : « relatif à la démocratie ».",
+      "examples": [
+        "Ce pays a un système démocratique.",
+        "La démocratie repose sur des élections libres."
+      ],
+      "exampleGlosses": [
+        "这个国家实行民主制度。",
+        "民主的基础是自由选举。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f83505, scheme=X->Xique, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "psychologie",
+      "aPos": "NOM",
+      "b": "psychologique",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xique",
+      "label": "psychologie 是名词“心理学”；加 -ique 后缀构成形容词 psychologique，表示“心理上的、与心理学有关的”。",
+      "explanation": "Psychologique (adjectif) vient de psychologie (nom) + -ique : « relatif à la psychologie, à l'esprit ».",
+      "examples": [
+        "Elle suit un soutien psychologique.",
+        "La psychologie de l'enfant est un domaine fascinant."
+      ],
+      "exampleGlosses": [
+        "她正在接受心理疏导。",
+        "儿童心理学是一个很有意思的领域。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f200970, scheme=X->Xique, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "méthode",
+      "aPos": "NOM",
+      "b": "méthodique",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xique",
+      "label": "méthode 是名词“方法、办法”；加 -ique 后缀构成形容词 méthodique，表示“有条理的、按方法行事的”。",
+      "explanation": "Méthodique (adjectif) vient de méthode (nom) + -ique : « qui suit une méthode, ordonné ».",
+      "examples": [
+        "Il range ses affaires de façon méthodique.",
+        "Cette méthode a fait ses preuves."
+      ],
+      "exampleGlosses": [
+        "他整理东西很有条理。",
+        "这个方法已经证明很有效。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f180215, scheme=X->Xique, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "a": "analyse",
+      "aPos": "NOM",
+      "b": "analytique",
+      "bPos": "ADJ",
+      "type": "fam",
+      "dimension": "derivation-x-to-xique",
+      "label": "analyse 是名词“分析”；加 -ique 后缀构成形容词 analytique，表示“分析性的、擅长分析的”。",
+      "explanation": "Analytique (adjectif) vient de analyse (nom) + -ique : « qui relève de l'analyse, qui procède par analyse ».",
+      "examples": [
+        "Elle a un esprit très analytique.",
+        "Cette analyse financière prendra deux jours."
+      ],
+      "exampleGlosses": [
+        "她的思维方式很擅长分析。",
+        "这份财务分析要花两天时间。"
+      ],
+      "exampleProvenance": "editorial_example, ai_drafted",
+      "source": "wordcloud editorial review · Démonette 2.0 direct derivation (fid=f81721, scheme=X->Xique, complexity=simple) · pattern verified against standard French derivational morphology (cross-checked with OQLF 'La dérivation' and established FLE suffix references, not invented) · examples: editorial_example, ai_drafted — AI-authored and grammar self-checked by the drafting AI; not independently verified by a separate human reviewer, and not a corpus citation.",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
     }
   ],
   "editorialTeachingExamples": [
