@@ -6,7 +6,7 @@
     "python": "Python 3.11.15"
   },
   "inputs": {
-    "data/sources.json": "ec8d4a8d2ec00da7156f9ebd823e17135d65e55d9e65340d4b27ecf3fa796608",
+    "data/sources.json": "d8eceb0e86a422844bc55a259deecb89c8d8138b6aa08967ac8246fc6fd6f333",
     "data/audit-review-v1.json": "6c8547b27790d5e668d68c484a17efe8b1f3630aae9f2e12aa6c579365174a98",
     "data/processed/editorial-seed.json": "a7484130ec5442458aa2da71a00fe3713a0cdab9ae567241fd561622e6dcfd40",
     "data.js": "d3296c0b316e7fb23b9d77d970211eff42e04b8e133152ef8678a2410a58bd36",

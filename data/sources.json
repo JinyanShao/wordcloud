@@ -76,17 +76,17 @@
   {
     "id": "wiktionary_fr_wiktextract",
     "name": "French Wiktionary dump parsed by Wiktextract",
-    "version": "frwiktionary-20260701-wiktextract-1.99.7",
+    "version": "frwiktionary-20260801-wiktextract-1.99.7",
     "homepage_url": "https://fr.wiktionary.org/",
-    "download_url": "https://dumps.wikimedia.org/frwiktionary/20260701/frwiktionary-20260701-pages-articles.xml.bz2",
+    "download_url": "https://dumps.wikimedia.org/frwiktionary/20260801/frwiktionary-20260801-pages-articles.xml.bz2",
     "license_id": "CC-BY-SA-3.0-or-later",
     "license_url": "https://fr.wiktionary.org/wiki/Wiktionnaire:Licence",
     "attribution": "Wiktionnaire contributors; structured extraction by Wiktextract",
     "commercial_use": "yes",
     "redistribution": "yes",
-    "local_path": "data/raw/wiktextract/frwiktionary-20260701-pages-articles.xml.bz2",
-    "expected_sha256": "040166ced172cacd029202fd98f99abe81cfaf91c5978fbe79137738a840aaec",
-    "downloaded_at": "2026-08-02",
+    "local_path": "data/raw/wiktextract/frwiktionary-20260801-pages-articles.xml.bz2",
+    "expected_sha256": "5931b485b26ae587ebae0f1dd1468fee705bf288e99fa3bb4effcaeeddd1266c",
+    "downloaded_at": "2026-08-26",
     "notes": "P0 definition candidates only. Wiktextract code is pinned to commit d9fa2335957c9089ce2c3fb110a075cf072903da (MIT); lexical content remains Wiktionnaire CC BY-SA. Nothing is published without named, dated human review."
   },
   {
