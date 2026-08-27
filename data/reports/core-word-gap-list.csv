@@ -6481,7 +6481,7 @@ rank,lemma,pos,cefr_level,frequency,n_official,n_fam,n_syn,n_ant,n_other,n_sense
 6480,pile,NOM,B2,5.8529,3,0,0,0,3,10,1,2,3,3,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,一堆
 6481,pôle,NOM,B2,5.8458,3,0,0,0,3,14,1,0,2,2,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,杆子；极点
 6482,résumé,NOM,B2,5.7602,2,0,0,0,2,2,1,1,2,2,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,小结；提要
-6483,facture,NOM,B1,5.7394,3,0,0,0,3,8,1,1,3,2,P4_confusable,P4_confusable,0,人工判断形音候选，审校后发布 trap/compare,出厂价；单据
+6483,facture,NOM,B1,5.7394,3,0,0,0,3,8,1,1,3,2,P4_confusable,P4_confusable,0,人工判断形音候选，审校后发布 trap/compare,发票；账单
 6484,refuge,NOM,B1,5.7384,3,0,0,0,3,8,1,0,2,1,P4_confusable,P4_confusable,0,人工判断形音候选，审校后发布 trap/compare,蔽身处
 6485,rumeur,NOM,B2,5.7294,4,0,0,0,4,6,1,0,1,2,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,传言；坊间传言
 6486,réchauffer,VER,B2,5.7154,4,0,0,0,4,5,1,1,3,3,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,加热
@@ -6721,7 +6721,7 @@ rank,lemma,pos,cefr_level,frequency,n_official,n_fam,n_syn,n_ant,n_other,n_sense
 6720,assembler,VER,B2,2.5779,4,0,0,0,4,6,1,3,3,3,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,会合；会聚
 6721,bombe,NOM,B2,2.5672,3,0,0,0,3,18,1,1,2,0,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,炸弹
 6722,consigne,NOM,B2,2.5593,6,0,0,0,6,7,1,1,2,1,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,押金
-6723,défaite,NOM,B2,2.5538,3,0,0,0,3,4,1,1,3,1,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,弊
+6723,défaite,NOM,B2,2.5538,3,0,0,0,3,4,1,1,3,1,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,失败；战败
 6724,compliqué,ADJ,B2,2.5512,2,0,0,0,2,1,1,1,3,3,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,啰唆；啰嗦
 6725,inconscient,ADJ,B2,2.5471,3,0,0,0,3,5,1,2,1,1,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,不自觉；无意识
 6726,race,NOM,B2,2.5454,3,0,0,0,3,10,1,3,2,3,P4_confusable,P4_confusable|P5_b2c1_synset,0,人工判断形音候选，审校后发布 trap/compare,种族

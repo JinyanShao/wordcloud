@@ -1400,6 +1400,20 @@
       "gloss": "所说的；上述的",
       "reviewer": "wordcloud editorial",
       "reviewedAt": "2026-08-26"
+    },
+    {
+      "id": "défaite",
+      "pos": "NOM",
+      "gloss": "失败；战败",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
+    },
+    {
+      "id": "facture",
+      "pos": "NOM",
+      "gloss": "发票；账单",
+      "reviewer": "wordcloud editorial",
+      "reviewedAt": "2026-08-26"
     }
   ],
   "editorialLearning": [
