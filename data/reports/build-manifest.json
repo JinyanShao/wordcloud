@@ -1,10 +1,6 @@
 {
   "schema_version": 1,
-  "toolchain": {
-    "node": "v22.23.2",
-    "pnpm": "11.21.0",
-    "python": "Python 3.14.6"
-  },
+  "toolchain": "pinned by requirements-build.txt, package.json, pnpm-lock.yaml, and CI workflow",
   "inputs": {
     "data/sources.json": "d8eceb0e86a422844bc55a259deecb89c8d8138b6aa08967ac8246fc6fd6f333",
     "data/audit-review-v1.json": "6c8547b27790d5e668d68c484a17efe8b1f3630aae9f2e12aa6c579365174a98",
@@ -37,7 +33,7 @@
     "scripts/test_relation_quality.py": "a8168c74524980597049099c509eeee1deb46bff511826d26843e22835425cfe",
     "scripts/update_runtime_cache.py": "447330fb5c612e9d710aa2f2e2406aca10d2260d3c9631b1adbdc2c32b93f1bc",
     "scripts/validate_data.py": "125289730ed9ef91212737ea33bbc5c1e0b3a959a97e5c02297a805ea7dda131",
-    "scripts/write_build_manifest.py": "55b8b1f2fed9200989ba9ff2b51d0e683a9fd8313d83f51f9f9c02e79b5f821e",
+    "scripts/write_build_manifest.py": "056924d4725e105dbcfa221a02609d4d773f9ad7545eb51e505b507f6e2e1606",
     "scripts/browser_acceptance_smoke.mjs": "8793fef4c636dda7394ef2b502c1f93089f2e740f414c69aa0aeccbba8bea527",
     "scripts/extract_seed.mjs": "331057e93fa4e3c897de12016660f9d84f2090c96e1c0a0a8bab6e031d9f6068",
     "scripts/layout.mjs": "569180c742f95e2edbd1b1ee4f67963707008474c571ee9c7e504e10809bb670",
@@ -46,7 +42,9 @@
   "outputs": {
     "graph-data.js": "ed21ea78c3650041ee3683b2a7306930d3fa9e1f225293c3e1a9b72c1a35e047",
     "data/processed/eligible-lexicon.csv": "9025229c88cff5ecec224293d02085d30a2b35b94994ecf54c9f1202bb41ef02",
+    "data/processed/core-families-100.json": "d28d22ec2a35689aab748916f11a0bd7ac6cc1e7a4c126c383b1c805035def8e",
     "data/reports/build-validation.md": "eb1991429a3b8e7ace108851d722fb8515d69eecf197a50033edec2d5a9bcbd7",
+    "data/reports/core-families-100.md": "6c04327a841fe199faac5a3e9b88b03f379a12542ec0e53b13897a202ef3d14c",
     "data/reports/core-word-gap-list.csv": "5e6550b5aaaf8809107fca327eaaf568f488fcb94cb4dac056243a3d97041224",
     "data/reports/core-word-gap-list.md": "464107b816a3f0005ba9087879602bfc929f15f7e66b2a35dd4c93f7ec017e77"
   }
