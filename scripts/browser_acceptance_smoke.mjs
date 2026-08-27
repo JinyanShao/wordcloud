@@ -49,17 +49,19 @@ includesAll("app.js", app, [
   "exportLocalData",
   "searchLexemes",
   "selectPreviewSenses",
+  "GRAPH_CORE_FAMILIES",
   "编辑例句",
-  "这个词目前还没有经过编辑整理的词汇关系",
+  "来源关系 · 尚未编辑整理",
 ]);
 assert.ok(
   !app.includes("...strongFormFor(id), ...strongStructuralFor(id)"),
-  "unreviewed form/structural candidates must not be merged back into the focus graph's connection list",
+  "candidate form/structural signals must not be merged back into the focus graph's connection list",
 );
+assert.ok(!app.includes('label: "同一词族"'), "focus graph must not synthesize direct family edges");
 for (const removed of ["openReviewDialog", "toggleRelationSaved", "savedRelations", "openLearningProgressDialog", "renderLearningProgress", "summarizeLearningProgress", "wordcloud.learning.v1"]) {
   assert.ok(!app.includes(removed), `review/spaced-repetition feature was removed and must not reappear in app.js (found ${removed})`);
 }
-includesAll("graph-data.js", graph, ["GRAPH_NODES", "GRAPH_ALIASES", "GRAPH_SEARCH_LEXEMES"]);
+includesAll("graph-data.js", graph, ["GRAPH_NODES", "GRAPH_ALIASES", "GRAPH_SEARCH_LEXEMES", "GRAPH_CORE_FAMILIES"]);
 includesAll("styles.css", styles, [
   "@media (max-width: 720px)",
   ".draft-dialog-card",

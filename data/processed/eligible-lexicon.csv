@@ -1120,7 +1120,7 @@ id,lemma,normalized,pos,cefr_level,flelex_frequency,lexique_frequency,contextual
 13971,élégance,élégance,NOM,B1,5.7502,2.788,1.18953,elegɑ̃s,élégant,0-1-1,/élég(ance).ance,优美；优雅,target_content_with_gloss,0.907421,1
 1195,bagarre,bagarre,NOM,B1,5.7463,21.104,6.40539,bagaʁ,bagarre,0-1-1,/bagarr(er).e,斗殴；肢体冲突,target_content_with_gloss,0.907394,1
 11519,réservation,réservation,NOM,B1,5.7406,7.75,2.18922,ʁezɛʁvasjɔ̃,{serv},1-1-1,_ré/{serv}.ation,订位；订票,target_content_with_gloss,0.907356,1
-5066,facture,facture,NOM,B1,5.7394,22.943,4.57134,faktyʁ,faire,0-1-2,/fact(eur).ur(e).e,出厂价；单据,target_content_with_gloss,0.907347,1
+5066,facture,facture,NOM,B1,5.7394,22.943,4.57134,faktyʁ,faire,0-1-2,/fact(eur).ur(e).e,发票；账单,target_content_with_gloss,0.907347,1
 5524,frigo,frigo,NOM,B1,5.7324,16.766,6.08083,fʁigo,froid,0-1-0,/frigid(aire/o,冰箱,target_content_with_gloss,0.9073,1
 13415,veau,veau,NOM,B1,5.7307,5.396,1.40386,vo,veau,0-1-0,/veau,小牛；犊子,target_content_with_gloss,0.907288,1
 3657,dette,dette,NOM,B1,5.7068,28.652,4.9801,dɛt,dette,0-1-0,/dette,债务；欠款,target_content_with_gloss,0.907125,1
@@ -2744,7 +2744,7 @@ id,lemma,normalized,pos,cefr_level,flelex_frequency,lexique_frequency,contextual
 2962,consigne,consigne,NOM,B2,2.5593,4.323,0.96601,kɔ̃siɲ,signer,1-1-1,_con/sign(er).e,押金,target_content_with_gloss,0.791721,1
 5343,flux,flux,NOM,B2,2.557,6.237,2.25046,fly,flux,0-1-0,/flux,流向；流程,target_content_with_gloss,0.791691,1
 5405,format,format,NOM,B2,2.5548,1.598,0.56797,fɔʁma,former,0-1-1,/form(er).at,制式；开本,target_content_with_gloss,0.791663,1
-4148,défaite,défaite,NOM,B2,2.5538,8.361,3.20269,defɛt,faire,1-1-1,_dé/faire.te,弊,target_content_with_gloss,0.79165,1
+4148,défaite,défaite,NOM,B2,2.5538,8.361,3.20269,defɛt,faire,1-1-1,_dé/faire.te,失败；战败,target_content_with_gloss,0.79165,1
 66,académie,académie,NOM,B2,2.5532,9.168,2.60716,akademi,académie,0-1-0,/académie,学园；学术界,target_content_with_gloss,0.791642,1
 13536,vierge,vierge,NOM,B2,2.5531,9.788,6.09614,vjɛʁʒ,vierge,0-1-0,/vierge,圣女；处女,target_content_with_gloss,0.791641,1
 13484,vertige,vertige,NOM,B2,2.5514,6.43,1.58757,vɛʁtiʒ,vertige,0-1-1,/vertig(e).e,头昏；头晕,target_content_with_gloss,0.791619,1

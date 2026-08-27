@@ -67,11 +67,13 @@
   const baseLinks = GRAPH_LINKS.map((row) => ({ a: String(row[0]), b: String(row[1]), mask: row[2], weight: row[3] }));
   const officialEdges = GRAPH_OFFICIAL_EDGES.map((row) => ({
     a: String(row[0]), b: String(row[1]), relation: LEGACY_RELATION[row[2]] || row[2], dimension: row[3], subtype: row[4], direction: row[5],
-    label: row[6], explanation: row[7], examples: row[8], confidence: row[9], review: row[10], kind: "official",
+    label: row[6], explanation: row[7], examples: row[8], confidence: row[9], review: row[10] === "reviewed" ? "editorial" : row[10], kind: "official",
     keySenseA: row[11] || "", keySenseB: row[12] || "",
   }));
   const layoutAdj = new Map();
   const officialAdj = new Map();
+  const familyEdgeAdj = new Map();
+  const familyByMember = new Map();
 
   function addAdj(map, id, value) {
     if (!map.has(id)) map.set(id, []);
@@ -84,6 +86,22 @@
   for (const edge of officialEdges) {
     addAdj(officialAdj, edge.a, { ...edge, other: edge.b });
     addAdj(officialAdj, edge.b, { ...edge, other: edge.a });
+  }
+  const coreFamilyPayload = GRAPH_CORE_FAMILIES || { families: [] };
+  const coreFamilies = Array.isArray(coreFamilyPayload.families) ? coreFamilyPayload.families : [];
+  for (const family of coreFamilies) {
+    const members = [...(family.defaultMembers || []), ...(family.extendedMembers || [])].map((item) => String(item.id));
+    for (const id of members) familyByMember.set(id, family);
+    for (const rawEdge of family.edges || []) {
+      const edge = {
+        a: String(rawEdge.a?.id), b: String(rawEdge.b?.id), relation: LEGACY_RELATION[rawEdge.relation] || rawEdge.relation,
+        label: rawEdge.hasZhExplanation ? (rawEdge.label || RELATION_NAMES[rawEdge.relation] || rawEdge.relation) : "来源关系",
+        explanation: rawEdge.explanation || "", examples: "[]", review: rawEdge.status || "sourced",
+        familyScope: rawEdge.familyScope || "default", kind: "family",
+      };
+      addAdj(familyEdgeAdj, edge.a, { ...edge, other: edge.b });
+      addAdj(familyEdgeAdj, edge.b, { ...edge, other: edge.a });
+    }
   }
 
   import("./src/search-tools.mjs").then((tools) => {
@@ -107,6 +125,7 @@
   let hovered = null;
   let focusConnections = [];
   let focusEdges = [];
+  let focusFamily = null;
   let focusStarted = 0;
   let trail = [];
   let onboardingTimer = null;
@@ -241,6 +260,7 @@
     hovered = null;
     focusConnections = [];
     focusEdges = [];
+    focusFamily = null;
     trail = [];
     search.value = "";
     searchResults.innerHTML = "";
@@ -333,32 +353,15 @@
   function connectionsFor(id, limit = 16) {
     const byNeighbor = new Map();
     const officialByNeighbor = new Map();
-    const familyRelations = new Set(["derivation", "conversion_or_lexicalization", "etymological_family"]);
-    const familyQueue = [id];
-    const familySeen = new Set([id]);
-    for (let index = 0; index < familyQueue.length && familySeen.size < 80; index += 1) {
-      for (const edge of officialAdj.get(familyQueue[index]) || []) {
-        if (!familyRelations.has(edge.relation) || familySeen.has(edge.other)) continue;
-        familySeen.add(edge.other);
-        familyQueue.push(edge.other);
-      }
-    }
     for (const edge of officialAdj.get(id) || []) {
       if (!officialByNeighbor.has(edge.other)) officialByNeighbor.set(edge.other, []);
       officialByNeighbor.get(edge.other).push({ ...edge, kind: "official" });
     }
-    for (const member of familySeen) {
-      if (member === id) continue;
-      const edge = (officialAdj.get(id) || []).find((item) => item.other === member)
-        || { a: id, b: member, other: member, relation: "etymological_family", label: "同一词族", explanation: "", examples: "[]", review: "reviewed" };
-      if (!officialByNeighbor.has(member)) officialByNeighbor.set(member, []);
-      officialByNeighbor.get(member).push({ ...edge, kind: "official" });
-    }
     for (const [other, relations] of officialByNeighbor) {
-      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(b.review === "reviewed") - Number(a.review === "reviewed"));
+      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(b.review === "editorial") - Number(a.review === "editorial"));
       byNeighbor.set(other, { ...relations[0], relations });
     }
-    // Only reviewed relations and the learner's own personal links are shown
+    // Only explicit editorial/source relations and the learner's own personal links are shown
     // in the focus graph. Auto-generated form/structural candidates are
     // layout-only signal, never confirmed language fact, so they stay out of
     // the graph entirely and surface (collapsed) in the word panel instead.
@@ -390,8 +393,26 @@
     return selected;
   }
 
+  function familyFor(id) {
+    const family = familyByMember.get(String(id));
+    if (!family) return { members: [String(id)], edges: [] };
+    const members = [...(family.defaultMembers || []), ...(family.extendedMembers || [])]
+      .map((item) => String(item.id))
+      .filter((memberId) => nodeById.has(memberId));
+    const edges = (family.edges || []).map((rawEdge, index) => ({
+      a: String(rawEdge.a?.id), b: String(rawEdge.b?.id), from: String(rawEdge.a?.id), to: String(rawEdge.b?.id),
+      other: String(rawEdge.a?.id) === String(id) ? String(rawEdge.b?.id) : String(rawEdge.a?.id),
+      relation: LEGACY_RELATION[rawEdge.relation] || rawEdge.relation,
+      label: rawEdge.status === "editorial" ? (RELATION_NAMES[rawEdge.relation] || rawEdge.relation) : "来源关系",
+      explanation: rawEdge.explanation || "", examples: "[]", review: rawEdge.status || "sourced",
+      familyScope: rawEdge.familyScope || "default", kind: rawEdge.status === "editorial" ? "official" : "family",
+      delay: 100 + index * 46,
+    })).filter((edge) => nodeById.has(edge.a) && nodeById.has(edge.b));
+    return { members, edges };
+  }
+
   // The circular map stays the single source of truth for node position --
-  // a focused word and its reviewed relations are highlighted in place
+  // a focused word and its explicit family relations are highlighted in place
   // rather than re-laid-out into an isolated ring, so this only has to pick
   // a view (pan/zoom) that frames the highlighted set on the real map.
   function focusViewForIds(ids, panelVisible = true) {
@@ -416,12 +437,13 @@
     stopOnboarding();
     if (options.resetTrail) trail = [];
     selected = node.id;
+    focusFamily = familyFor(node.id);
     focusConnections = connectionsFor(node.id, isMobileLayout() ? 8 : 16);
 
     // Highlight in place on the real map rather than re-laying-out into an
     // isolated ring: every node keeps its true circular-map position, the
     // whole map stays visible (dimmed) as context, and only the searched
-    // word plus its reviewed/personal relations light up at full opacity.
+    // word plus its explicit family/personal relations light up at full opacity.
     for (const item of allNodes) {
       item.targetX = item.homeX; item.targetY = item.homeY;
       item.targetAlpha = item.status === "eligible" || item.personal ? .16 : .05;
@@ -430,17 +452,21 @@
     node.targetAlpha = 1;
     node.focusRole = "center";
     node.focusColor = node.personal ? RELATION_STYLE.personal.color : "#171816";
-    for (const edge of focusConnections) {
-      const neighbor = nodeById.get(edge.other);
+    for (const memberId of focusFamily.members) {
+      if (memberId === node.id) continue;
+      const neighbor = nodeById.get(memberId);
       if (!neighbor) continue;
       neighbor.targetAlpha = 1;
       neighbor.focusRole = "direct";
-      neighbor.focusColor = visualFor(edge).color;
+      const familyEdge = (familyEdgeAdj.get(node.id) || []).find((edge) => edge.other === memberId)
+        || (familyEdgeAdj.get(memberId) || [])[0];
+      neighbor.focusColor = visualFor(familyEdge || { relation: "derivation", kind: "family" }).color;
     }
 
-    focusEdges = focusConnections.map((edge, index) => ({
+    const directFocusEdges = focusConnections.map((edge, index) => ({
       ...edge, from: node.id, to: edge.other, delay: 100 + index * 86,
     }));
+    focusEdges = [...focusFamily.edges, ...directFocusEdges.filter((edge) => !focusFamily.edges.some((familyEdge) => familyEdge.a === edge.a && familyEdge.b === edge.b))];
 
     if (options.addTrail !== false) {
       if (trail[trail.length - 1] !== node.id) trail.push(node.id);
@@ -458,7 +484,7 @@
     searchResults.classList.add("hidden");
     search.blur();
     updateStats();
-    animateView(focusViewForIds([node.id, ...focusConnections.map((edge) => edge.other)], true), 560);
+    animateView(focusViewForIds([node.id, ...focusFamily.members], true), 560);
     requestDraw();
   }
 
@@ -638,7 +664,7 @@
 
   // Layout links only organize the map into a legible shape -- they are
   // never a language relation -- so they always render as extremely faint
-  // gray, well below the visual weight of any reviewed relation.
+    // gray, well below the visual weight of any explicit relation.
   function drawLayoutLines(opacityScale) {
     for (const edge of baseLinks) {
       const learningTopology = edge.mask & (1 | 2 | 16);
@@ -654,7 +680,7 @@
   }
 
   // A brief, gentle first-look cue: cycle through the map's 3 best-known
-  // reviewed relations so a new visitor sees what a confirmed relation
+  // editorial relations so a new visitor sees what an edited relation
   // looks like (a solid colored line) before touching anything. Runs once,
   // stops as soon as the learner interacts, and is skipped entirely under
   // prefers-reduced-motion.
@@ -663,7 +689,7 @@
   function findOfficialEdgeBetween(wordA, wordB) {
     // A lemma can have multiple POS entries (e.g. "dire" NOM and VER); try
     // every candidate pairing rather than assuming the first array match is
-    // the one that actually carries the reviewed relation.
+    // the one that actually carries the editorial relation.
     for (const nodeA of officialNodes.filter((item) => item.word === wordA)) {
       for (const nodeB of officialNodes.filter((item) => item.word === wordB)) {
         const edge = (officialAdj.get(nodeA.id) || []).find((item) => item.other === nodeB.id);
@@ -760,10 +786,10 @@
     const center = nodeById.get(selected);
     if (center) drawFocusNode(center);
 
-    if (!focusConnections.length && center) {
+    if (!focusEdges.length && center) {
       const p = screen(center);
       ctx.globalAlpha = .76; ctx.fillStyle = "#686963"; ctx.font = `550 11.5px ${CANVAS_FONT}`; ctx.textAlign = "center";
-      ctx.fillText("这个词目前还没有经过编辑整理的词汇关系", p.x, p.y + 44);
+      ctx.fillText("这个词目前还没有可靠词族关系", p.x, p.y + 44);
       ctx.textAlign = "left";
     }
 
@@ -827,17 +853,17 @@
     return `<button class="relation-item ${edge.kind}" style="--relation-color:${visual.color}" data-node="${escapeHtml(node.id)}"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(caption)}</small></button>`;
   }
 
-  // Chinese-first: node.gloss (the one editorially reviewed Chinese meaning)
+  // Chinese-first: node.gloss (the one curated Chinese meaning)
   // is the panel's primary content, shown in the header. Everything below
   // is raw Wiktionnaire/DBnary dictionary material -- useful, but never
-  // reviewed -- so it stays clearly labeled "词典原文" and collapsed by
+  // curated -- so it stays clearly labeled "词典原文" and collapsed by
   // default rather than presented as if it were curated.
-  // A reviewed relation can bind to one specific dictionary sense (e.g. the
+  // An editorial relation can bind to one specific dictionary sense (e.g. the
   // RL-fr node for "enfiler II" resolves to DBnary sense #11, "put on a
   // coat") -- but dictionary sense order has nothing to do with that, so the
   // plain first-N-by-source-order preview can show three senses totally
   // unrelated to the relation the learner just clicked into. Collect every
-  // sense number a reviewed relation names for this node, from either side.
+  // sense number an editorial relation names for this node, from either side.
   function keySenseNumbersFor(nodeId) {
     const edges = officialAdj.get(nodeId) || [];
     const hints = edges.map((edge) => (edge.a === nodeId ? edge.keySenseA : edge.keySenseB)).filter(Boolean);
@@ -882,7 +908,7 @@
   function relationNotesFor(items) {
     if (wordCardTools?.selectReviewedRelationNotes) return wordCardTools.selectReviewedRelationNotes(items);
     return items
-      .filter(({ edge }) => edge.review === "reviewed" && edge.explanation && !edge.explanation.includes("requires production re-review"))
+      .filter(({ edge }) => edge.review === "editorial" && edge.explanation && !edge.explanation.includes("requires production re-review"))
       .map(({ edge, node: other }) => ({
         a: edge.a,
         b: edge.b,
@@ -943,17 +969,20 @@
   }
 
   function renderPanel(node) {
-    // GRAPH_OFFICIAL_EDGES only ever contains relations with real human
-    // review evidence (see has_real_review_evidence in build_graph.py), so
-    // everything reaching officialAdj here is already reviewed -- there is
-    // no separate "sourced but unreviewed" bucket to show learners.
-    const reviewed = (officialAdj.get(node.id) || [])
+    const editorial = (officialAdj.get(node.id) || [])
       .map((edge) => ({ edge: { ...edge, kind: "official" }, node: nodeById.get(edge.other) }))
       .filter((item) => item.node)
       .sort((a, b) => relationRank(a.edge) - relationRank(b.edge)
         || a.node.word.localeCompare(b.node.word, "fr"));
+    const editorialPairs = new Set(editorial.map(({ edge }) => pairKey(edge.a, edge.b)));
+    const sourced = (familyEdgeAdj.get(node.id) || [])
+      .filter((edge) => edge.review === "sourced" && !editorialPairs.has(pairKey(edge.a, edge.b)))
+      .map((edge) => ({ edge: { ...edge, kind: "family" }, node: nodeById.get(edge.other) }))
+      .filter((item) => item.node)
+      .sort((a, b) => relationRank(a.edge) - relationRank(b.edge)
+        || a.node.word.localeCompare(b.node.word, "fr"));
     const mine = personalFor(node.id).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
-    const officialIds = new Set(reviewed.map((item) => item.node.id));
+    const officialIds = new Set([...editorial, ...sourced].map((item) => item.node.id));
     const form = strongFormFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 8);
     const formIds = new Set(form.map((item) => item.node.id));
     const structural = strongStructuralFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 16);
@@ -976,8 +1005,9 @@
       ${renderSenseGroups(node)}
       ${renderTeachingExamples(node)}
       ${renderEditorialLearning(node)}
-      ${reviewed.length ? `<section class="panel-section"><h3>经过编辑整理的词汇关系</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : `<p class="empty-relations-note">这个词目前还没有经过编辑整理的词汇关系。</p>`}
-      ${renderReviewedRelationNotes(reviewed)}
+      ${editorial.length ? `<section class="panel-section"><h3>编辑整理的词汇关系</h3><div class="relation-list">${editorial.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : `<p class="empty-relations-note">这个词目前还没有编辑整理的词汇关系。</p>`}
+      ${sourced.length ? `<section class="panel-section"><h3>来源关系 · 尚未编辑整理</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${renderReviewedRelationNotes(editorial)}
       ${mine.length ? `<section class="panel-section"><h3>我的关系</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${form.length ? `<details class="panel-section candidate-details"><summary>形音相近的自动候选（未经编辑整理）</summary><p class="candidate-note">只是形近且音近，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
       ${structural.length ? `<details class="panel-section candidate-details"><summary>构词相近的自动候选（未经编辑整理）</summary><p class="candidate-note">来自词形结构的自动匹配，不等同于已编辑整理的教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
@@ -1036,7 +1066,7 @@
 
   function updateStats() {
     if (!selected) {
-      // The layout-skeleton edge count isn't a count of reviewed relations,
+      // The layout-skeleton edge count isn't a count of explicit relations,
       // so showing it here would read as a quality signal it isn't.
       const wordTotal = GRAPH_META.eligible_count + GRAPH_META.support_node_count;
       $("#stats").textContent = `收录 ${wordTotal.toLocaleString()} 个词`;
@@ -1045,7 +1075,8 @@
     const officialCount = focusConnections
       .filter((edge) => edge.kind === "official")
       .reduce((total, edge) => total + (edge.relations?.length || 1), 0);
-    $("#stats").textContent = officialCount ? `${focusConnections.length} 个相关词 · ${officialCount} 条编辑整理关系` : "";
+    const familyCount = Math.max(0, (focusFamily?.members?.length || 1) - 1);
+    $("#stats").textContent = familyCount ? `${familyCount} 个词族成员 · ${officialCount} 条编辑整理关系` : "";
   }
 
   function showTooltip(node, event) {
