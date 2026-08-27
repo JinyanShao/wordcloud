@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import subprocess
 from pathlib import Path
 
 
@@ -19,7 +18,8 @@ INPUTS = [
 INPUTS += [str(path.relative_to(ROOT)) for path in sorted((ROOT / "scripts").glob("*.py"))]
 INPUTS += [str(path.relative_to(ROOT)) for path in sorted((ROOT / "scripts").glob("*.mjs"))]
 OUTPUTS = [
-    "graph-data.js", "data/processed/eligible-lexicon.csv", "data/reports/build-validation.md",
+    "graph-data.js", "data/processed/eligible-lexicon.csv", "data/processed/core-families-100.json",
+    "data/reports/build-validation.md", "data/reports/core-families-100.md",
     "data/reports/core-word-gap-list.csv", "data/reports/core-word-gap-list.md",
 ]
 
@@ -42,18 +42,10 @@ def hashes(paths: list[str]) -> dict[str, str]:
     return result
 
 
-def command_version(command: list[str]) -> str:
-    return subprocess.check_output(command, cwd=ROOT, text=True).strip()
-
-
 def payload() -> dict[str, object]:
     return {
         "schema_version": 1,
-        "toolchain": {
-            "node": command_version(["node", "--version"]),
-            "pnpm": command_version(["pnpm", "--version"]),
-            "python": command_version(["python3", "--version"]),
-        },
+        "toolchain": "pinned by requirements-build.txt, package.json, pnpm-lock.yaml, and CI workflow",
         "inputs": hashes(INPUTS),
         "outputs": hashes(OUTPUTS),
     }
