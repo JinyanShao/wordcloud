@@ -27,9 +27,16 @@ from export_runtime import dedupe_public_relations  # noqa: E402
 
 DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 
-# Word pairs a real user confirmed were wrong/misleading before the reset.
-# None of these may ever appear as a public (review_status='reviewed')
-# relation again, regardless of which lemma/pos or column order they land in.
+# Word pairs this project has already confirmed are wrong or misleading for a
+# learner -- either a real user flagged them before the content-trust reset,
+# or editorial review of Démonette candidates caught them later (labeled
+# "simple"/mechanically plausible by the source, but not something a modern
+# learner should be told forms a teachable pattern). None of these may ever
+# reach a learner as a default/highlighted relation again -- as a public
+# (review_status='reviewed') GRAPH_OFFICIAL_EDGES relation, or as a "default"
+# scope edge/member in GRAPH_CORE_FAMILIES (see test_core_families.py, which
+# imports this same list rather than keeping a second one that can drift) --
+# regardless of which lemma/pos or column order they land in.
 KNOWN_BAD_PAIRS = [
     ("faire", "égarer"),
     ("faire", "évacuer"),
@@ -39,6 +46,13 @@ KNOWN_BAD_PAIRS = [
     ("voir", "distinguer"),
     ("voir", "remarquer"),
     ("voir", "voyant"),
+    # Found during Démonette pilot-batch editorial vetting: labeled
+    # complexity="simple" by Démonette (i.e. mechanically indistinguishable
+    # from a real direct derivation), but not actually a transparent modern
+    # French word-formation pattern a learner could generalize from.
+    ("collier", "cou"),
+    ("cou", "décoller"),
+    ("parlement", "parler"),
 ]
 
 

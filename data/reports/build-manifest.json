@@ -13,7 +13,7 @@
     "pnpm-lock.yaml": "59823911dfd76b61e089d00c1c4cd949cea0e64f82a631eb66446a45c837c231",
     "scripts/apply_audit_review.py": "9fdd8055504640f194b0ab7eef99b6f31c0c6a2d6e08a0757fb3d50aab891d00",
     "scripts/audit_wiktextract.py": "1641f571deac6650fa88ed4cf38ac6272a89b428942853bb40a0bbdc791a7b18",
-    "scripts/build_core_families.py": "c57b59c783027eb1b2d2f94dc4f8fea323276b0239bc9492f1cfb407acc27d42",
+    "scripts/build_core_families.py": "2947feec55f8776a6af0966cfeb703d8f9d599d63958dfc299be55a50196185c",
     "scripts/build_data.py": "68b2d2d2646398d14703e44de693df5846ed0c5d7685f98712373c9f5e1f4ecb",
     "scripts/build_dbnary_alignment_queue.py": "77a722852407be4e521fdd6f473ab57aa6efe51c0443500c2d009be1893ceb73",
     "scripts/build_gap_list.py": "34d2f2e1d1f68956f744dd206883a531df0eda25f70196b8d1539a1b0e60759b",
@@ -27,10 +27,10 @@
     "scripts/learning_lexicon.py": "919f22a41baa228f94e05637d384f8cb9d093036d3b37a5a658ed4c25fead3ff",
     "scripts/test_build_data_sync_review.py": "e61f64f11fcb74b325880d0aad61c884df7b21da90142a75809e61b006884317",
     "scripts/test_build_graph_determinism.py": "ac8e12e9617c69318f487774d1c5ccdb133b75025a536d560df702f437f7833d",
-    "scripts/test_core_families.py": "2ad99491c8c362159064cf5a809069dabe4c94946d091ae10ed18c521bfe5bb2",
+    "scripts/test_core_families.py": "199e3683755e1d718b0d9771f9f619bb9699a61b735eab57f1748d97340ee5a7",
     "scripts/test_fetch_sources.py": "aef179552bedb16ecb4215613753f259e33f75e0b4443056f34dbde31067652a",
     "scripts/test_import_dbnary.py": "5aab4191297409277cc6ae97ea92ba782558a88ad9b823c16604539bdb380f92",
-    "scripts/test_relation_quality.py": "a8168c74524980597049099c509eeee1deb46bff511826d26843e22835425cfe",
+    "scripts/test_relation_quality.py": "8e05b9ba586afafd88c78523d5036007a9d168855bff6dc738f8304a759c2b7c",
     "scripts/update_runtime_cache.py": "447330fb5c612e9d710aa2f2e2406aca10d2260d3c9631b1adbdc2c32b93f1bc",
     "scripts/validate_data.py": "125289730ed9ef91212737ea33bbc5c1e0b3a959a97e5c02297a805ea7dda131",
     "scripts/write_build_manifest.py": "056924d4725e105dbcfa221a02609d4d773f9ad7545eb51e505b507f6e2e1606",
@@ -40,11 +40,11 @@
     "scripts/package_static_release.mjs": "c0addb32f40b34c710762b91bea2832ed2080843c7c64d7dbcbcc8de83d1b7d9"
   },
   "outputs": {
-    "graph-data.js": "ed21ea78c3650041ee3683b2a7306930d3fa9e1f225293c3e1a9b72c1a35e047",
+    "graph-data.js": "9c1321a1cb9350cfecae1dee7918d76146445d0d0f70ad8453b0a0d05cbc4acc",
     "data/processed/eligible-lexicon.csv": "9025229c88cff5ecec224293d02085d30a2b35b94994ecf54c9f1202bb41ef02",
-    "data/processed/core-families-100.json": "d28d22ec2a35689aab748916f11a0bd7ac6cc1e7a4c126c383b1c805035def8e",
-    "data/reports/build-validation.md": "eb1991429a3b8e7ace108851d722fb8515d69eecf197a50033edec2d5a9bcbd7",
-    "data/reports/core-families-100.md": "6c04327a841fe199faac5a3e9b88b03f379a12542ec0e53b13897a202ef3d14c",
+    "data/processed/core-families-100.json": "7e2f29afc0f80fe3b40c713bb79083e1a0016e539a3deb921f0672b62c3bf68c",
+    "data/reports/build-validation.md": "1f74f144892c18c1ab444cc8b4240ce80d7b5256921b3165ff33737c8520b506",
+    "data/reports/core-families-100.md": "cfea5d7fefdc44f0f910450d9cb48869c6301a53060145726dad61e9c35ff6e3",
     "data/reports/core-word-gap-list.csv": "5e6550b5aaaf8809107fca327eaaf568f488fcb94cb4dac056243a3d97041224",
     "data/reports/core-word-gap-list.md": "464107b816a3f0005ba9087879602bfc929f15f7e66b2a35dd4c93f7ec017e77"
   }
