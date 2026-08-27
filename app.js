@@ -89,12 +89,39 @@
   }
   const coreFamilyPayload = GRAPH_CORE_FAMILIES || { families: [] };
   const coreFamilies = Array.isArray(coreFamilyPayload.families) ? coreFamilyPayload.families : [];
+  // One broad (sourced+reviewed) word-family component can now produce more
+  // than one core-family entry -- e.g. voir/revoir/vision and prévoir/
+  // prévision are two separate reviewed clusters that only share a sourced
+  // bridging edge, so build_core_families.py gives each its own entry rather
+  // than bundling an unrelated reviewed pair as "extended" noise under one
+  // arbitrary core word. A word can therefore show up as a default member of
+  // its own entry and as an *extended* (informational-only) member of a
+  // sibling entry. familyByMember must resolve a word to the entry where it
+  // is actually default first -- an extended-only sibling reference must
+  // never shadow that, or familyFor() would look up the wrong entry's edges
+  // entirely. Default membership is indexed first, on purpose.
   for (const family of coreFamilies) {
-    const members = [...(family.defaultMembers || []), ...(family.extendedMembers || [])].map((item) => String(item.id));
-    for (const id of members) familyByMember.set(id, family);
+    for (const item of family.defaultMembers || []) familyByMember.set(String(item.id), family);
+  }
+  for (const family of coreFamilies) {
+    for (const item of family.extendedMembers || []) {
+      const id = String(item.id);
+      if (!familyByMember.has(id)) familyByMember.set(id, family);
+    }
+  }
+  const seenFamilyEdgePairs = new Set();
+  for (const family of coreFamilies) {
     for (const rawEdge of family.edges || []) {
+      const a = String(rawEdge.a?.id), b = String(rawEdge.b?.id);
+      // The same bridging edge can legitimately appear in two sibling
+      // entries' edge lists (each entry carries its whole broad component
+      // for context) -- keep it once so the panel's sourced-relations list
+      // doesn't show the same candidate twice.
+      const key = pairKey(a, b);
+      if (seenFamilyEdgePairs.has(key)) continue;
+      seenFamilyEdgePairs.add(key);
       const edge = {
-        a: String(rawEdge.a?.id), b: String(rawEdge.b?.id), relation: LEGACY_RELATION[rawEdge.relation] || rawEdge.relation,
+        a, b, relation: LEGACY_RELATION[rawEdge.relation] || rawEdge.relation,
         label: rawEdge.hasZhExplanation ? (rawEdge.label || RELATION_NAMES[rawEdge.relation] || rawEdge.relation) : "来源关系",
         explanation: rawEdge.explanation || "", examples: "[]", review: rawEdge.status || "sourced",
         familyScope: rawEdge.familyScope || "default", kind: "family",
@@ -393,21 +420,57 @@
     return selected;
   }
 
+  // A core family's data can carry "extended" members and edges -- real
+  // sourced (e.g. Démonette) signal that groups words together, but never
+  // reviewed with a real teaching explanation (see build_core_families.py).
+  // Only "default" (reviewed/editorial) edges may light up and connect nodes
+  // by default on the map: that is the same bar GRAPH_OFFICIAL_EDGES already
+  // holds every learner-facing relation to, and a family payload must not be
+  // a second, weaker path to the same map. Extended info still reaches the
+  // learner -- through the word-card panel's separate "来源关系·尚未编辑整理"
+  // section (see renderPanel) -- just never as an already-confirmed relation.
+  // Reachability (not just "is this id anywhere in defaultMembers") matters
+  // too: if the searched word itself only touches this family through an
+  // extended edge, it has nothing default to show, so it must fall back to
+  // the plain single-node view rather than lighting up neighbors it has no
+  // real edge to.
   function familyFor(id) {
     const family = familyByMember.get(String(id));
     if (!family) return { members: [String(id)], edges: [] };
-    const members = [...(family.defaultMembers || []), ...(family.extendedMembers || [])]
-      .map((item) => String(item.id))
-      .filter((memberId) => nodeById.has(memberId));
-    const edges = (family.edges || []).map((rawEdge, index) => ({
-      a: String(rawEdge.a?.id), b: String(rawEdge.b?.id), from: String(rawEdge.a?.id), to: String(rawEdge.b?.id),
-      other: String(rawEdge.a?.id) === String(id) ? String(rawEdge.b?.id) : String(rawEdge.a?.id),
-      relation: LEGACY_RELATION[rawEdge.relation] || rawEdge.relation,
-      label: rawEdge.status === "editorial" ? (RELATION_NAMES[rawEdge.relation] || rawEdge.relation) : "来源关系",
-      explanation: rawEdge.explanation || "", examples: "[]", review: rawEdge.status || "sourced",
-      familyScope: rawEdge.familyScope || "default", kind: rawEdge.status === "editorial" ? "official" : "family",
-      delay: 100 + index * 46,
-    })).filter((edge) => nodeById.has(edge.a) && nodeById.has(edge.b));
+    const start = String(id);
+    const defaultEdges = (family.edges || []).filter((rawEdge) => (rawEdge.familyScope || "default") === "default")
+      .map((rawEdge) => ({ a: String(rawEdge.a?.id), b: String(rawEdge.b?.id), raw: rawEdge }))
+      .filter((edge) => nodeById.has(edge.a) && nodeById.has(edge.b));
+    const adjacency = new Map();
+    for (const edge of defaultEdges) {
+      if (!adjacency.has(edge.a)) adjacency.set(edge.a, []);
+      if (!adjacency.has(edge.b)) adjacency.set(edge.b, []);
+      adjacency.get(edge.a).push(edge.b);
+      adjacency.get(edge.b).push(edge.a);
+    }
+    const reachable = new Set([start]);
+    const queue = [start];
+    while (queue.length) {
+      const current = queue.shift();
+      for (const other of adjacency.get(current) || []) {
+        if (!reachable.has(other)) { reachable.add(other); queue.push(other); }
+      }
+    }
+    const members = [...reachable];
+    const edges = defaultEdges
+      .filter((edge) => reachable.has(edge.a) && reachable.has(edge.b))
+      .map((edge, index) => {
+        const rawEdge = edge.raw;
+        return {
+          a: edge.a, b: edge.b, from: edge.a, to: edge.b,
+          other: edge.a === start ? edge.b : edge.a,
+          relation: LEGACY_RELATION[rawEdge.relation] || rawEdge.relation,
+          label: rawEdge.label || RELATION_NAMES[rawEdge.relation] || rawEdge.relation,
+          explanation: rawEdge.explanation || "", examples: "[]", review: "editorial",
+          familyScope: "default", kind: "official",
+          delay: 100 + index * 46,
+        };
+      });
     return { members, edges };
   }
 
