@@ -16,7 +16,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "data" / "processed" / "maillage.sqlite"
+DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 GRAPH_INPUT = ROOT / "data" / "processed" / "graph-input.json"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
 DEMONETTE_APPROVED_PATH = ROOT / "data" / "processed" / "demonette-approved.json"
@@ -594,7 +594,7 @@ def main() -> None:
         if cursor.lastrowid:
             conn.execute(
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
-                (cursor.lastrowid, "maillage_editorial", f"{item['a']}:{item['b']}"),
+                (cursor.lastrowid, "wordcloud_editorial", f"{item['a']}:{item['b']}"),
             )
 
     for item in compare_drafts:
@@ -616,7 +616,7 @@ def main() -> None:
             conn.execute(
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
                 (
-                    cursor.lastrowid, "maillage_editorial",
+                    cursor.lastrowid, "wordcloud_editorial",
                     json.dumps(
                         {"origin": "ai_compare_draft", "key": item["key"], "model": item["model"]},
                         ensure_ascii=False,
@@ -643,7 +643,7 @@ def main() -> None:
             conn.execute(
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
                 (
-                    cursor.lastrowid, "maillage_editorial",
+                    cursor.lastrowid, "wordcloud_editorial",
                     json.dumps(
                         {"origin": "ai_first_edge_draft", "key": item["key"], "model": item["model"]},
                         ensure_ascii=False,

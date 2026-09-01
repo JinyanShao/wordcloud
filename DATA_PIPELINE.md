@@ -1,6 +1,6 @@
-# maillage data pipeline
+# wordcloud data pipeline
 
-The browser consumes generated static artifacts, but source alignment and review live in SQLite.
+The browser consumes `graph-data.js`. Raw downloads, SQLite databases, intermediate JSON, and generated reports are intentionally not committed to keep the repository small.
 
 ## Install build dependencies
 
@@ -31,12 +31,12 @@ Inputs:
 
 Outputs:
 
-- `data/processed/maillage.sqlite`
+- `data/processed/wordcloud.sqlite`
 - `data/processed/eligible-lexicon.csv`
 - `data/reports/lexicon-audit-v1.md`
 - `data/reports/lexicon-audit-sample-500.csv`
 
-The build is destructive only to generated files under `data/processed` and `data/reports`. Raw downloads and the hand-authored `data.js` are never modified.
+The build is destructive only to generated files under `data/processed` and `data/reports`. Raw downloads and the hand-authored `data.js` are never modified. These generated outputs are ignored by Git.
 
 ## Complete the stratified review
 
@@ -73,7 +73,7 @@ The current verified build contains 7,314 eligible nodes, 57 official support no
 python3 scripts/build_gap_list.py
 ```
 
-Read-only against `data/processed/maillage.sqlite`; run it after any graph rebuild to refresh priorities.
+Read-only against `data/processed/wordcloud.sqlite`; run it after any graph rebuild to refresh priorities.
 
 Outputs:
 
@@ -87,18 +87,18 @@ Buckets follow the priority order in `handover/7.27-handover.md`: P1 high-freque
 ```bash
 python3 scripts/ai_compare_draft.py pairs            # inspect candidates, no API call
 python3 scripts/ai_compare_draft.py draft --dry-run  # inspect the first prompt
-MAILLAGE_API_KEY=... MAILLAGE_MODEL=... python3 scripts/ai_compare_draft.py draft --limit 30
+WORDCLOUD_API_KEY=... WORDCLOUD_MODEL=... python3 scripts/ai_compare_draft.py draft --limit 30
 python3 scripts/ai_compare_draft.py stats
 ```
 
-`MAILLAGE_API_BASE` defaults to `https://api.openai.com/v1`; any OpenAI-compatible chat completion endpoint works. Standard library only, no new dependency. Credentials can also go in a `.env.local` file at the project root (`MAILLAGE_API_KEY=...` / `MAILLAGE_MODEL=...` lines) — it is git-ignored and loaded automatically; never hardcode keys in tracked scripts.
+`WORDCLOUD_API_BASE` defaults to `https://api.openai.com/v1`; any OpenAI-compatible chat completion endpoint works. Standard library only, no new dependency. Credentials can also go in a `.env.local` file at the project root (`WORDCLOUD_API_KEY=...` / `WORDCLOUD_MODEL=...` lines) — it is git-ignored and loaded automatically; never hardcode keys in tracked scripts.
 
 Candidates are official syn edges where both endpoints rank in the top 2,000 eligible lexemes by frequency and no compare edge exists yet (currently 412 pairs). Drafts are appended to `data/processed/ai-compare-drafts.json` — this JSON file is the durable store, because `build_graph.py` wipes and rebuilds `official_edges` on every run. The script is idempotent: keys already in the file are skipped, so interrupted runs and gap-filling re-runs cost nothing extra.
 
 Review and publish:
 
 1. Open `data/processed/ai-compare-drafts.json`, edit the draft text if needed, then set `review.status` to `accepted` or `rejected` (plus `reviewer` and `reviewed_at`).
-2. Re-run the graph build (`build_graph.py` → `layout.mjs` → `export_runtime.py` → `validate_data.py`). Accepted drafts are re-applied into `official_edges` as `relation='compare'`, `review_status='reviewed'`, sourced to `maillage_editorial` with the draft provenance (`origin`, `key`, `model`) in `source_record`.
+2. Re-run the graph build (`build_graph.py` → `layout.mjs` → `export_runtime.py` → `validate_data.py`). Accepted drafts are re-applied into `official_edges` as `relation='compare'`, `review_status='reviewed'`, sourced to `wordcloud_editorial` with the draft provenance (`origin`, `key`, `model`) in `source_record`.
 
 AI drafts never enter `official_edges` without the human review flip — that gate is part of the product, not an optional step.
 
@@ -119,5 +119,5 @@ Drafts live in `data/processed/ai-first-edge-drafts.json` (durable store, idempo
 
 - `layout_links` influence cartography and do not count as official coverage.
 - `official_edges` are sourced or reviewed claims shown to learners.
-- `personal_links` remain browser-local under `maillage.personal.v2` and are not stored in this database.
+- `personal_links` remain browser-local under `wordcloud.personal.v2` and are not stored in this database.
 - `CLUSTERS` in the original `data.js` are hand-authored prototype scaffolding, not Lexique data.

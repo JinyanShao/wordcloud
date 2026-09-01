@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "data" / "processed" / "maillage.sqlite"
+DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 POSITIONS_PATH = ROOT / "data" / "processed" / "layout-positions.json"
 RUNTIME_PATH = ROOT / "graph-data.js"
 

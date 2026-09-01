@@ -2,6 +2,10 @@ node_modules/
 data/raw/*.tsv
 data/raw/demonette-2.0/
 data/raw/dbnary/
+data/raw/
+data/reports/
+data/processed/
+!data/processed/.gitkeep
 data/processed/*.sqlite
 data/processed/graph-input.json
 data/processed/layout-positions.json

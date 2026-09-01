@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Analyze Démonette against maillage and gate sourced family-edge publication."""
+"""Analyze Démonette against wordcloud and gate sourced family-edge publication."""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw" / "demonette-2.0"
-DB_PATH = ROOT / "data" / "processed" / "maillage.sqlite"
+DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
 ANALYSIS_PATH = ROOT / "data" / "processed" / "demonette-analysis.json"
 APPROVED_PATH = ROOT / "data" / "processed" / "demonette-approved.json"
@@ -67,7 +67,7 @@ def seed_keys() -> set[tuple[str, str]]:
     return result
 
 
-def load_maillage(conn: sqlite3.Connection) -> tuple[dict[tuple[str, str], dict[str, object]], list[dict[str, object]]]:
+def load_wordcloud(conn: sqlite3.Connection) -> tuple[dict[tuple[str, str], dict[str, object]], list[dict[str, object]]]:
     conn.row_factory = sqlite3.Row
     support = seed_keys()
     rows = conn.execute(
@@ -165,15 +165,15 @@ def analyze() -> dict[str, object]:
 
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
-    maillage, rendered = load_maillage(conn)
+    wordcloud, rendered = load_wordcloud(conn)
     source = conn.execute("SELECT * FROM sources WHERE id=?", (SOURCE_ID,)).fetchone()
     source_hash_ok = bool(source and source["sha256"] == sha256(ROOT / source["local_path"]))
     demonette, lexeme_profile = load_demonette_lexemes()
 
-    maillage_lids: dict[str, dict[str, object]] = {}
+    wordcloud_lids: dict[str, dict[str, object]] = {}
     for lid, item in demonette.items():
-        if item["pos"] and (item["normalized"], item["pos"]) in maillage:
-            maillage_lids[lid] = maillage[(item["normalized"], item["pos"])]
+        if item["pos"] and (item["normalized"], item["pos"]) in wordcloud:
+            wordcloud_lids[lid] = wordcloud[(item["normalized"], item["pos"])]
 
     relation_path = RAW / "relations.csv"
     relation_rows = 0
@@ -211,8 +211,8 @@ def analyze() -> dict[str, object]:
                 row_identity_mismatches += 1
             orientation_counts[row["orientation"] or "EMPTY"] += 1
             complexity_counts[row["complexite"] or "EMPTY"] += 1
-            left_match = maillage_lids.get(row["lid_1"])
-            right_match = maillage_lids.get(row["lid_2"])
+            left_match = wordcloud_lids.get(row["lid_1"])
+            right_match = wordcloud_lids.get(row["lid_2"])
             if not left_match or not right_match:
                 withheld_rows["endpoint_not_in_rendered_lexicon"] += 1
                 continue
@@ -342,8 +342,8 @@ def analyze() -> dict[str, object]:
                 seed_pos_by_word[normalize(item["id"])] = pos
         for edge in seed.get("edges", []):
             left_word, right_word = normalize(edge["a"]), normalize(edge["b"])
-            left = maillage.get((left_word, seed_pos_by_word.get(left_word, "")))
-            right = maillage.get((right_word, seed_pos_by_word.get(right_word, "")))
+            left = wordcloud.get((left_word, seed_pos_by_word.get(left_word, "")))
+            right = wordcloud.get((right_word, seed_pos_by_word.get(right_word, "")))
             if not left or not right or left["id"] == right["id"]:
                 continue
             pair = tuple(sorted((int(left["id"]), int(right["id"]))))
@@ -362,7 +362,7 @@ def analyze() -> dict[str, object]:
     before_nodes = {node for pair in before_pairs for node in pair if node in eligible_ids}
     approved_nodes = {node for row in approved for node in (int(row["a_id"]), int(row["b_id"])) if node in eligible_ids}
     after_nodes = before_nodes | approved_nodes
-    matched_node_ids = {int(row["id"]) for row in maillage_lids.values()}
+    matched_node_ids = {int(row["id"]) for row in wordcloud_lids.values()}
 
     pos_transitions = Counter()
     subtype_counts = Counter()
@@ -379,8 +379,8 @@ def analyze() -> dict[str, object]:
         complexity_published[str(row["complexity"])] += 1
 
     def find_pair(base_word: str, base_pos: str, derived_word: str, derived_pos: str) -> dict[str, object] | None:
-        base = maillage.get((normalize(base_word), base_pos))
-        derived = maillage.get((normalize(derived_word), derived_pos))
+        base = wordcloud.get((normalize(base_word), base_pos))
+        derived = wordcloud.get((normalize(derived_word), derived_pos))
         if not base or not derived:
             return None
         for row in approved:
@@ -482,7 +482,7 @@ def write_report(analysis: dict[str, object]) -> None:
     lines = [
         "# Démonette 2.0 覆盖率与冲突报告",
         "",
-        f"> 结论：**{'通过自动发布质量门' if meta['gate_passed'] else '未通过自动发布质量门'}**。报告粒度为 maillage 当前可渲染 lemma+POS 与 Démonette 直接关系的精确对齐。",
+        f"> 结论：**{'通过自动发布质量门' if meta['gate_passed'] else '未通过自动发布质量门'}**。报告粒度为 wordcloud 当前可渲染 lemma+POS 与 Démonette 直接关系的精确对齐。",
         "",
         "## 核心结果",
         "",
@@ -546,7 +546,7 @@ def write_report(analysis: dict[str, object]) -> None:
         "",
         "## 限制与下一步",
         "",
-        "- 本报告只衡量 maillage 当前词表与 Démonette 的精确 lemma+POS 对齐；未命中不等于 Démonette 无该词，可能是词性粒度或词表范围不同。",
+        "- 本报告只衡量 wordcloud 当前词表与 Démonette 的精确 lemma+POS 对齐；未命中不等于 Démonette 无该词，可能是词性粒度或词表范围不同。",
         "- 同词性只放行简单前/后缀直接派生；间接同族和复杂构词仍暂缓。",
         "- `motiv-sem` 对学习者有价值，但必须保持“异形词族”标签，不能解释成规则性的拼写变化。",
         "- 发布后应再次验证官方边来源完整、全图连通、运行时导出以及样例词的焦点图。",
