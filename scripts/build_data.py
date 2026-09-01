@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build maillage's inspectable SQLite lexicon and deterministic audit sample."""
+"""Build wordcloud's inspectable SQLite lexicon and deterministic audit sample."""
 
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 PROCESSED = ROOT / "data" / "processed"
 REPORTS = ROOT / "data" / "reports"
-DB_PATH = PROCESSED / "maillage.sqlite"
+DB_PATH = PROCESSED / "wordcloud.sqlite"
 SCHEMA_PATH = ROOT / "sql" / "schema.sql"
 SOURCES_PATH = ROOT / "data" / "sources.json"
 SEED_PATH = PROCESSED / "editorial-seed.json"

@@ -21,7 +21,7 @@ Pipeline position (mirrors `ai_compare_draft.py`):
               rebuild, so the JSON file — not the SQLite rows — is the durable store.
 
 Endpoint configuration: same as `ai_compare_draft.py` — environment variables
-`MAILLAGE_API_KEY` / `MAILLAGE_MODEL` / optional `MAILLAGE_API_BASE`, or a
+`WORDCLOUD_API_KEY` / `WORDCLOUD_MODEL` / optional `WORDCLOUD_API_BASE`, or a
 git-ignored `.env.local` at the project root. Standard library only.
 """
 
@@ -42,7 +42,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "data" / "processed" / "maillage.sqlite"
+DB = ROOT / "data" / "processed" / "wordcloud.sqlite"
 DRAFTS = ROOT / "data" / "processed" / "ai-first-edge-drafts.json"
 LOCAL_ENV = ROOT / ".env.local"
 
@@ -254,12 +254,12 @@ def cmd_words(args: argparse.Namespace) -> None:
 
 
 def cmd_draft(args: argparse.Namespace) -> None:
-    api_key = os.environ.get("MAILLAGE_API_KEY", "")
-    model = os.environ.get("MAILLAGE_MODEL", "")
-    api_base = os.environ.get("MAILLAGE_API_BASE", "https://api.openai.com/v1")
+    api_key = os.environ.get("WORDCLOUD_API_KEY", "")
+    model = os.environ.get("WORDCLOUD_MODEL", "")
+    api_base = os.environ.get("WORDCLOUD_API_BASE", "https://api.openai.com/v1")
     if not args.dry_run and (not api_key or not model):
         raise SystemExit(
-            "draft 需要 MAILLAGE_API_KEY 与 MAILLAGE_MODEL："
+            "draft 需要 WORDCLOUD_API_KEY 与 WORDCLOUD_MODEL："
             "用环境变量传入，或写入项目根目录的 .env.local（已 gitignore）。"
         )
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the core-word gap list: which eligible words most lack official relations.
 
-Reads `data/processed/maillage.sqlite` and writes:
+Reads `data/processed/wordcloud.sqlite` and writes:
 
 - `data/reports/core-word-gap-list.csv`: sortable per-word gap table
 - `data/reports/core-word-gap-list.md`: summary report with bucket counts and examples
@@ -24,7 +24,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "data" / "processed" / "maillage.sqlite"
+DB = ROOT / "data" / "processed" / "wordcloud.sqlite"
 REPORT_CSV = ROOT / "data" / "reports" / "core-word-gap-list.csv"
 REPORT_MD = ROOT / "data" / "reports" / "core-word-gap-list.md"
 

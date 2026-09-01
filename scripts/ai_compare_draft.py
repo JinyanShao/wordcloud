@@ -14,8 +14,8 @@ Pipeline position:
 
 Endpoint configuration (never hardcode secrets in this file — it is git-tracked):
 
-- Environment variables `MAILLAGE_API_KEY` and `MAILLAGE_MODEL` (required for `draft`),
-  plus optional `MAILLAGE_API_BASE` (default `https://api.openai.com/v1`).
+- Environment variables `WORDCLOUD_API_KEY` and `WORDCLOUD_MODEL` (required for `draft`),
+  plus optional `WORDCLOUD_API_BASE` (default `https://api.openai.com/v1`).
 - Or put them in a `.env.local` file at the project root — it is listed in
   `.gitignore`, loaded automatically, and real environment variables take precedence.
 
@@ -37,7 +37,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "data" / "processed" / "maillage.sqlite"
+DB = ROOT / "data" / "processed" / "wordcloud.sqlite"
 DRAFTS = ROOT / "data" / "processed" / "ai-compare-drafts.json"
 LOCAL_ENV = ROOT / ".env.local"
 
@@ -229,12 +229,12 @@ def cmd_pairs(args: argparse.Namespace) -> None:
 
 
 def cmd_draft(args: argparse.Namespace) -> None:
-    api_key = os.environ.get("MAILLAGE_API_KEY", "")
-    model = os.environ.get("MAILLAGE_MODEL", "")
-    api_base = os.environ.get("MAILLAGE_API_BASE", "https://api.openai.com/v1")
+    api_key = os.environ.get("WORDCLOUD_API_KEY", "")
+    model = os.environ.get("WORDCLOUD_MODEL", "")
+    api_base = os.environ.get("WORDCLOUD_API_BASE", "https://api.openai.com/v1")
     if not args.dry_run and (not api_key or not model):
         raise SystemExit(
-            "draft 需要 MAILLAGE_API_KEY 与 MAILLAGE_MODEL："
+            "draft 需要 WORDCLOUD_API_KEY 与 WORDCLOUD_MODEL："
             "用环境变量传入，或写入项目根目录的 .env.local（已 gitignore）。"
         )
 

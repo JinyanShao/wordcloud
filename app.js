@@ -14,7 +14,7 @@
   const trailEl = $("#trail");
   const focusLegend = $("#focus-legend");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-  const PERSONAL_KEY = "maillage.personal.v2";
+  const PERSONAL_KEY = "wordcloud.personal.v2";
   const MOBILE_BREAKPOINT = 720;
   const CANVAS_FONT = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
   const CANVAS_PIXEL_BUDGET = { mobile: 3600000, desktop: 9000000 };

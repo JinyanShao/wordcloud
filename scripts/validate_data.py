@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate generated maillage artifacts and write an inspectable build report."""
+"""Validate generated wordcloud artifacts and write an inspectable build report."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "data" / "processed" / "maillage.sqlite"
+DB = ROOT / "data" / "processed" / "wordcloud.sqlite"
 REPORT = ROOT / "data" / "reports" / "build-validation.md"
 
 
@@ -329,7 +329,7 @@ def main() -> None:
 
     passed = sum(result for _, result, _ in checks)
     lines = [
-        "# maillage 构建验证",
+        "# wordcloud 构建验证",
         "",
         f"> {passed}/{len(checks)} 项通过。验证对象为当前 SQLite、稳定坐标与浏览器导出物。",
         "",

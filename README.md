@@ -1,4 +1,4 @@
-# maillage
+# wordcloud
 
 面向中文母语者的法语词汇关系网络。不是词典，而是一张可以探索的词网：全景呈现学习进阶与自然词群，聚焦呈现每个词的正式关系、法语义项与教学辨析。
 
@@ -12,7 +12,7 @@
 
 ## 快速开始
 
-直接使用右侧已deploy的页面（amphibi-ch.github.io/maillage）；或者浏览器直接用静态文件即可，无需构建：
+浏览器直接用静态文件即可，无需构建。仓库保留已经导出的 `graph-data.js`，所以可以直接打开本地页面：
 
 ```bash
 python3 -m http.server 8000
@@ -21,7 +21,7 @@ python3 -m http.server 8000
 
 ## 数据管线
 
-词网内容全部可重复构建，持久层是 `data/processed/` 下的 JSON 与 SQLite，浏览器只消费生成的 `graph-data.js`：
+浏览器只消费 `graph-data.js`。原始数据、SQLite、中间 JSON 和报告体积较大，不随仓库提交；需要重建时再下载来源数据并生成到 `data/raw/`、`data/processed/` 和 `data/reports/`。
 
 ```bash
 python3 -m pip install -r requirements-build.txt
@@ -46,7 +46,7 @@ python3 scripts/validate_data.py           # 17 项不变量校验
 
 ### AI 起草配置
 
-两个 AI 起草脚本读取环境变量 `MAILLAGE_API_KEY` / `MAILLAGE_MODEL` / `MAILLAGE_API_BASE`，或项目根目录的 `.env.local`（已被 `.gitignore` 忽略，请勿提交密钥）。AI 草稿一律先写入 `data/processed/ai-*-drafts.json`，人工把 `review.status` 改为 `accepted` 后，下次 `build_graph.py` 重建时才进入正式词网——AI 生成物不会未经审校直接发布。
+两个 AI 起草脚本读取环境变量 `WORDCLOUD_API_KEY` / `WORDCLOUD_MODEL` / `WORDCLOUD_API_BASE`，或项目根目录的 `.env.local`（已被 `.gitignore` 忽略，请勿提交密钥）。AI 草稿一律先写入 `data/processed/ai-*-drafts.json`，人工把 `review.status` 改为 `accepted` 后，下次 `build_graph.py` 重建时才进入正式词网——AI 生成物不会未经审校直接发布。
 
 ## 数据来源与许可
 
@@ -73,7 +73,5 @@ graph-data.js                      生成的浏览器载荷（勿手改）
 scripts/                           数据管线与 AI 起草脚本
 sql/schema.sql                     SQLite 结构
 data/sources.json                  来源登记
-data/processed/                    持久层（SQLite、审核与草稿 JSON）
-data/reports/                      构建验证与质量报告
-handover/                          项目交接文档
+data/sources.json                  数据来源登记
 ```
