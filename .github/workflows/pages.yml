@@ -23,10 +23,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check build summary
+        run: |
+          python3 scripts/build_summary.py --check-docs
+          git diff --exit-code -- data/build-summary.json
+
       - name: Prepare static site
         run: |
           mkdir dist
+          mkdir -p dist/data
           cp index.html app.js styles.css graph-data.js data.js dict.js dist/
+          cp data/build-summary.json dist/data/
           touch dist/.nojekyll
 
       - uses: actions/configure-pages@v5

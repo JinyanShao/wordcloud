@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 POSITIONS_PATH = ROOT / "data" / "processed" / "layout-positions.json"
 RUNTIME_PATH = ROOT / "graph-data.js"
+SUMMARY_PATH = ROOT / "data" / "build-summary.json"
 
 SIGNAL_BITS = {
     "semantic": 1,
@@ -159,6 +160,30 @@ def main() -> None:
         f"const GRAPH_SENSES={compact_json(sense_groups)};\n"
     )
     RUNTIME_PATH.write_text(payload, encoding="utf-8")
+    official_endpoint_ids = {edge[0] for edge in official} | {edge[1] for edge in official}
+    eligible_nodes = [row for row in nodes if row["status"] == "eligible"]
+    eligible_with_formal_relations = [
+        row for row in eligible_nodes if row["id"] in official_endpoint_ids
+    ]
+    formal_relation_coverage = (
+        len(eligible_with_formal_relations) / len(eligible_nodes) if eligible_nodes else 0
+    )
+    summary = {
+        "source": "graph-data.js",
+        "layout_version": meta["version"],
+        "created_at": meta["created_at"],
+        "rendered_nodes": len(runtime_nodes),
+        "eligible_nodes": len(eligible_nodes),
+        "support_nodes": len(runtime_nodes) - len(eligible_nodes),
+        "formal_relations": len(official),
+        "layout_links": len(runtime_links),
+        "french_definitions": len(sense_rows),
+        "formal_relation_coverage": round(formal_relation_coverage, 6),
+        "eligible_words_with_formal_relations": len(eligible_with_formal_relations),
+        "single_connected_component": True,
+        "signal_counts": signal_counts,
+    }
+    SUMMARY_PATH.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     conn.execute("INSERT OR REPLACE INTO build_metadata VALUES('layout_version',?)", (layout["meta"]["version"],))
     conn.execute("INSERT OR REPLACE INTO build_metadata VALUES('runtime_export','graph-data.js')")
     conn.commit()

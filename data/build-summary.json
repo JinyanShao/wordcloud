@@ -1,0 +1,23 @@
+{
+  "source": "graph-data.js",
+  "layout_version": "layout-v2-radial-learning-space",
+  "created_at": "2026-07-27T00:00:00Z",
+  "rendered_nodes": 7985,
+  "eligible_nodes": 7314,
+  "support_nodes": 671,
+  "formal_relations": 6495,
+  "layout_links": 16058,
+  "french_definitions": 31328,
+  "formal_relation_coverage": 0.793,
+  "eligible_words_with_formal_relations": 5800,
+  "single_connected_component": true,
+  "signal_counts": {
+    "derivation": 1675,
+    "editorial_seed": 1694,
+    "morphology": 4478,
+    "phonetic": 6747,
+    "semantic": 2720,
+    "skeleton": 241,
+    "spelling": 7448
+  }
+}

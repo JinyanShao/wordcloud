@@ -55,6 +55,7 @@ Accepted decisions are `agree`, `override_eligible`, `override_auxiliary`, `over
 python3 scripts/build_graph.py
 node scripts/layout.mjs
 python3 scripts/export_runtime.py
+python3 scripts/build_summary.py
 python3 scripts/validate_data.py
 ```
 
@@ -63,9 +64,10 @@ Outputs:
 - `data/processed/graph-input.json`: combined layout graph
 - `data/processed/layout-positions.json`: deterministic browser coordinates
 - `graph-data.js`: compact static browser payload
+- `data/build-summary.json`: checked public build manifest used by README and validation
 - `data/reports/build-validation.md`: build evidence and invariant checks
 
-The current checked build contains 7,314 eligible nodes, 57 official support nodes, 20,270 combined browser layout edges, 98 prototype official edges that passed automated evidence checks, one connected component, and no layout islands.
+The current checked build is recorded in `data/build-summary.json`: 7,985 rendered nodes, including 7,314 eligible lexemes and 671 support lexemes; 6,495 formal relations; 16,058 browser layout links; 31,328 French definitions; 79.3% formal-relation coverage for eligible rendered words; one connected component.
 
 ## Build the core-word gap list
 

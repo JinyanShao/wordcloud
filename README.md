@@ -1,5 +1,9 @@
 # wordcloud
 
+Live Demo: https://jinyanshao.github.io/wordcloud/
+
+An interactive French vocabulary graph demo built from DBnary/Wiktionary-derived lexical data.
+
 面向中文母语者的法语词汇关系网络。不是词典，而是一张可以探索的词网：全景呈现学习进阶与自然词群，聚焦呈现每个词的正式关系、法语义项与教学辨析。
 
 ## 产品形态
@@ -8,7 +12,7 @@
 - **聚焦词网**：点击任意词，以它为中心发散出正式关系——不同关系不同颜色，实线为确认关系，虚线为少量自动候选。侧栏词卡优先展示法语义项（Wiktionnaire），再展示中文提示与关系辨析。
 - **关系分层**：词族派生（Démonette）、明示近义/反义（Wiktionnaire/DBnary）来自可追溯数据源；`compare` 等教学辨析为 AI 起草、来源约束并通过自动证据检查；拼写/读音相似只作为虚线候选，不冒充语言事实。
 
-当前规模：7,900+ 个渲染节点 · 6,400+ 条正式关系 · 31,000+ 条法语义项定义 · 79% 主词至少有一条正式关系 · 全图单连通分量。
+当前规模（见 `data/build-summary.json`）：7,985 个渲染节点 · 6,495 条正式关系 · 16,058 条布局连接 · 31,328 条法语义项定义 · 79.3% 主词至少有一条正式关系 · 全图单连通分量。
 
 ## 快速开始
 
@@ -32,8 +36,9 @@ python3 scripts/apply_audit_review.py      # 应用 v1 分层抽检决定
 python3 scripts/build_data.py sync-review
 python3 scripts/build_graph.py             # 关系图：候选、正式边、制图边
 node scripts/layout.mjs                    # 确定性坐标
-python3 scripts/export_runtime.py          # 导出浏览器载荷
-python3 scripts/validate_data.py           # 17 项不变量校验
+python3 scripts/export_runtime.py          # 导出浏览器载荷与 data/build-summary.json
+python3 scripts/build_summary.py           # 可单独从 graph-data.js 刷新构建摘要
+python3 scripts/validate_data.py           # 18 项不变量校验
 ```
 
 辅助工具：

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sqlite3
 from collections import Counter
 from pathlib import Path
@@ -13,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "data" / "processed" / "wordcloud.sqlite"
 REPORT = ROOT / "data" / "reports" / "build-validation.md"
+SUMMARY = ROOT / "data" / "build-summary.json"
 
 
 def sha256(path: Path) -> str:
@@ -21,6 +23,14 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def extract_js_const(text: str, name: str, next_name: str) -> object:
+    pattern = rf"const {re.escape(name)}=(.*?);\nconst {re.escape(next_name)}="
+    match = re.search(pattern, text, flags=re.S)
+    if not match:
+        raise SystemExit(f"Could not find {name} in graph-data.js")
+    return json.loads(match.group(1))
 
 
 class UnionFind:
@@ -326,6 +336,34 @@ def main() -> None:
         "CLUSTERS" not in frontend_text and 'src="data.js"' not in frontend_text,
         "canvas 读取 graph-data.js 固定坐标",
     )
+    if runtime.exists() and SUMMARY.exists():
+        runtime_text = runtime.read_text(encoding="utf-8")
+        runtime_meta = extract_js_const(runtime_text, "GRAPH_META", "GRAPH_NODES")
+        summary = json.loads(SUMMARY.read_text(encoding="utf-8"))
+        expected_summary = {
+            "rendered_nodes": len(position_ids),
+            "eligible_nodes": eligible,
+            "support_nodes": supports,
+            "formal_relations": official_count,
+            "layout_links": runtime_meta["layout_link_count"],
+            "french_definitions": entry_count and sense_count,
+        }
+        summary_errors = [
+            f"{key}: summary={summary.get(key)!r}, expected={value!r}"
+            for key, value in expected_summary.items()
+            if summary.get(key) != value
+        ]
+        check(
+            "构建摘要与当前产物一致",
+            not summary_errors,
+            "; ".join(summary_errors) or f"{SUMMARY.relative_to(ROOT)} matches graph-data.js and SQLite",
+        )
+    else:
+        check(
+            "构建摘要与当前产物一致",
+            False,
+            f"missing {'graph-data.js' if not runtime.exists() else SUMMARY.relative_to(ROOT)}",
+        )
 
     passed = sum(result for _, result, _ in checks)
     lines = [
