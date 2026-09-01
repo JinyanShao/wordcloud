@@ -23,7 +23,7 @@ ANALYSIS_PATH = ROOT / "data" / "processed" / "dbnary-analysis.json"
 APPROVED_PATH = ROOT / "data" / "processed" / "dbnary-approved.json"
 REPORT_PATH = ROOT / "data" / "reports" / "dbnary-sense-relations.md"
 SOURCE_ID = "dbnary_fr"
-EXPECTED_SHA256 = "aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f"
+SOURCES_PATH = ROOT / "data" / "sources.json"
 CREATED_AT = "2026-07-27T00:00:00Z"
 
 POS_MAP = {
@@ -51,6 +51,14 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def expected_source_sha256() -> str | None:
+    sources = json.loads(SOURCES_PATH.read_text(encoding="utf-8"))
+    for source in sources:
+        if source.get("id") == SOURCE_ID:
+            return source.get("expected_sha256")
+    return None
 
 
 def pct(numerator: int, denominator: int) -> str:
@@ -145,6 +153,9 @@ def analyze() -> dict[str, object]:
     rendered = load_rendered(conn)
     by_key = {(str(row["normalized"]), str(row["pos"])): row for row in rendered}
     current_hash = sha256(RAW_PATH)
+    expected_hash = expected_source_sha256()
+    if expected_hash and current_hash != expected_hash:
+        raise SystemExit(f"DBnary SHA-256 mismatch: expected {expected_hash}, got {current_hash}")
 
     entries: dict[str, dict[str, object]] = {}
     wanted_senses: dict[str, str] = {}
@@ -315,7 +326,7 @@ def analyze() -> dict[str, object]:
     }
     conflict_rate = len(contradictory_pairs) / max(1, len({(a, b) for a, b, _ in grouped}))
     gates = {
-        "official_snapshot_hash_matches": current_hash == EXPECTED_SHA256,
+        "official_snapshot_hash_matches": bool(expected_hash) and current_hash == expected_hash,
         "rendered_lexeme_alignment_above_80pct": len(lexemes_with_entries) / max(1, len(rendered)) >= 0.8,
         "sense_definitions_exist": len(senses) >= 5_000,
         "explicit_semantic_edges_exist": len(approved_edges) >= 500,

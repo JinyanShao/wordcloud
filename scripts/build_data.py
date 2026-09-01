@@ -90,13 +90,18 @@ def register_sources(conn: sqlite3.Connection) -> None:
     for source in sources:
         local = ROOT / source["local_path"] if source.get("local_path") else None
         source_hash = sha256(local) if local and local.exists() else None
+        expected_hash = source.get("expected_sha256")
+        if expected_hash and source_hash and source_hash != expected_hash:
+            raise SystemExit(
+                f"{source['id']} SHA-256 mismatch: expected {expected_hash}, got {source_hash}"
+            )
         conn.execute(
             """
             INSERT INTO sources(
               id, name, version, homepage_url, download_url, license_id,
               license_url, attribution, commercial_use, redistribution,
-              local_path, sha256, downloaded_at, notes
-            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+              local_path, sha256, expected_sha256, downloaded_at, notes
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             (
                 source["id"], source["name"], source["version"],
@@ -104,7 +109,7 @@ def register_sources(conn: sqlite3.Connection) -> None:
                 source["license_id"], source.get("license_url"),
                 source["attribution"], source["commercial_use"],
                 source["redistribution"], source.get("local_path"),
-                source_hash, source.get("downloaded_at"), source.get("notes", ""),
+                source_hash, expected_hash, source.get("downloaded_at"), source.get("notes", ""),
             ),
         )
 

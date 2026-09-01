@@ -68,6 +68,8 @@ def main() -> None:
                 source_errors.append(f"{source['id']}: local file missing")
             elif source["sha256"] != sha256(path):
                 source_errors.append(f"{source['id']}: SHA-256 mismatch")
+            elif source["expected_sha256"] and source["sha256"] != source["expected_sha256"]:
+                source_errors.append(f"{source['id']}: expected SHA-256 mismatch")
     check("来源登记、许可与哈希", not source_errors, "; ".join(source_errors) or f"{len(sources)} 个来源均完整")
 
     total, unique = conn.execute("SELECT COUNT(*), COUNT(DISTINCT normalized || char(31) || pos) FROM lexemes").fetchone()

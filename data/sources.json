@@ -49,7 +49,8 @@
     "name": "DBnary French Wiktionary extract",
     "version": "official-snapshot-2026-07-25",
     "homepage_url": "https://kaiko.getalp.org/about-dbnary/",
-    "download_url": "https://kaiko.getalp.org/static/ontolex/latest/fr_dbnary_ontolex.ttl.bz2",
+    "download_url": "https://kaiko.getalp.org/static/ontolex/fr/fr_dbnary_ontolex_2026-07-01.ttl.bz2",
+    "expected_sha256": "aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f",
     "license_id": "CC-BY-SA-3.0-or-later",
     "license_url": "https://fr.wiktionary.org/wiki/Wiktionnaire:Licence",
     "attribution": "Wiktionnaire contributors; structured extraction by DBnary / GETALP",
@@ -57,7 +58,7 @@
     "redistribution": "yes",
     "local_path": "data/raw/dbnary/fr_dbnary_ontolex.ttl.bz2",
     "downloaded_at": "2026-07-27",
-    "notes": "Official DBnary OntoLex snapshot. SHA-256 aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f. Used for French lexical entries, sense definitions, explicit synonym, approximate-synonym and antonym relations. DBnary derivedFrom is deliberately not used because Démonette remains the morphology authority."
+    "notes": "Official DBnary OntoLex snapshot. Used for French lexical entries, sense definitions, explicit synonym, approximate-synonym and antonym relations. DBnary derivedFrom is deliberately not used because Démonette remains the morphology authority."
   },
   {
     "id": "cfdict_reverse_local",
