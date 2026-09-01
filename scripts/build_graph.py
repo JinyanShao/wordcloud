@@ -243,8 +243,8 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
     return layout, official
 
 
-def reviewed_compare_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
-    """Re-apply human-accepted AI compare drafts from the durable JSON store."""
+def evidence_checked_compare_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    """Re-apply accepted AI compare drafts from the durable JSON store."""
     if not AI_COMPARE_DRAFTS_PATH.exists():
         return []
     payload = json.loads(AI_COMPARE_DRAFTS_PATH.read_text(encoding="utf-8"))
@@ -274,8 +274,8 @@ def reviewed_compare_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]
     return result
 
 
-def reviewed_first_edge_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
-    """Re-apply human-accepted AI first-edge proposals from the durable JSON store."""
+def evidence_checked_first_edge_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    """Re-apply accepted AI first-edge proposals from the durable JSON store."""
     if not AI_FIRST_EDGE_DRAFTS_PATH.exists():
         return []
     payload = json.loads(AI_FIRST_EDGE_DRAFTS_PATH.read_text(encoding="utf-8"))
@@ -458,8 +458,8 @@ def main() -> None:
     ]
 
     editorial_layout, official = seed_edges(nodes)
-    compare_drafts = reviewed_compare_drafts(nodes)
-    first_edge_drafts = reviewed_first_edge_drafts(nodes)
+    compare_drafts = evidence_checked_compare_drafts(nodes)
+    first_edge_drafts = evidence_checked_first_edge_drafts(nodes)
     layouts["editorial_seed"] = editorial_layout + [(d["a"], d["b"], 1.0) for d in first_edge_drafts]
 
     candidate_rows = []
@@ -587,14 +587,14 @@ def main() -> None:
             """,
             (
                 item["a"], item["b"], item["relation"], item["dimension"], item["subtype"],
-                item["direction"], item["label"], "Prototype editorial seed; requires production re-review.",
-                "[]", 0.9, "reviewed", CREATED_AT, CREATED_AT,
+                item["direction"], item["label"], "AI-drafted, source-grounded, passed automated evidence checks; not independently human-reviewed.",
+                "[]", 0.9, "evidence_checked", CREATED_AT, CREATED_AT,
             ),
         )
         if cursor.lastrowid:
             conn.execute(
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
-                (cursor.lastrowid, "wordcloud_editorial", f"{item['a']}:{item['b']}"),
+                (cursor.lastrowid, "wordcloud_evidence_checks", f"{item['a']}:{item['b']}"),
             )
 
     for item in compare_drafts:
@@ -609,14 +609,14 @@ def main() -> None:
                 item["a"], item["b"], "compare", item["dimension"], None,
                 None, item["label"], None,
                 json.dumps(item["examples"], ensure_ascii=False), 0.8,
-                "reviewed", item["reviewed_at"] or CREATED_AT, CREATED_AT,
+                "evidence_checked", item["reviewed_at"] or CREATED_AT, CREATED_AT,
             ),
         )
         if cursor.lastrowid:
             conn.execute(
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
                 (
-                    cursor.lastrowid, "wordcloud_editorial",
+                    cursor.lastrowid, "wordcloud_evidence_checks",
                     json.dumps(
                         {"origin": "ai_compare_draft", "key": item["key"], "model": item["model"]},
                         ensure_ascii=False,
@@ -636,14 +636,14 @@ def main() -> None:
                 item["a"], item["b"], item["relation"], None, None,
                 None, item["label"], None,
                 "[]", 0.7,
-                "reviewed", item["reviewed_at"] or CREATED_AT, CREATED_AT,
+                "evidence_checked", item["reviewed_at"] or CREATED_AT, CREATED_AT,
             ),
         )
         if cursor.lastrowid:
             conn.execute(
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
                 (
-                    cursor.lastrowid, "wordcloud_editorial",
+                    cursor.lastrowid, "wordcloud_evidence_checks",
                     json.dumps(
                         {"origin": "ai_first_edge_draft", "key": item["key"], "model": item["model"]},
                         ensure_ascii=False,
@@ -654,7 +654,7 @@ def main() -> None:
     for item in sourced_derivations:
         a_id, b_id = int(item["a_id"]), int(item["b_id"])
         existing = conn.execute(
-            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation='fam' ORDER BY review_status='reviewed' DESC, id LIMIT 1",
+            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation='fam' ORDER BY review_status IN ('evidence_checked','reviewed') DESC, id LIMIT 1",
             (a_id, b_id),
         ).fetchone()
         if existing:
@@ -697,7 +697,7 @@ def main() -> None:
     for item in sourced_semantics.get("edges", []):
         a_id, b_id = int(item["a_id"]), int(item["b_id"])
         existing = conn.execute(
-            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation=? ORDER BY review_status='reviewed' DESC, id LIMIT 1",
+            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation=? ORDER BY review_status IN ('evidence_checked','reviewed') DESC, id LIMIT 1",
             (a_id, b_id, item["relation"]),
         ).fetchone()
         if existing:

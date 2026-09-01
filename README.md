@@ -6,7 +6,7 @@
 
 - **全景词网**：7,300+ 词的交互散点图。半径表示学习进阶（越靠中心越高频、越基础），角度表示可信关系形成的自然词群，坐标构建时计算并固定，每次打开一致。
 - **聚焦词网**：点击任意词，以它为中心发散出正式关系——不同关系不同颜色，实线为确认关系，虚线为少量自动候选。侧栏词卡优先展示法语义项（Wiktionnaire），再展示中文提示与关系辨析。
-- **关系分层**：词族派生（Démonette）、明示近义/反义（Wiktionnaire/DBnary）来自可追溯数据源；`compare` 等教学辨析由 AI 起草、人工终审后发布；拼写/读音相似只作为虚线候选，不冒充语言事实。
+- **关系分层**：词族派生（Démonette）、明示近义/反义（Wiktionnaire/DBnary）来自可追溯数据源；`compare` 等教学辨析为 AI 起草、来源约束并通过自动证据检查；拼写/读音相似只作为虚线候选，不冒充语言事实。
 
 当前规模：7,900+ 个渲染节点 · 6,400+ 条正式关系 · 31,000+ 条法语义项定义 · 79% 主词至少有一条正式关系 · 全图单连通分量。
 
@@ -28,7 +28,7 @@ python3 -m pip install -r requirements-build.txt
 pnpm install
 
 python3 scripts/build_data.py build        # 词库（FleLex + Lexique + CFDICT）
-python3 scripts/apply_audit_review.py      # 应用人工分层审核决定
+python3 scripts/apply_audit_review.py      # 应用 v1 分层抽检决定
 python3 scripts/build_data.py sync-review
 python3 scripts/build_graph.py             # 关系图：候选、正式边、制图边
 node scripts/layout.mjs                    # 确定性坐标
@@ -39,14 +39,14 @@ python3 scripts/validate_data.py           # 17 项不变量校验
 辅助工具：
 
 - `python3 scripts/build_gap_list.py` — 核心词缺口清单（哪些高频词最缺正式关系）
-- `python3 scripts/ai_compare_draft.py` — 为高频近义对起草 `compare` 教学辨析（completion API，人工终审后入库）
+- `python3 scripts/ai_compare_draft.py` — 为高频近义对起草 `compare` 教学辨析（completion API，通过证据检查后入库）
 - `python3 scripts/ai_first_edge_draft.py` — 为零关系核心词起草首条正式关系（同上）
 
 完整说明见 [DATA_PIPELINE.md](DATA_PIPELINE.md)。
 
 ### AI 起草配置
 
-两个 AI 起草脚本读取环境变量 `WORDCLOUD_API_KEY` / `WORDCLOUD_MODEL` / `WORDCLOUD_API_BASE`，或项目根目录的 `.env.local`（已被 `.gitignore` 忽略，请勿提交密钥）。AI 草稿一律先写入 `data/processed/ai-*-drafts.json`，人工把 `review.status` 改为 `accepted` 后，下次 `build_graph.py` 重建时才进入正式词网——AI 生成物不会未经审校直接发布。
+两个 AI 起草脚本读取环境变量 `WORDCLOUD_API_KEY` / `WORDCLOUD_MODEL` / `WORDCLOUD_API_BASE`，或项目根目录的 `.env.local`（已被 `.gitignore` 忽略，请勿提交密钥）。AI 草稿一律先写入 `data/processed/ai-*-drafts.json`，通过来源约束、结构校验与自动证据检查后，下次 `build_graph.py` 重建时才进入正式词网。当前公开关系不表示逐条人工审校。
 
 ## 数据来源与许可
 

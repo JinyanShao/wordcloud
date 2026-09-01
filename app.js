@@ -19,7 +19,7 @@
   const CANVAS_FONT = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
   const CANVAS_PIXEL_BUDGET = { mobile: 3600000, desktop: 9000000 };
 
-  const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
+  const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "证据检查关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
   const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "派生", drift: "语义漂移", trap: "易混", ant: "反义", cause: "因果" };
   const RELATION_ORDER = ["syn", "ant", "compare", "drift", "cause", "trap", "fam", "personal"];
   const FOCUS_LIMITS = { syn: 5, ant: 4, compare: 3, drift: 3, cause: 3, trap: 3, fam: 6, personal: 3 };
@@ -254,6 +254,10 @@
     return rank < 0 ? RELATION_ORDER.length : rank;
   }
 
+  function isEvidenceChecked(edge) {
+    return edge.review === "evidence_checked" || edge.review === "reviewed";
+  }
+
   function connectionsFor(id, limit = 16) {
     const byNeighbor = new Map();
     const officialByNeighbor = new Map();
@@ -262,7 +266,7 @@
       officialByNeighbor.get(edge.other).push({ ...edge, kind: "official" });
     }
     for (const [other, relations] of officialByNeighbor) {
-      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(b.review === "reviewed") - Number(a.review === "reviewed"));
+      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(isEvidenceChecked(b)) - Number(isEvidenceChecked(a)));
       byNeighbor.set(other, { ...relations[0], relations });
     }
     const candidates = [...personalFor(id), ...strongFormFor(id), ...strongStructuralFor(id)];
@@ -415,7 +419,7 @@
     if (edge.kind === "form") return { ...RELATION_STYLE.trap, dash: [3, 5], alpha: .58, label: `${edge.label || "形音相近"} · 候选` };
     const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.syn;
     const mappedLabel = edge.label ? RELATION_NAMES[edge.label] : null;
-    const relationName = RELATION_NAMES[edge.relation] || edge.relation || "已审校";
+    const relationName = RELATION_NAMES[edge.relation] || edge.relation || "证据检查";
     // Canvas chips stay short (relation name only); custom teaching labels are
     // surfaced on the word card via `note`, never drawn across an edge.
     return { ...style, alpha: .95, label: mappedLabel || relationName, note: mappedLabel || !edge.label ? "" : edge.label };
@@ -744,10 +748,10 @@
       .map((edge) => ({ edge: { ...edge, kind: "official" }, node: nodeById.get(edge.other) }))
       .filter((item) => item.node)
       .sort((a, b) => relationRank(a.edge) - relationRank(b.edge)
-        || Number(b.edge.review === "reviewed") - Number(a.edge.review === "reviewed")
+        || Number(isEvidenceChecked(b.edge)) - Number(isEvidenceChecked(a.edge))
         || a.node.word.localeCompare(b.node.word, "fr"));
-    const reviewed = official.filter((item) => item.edge.review === "reviewed");
-    const sourced = official.filter((item) => item.edge.review !== "reviewed");
+    const checked = official.filter((item) => isEvidenceChecked(item.edge));
+    const sourced = official.filter((item) => !isEvidenceChecked(item.edge));
     const mine = personalFor(node.id).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
     const officialIds = new Set(official.map((item) => item.node.id));
     const form = strongFormFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 8);
@@ -762,11 +766,11 @@
       <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
       ${renderSenseGroups(node)}
-      ${reviewed.length ? `<section class="panel-section"><h3>人工审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${checked.length ? `<section class="panel-section"><h3>证据检查关系 · ${checked.length}</h3><div class="relation-list">${checked.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${form.length ? `<section class="panel-section"><h3>形音线索 · 自动候选</h3><p class="candidate-note">只显示同时形似且音近的少量词，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${structural.length ? `<section class="panel-section"><h3>构词线索 · 待核准</h3><p class="candidate-note">来自 Lexique 形态结构，只在图中以蓝色虚线显示，不等同于已审校教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${structural.length ? `<section class="panel-section"><h3>构词线索 · 待核准</h3><p class="candidate-note">来自 Lexique 形态结构，只在图中以蓝色虚线显示，不等同于证据检查后的教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
     `;
     panel.classList.remove("hidden");

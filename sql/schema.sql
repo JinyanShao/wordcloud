@@ -145,7 +145,7 @@ CREATE TABLE IF NOT EXISTS edge_candidates (
   weight REAL NOT NULL CHECK (weight >= 0 AND weight <= 1),
   source_id TEXT REFERENCES sources(id),
   details_json TEXT NOT NULL DEFAULT '{}',
-  status TEXT NOT NULL DEFAULT 'candidate' CHECK (status IN ('candidate', 'sourced', 'reviewed', 'rejected')),
+  status TEXT NOT NULL DEFAULT 'candidate' CHECK (status IN ('candidate', 'sourced', 'evidence_checked', 'reviewed', 'rejected')),
   created_at TEXT NOT NULL,
   CHECK (a_id < b_id),
   UNIQUE (a_id, b_id, signal)
@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS official_edges (
   explanation TEXT,
   examples_json TEXT NOT NULL DEFAULT '[]',
   confidence REAL NOT NULL CHECK (confidence >= 0 AND confidence <= 1),
-  review_status TEXT NOT NULL CHECK (review_status IN ('sourced', 'reviewed')),
+  review_status TEXT NOT NULL CHECK (review_status IN ('sourced', 'evidence_checked', 'reviewed')),
   reviewed_at TEXT,
   created_at TEXT NOT NULL,
   CHECK (a_id < b_id),
