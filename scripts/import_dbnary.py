@@ -14,8 +14,6 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import quote, unquote, urlparse
 
-from learning_lexicon import learning_lexeme_rows
-
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "data" / "raw" / "dbnary" / "fr_dbnary_ontolex.ttl.bz2"
@@ -66,22 +64,6 @@ def turtle_text(raw: str) -> str:
         return raw.replace(r'\"', '"').replace(r"\n", " ").replace(r"\t", " ").replace("\\\\", "\\")
 
 
-# DBnary occasionally prepends a stray numbered cross-reference fragment
-# before the real definition, e.g. "Faire (2) à manger.\n Créer, produire,
-# fabriquer, en parlant de toute œuvre matérielle." (the "(2)" is
-# Wiktionnaire's numbered-example citation marker, not part of the gloss).
-# Strip that leading fragment up to the first newline and keep only the
-# real definition that follows, unaltered.
-DEFINITION_CITATION_PREFIX_RE = re.compile(
-    r"^[A-ZÀ-Ý][\w'À-ÖØ-öø-ÿ-]*(?: [a-zà-öø-ÿ][\w'À-ÖØ-öø-ÿ-]*){0,2} \(\d+\)[^\n]*\n\s*"
-)
-
-
-def clean_definition(text: str) -> str:
-    match = DEFINITION_CITATION_PREFIX_RE.match(text)
-    return text[match.end():].strip() if match else text
-
-
 def stream_blocks(path: Path):
     block: list[str] = []
     with bz2.open(path, "rt", encoding="utf-8") as stream:
@@ -129,26 +111,40 @@ def predicate_values(block: str, predicate: str) -> list[str]:
 
 def load_rendered(conn: sqlite3.Connection) -> list[dict[str, object]]:
     conn.row_factory = sqlite3.Row
-    return [dict(row) for row in learning_lexeme_rows(conn)]
+    rows = conn.execute(
+        """
+        SELECT l.id,l.lemma,l.normalized,l.pos,l.cefr_level,l.status
+        FROM lexemes l
+        JOIN positions p ON p.lexeme_id=l.id
+        ORDER BY l.id
+        """
+    ).fetchall()
+    if rows:
+        return [dict(row) for row in rows]
+    support: set[tuple[str, str]] = set()
+    if SEED_PATH.exists():
+        seed = json.loads(SEED_PATH.read_text(encoding="utf-8"))
+        for item in seed.get("nodes", []):
+            raw_pos = str(item.get("pos", "")).lower()
+            pos = "VER" if raw_pos.startswith("v") else "NOM" if raw_pos.startswith("n") else "ADJ" if raw_pos.startswith("adj") else "ADV" if raw_pos.startswith("adv") else None
+            if pos:
+                support.add((normalize(item["id"]), pos))
+    all_rows = conn.execute(
+        "SELECT id,lemma,normalized,pos,cefr_level,status FROM lexemes ORDER BY id"
+    ).fetchall()
+    return [
+        dict(row) for row in all_rows
+        if row["status"] == "eligible" or (row["normalized"], row["pos"]) in support
+    ]
 
 
-def analyze(
-    raw_path: Path = RAW_PATH,
-    analysis_path: Path = ANALYSIS_PATH,
-    report_path: Path = REPORT_PATH,
-    expected_sha256: str | None = EXPECTED_SHA256,
-) -> dict[str, object]:
-    """Analyze a DBnary extract without publishing it.
-
-    Alternate historical extracts are supported for source-difference audits.
-    `approve()` remains intentionally bound to the locked production analysis.
-    """
-    if not raw_path.exists():
-        raise SystemExit(f"missing DBnary source: {raw_path}")
+def analyze() -> dict[str, object]:
+    if not RAW_PATH.exists():
+        raise SystemExit(f"missing DBnary source: {RAW_PATH}")
     conn = sqlite3.connect(DB_PATH)
     rendered = load_rendered(conn)
     by_key = {(str(row["normalized"]), str(row["pos"])): row for row in rendered}
-    current_hash = sha256(raw_path)
+    current_hash = sha256(RAW_PATH)
 
     entries: dict[str, dict[str, object]] = {}
     wanted_senses: dict[str, str] = {}
@@ -157,8 +153,7 @@ def analyze(
     lexical_entry_blocks = 0
     relation_mentions = Counter()
 
-    unparsed_senses: list[dict[str, object]] = []
-    for block in stream_blocks(raw_path):
+    for block in stream_blocks(RAW_PATH):
         block_count += 1
         subject = subject_token(block)
         if not subject:
@@ -219,12 +214,6 @@ def analyze(
             r'skos:definition\s+\[\s*rdf:value\s+"((?:[^"\\]|\\.)*)"@fr\s*\]', block, re.S
         )
         if not definition_match:
-            unparsed_senses.append({
-                "id": subject_local,
-                "entry_id": wanted_senses[subject_local],
-                "raw_contains_definition": "skos:definition" in block,
-                "raw_contains_rdf_value": "rdf:value" in block,
-            })
             continue
         examples = [
             turtle_text(raw) for raw in re.findall(
@@ -237,7 +226,7 @@ def analyze(
             "entry_id": entry_id,
             "lexeme_id": int(entries[entry_id]["lexeme_id"]),
             "sense_number": turtle_text(number_match.group(1)) if number_match else "?",
-            "definition_fr": clean_definition(turtle_text(definition_match.group(1))),
+            "definition_fr": turtle_text(definition_match.group(1)),
             "examples": examples,
         }
 
@@ -326,7 +315,7 @@ def analyze(
     }
     conflict_rate = len(contradictory_pairs) / max(1, len({(a, b) for a, b, _ in grouped}))
     gates = {
-        "official_snapshot_hash_matches": expected_sha256 is None or current_hash == expected_sha256,
+        "official_snapshot_hash_matches": current_hash == EXPECTED_SHA256,
         "rendered_lexeme_alignment_above_80pct": len(lexemes_with_entries) / max(1, len(rendered)) >= 0.8,
         "sense_definitions_exist": len(senses) >= 5_000,
         "explicit_semantic_edges_exist": len(approved_edges) >= 500,
@@ -346,7 +335,7 @@ def analyze(
         },
         "gates": gates,
         "source_profile": {
-            "compressed_bytes": raw_path.stat().st_size,
+            "compressed_bytes": RAW_PATH.stat().st_size,
             "turtle_blocks": block_count,
             "lexical_entry_blocks": lexical_entry_blocks,
             "matched_entries": len(entries),
@@ -374,7 +363,6 @@ def analyze(
         "known_pairs": known_pairs,
         "poli_entries": poli_entries,
         "poli_senses": sorted(poli_senses, key=lambda row: (str(row["entry_id"]), str(row["sense_number"]))),
-        "unparsed_senses": sorted(unparsed_senses, key=lambda row: (str(row["entry_id"]), str(row["id"]))),
         "contradiction_examples": [
             {"a_id": a, "b_id": b} for a, b in sorted(contradictory_pairs)[:25]
         ],
@@ -382,13 +370,13 @@ def analyze(
         "senses": sorted(senses.values(), key=lambda row: (int(row["lexeme_id"]), str(row["entry_id"]), str(row["sense_number"]))),
         "approved_edges": approved_edges,
     }
-    analysis_path.write_text(json.dumps(analysis, ensure_ascii=False, indent=2), encoding="utf-8")
-    write_report(analysis, report_path)
+    ANALYSIS_PATH.write_text(json.dumps(analysis, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_report(analysis)
     conn.close()
     return analysis
 
 
-def write_report(analysis: dict[str, object], report_path: Path = REPORT_PATH) -> None:
+def write_report(analysis: dict[str, object]) -> None:
     profile = analysis["source_profile"]
     alignment = analysis["alignment"]
     relations = analysis["relations"]
@@ -441,7 +429,7 @@ def write_report(analysis: dict[str, object], report_path: Path = REPORT_PATH) -
         "- 语义关系只在目标词以相同词性存在于当前词表时发布，避免多词性词误连。",
         "- 本轮不导入 DBnary `derivedFrom`；构词关系仍由 Démonette 负责。",
     ]
-    report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def approve() -> dict[str, object]:
@@ -469,24 +457,8 @@ def approve() -> dict[str, object]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("command", choices=("analyze", "approve"))
-    parser.add_argument("--raw", type=Path, help="historical DBnary extract for read-only analysis")
-    parser.add_argument("--analysis-output", type=Path, help="analysis JSON destination; requires --raw")
-    parser.add_argument("--report-output", type=Path, help="report destination; requires --raw")
-    parser.add_argument("--expected-sha256", help="optional integrity lock for --raw")
     args = parser.parse_args()
-    if args.command == "approve" and any((args.raw, args.analysis_output, args.report_output, args.expected_sha256)):
-        raise SystemExit("approve only accepts the locked production analysis")
-    if args.command == "analyze":
-        if any((args.analysis_output, args.report_output, args.expected_sha256)) and not args.raw:
-            raise SystemExit("--analysis-output, --report-output and --expected-sha256 require --raw")
-        payload = analyze(
-            raw_path=args.raw or RAW_PATH,
-            analysis_path=args.analysis_output or ANALYSIS_PATH,
-            report_path=args.report_output or REPORT_PATH,
-            expected_sha256=args.expected_sha256 if args.raw else EXPECTED_SHA256,
-        )
-    else:
-        payload = approve()
+    payload = analyze() if args.command == "analyze" else approve()
     if args.command == "analyze":
         summary = {
             "gate_passed": payload["meta"]["gate_passed"],

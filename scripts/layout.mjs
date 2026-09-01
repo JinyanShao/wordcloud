@@ -33,25 +33,6 @@ function stableUnit(value, salt = "") {
   return (hash >>> 0) / 4294967296;
 }
 
-// graphology-communities-louvain defaults its internal tie-breaking `rng` to
-// the global Math.random, which makes repeated builds on identical input
-// pick different (equally valid) local optima. mulberry32 is a small,
-// well-known deterministic PRNG: seeding it with a fixed constant gives
-// Louvain a reproducible rng without touching Math.random itself, so nothing
-// outside this layout pass is affected.
-function mulberry32(seed) {
-  let state = seed >>> 0;
-  return function random() {
-    state |= 0;
-    state = (state + 0x6d2b79f5) | 0;
-    let t = Math.imul(state ^ (state >>> 15), 1 | state);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-const LOUVAIN_SEED = 0x5747_4c56; // "WGLV" — arbitrary, fixed for reproducibility
-const louvainRng = mulberry32(LOUVAIN_SEED);
-
 function topologyWeight(edge) {
   let remaining = 1;
   for (const signal of edge.signals || []) {
@@ -84,7 +65,6 @@ for (let index = 0; index < input.edges.length; index += 1) {
 louvain.assign(graph, {
   resolution: 0.58,
   randomWalk: false,
-  rng: louvainRng,
   attributes: { community: "community", weight: "weight" },
 });
 
@@ -196,93 +176,7 @@ function wrapAngle(angle) {
   return angle;
 }
 
-// Radius (CEFR/frequency) and angle (ForceAtlas2 community pull) are chosen
-// independently, so two nodes can legitimately land almost on top of each
-// other -- most visibly for strongly-pulled pairs like editorial relations,
-// but measurably for ~1% of all edges. This pass only ever adjusts angle: it
-// never touches radius, so "radius = learning progression" stays exactly
-// true. It repeatedly finds node pairs closer than MIN_DIST world units
-// (via a spatial hash grid, so it stays fast at 7k+ nodes) and nudges each
-// one along its own tangential direction, away from the other -- the polar
-// equivalent of a repulsion force that can't leak into the radial axis.
-// Fully deterministic: fixed iteration order, no Math.random (only the
-// existing stableUnit hash, for the zero-distance fallback direction).
-// Math.cos/Math.sin are IEEE 754-accurate but not bit-identical across CPU
-// architectures (their last-bit rounding is implementation-defined, unlike
-// +,-,*,/ which the standard requires to be exact) -- normally a ~1e-15
-// difference that rounds away to nothing, but declumpAngles runs the same
-// hard "dist >= minDist" threshold for 220 iterations, so on the rare pair
-// that lands almost exactly on that boundary, a 1e-15 difference is enough
-// to flip which side of it two platforms land on, and 220 iterations is
-// long enough for that single flip to cascade into a visibly different
-// final layout. Quantizing every cos/sin-derived coordinate to 1e-6 world
-// units (five to six orders of magnitude coarser than that noise, and far
-// finer than anything visible at this map's scale) makes the threshold
-// decision itself platform-independent, which is what CI's from-scratch
-// rebuild diff actually needs to match bit-for-bit.
-function quantize(value) {
-  return Math.round(value * 1e6) / 1e6;
-}
-
-function declumpAngles(items, { minDist = 48, iterations = 220, damping = 0.6 } = {}) {
-  const cellSize = minDist;
-  for (let iter = 0; iter < iterations; iter += 1) {
-    const cart = items.map((item) => ({
-      x: quantize(Math.cos(item.angle) * item.radius),
-      y: quantize(Math.sin(item.angle) * item.radius),
-    }));
-    const grid = new Map();
-    cart.forEach((point, index) => {
-      const cellKey = `${Math.floor(point.x / cellSize)}:${Math.floor(point.y / cellSize)}`;
-      if (!grid.has(cellKey)) grid.set(cellKey, []);
-      grid.get(cellKey).push(index);
-    });
-    const pushX = new Array(items.length).fill(0);
-    const pushY = new Array(items.length).fill(0);
-    let violations = 0;
-    for (let index = 0; index < items.length; index += 1) {
-      const point = cart[index];
-      const cx = Math.floor(point.x / cellSize);
-      const cy = Math.floor(point.y / cellSize);
-      for (let dx = -1; dx <= 1; dx += 1) {
-        for (let dy = -1; dy <= 1; dy += 1) {
-          const bucket = grid.get(`${cx + dx}:${cy + dy}`);
-          if (!bucket) continue;
-          for (const j of bucket) {
-            if (j <= index) continue;
-            const other = cart[j];
-            let ddx = other.x - point.x;
-            let ddy = other.y - point.y;
-            let dist = Math.hypot(ddx, ddy);
-            if (dist >= minDist) continue;
-            violations += 1;
-            if (dist < 1e-6) {
-              const fallback = stableUnit(`${items[index].key}:${items[j].key}`, "declump-fallback") * Math.PI * 2;
-              ddx = Math.cos(fallback);
-              ddy = Math.sin(fallback);
-              dist = 1;
-            }
-            const nx = ddx / dist, ny = ddy / dist;
-            const overlap = (minDist - dist) * 0.5;
-            pushX[index] -= nx * overlap; pushY[index] -= ny * overlap;
-            pushX[j] += nx * overlap; pushY[j] += ny * overlap;
-          }
-        }
-      }
-    }
-    if (!violations) break;
-    for (let index = 0; index < items.length; index += 1) {
-      if (!pushX[index] && !pushY[index]) continue;
-      const item = items[index];
-      const tangentX = quantize(-Math.sin(item.angle)), tangentY = quantize(Math.cos(item.angle));
-      const tangential = pushX[index] * tangentX + pushY[index] * tangentY;
-      const arcShift = (tangential / Math.max(item.radius, 1)) * damping;
-      item.angle = quantize(wrapAngle(item.angle + arcShift));
-    }
-  }
-}
-
-const angleItems = [];
+const positions = [];
 graph.forEachNode((key, attributes) => {
   const community = attributes.community ?? 0;
   const stat = communityStats.get(community);
@@ -294,18 +188,12 @@ graph.forEachNode((key, attributes) => {
     const communityAngle = Math.atan2(stat.y - forceCenter.y, stat.x - forceCenter.x);
     angle = communityAngle + wrapAngle(nodeAngle - communityAngle) * 0.72;
   }
-  angleItems.push({ key, angle, radius: radiusByNode.get(key) });
-});
-
-declumpAngles(angleItems);
-
-const positions = [];
-angleItems.forEach(({ key, angle, radius }) => {
+  const radius = radiusByNode.get(key);
   positions.push({
     id: Number(key),
     x: Math.round(Math.cos(angle) * radius * 1000) / 1000,
     y: Math.round(Math.sin(angle) * radius * 1000) / 1000,
-    community: Number(graph.getNodeAttribute(key, "community") ?? 0),
+    community: Number(community),
     degree: graph.degree(key),
     weightedDegree: Math.round(graph.reduceEdges(key, (sum, _edge, attrs) => sum + (attrs.weight ?? 1), 0) * 100000) / 100000,
     radius: Math.round(radius * 1000) / 1000,

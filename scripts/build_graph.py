@@ -21,7 +21,8 @@ GRAPH_INPUT = ROOT / "data" / "processed" / "graph-input.json"
 SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
 DEMONETTE_APPROVED_PATH = ROOT / "data" / "processed" / "demonette-approved.json"
 DBNARY_APPROVED_PATH = ROOT / "data" / "processed" / "dbnary-approved.json"
-WIKTEXTRACT_P0_APPROVED_PATH = ROOT / "data" / "processed" / "wiktextract-p0-approved.json"
+AI_COMPARE_DRAFTS_PATH = ROOT / "data" / "processed" / "ai-compare-drafts.json"
+AI_FIRST_EDGE_DRAFTS_PATH = ROOT / "data" / "processed" / "ai-first-edge-drafts.json"
 CREATED_AT = "2026-07-27T00:00:00Z"
 
 SIGNAL_CONFIG = {
@@ -104,13 +105,7 @@ def sparse_neighbors(
 ) -> tuple[dict[int, list[tuple[int, float]]], list[tuple[int, int, float]]]:
     postings: dict[str, list[int]] = defaultdict(list)
     for node_id, tokens in features.items():
-        # tokens is a set[str]; Python randomizes str hashing per process, so
-        # iterating it directly would insert into `postings` (and everything
-        # keyed off its iteration order downstream, including the
-        # floating-point pair_scores accumulation below) in a different order
-        # each run. Sorting pins that order so repeated builds on identical
-        # input are byte-identical.
-        for token in sorted(tokens):
+        for token in tokens:
             postings[token].append(node_id)
     total = max(1, len(features))
     weights = {
@@ -120,11 +115,7 @@ def sparse_neighbors(
     }
     norms: dict[int, float] = defaultdict(float)
     for node_id, tokens in features.items():
-        # Same hash-randomization hazard as the postings loop above: summing
-        # floats in a different order changes the result in its last bit,
-        # which can flip an exact-score tie downstream. Sort for a fixed
-        # summation order.
-        norms[node_id] = math.sqrt(sum(weights[token] ** 2 for token in sorted(tokens) if token in weights))
+        norms[node_id] = math.sqrt(sum(weights[token] ** 2 for token in tokens if token in weights))
     pair_scores: dict[tuple[int, int], float] = defaultdict(float)
     for token, weight in weights.items():
         ids = postings[token]
@@ -198,59 +189,8 @@ class UnionFind:
         return True
 
 
-MIN_REVIEWED_EXAMPLES = 2
-
-
-def has_real_review_evidence(item: dict[str, object]) -> bool:
-    """A relation is fit for public display only with genuine human review
-    evidence: a real explanation, at least two example sentences, and a
-    named reviewer with a review date. The old prototype seed (EDGES in
-    data.js) has none of these -- it only carries a short label -- so it
-    must not be treated as reviewed just because it predates this check."""
-    explanation = str(item.get("explanation") or "").strip()
-    examples = item.get("examples")
-    reviewer = str(item.get("reviewer") or "").strip()
-    reviewed_at = str(item.get("reviewed_at") or "").strip()
-    return (
-        bool(explanation)
-        and "requires production re-review" not in explanation
-        and isinstance(examples, list)
-        and len(examples) >= MIN_REVIEWED_EXAMPLES
-        and bool(reviewer)
-        and bool(reviewed_at)
-    )
-
-
 def relation_candidate(signal: str) -> str:
-    return {"semantic": "synonym", "morphology": "derivation", "spelling": "trap", "phonetic": "trap"}[signal]
-
-
-def formal_relation(value: str, dimension: str | None = None, subtype: str | None = None) -> str:
-    if value in {"syn", "synonym"}:
-        return "synonym"
-    if value in {"ant", "antonym"}:
-        return "antonym"
-    if value in {"fam", "drift"}:
-        if "etymological" in str(dimension or ""):
-            return "etymological_family"
-        if str(subtype or "") == "conversion" or str(dimension or "").endswith("x-to-x"):
-            return "conversion_or_lexicalization"
-        return "derivation"
-    if value == "cause":
-        return "compare"
-    return value
-
-
-def decomposition_payload(subtype: str | None, label: str | None) -> str:
-    text = label or ""
-    payload: dict[str, str] = {}
-    if subtype == "prefixation" or "前缀" in text:
-        payload["prefix"] = text.split("·")[-1].strip() if "·" in text else text
-    elif subtype == "suffixation" or "后缀" in text:
-        payload["suffix"] = text.split("·")[-1].strip() if "·" in text else text
-    elif subtype == "conversion":
-        payload["conversion"] = "same written form"
-    return json.dumps(payload, ensure_ascii=False)
+    return {"semantic": "syn", "morphology": "fam", "spelling": "trap", "phonetic": "trap"}[signal]
 
 
 def pos_from_seed(value: str) -> str | None:
@@ -271,66 +211,98 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
         return [], []
     seed = json.loads(SEED_PATH.read_text(encoding="utf-8"))
     by_key = {(row["normalized"], row["pos"]): row["id"] for row in nodes}
-    by_id = {row["id"]: row for row in nodes}
     by_word: dict[str, list[int]] = defaultdict(list)
     for row in nodes:
         by_word[row["normalized"]].append(row["id"])
     seed_pos = {normalize(item["id"]): pos_from_seed(item.get("pos", "")) for item in seed["nodes"]}
-    def resolve(word: str, explicit_pos: str | None = None) -> int | None:
+    def resolve(word: str) -> int | None:
         normalized = normalize(word)
-        pos = explicit_pos or seed_pos.get(normalized)
+        pos = seed_pos.get(normalized)
         if pos and (normalized, pos) in by_key:
             return by_key[(normalized, pos)]
         values = by_word.get(normalized, [])
         return values[0] if len(values) == 1 else None
     layout: list[tuple[int, int, float]] = []
     official: list[dict[str, object]] = []
-    editorial_edges = [
-        {**edge, "_kind": "prototype"} for edge in seed["edges"]
-    ] + [
-        {**edge, "_kind": "editorial"} for edge in seed.get("editorialRelations", [])
-    ]
-    for edge in editorial_edges:
-        original_a = resolve(edge["a"], edge.get("aPos"))
-        original_b = resolve(edge["b"], edge.get("bPos"))
+    for edge in seed["edges"]:
+        original_a, original_b = resolve(edge["a"]), resolve(edge["b"])
         if original_a is None or original_b is None or original_a == original_b:
             continue
         a, b = sorted((original_a, original_b))
-        swapped = original_a != a
-        source_id, target_id = original_a, original_b
-        source_row, target_row = by_id[source_id], by_id[target_id]
         layout.append((a, b, 1.0))
-        relation = formal_relation("compare" if edge["type"] == "axis" else edge["type"], edge.get("dimension"), edge.get("subtype"))
+        relation = "compare" if edge["type"] == "axis" else edge["type"]
         official.append(
             {
                 "a": a, "b": b, "relation": relation,
-                "dimension": edge.get("dimension") or ("prototype-axis" if edge["type"] == "axis" else None),
+                "dimension": "prototype-axis" if edge["type"] == "axis" else None,
                 "subtype": None,
                 "direction": f"{original_a}->{original_b}" if edge["type"] in {"axis", "cause"} else None,
                 "label": edge.get("label") or relation,
-                "explanation": edge.get("explanation"),
-                "examples": edge.get("examples", []),
-                "example_glosses": edge.get("exampleGlosses", []),
-                "reviewer": edge.get("reviewer"),
-                "reviewed_at": edge.get("reviewedAt"),
-                "source_note": edge.get("source"),
-                "kind": edge["_kind"],
-                "key_sense_a": edge.get("bSenseNumber") if swapped else edge.get("aSenseNumber"),
-                "key_sense_b": edge.get("aSenseNumber") if swapped else edge.get("bSenseNumber"),
-                "source_lemma": source_row["lemma"],
-                "source_pos": source_row["pos"],
-                "source_sense": edge.get("aSenseNumber"),
-                "target_lemma": target_row["lemma"],
-                "target_pos": target_row["pos"],
-                "target_sense": edge.get("bSenseNumber"),
-                "productive_rule": bool(edge.get("productiveRule")),
-                "word_parts": edge.get("wordParts") or {},
-                "zh_status": edge.get("zhStatus") or "edited",
-                "example_status": edge.get("exampleStatus") or ("edited_example" if edge.get("examples") else "source"),
-                "family_scope": edge.get("familyScope") or "default",
             }
         )
     return layout, official
+
+
+def reviewed_compare_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    """Re-apply human-accepted AI compare drafts from the durable JSON store."""
+    if not AI_COMPARE_DRAFTS_PATH.exists():
+        return []
+    payload = json.loads(AI_COMPARE_DRAFTS_PATH.read_text(encoding="utf-8"))
+    by_key = {(row["normalized"], row["pos"]): int(row["id"]) for row in nodes}
+    result = []
+    for item in payload.get("items", []):
+        review = item.get("review", {})
+        if review.get("status") != "accepted":
+            continue
+        draft = item.get("draft", {})
+        a_id = by_key.get((item["a"]["normalized"], item["a"]["pos"]))
+        b_id = by_key.get((item["b"]["normalized"], item["b"]["pos"]))
+        if a_id is None or b_id is None or a_id == b_id:
+            raise SystemExit(f"AI compare draft endpoint drift: {item.get('key')}")
+        if not str(draft.get("label", "")).strip():
+            raise SystemExit(f"AI compare draft missing label: {item.get('key')}")
+        a, b = sorted((a_id, b_id))
+        result.append({
+            "a": a, "b": b,
+            "dimension": draft.get("dimension"),
+            "label": str(draft["label"]).strip(),
+            "examples": [str(ex) for ex in draft.get("examples", [])][:2],
+            "reviewed_at": review.get("reviewed_at"),
+            "key": item.get("key"),
+            "model": item.get("model"),
+        })
+    return result
+
+
+def reviewed_first_edge_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    """Re-apply human-accepted AI first-edge proposals from the durable JSON store."""
+    if not AI_FIRST_EDGE_DRAFTS_PATH.exists():
+        return []
+    payload = json.loads(AI_FIRST_EDGE_DRAFTS_PATH.read_text(encoding="utf-8"))
+    by_key = {(row["normalized"], row["pos"]): int(row["id"]) for row in nodes}
+    result = []
+    for item in payload.get("items", []):
+        word = item.get("word", {})
+        a_id = by_key.get((word.get("normalized"), word.get("pos")))
+        for prop in item.get("proposals", []):
+            review = prop.get("review", {})
+            if review.get("status") != "accepted":
+                continue
+            b_id = by_key.get((prop.get("partner"), prop.get("partner_pos")))
+            relation = prop.get("relation")
+            label = str(prop.get("label", "")).strip()
+            if a_id is None or b_id is None or a_id == b_id:
+                raise SystemExit(f"AI first-edge draft endpoint drift: {item.get('key')}")
+            if relation not in {"syn", "ant", "fam"} or not label:
+                raise SystemExit(f"AI first-edge draft invalid relation/label: {item.get('key')}")
+            a, b = sorted((a_id, b_id))
+            result.append({
+                "a": a, "b": b, "relation": relation, "label": label,
+                "reviewed_at": review.get("reviewed_at"),
+                "key": f"{item.get('key')}->{prop.get('partner')}|{prop.get('partner_pos')}|{relation}",
+                "model": item.get("model"),
+            })
+    return result
 
 
 def demonette_edges(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
@@ -360,28 +332,14 @@ def dbnary_payload(nodes: list[sqlite3.Row]) -> dict[str, object]:
     if not payload.get("meta", {}).get("gate_passed"):
         raise SystemExit("DBnary approved payload does not carry a passing quality gate")
     by_id = {int(row["id"]): row for row in nodes}
-    graph_edges = []
     for edge in payload.get("edges", []):
         a_id, b_id = int(edge["a_id"]), int(edge["b_id"])
-        # Dictionary coverage includes search-only learning terms. Only edges
-        # with two Canvas endpoints become graph edges; the rest remain in the
-        # lexical payload and must not force a layout membership change.
         if a_id not in by_id or b_id not in by_id:
-            continue
+            raise SystemExit(f"DBnary edge endpoint drift: {a_id}, {b_id}")
         if by_id[a_id]["pos"] != by_id[b_id]["pos"]:
             raise SystemExit(f"DBnary semantic relation crossed POS unexpectedly: {a_id}, {b_id}")
         if edge.get("relation") not in {"syn", "ant"}:
             raise SystemExit(f"DBnary relation outside approved scope: {edge.get('relation')}")
-        graph_edges.append(edge)
-    return {**payload, "edges": graph_edges}
-
-
-def wiktextract_p0_payload() -> dict[str, object]:
-    if not WIKTEXTRACT_P0_APPROVED_PATH.exists():
-        return {"entries": [], "senses": []}
-    payload = json.loads(WIKTEXTRACT_P0_APPROVED_PATH.read_text(encoding="utf-8"))
-    if payload.get("meta", {}).get("source_id") != "wiktionary_fr_wiktextract":
-        raise SystemExit("Wiktextract P0 approved payload has an unexpected source")
     return payload
 
 
@@ -404,16 +362,20 @@ def main() -> None:
             pos = pos_from_seed(item.get("pos", ""))
             if pos:
                 seed_keys.add((normalize(item["id"]), pos))
-        for item in seed.get("editorialRelations", []):
-            for word_key, pos_key in (("a", "aPos"), ("b", "bPos")):
-                word = normalize(item.get(word_key, ""))
-                pos = pos_from_seed(str(item.get(pos_key, "")))
-                if word and pos:
-                    seed_keys.add((word, pos))
+    first_edge_partner_keys: set[tuple[str, str]] = set()
+    if AI_FIRST_EDGE_DRAFTS_PATH.exists():
+        first_edge_payload = json.loads(AI_FIRST_EDGE_DRAFTS_PATH.read_text(encoding="utf-8"))
+        for item in first_edge_payload.get("items", []):
+            for prop in item.get("proposals", []):
+                if prop.get("review", {}).get("status") == "accepted":
+                    first_edge_partner_keys.add((prop.get("partner"), prop.get("partner_pos")))
     nodes = [
         row for row in all_nodes
         if row["status"] == "eligible"
         or (row["normalized"], row["pos"]) in seed_keys
+        # Accepted first-edge proposals may point at auxiliary lexemes (genre,
+        # type, milieu…); those enter the graph as support nodes.
+        or (row["status"] == "auxiliary" and (row["normalized"], row["pos"]) in first_edge_partner_keys)
     ]
     ids = [row["id"] for row in nodes]
     id_set = set(ids)
@@ -490,14 +452,15 @@ def main() -> None:
     ]
 
     sourced_semantics = dbnary_payload(nodes)
-    sourced_p0 = wiktextract_p0_payload()
     layouts["semantic"] = [
         (int(edge["a_id"]), int(edge["b_id"]), float(edge["weight"]))
         for edge in sourced_semantics.get("edges", [])
     ]
 
     editorial_layout, official = seed_edges(nodes)
-    layouts["editorial_seed"] = editorial_layout
+    compare_drafts = reviewed_compare_drafts(nodes)
+    first_edge_drafts = reviewed_first_edge_drafts(nodes)
+    layouts["editorial_seed"] = editorial_layout + [(d["a"], d["b"], 1.0) for d in first_edge_drafts]
 
     candidate_rows = []
     layout_rows = []
@@ -552,7 +515,7 @@ def main() -> None:
         """,
         [
             (
-                int(edge["a_id"]), int(edge["b_id"]), formal_relation("fam", "derivational_morphology", edge.get("subtype")), "derivation",
+                int(edge["a_id"]), int(edge["b_id"]), "fam", "derivation",
                 float(edge["weight"]), "demonette_2",
                 json.dumps({
                     "generator": "demonette_2_exact_lemma_pos",
@@ -593,9 +556,9 @@ def main() -> None:
         [
             (
                 entry["id"], int(entry["lexeme_id"]), int(entry["entry_rank"]),
-                entry.get("source_id", "dbnary_fr"), entry["source_url"],
+                "dbnary_fr", entry["source_url"],
             )
-            for entry in sourced_semantics.get("entries", []) + sourced_p0.get("entries", [])
+            for entry in sourced_semantics.get("entries", [])
         ],
     )
     conn.executemany(
@@ -608,46 +571,45 @@ def main() -> None:
             (
                 sense["id"], sense["entry_id"], int(sense["lexeme_id"]),
                 str(sense["sense_number"]), sense["definition_fr"],
-                json.dumps(sense.get("examples", []), ensure_ascii=False), sense.get("source_id", "dbnary_fr"),
+                json.dumps(sense.get("examples", []), ensure_ascii=False), "dbnary_fr",
             )
-            for sense in sourced_semantics.get("senses", []) + sourced_p0.get("senses", [])
+            for sense in sourced_semantics.get("senses", [])
         ],
     )
 
     for item in official:
-        reviewed = has_real_review_evidence(item)
-        examples = item.get("examples") or []
-        glosses = item.get("example_glosses") or []
-        # Pair each French example with its Chinese gloss when one exists,
-        # so learners see the relation's examples in Chinese, not just
-        # French. Falls back to a bare string when no gloss was reviewed
-        # for that example.
-        examples_payload = [
-            {"fr": fr, "zh": glosses[index]} if index < len(glosses) else fr
-            for index, fr in enumerate(examples)
-        ]
         cursor = conn.execute(
             """
             INSERT OR IGNORE INTO official_edges(
               a_id,b_id,relation,dimension,subtype,direction,label,explanation,
-              source_lemma,source_pos,source_sense,target_lemma,target_pos,target_sense,
-              word_parts_json,productive_rule,zh_status,example_status,family_scope,
-              examples_json,confidence,review_status,reviewed_at,created_at,
-              key_sense_a,key_sense_b
-            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+              examples_json,confidence,review_status,reviewed_at,created_at
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             (
                 item["a"], item["b"], item["relation"], item["dimension"], item["subtype"],
-                item["direction"], item["label"], item.get("explanation") or "",
-                item.get("source_lemma"), item.get("source_pos"), item.get("source_sense"),
-                item.get("target_lemma"), item.get("target_pos"), item.get("target_sense"),
-                json.dumps(item.get("word_parts") or {}, ensure_ascii=False), int(bool(item.get("productive_rule"))),
-                item.get("zh_status") or "edited", item.get("example_status") or "source",
-                item.get("family_scope") or "default",
-                json.dumps(examples_payload, ensure_ascii=False), 0.9,
-                "reviewed" if reviewed else "sourced",
-                item.get("reviewed_at") if reviewed else None, CREATED_AT,
-                item.get("key_sense_a"), item.get("key_sense_b"),
+                item["direction"], item["label"], "Prototype editorial seed; requires production re-review.",
+                "[]", 0.9, "reviewed", CREATED_AT, CREATED_AT,
+            ),
+        )
+        if cursor.lastrowid:
+            conn.execute(
+                "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
+                (cursor.lastrowid, "wordcloud_editorial", f"{item['a']}:{item['b']}"),
+            )
+
+    for item in compare_drafts:
+        cursor = conn.execute(
+            """
+            INSERT OR IGNORE INTO official_edges(
+              a_id,b_id,relation,dimension,subtype,direction,label,explanation,
+              examples_json,confidence,review_status,reviewed_at,created_at
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
+            """,
+            (
+                item["a"], item["b"], "compare", item["dimension"], None,
+                None, item["label"], None,
+                json.dumps(item["examples"], ensure_ascii=False), 0.8,
+                "reviewed", item["reviewed_at"] or CREATED_AT, CREATED_AT,
             ),
         )
         if cursor.lastrowid:
@@ -655,18 +617,44 @@ def main() -> None:
                 "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
                 (
                     cursor.lastrowid, "wordcloud_editorial",
-                    json.dumps({
-                        "origin": "editorial_relation" if item.get("kind") == "editorial" else "prototype_seed",
-                        "reviewer": item.get("reviewer"), "reviewed_at": item.get("reviewed_at"),
-                        "source_note": item.get("source_note"),
-                    }, ensure_ascii=False),
+                    json.dumps(
+                        {"origin": "ai_compare_draft", "key": item["key"], "model": item["model"]},
+                        ensure_ascii=False,
+                    ),
+                ),
+            )
+
+    for item in first_edge_drafts:
+        cursor = conn.execute(
+            """
+            INSERT OR IGNORE INTO official_edges(
+              a_id,b_id,relation,dimension,subtype,direction,label,explanation,
+              examples_json,confidence,review_status,reviewed_at,created_at
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
+            """,
+            (
+                item["a"], item["b"], item["relation"], None, None,
+                None, item["label"], None,
+                "[]", 0.7,
+                "reviewed", item["reviewed_at"] or CREATED_AT, CREATED_AT,
+            ),
+        )
+        if cursor.lastrowid:
+            conn.execute(
+                "INSERT OR IGNORE INTO official_edge_sources VALUES(?,?,?)",
+                (
+                    cursor.lastrowid, "wordcloud_editorial",
+                    json.dumps(
+                        {"origin": "ai_first_edge_draft", "key": item["key"], "model": item["model"]},
+                        ensure_ascii=False,
+                    ),
                 ),
             )
 
     for item in sourced_derivations:
         a_id, b_id = int(item["a_id"]), int(item["b_id"])
         existing = conn.execute(
-            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation IN ('derivation','conversion_or_lexicalization','etymological_family') ORDER BY review_status='reviewed' DESC, id LIMIT 1",
+            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation='fam' ORDER BY review_status='reviewed' DESC, id LIMIT 1",
             (a_id, b_id),
         ).fetchone()
         if existing:
@@ -680,20 +668,16 @@ def main() -> None:
                 if item["complexity"] == "motiv-sem"
                 else "Démonette 2.0 确认的直接派生或词性转换关系。"
             )
-            relation = formal_relation("fam", "etymological_family" if item["complexity"] == "motiv-sem" else "derivational_morphology", item["subtype"])
             cursor = conn.execute(
                 """
                 INSERT INTO official_edges(
                   a_id,b_id,relation,dimension,subtype,direction,label,explanation,
-                  word_parts_json,productive_rule,zh_status,example_status,family_scope,
                   examples_json,confidence,review_status,reviewed_at,created_at
-                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 (
-                    a_id, b_id, relation, "etymological_family" if relation == "etymological_family" else "derivational_morphology", item["subtype"],
-                    direction, item["label"], explanation,
-                    decomposition_payload(item["subtype"], item.get("label")), int(item["complexity"] == "simple"),
-                    "source", "source", "default", "[]", float(item["confidence"]),
+                    a_id, b_id, "fam", "derivational_morphology", item["subtype"],
+                    direction, item["label"], explanation, "[]", float(item["confidence"]),
                     "sourced", None, CREATED_AT,
                 ),
             )
@@ -724,7 +708,6 @@ def main() -> None:
                 if item["relation"] == "syn"
                 else "Wiktionnaire 通过 DBnary 明示标注的反义关系。"
             )
-            relation = formal_relation(item["relation"])
             cursor = conn.execute(
                 """
                 INSERT INTO official_edges(
@@ -733,7 +716,7 @@ def main() -> None:
                 ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 (
-                    a_id, b_id, relation, "lexical_semantics", item["subtype"],
+                    a_id, b_id, item["relation"], "lexical_semantics", item["subtype"],
                     None, item["label"], explanation, "[]", float(item["confidence"]),
                     "sourced", None, CREATED_AT,
                 ),
@@ -819,7 +802,7 @@ def main() -> None:
     conn.commit()
 
     combined: dict[tuple[int, int], list[tuple[str, float]]] = defaultdict(list)
-    for row in conn.execute("SELECT a_id,b_id,signal,weight FROM layout_links ORDER BY a_id, b_id, signal"):
+    for row in conn.execute("SELECT a_id,b_id,signal,weight FROM layout_links"):
         combined[(row["a_id"], row["b_id"])].append((row["signal"], row["weight"]))
     signal_factor = {
         "semantic": 1.0, "derivation": 1.15, "morphology": 0.35, "spelling": 0.55,

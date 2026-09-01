@@ -9,15 +9,11 @@ import sqlite3
 from collections import defaultdict
 from pathlib import Path
 
-from learning_lexicon import learning_lexeme_rows
-
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data" / "processed" / "wordcloud.sqlite"
 POSITIONS_PATH = ROOT / "data" / "processed" / "layout-positions.json"
 RUNTIME_PATH = ROOT / "graph-data.js"
-SEED_PATH = ROOT / "data" / "processed" / "editorial-seed.json"
-CORE_FAMILIES_PATH = ROOT / "data" / "processed" / "core-families-100.json"
 
 SIGNAL_BITS = {
     "semantic": 1,
@@ -32,29 +28,6 @@ SIGNAL_BITS = {
 
 def compact_json(value: object) -> str:
     return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
-
-
-def dedupe_public_relations(rows: list[dict[str, object]]) -> list[dict[str, object]]:
-    """Collapse duplicate/conflicting relations for the same word pair.
-
-    A pair may carry both a vague synonym relation and a richer teaching
-    "compare" contrast (e.g. from an older auto-sourced pass alongside a
-    newer editorial review); keep only the more informative one. Every row
-    passed in must already be review_status == "reviewed" -- this function
-    only resolves conflicts between reviewed rows, it does not gate review
-    status itself (see has_real_review_evidence in build_graph.py)."""
-    by_pair: dict[tuple[int, int], list[dict[str, object]]] = defaultdict(list)
-    for row in rows:
-        by_pair[(row["a_id"], row["b_id"])].append(row)
-    kept: list[dict[str, object]] = []
-    for pair_rows in by_pair.values():
-        relations = {row["relation"] for row in pair_rows}
-        kept.extend(
-            row for row in pair_rows
-            if not (row["relation"] in {"syn", "synonym"} and "compare" in relations)
-        )
-    kept.sort(key=lambda row: (row["a_id"], row["b_id"], row["relation"]))
-    return kept
 
 
 def main() -> None:
@@ -75,16 +48,6 @@ def main() -> None:
     missing = [row["id"] for row in nodes if row["id"] not in positions]
     if missing:
         raise SystemExit(f"missing {len(missing)} layout positions")
-    learning_rows = learning_lexeme_rows(conn)
-    learning_ids = {row["id"] for row in learning_rows}
-    # Search-only terms deliberately remain outside Canvas while retaining the
-    # same dictionary and review contract as graph terms.
-    search_only_rows = [row for row in learning_rows if row["id"] not in positions]
-    runtime_search_lexemes = [
-        [row["id"], row["lemma"], row["pos"], row["cefr_level"], row["gloss_zh"] or "",
-         round(max(0, row["flelex_frequency"] or 0), 4), row["status"], row["editorial_note"] or ""]
-        for row in search_only_rows
-    ]
     conn.execute("DELETE FROM positions")
     conn.executemany(
         """
@@ -130,30 +93,19 @@ def main() -> None:
             ]
         )
 
-    # Only relations with genuine human review evidence (see
-    # has_real_review_evidence in build_graph.py) are fit to show learners as
-    # language fact. Everything else -- auto-sourced DBnary/Démonette edges,
-    # the un-reviewed legacy prototype seed -- stays in the database for
-    # audit but must never reach the public runtime payload.
-    reviewed_rows = [
-        dict(row)
-        for row in conn.execute(
-            """
-            SELECT a_id,b_id,relation,dimension,subtype,direction,label,
-                   explanation,examples_json,confidence,review_status,
-                   key_sense_a,key_sense_b
-            FROM official_edges WHERE review_status='reviewed' ORDER BY id
-            """
-        )
-    ]
     official = [
         [
             row["a_id"], row["b_id"], row["relation"], row["dimension"] or "",
             row["subtype"] or "", row["direction"] or "", row["label"],
-            row["explanation"] or "", row["examples_json"], row["confidence"], row["review_status"],
-            row["key_sense_a"] or "", row["key_sense_b"] or "",
+            row["explanation"] or "", row["confidence"], row["review_status"],
         ]
-        for row in dedupe_public_relations(reviewed_rows)
+        for row in conn.execute(
+            """
+            SELECT a_id,b_id,relation,dimension,subtype,direction,label,
+                   explanation,confidence,review_status
+            FROM official_edges ORDER BY id
+            """
+        )
     ]
     sense_groups: dict[str, list[dict[str, object]]] = defaultdict(list)
     sense_rows = conn.execute(
@@ -168,9 +120,8 @@ def main() -> None:
     ).fetchall()
     current_entry: tuple[int, str] | None = None
     current_group: dict[str, object] | None = None
-    runtime_lexeme_ids = learning_ids
     for row in sense_rows:
-        if row["lexeme_id"] not in runtime_lexeme_ids:
+        if row["lexeme_id"] not in positions:
             continue
         entry_key = (row["lexeme_id"], row["entry_id"])
         if entry_key != current_entry:
@@ -186,86 +137,26 @@ def main() -> None:
             "definition": row["definition_fr"],
             "examples": json.loads(row["examples_json"]),
         })
-    content_status = {
-        str(lexeme_id): ("has_definition" if str(lexeme_id) in sense_groups else "pending_definition")
-        for lexeme_id in runtime_lexeme_ids
-    }
-    learning: dict[str, dict[str, object]] = {}
-    for row in conn.execute(
-        "SELECT lexeme_id,explanation_zh,source_label,reviewer,reviewed_at FROM lexeme_etymologies ORDER BY lexeme_id"
-    ):
-        if row["lexeme_id"] in positions:
-            learning[str(row["lexeme_id"])] = {
-                "etymology": {
-                    "text": row["explanation_zh"],
-                    "source": row["source_label"],
-                    "reviewer": row["reviewer"],
-                    "reviewedAt": row["reviewed_at"],
-                },
-                "collocations": [],
-            }
-    for row in conn.execute(
-        "SELECT lexeme_id,expression_fr,gloss_zh FROM lexeme_collocations ORDER BY lexeme_id,id"
-    ):
-        entry = learning.get(str(row["lexeme_id"]))
-        if entry:
-            entry["collocations"].append({"expression": row["expression_fr"], "gloss": row["gloss_zh"]})
-    aliases: dict[str, list[str]] = defaultdict(list)
-    for row in conn.execute(
-        "SELECT lexeme_id,form FROM aliases ORDER BY lexeme_id,form",
-    ):
-        if row["lexeme_id"] in runtime_lexeme_ids:
-            aliases[str(row["lexeme_id"])].append(row["form"])
     signal_counts = dict(conn.execute("SELECT signal,COUNT(*) FROM layout_links GROUP BY signal").fetchall())
-    foundational_core_ids = [
-        str(row[0])
-        for row in conn.execute(
-            "SELECT id FROM lexemes WHERE decision_reason LIKE 'editorial_foundational_core:%' ORDER BY id"
-        )
-    ]
-    teaching_examples: dict[str, list[dict[str, str]]] = {}
-    seed = json.loads(SEED_PATH.read_text(encoding="utf-8"))
-    node_ids_by_key = {(str(row["lemma"]).lower(), str(row["pos"])): str(row["id"]) for row in nodes}
-    for item in seed.get("editorialTeachingExamples", []):
-        key = (str(item["id"]).replace("’", "'").lower(), str(item["pos"]).upper())
-        node_id = node_ids_by_key.get(key)
-        if node_id:
-            teaching_examples[node_id] = [
-                {"text": str(example["text"]), "gloss": str(example["gloss"])}
-                for example in item["examples"]
-            ]
     meta = {
         **layout["meta"],
         "node_count": len(runtime_nodes),
         "eligible_count": sum(row["status"] == "eligible" for row in nodes),
         "support_node_count": sum(row["status"] != "eligible" for row in nodes),
-        "search_lexeme_count": len(runtime_search_lexemes),
-        "learning_lexeme_count": len(learning_rows),
-        "alias_count": sum(len(values) for values in aliases.values()),
         "layout_link_count": len(runtime_links),
         "official_edge_count": len(official),
         "sense_count": len(sense_rows),
         "sense_lexeme_count": len(sense_groups),
-        "editorial_learning_lexeme_count": len(learning),
-        "teaching_example_lexeme_count": len(teaching_examples),
-        "foundational_core_ids": foundational_core_ids,
         "signal_counts": signal_counts,
         "source_notice": "FLELex/Beacco CC BY-NC-SA 4.0 · Lexique 4 CC BY-SA 4.0 · Démonette 2 CC BY-SA 4.0 · Wiktionnaire/DBnary CC BY-SA · CFDICT CC BY-SA 3.0",
     }
-    core_families = json.loads(CORE_FAMILIES_PATH.read_text(encoding="utf-8")) if CORE_FAMILIES_PATH.exists() else {"meta": {}, "families": []}
     payload = (
-        "/* Runtime lexical payload. */\n"
+        "/* Generated by scripts/export_runtime.py. Do not edit by hand. */\n"
         f"const GRAPH_META={compact_json(meta)};\n"
         f"const GRAPH_NODES={compact_json(runtime_nodes)};\n"
-        f"const GRAPH_SEARCH_LEXEMES={compact_json(runtime_search_lexemes)};\n"
         f"const GRAPH_LINKS={compact_json(runtime_links)};\n"
         f"const GRAPH_OFFICIAL_EDGES={compact_json(official)};\n"
         f"const GRAPH_SENSES={compact_json(sense_groups)};\n"
-        f"const GRAPH_CONTENT_STATUS={compact_json(content_status)};\n"
-        f"const GRAPH_ALIASES={compact_json(aliases)};\n"
-        f"const GRAPH_LEARNING={compact_json(learning)};\n"
-        f"const GRAPH_TEACHING_EXAMPLES={compact_json(teaching_examples)};\n"
-        f"const GRAPH_CORE_FAMILIES={compact_json(core_families)};\n"
     )
     RUNTIME_PATH.write_text(payload, encoding="utf-8")
     conn.execute("INSERT OR REPLACE INTO build_metadata VALUES('layout_version',?)", (layout["meta"]["version"],))

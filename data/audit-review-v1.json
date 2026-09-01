@@ -1,6 +1,6 @@
 {
   "audit_id": "lexicon-v1-2026-07-27",
-  "reviewer": "Jinyan Shao",
+  "reviewer": "Codex",
   "reviewed_at": "2026-07-27",
   "scope": "All 500 deterministic stratified rows were inspected for main-map eligibility, POS/lemma integrity, CEFR plausibility and Chinese-gloss fitness.",
   "items": {

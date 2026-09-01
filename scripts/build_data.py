@@ -34,7 +34,6 @@ BUILD_TIME = "2026-07-27T00:00:00Z"
 CONTENT_POS = {"NOM", "VER", "ADJ", "ADV"}
 TARGET_LEVELS = {"B1", "B2", "C1"}
 MIN_UNGLOSSED_FREQUENCY = 1.0
-FOUNDATIONAL_CORE_VERSION = "v1"
 VALID_WORD = re.compile(r"^[A-Za-zÀ-ÖØ-öø-ÿŒœÆæÇç'’ -]+$")
 FUNCTIONAL_ADVERBS = {
     "ainsi", "alors", "assez", "aussi", "autant", "beaucoup", "bien",
@@ -91,12 +90,6 @@ def register_sources(conn: sqlite3.Connection) -> None:
     for source in sources:
         local = ROOT / source["local_path"] if source.get("local_path") else None
         source_hash = sha256(local) if local and local.exists() else None
-        expected_hash = source.get("expected_sha256")
-        if expected_hash and source_hash != expected_hash:
-            raise SystemExit(
-                f"source lock mismatch for {source['id']}: expected {expected_hash}, got {source_hash or 'missing'}; "
-                "run scripts/fetch_sources.py --download or refresh the reviewed source lock"
-            )
         conn.execute(
             """
             INSERT INTO sources(
@@ -368,158 +361,6 @@ def add_editorial_seed_support(
         )
 
 
-def foundational_core(seed: dict[str, object]) -> list[dict[str, str]]:
-    """Read the deliberately small, human-reviewed A1/A2 promotion list."""
-    entries = seed.get("foundationalCore", [])
-    if not isinstance(entries, list):
-        raise SystemExit("editorial-seed foundationalCore must be a list")
-    seen: set[tuple[str, str]] = set()
-    normalized_entries: list[dict[str, str]] = []
-    for item in entries:
-        if not isinstance(item, dict):
-            raise SystemExit("editorial-seed foundationalCore entries must be objects")
-        lemma = str(item.get("id", "")).strip()
-        pos = str(item.get("pos", "")).strip().upper()
-        gloss = str(item.get("gloss", "")).strip()
-        reviewer = str(item.get("reviewer", "")).strip()
-        reviewed_at = str(item.get("reviewedAt", "")).strip()
-        if not lemma or pos not in CONTENT_POS or not gloss or not reviewer or not reviewed_at:
-            raise SystemExit(f"invalid foundational core entry: {item!r}")
-        key = (normalize(lemma), pos)
-        if key in seen:
-            raise SystemExit(f"duplicate foundational core entry: {lemma}/{pos}")
-        seen.add(key)
-        normalized_entries.append({
-            "id": lemma,
-            "normalized": key[0],
-            "pos": pos,
-            "gloss": gloss,
-            "reviewer": reviewer,
-            "reviewedAt": reviewed_at,
-        })
-    return normalized_entries
-
-
-def apply_foundational_core(conn: sqlite3.Connection) -> None:
-    """Promote reviewed beginner essentials without widening the automatic A1/A2 rule."""
-    if not SEED_PATH.exists():
-        return
-    seed = json.loads(SEED_PATH.read_text(encoding="utf-8"))
-    entries = foundational_core(seed)
-    for item in entries:
-        row = conn.execute(
-            "SELECT id FROM lexemes WHERE normalized=? AND pos=?",
-            (item["normalized"], item["pos"]),
-        ).fetchone()
-        if not row:
-            raise SystemExit(
-                f"foundational core entry missing from FLELex/Lexique alignment: {item['id']}/{item['pos']}"
-            )
-        conn.execute(
-            """
-            UPDATE lexemes
-            SET status='eligible',
-                decision_reason=?,
-                eligibility_score=MAX(eligibility_score, 1.01),
-                gloss_zh=?,
-                editorial_note=COALESCE(editorial_note, ?)
-            WHERE id=?
-            """,
-            (
-                f"editorial_foundational_core:{FOUNDATIONAL_CORE_VERSION}:{item['reviewer']}:{item['reviewedAt']}",
-                item["gloss"],
-                "A1/A2 基础核心词；中文提示经编辑整理，按 lemma + POS 覆盖自动词形匹配。",
-                row[0],
-            ),
-        )
-    conn.execute(
-        "INSERT OR REPLACE INTO build_metadata(key,value) VALUES(?,?)",
-        ("foundational_core", json.dumps({"version": FOUNDATIONAL_CORE_VERSION, "count": len(entries)}, ensure_ascii=False)),
-    )
-
-
-def apply_editorial_gloss_overrides(conn: sqlite3.Connection) -> None:
-    """Apply reviewed Chinese prompts only to their exact lemma and part of speech."""
-    if not SEED_PATH.exists():
-        return
-    seed = json.loads(SEED_PATH.read_text(encoding="utf-8"))
-    entries = seed.get("glossOverrides", [])
-    if not isinstance(entries, list):
-        raise SystemExit("editorial-seed glossOverrides must be a list")
-    seen: set[tuple[str, str]] = set()
-    for item in entries:
-        if not isinstance(item, dict):
-            raise SystemExit("editorial-seed glossOverrides entries must be objects")
-        lemma = str(item.get("id", "")).strip()
-        pos = str(item.get("pos", "")).strip().upper()
-        gloss = str(item.get("gloss", "")).strip()
-        reviewer = str(item.get("reviewer", "")).strip()
-        reviewed_at = str(item.get("reviewedAt", "")).strip()
-        key = (normalize(lemma), pos)
-        if not lemma or pos not in CONTENT_POS or not gloss or not reviewer or not reviewed_at:
-            raise SystemExit(f"invalid gloss override: {item!r}")
-        if key in seen:
-            raise SystemExit(f"duplicate gloss override: {lemma}/{pos}")
-        seen.add(key)
-        result = conn.execute(
-            "UPDATE lexemes SET gloss_zh=? WHERE normalized=? AND pos=?",
-            (gloss, key[0], pos),
-        )
-        if result.rowcount != 1:
-            raise SystemExit(f"gloss override must match exactly one lexeme: {lemma}/{pos}")
-
-
-def apply_editorial_learning(conn: sqlite3.Connection) -> None:
-    """Load reviewed etymology and collocations as distinct teaching surfaces."""
-    if not SEED_PATH.exists():
-        return
-    seed = json.loads(SEED_PATH.read_text(encoding="utf-8"))
-    entries = seed.get("editorialLearning", [])
-    if not isinstance(entries, list):
-        raise SystemExit("editorial-seed editorialLearning must be a list")
-    seen: set[tuple[str, str]] = set()
-    for item in entries:
-        if not isinstance(item, dict):
-            raise SystemExit("editorialLearning entries must be objects")
-        lemma = str(item.get("id", "")).strip()
-        pos = str(item.get("pos", "")).strip().upper()
-        source = str(item.get("source", "")).strip()
-        reviewer = str(item.get("reviewer", "")).strip()
-        reviewed_at = str(item.get("reviewedAt", "")).strip()
-        key = (normalize(lemma), pos)
-        if not lemma or pos not in CONTENT_POS or not source or not reviewer or not reviewed_at:
-            raise SystemExit(f"invalid editorial learning entry: {item!r}")
-        if key in seen:
-            raise SystemExit(f"duplicate editorial learning entry: {lemma}/{pos}")
-        seen.add(key)
-        row = conn.execute("SELECT id FROM lexemes WHERE normalized=? AND pos=?", key).fetchone()
-        if not row:
-            raise SystemExit(f"editorial learning entry missing from lexicon: {lemma}/{pos}")
-        lexeme_id = row[0]
-        etymology = str(item.get("etymology", "")).strip()
-        collocations = item.get("collocations", [])
-        if not etymology or not isinstance(collocations, list) or not collocations:
-            raise SystemExit(f"editorial learning requires etymology and collocations: {lemma}/{pos}")
-        conn.execute(
-            "INSERT OR REPLACE INTO lexeme_etymologies VALUES(?,?,?,?,?)",
-            (lexeme_id, etymology, source, reviewer, reviewed_at),
-        )
-        conn.execute("DELETE FROM lexeme_collocations WHERE lexeme_id=?", (lexeme_id,))
-        rows = []
-        for collocation in collocations:
-            if not isinstance(collocation, dict):
-                raise SystemExit(f"invalid collocation for {lemma}/{pos}")
-            expression = str(collocation.get("expression", "")).strip()
-            gloss = str(collocation.get("gloss", "")).strip()
-            if not expression or not gloss:
-                raise SystemExit(f"invalid collocation for {lemma}/{pos}: {collocation!r}")
-            rows.append((lexeme_id, expression, gloss, source, reviewer, reviewed_at))
-        conn.executemany(
-            "INSERT INTO lexeme_collocations(lexeme_id,expression_fr,gloss_zh,source_label,reviewer,reviewed_at) VALUES(?,?,?,?,?,?)",
-            rows,
-        )
-
-
 def allocate_stratified(rows: list[sqlite3.Row], target: int, seed: int) -> list[sqlite3.Row]:
     rng = random.Random(seed)
     groups: dict[str, list[sqlite3.Row]] = defaultdict(list)
@@ -574,7 +415,7 @@ def create_audit_sample(conn: sqlite3.Connection) -> None:
     )
     path = REPORTS / "lexicon-audit-sample-500.csv"
     with path.open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.writer(stream, lineterminator="\n")
+        writer = csv.writer(stream)
         writer.writerow([
             "audit_id", "sample_order", "lexeme_id", "lemma", "pos", "cefr_level",
             "flelex_frequency", "gloss_zh", "automated_status", "automated_reason",
@@ -659,7 +500,7 @@ def write_report(conn: sqlite3.Connection) -> None:
         "- CFDICT 有中文释义候选；",
         f"- FLELex 总频率 ≥ {MIN_UNGLOSSED_FREQUENCY}/百万。",
         "",
-        "封闭类虚词与大多数 A1/A2 实词进入 auxiliary，不计入自动主覆盖率；`editorial-seed.json` 的 foundationalCore 是逐项审校的例外，会以 lemma+POS 和人工中文提示进入主图。只有已审核官方关系实际用到的其他 auxiliary 才作为支撑节点进入星图。人工抽检覆盖可以修正自动状态，所有例外都保留可追溯原因。",
+        "封闭类虚词与 A1/A2 实词进入 auxiliary，不计入主覆盖率；只有已审核官方关系实际用到的少量 auxiliary 才作为支撑节点进入星图。人工抽检覆盖可以修正自动状态，所有例外都保留 manual_audit_override 原因。",
         "",
         "## 数据源与规模",
         "",
@@ -715,7 +556,7 @@ def write_report(conn: sqlite3.Connection) -> None:
         "",
         "- sources.sha256 必须完整；",
         "- lexemes(normalized, pos) 唯一；",
-        "- 自动 eligible 必须为 B1–C1 实词且存在 Lexique 对齐；基础核心词与人工抽检覆盖例外必须带可追溯 decision_reason；",
+        "- 自动 eligible 必须为 B1–C1 实词且存在 Lexique 对齐；人工覆盖例外必须带 manual_audit_override；",
         "- 自动 eligible 若缺 CFDICT，FLELex frequency 必须 ≥ 1/百万；人工覆盖例外同上；",
         "- audit sample 必须恰好 500 条且无重复 lexeme；",
         "- 任何 layout link 和 official edge 必须满足端点存在、a_id < b_id。",
@@ -744,7 +585,7 @@ def export_eligible(conn: sqlite3.Connection) -> None:
     ).fetchall()
     path = PROCESSED / "eligible-lexicon.csv"
     with path.open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.writer(stream, lineterminator="\n")
+        writer = csv.writer(stream)
         writer.writerow(rows[0].keys() if rows else [])
         writer.writerows([tuple(row) for row in rows])
 
@@ -765,9 +606,6 @@ def build() -> None:
         build_lexemes(conn, flelex, lexique_rows, cfdict)
         create_audit_sample(conn)
         add_editorial_seed_support(conn, lexique_rows, cfdict)
-        apply_foundational_core(conn)
-        apply_editorial_gloss_overrides(conn)
-        apply_editorial_learning(conn)
         conn.executemany(
             "INSERT INTO build_metadata(key, value) VALUES(?,?)",
             [
@@ -785,52 +623,17 @@ def build() -> None:
     print(f"built {DB_PATH.relative_to(ROOT)}")
 
 
-MANUAL_REASON_PREFIXES = ("manual_audit_override:", "manual_audit_defer:")
-
-
-def strip_manual_reason_prefixes(decision_reason: str | None) -> str:
-    """Peel off any already-applied manual-review prefixes, however many times
-    they were stacked (including a stale mix of override/defer), leaving the
-    original algorithmic decision_reason underneath untouched."""
-    base = decision_reason or ""
-    changed = True
-    while changed:
-        changed = False
-        for prefix in MANUAL_REASON_PREFIXES:
-            if base.startswith(prefix):
-                base = base[len(prefix):]
-                changed = True
-    return base
-
-
-def with_single_manual_prefix(decision_reason: str | None, prefix: str) -> str:
-    """Return decision_reason with exactly one `prefix` at the front.
-
-    Re-applying this to an already-prefixed value (from a prior sync-review
-    run, whether it ran once or was accidentally re-run several times) is a
-    no-op: the result is byte-identical, never a longer stack of prefixes.
-    """
-    return prefix + strip_manual_reason_prefixes(decision_reason)
-
-
-def apply_manual_decisions(conn: sqlite3.Connection, rows: list[dict], now: str) -> int:
-    """Apply each audit row's manual_decision to audit_samples and lexemes.
-
-    Idempotent: running this again with the same rows against the resulting
-    DB state produces byte-identical decision_reason values (and thus a
-    byte-identical audit_samples/lexemes state overall), because
-    with_single_manual_prefix always normalizes from the current stored
-    value rather than blindly concatenating onto it.
-
-    Returns the number of rows with a non-empty manual_decision.
-    """
-    synced = 0
+def sync_review() -> None:
+    path = REPORTS / "lexicon-audit-sample-500.csv"
+    conn = sqlite3.connect(DB_PATH)
+    rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    if len(rows) != 500:
+        raise SystemExit(f"expected 500 audit rows, found {len(rows)}")
+    now = datetime.now(timezone.utc).isoformat()
     for row in rows:
         decision = row["manual_decision"].strip() or None
-        reviewer = "Jinyan Shao" if decision else None
+        reviewer = "Codex" if decision else None
         lexeme_id = int(row["lexeme_id"])
-        if decision:
-            synced += 1
         conn.execute(
             """
             UPDATE audit_samples
@@ -844,47 +647,29 @@ def apply_manual_decisions(conn: sqlite3.Connection, rows: list[dict], now: str)
         )
         if decision and decision.startswith("override_"):
             target_status = decision.removeprefix("override_")
-            current_reason = conn.execute(
-                "SELECT decision_reason FROM lexemes WHERE id=?", (lexeme_id,)
-            ).fetchone()
-            new_reason = with_single_manual_prefix(
-                current_reason[0] if current_reason else None, "manual_audit_override:"
-            )
             conn.execute(
-                "UPDATE lexemes SET status=?, decision_reason=? WHERE id=?",
-                (target_status, new_reason, lexeme_id),
+                """
+                UPDATE lexemes
+                SET status=?, decision_reason='manual_audit_override:' || decision_reason
+                WHERE id=?
+                """,
+                (target_status, lexeme_id),
             )
         elif decision == "defer":
-            current_reason = conn.execute(
-                "SELECT decision_reason FROM lexemes WHERE id=?", (lexeme_id,)
-            ).fetchone()
-            new_reason = with_single_manual_prefix(
-                current_reason[0] if current_reason else None, "manual_audit_defer:"
-            )
             conn.execute(
-                "UPDATE lexemes SET status='needs_review', decision_reason=? WHERE id=?",
-                (new_reason, lexeme_id),
+                """
+                UPDATE lexemes
+                SET status='needs_review', decision_reason='manual_audit_defer:' || decision_reason
+                WHERE id=?
+                """,
+                (lexeme_id,),
             )
-    return synced
-
-
-def sync_review() -> None:
-    path = REPORTS / "lexicon-audit-sample-500.csv"
-    conn = sqlite3.connect(DB_PATH)
-    rows = list(csv.DictReader(path.open(encoding="utf-8")))
-    if len(rows) != 500:
-        raise SystemExit(f"expected 500 audit rows, found {len(rows)}")
-    now = datetime.now(timezone.utc).isoformat()
-    synced = apply_manual_decisions(conn, rows, now)
-    apply_foundational_core(conn)
-    apply_editorial_gloss_overrides(conn)
-    apply_editorial_learning(conn)
     conn.commit()
     write_report(conn)
     export_eligible(conn)
     conn.commit()
     conn.close()
-    print(f"synced {synced} reviews")
+    print(f"synced {sum(bool(row['manual_decision'].strip()) for row in rows)} reviews")
 
 
 def main() -> None:

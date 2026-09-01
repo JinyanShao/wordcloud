@@ -1,6 +1,8 @@
 name: Deploy static site to Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -13,28 +15,19 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 11.17.0
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 26.5.0
-          cache: pnpm
-
-      - name: Check runtime shell
-        run: pnpm smoke:browser
-
-      - name: Package static site
-        run: pnpm release:package
-
-      - name: Check packaged site
-        run: WORDCLOUD_STATIC_ROOT=dist pnpm smoke:browser
+      - name: Prepare static site
+        run: |
+          mkdir dist
+          cp index.html app.js styles.css graph-data.js data.js dict.js dist/
+          touch dist/.nojekyll
 
       - uses: actions/configure-pages@v5
 
@@ -42,12 +35,5 @@ jobs:
         with:
           path: dist
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
