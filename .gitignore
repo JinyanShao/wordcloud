@@ -1,17 +1,12 @@
 node_modules/
-dist/
-.next/
-.pytest_cache/
-.ruff_cache/
-*.tsbuildinfo
-*.log
 data/raw/*.tsv
 data/raw/demonette-2.0/
 data/raw/dbnary/
-data/raw/wiktextract/
+data/raw/
+data/reports/
+data/processed/
+!data/processed/.gitkeep
 data/processed/*.sqlite
-data/processed/wiktextract-gap-audit.jsonl
-data/processed/dbnary-aligned-analysis.json
 data/processed/graph-input.json
 data/processed/layout-positions.json
 data/processed/demonette-analysis.json
@@ -21,5 +16,3 @@ data/processed/dbnary-approved.json
 .env.local
 handover/
 .DS_Store
-research/upstream/
-scripts/__pycache__/

@@ -3,45 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wordcloud · 法语词网</title>
+  <title>wordcloud · 法语词网</title>
   <meta name="description" content="从疏密与连接中探索法语词汇。">
-  <meta name="theme-color" content="#f7f6f2">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#" id="brand" aria-label="返回词网">
-      <span>Wordcloud</span>
+    <a class="brand" href="#" id="brand" aria-label="返回全图">
+      <span>wordcloud</span>
       <small>法语词网</small>
     </a>
     <div class="searchbox">
       <input id="search" type="search" placeholder="搜索一个法语词" autocomplete="off" spellcheck="false" aria-label="搜索法语词">
       <div id="search-results" class="search-results hidden" role="listbox"></div>
     </div>
-    <div class="topbar-actions">
-      <button id="local-data-open" class="quiet-button" type="button">本地数据</button>
-      <button id="draft-open" class="quiet-button" type="button">我的词卡</button>
-      <button id="reset" class="quiet-button" type="button">重置视图</button>
-      <button id="legend-open-mobile" class="quiet-button legend-mobile-open" type="button" aria-haspopup="true" aria-expanded="false">图例</button>
-    </div>
+    <button id="reset" class="quiet-button" type="button">全图</button>
   </header>
 
   <main id="viewport">
     <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
     <div class="map-copy" id="map-copy">
-      <p class="map-copy-intro">搜索一个法语词，查看词义、构词和用法区别</p>
-      <p class="map-copy-meta">关系经过编辑整理 · 没有可靠关系时会明确说明，不会用自动候选填满页面</p>
-      <div class="example-chips" role="group" aria-label="示例词，点击直接打开">
-        <span class="example-chips-label">试试</span>
-        <button type="button" class="example-chip" data-example-word="faire">faire</button>
-        <button type="button" class="example-chip" data-example-word="dire">dire</button>
-        <button type="button" class="example-chip" data-example-word="voir">voir</button>
-      </div>
+      <p>中心更常用 · 外围更进阶 · 滚轮 / 双指缩放</p>
     </div>
     <nav id="focus-bar" class="focus-bar hidden" aria-label="探索路径">
-      <button id="focus-back" type="button" aria-label="返回词网" title="返回词网">←</button>
+      <button id="focus-back" type="button" aria-label="返回全图" title="返回全图">←</button>
       <div id="trail"></div>
     </nav>
     <div id="tooltip" class="tooltip hidden"></div>
@@ -51,22 +36,22 @@
       <button id="legend-toggle" type="button" aria-expanded="false">图的语言</button>
       <div id="legend-body" class="legend-body hidden">
         <p><i class="radial-key"></i><span>中心常用 · 外围进阶<br><small>半径由等级与频率决定</small></span></p>
-        <p><i class="line layout"></i><span>浅灰色的地图连线<br><small>仅用于组织地图，不代表近义、派生或可互换</small></span></p>
-        <p><i class="line official"></i><span>经过编辑整理的词汇关系</span></p>
+        <p><i class="line layout"></i><span>词群线索<br><small>只影响角度，不等于正式关系</small></span></p>
+        <p><i class="line official"></i><span>来源确认 / 人工审校</span></p>
         <p><i class="line personal"></i><span>我的词与关系</span></p>
-        <div id="legend-relations" class="legend-relations" role="list" aria-label="关系颜色"></div>
         <p class="source">FLELex · Lexique 4 · Démonette 2<br>Wiktionnaire / DBnary · CFDICT</p>
-        <p class="source-note">含非商业来源；本地记录只保存在当前浏览器。</p>
       </div>
     </aside>
 
     <aside id="focus-legend" class="focus-legend hidden" aria-label="关系颜色图例">
       <span><i style="--c:#7b8188"></i>近义</span>
-      <span><i style="--c:#3477b8"></i>构词</span>
+      <span><i style="--c:#3477b8"></i>派生</span>
       <span><i style="--c:#c07a22"></i>对比</span>
+      <span><i style="--c:#7859a6"></i>漂移</span>
       <span><i style="--c:#c7465d"></i>易混</span>
       <span><i style="--c:#278867"></i>反义</span>
-      <small>橙虚线＝我的关系</small>
+      <span><i style="--c:#6f647d"></i>因果</span>
+      <small>细虚线＝自动候选 · 橙虚线＝我的关系</small>
     </aside>
 
     <aside id="panel" class="panel hidden" aria-live="polite">
@@ -94,57 +79,7 @@
     </form>
   </div>
 
-  <div id="draft-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="draft-title">
-    <button class="dialog-mask" id="draft-mask" type="button" aria-label="关闭我的词卡"></button>
-    <section class="dialog-card draft-dialog-card">
-      <button id="draft-close" class="dialog-close" type="button" aria-label="关闭我的词卡">×</button>
-      <div class="eyebrow">个人记录</div>
-      <h2 id="draft-title">我的词卡</h2>
-      <p class="local-note">这些词卡只保存在当前浏览器，不会进入权威词网，也不会同步到其他设备。</p>
-      <p id="draft-storage-notice" class="storage-notice hidden"></p>
-      <div class="draft-grid">
-        <form id="draft-create-form" class="draft-create-form">
-          <label>法语词<input id="draft-lemma" required autocomplete="off" spellcheck="false" placeholder="例如 se lever"></label>
-          <label>词性<input id="draft-pos" autocomplete="off" spellcheck="false" placeholder="例如 VER"></label>
-          <label>中文提示<textarea id="draft-zh" rows="3" placeholder="用自己的话简短记录"></textarea></label>
-          <label>备注<textarea id="draft-note" rows="5" placeholder="记录搭配、联想或待确认问题"></textarea></label>
-          <p id="draft-create-error" class="form-error"></p>
-          <button class="primary-button" type="submit">创建词卡</button>
-        </form>
-        <div class="draft-workspace">
-          <div id="draft-list" class="draft-list"></div>
-          <div id="draft-detail" class="draft-detail"></div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <div id="local-data-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="local-data-title">
-    <button class="dialog-mask" id="local-data-mask" type="button" aria-label="关闭本地数据"></button>
-    <section class="dialog-card local-data-card">
-      <button id="local-data-close" class="dialog-close" type="button" aria-label="关闭本地数据">×</button>
-      <div class="eyebrow">当前浏览器</div>
-      <h2 id="local-data-title">本地学习数据</h2>
-      <p class="local-note">这些内容只保存在当前浏览器。导出只读取本地数据，不会写入权威词网。</p>
-      <div id="local-data-notice" class="storage-notice hidden"></div>
-      <div class="release-boundary-list" aria-label="隐私与来源说明">
-        <article><strong>隐私</strong><span>没有账号、上传或同步。我的词网和我的词卡只保存在当前浏览器。</span></article>
-        <article><strong>导出</strong><span>导出 JSON 只读取本地数据，方便你自己备份或检查；不会写入权威词库。</span></article>
-        <article><strong>来源</strong><span>词网使用 FLELex、Lexique、Démonette、Wiktionnaire / DBnary、CFDICT。FLELex 为非商业许可，公开使用时必须保留署名和许可边界。</span></article>
-      </div>
-      <div class="local-boundary-list" aria-label="本地数据边界">
-        <article><strong>我的词网</strong><span>个人添加的词和联想边。</span><code>wordcloud.personal.v2</code></article>
-        <article><strong>我的词卡</strong><span>中文提示和用法备注。</span><code>wordcloud.draft_cards.v1</code></article>
-      </div>
-      <div class="dialog-actions local-data-actions">
-        <button id="local-data-export" class="primary-button" type="button">生成导出 JSON</button>
-      </div>
-      <textarea id="local-data-output" class="local-data-output" readonly spellcheck="false" aria-label="本地学习数据导出 JSON"></textarea>
-    </section>
-  </div>
-
-  <script src="graph-data.js?v=8272230f8b73"></script>
-  <script src="app.js?v=8272230f8b73"></script>
-  <script src="src/draft-ui.js"></script>
+  <script src="graph-data.js?v=senses-v3"></script>
+  <script src="app.js?v=senses-v3"></script>
 </body>
 </html>

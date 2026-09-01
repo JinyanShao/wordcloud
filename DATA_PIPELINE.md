@@ -1,21 +1,6 @@
 # wordcloud data pipeline
 
-The browser consumes generated static artifacts, but source alignment and review live in SQLite.
-
-## Verified release build
-
-Use the verified command for a reproducible release candidate. It validates every declared raw source against its reviewed SHA-256, runs the existing pipeline in its required order, writes `data/reports/build-manifest.json`, then verifies that manifest against the generated artifacts.
-
-```bash
-python3 -m pip install -r requirements-build.txt
-pnpm install --frozen-lockfile
-pnpm data:fetch       # downloads only missing or mismatched public sources; rejects a changed upstream snapshot
-pnpm build:verified
-```
-
-`data/raw/` remains ignored because the source archives are large and license-bound. Do not replace a locked hash just to make a build pass: review the upstream release, its license and its lexical impact first. `pnpm data:verify-sources` performs the same lock check without network access. GitHub Actions runs this full sequence for pull requests and pushes to `main`; it validates only and never deploys.
-
-The release baseline fixes Python 3.11.15, Node 26.5.0, pnpm 11.17.0 and the direct Python build dependencies in `requirements-build.txt`. Changing a lock, source hash or build script intentionally changes `build-manifest.json` and therefore requires review.
+The browser consumes `graph-data.js`. Raw downloads, SQLite databases, intermediate JSON, and generated reports are intentionally not committed to keep the repository small.
 
 ## Install build dependencies
 
@@ -26,7 +11,7 @@ pnpm install
 
 The browser artifact itself has no package runtime dependency.
 
-## Individual pipeline steps
+## Rebuild the lexicon
 
 ```bash
 node scripts/extract_seed.mjs
@@ -51,7 +36,7 @@ Outputs:
 - `data/reports/lexicon-audit-v1.md`
 - `data/reports/lexicon-audit-sample-500.csv`
 
-The build is destructive only to generated files under `data/processed` and `data/reports`. Raw downloads and the hand-authored `data.js` are never modified.
+The build is destructive only to generated files under `data/processed` and `data/reports`. Raw downloads and the hand-authored `data.js` are never modified. These generated outputs are ignored by Git.
 
 ## Complete the stratified review
 
@@ -80,7 +65,7 @@ Outputs:
 - `graph-data.js`: compact static browser payload
 - `data/reports/build-validation.md`: build evidence and invariant checks
 
-The current verified counts are recorded in `data/reports/build-validation.md` and `data/reports/build-manifest.json`; do not duplicate volatile totals in this document.
+The current verified build contains 7,314 eligible nodes, 57 official support nodes, 20,270 combined browser layout edges, 98 reviewed prototype official edges, one connected component, and no layout islands.
 
 ## Build the core-word gap list
 
@@ -97,58 +82,42 @@ Outputs:
 
 Buckets follow the priority order in `handover/7.27-handover.md`: P1 high-frequency words with no official edge, P2 single-edge words, P3 multi-sense bridge words, P4 confusable candidates without a reviewed trap/compare edge, P5 B2–C1 words with DBnary senses but no syn/ant edge.
 
-## Audit DBnary definition gaps with Wiktextract
-
-This is a reproducible **audit** path, not an alternative runtime importer. It uses the upstream MIT-licensed [Wiktextract](https://github.com/tatuylonen/wiktextract) CLI against an official French Wiktionary dump to classify only the runtime learning lexemes that have no DBnary sense. It never inserts extracted glosses into SQLite or `graph-data.js`.
+## Draft `compare` relations with a completion API
 
 ```bash
-python3 -m venv /tmp/wordcloud-wiktextract
-/tmp/wordcloud-wiktextract/bin/pip install -r requirements-wiktextract-audit.txt
-WIKTWORDS_BIN=/tmp/wordcloud-wiktextract/bin/wiktwords pnpm wiktextract:audit
+python3 scripts/ai_compare_draft.py pairs            # inspect candidates, no API call
+python3 scripts/ai_compare_draft.py draft --dry-run  # inspect the first prompt
+WORDCLOUD_API_KEY=... WORDCLOUD_MODEL=... python3 scripts/ai_compare_draft.py draft --limit 30
+python3 scripts/ai_compare_draft.py stats
 ```
 
-Place the selected dump at `data/raw/wiktextract/frwiktionary-YYYYMMDD-pages-articles.xml.bz2` and set the `DUMP` constant in `scripts/audit_wiktextract.py` to that filename before the run. The generated report records the exact dump hash and extractor commit. A “Wiktionary usable differential” means the selected dump contains a same-POS gloss, but is not proof of a DBnary parser omission until DBnary is compared using a matching source snapshot. Raw dumps and JSONL output are intentionally ignored by Git; the Markdown report is the review artifact.
+`WORDCLOUD_API_BASE` defaults to `https://api.openai.com/v1`; any OpenAI-compatible chat completion endpoint works. Standard library only, no new dependency. Credentials can also go in a `.env.local` file at the project root (`WORDCLOUD_API_KEY=...` / `WORDCLOUD_MODEL=...` lines) — it is git-ignored and loaded automatically; never hardcode keys in tracked scripts.
 
-Build the review queue without publishing anything:
+Candidates are official syn edges where both endpoints rank in the top 2,000 eligible lexemes by frequency and no compare edge exists yet (currently 412 pairs). Drafts are appended to `data/processed/ai-compare-drafts.json` — this JSON file is the durable store, because `build_graph.py` wipes and rebuilds `official_edges` on every run. The script is idempotent: keys already in the file are skipped, so interrupted runs and gap-filling re-runs cost nothing extra.
+
+Review and publish:
+
+1. Open `data/processed/ai-compare-drafts.json`, edit the draft text if needed, then set `review.status` to `accepted` or `rejected` (plus `reviewer` and `reviewed_at`).
+2. Re-run the graph build (`build_graph.py` → `layout.mjs` → `export_runtime.py` → `validate_data.py`). Accepted drafts are re-applied into `official_edges` as `relation='compare'`, `review_status='reviewed'`, sourced to `wordcloud_editorial` with the draft provenance (`origin`, `key`, `model`) in `source_record`.
+
+AI drafts never enter `official_edges` without the human review flip — that gate is part of the product, not an optional step.
+
+## Draft first edges for zero-relation core words (P1)
 
 ```bash
-pnpm dbnary:alignment-queue
+python3 scripts/ai_first_edge_draft.py words            # inspect candidates, no API call
+python3 scripts/ai_first_edge_draft.py draft --dry-run  # inspect the first prompt
+python3 scripts/ai_first_edge_draft.py draft --limit 30 # pilot batch
+python3 scripts/ai_first_edge_draft.py stats
 ```
 
-When DBnary publishes the historical extract for that exact dump date, analyze it with the existing importer and resolve the queue:
+Same credentials as the compare drafter (`.env.local` or env vars). Candidates are the top 1,000 eligible words by frequency with zero official edges — the `in_core` P1 set of the gap list. The model proposes up to 2 relations per word (`syn` / `ant` / `fam`) and is explicitly allowed to propose none. Every proposed partner is validated before it reaches the review file: the normalized lemma must exist as an `eligible` or `auxiliary` lexeme (auxiliary words like genre/type/milieu enter the graph as support nodes once a reviewed edge needs them), a wrong-POS guess falls back to a unique lexicon entry for that lemma, and anything else is discarded with a machine-readable reason recorded under `rejected` in the drafts file (`stats` shows the reason breakdown).
 
-```bash
-python3 scripts/import_dbnary.py analyze --raw data/raw/dbnary/fr_dbnary_ontolex_YYYYMMDD.ttl.bz2 \
-  --analysis-output data/processed/dbnary-aligned-analysis.json \
-  --report-output data/reports/dbnary-aligned-analysis.md \
-  --expected-sha256 <reviewed-hash>
-pnpm dbnary:alignment-queue -- --aligned-analysis data/processed/dbnary-aligned-analysis.json
-```
-
-The queue is a review artifact, not an approval artifact: it only distinguishes source coverage from a parser-capture signal. No Wiktextract text is copied into product data.
-
-## Review P0 Wiktextract definitions
-
-For the 59 A1–A2 lexemes confirmed absent from the aligned DBnary extract, reuse the pinned Wiktextract output to create a content-review queue:
-
-```bash
-pnpm wiktextract:p0:analyze
-```
-
-Review `data/processed/wiktextract-p0-review.json`, then record decisions in `data/reports/wiktextract-p0-review.csv`. Accepted rows require pipe-separated candidate sense IDs, a reviewer, and a review date. Merge and approve only after every row is decided:
-
-```bash
-pnpm wiktextract:p0:analyze
-pnpm wiktextract:p0:approve
-```
-
-The approved artifact is optional input to `build_graph.py`; pending candidates are never read by the build. The adapter aligns records and enforces review metadata, while all Wiktionary parsing remains upstream Wiktextract functionality.
+Drafts live in `data/processed/ai-first-edge-drafts.json` (durable store, idempotent — words with zero proposals are also recorded so re-runs never re-bill them). Review each proposal individually (`review.status` → `accepted` / `rejected`), then rebuild the graph. Accepted proposals become `reviewed` official edges with confidence 0.7 and `origin: ai_first_edge_draft` provenance, and the pair is added to the `editorial_seed` layout signal so confirmed relations pull together in the global view.
 
 ## Data boundaries
 
 - `layout_links` influence cartography and do not count as official coverage.
 - `official_edges` are sourced or reviewed claims shown to learners.
-- `editorialRelations` in `data/processed/editorial-seed.json` are the reviewed teaching layer. Each entry must carry both endpoints, a supported relation type, a dimension, a label, an explanation, two minimal-context examples, a source, a reviewer, and a review date.
-- An A1/A2 auxiliary lexeme referenced by a reviewed editorial relation may enter the graph as a support node. This preserves the automatic main-lexicon boundary while keeping the reviewed relation navigable.
 - `personal_links` remain browser-local under `wordcloud.personal.v2` and are not stored in this database.
 - `CLUSTERS` in the original `data.js` are hand-authored prototype scaffolding, not Lexique data.

@@ -127,28 +127,6 @@ CREATE TABLE IF NOT EXISTS lexeme_senses (
 CREATE INDEX IF NOT EXISTS idx_lexeme_senses_lexeme
   ON lexeme_senses(lexeme_id, entry_id, sense_number);
 
-CREATE TABLE IF NOT EXISTS lexeme_etymologies (
-  lexeme_id INTEGER PRIMARY KEY REFERENCES lexemes(id) ON DELETE CASCADE,
-  explanation_zh TEXT NOT NULL,
-  source_label TEXT NOT NULL,
-  reviewer TEXT NOT NULL,
-  reviewed_at TEXT NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS lexeme_collocations (
-  id INTEGER PRIMARY KEY,
-  lexeme_id INTEGER NOT NULL REFERENCES lexemes(id) ON DELETE CASCADE,
-  expression_fr TEXT NOT NULL,
-  gloss_zh TEXT NOT NULL,
-  source_label TEXT NOT NULL,
-  reviewer TEXT NOT NULL,
-  reviewed_at TEXT NOT NULL,
-  UNIQUE (lexeme_id, expression_fr)
-);
-
-CREATE INDEX IF NOT EXISTS idx_lexeme_collocations_lexeme
-  ON lexeme_collocations(lexeme_id, id);
-
 CREATE TABLE IF NOT EXISTS aliases (
   lexeme_id INTEGER NOT NULL REFERENCES lexemes(id) ON DELETE CASCADE,
   form TEXT NOT NULL,
@@ -180,36 +158,17 @@ CREATE TABLE IF NOT EXISTS official_edges (
   id INTEGER PRIMARY KEY,
   a_id INTEGER NOT NULL REFERENCES lexemes(id),
   b_id INTEGER NOT NULL REFERENCES lexemes(id),
-  relation TEXT NOT NULL CHECK (relation IN ('inflection', 'derivation', 'conversion_or_lexicalization', 'etymological_family', 'synonym', 'antonym', 'compare', 'trap')),
+  relation TEXT NOT NULL CHECK (relation IN ('syn', 'compare', 'fam', 'drift', 'trap', 'ant', 'cause')),
   dimension TEXT,
   subtype TEXT,
   direction TEXT,
   label TEXT NOT NULL,
   explanation TEXT,
-  source_lemma TEXT,
-  source_pos TEXT,
-  source_sense TEXT,
-  target_lemma TEXT,
-  target_pos TEXT,
-  target_sense TEXT,
-  word_parts_json TEXT NOT NULL DEFAULT '{}',
-  productive_rule INTEGER NOT NULL DEFAULT 0 CHECK (productive_rule IN (0, 1)),
-  zh_status TEXT NOT NULL DEFAULT 'source' CHECK (zh_status IN ('source', 'edited', 'needs_review')),
-  example_status TEXT NOT NULL DEFAULT 'source' CHECK (example_status IN ('source', 'edited_example', 'needs_review')),
-  family_scope TEXT NOT NULL DEFAULT 'default' CHECK (family_scope IN ('default', 'extended')),
   examples_json TEXT NOT NULL DEFAULT '[]',
   confidence REAL NOT NULL CHECK (confidence >= 0 AND confidence <= 1),
   review_status TEXT NOT NULL CHECK (review_status IN ('sourced', 'reviewed')),
   reviewed_at TEXT,
   created_at TEXT NOT NULL,
-  -- Which dictionary sense (lexeme_senses.sense_number) each side of this
-  -- relation is actually bound to, when the editorial source names one (e.g.
-  -- an RL-fr node/sense id resolved to a specific DBnary sense). NULL when
-  -- no specific sense was named. Lets the word-card preview show the sense
-  -- the relation is actually about instead of just the first few by
-  -- dictionary order, which can be a completely unrelated sense.
-  key_sense_a TEXT,
-  key_sense_b TEXT,
   CHECK (a_id < b_id),
   UNIQUE (a_id, b_id, relation, dimension, subtype)
 );

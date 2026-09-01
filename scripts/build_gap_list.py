@@ -149,7 +149,7 @@ def main() -> None:
         "bucket", "flags", "in_core", "suggested_action", "gloss_zh",
     ]
     with REPORT_CSV.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=fieldnames, lineterminator="\n")
+        writer = csv.DictWriter(fh, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
 

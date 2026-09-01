@@ -19,26 +19,21 @@
   const CANVAS_FONT = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
   const CANVAS_PIXEL_BUDGET = { mobile: 3600000, desktop: 9000000 };
 
-  const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "编辑关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
-  // Public relations use the formal word-family model; old build artifacts
-  // are normalized through LEGACY_RELATION during load.
-  const RELATION_NAMES = {
-    synonym: "近义", antonym: "反义", compare: "对比", trap: "易混",
-    derivation: "构词", conversion_or_lexicalization: "转类", etymological_family: "词源",
-  };
-  const RELATION_ORDER = ["synonym", "antonym", "compare", "trap", "derivation", "conversion_or_lexicalization", "etymological_family", "personal"];
-  const FOCUS_LIMITS = { synonym: 5, antonym: 4, compare: 3, trap: 3, derivation: 6, conversion_or_lexicalization: 4, etymological_family: 4, personal: 3 };
+  const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
+  const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "派生", drift: "语义漂移", trap: "易混", ant: "反义", cause: "因果" };
+  const RELATION_ORDER = ["syn", "ant", "compare", "drift", "cause", "trap", "fam", "personal"];
+  const FOCUS_LIMITS = { syn: 5, ant: 4, compare: 3, drift: 3, cause: 3, trap: 3, fam: 6, personal: 3 };
   const RELATION_STYLE = {
-    synonym: { color: "#7b8188", dash: [], arrow: false },
+    syn: { color: "#7b8188", dash: [], arrow: false },
     compare: { color: "#c07a22", dash: [], arrow: true },
-    derivation: { color: "#3477b8", dash: [], arrow: false },
-    conversion_or_lexicalization: { color: "#3477b8", dash: [4, 4], arrow: false },
-    etymological_family: { color: "#3477b8", dash: [2, 5], arrow: false },
+    fam: { color: "#3477b8", dash: [], arrow: false },
+    drift: { color: "#7859a6", dash: [], arrow: false },
     trap: { color: "#c7465d", dash: [], arrow: false },
-    antonym: { color: "#278867", dash: [], arrow: false },
+    ant: { color: "#278867", dash: [], arrow: false },
+    cause: { color: "#6f647d", dash: [], arrow: true },
     personal: { color: "#b96d22", dash: [2, 5], arrow: false },
+    satellite: { color: "#a8a69f", dash: [], arrow: false },
   };
-  const LEGACY_RELATION = { syn: "synonym", ant: "antonym", fam: "derivation", drift: "derivation" };
   const NODE = { id: 0, word: 1, pos: 2, level: 3, gloss: 4, x: 5, y: 6, size: 7, community: 8, freq: 9, hasGloss: 10, status: 11, note: 12 };
 
   function runtimeNode(row) {
@@ -52,28 +47,14 @@
   }
 
   const officialNodes = GRAPH_NODES.map(runtimeNode);
-  const searchOnlyNodes = (GRAPH_SEARCH_LEXEMES || []).map((row) => ({
-    id: String(row[0]), word: row[1], pos: row[2], level: row[3] || "—", gloss: row[4], freq: row[5],
-    status: row[6], note: row[7], searchOnly: true, personal: false,
-  }));
-  const foundationalCoreIds = new Set((GRAPH_META.foundational_core_ids || []).map(String));
-  const teachingExamples = GRAPH_TEACHING_EXAMPLES || {};
-  const aliasesById = GRAPH_ALIASES || {};
-  let searchTools = null;
-  let wordCardTools = null;
-  let localDataTools = null;
   const nodeById = new Map(officialNodes.map((node) => [node.id, node]));
-  for (const node of searchOnlyNodes) nodeById.set(node.id, node);
   const baseLinks = GRAPH_LINKS.map((row) => ({ a: String(row[0]), b: String(row[1]), mask: row[2], weight: row[3] }));
   const officialEdges = GRAPH_OFFICIAL_EDGES.map((row) => ({
-    a: String(row[0]), b: String(row[1]), relation: LEGACY_RELATION[row[2]] || row[2], dimension: row[3], subtype: row[4], direction: row[5],
-    label: row[6], explanation: row[7], examples: row[8], confidence: row[9], review: row[10] === "reviewed" ? "editorial" : row[10], kind: "official",
-    keySenseA: row[11] || "", keySenseB: row[12] || "",
+    a: String(row[0]), b: String(row[1]), relation: row[2], dimension: row[3], subtype: row[4], direction: row[5],
+    label: row[6], explanation: row[7], confidence: row[8], review: row[9], kind: "official",
   }));
   const layoutAdj = new Map();
   const officialAdj = new Map();
-  const familyEdgeAdj = new Map();
-  const familyByMember = new Map();
 
   function addAdj(map, id, value) {
     if (!map.has(id)) map.set(id, []);
@@ -87,76 +68,18 @@
     addAdj(officialAdj, edge.a, { ...edge, other: edge.b });
     addAdj(officialAdj, edge.b, { ...edge, other: edge.a });
   }
-  const coreFamilyPayload = GRAPH_CORE_FAMILIES || { families: [] };
-  const coreFamilies = Array.isArray(coreFamilyPayload.families) ? coreFamilyPayload.families : [];
-  // One broad (sourced+reviewed) word-family component can now produce more
-  // than one core-family entry -- e.g. voir/revoir/vision and prévoir/
-  // prévision are two separate reviewed clusters that only share a sourced
-  // bridging edge, so build_core_families.py gives each its own entry rather
-  // than bundling an unrelated reviewed pair as "extended" noise under one
-  // arbitrary core word. A word can therefore show up as a default member of
-  // its own entry and as an *extended* (informational-only) member of a
-  // sibling entry. familyByMember must resolve a word to the entry where it
-  // is actually default first -- an extended-only sibling reference must
-  // never shadow that, or familyFor() would look up the wrong entry's edges
-  // entirely. Default membership is indexed first, on purpose.
-  for (const family of coreFamilies) {
-    for (const item of family.defaultMembers || []) familyByMember.set(String(item.id), family);
-  }
-  for (const family of coreFamilies) {
-    for (const item of family.extendedMembers || []) {
-      const id = String(item.id);
-      if (!familyByMember.has(id)) familyByMember.set(id, family);
-    }
-  }
-  const seenFamilyEdgePairs = new Set();
-  for (const family of coreFamilies) {
-    for (const rawEdge of family.edges || []) {
-      const a = String(rawEdge.a?.id), b = String(rawEdge.b?.id);
-      // The same bridging edge can legitimately appear in two sibling
-      // entries' edge lists (each entry carries its whole broad component
-      // for context) -- keep it once so the panel's sourced-relations list
-      // doesn't show the same candidate twice.
-      const key = pairKey(a, b);
-      if (seenFamilyEdgePairs.has(key)) continue;
-      seenFamilyEdgePairs.add(key);
-      const edge = {
-        a, b, relation: LEGACY_RELATION[rawEdge.relation] || rawEdge.relation,
-        label: rawEdge.hasZhExplanation ? (rawEdge.label || RELATION_NAMES[rawEdge.relation] || rawEdge.relation) : "来源关系",
-        explanation: rawEdge.explanation || "", examples: "[]", review: rawEdge.status || "sourced",
-        familyScope: rawEdge.familyScope || "default", kind: "family",
-      };
-      addAdj(familyEdgeAdj, edge.a, { ...edge, other: edge.b });
-      addAdj(familyEdgeAdj, edge.b, { ...edge, other: edge.a });
-    }
-  }
 
-  import("./src/search-tools.mjs").then((tools) => {
-    searchTools = tools;
-    if (search.value.trim()) doSearch();
-  }).catch(() => {});
-  import("./src/word-card-tools.mjs").then((tools) => {
-    wordCardTools = tools;
-    if (selected && !panel.classList.contains("hidden")) renderPanel(selected);
-  }).catch(() => {});
-  import("./src/local-data-tools.mjs").then((tools) => {
-    localDataTools = tools;
-  }).catch(() => {});
-
-  let personal = { nodes: [], edges: [] };
+  let personal = loadPersonal();
   let personalNodes = [];
   let personalEdges = [];
   let allNodes = [];
-  let searchEntriesCache = null;
   let selected = null;
   let hovered = null;
   let focusConnections = [];
   let focusEdges = [];
-  let focusFamily = null;
   let focusStarted = 0;
+  let focusCenter = null;
   let trail = [];
-  let onboardingTimer = null;
-  let onboardingHighlight = null;
   let width = 0;
   let height = 0;
   let dpr = 1;
@@ -170,57 +93,18 @@
   let viewTween = null;
   const activePointers = new Map();
   let pinchStart = null;
-  const localStorageWarnings = [];
-
-  function rememberLocalWarning(message) {
-    if (message && !localStorageWarnings.includes(message)) localStorageWarnings.push(message);
-  }
-
-  function localText(value, limit = 120) {
-    return String(value ?? "").trim().slice(0, limit);
-  }
 
   function loadPersonal() {
-    let raw = null;
     try {
-      raw = localStorage.getItem(PERSONAL_KEY);
+      const value = JSON.parse(localStorage.getItem(PERSONAL_KEY) || "{}");
+      return { nodes: Array.isArray(value.nodes) ? value.nodes : [], edges: Array.isArray(value.edges) ? value.edges : [] };
     } catch (_) {
-      rememberLocalWarning("我的词网：浏览器限制了本地存储读取。");
-      return { nodes: [], edges: [] };
-    }
-    if (!raw) return { nodes: [], edges: [] };
-    try {
-      const value = JSON.parse(raw);
-      const nodes = Array.isArray(value?.nodes) ? value.nodes.map((node) => ({
-        ...node,
-        id: localText(node?.id, 80),
-        word: localText(node?.word, 80),
-        pos: localText(node?.pos, 24) || "我的词",
-        gloss: localText(node?.gloss, 180),
-        note: localText(node?.note, 240),
-        x: Number.isFinite(Number(node?.x)) ? Number(node.x) : 0,
-        y: Number.isFinite(Number(node?.y)) ? Number(node.y) : 0,
-        size: Math.max(1, Number(node?.size) || 3.4),
-      })).filter((node) => node.id && node.word) : [];
-      const edges = Array.isArray(value?.edges) ? value.edges.map((edge) => ({
-        a: localText(edge?.a, 80),
-        b: localText(edge?.b, 80),
-        label: localText(edge?.label, 120) || "我的联想",
-      })).filter((edge) => edge.a && edge.b) : [];
-      if (!Array.isArray(value?.nodes) || !Array.isArray(value?.edges)) rememberLocalWarning("我的词网：部分本地数据格式不正确，已忽略缺失字段。");
-      return { nodes, edges };
-    } catch (_) {
-      rememberLocalWarning("我的词网：本地数据无法解析，已暂时忽略。");
       return { nodes: [], edges: [] };
     }
   }
 
   function savePersonal() {
-    try {
-      localStorage.setItem(PERSONAL_KEY, JSON.stringify(personal));
-    } catch (_) {
-      rememberLocalWarning("我的词网：无法保存到当前浏览器。");
-    }
+    localStorage.setItem(PERSONAL_KEY, JSON.stringify(personal));
   }
 
   function rebuildPersonal() {
@@ -236,7 +120,6 @@
     personalEdges = personal.edges.map((edge) => ({ ...edge, a: String(edge.a), b: String(edge.b), kind: "personal", relation: "personal" }));
     for (const node of personalNodes) nodeById.set(node.id, node);
     allNodes = officialNodes.concat(personalNodes);
-    searchEntriesCache = null;
   }
   rebuildPersonal();
 
@@ -266,7 +149,7 @@
     canvas.height = Math.round(height * dpr);
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
-    if (selected) enterFocus(selected, { addTrail: false });
+    if (selected) enterFocus(selected, { addTrail: false, preserveCenter: true });
     else fitHome(false);
     requestDraw();
   }
@@ -287,14 +170,8 @@
     hovered = null;
     focusConnections = [];
     focusEdges = [];
-    focusFamily = null;
+    focusCenter = null;
     trail = [];
-    search.value = "";
-    searchResults.innerHTML = "";
-    searchResults.classList.add("hidden");
-    panelContent.innerHTML = "";
-    tooltip.classList.add("hidden");
-    search.blur();
     for (const node of allNodes) {
       node.targetX = node.homeX; node.targetY = node.homeY;
       node.targetAlpha = node.status === "eligible" || node.personal ? 1 : .44;
@@ -306,7 +183,7 @@
     focusLegend.classList.add("hidden");
     $("#legend").classList.remove("focus-hidden");
     $("#map-copy").classList.remove("quiet");
-    $("#reset").textContent = "重置视图";
+    $("#reset").textContent = "全图";
     updateStats();
     if (animate) animateView(homeView, 520); else view = { ...homeView };
     requestDraw();
@@ -358,7 +235,7 @@
       .filter((edge) => (edge.mask & 2) && edge.weight >= .72 && !officialPairs.has(pairKey(id, edge.other)))
       .filter((edge) => nodeById.get(edge.other)?.word !== nodeById.get(id)?.word)
       .map((edge) => ({
-        ...edge, a: id, b: edge.other, other: edge.other, relation: "derivation", label: "构词线索", kind: "structural", review: "candidate",
+        ...edge, a: id, b: edge.other, other: edge.other, relation: "fam", label: "构词线索", kind: "structural", review: "candidate",
       }));
   }
 
@@ -385,15 +262,11 @@
       officialByNeighbor.get(edge.other).push({ ...edge, kind: "official" });
     }
     for (const [other, relations] of officialByNeighbor) {
-      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(b.review === "editorial") - Number(a.review === "editorial"));
+      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(b.review === "reviewed") - Number(a.review === "reviewed"));
       byNeighbor.set(other, { ...relations[0], relations });
     }
-    // Only explicit editorial/source relations and the learner's own personal links are shown
-    // in the focus graph. Auto-generated form/structural candidates are
-    // layout-only signal, never confirmed language fact, so they stay out of
-    // the graph entirely and surface (collapsed) in the word panel instead.
-    const candidates = personalFor(id);
-    const priority = { official: 4, personal: 3 };
+    const candidates = [...personalFor(id), ...strongFormFor(id), ...strongStructuralFor(id)];
+    const priority = { official: 4, personal: 3, form: 2, structural: 1 };
     for (const edge of candidates) {
       if (!nodeById.has(edge.other) || edge.other === id) continue;
       const existing = byNeighbor.get(edge.other);
@@ -411,7 +284,7 @@
     const selected = [];
     for (const edge of ordered) {
       const key = edge.kind === "official" ? edge.relation : edge.kind;
-      const relationLimit = edge.kind === "official" ? (FOCUS_LIMITS[edge.relation] || 3) : 3;
+      const relationLimit = edge.kind === "official" ? (FOCUS_LIMITS[edge.relation] || 3) : edge.kind === "form" ? 2 : 3;
       if ((counts.get(key) || 0) >= relationLimit) continue;
       counts.set(key, (counts.get(key) || 0) + 1);
       selected.push(edge);
@@ -420,116 +293,100 @@
     return selected;
   }
 
-  // A core family's data can carry "extended" members and edges -- real
-  // sourced (e.g. Démonette) signal that groups words together, but never
-  // reviewed with a real teaching explanation (see build_core_families.py).
-  // Only "default" (reviewed/editorial) edges may light up and connect nodes
-  // by default on the map: that is the same bar GRAPH_OFFICIAL_EDGES already
-  // holds every learner-facing relation to, and a family payload must not be
-  // a second, weaker path to the same map. Extended info still reaches the
-  // learner -- through the word-card panel's separate "来源关系·尚未编辑整理"
-  // section (see renderPanel) -- just never as an already-confirmed relation.
-  // Reachability (not just "is this id anywhere in defaultMembers") matters
-  // too: if the searched word itself only touches this family through an
-  // extended edge, it has nothing default to show, so it must fall back to
-  // the plain single-node view rather than lighting up neighbors it has no
-  // real edge to.
-  function familyFor(id) {
-    const family = familyByMember.get(String(id));
-    if (!family) return { members: [String(id)], edges: [] };
-    const start = String(id);
-    const defaultEdges = (family.edges || []).filter((rawEdge) => (rawEdge.familyScope || "default") === "default")
-      .map((rawEdge) => ({ a: String(rawEdge.a?.id), b: String(rawEdge.b?.id), raw: rawEdge }))
-      .filter((edge) => nodeById.has(edge.a) && nodeById.has(edge.b));
-    const adjacency = new Map();
-    for (const edge of defaultEdges) {
-      if (!adjacency.has(edge.a)) adjacency.set(edge.a, []);
-      if (!adjacency.has(edge.b)) adjacency.set(edge.b, []);
-      adjacency.get(edge.a).push(edge.b);
-      adjacency.get(edge.b).push(edge.a);
-    }
-    const reachable = new Set([start]);
-    const queue = [start];
-    while (queue.length) {
-      const current = queue.shift();
-      for (const other of adjacency.get(current) || []) {
-        if (!reachable.has(other)) { reachable.add(other); queue.push(other); }
-      }
-    }
-    const members = [...reachable];
-    const edges = defaultEdges
-      .filter((edge) => reachable.has(edge.a) && reachable.has(edge.b))
-      .map((edge, index) => {
-        const rawEdge = edge.raw;
-        return {
-          a: edge.a, b: edge.b, from: edge.a, to: edge.b,
-          other: edge.a === start ? edge.b : edge.a,
-          relation: LEGACY_RELATION[rawEdge.relation] || rawEdge.relation,
-          label: rawEdge.label || RELATION_NAMES[rawEdge.relation] || rawEdge.relation,
-          explanation: rawEdge.explanation || "", examples: "[]", review: "editorial",
-          familyScope: "default", kind: "official",
-          delay: 100 + index * 46,
-        };
-      });
-    return { members, edges };
+  function focusScaleFor(count) {
+    if (isMobileLayout()) return count > 6 ? .88 : .96;
+    if (count > 12) return .86;
+    return 1.02;
   }
 
-  // The circular map stays the single source of truth for node position --
-  // a focused word and its explicit family relations are highlighted in place
-  // rather than re-laid-out into an isolated ring, so this only has to pick
-  // a view (pan/zoom) that frames the highlighted set on the real map.
-  function focusViewForIds(ids, panelVisible = true) {
-    const points = ids.map((value) => nodeById.get(value)).filter(Boolean);
-    if (!points.length) return { ...homeView };
-    const xs = points.map((node) => node.homeX), ys = points.map((node) => node.homeY);
-    const minX = Math.min(...xs), maxX = Math.max(...xs);
-    const minY = Math.min(...ys), maxY = Math.max(...ys);
-    const spanX = Math.max(24, maxX - minX), spanY = Math.max(24, maxY - minY);
-    const padding = isMobileLayout() ? 120 : 200;
-    const fitScale = Math.min((width - padding * 2) / spanX, (height - padding * 2) / spanY);
-    const scale = Math.max(homeView.scale * .55, Math.min(fitScale, homeView.scale * 6, 3.4));
-    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+  function focusViewTarget(center, scale, panelVisible = true) {
     const xShift = width > 900 ? 135 / scale : 0;
-    const yShift = isMobileLayout() && panelVisible ? height * .2 / scale : 0;
-    return { x: cx + xShift, y: cy + yShift, scale };
+    const yShift = isMobileLayout() && panelVisible ? height * .22 / scale : 0;
+    return { x: center.x + xShift, y: center.y + yShift, scale };
+  }
+
+  function positionRing(items, center, radius, startAngle = -Math.PI / 2) {
+    items.forEach((connection, index) => {
+      const angle = startAngle + index / Math.max(1, items.length) * Math.PI * 2;
+      const node = nodeById.get(connection.other);
+      node.targetX = center.x + Math.cos(angle) * radius;
+      node.targetY = center.y + Math.sin(angle) * radius;
+      node._focusAngle = angle;
+      node.focusRole = "direct";
+      node.focusColor = visualFor(connection).color;
+      node.targetAlpha = 1;
+      connection.angle = angle;
+    });
   }
 
   function enterFocus(id, options = {}) {
     const node = nodeById.get(String(id));
     if (!node) return;
-    stopOnboarding();
     if (options.resetTrail) trail = [];
-    selected = node.id;
-    focusFamily = familyFor(node.id);
-    focusConnections = connectionsFor(node.id, isMobileLayout() ? 8 : 16);
+    const previousSelected = selected;
+    const center = options.preserveCenter && focusCenter
+      ? focusCenter
+      : previousSelected && node.focusRole === "direct"
+        ? { x: node.drawX, y: node.drawY }
+        : { x: node.drawX, y: node.drawY };
 
-    // Highlight in place on the real map rather than re-laying-out into an
-    // isolated ring: every node keeps its true circular-map position, the
-    // whole map stays visible (dimmed) as context, and only the searched
-    // word plus its explicit family/personal relations light up at full opacity.
+    selected = node.id;
+    focusCenter = center;
+    focusConnections = connectionsFor(node.id, isMobileLayout() ? 8 : 16);
+    const focusScale = focusScaleFor(focusConnections.length);
+
     for (const item of allNodes) {
       item.targetX = item.homeX; item.targetY = item.homeY;
-      item.targetAlpha = item.status === "eligible" || item.personal ? .16 : .05;
+      item.targetAlpha = .075;
       item.focusRole = "background"; item.focusColor = null;
     }
-    node.targetAlpha = 1;
-    node.focusRole = "center";
-    node.focusColor = node.personal ? RELATION_STYLE.personal.color : "#171816";
-    for (const memberId of focusFamily.members) {
-      if (memberId === node.id) continue;
-      const neighbor = nodeById.get(memberId);
-      if (!neighbor) continue;
-      neighbor.targetAlpha = 1;
-      neighbor.focusRole = "direct";
-      const familyEdge = (familyEdgeAdj.get(node.id) || []).find((edge) => edge.other === memberId)
-        || (familyEdgeAdj.get(memberId) || [])[0];
-      neighbor.focusColor = visualFor(familyEdge || { relation: "derivation", kind: "family" }).color;
+    node.targetX = center.x; node.targetY = center.y;
+    node.targetAlpha = 1; node.focusRole = "center"; node.focusColor = "#171816";
+
+    if (focusConnections.length <= 10) {
+      const screenRadius = isMobileLayout()
+        ? Math.max(108, Math.min(width * .32, height * .16))
+        : 215;
+      positionRing(focusConnections, center, screenRadius / focusScale);
+    } else {
+      const split = Math.ceil(focusConnections.length / 2);
+      positionRing(focusConnections.slice(0, split), center, 178 / focusScale);
+      positionRing(focusConnections.slice(split), center, 300 / focusScale, -Math.PI / 2 + Math.PI / Math.max(1, focusConnections.length - split));
     }
 
-    const directFocusEdges = focusConnections.map((edge, index) => ({
-      ...edge, from: node.id, to: edge.other, delay: 100 + index * 86,
+    focusEdges = focusConnections.map((edge, index) => ({
+      ...edge, from: node.id, to: edge.other, satellite: false, delay: 100 + index * 86,
     }));
-    focusEdges = [...focusFamily.edges, ...directFocusEdges.filter((edge) => !focusFamily.edges.some((familyEdge) => familyEdge.a === edge.a && familyEdge.b === edge.b))];
+
+    if (!isMobileLayout() && focusConnections.length && focusConnections.length <= 12) {
+      const directIds = new Set([node.id, ...focusConnections.map((edge) => edge.other)]);
+      const usedSatellites = new Set();
+      let satelliteIndex = 0;
+      for (const parentConnection of focusConnections) {
+        if (satelliteIndex >= 16) break;
+        const parent = nodeById.get(parentConnection.other);
+        const satellites = connectionsFor(parent.id, 8)
+          .filter((edge) => !directIds.has(String(edge.other))
+            && nodeById.get(String(edge.other))?.focusRole === "background"
+            && !usedSatellites.has(String(edge.other)))
+          .slice(0, 2);
+        satellites.forEach((edge, localIndex) => {
+          if (satelliteIndex >= 16) return;
+          usedSatellites.add(String(edge.other));
+          const satellite = nodeById.get(String(edge.other));
+          const branchSpread = satellites.length > 1 ? .68 : 0;
+          const angle = parent._focusAngle + (localIndex - (satellites.length - 1) / 2) * branchSpread;
+          satellite.targetX = parent.targetX + Math.cos(angle) * 84 / focusScale;
+          satellite.targetY = parent.targetY + Math.sin(angle) * 84 / focusScale;
+          satellite._focusAngle = angle;
+          satellite.targetAlpha = .52;
+          satellite.focusRole = "satellite";
+          satellite.focusColor = visualFor(edge).color;
+          focusEdges.push({ ...edge, from: parent.id, to: edge.other, satellite: true, delay: 540 + satelliteIndex * 34 });
+          satelliteIndex += 1;
+        });
+      }
+    }
 
     if (options.addTrail !== false) {
       if (trail[trail.length - 1] !== node.id) trail.push(node.id);
@@ -543,26 +400,22 @@
     focusBar.classList.remove("hidden");
     focusLegend.classList.remove("hidden");
     $("#legend").classList.add("focus-hidden");
-    $("#reset").textContent = "返回词网";
+    $("#reset").textContent = "返回全图";
     searchResults.classList.add("hidden");
     search.blur();
     updateStats();
-    animateView(focusViewForIds([node.id, ...focusFamily.members], true), 560);
+    animateView(focusViewTarget(center, focusScale, true), 560);
     requestDraw();
   }
 
   function visualFor(edge) {
+    if (edge.satellite) return { ...RELATION_STYLE.satellite, alpha: .34, label: "" };
     if (edge.kind === "personal") return { ...RELATION_STYLE.personal, alpha: .88, label: edge.label || "我的联想" };
-    if (edge.kind === "structural") return { ...RELATION_STYLE.derivation, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
+    if (edge.kind === "structural") return { ...RELATION_STYLE.fam, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
     if (edge.kind === "form") return { ...RELATION_STYLE.trap, dash: [3, 5], alpha: .58, label: `${edge.label || "形音相近"} · 候选` };
-    const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.synonym;
+    const style = RELATION_STYLE[edge.relation] || RELATION_STYLE.syn;
     const mappedLabel = edge.label ? RELATION_NAMES[edge.label] : null;
-    // Historical/Latin-root word-family links are real, but they are not
-    // the same claim as a transparent modern prefix (faire -> refaire):
-    // label them "词源" (etymology) instead of "构词" (word-formation) so
-    // the two are never conflated.
-    const isEtymological = edge.relation === "etymological_family" || edge.kind === "official" && String(edge.dimension || "").includes("etymological");
-    const relationName = isEtymological ? "词源" : (RELATION_NAMES[edge.relation] || edge.relation || "已整理");
+    const relationName = RELATION_NAMES[edge.relation] || edge.relation || "已审校";
     // Canvas chips stay short (relation name only); custom teaching labels are
     // surfaced on the word card via `note`, never drawn across an edge.
     return { ...style, alpha: .95, label: mappedLabel || relationName, note: mappedLabel || !edge.label ? "" : edge.label };
@@ -647,17 +500,17 @@
     const visual = visualFor(edge);
     ctx.globalAlpha = visual.alpha * Math.min(a.alpha, b.alpha);
     ctx.strokeStyle = visual.color;
-    ctx.lineWidth = edge.kind === "official" ? 2 : 1.5;
+    ctx.lineWidth = edge.satellite ? .9 : edge.kind === "official" ? 2 : 1.5;
     ctx.setLineDash(visual.dash);
     ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(end.x, end.y); ctx.stroke();
     ctx.setLineDash([]);
 
-    if (raw > .86 && visual.arrow) {
+    if (raw > .86 && visual.arrow && !edge.satellite) {
       const target = directionTarget(edge);
       if (target === edge.to) drawArrow(pa, pb, visual.color, visual.alpha);
       else drawArrow(pb, pa, visual.color, visual.alpha);
     }
-    if (raw > .68) {
+    if (raw > .68 && !edge.satellite) {
       const t = .52;
       const mx = pa.x + (pb.x - pa.x) * t, my = pa.y + (pb.y - pa.y) * t;
       if (edge.relation === "trap" && edge.kind === "official") {
@@ -713,6 +566,20 @@
       drawFocusCard(node, p);
       return;
     }
+    if (node.focusRole === "satellite") {
+      ctx.globalAlpha = node.alpha;
+      ctx.fillStyle = node.focusColor || "#8c8b84";
+      ctx.beginPath(); ctx.arc(p.x, p.y, 3.2, 0, Math.PI * 2); ctx.fill();
+      ctx.font = `500 9.5px ${CANVAS_FONT}`; ctx.fillStyle = "#686963";
+      const labelWidth = ctx.measureText(node.word).width;
+      const labelOnLeft = Math.cos(node._focusAngle || 0) < 0;
+      ctx.textAlign = labelOnLeft ? "right" : "left";
+      ctx.fillText(node.word, p.x + (labelOnLeft ? -6 : 6), p.y - 3);
+      const labelX = labelOnLeft ? p.x - labelWidth - 10 : p.x - 7;
+      hitBoxes.set(node.id, { x: labelX, y: p.y - 9, w: labelWidth + 17, h: 18 });
+      ctx.textAlign = "left";
+      return;
+    }
     const isHovered = node.id === hovered;
     ctx.globalAlpha = isHovered ? .92 : node.alpha;
     ctx.fillStyle = isHovered ? "#343530" : "#85857e";
@@ -725,10 +592,8 @@
     }
   }
 
-  // Layout links only organize the map into a legible shape -- they are
-  // never a language relation -- so they always render as extremely faint
-    // gray, well below the visual weight of any explicit relation.
-  function drawLayoutLines(opacityScale) {
+  function drawGlobal(now) {
+    ctx.lineCap = "round";
     for (const edge of baseLinks) {
       const learningTopology = edge.mask & (1 | 2 | 16);
       if (!learningTopology || edge.weight < .26) continue;
@@ -736,72 +601,10 @@
       if (!a || !b) continue;
       const pa = screen(a), pb = screen(b);
       if (!visible(pa, 30) && !visible(pb, 30)) continue;
-      ctx.globalAlpha = ((isMobileLayout() ? .02 : .028) + edge.weight * (isMobileLayout() ? .016 : .02)) * opacityScale;
+      ctx.globalAlpha = (isMobileLayout() ? .032 : .045) + edge.weight * (isMobileLayout() ? .026 : .034);
       ctx.strokeStyle = "#8f9089"; ctx.lineWidth = isMobileLayout() ? .62 : .68;
       ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y); ctx.stroke();
     }
-  }
-
-  // A brief, gentle first-look cue: cycle through the map's 3 best-known
-  // editorial relations so a new visitor sees what an edited relation
-  // looks like (a solid colored line) before touching anything. Runs once,
-  // stops as soon as the learner interacts, and is skipped entirely under
-  // prefers-reduced-motion.
-  const ONBOARDING_PAIRS = [["faire", "refaire"], ["dire", "parler"], ["voir", "regarder"]];
-
-  function findOfficialEdgeBetween(wordA, wordB) {
-    // A lemma can have multiple POS entries (e.g. "dire" NOM and VER); try
-    // every candidate pairing rather than assuming the first array match is
-    // the one that actually carries the editorial relation.
-    for (const nodeA of officialNodes.filter((item) => item.word === wordA)) {
-      for (const nodeB of officialNodes.filter((item) => item.word === wordB)) {
-        const edge = (officialAdj.get(nodeA.id) || []).find((item) => item.other === nodeB.id);
-        if (edge) return { edge, a: nodeA, b: nodeB };
-      }
-    }
-    return null;
-  }
-
-  function stopOnboarding() {
-    if (onboardingTimer) { clearTimeout(onboardingTimer); onboardingTimer = null; }
-    if (onboardingHighlight) { onboardingHighlight = null; requestDraw(); }
-  }
-
-  function runOnboarding() {
-    if (reducedMotion.matches) return;
-    const pairs = ONBOARDING_PAIRS.map(([a, b]) => findOfficialEdgeBetween(a, b)).filter(Boolean);
-    if (!pairs.length) return;
-    const STEP_MS = 2400;
-    let index = 0;
-    const step = () => {
-      if (selected) { stopOnboarding(); return; }
-      onboardingHighlight = pairs[index];
-      requestDraw();
-      index += 1;
-      onboardingTimer = setTimeout(index < pairs.length ? step : stopOnboarding, STEP_MS);
-    };
-    onboardingTimer = setTimeout(step, 1100);
-  }
-
-  function drawOnboardingHighlight() {
-    if (!onboardingHighlight || selected) return;
-    const { edge, a, b } = onboardingHighlight;
-    const pa = screen(a), pb = screen(b);
-    const visual = visualFor(edge);
-    ctx.globalAlpha = .92; ctx.strokeStyle = visual.color; ctx.lineWidth = 2.4;
-    ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y); ctx.stroke();
-    for (const [node, p] of [[a, pa], [b, pb]]) {
-      ctx.globalAlpha = 1; ctx.fillStyle = "#171816";
-      ctx.beginPath(); ctx.arc(p.x, p.y, 4.5, 0, Math.PI * 2); ctx.fill();
-      ctx.font = `650 12px ${CANVAS_FONT}`; ctx.fillStyle = "#171816";
-      ctx.fillText(node.word, p.x + 8, p.y - 7);
-    }
-    drawEdgeChip(visual.label, (pa.x + pb.x) / 2, (pa.y + pb.y) / 2, visual.color, 1);
-  }
-
-  function drawGlobal(now) {
-    ctx.lineCap = "round";
-    drawLayoutLines(1);
     for (const edge of personalEdges) {
       const a = nodeById.get(edge.a), b = nodeById.get(edge.b);
       if (!a || !b) continue;
@@ -833,26 +636,28 @@
       occupied.push(box); ctx.globalAlpha = .9; ctx.fillStyle = item.node.personal ? "#9a5619" : "#282925";
       ctx.fillText(item.node.word, x, y);
     }
-    drawOnboardingHighlight();
   }
 
   function drawFocus(now) {
-    ctx.lineCap = "round";
-    drawLayoutLines(.35);
+    for (const edge of focusEdges) drawFocusEdge(edge, now);
     for (const node of allNodes) {
       if (node.focusRole === "background") drawFocusNode(node);
     }
-    for (const edge of focusEdges) drawFocusEdge(edge, now);
+    for (const node of allNodes) {
+      if (node.focusRole === "satellite") drawFocusNode(node);
+    }
     for (const node of allNodes) {
       if (node.focusRole === "direct") drawFocusNode(node);
     }
     const center = nodeById.get(selected);
     if (center) drawFocusNode(center);
 
-    if (!focusEdges.length && center) {
+    if (!focusConnections.length && center) {
       const p = screen(center);
       ctx.globalAlpha = .76; ctx.fillStyle = "#686963"; ctx.font = `550 11.5px ${CANVAS_FONT}`; ctx.textAlign = "center";
-      ctx.fillText("这个词目前还没有可靠词族关系", p.x, p.y + 44);
+      ctx.fillText("暂无可展示的可信关系", p.x, p.y + 44);
+      ctx.font = `450 10px ${CANVAS_FONT}`; ctx.fillStyle = "#8d8e87";
+      ctx.fillText("自动近邻仍在清理，不作为正式关系显示", p.x, p.y + 61);
       ctx.textAlign = "left";
     }
 
@@ -916,203 +721,56 @@
     return `<button class="relation-item ${edge.kind}" style="--relation-color:${visual.color}" data-node="${escapeHtml(node.id)}"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(caption)}</small></button>`;
   }
 
-  // Chinese-first: node.gloss (the one curated Chinese meaning)
-  // is the panel's primary content, shown in the header. Everything below
-  // is raw Wiktionnaire/DBnary dictionary material -- useful, but never
-  // curated -- so it stays clearly labeled "词典原文" and collapsed by
-  // default rather than presented as if it were curated.
-  // An editorial relation can bind to one specific dictionary sense (e.g. the
-  // RL-fr node for "enfiler II" resolves to DBnary sense #11, "put on a
-  // coat") -- but dictionary sense order has nothing to do with that, so the
-  // plain first-N-by-source-order preview can show three senses totally
-  // unrelated to the relation the learner just clicked into. Collect every
-  // sense number an editorial relation names for this node, from either side.
-  function keySenseNumbersFor(nodeId) {
-    const edges = officialAdj.get(nodeId) || [];
-    const hints = edges.map((edge) => (edge.a === nodeId ? edge.keySenseA : edge.keySenseB)).filter(Boolean);
-    return [...new Set(hints)];
-  }
-
   function renderSenseGroups(node) {
     const groups = GRAPH_SENSES[node.id] || [];
-    const flattened = wordCardTools?.flattenSenseGroups(groups)
-      || groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
-    if (!flattened.length) return "";
-    const includeExamples = !foundationalCoreIds.has(node.id) && !node.searchOnly;
-    const keySenses = keySenseNumbersFor(node.id);
-    const preview = wordCardTools?.selectPreviewSenses
-      ? wordCardTools.selectPreviewSenses(flattened, keySenses, 3)
-      : flattened.slice(0, 3);
-    const sourceUrl = groups[0]?.sourceUrl;
-    const renderFull = (items) => items.map((sense) => `
-      <li><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><div><p>${escapeHtml(sense.definition)}</p>${includeExamples && sense.examples?.length ? `<ul class="sense-examples">${sense.examples.map((example) => `<li>${escapeHtml(example)}</li>`).join("")}</ul>` : ""}</div></li>
+    if (!groups.length) return "";
+    const flattened = groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
+    const renderItems = (items) => items.map((sense) => `
+      <li><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><p>${escapeHtml(sense.definition)}</p></li>
     `).join("");
+    const visible = flattened.slice(0, 5);
+    const hidden = flattened.slice(5);
+    const sourceUrl = groups[0]?.sourceUrl;
     return `<section class="panel-section sense-section">
-      <h3>词典释义</h3>
-      <ol class="sense-preview-list">${preview.map((sense) => `<li>${escapeHtml(sense.definition)}</li>`).join("")}</ol>
-      <details class="sense-more"><summary>词典原文${flattened.length > 1 ? `（共 ${flattened.length} 条）` : ""}</summary><ol class="sense-list continued">${renderFull(flattened)}</ol></details>
+      <h3>法语义项 · ${flattened.length}</h3>
+      <ol class="sense-list">${renderItems(visible)}</ol>
+      ${hidden.length ? `<details class="sense-more"><summary>查看其余 ${hidden.length} 个义项</summary><ol class="sense-list continued">${renderItems(hidden)}</ol></details>` : ""}
       ${sourceUrl ? `<a class="sense-source" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Wiktionnaire 来源 ↗</a>` : ""}
     </section>`;
   }
 
-  function renderTeachingExamples(node) {
-    const examples = teachingExamples[node.id] || [];
-    if (!examples.length) return "";
-    return `<section class="panel-section teaching-examples"><h3>学习例句 · 编辑例句</h3><ul>${examples.map((example) => `<li><strong>${escapeHtml(example.text)}</strong><span>${escapeHtml(example.gloss)}</span></li>`).join("")}</ul></section>`;
-  }
-
-  function renderEditorialLearning(node) {
-    const learning = GRAPH_LEARNING[node.id];
-    if (!learning) return "";
-    const collocations = learning.collocations || [];
-    return collocations.length ? `<section class="panel-section collocation-section"><h3>常用搭配与固定表达</h3><ul class="collocation-list">${collocations.map((item) => `<li><strong>${escapeHtml(item.expression)}</strong><span>${escapeHtml(item.gloss)}</span></li>`).join("")}</ul></section>` : "";
-  }
-
-  function relationNotesFor(items) {
-    if (wordCardTools?.selectReviewedRelationNotes) return wordCardTools.selectReviewedRelationNotes(items);
-    return items
-      .filter(({ edge }) => edge.review === "editorial" && edge.explanation && !edge.explanation.includes("requires production re-review"))
-      .map(({ edge, node: other }) => ({
-        a: edge.a,
-        b: edge.b,
-        word: other.word,
-        pos: other.pos,
-        relation: edge.relation,
-        dimension: edge.dimension,
-        label: edge.label,
-        explanation: edge.explanation,
-        examples: (() => {
-          try {
-            const parsed = JSON.parse(edge.examples || "[]");
-            return Array.isArray(parsed)
-              ? parsed.map((entry) => (entry && typeof entry === "object" ? { fr: entry.fr || "", zh: entry.zh || "" } : { fr: String(entry || ""), zh: "" }))
-              : [];
-          } catch {
-            return [];
-          }
-        })(),
-      }));
-  }
-
-  function contrastNoteArticle(note) {
-    return `<article class="contrast-note">
-        <p class="contrast-explanation"><strong>${escapeHtml(note.word)}</strong> · ${escapeHtml(note.label)}</p>
-        <p class="contrast-explanation-fr">${escapeHtml(note.explanation)}</p>
-        ${note.examples?.length ? `<p class="example-tag">编辑例句</p><ul class="contrast-examples">${note.examples.map((example) => `<li>${escapeHtml(example.fr)}${example.zh ? `<span class="contrast-example-zh">${escapeHtml(example.zh)}</span>` : ""}</li>`).join("")}</ul>` : ""}
-      </article>`;
-  }
-
-  function renderReviewedRelationNotes(items) {
-    const notes = relationNotesFor(items);
-    if (!notes.length) return "";
-    // Historical/Latin-root word-family links are real, but they are not
-    // the same claim as a live usage contrast, so they get their own
-    // clearly-labeled area with an explicit caveat rather than sitting
-    // alongside "用法区分" as if they described modern usage.
-    const etymological = notes.filter((note) => String(note.dimension || "").includes("etymological"));
-    const usage = notes.filter((note) => !etymological.includes(note));
-    // The Chinese label is the primary explanation (it already states why
-    // the two words relate/differ); the French sentence is supplementary
-    // detail for learners who want it, not the only account.
-    return `
-      ${usage.length ? `<section class="panel-section contrast-section"><h3>用法区分 · 编辑整理</h3>${usage.map(contrastNoteArticle).join("")}</section>` : ""}
-      ${etymological.length ? `<section class="panel-section contrast-section etymology-relation-section"><h3>词源联系 · 编辑整理</h3><p class="candidate-note">历史同源关系，说明两个词共享词根，不代表现代法语中意思相近或可以互换。</p>${etymological.map(contrastNoteArticle).join("")}</section>` : ""}
-    `;
-  }
-
-  function openDraftCardForNode(node) {
-    const detail = {
-      sourceLexemeId: node.personal ? "" : node.id,
-      lemma: node.word,
-      pos: node.pos,
-      zhHint: node.gloss || "",
-    };
-    if (window.WordcloudDraftCards?.openFromWordCard) window.WordcloudDraftCards.openFromWordCard(detail);
-    else window.dispatchEvent(new CustomEvent("wordcloud:open-draft-card", { detail }));
-  }
-
   function renderPanel(node) {
-    const editorial = (officialAdj.get(node.id) || [])
+    const official = (officialAdj.get(node.id) || [])
       .map((edge) => ({ edge: { ...edge, kind: "official" }, node: nodeById.get(edge.other) }))
       .filter((item) => item.node)
       .sort((a, b) => relationRank(a.edge) - relationRank(b.edge)
+        || Number(b.edge.review === "reviewed") - Number(a.edge.review === "reviewed")
         || a.node.word.localeCompare(b.node.word, "fr"));
-    const editorialPairs = new Set(editorial.map(({ edge }) => pairKey(edge.a, edge.b)));
-    const sourced = (familyEdgeAdj.get(node.id) || [])
-      .filter((edge) => edge.review === "sourced" && !editorialPairs.has(pairKey(edge.a, edge.b)))
-      .map((edge) => ({ edge: { ...edge, kind: "family" }, node: nodeById.get(edge.other) }))
-      .filter((item) => item.node)
-      .sort((a, b) => relationRank(a.edge) - relationRank(b.edge)
-        || a.node.word.localeCompare(b.node.word, "fr"));
+    const reviewed = official.filter((item) => item.edge.review === "reviewed");
+    const sourced = official.filter((item) => item.edge.review !== "reviewed");
     const mine = personalFor(node.id).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
-    const officialIds = new Set([...editorial, ...sourced].map((item) => item.node.id));
+    const officialIds = new Set(official.map((item) => item.node.id));
     const form = strongFormFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 8);
     const formIds = new Set(form.map((item) => item.node.id));
     const structural = strongStructuralFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 16);
     const nearby = (layoutAdj.get(node.id) || []).filter((edge) => !officialIds.has(edge.other) && !formIds.has(edge.other) && !(edge.mask & 2))
       .sort((a, b) => b.weight - a.weight).slice(0, 5).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
-    const badge = node.personal ? "我的词"
-      : node.searchOnly ? `${node.level} 可检索学习词`
-      : node.status === "eligible" ? `${node.level} 主词表` : "因编辑整理关系收录";
+    const badge = node.personal ? "我的词" : node.status === "eligible" ? `${node.level} 主词表` : "官方关系支撑词";
     panelContent.innerHTML = `
       <h1 class="word-title">${escapeHtml(node.word)}</h1>
       <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
       <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
-      ${node.searchOnly ? `<section class="search-only-note"><strong>暂未建立学习关系</strong><span>这个词可搜索、查看义项；它尚未进入关系图。</span></section>` : ""}
-      <div class="learning-actions">
-        <section class="learning-action" aria-label="我的词卡">
-          <button id="draft-word" class="quiet-button" type="button">我的词卡 · 加入 / 打开</button>
-        </section>
-      </div>
       ${renderSenseGroups(node)}
-      ${renderTeachingExamples(node)}
-      ${renderEditorialLearning(node)}
-      ${editorial.length ? `<section class="panel-section"><h3>编辑整理的词汇关系</h3><div class="relation-list">${editorial.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : `<p class="empty-relations-note">这个词目前还没有编辑整理的词汇关系。</p>`}
-      ${sourced.length ? `<section class="panel-section"><h3>来源关系 · 尚未编辑整理</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${renderReviewedRelationNotes(editorial)}
-      ${mine.length ? `<section class="panel-section"><h3>我的关系</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
-      ${form.length ? `<details class="panel-section candidate-details"><summary>形音相近的自动候选（未经编辑整理）</summary><p class="candidate-note">只是形近且音近，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
-      ${structural.length ? `<details class="panel-section candidate-details"><summary>构词相近的自动候选（未经编辑整理）</summary><p class="candidate-note">来自词形结构的自动匹配，不等同于已编辑整理的教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></details>` : ""}
-      ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看更多自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "derivation", label: signals(edge.mask) })).join("")}</div></details>` : ""}
+      ${reviewed.length ? `<section class="panel-section"><h3>人工审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${form.length ? `<section class="panel-section"><h3>形音线索 · 自动候选</h3><p class="candidate-note">只显示同时形似且音近的少量词，虚线不代表已确认的易混关系。</p><div class="relation-list">${form.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${structural.length ? `<section class="panel-section"><h3>构词线索 · 待核准</h3><p class="candidate-note">来自 Lexique 形态结构，只在图中以蓝色虚线显示，不等同于已审校教学关系。</p><div class="relation-list">${structural.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
+      ${nearby.length ? `<details class="panel-section candidate-details"><summary>查看自动候选</summary><p class="candidate-note">这些词只保留为自动候选，不进入中心发散图，也不影响大词网位置。</p><div class="relation-list">${nearby.map(({ edge, node: other }) => relationButton(other, { ...edge, kind: "structural", relation: "syn", label: signals(edge.mask) })).join("")}</div></details>` : ""}
     `;
     panel.classList.remove("hidden");
     panelContent.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => enterFocus(button.dataset.node)));
-    $("#draft-word").addEventListener("click", () => openDraftCardForNode(node));
-  }
-
-  function closeLocalDataDialog() {
-    $("#local-data-dialog").classList.add("hidden");
-  }
-
-  function renderLocalDataNotice(messages = []) {
-    const notice = $("#local-data-notice");
-    const allMessages = [...new Set(localStorageWarnings.concat(messages).filter(Boolean))];
-    if (!allMessages.length) {
-      notice.classList.add("hidden");
-      notice.innerHTML = "";
-      return;
-    }
-    notice.innerHTML = allMessages.map((message) => `<p>${escapeHtml(message)}</p>`).join("");
-    notice.classList.remove("hidden");
-  }
-
-  function openLocalDataDialog() {
-    $("#local-data-dialog").classList.remove("hidden");
-    renderLocalDataNotice();
-    $("#local-data-export").focus();
-  }
-
-  function exportLocalData() {
-    const output = $("#local-data-output");
-    if (!localDataTools) {
-      output.value = "";
-      renderLocalDataNotice(["本地数据导出正在准备，请再试一次。"]);
-      return;
-    }
-    const exported = localDataTools.exportLocalLearningData(localStorage);
-    renderLocalDataNotice(exported.errors);
-    output.value = JSON.stringify(exported, null, 2);
   }
 
   function renderTrail() {
@@ -1129,23 +787,20 @@
 
   function updateStats() {
     if (!selected) {
-      // The layout-skeleton edge count isn't a count of explicit relations,
-      // so showing it here would read as a quality signal it isn't.
-      const wordTotal = GRAPH_META.eligible_count + GRAPH_META.support_node_count;
-      $("#stats").textContent = `收录 ${wordTotal.toLocaleString()} 个词`;
+      $("#stats").textContent = `${GRAPH_META.eligible_count.toLocaleString()} 主词 · ${GRAPH_META.support_node_count} 支撑词 · ${GRAPH_META.edge_count.toLocaleString()} 词群线索`;
       return;
     }
     const officialCount = focusConnections
       .filter((edge) => edge.kind === "official")
       .reduce((total, edge) => total + (edge.relations?.length || 1), 0);
-    const familyCount = Math.max(0, (focusFamily?.members?.length || 1) - 1);
-    $("#stats").textContent = familyCount ? `${familyCount} 个词族成员 · ${officialCount} 条编辑整理关系` : "";
+    const structuralCount = focusConnections.filter((edge) => edge.kind === "structural").length;
+    const formCount = focusConnections.filter((edge) => edge.kind === "form").length;
+    $("#stats").textContent = `${focusConnections.length} 个相关词 · ${officialCount} 条正式关系 · ${formCount + structuralCount} 自动线索`;
   }
 
   function showTooltip(node, event) {
     if (!node || selected && ["center", "direct"].includes(node.focusRole)) { tooltip.classList.add("hidden"); return; }
-    const meta = node.personal ? "我的词" : [node.pos, node.level].filter(Boolean).join(" · ");
-    tooltip.innerHTML = `<strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(meta)}</em><span>${escapeHtml(node.gloss || "中文提示待补")}</span>`;
+    tooltip.innerHTML = `<strong>${escapeHtml(node.word)}</strong><span>${escapeHtml(node.gloss || node.pos)}</span>`;
     tooltip.style.left = `${Math.min(window.innerWidth - 230, event.clientX + 13)}px`;
     tooltip.style.top = `${Math.min(window.innerHeight - 70, event.clientY + 13)}px`;
     tooltip.classList.remove("hidden");
@@ -1171,7 +826,6 @@
   }
 
   canvas.addEventListener("pointerdown", (event) => {
-    stopOnboarding();
     activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
     canvas.setPointerCapture(event.pointerId);
     canvas.classList.add("dragging");
@@ -1249,117 +903,37 @@
     requestDraw();
   }, { passive: false });
 
-  function getSearchEntries() {
-    if (!searchEntriesCache) {
-      searchEntriesCache = allNodes.concat(searchOnlyNodes).map((node) => ({
-        id: node.id,
-        word: node.word,
-        pos: node.pos,
-        gloss: node.gloss,
-        level: node.level,
-        freq: node.freq,
-        personal: node.personal,
-        searchOnly: node.searchOnly,
-        isCore: foundationalCoreIds.has(node.id),
-        aliases: aliasesById[node.id] || [],
-      }));
-    }
-    return searchEntriesCache;
-  }
-
   function doSearch() {
-    stopOnboarding();
-    const query = searchTools?.normalizeSearchText(search.value) || search.value.trim();
-    $("#map-copy").classList.toggle("quiet", Boolean(query));
+    const query = search.value.trim().toLocaleLowerCase("fr");
     if (!query) { searchResults.classList.add("hidden"); return; }
-    if (!searchTools) {
-      searchResults.innerHTML = `<div class="search-result"><small>搜索正在准备，请再试一次。</small></div>`;
-      searchResults.classList.remove("hidden");
-      return;
+    const starts = [], contains = [];
+    for (const node of allNodes) {
+      const word = node.word.toLocaleLowerCase("fr");
+      if (word.startsWith(query)) starts.push(node); else if (word.includes(query)) contains.push(node);
+      if (starts.length + contains.length > 40) break;
     }
-    const searchState = searchTools.searchLexemes(getSearchEntries(), query, { limit: 12, suggestionLimit: 5 });
-    const renderResult = (result, suggestion = false) => {
-      const node = nodeById.get(result.entry.id);
-      const alias = result.matchType.includes("Alias") ? `词形匹配：${result.matchedText} → ${node.word}` : "";
-      const hint = suggestion ? `相近拼写：${result.matchedText}` : alias;
-      return `<button class="search-result" data-node="${escapeHtml(node.id)}" role="option"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml([node.gloss || (node.personal ? "我的词" : node.level), hint, node.searchOnly ? "可检索词" : ""].filter(Boolean).join(" · "))}</small></button>`;
-    };
-    if (searchState.results.length) {
-      searchResults.innerHTML = searchState.results.map((result) => renderResult(result)).join("");
-    } else if (searchState.suggestions.length) {
-      searchResults.innerHTML = `<div class="search-result search-empty"><small>没有精确匹配。你是不是想找：</small></div>${searchState.suggestions.map((result) => renderResult(result, true)).join("")}`;
-    } else {
-      searchResults.innerHTML = `<div class="search-result search-empty"><small>没有找到这个词。可以检查拼写，或用右下角的 + 加入自己的词网。</small></div>`;
-    }
+    const results = starts.concat(contains).slice(0, 12);
+    searchResults.innerHTML = results.length ? results.map((node) => `<button class="search-result" data-node="${escapeHtml(node.id)}" role="option"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(node.gloss || (node.personal ? "我的词" : node.level))}</small></button>`).join("") : `<div class="search-result"><small>没有找到；你可以用右下角的 + 添加它。</small></div>`;
     searchResults.classList.remove("hidden");
-    searchResults.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => openSearchResult(button.dataset.node)));
+    searchResults.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => enterFocus(button.dataset.node, { resetTrail: true })));
   }
-  function openSearchResult(id) {
-    const node = nodeById.get(String(id));
-    if (node?.searchOnly) {
-      searchResults.classList.add("hidden");
-      search.blur();
-      renderPanel(node);
-      viewport.classList.add("panel-open");
-      return;
-    }
-    enterFocus(id, { resetTrail: true });
-  }
-  // Debounced so a burst of fast keystrokes coalesces into one search pass
-  // instead of one full re-render per key; skipped mid-composition so an IME
-  // (e.g. typing accented letters or Chinese) doesn't get its in-progress,
-  // not-yet-committed text treated as a real query.
-  let searchDebounce = null;
-  let composing = false;
-  function scheduleSearch() {
-    if (composing) return;
-    clearTimeout(searchDebounce);
-    searchDebounce = setTimeout(doSearch, 60);
-  }
-  search.addEventListener("compositionstart", () => { composing = true; });
-  search.addEventListener("compositionend", () => { composing = false; scheduleSearch(); });
-  search.addEventListener("input", scheduleSearch);
+  search.addEventListener("input", doSearch);
   search.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") { const first = searchResults.querySelector("[data-node]"); if (first) openSearchResult(first.dataset.node); }
+    if (event.key === "Enter") { const first = searchResults.querySelector("[data-node]"); if (first) enterFocus(first.dataset.node, { resetTrail: true }); }
     if (event.key === "Escape") searchResults.classList.add("hidden");
   });
-
-  document.querySelectorAll("[data-example-word]").forEach((button) => button.addEventListener("click", () => {
-    const word = button.dataset.exampleWord;
-    const match = allNodes.concat(searchOnlyNodes).find((node) => node.word === word && node.pos === "VER");
-    if (!match) return;
-    button.classList.add("example-chip-active");
-    setTimeout(() => button.classList.remove("example-chip-active"), 480);
-    search.value = match.word;
-    openSearchResult(match.id);
-  }));
 
   $("#panel-close").addEventListener("click", () => {
     panel.classList.add("hidden");
     viewport.classList.remove("panel-open");
-    if (selected) animateView(focusViewForIds([selected, ...focusConnections.map((edge) => edge.other)], false), 320);
+    if (selected && focusCenter) animateView(focusViewTarget(focusCenter, focusScaleFor(focusConnections.length), false), 320);
   });
   $("#reset").addEventListener("click", () => fitHome());
   $("#brand").addEventListener("click", (event) => { event.preventDefault(); fitHome(); });
   $("#focus-back").addEventListener("click", () => fitHome());
-  $("#local-data-open").addEventListener("click", openLocalDataDialog);
-  $("#local-data-close").addEventListener("click", closeLocalDataDialog);
-  $("#local-data-mask").addEventListener("click", closeLocalDataDialog);
-  $("#local-data-export").addEventListener("click", exportLocalData);
-  function toggleLegendBody() {
-    const body = $("#legend-body");
-    const expanded = body.classList.contains("hidden");
-    body.classList.toggle("hidden");
-    $("#legend").classList.toggle("mobile-legend-open", expanded);
-    $("#legend-toggle").setAttribute("aria-expanded", String(expanded));
-    $("#legend-open-mobile").setAttribute("aria-expanded", String(expanded));
-  }
-  $("#legend-toggle").addEventListener("click", toggleLegendBody);
-  $("#legend-open-mobile").addEventListener("click", toggleLegendBody);
-  $("#legend-relations").innerHTML = RELATION_ORDER
-    .filter((key) => key !== "personal")
-    .map((key) => `<span><i style="--c:${RELATION_STYLE[key].color}"></i>${escapeHtml(RELATION_NAMES[key] || key)}</span>`)
-    .join("") + `<small>细虚线 = 自动候选 · 橙虚线 = 我的关系</small>`;
+  $("#legend-toggle").addEventListener("click", (event) => {
+    const body = $("#legend-body"); body.classList.toggle("hidden"); event.currentTarget.setAttribute("aria-expanded", String(!body.classList.contains("hidden")));
+  });
 
   function closeDialog() { $("#add-dialog").classList.add("hidden"); $("#add-error").textContent = ""; }
   $("#add-open").addEventListener("click", () => { $("#add-dialog").classList.remove("hidden"); $("#add-word").focus(); });
@@ -1385,9 +959,5 @@
   });
 
   window.addEventListener("resize", resize);
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
-  }
   resize();
-  runOnboarding();
 })();
