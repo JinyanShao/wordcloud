@@ -24,6 +24,7 @@ Inputs:
 
 - `data/raw/FleLex_TT_Beacco.tsv`
 - `data/raw/Lexique400.tsv`
+- `data/raw/dbnary/fr_dbnary_ontolex.ttl.bz2` from `https://kaiko.getalp.org/static/ontolex/fr/fr_dbnary_ontolex_2026-07-01.ttl.bz2`
 - `dict.js`
 - `data/sources.json`
 - `sql/schema.sql`
@@ -36,7 +37,7 @@ Outputs:
 - `data/reports/lexicon-audit-v1.md`
 - `data/reports/lexicon-audit-sample-500.csv`
 
-The build is destructive only to generated files under `data/processed` and `data/reports`. Raw downloads and the hand-authored `data.js` are never modified. These generated outputs are ignored by Git.
+The build is destructive only to generated files under `data/processed` and `data/reports`. Raw downloads and the hand-authored `data.js` are never modified. These generated outputs are ignored by Git. Sources with `expected_sha256` in `data/sources.json` must match exactly; DBnary imports fail closed if the local archive does not match the pinned snapshot hash.
 
 ## Complete the stratified review
 

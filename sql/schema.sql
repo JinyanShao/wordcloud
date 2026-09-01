@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS sources (
   redistribution TEXT NOT NULL CHECK (redistribution IN ('yes', 'no', 'unclear', 'local-only')),
   local_path TEXT,
   sha256 TEXT,
+  expected_sha256 TEXT,
   downloaded_at TEXT,
   notes TEXT NOT NULL DEFAULT ''
 );
