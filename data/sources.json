@@ -47,7 +47,7 @@
   {
     "id": "dbnary_fr",
     "name": "DBnary French Wiktionary extract",
-    "version": "official-snapshot-2026-07-25",
+    "version": "official-snapshot-2026-07-01",
     "homepage_url": "https://kaiko.getalp.org/about-dbnary/",
     "download_url": "https://kaiko.getalp.org/static/ontolex/fr/fr_dbnary_ontolex_2026-07-01.ttl.bz2",
     "expected_sha256": "aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f",
