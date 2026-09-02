@@ -88,5 +88,4 @@ graph-data.js                      生成的浏览器载荷（勿手改）
 scripts/                           数据管线与 AI 起草脚本
 sql/schema.sql                     SQLite 结构
 data/sources.json                  来源登记
-data/sources.json                  数据来源登记
 ```
