@@ -4,6 +4,16 @@ Live Demo: https://jinyanshao.github.io/wordcloud/
 
 An interactive French vocabulary graph demo built from DBnary/Wiktionary-derived lexical data.
 
+## Engineering Summary
+
+- Static browser application backed by a reproducible lexical-data pipeline that exports `graph-data.js` and `data/build-summary.json`.
+- External linguistic sources are explicitly listed, versioned, and license-scoped, with pinned DBnary snapshot checks in the rebuild path.
+- Graph generation separates source-grounded formal relations from layout-only signals, then exports deterministic coordinates for repeatable browser rendering.
+- Automated gates validate data invariants, source hashes, relation evidence, runtime exports, and README/build-summary consistency.
+- Cross-platform reproducibility work keeps graph layout stable across environments instead of depending on ad hoc generated coordinates.
+- GitHub Pages deploys the packaged static site from `main`, and CI blocks deployment when the generated build summary drifts from documentation.
+- Published AI-drafted relation explanations are source-grounded and evidence-checked; publication status does not mean independent per-relation human review.
+
 面向中文母语者的法语词汇关系网络。不是词典，而是一张可以探索的词网：全景呈现学习进阶与自然词群，聚焦呈现每个词的正式关系、法语义项与教学辨析。
 
 ## 产品形态
