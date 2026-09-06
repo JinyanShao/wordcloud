@@ -9,10 +9,10 @@ An interactive French vocabulary graph demo built from DBnary/Wiktionary-derived
 - Static browser application backed by a reproducible lexical-data pipeline that exports `graph-data.js` and `data/build-summary.json`.
 - External linguistic sources are explicitly listed, versioned, and license-scoped, with pinned DBnary snapshot checks in the rebuild path.
 - Graph generation separates source-grounded formal relations from layout-only signals, then exports deterministic coordinates for repeatable browser rendering.
-- Automated gates validate data invariants, source hashes, relation evidence, runtime exports, and README/build-summary consistency.
+- Automated gates validate source hashes, full rebuild invariants when raw data is present, and clean-checkout runtime consistency for the committed static release.
 - Cross-platform reproducibility work keeps graph layout stable across environments instead of depending on ad hoc generated coordinates.
 - GitHub Pages deploys the packaged static site from `main`, and CI blocks deployment when the generated build summary drifts from documentation.
-- Published AI-drafted relation explanations are source-grounded and evidence-checked; publication status does not mean independent per-relation human review.
+- DBnary/Démonette relations are marked as sourced; AI-assisted or hand-authored project relations are marked separately as project-reviewed, not as externally evidence-checked claims.
 
 面向中文母语者的法语词汇关系网络。不是词典，而是一张可以探索的词网：全景呈现学习进阶与自然词群，聚焦呈现每个词的正式关系、法语义项与教学辨析。
 
@@ -20,9 +20,9 @@ An interactive French vocabulary graph demo built from DBnary/Wiktionary-derived
 
 - **全景词网**：7,300+ 词的交互散点图。半径表示学习进阶（越靠中心越高频、越基础），角度表示可信关系形成的自然词群，坐标构建时计算并固定，每次打开一致。
 - **聚焦词网**：点击任意词，以它为中心发散出正式关系——不同关系不同颜色，实线为确认关系，虚线为少量自动候选。侧栏词卡优先展示法语义项（Wiktionnaire），再展示中文提示与关系辨析。
-- **关系分层**：词族派生（Démonette）、明示近义/反义（Wiktionnaire/DBnary）来自可追溯数据源；`compare` 等教学辨析为 AI 起草、来源约束并通过自动证据检查；拼写/读音相似只作为虚线候选，不冒充语言事实。
+- **关系分层**：词族派生（Démonette）、明示近义/反义（Wiktionnaire/DBnary）来自可追溯数据源；`compare` 等教学辨析为 AI 辅助或手工编辑并经项目审校；拼写/读音相似只作为虚线候选，不冒充语言事实。
 
-当前规模（见 `data/build-summary.json`）：7,985 个渲染节点 · 6,495 条正式关系 · 16,058 条布局连接 · 31,328 条法语义项定义 · 79.3% 主词至少有一条正式关系 · 全图单连通分量。
+当前规模（见 `data/build-summary.json`）：7,985 个渲染节点 · 6,480 条正式关系 · 16,058 条布局连接 · 31,328 条法语义项定义 · 79.3% 主词至少有一条正式关系 · 全图单连通分量。
 
 ## 快速开始
 
@@ -48,20 +48,21 @@ python3 scripts/build_graph.py             # 关系图：候选、正式边、�
 node scripts/layout.mjs                    # 确定性坐标
 python3 scripts/export_runtime.py          # 导出浏览器载荷与 data/build-summary.json
 python3 scripts/build_summary.py           # 可单独从 graph-data.js 刷新构建摘要
-python3 scripts/validate_data.py           # 18 项不变量校验
+python3 scripts/validate_runtime.py        # clean checkout 静态发布校验（同 pnpm check）
+python3 scripts/validate_data.py           # full rebuild / data-quality 校验（同 pnpm check:full，需要 raw/processed 数据）
 ```
 
 辅助工具：
 
 - `python3 scripts/build_gap_list.py` — 核心词缺口清单（哪些高频词最缺正式关系）
-- `python3 scripts/ai_compare_draft.py` — 为高频近义对起草 `compare` 教学辨析（completion API，通过证据检查后入库）
+- `python3 scripts/ai_compare_draft.py` — 为高频近义对起草 `compare` 教学辨析（completion API，人工接受后以 `ai_reviewed` 入库）
 - `python3 scripts/ai_first_edge_draft.py` — 为零关系核心词起草首条正式关系（同上）
 
 完整说明见 [DATA_PIPELINE.md](DATA_PIPELINE.md)。
 
 ### AI 起草配置
 
-两个 AI 起草脚本读取环境变量 `WORDCLOUD_API_KEY` / `WORDCLOUD_MODEL` / `WORDCLOUD_API_BASE`，或项目根目录的 `.env.local`（已被 `.gitignore` 忽略，请勿提交密钥）。AI 草稿一律先写入 `data/processed/ai-*-drafts.json`，通过来源约束、结构校验与自动证据检查后，下次 `build_graph.py` 重建时才进入正式词网。当前公开关系不表示逐条人工审校。
+两个 AI 起草脚本读取环境变量 `WORDCLOUD_API_KEY` / `WORDCLOUD_MODEL` / `WORDCLOUD_API_BASE`，或项目根目录的 `.env.local`（已被 `.gitignore` 忽略，请勿提交密钥）。AI 草稿一律先写入 `data/processed/ai-*-drafts.json`，通过结构与端点校验并被人工接受后，下次 `build_graph.py` 重建时才进入正式词网；它们不标记为 DBnary/Démonette sourced，也不声称逐项外部证据已自动证明。
 
 ## 数据来源与许可
 

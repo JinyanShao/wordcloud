@@ -11,6 +11,12 @@ pnpm install
 
 The browser artifact itself has no package runtime dependency.
 
+## Validation gates
+
+`pnpm check` runs the lightweight runtime/repository gate used by GitHub Actions. It only depends on committed files and verifies `graph-data.js`, `data/build-summary.json`, README/DATA_PIPELINE public counts, runtime endpoints, duplicate relations, review statuses, senses, and connected-component claims.
+
+`pnpm check:full` runs `scripts/validate_data.py`. It is the full rebuild/data-quality gate and requires the ignored raw downloads, SQLite database, processed analysis files, and generated reports to exist locally.
+
 ## Rebuild the lexicon
 
 ```bash
@@ -57,6 +63,7 @@ python3 scripts/build_graph.py
 node scripts/layout.mjs
 python3 scripts/export_runtime.py
 python3 scripts/build_summary.py
+python3 scripts/validate_runtime.py
 python3 scripts/validate_data.py
 ```
 
@@ -68,7 +75,7 @@ Outputs:
 - `data/build-summary.json`: checked public build manifest used by README and validation
 - `data/reports/build-validation.md`: build evidence and invariant checks
 
-The current checked build is recorded in `data/build-summary.json`: 7,985 rendered nodes, including 7,314 eligible lexemes and 671 support lexemes; 6,495 formal relations; 16,058 browser layout links; 31,328 French definitions; 79.3% formal-relation coverage for eligible rendered words; one connected component.
+The current checked build is recorded in `data/build-summary.json`: 7,985 rendered nodes, including 7,314 eligible lexemes and 671 support lexemes; 6,480 formal relations; 16,058 browser layout links; 31,328 French definitions; 79.3% formal-relation coverage for eligible rendered words; one connected component.
 
 ## Build the core-word gap list
 
@@ -83,7 +90,7 @@ Outputs:
 - `data/reports/core-word-gap-list.csv`: sortable per-word gap table (`in_core=1` marks the current ~1,000 core words)
 - `data/reports/core-word-gap-list.md`: bucket counts, rules, and top examples
 
-Buckets follow the priority order in `handover/7.27-handover.md`: P1 high-frequency words with no official edge, P2 single-edge words, P3 multi-sense bridge words, P4 confusable candidates without an evidence-checked trap/compare edge, P5 B2–C1 words with DBnary senses but no syn/ant edge.
+Buckets follow this priority order: P1 high-frequency words with no official edge; P2 single-edge words; P3 multi-sense bridge words; P4 confusable candidates without a reviewed trap/compare edge; P5 B2–C1 words with DBnary senses but no syn/ant edge.
 
 ## Draft `compare` relations with a completion API
 
@@ -98,12 +105,12 @@ python3 scripts/ai_compare_draft.py stats
 
 Candidates are official syn edges where both endpoints rank in the top 2,000 eligible lexemes by frequency and no compare edge exists yet (currently 412 pairs). Drafts are appended to `data/processed/ai-compare-drafts.json` — this JSON file is the durable store, because `build_graph.py` wipes and rebuilds `official_edges` on every run. The script is idempotent: keys already in the file are skipped, so interrupted runs and gap-filling re-runs cost nothing extra.
 
-Evidence-check and publish:
+Review and publish:
 
-1. Open `data/processed/ai-compare-drafts.json`, edit the draft text if needed, then set `review.status` to `accepted` or `rejected` with evidence-check metadata.
-2. Re-run the graph build (`build_graph.py` → `layout.mjs` → `export_runtime.py` → `validate_data.py`). Accepted drafts are re-applied into `official_edges` as `relation='compare'`, `review_status='evidence_checked'`, sourced to `wordcloud_evidence_checks` with the draft provenance (`origin`, `key`, `model`) in `source_record`.
+1. Open `data/processed/ai-compare-drafts.json`, edit the draft text if needed, then set `review.status` to `accepted` or `rejected` with reviewer metadata.
+2. Re-run the graph build (`build_graph.py` → `layout.mjs` → `export_runtime.py` → `validate_runtime.py` → `validate_data.py`). Accepted drafts are re-applied into `official_edges` as `relation='compare'`, `review_status='ai_reviewed'`, sourced to `wordcloud_evidence_checks` with the draft provenance (`origin`, `key`, `model`) in `source_record`.
 
-AI drafts never enter `official_edges` without passing source grounding and automated evidence checks. This gate does not mean a separate human reviewer verified every published relation.
+AI drafts never enter `official_edges` without endpoint/type validation and an explicit accepted review decision. This is project review, not an automated proof that each teaching distinction is independently supported by an external evidence bundle.
 
 ## Draft first edges for zero-relation core words (P1)
 
@@ -114,13 +121,21 @@ python3 scripts/ai_first_edge_draft.py draft --limit 30 # pilot batch
 python3 scripts/ai_first_edge_draft.py stats
 ```
 
-Same credentials as the compare drafter (`.env.local` or env vars). Candidates are the top 1,000 eligible words by frequency with zero official edges — the `in_core` P1 set of the gap list. The model proposes up to 2 relations per word (`syn` / `ant` / `fam`) and is explicitly allowed to propose none. Every proposed partner is validated before it reaches the review file: the normalized lemma must exist as an `eligible` or `auxiliary` lexeme (auxiliary words like genre/type/milieu enter the graph as support nodes once an evidence-checked edge needs them), a wrong-POS guess falls back to a unique lexicon entry for that lemma, and anything else is discarded with a machine-readable reason recorded under `rejected` in the drafts file (`stats` shows the reason breakdown).
+Same credentials as the compare drafter (`.env.local` or env vars). Candidates are the top 1,000 eligible words by frequency with zero official edges — the `in_core` P1 set of the gap list. The model proposes up to 2 relations per word (`syn` / `ant` / `fam`) and is explicitly allowed to propose none. Every proposed partner is validated before it reaches the review file: the normalized lemma must exist as an `eligible` or `auxiliary` lexeme (auxiliary words like genre/type/milieu enter the graph as support nodes once a reviewed edge needs them), a wrong-POS guess falls back to a unique lexicon entry for that lemma, and anything else is discarded with a machine-readable reason recorded under `rejected` in the drafts file (`stats` shows the reason breakdown).
 
-Drafts live in `data/processed/ai-first-edge-drafts.json` (durable store, idempotent — words with zero proposals are also recorded so re-runs never re-bill them). Evidence-check each proposal (`review.status` → `accepted` / `rejected`), then rebuild the graph. Accepted proposals become evidence-checked official edges with confidence 0.7 and `origin: ai_first_edge_draft` provenance, and the pair is added to the seed layout signal so confirmed relations pull together in the global view.
+Drafts live in `data/processed/ai-first-edge-drafts.json` (durable store, idempotent — words with zero proposals are also recorded so re-runs never re-bill them). Review each proposal (`review.status` → `accepted` / `rejected`), then rebuild the graph. Accepted proposals become `ai_reviewed` official edges with confidence 0.7 and `origin: ai_first_edge_draft` provenance, and the pair is added to the seed layout signal so reviewed relations pull together in the global view.
+
+## Review status semantics
+
+- `sourced`: directly supported by a registered external source such as DBnary or Démonette.
+- `editorial_seed`: hand-authored relation preserved from the historical editorial seed.
+- `ai_reviewed`: AI-assisted draft accepted by project review after structural endpoint/type checks; not an external evidence claim.
+- `editorial_reviewed`: legacy committed runtime relation accepted by project review before seed/AI provenance was split in the rebuild path.
+- `human_reviewed`: reserved for future independently reviewed project assertions.
 
 ## Data boundaries
 
 - `layout_links` influence cartography and do not count as official coverage.
-- `official_edges` are source-grounded or evidence-checked claims shown to learners.
+- `official_edges` are sourced or project-reviewed claims shown to learners; only `sourced` means an external source directly supports the relation.
 - `personal_links` remain browser-local under `wordcloud.personal.v2` and are not stored in this database.
 - `CLUSTERS` in the original `data.js` are hand-authored prototype scaffolding, not Lexique data.

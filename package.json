@@ -1,5 +1,5 @@
 {
-  "name": "wordcloud-prototype",
+  "name": "wordcloud",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,8 +13,10 @@
     "graph:layout": "node scripts/layout.mjs",
     "graph:export": "python3 scripts/export_runtime.py",
     "summary:build": "python3 scripts/build_summary.py",
+    "check:runtime": "python3 scripts/validate_runtime.py",
     "graph:build": "pnpm demonette:analyze && pnpm demonette:approve && pnpm dbnary:analyze && pnpm dbnary:approve && pnpm graph:candidates && pnpm graph:layout && pnpm graph:export",
-    "check": "python3 scripts/validate_data.py"
+    "check:full": "python3 scripts/validate_data.py",
+    "check": "pnpm check:runtime"
   },
   "devDependencies": {
     "graphology": "^0.25.4",

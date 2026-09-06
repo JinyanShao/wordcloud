@@ -6,7 +6,7 @@ Reads `data/processed/wordcloud.sqlite` and writes:
 - `data/reports/core-word-gap-list.csv`: sortable per-word gap table
 - `data/reports/core-word-gap-list.md`: summary report with bucket counts and examples
 
-Buckets follow the priority order in `handover/7.27-handover.md` §九:
+Buckets follow the public priority order documented in DATA_PIPELINE.md:
 
 1. `P1_no_official`   高频且没有任何官方关系
 2. `P2_single_edge`   高频且只有一条官方关系
