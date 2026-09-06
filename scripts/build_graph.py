@@ -243,8 +243,8 @@ def seed_edges(nodes: list[sqlite3.Row]) -> tuple[list[tuple[int, int, float]], 
     return layout, official
 
 
-def evidence_checked_compare_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
-    """Re-apply accepted AI compare drafts from the durable JSON store."""
+def accepted_compare_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    """Re-apply human-accepted AI compare drafts from the durable JSON store."""
     if not AI_COMPARE_DRAFTS_PATH.exists():
         return []
     payload = json.loads(AI_COMPARE_DRAFTS_PATH.read_text(encoding="utf-8"))
@@ -274,8 +274,8 @@ def evidence_checked_compare_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, 
     return result
 
 
-def evidence_checked_first_edge_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
-    """Re-apply accepted AI first-edge proposals from the durable JSON store."""
+def accepted_first_edge_drafts(nodes: list[sqlite3.Row]) -> list[dict[str, object]]:
+    """Re-apply human-accepted AI first-edge proposals from the durable JSON store."""
     if not AI_FIRST_EDGE_DRAFTS_PATH.exists():
         return []
     payload = json.loads(AI_FIRST_EDGE_DRAFTS_PATH.read_text(encoding="utf-8"))
@@ -458,8 +458,8 @@ def main() -> None:
     ]
 
     editorial_layout, official = seed_edges(nodes)
-    compare_drafts = evidence_checked_compare_drafts(nodes)
-    first_edge_drafts = evidence_checked_first_edge_drafts(nodes)
+    compare_drafts = accepted_compare_drafts(nodes)
+    first_edge_drafts = accepted_first_edge_drafts(nodes)
     layouts["editorial_seed"] = editorial_layout + [(d["a"], d["b"], 1.0) for d in first_edge_drafts]
 
     candidate_rows = []
@@ -587,8 +587,8 @@ def main() -> None:
             """,
             (
                 item["a"], item["b"], item["relation"], item["dimension"], item["subtype"],
-                item["direction"], item["label"], "AI-drafted, source-grounded, passed automated evidence checks; not independently human-reviewed.",
-                "[]", 0.9, "evidence_checked", CREATED_AT, CREATED_AT,
+                item["direction"], item["label"], "Hand-authored editorial seed relation preserved from data.js; not a DBnary or Démonette sourced claim.",
+                "[]", 0.9, "editorial_seed", CREATED_AT, CREATED_AT,
             ),
         )
         if cursor.lastrowid:
@@ -609,7 +609,7 @@ def main() -> None:
                 item["a"], item["b"], "compare", item["dimension"], None,
                 None, item["label"], None,
                 json.dumps(item["examples"], ensure_ascii=False), 0.8,
-                "evidence_checked", item["reviewed_at"] or CREATED_AT, CREATED_AT,
+                "ai_reviewed", item["reviewed_at"] or CREATED_AT, CREATED_AT,
             ),
         )
         if cursor.lastrowid:
@@ -636,7 +636,7 @@ def main() -> None:
                 item["a"], item["b"], item["relation"], None, None,
                 None, item["label"], None,
                 "[]", 0.7,
-                "evidence_checked", item["reviewed_at"] or CREATED_AT, CREATED_AT,
+                "ai_reviewed", item["reviewed_at"] or CREATED_AT, CREATED_AT,
             ),
         )
         if cursor.lastrowid:
@@ -653,21 +653,34 @@ def main() -> None:
 
     for item in sourced_derivations:
         a_id, b_id = int(item["a_id"]), int(item["b_id"])
+        direction = None
+        if item["base_id"] is not None:
+            direction = f"{int(item['base_id'])}->{int(item['derived_id'])}"
+        explanation = (
+            "Démonette 2.0：语义上是直接词族关系，但表面形式不是规则构词。"
+            if item["complexity"] == "motiv-sem"
+            else "Démonette 2.0 确认的直接派生或词性转换关系。"
+        )
         existing = conn.execute(
-            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation='fam' ORDER BY review_status IN ('evidence_checked','reviewed') DESC, id LIMIT 1",
+            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation='fam' ORDER BY review_status IN ('editorial_seed','ai_reviewed','editorial_reviewed','human_reviewed') DESC, id LIMIT 1",
             (a_id, b_id),
         ).fetchone()
         if existing:
             edge_id = existing["id"]
-        else:
-            direction = None
-            if item["base_id"] is not None:
-                direction = f"{int(item['base_id'])}->{int(item['derived_id'])}"
-            explanation = (
-                "Démonette 2.0：语义上是直接词族关系，但表面形式不是规则构词。"
-                if item["complexity"] == "motiv-sem"
-                else "Démonette 2.0 确认的直接派生或词性转换关系。"
+            conn.execute(
+                """
+                UPDATE official_edges
+                SET dimension='derivational_morphology',
+                    subtype=?,
+                    direction=?,
+                    explanation=?,
+                    confidence=MAX(confidence, ?),
+                    review_status='sourced'
+                WHERE id=?
+                """,
+                (item["subtype"], direction, explanation, float(item["confidence"]), edge_id),
             )
+        else:
             cursor = conn.execute(
                 """
                 INSERT INTO official_edges(
@@ -696,18 +709,30 @@ def main() -> None:
 
     for item in sourced_semantics.get("edges", []):
         a_id, b_id = int(item["a_id"]), int(item["b_id"])
+        explanation = (
+            "Wiktionnaire 通过 DBnary 明示标注的近义关系。"
+            if item["relation"] == "syn"
+            else "Wiktionnaire 通过 DBnary 明示标注的反义关系。"
+        )
         existing = conn.execute(
-            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation=? ORDER BY review_status IN ('evidence_checked','reviewed') DESC, id LIMIT 1",
+            "SELECT id FROM official_edges WHERE a_id=? AND b_id=? AND relation=? ORDER BY review_status IN ('editorial_seed','ai_reviewed','editorial_reviewed','human_reviewed') DESC, id LIMIT 1",
             (a_id, b_id, item["relation"]),
         ).fetchone()
         if existing:
             edge_id = existing["id"]
-        else:
-            explanation = (
-                "Wiktionnaire 通过 DBnary 明示标注的近义关系。"
-                if item["relation"] == "syn"
-                else "Wiktionnaire 通过 DBnary 明示标注的反义关系。"
+            conn.execute(
+                """
+                UPDATE official_edges
+                SET dimension='lexical_semantics',
+                    subtype=?,
+                    explanation=?,
+                    confidence=MAX(confidence, ?),
+                    review_status='sourced'
+                WHERE id=?
+                """,
+                (item["subtype"], explanation, float(item["confidence"]), edge_id),
             )
+        else:
             cursor = conn.execute(
                 """
                 INSERT INTO official_edges(

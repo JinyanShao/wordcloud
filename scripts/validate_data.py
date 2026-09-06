@@ -5,10 +5,11 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 import sqlite3
 from collections import Counter
 from pathlib import Path
+
+from runtime_graph import build_summary, load_runtime
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,14 +24,6 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
-
-
-def extract_js_const(text: str, name: str, next_name: str) -> object:
-    pattern = rf"const {re.escape(name)}=(.*?);\nconst {re.escape(next_name)}="
-    match = re.search(pattern, text, flags=re.S)
-    if not match:
-        raise SystemExit(f"Could not find {name} in graph-data.js")
-    return json.loads(match.group(1))
 
 
 class UnionFind:
@@ -339,16 +332,18 @@ def main() -> None:
         "canvas 读取 graph-data.js 固定坐标",
     )
     if runtime.exists() and SUMMARY.exists():
-        runtime_text = runtime.read_text(encoding="utf-8")
-        runtime_meta = extract_js_const(runtime_text, "GRAPH_META", "GRAPH_NODES")
+        runtime_summary = build_summary(load_runtime(runtime))
         summary = json.loads(SUMMARY.read_text(encoding="utf-8"))
         expected_summary = {
             "rendered_nodes": len(position_ids),
             "eligible_nodes": eligible,
             "support_nodes": supports,
             "formal_relations": official_count,
-            "layout_links": runtime_meta["layout_link_count"],
+            "layout_links": runtime_summary["layout_links"],
             "french_definitions": entry_count and sense_count,
+            "component_count": runtime_summary["component_count"],
+            "isolated_count": runtime_summary["isolated_count"],
+            "single_connected_component": runtime_summary["single_connected_component"],
         }
         summary_errors = [
             f"{key}: summary={summary.get(key)!r}, expected={value!r}"
@@ -382,7 +377,7 @@ def main() -> None:
         "",
         "## 边界",
         "",
-        "这份验证证明构建一致性、许可登记完整性和制图连通性，不证明自动候选等同于可靠语言学关系。只有 `official_edges` 才是产品可陈述关系；其余边继续保留候选或布局身份。",
+        "这份 full rebuild 验证证明构建一致性、许可登记完整性、来源哈希、制图连通性和数据质量门，不证明自动候选等同于可靠语言学关系。只有 `official_edges` 才是产品可陈述关系；其中只有 `review_status='sourced'` 表示外部来源直接支持。",
     ]
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     conn.close()

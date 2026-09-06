@@ -77,8 +77,8 @@
   },
   {
     "id": "wordcloud_evidence_checks",
-    "name": "wordcloud evidence-checked seed",
-    "version": "prototype-v2",
+    "name": "wordcloud editorial review seed",
+    "version": "public-review-seed-v2",
     "homepage_url": "local://data.js",
     "download_url": null,
     "license_id": "project-local",
@@ -88,6 +88,6 @@
     "redistribution": "local-only",
     "local_path": "data.js",
     "downloaded_at": null,
-    "notes": "Existing source-grounded and AI-drafted seed nodes and edges that passed automated evidence checks. This does not indicate independent per-edge human review. CLUSTERS are prototype-only and are not sourced from Lexique."
+    "notes": "Project-authored or AI-assisted seed nodes and edges accepted by wordcloud review. This is not a DBnary/Démonette sourced claim and does not indicate independent per-edge external evidence."
   }
 ]
