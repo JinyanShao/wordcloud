@@ -25,6 +25,7 @@ jobs:
           git diff --exit-code -- data/build-summary.json
           python3 scripts/validate_runtime.py
           python3 scripts/audit_families.py --check
+          python3 scripts/validate_learner_content.py --runtime
           python3 -m unittest discover -s tests -p "test_*.py"
 
   deploy:
@@ -45,7 +46,7 @@ jobs:
         run: |
           mkdir dist
           mkdir -p dist/data
-          cp index.html app.js styles.css graph-data.js data.js dict.js dist/
+          cp index.html app.js styles.css graph-data.js learner-content.js data.js dict.js dist/
           cp data/build-summary.json dist/data/
           touch dist/.nojekyll
 

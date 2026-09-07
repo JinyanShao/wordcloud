@@ -18,7 +18,9 @@
     "check:full": "python3 scripts/validate_data.py",
     "check": "pnpm check:runtime",
     "families:audit": "python3 scripts/audit_families.py",
-    "families:check": "python3 scripts/audit_families.py --check"
+    "families:check": "python3 scripts/audit_families.py --check",
+    "learner:build": "python3 scripts/build_learner_content.py",
+    "learner:check": "python3 scripts/validate_learner_content.py"
   },
   "devDependencies": {
     "graphology": "^0.25.4",

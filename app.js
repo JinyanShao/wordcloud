@@ -67,6 +67,13 @@
     a: String(row[0]), b: String(row[1]), relation: row[2], dimension: row[3], subtype: row[4], direction: row[5],
     label: row[6], explanation: row[7], confidence: row[8], review: row[9], kind: "official",
   }));
+  const learnerRelationsByPair = new Map();
+  const learnerPatterns = LEARNER_CONTENT.observed_patterns;
+  for (const relation of Object.values(LEARNER_CONTENT.relations)) {
+    const key = [relation.a_id, relation.b_id].sort((a, b) => a - b).join("|");
+    if (!learnerRelationsByPair.has(key)) learnerRelationsByPair.set(key, []);
+    learnerRelationsByPair.get(key).push(relation);
+  }
   const layoutAdj = new Map();
   const officialAdj = new Map();
 
@@ -85,21 +92,15 @@
 
   // Only source-labelled morphology contributes to the learning family index.
   const sourcedFamilyEdges = officialEdges.filter(e => e.relation === "fam" && e.review === "sourced" && e.dimension === "derivational_morphology");
-  const familyAdj = new Map(), familyGroups = new Map(), patternGroups = new Map();
+  const familyAdj = new Map(), familyGroups = new Map();
   const posNames = { VER: "动词", NOM: "名词", ADJ: "形容词", ADV: "副词" };
   function orientedPair(edge) {
     const ids = edge.direction.split("->");
     return ids.length === 2 && ids.includes(edge.a) && ids.includes(edge.b) ? ids : null;
   }
-  function patternKey(edge) {
-    const pair = orientedPair(edge);
-    const poses = pair ? pair.map(id => nodeById.get(id).pos).join("→") : [nodeById.get(edge.a).pos,nodeById.get(edge.b).pos].sort().join("↔");
-    return `${edge.subtype}|${edge.label}|${poses}`;
-  }
   for (const edge of sourcedFamilyEdges) {
     addAdj(familyAdj, edge.a, { ...edge, other: edge.b });
     addAdj(familyAdj, edge.b, { ...edge, other: edge.a });
-    addAdj(patternGroups, patternKey(edge), edge);
   }
   for (const id of familyAdj.keys()) {
     if (familyGroups.has(id)) continue;
@@ -115,6 +116,14 @@
     const direction = pair ? pair.map(id => posNames[nodeById.get(id).pos] || nodeById.get(id).pos).join(" → ") : "关联形式 · 来源未指定方向";
     return `${edge.label} · ${direction}`;
   }
+  function learnerRelationFor(edge) {
+    const key = [Number(edge.a), Number(edge.b)].sort((a, b) => a - b).join("|");
+    return (learnerRelationsByPair.get(key) || []).find((relation) =>
+      (edge.subtype === "prefixation" && relation.relation_type === "prefix")
+      || (edge.subtype === "suffixation" && relation.relation_type === "suffix")
+      || (edge.subtype === "conversion" && relation.relation_type === "conversion")
+      || (edge.subtype === "semantic_derivation" && relation.relation_type === "irregular_family"));
+  }
   function renderFamily(node) {
     const edges = familyAdj.get(node.id) || [];
     if (!edges.length) return "";
@@ -122,15 +131,20 @@
     const others = memberIds.filter(id => id !== node.id).map(id=>nodeById.get(id)).sort((a,b)=>b.freq-a.freq || a.word.localeCompare(b.word,"fr"));
     const direct = new Map(edges.map(e=>[e.other,e]));
     const links = others.map(other => `<button class="relation-item official" style="--relation-color:#3477b8" data-node="${escapeHtml(other.id)}"><strong>${escapeHtml(other.word)}</strong><em>${escapeHtml(posNames[other.pos] || other.pos)}</em><small>${escapeHtml(direct.has(other.id) ? morphologyCaption(direct.get(other.id)) : "经其他成员相连 · 同词族")}</small></button>`).join("");
-    const patterns = [...new Map(edges.map(e=>[patternKey(e),e])).entries()].map(([key,e])=> {
-      const examples = (patternGroups.get(key)||[]).filter(other=>!memberIds.includes(other.a)&&!memberIds.includes(other.b)).slice(0,5);
+    const patterns = [...new Map(edges.map((edge) => {
+      const relation = learnerRelationFor(edge);
+      const pattern = relation?.observed_pattern_key && learnerPatterns[relation.observed_pattern_key];
+      return pattern?.teaching_status === "deterministic" ? [pattern.pattern_key, { edge, pattern }] : null;
+    }).filter(Boolean)).values()].map(({ edge, pattern }) => {
+      const examples = pattern.example_relation_keys.map(key => LEARNER_CONTENT.relations[key]).filter(other => other && !memberIds.includes(String(other.a_id)) && !memberIds.includes(String(other.b_id)));
       if (!examples.length) return "";
-      return `<details class="family-pattern"><summary>${escapeHtml(morphologyCaption(e))}</summary><div class="relation-list">${examples.map(other=>{
-        const pair=orientedPair(other)||[other.a,other.b];
-        return `<button class="relation-item" data-node="${escapeHtml(pair[0])}"><strong>${escapeHtml(nodeById.get(pair[0]).word)} ${orientedPair(other)?"→":"↔"} ${escapeHtml(nodeById.get(pair[1]).word)}</strong><small>打开这个词族</small></button>`;
+      return `<details class="family-pattern"><summary>观察到同结构：${escapeHtml(morphologyCaption(edge))} · ${pattern.observed_pair_count} 对</summary><div class="relation-list">${examples.map(other=>{
+        const from = other.direction.known ? String(other.direction.from_id) : String(other.a_id);
+        const to = other.direction.known ? String(other.direction.to_id) : String(other.b_id);
+        return `<button class="relation-item" data-node="${escapeHtml(from)}"><strong>${escapeHtml(nodeById.get(from).word)} ${other.direction.known ? "→" : "↔"} ${escapeHtml(nodeById.get(to).word)}</strong><small>打开这个词族</small></button>`;
       }).join("")}</div></details>`;
     }).join("");
-    return `<section class="panel-section family-section"><h3>一起认识 · ${memberIds.length} 个词</h3><div class="relation-list">${links}</div><p class="candidate-note">当前收录的部分词族；间接成员不表示彼此直接派生。</p>${patterns?`<h3>在其他词族里发现规律</h3>${patterns}<p class="candidate-note">相同构词类型和词性不保证含义相同；词干也可能变化。</p>`:""}<a class="sense-source" href="https://demonette.fr/" target="_blank" rel="noopener noreferrer">构词来源：Démonette 2 · CC BY-SA 4.0 ↗</a></section>`;
+    return `<section class="panel-section family-section"><h3>一起认识 · ${memberIds.length} 个词</h3><div class="relation-list">${links}</div><p class="candidate-note">当前收录的部分词族；间接成员不表示彼此直接派生。</p>${patterns?`<h3>同结构的其他词族</h3>${patterns}<p class="candidate-note">这是多个来源确认词族中观察到的相同结构，不表示可机械套用的规则。</p>`:""}<a class="sense-source" href="https://demonette.fr/" target="_blank" rel="noopener noreferrer">构词来源：Démonette 2 · CC BY-SA 4.0 ↗</a></section>`;
   }
 
   let personal = loadPersonal();

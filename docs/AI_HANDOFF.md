@@ -7,12 +7,14 @@
 - The family UI uses only `fam + sourced + derivational_morphology` relations.  The generated audit records 3,077 such edges, 4,652 connected word entries, and 1,644 partial families.  A partial family is not an exhaustive linguistic family.  `semantic_derivation` is shown as an irregular family link, not as a productive suffix rule.
 - The old 500-row audit sample changed with the eligibility policy.  `scripts/apply_audit_review.py` carries a decision forward only when its lemma still occurs in the new sample; 153 reviews carry forward and 347 rows remain unreviewed.  Do not describe the new 500-row sample as fully human-reviewed.
 - DBnary now uses the registered `official-snapshot-2026-09-01` source snapshot because the old source URL returned 404.  The source hash is pinned in `data/sources.json`.
+- Phase 1 learner content is deterministic and contains no AI text: `learner-content.js` projects 4,652 participating lexical entries, 3,077 direct sourced family relations, and 142 observed structure groups.  It is generated from SQLite facts, does not duplicate definitions/examples, and labels observed structure without claiming a productive rule.  `data/learner-content-overrides.json` is intentionally empty and may only add future teaching classifications or notes.
 
 ## Verification completed
 
 - `pnpm check:full` — 18/18 build checks passed.
 - `pnpm check:runtime`, `pnpm families:check`, six unit tests, `node --check app.js`, and `git diff --check` passed.
 - Local browser check confirmed common lookup words, accent-insensitive `ecole`, sourced word-family rendering across prefix/suffix/conversion/irregular-family types, and no mobile horizontal overflow.
+- Learner projection build/SQLite validation, static-runtime validation, nine unit tests, and a local side-panel check passed.
 
 ## Release status and next work
 
