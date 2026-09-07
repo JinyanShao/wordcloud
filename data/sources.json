@@ -12,7 +12,8 @@
     "redistribution": "yes",
     "local_path": "data/raw/FleLex_TT_Beacco.tsv",
     "downloaded_at": "2026-07-27",
-    "notes": "Used for CEFR candidate levels. Non-commercial license is a product risk; do not ship commercially without replacement or permission."
+    "notes": "Used for CEFR candidate levels. Non-commercial license is a product risk; do not ship commercially without replacement or permission.",
+    "expected_sha256": "e0cbdb672fa4f83155acec4c8f01f179b30be08cb3d2d6cf0d9f25042b01e3d4"
   },
   {
     "id": "lexique_400",
@@ -27,7 +28,8 @@
     "redistribution": "yes",
     "local_path": "data/raw/Lexique400.tsv",
     "downloaded_at": "2026-07-27",
-    "notes": "Used for lemma/POS alignment, corpus frequency, contextual diversity, IPA and morphology."
+    "notes": "Used for lemma/POS alignment, corpus frequency, contextual diversity, IPA and morphology.",
+    "expected_sha256": "fe333b4f9e1797f23922d5863cde28635ee13685813af0f9b4b4b9f7d4610a5a"
   },
   {
     "id": "demonette_2",
@@ -42,23 +44,30 @@
     "redistribution": "yes",
     "local_path": "data/raw/demonette-2.0/demonette-2.0.zip",
     "downloaded_at": "2026-07-27",
-    "notes": "Official form download. Archive SHA-256 ed14fe72c5328d470b33d3f83bef60f32bd458dde2e8f1817efd1132120ce8b7. Inner files: lexemes.csv 9e581c81e91ac8203dea4b479400ea1535217e1ded6b4951885ba9d503a1d381; relations.csv 761f98f3432e058f1e59d8c97a47e7bf47d0bdea9d794d2387bfe5e5b1f302c2; families.csv cbac0bc31f97da2ca045c14c8e1bcbc377ed915a5203120b106cbd64dcd69ddd; readme.txt c00b413fb3bfd336868374c9f2217c68d63321082b7ca2564c2e1ca93f1f329b. Used as the authoritative source for sourced derivational-family edges."
+    "notes": "Official form download. Archive SHA-256 ed14fe72c5328d470b33d3f83bef60f32bd458dde2e8f1817efd1132120ce8b7. Inner files: lexemes.csv 9e581c81e91ac8203dea4b479400ea1535217e1ded6b4951885ba9d503a1d381; relations.csv 761f98f3432e058f1e59d8c97a47e7bf47d0bdea9d794d2387bfe5e5b1f302c2; families.csv cbac0bc31f97da2ca045c14c8e1bcbc377ed915a5203120b106cbd64dcd69ddd; readme.txt c00b413fb3bfd336868374c9f2217c68d63321082b7ca2564c2e1ca93f1f329b. Used as the authoritative source for sourced derivational-family edges.",
+    "expected_sha256": "ed14fe72c5328d470b33d3f83bef60f32bd458dde2e8f1817efd1132120ce8b7"
   },
   {
     "id": "dbnary_fr",
     "name": "DBnary French Wiktionary extract",
-    "version": "official-snapshot-2026-07-01",
+    "version": "official-snapshot-2026-09-01",
     "homepage_url": "https://kaiko.getalp.org/about-dbnary/",
-    "download_url": "https://kaiko.getalp.org/static/ontolex/fr/fr_dbnary_ontolex_2026-07-01.ttl.bz2",
-    "expected_sha256": "aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f",
+    "download_url": "https://kaiko.getalp.org/static/ontolex/fr/fr_dbnary_ontolex_2026-09-01.ttl.bz2",
+    "expected_sha256": "cbdb299d763ace3463e91d271c6681d6e06dc8662be53c459771c930572b049e",
     "license_id": "CC-BY-SA-3.0-or-later",
     "license_url": "https://fr.wiktionary.org/wiki/Wiktionnaire:Licence",
     "attribution": "Wiktionnaire contributors; structured extraction by DBnary / GETALP",
     "commercial_use": "yes",
     "redistribution": "yes",
     "local_path": "data/raw/dbnary/fr_dbnary_ontolex.ttl.bz2",
-    "downloaded_at": "2026-07-27",
-    "notes": "Official DBnary OntoLex snapshot. Used for French lexical entries, sense definitions, explicit synonym, approximate-synonym and antonym relations. DBnary derivedFrom is deliberately not used because Démonette remains the morphology authority."
+    "downloaded_at": "2026-09-06",
+    "notes": "Official DBnary OntoLex snapshot. Used for French lexical entries, sense definitions, explicit synonym, approximate-synonym and antonym relations. DBnary derivedFrom is deliberately not used because Démonette remains the morphology authority.",
+    "previous_snapshot": {
+      "version": "official-snapshot-2026-07-01",
+      "download_url": "https://kaiko.getalp.org/static/ontolex/fr/fr_dbnary_ontolex_2026-07-01.ttl.bz2",
+      "expected_sha256": "aeb243f402c0acedade522842736e5885b025b5eb77894c45817b8f1bd12062f",
+      "reason": "Original download returned HTTP 404 on 2026-09-06."
+    }
   },
   {
     "id": "cfdict_reverse_local",

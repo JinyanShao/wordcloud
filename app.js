@@ -21,7 +21,7 @@
 
   const SIGNALS = [[1, "释义接近"], [2, "来源确认的派生"], [4, "拼写相似"], [8, "读音相似"], [16, "项目审校关系"], [32, "连通骨架"], [64, "Lexique 词形候选"]];
   const RELATION_NAMES = { syn: "近义", compare: "对比", fam: "派生", drift: "语义漂移", trap: "易混", ant: "反义", cause: "因果" };
-  const RELATION_ORDER = ["syn", "ant", "compare", "drift", "cause", "trap", "fam", "personal"];
+  const RELATION_ORDER = ["fam", "syn", "ant", "compare", "drift", "cause", "trap", "personal"];
   const FOCUS_LIMITS = { syn: 5, ant: 4, compare: 3, drift: 3, cause: 3, trap: 3, fam: 6, personal: 3 };
   const RELATION_STYLE = {
     syn: { color: "#7b8188", dash: [], arrow: false },
@@ -47,6 +47,20 @@
   }
 
   const officialNodes = GRAPH_NODES.map(runtimeNode);
+  const familyWords = {
+    lent: ["形容词 · 阳性", "描述人或事物是慢的。", "Le bus est lent.", "公交车很慢。"],
+    lente: ["形容词 · 阴性", "lent 加 -e 变为 lente，配合阴性名词；这是同一个形容词的变化。", "La voiture est lente.", "这辆车很慢。"],
+    lentement: ["副词", "在阴性形式 lente 后加 -ment，描述动作进行得怎样。", "Le bus avance lentement.", "公交车缓慢地前进。"],
+    lenteur: ["名词 · 阴性（la lenteur）", "lent 加 -eur，把“慢”作为一种性质来谈论。这里的 -eur 不表示做事的人。", "La lenteur du bus me surprend.", "公交车的缓慢让我惊讶。"],
+  };
+  const familyNodes = Object.entries(familyWords).map(([word, detail], index) => ({
+    id: `family-${word}`, word, pos: detail[0], gloss: detail[1], status: "sample", level: "词族",
+    x: 0, y: 0, homeX: 0, homeY: 0, drawX: 0, drawY: 0, targetX: 0, targetY: 0,
+    size: 3.4, alpha: 0, targetAlpha: 0, focusRole: "background", personal: false,
+  }));
+  const familyEdges = [
+    ["lent", "lente", "阴性 +e"], ["lente", "lentement", "+ment · 副词"], ["lent", "lenteur", "+eur · 名词"],
+  ];
   const nodeById = new Map(officialNodes.map((node) => [node.id, node]));
   const baseLinks = GRAPH_LINKS.map((row) => ({ a: String(row[0]), b: String(row[1]), mask: row[2], weight: row[3] }));
   const officialEdges = GRAPH_OFFICIAL_EDGES.map((row) => ({
@@ -67,6 +81,56 @@
   for (const edge of officialEdges) {
     addAdj(officialAdj, edge.a, { ...edge, other: edge.b });
     addAdj(officialAdj, edge.b, { ...edge, other: edge.a });
+  }
+
+  // Only source-labelled morphology contributes to the learning family index.
+  const sourcedFamilyEdges = officialEdges.filter(e => e.relation === "fam" && e.review === "sourced" && e.dimension === "derivational_morphology");
+  const familyAdj = new Map(), familyGroups = new Map(), patternGroups = new Map();
+  const posNames = { VER: "动词", NOM: "名词", ADJ: "形容词", ADV: "副词" };
+  function orientedPair(edge) {
+    const ids = edge.direction.split("->");
+    return ids.length === 2 && ids.includes(edge.a) && ids.includes(edge.b) ? ids : null;
+  }
+  function patternKey(edge) {
+    const pair = orientedPair(edge);
+    const poses = pair ? pair.map(id => nodeById.get(id).pos).join("→") : [nodeById.get(edge.a).pos,nodeById.get(edge.b).pos].sort().join("↔");
+    return `${edge.subtype}|${edge.label}|${poses}`;
+  }
+  for (const edge of sourcedFamilyEdges) {
+    addAdj(familyAdj, edge.a, { ...edge, other: edge.b });
+    addAdj(familyAdj, edge.b, { ...edge, other: edge.a });
+    addAdj(patternGroups, patternKey(edge), edge);
+  }
+  for (const id of familyAdj.keys()) {
+    if (familyGroups.has(id)) continue;
+    const group = [], pending = [id], seen = new Set([id]);
+    while (pending.length) {
+      const current = pending.pop(); group.push(current);
+      for (const edge of familyAdj.get(current) || []) if (!seen.has(edge.other)) { seen.add(edge.other); pending.push(edge.other); }
+    }
+    for (const member of group) familyGroups.set(member, group);
+  }
+  function morphologyCaption(edge) {
+    const pair = orientedPair(edge);
+    const direction = pair ? pair.map(id => posNames[nodeById.get(id).pos] || nodeById.get(id).pos).join(" → ") : "关联形式 · 来源未指定方向";
+    return `${edge.label} · ${direction}`;
+  }
+  function renderFamily(node) {
+    const edges = familyAdj.get(node.id) || [];
+    if (!edges.length) return "";
+    const memberIds = familyGroups.get(node.id);
+    const others = memberIds.filter(id => id !== node.id).map(id=>nodeById.get(id)).sort((a,b)=>b.freq-a.freq || a.word.localeCompare(b.word,"fr"));
+    const direct = new Map(edges.map(e=>[e.other,e]));
+    const links = others.map(other => `<button class="relation-item official" style="--relation-color:#3477b8" data-node="${escapeHtml(other.id)}"><strong>${escapeHtml(other.word)}</strong><em>${escapeHtml(posNames[other.pos] || other.pos)}</em><small>${escapeHtml(direct.has(other.id) ? morphologyCaption(direct.get(other.id)) : "经其他成员相连 · 同词族")}</small></button>`).join("");
+    const patterns = [...new Map(edges.map(e=>[patternKey(e),e])).entries()].map(([key,e])=> {
+      const examples = (patternGroups.get(key)||[]).filter(other=>!memberIds.includes(other.a)&&!memberIds.includes(other.b)).slice(0,5);
+      if (!examples.length) return "";
+      return `<details class="family-pattern"><summary>${escapeHtml(morphologyCaption(e))}</summary><div class="relation-list">${examples.map(other=>{
+        const pair=orientedPair(other)||[other.a,other.b];
+        return `<button class="relation-item" data-node="${escapeHtml(pair[0])}"><strong>${escapeHtml(nodeById.get(pair[0]).word)} ${orientedPair(other)?"→":"↔"} ${escapeHtml(nodeById.get(pair[1]).word)}</strong><small>打开这个词族</small></button>`;
+      }).join("")}</div></details>`;
+    }).join("");
+    return `<section class="panel-section family-section"><h3>一起认识 · ${memberIds.length} 个词</h3><div class="relation-list">${links}</div><p class="candidate-note">当前收录的部分词族；间接成员不表示彼此直接派生。</p>${patterns?`<h3>在其他词族里发现规律</h3>${patterns}<p class="candidate-note">相同构词类型和词性不保证含义相同；词干也可能变化。</p>`:""}<a class="sense-source" href="https://demonette.fr/" target="_blank" rel="noopener noreferrer">构词来源：Démonette 2 · CC BY-SA 4.0 ↗</a></section>`;
   }
 
   let personal = loadPersonal();
@@ -119,7 +183,8 @@
     });
     personalEdges = personal.edges.map((edge) => ({ ...edge, a: String(edge.a), b: String(edge.b), kind: "personal", relation: "personal" }));
     for (const node of personalNodes) nodeById.set(node.id, node);
-    allNodes = officialNodes.concat(personalNodes);
+    for (const node of familyNodes) nodeById.set(node.id, node);
+    allNodes = officialNodes.concat(personalNodes, familyNodes);
   }
   rebuildPersonal();
 
@@ -174,7 +239,7 @@
     trail = [];
     for (const node of allNodes) {
       node.targetX = node.homeX; node.targetY = node.homeY;
-      node.targetAlpha = node.status === "eligible" || node.personal ? 1 : .44;
+      node.targetAlpha = node.status === "sample" ? 0 : node.status === "eligible" || node.personal ? 1 : .44;
       node.focusRole = "global"; node.focusColor = null;
     }
     panel.classList.add("hidden");
@@ -259,6 +324,9 @@
   }
 
   function connectionsFor(id, limit = 16) {
+    if (String(id).startsWith("family-")) return familyEdges.filter(([a,b]) => id === `family-${a}` || id === `family-${b}`).map(([a,b,label]) => ({ a:`family-${a}`, b:`family-${b}`, other:id === `family-${a}` ? `family-${b}` : `family-${a}`, kind:"lesson", relation:"fam", label, direction:"a_to_b" }));
+    const learningEdges = familyAdj.get(id);
+    if (learningEdges?.length) return learningEdges.map(e=>({...e,kind:"official"})).sort((a,b)=>(nodeById.get(b.other).freq||0)-(nodeById.get(a.other).freq||0)).slice(0,limit);
     const byNeighbor = new Map();
     const officialByNeighbor = new Map();
     for (const edge of officialAdj.get(id) || []) {
@@ -266,7 +334,7 @@
       officialByNeighbor.get(edge.other).push({ ...edge, kind: "official" });
     }
     for (const [other, relations] of officialByNeighbor) {
-      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(isEvidenceChecked(b)) - Number(isEvidenceChecked(a)));
+      relations.sort((a, b) => relationRank(a) - relationRank(b) || Number(isProjectReviewed(b)) - Number(isProjectReviewed(a)));
       byNeighbor.set(other, { ...relations[0], relations });
     }
     const candidates = [...personalFor(id), ...strongFormFor(id), ...strongStructuralFor(id)];
@@ -413,6 +481,8 @@
   }
 
   function visualFor(edge) {
+    if (edge.relation === "fam" && edge.review === "sourced" && edge.dimension === "derivational_morphology") return { ...RELATION_STYLE.fam, alpha: .95, label: edge.label, arrow: Boolean(orientedPair(edge)) };
+    if (edge.kind === "lesson") return { ...RELATION_STYLE.fam, alpha: .95, label: edge.label };
     if (edge.satellite) return { ...RELATION_STYLE.satellite, alpha: .34, label: "" };
     if (edge.kind === "personal") return { ...RELATION_STYLE.personal, alpha: .88, label: edge.label || "我的联想" };
     if (edge.kind === "structural") return { ...RELATION_STYLE.fam, dash: [6, 5], alpha: .68, label: `${edge.label || "构词线索"} · 待核准` };
@@ -514,7 +584,7 @@
       if (target === edge.to) drawArrow(pa, pb, visual.color, visual.alpha);
       else drawArrow(pb, pa, visual.color, visual.alpha);
     }
-    if (raw > .68 && !edge.satellite) {
+    if (raw > .68 && (!edge.satellite || edge.kind === "lesson")) {
       const t = .52;
       const mx = pa.x + (pb.x - pa.x) * t, my = pa.y + (pb.y - pa.y) * t;
       if (edge.relation === "trap" && edge.kind === "official") {
@@ -727,7 +797,7 @@
 
   function renderSenseGroups(node) {
     const groups = GRAPH_SENSES[node.id] || [];
-    if (!groups.length) return "";
+    if (!groups.length) return `<p class="candidate-note">暂缺法语义项；构词关系不能代替词义解释。</p>`;
     const flattened = groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
     const renderItems = (items) => items.map((sense) => `
       <li><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><p>${escapeHtml(sense.definition)}</p></li>
@@ -744,6 +814,13 @@
   }
 
   function renderPanel(node) {
+    if (node.status === "sample") {
+      const [pos,rule,example,translation] = familyWords[node.word];
+      panelContent.innerHTML = `<h1 class="word-title" lang="fr">${node.word}</h1><div class="word-meta">${pos}</div><p class="word-gloss">${rule}</p><section class="panel-section"><h3>放进句子里</h3><p class="family-example" lang="fr">${example}</p><p>${translation}</p></section><section class="panel-section"><h3>同一个词族</h3><div class="relation-list">${familyNodes.filter(n => n.id !== node.id).map(n => `<button class="relation-item" data-family="${n.word}" style="--relation-color:#3477b8"><strong>${n.word}</strong><small>${n.pos}</small></button>`).join("")}</div></section><details class="panel-section"><summary>发现相同规律</summary><p>heureux → heureuse → heureusement</p><p>同样先取形容词阴性形式，再加 -ment。副词的意思还可能延伸为“幸好”。</p><p>Heureusement, le bus est arrivé.<br>幸好，公交车到了。</p></details><details class="panel-section"><summary>说明与来源</summary><p>阴性变化是同一个词的不同形式；副词和名词是派生词。后缀有适用条件，不能任意套用。</p><p>本词族为教学样例。中文解释为改写，例句为本站编写。构词参照 Wiktionnaire（CC BY-SA）。</p>${["lent","lentement","lenteur","heureusement"].map(w=>`<a class="sense-source" target="_blank" rel="noopener noreferrer" href="https://fr.wiktionary.org/wiki/${w}">${w} ↗</a>`).join(" · ")}</details>`;
+      panelContent.querySelectorAll("[data-family]").forEach(b=>b.addEventListener("click",()=>enterFocus(`family-${b.dataset.family}`)));
+      panel.classList.remove("hidden");
+      return;
+    }
     const official = (officialAdj.get(node.id) || [])
       .map((edge) => ({ edge: { ...edge, kind: "official" }, node: nodeById.get(edge.other) }))
       .filter((item) => item.node)
@@ -751,7 +828,7 @@
         || Number(isProjectReviewed(b.edge)) - Number(isProjectReviewed(a.edge))
         || a.node.word.localeCompare(b.node.word, "fr"));
     const reviewed = official.filter((item) => isProjectReviewed(item.edge));
-    const sourced = official.filter((item) => !isProjectReviewed(item.edge));
+    const sourced = official.filter((item) => !isProjectReviewed(item.edge) && !(item.edge.relation === "fam" && item.edge.dimension === "derivational_morphology"));
     const mine = personalFor(node.id).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node);
     const officialIds = new Set(official.map((item) => item.node.id));
     const form = strongFormFor(node.id).filter((edge) => !officialIds.has(edge.other)).map((edge) => ({ edge, node: nodeById.get(edge.other) })).filter((item) => item.node).slice(0, 8);
@@ -765,6 +842,7 @@
       <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
       <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
+      ${renderFamily(node)}
       ${renderSenseGroups(node)}
       ${reviewed.length ? `<section class="panel-section"><h3>项目审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
@@ -794,6 +872,7 @@
       $("#stats").textContent = `${GRAPH_META.eligible_count.toLocaleString()} 主词 · ${GRAPH_META.support_node_count} 支撑词 · ${GRAPH_META.edge_count.toLocaleString()} 词群线索`;
       return;
     }
+    if (selected.startsWith("family-")) { $("#stats").textContent = "lent 词族 · 点击词语，沿着变化探索"; return; }
     const officialCount = focusConnections
       .filter((edge) => edge.kind === "official")
       .reduce((total, edge) => total + (edge.relations?.length || 1), 0);
@@ -907,22 +986,34 @@
     requestDraw();
   }, { passive: false });
 
+  function openFamily(word = "lent") { enterFocus(`family-${word}`, { resetTrail: true }); }
+  $("#family-start").addEventListener("click", () => openFamily());
+
   function doSearch() {
     const query = search.value.trim().toLocaleLowerCase("fr");
     if (!query) { searchResults.classList.add("hidden"); return; }
-    const starts = [], contains = [];
-    for (const node of allNodes) {
-      const word = node.word.toLocaleLowerCase("fr");
-      if (word.startsWith(query)) starts.push(node); else if (word.includes(query)) contains.push(node);
-      if (starts.length + contains.length > 40) break;
+    if (Object.hasOwn(familyWords, query)) {
+      searchResults.innerHTML = `<button class="search-result" data-family-result="${query}" role="option"><strong>${query}</strong><small>学习 lent 词族 · 词形、例句与构词规律</small></button>`;
+      searchResults.classList.remove("hidden");
+      searchResults.firstElementChild.addEventListener("click", () => openFamily(query));
+      return;
     }
-    const results = starts.concat(contains).slice(0, 12);
+    const normalize = word => word.toLocaleLowerCase("fr").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const q = normalize(query);
+    const rank = node => { const w = normalize(node.word); return w === q ? 0 : w.startsWith(q) ? 1 : 2; };
+    const results = allNodes.filter(node => node.status !== "sample" && normalize(node.word).includes(q))
+      .sort((a,b)=>rank(a)-rank(b) || Number(familyGroups.has(b.id))-Number(familyGroups.has(a.id)) || (b.freq||0)-(a.freq||0) || a.word.localeCompare(b.word,"fr"))
+      .slice(0,12);
     searchResults.innerHTML = results.length ? results.map((node) => `<button class="search-result" data-node="${escapeHtml(node.id)}" role="option"><strong>${escapeHtml(node.word)}</strong><em>${escapeHtml(node.pos)}</em><small>${escapeHtml(node.gloss || (node.personal ? "我的词" : node.level))}</small></button>`).join("") : `<div class="search-result"><small>没有找到；你可以用右下角的 + 添加它。</small></div>`;
     searchResults.classList.remove("hidden");
     searchResults.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => enterFocus(button.dataset.node, { resetTrail: true })));
   }
   search.addEventListener("input", doSearch);
   search.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && !event.isComposing && !searchResults.classList.contains("hidden")) {
+      const familyResult = searchResults.querySelector("[data-family-result]");
+      if (familyResult) { event.preventDefault(); openFamily(familyResult.dataset.familyResult); return; }
+    }
     if (event.key === "Enter") { const first = searchResults.querySelector("[data-node]"); if (first) enterFocus(first.dataset.node, { resetTrail: true }); }
     if (event.key === "Escape") searchResults.classList.add("hidden");
   });

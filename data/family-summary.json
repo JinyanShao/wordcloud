@@ -1,0 +1,1680 @@
+{
+  "basis": "Committed sourced derivational_morphology edges; connected groups are partial families, not exhaustive linguistic families.",
+  "runtime_sha256": "81364e2b82d1cb04fe0ca39f8b82356f4837c918f74edaec7ebb9a40fe07c88d",
+  "rendered_words": 9067,
+  "sourced_derivation_edges": 3077,
+  "family_words": 4652,
+  "partial_families": 1644,
+  "family_words_with_french_senses": 4638,
+  "family_words_with_chinese_hint": 4104,
+  "families_with_all_members_defined": 1632,
+  "largest_family": 17,
+  "by_construction": {
+    "conversion": 881,
+    "suffixation": 1634,
+    "prefixation": 307,
+    "semantic_derivation": 255
+  },
+  "patterns": [
+    {
+      "construction": "conversion",
+      "label": "词性转换",
+      "from_pos": "undirected",
+      "to_pos": "undirected",
+      "pairs": 494
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ion",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 335
+    },
+    {
+      "construction": "conversion",
+      "label": "词性转换",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 211
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ment",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 132
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ité",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 115
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -eur",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 106
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · re-",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 101
+    },
+    {
+      "construction": "conversion",
+      "label": "词性转换",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 79
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ique",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 62
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ier",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 51
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -al",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 46
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -age",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 43
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · in-",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 42
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -eux",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 42
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -if",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 40
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -able",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 39
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · en-",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 33
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ion",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 33
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aire",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 33
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -iser",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 32
+    },
+    {
+      "construction": "conversion",
+      "label": "词性转换",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 31
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -el",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 30
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · dé1-",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 29
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -if",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 29
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -té",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 26
+    },
+    {
+      "construction": "conversion",
+      "label": "词性转换",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 25
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · dé1-",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 25
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ance",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 25
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -eur",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 22
+    },
+    {
+      "construction": "conversion",
+      "label": "词性转换",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 21
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -aire",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 19
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aire",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 19
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -esse",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 19
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -et",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 18
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ette",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 18
+    },
+    {
+      "construction": "conversion",
+      "label": "词性转换",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 16
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ier",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 16
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -iste",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 16
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 14
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ien",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 14
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -iser",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 14
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · a-",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 13
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -eur",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 13
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ure",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 12
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -eur",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 11
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ieux",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 11
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -isme",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 11
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · en-",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 10
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -if",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 10
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -at",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 10
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ence",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 10
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -isme",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 10
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · a-",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 9
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -if",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 9
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ique",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 9
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -able",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 9
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -iel",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 9
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -al",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 8
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ité",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 8
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -erie",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 8
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ette",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 8
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ie",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 8
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -iste",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 8
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ière",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 8
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · re-",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 7
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -el",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 7
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ure",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 7
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -é",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 7
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · a-",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 6
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · é-",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 6
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ible",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 6
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ier",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 6
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aison",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 6
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ien",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 6
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -itude",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 6
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -il",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 5
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -in",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 5
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -er",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 5
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ie",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 5
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -iste",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 5
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -iste",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 5
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ueux",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 5
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · é-",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 4
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -able",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 4
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -uel",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 4
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -et",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 4
+    },
+    {
+      "construction": "conversion",
+      "label": "fam",
+      "from_pos": "undirected",
+      "to_pos": "undirected",
+      "pairs": 3
+    },
+    {
+      "construction": "prefixation",
+      "label": "re- 前缀",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 3
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · dé2-",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 3
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · re-",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 3
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 3
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ain",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 3
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -iser",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 3
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -itude",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 3
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -éX",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "fam",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ade",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ain",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ain",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -eux",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ice",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ier",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ifier",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -istique",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -oire",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 3
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -u",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 3
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · en-",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 2
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · trans-",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 2
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · é-",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -able",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -aliser",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -dé1X",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -dé1Xiser",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -dé1Xiser",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -eur",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -eux",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ien",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ieux",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -iser",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -iste",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -multiXal",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -oire",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 2
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -té",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -age",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ain",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aque",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ard",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -erie",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -et",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ible",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ien",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -iste",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -uel",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 2
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -é",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 2
+    },
+    {
+      "construction": "conversion",
+      "label": "分词",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "prefixation",
+      "label": "pré- 前缀",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "prefixation",
+      "label": "ré- 前缀",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · dé1-",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · dé2-",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · sur-",
+      "from_pos": "VER",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · trans-",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "prefixation",
+      "label": "前缀 · uni-",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "fam",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -aX",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -aX",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -age",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -aire",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -aire",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -aison",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -aliste",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -antiXal",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -antiXien",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -antiXique",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -biX",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -biXal",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -conXain",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -dé1X",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -eXion",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -esque",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -estre",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -eur",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -eutique",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -if",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ifier",
+      "from_pos": "ADJ",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -iniste",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -interXaire",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -interXal",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -isme",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -isme",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -iste",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -istique",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -itime",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ité",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ive",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ment",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -monoX",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -monoXal",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -multiX",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -oire",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -on",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -préXaire",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ueux",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -uniXal",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -ural",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -urne",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -é",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "semantic_derivation",
+      "label": "异形词族 · -étique",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ain",
+      "from_pos": "ADV",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ain",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aire",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aire",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aire",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aire",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -an",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -an",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ant",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ant",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ard",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aste",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ataire",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ataire",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -atique",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -aume",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -elet",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -er",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -er",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -er",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -erie",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -et",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ette",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -eur",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ible",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ien",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ier",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ier",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -if",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ifier",
+      "from_pos": "NOM",
+      "to_pos": "VER",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -in",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ing",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -is",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -isan",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ise",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ise",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -o",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ois",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ot",
+      "from_pos": "NOM",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -té",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ueux",
+      "from_pos": "VER",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ure",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -yen",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -âtre",
+      "from_pos": "ADJ",
+      "to_pos": "ADJ",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ère",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -ée",
+      "from_pos": "VER",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -éen",
+      "from_pos": "NOM",
+      "to_pos": "NOM",
+      "pairs": 1
+    },
+    {
+      "construction": "suffixation",
+      "label": "后缀 · -éisme",
+      "from_pos": "ADJ",
+      "to_pos": "NOM",
+      "pairs": 1
+    }
+  ],
+  "missing_basic_words": []
+}

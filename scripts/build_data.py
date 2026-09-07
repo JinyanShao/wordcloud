@@ -43,7 +43,12 @@ FUNCTIONAL_ADVERBS = {
     "même", "moins", "non", "oui", "partout", "peu", "plus", "plutôt",
     "pourquoi", "pourtant", "presque", "puis", "quand", "quelquefois",
     "seulement", "si", "sinon", "souvent", "tant", "tard", "tôt", "toujours",
-    "tout", "toute", "très", "trop", "vite", "volontiers", "vraiment", "çà",
+    "ne", "pas", "tout", "toute", "très", "trop", "vite", "volontiers", "vraiment", "çà",
+}
+CARDINAL_NUMBER_WORDS = {
+    "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix",
+    "onze", "douze", "treize", "quatorze", "quinze", "seize", "vingt", "trente",
+    "quarante", "cinquante", "soixante", "cent", "mille", "million", "milliard",
 }
 
 
@@ -218,6 +223,11 @@ def classify(row: object, lexique: dict[str, object] | None, glosses: list[str] 
         return "excluded", "invalid_surface", 0.0
     if row.tag == "ADV" and normalized in FUNCTIONAL_ADVERBS:
         return "auxiliary", "functional_adverb", 0.08
+    # FLELex represents some cardinal numbers as NOM.  The runtime currently
+    # has no numeral POS or teaching treatment, so do not present them as
+    # nouns in a word-family product.
+    if normalized in CARDINAL_NUMBER_WORDS:
+        return "needs_review", "unsupported_numeral", 0.05
     if normalized.count("-") >= 3:
         return "needs_review", "complex_expression", 0.08
     if not lexique:
@@ -230,8 +240,12 @@ def classify(row: object, lexique: dict[str, object] | None, glosses: list[str] 
     canonical = str(lexique.get("lemma") or word)
     if canonical[:1].isupper():
         return "excluded", "capitalized_or_proper", 0.0
+    # Foundational content words are a primary learning entry point.  Keep
+    # function words out above, but render A1/A2 nouns, verbs, adjectives and
+    # lexical adverbs when they have the same Lexique alignment required for
+    # the rest of the graph.
     if row.level in {"A1", "A2"}:
-        return "auxiliary", "foundational_content", 0.2
+        return "eligible", "foundational_content", 0.5
     if row.level == "C2":
         if has_gloss or frequency >= 0.1:
             return "needs_review", "advanced_tail", 0.15
@@ -500,12 +514,12 @@ def write_report(conn: sqlite3.Connection) -> None:
         "",
         "## Intended use 与判定规则",
         "",
-        "自动进入主词表的词，必须是 B1–C1 的名词、动词、形容词或实义副词，能与 Lexique 4 的 lemma+POS 对齐，并满足以下至少一项：",
+        "自动进入主词表的词，必须是 A1–C1 的名词、动词、形容词或实义副词，能与 Lexique 4 的 lemma+POS 对齐。A1/A2 基础实词以此对齐作为准入条件；B1–C1 还必须满足以下至少一项：",
         "",
         "- CFDICT 有中文释义候选；",
         f"- FLELex 总频率 ≥ {MIN_UNGLOSSED_FREQUENCY}/百万。",
         "",
-        "封闭类虚词与 A1/A2 实词进入 auxiliary，不计入主覆盖率；只有已审核官方关系实际用到的少量 auxiliary 才作为支撑节点进入星图。人工抽检覆盖可以修正自动状态，所有例外都保留 manual_audit_override 原因。",
+        "封闭类虚词与功能副词进入 auxiliary；只有已审核官方关系实际用到的少量 auxiliary 才作为支撑节点进入星图。人工抽检覆盖可以修正自动状态，所有例外都保留 manual_audit_override 原因。",
         "",
         "## 数据源与规模",
         "",
@@ -561,8 +575,8 @@ def write_report(conn: sqlite3.Connection) -> None:
         "",
         "- sources.sha256 必须完整；",
         "- lexemes(normalized, pos) 唯一；",
-        "- 自动 eligible 必须为 B1–C1 实词且存在 Lexique 对齐；人工覆盖例外必须带 manual_audit_override；",
-        "- 自动 eligible 若缺 CFDICT，FLELex frequency 必须 ≥ 1/百万；人工覆盖例外同上；",
+        "- 自动 eligible 必须为 A1–C1 实词且存在 Lexique 对齐；人工覆盖例外必须带 manual_audit_override；",
+        "- 自动 eligible 的 B1–C1 词若缺 CFDICT，FLELex frequency 必须 ≥ 1/百万；A1/A2 基础实词不以 CFDICT 覆盖作为准入条件；",
         "- audit sample 必须恰好 500 条且无重复 lexeme；",
         "- 任何 layout link 和 official edge 必须满足端点存在、a_id < b_id。",
         "",

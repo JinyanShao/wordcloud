@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>wordcloud · 法语词网</title>
   <meta name="description" content="从疏密与连接中探索法语词汇。">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=family-scale-3">
 </head>
 <body>
   <header class="topbar">
@@ -23,7 +23,7 @@
   <main id="viewport">
     <canvas id="stage" aria-label="可缩放的法语词汇关系图"></canvas>
     <div class="map-copy" id="map-copy">
-      <p>中心更常用 · 外围更进阶 · 滚轮 / 双指缩放</p>
+      <p>搜索一个词，认识它的词族。</p><button id="family-start" class="quiet-button" type="button">试试 lent 词族</button>
     </div>
     <nav id="focus-bar" class="focus-bar hidden" aria-label="探索路径">
       <button id="focus-back" type="button" aria-label="返回全图" title="返回全图">←</button>
@@ -80,6 +80,6 @@
   </div>
 
   <script src="graph-data.js?v=senses-v3"></script>
-  <script src="app.js?v=senses-v3"></script>
+  <script src="app.js?v=family-scale-3"></script>
 </body>
 </html>

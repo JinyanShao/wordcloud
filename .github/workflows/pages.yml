@@ -24,6 +24,8 @@ jobs:
           python3 scripts/build_summary.py --check-docs
           git diff --exit-code -- data/build-summary.json
           python3 scripts/validate_runtime.py
+          python3 scripts/audit_families.py --check
+          python3 -m unittest discover -s tests -p "test_*.py"
 
   deploy:
     needs: runtime-ci
