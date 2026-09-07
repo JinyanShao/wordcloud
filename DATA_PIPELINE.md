@@ -79,6 +79,17 @@ The current checked build is recorded in `data/build-summary.json`: 9,067 render
 
 A rebuild is required whenever source snapshots or the A1/A2 foundational-content admission rule changes.
 
+## Deterministic learner projection
+
+`learner-content.js` is a separate browser projection of direct `fam + sourced + derivational_morphology` facts. It contains stable lexical-identity keys, endpoints, direction, conservative relation classifications, and observed same-structure examples; it does not duplicate French definitions, source examples, or generated teaching text.
+
+```bash
+python3 scripts/build_learner_content.py
+python3 scripts/validate_learner_content.py
+```
+
+An observed structure is not a productive-rule claim. `semantic_derivation` and other opaque relations remain irregular-family facts. `data/learner-content-overrides.json` may only carry future teaching classifications or notes; it cannot alter sourced linguistic facts.
+
 ## Build the core-word gap list
 
 ```bash
