@@ -146,11 +146,11 @@ def load_rendered(conn: sqlite3.Connection) -> list[dict[str, object]]:
     ]
 
 
-def analyze() -> dict[str, object]:
+def analyze(rendered_override: list[dict[str, object]] | None = None) -> dict[str, object]:
     if not RAW_PATH.exists():
         raise SystemExit(f"missing DBnary source: {RAW_PATH}")
     conn = sqlite3.connect(DB_PATH)
-    rendered = load_rendered(conn)
+    rendered = load_rendered(conn) if rendered_override is None else rendered_override
     by_key = {(str(row["normalized"]), str(row["pos"])): row for row in rendered}
     current_hash = sha256(RAW_PATH)
     expected_hash = expected_source_sha256()

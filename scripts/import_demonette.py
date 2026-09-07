@@ -157,7 +157,7 @@ def choose_variant(rows: list[dict[str, object]]) -> dict[str, object]:
     )
 
 
-def analyze() -> dict[str, object]:
+def analyze(rendered_override: list[dict[str, object]] | None = None) -> dict[str, object]:
     required = [RAW / name for name in ("demonette-2.0.zip", "lexemes.csv", "relations.csv", "families.csv", "readme.txt")]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.exists()]
     if missing:
@@ -166,6 +166,9 @@ def analyze() -> dict[str, object]:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     wordcloud, rendered = load_wordcloud(conn)
+    if rendered_override is not None:
+        rendered = rendered_override
+        wordcloud = {(row["normalized"], row["pos"]): row for row in rendered}
     source = conn.execute("SELECT * FROM sources WHERE id=?", (SOURCE_ID,)).fetchone()
     source_hash_ok = bool(source and source["sha256"] == sha256(ROOT / source["local_path"]))
     demonette, lexeme_profile = load_demonette_lexemes()

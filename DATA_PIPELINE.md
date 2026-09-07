@@ -75,7 +75,9 @@ Outputs:
 - `data/build-summary.json`: checked public build manifest used by README and validation
 - `data/reports/build-validation.md`: build evidence and invariant checks
 
-The current checked build is recorded in `data/build-summary.json`: 7,985 rendered nodes, including 7,314 eligible lexemes and 671 support lexemes; 6,480 formal relations; 16,058 browser layout links; 31,328 French definitions; 79.3% formal-relation coverage for eligible rendered words; one connected component.
+The current checked build is recorded in `data/build-summary.json`: 9,067 rendered nodes, including 9,046 eligible lexemes and 21 support lexemes; 9,187 formal relations; 21,055 browser layout links; 45,095 French definitions; 74.2% formal-relation coverage for eligible rendered words; one connected component.
+
+A rebuild is required whenever source snapshots or the A1/A2 foundational-content admission rule changes.
 
 ## Build the core-word gap list
 

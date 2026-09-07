@@ -176,3 +176,12 @@ button { color: inherit; }
 }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition-duration: 0ms !important; } }
+
+/* Family teaching uses the existing graph and side panel. */
+#family-start { pointer-events: auto; margin-top: 8px; background: var(--paper-solid); }
+.is-focused #family-start { display: none; }
+.family-example { font: 22px/1.5 var(--serif); }
+
+.family-pattern { border-top: 1px solid var(--hairline); padding: 8px 0; }
+.family-pattern summary { cursor: pointer; font-size: 12px; line-height: 1.6; }
+.family-pattern .relation-list { margin-top: 8px; }

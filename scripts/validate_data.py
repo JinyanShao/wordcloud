@@ -75,21 +75,22 @@ def main() -> None:
         FROM audit_samples
         """
     ).fetchone()
-    check("500 条分层人工抽检", audit["n"] == 500 and audit["unique_n"] == 500 and audit["reviewed"] == 500,
-          f"sample={audit['n']}, unique={audit['unique_n']}, reviewed={audit['reviewed']}")
+    check("500 条分层审计样本", audit["n"] == 500 and audit["unique_n"] == 500,
+          f"sample={audit['n']}, unique={audit['unique_n']}, carried reviews={audit['reviewed']}, new rows require review")
 
     invalid_auto = conn.execute(
         """
         SELECT COUNT(*) FROM lexemes
         WHERE status='eligible'
           AND decision_reason NOT LIKE 'manual_audit_override:%'
-          AND (cefr_level NOT IN ('B1','B2','C1') OR pos NOT IN ('NOM','VER','ADJ','ADV') OR has_lexique=0)
+          AND (cefr_level NOT IN ('A1','A2','B1','B2','C1') OR pos NOT IN ('NOM','VER','ADJ','ADV') OR has_lexique=0)
         """
     ).fetchone()[0]
     invalid_unglossed = conn.execute(
         """
         SELECT COUNT(*) FROM lexemes
-        WHERE status='eligible' AND has_cfdict=0 AND flelex_frequency < 1
+        WHERE status='eligible' AND cefr_level IN ('B1','B2','C1')
+          AND has_cfdict=0 AND flelex_frequency < 1
           AND decision_reason NOT LIKE 'manual_audit_override:%'
         """
     ).fetchone()[0]

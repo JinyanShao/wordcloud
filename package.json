@@ -16,7 +16,9 @@
     "check:runtime": "python3 scripts/validate_runtime.py",
     "graph:build": "pnpm demonette:analyze && pnpm demonette:approve && pnpm dbnary:analyze && pnpm dbnary:approve && pnpm graph:candidates && pnpm graph:layout && pnpm graph:export",
     "check:full": "python3 scripts/validate_data.py",
-    "check": "pnpm check:runtime"
+    "check": "pnpm check:runtime",
+    "families:audit": "python3 scripts/audit_families.py",
+    "families:check": "python3 scripts/audit_families.py --check"
   },
   "devDependencies": {
     "graphology": "^0.25.4",
