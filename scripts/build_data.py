@@ -17,7 +17,10 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-import pandas as pd
+try:
+    import pandas as pd
+except ModuleNotFoundError:  # Static-runtime CI imports classify without build deps.
+    pd = None
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,6 +48,11 @@ FUNCTIONAL_ADVERBS = {
     "seulement", "si", "sinon", "souvent", "tant", "tard", "tôt", "toujours",
     "ne", "pas", "tout", "toute", "très", "trop", "vite", "volontiers", "vraiment", "çà",
 }
+
+
+def require_pandas() -> None:
+    if pd is None:
+        raise SystemExit("pandas is required for data rebuilds; install requirements-build.txt")
 CARDINAL_NUMBER_WORDS = {
     "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix",
     "onze", "douze", "treize", "quatorze", "quinze", "seize", "vingt", "trente",
@@ -67,7 +75,7 @@ def sha256(path: Path) -> str:
 
 
 def nullable(value: object) -> str | None:
-    if pd.isna(value):
+    if pd is not None and pd.isna(value):
         return None
     text = str(value).strip()
     return text or None
@@ -75,7 +83,7 @@ def nullable(value: object) -> str | None:
 
 def number(value: object, default: float = 0.0) -> float:
     try:
-        if pd.isna(value):
+        if pd is not None and pd.isna(value):
             return default
         return float(value)
     except (TypeError, ValueError):
@@ -610,6 +618,7 @@ def export_eligible(conn: sqlite3.Connection) -> None:
 
 
 def build() -> None:
+    require_pandas()
     PROCESSED.mkdir(parents=True, exist_ok=True)
     REPORTS.mkdir(parents=True, exist_ok=True)
     if DB_PATH.exists():
