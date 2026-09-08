@@ -1,0 +1,3883 @@
+{
+  "schema_version": 1,
+  "part": 1,
+  "parent_artifact_hash": "df180edf19db921b8d578dc9f492d9e09d33d111f9cb13d2411dfe3353494b1e",
+  "items": [
+    {
+      "stable_lexeme_key": "grand|ADJ",
+      "runtime_lexeme_id": 5859,
+      "lemma": "grand",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1751.4399,
+        "lexique_frequency": 565.278,
+        "contextual_diversity": 67.52449
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_1_grand__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Par analogie) De dimensions (hauteur/taille, longueur, profondeur, etc.) importantes, qui dépassent celles de ses semblables, ou de longue durée. Par exemple, de volume supérieur à la moyenne (ou normale) des individus de même espèce et sexe et d’âge similaire.",
+          "sourced_examples": [
+            "Le bourreau chef jeta un coup d’œil sur la besogne et parut mécontent : la découpure n’était pas assez grande.",
+            "Pendant un grand mois, ils s’enfermèrent, ils ne sortirent pas une seule fois de la Souleiade."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_1.a_grand__adj__1",
+          "sense_number": "1.a",
+          "source_order": 2,
+          "definition_fr": "(En particulier) De hauteur importante.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_2_grand__adj__1",
+          "sense_number": "2",
+          "source_order": 3,
+          "definition_fr": "Qui a grandi.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_3_grand__adj__1",
+          "sense_number": "3",
+          "source_order": 4,
+          "definition_fr": "En grande quantité. Pas clair",
+          "sourced_examples": [
+            "C’est ainsi que la quasi-totalité des prix des grands produits industriels connaissent au XIXe siècle un trend orienté à la baisse. Dans la sidérurgie française par exemple, les « fers et aciers ouvrés » passent de l’indice 100 en 1850 à l’indice 72 en 1911."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_4_grand__adj__1",
+          "sense_number": "4",
+          "source_order": 5,
+          "definition_fr": "(Par litote) ou (Par euphémisme), (Informel) Beaucoup de. Note d’usage : s’emploie dans une forme négative.",
+          "sourced_examples": [
+            "Depuis le 3 novembre, les avocats du président sortant font tout leur possible pour invalider la victoire de Joe Biden, sans grand succès.",
+            "Ce livre n’ayant pas grand intérêt, il ne passionnait pas grand monde avant que son auteur ne soit victime d’un accident spectaculaire."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_5_grand__adj__1",
+          "sense_number": "5",
+          "source_order": 6,
+          "definition_fr": "Extrême ; lointain.",
+          "sourced_examples": [
+            "Il y avait déjà deux jours que le bateau filait vers le grand Nord, à la vitesse maintenue de vingt nœuds."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_6_grand__adj__1",
+          "sense_number": "6",
+          "source_order": 7,
+          "definition_fr": "(Typographie) Majuscule (en parlant d'une lettre).",
+          "sourced_examples": [
+            "Il lui parlait d’hôtel, de frais, de remboursement. C’était un vrai con. Avec un grand C. Il venait à peine de lui annoncer que sa grand-mère était morte. Et il lui faisait un exposé sur la générosité de l’administration judiciaire.",
+            "Oh, je ne crois pas du tout en l’homme avec un grand H, sans quoi je n’aurais rien à faire. Si je croyais en l’homme avec un grand H, il n’y aurait qu’à laisser faire les choses puisque ça marcherait forcément très bien pour cet homme avec un grand H."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_7_grand__adj__1",
+          "sense_number": "7",
+          "source_order": 8,
+          "definition_fr": "(Sens figuré) Célèbre, réputé, admirable, noble.",
+          "sourced_examples": [
+            "Politiqueurs cessez vous bavardages, Car maintenant l’on connait vos forfaits ; Vous n’êtes grands que dans vos tripotages, N’espérez plus nous tromper désormais.",
+            "Personne de vraiment grand, sentait-on, n’aurait eu une expression si virulente et si agressive, bien qu’en réalité Butteridge eût une taille de six pieds deux pouces (1m88) et un poids exactement proportionnel."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "grand__adj__1",
+          "sense_id": "__ws_8_grand__adj__1",
+          "sense_number": "8",
+          "source_order": 9,
+          "definition_fr": "Utilisé pour former une locution employée comme titre honorifique, comme dans « grand-duc », « grand-vizir » ou « grand secrétaire ».",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "grand__adj__1",
+        "sense_id": "__ws_1_grand__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|grandeur|NOM|grand|ADJ",
+          "subtype": "suffixation",
+          "direction": "5859->5866",
+          "label": "后缀 · -eur",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_grand__adj__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "大",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "De dimensions importantes",
+          "mapped_sense_id": "__ws_1_grand__adj__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_grand__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "高",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "De hauteur importante|1.a)",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_grand__adj__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "长大的",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui a grandi",
+          "mapped_sense_id": "__ws_2_grand__adj__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_grand__adj__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "有名",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Célèbre, admirable",
+          "mapped_sense_id": "__ws_7_grand__adj__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "a61f4af97834bf05408ccdadcddcefce1a63b61d9ebd2207304aa5d51f3b60c2"
+    },
+    {
+      "stable_lexeme_key": "petit|ADJ",
+      "runtime_lexeme_id": 9495,
+      "lemma": "petit",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1516.6354,
+        "lexique_frequency": 948.199,
+        "contextual_diversity": 79.48255
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_1_petit__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "De taille réduite.",
+          "sourced_examples": [
+            "Un petit caillou.",
+            "C’est un homme de petite taille."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_2_petit__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Jeune.",
+          "sourced_examples": [
+            "Quand j’étais petit, je jouais souvent à la balle.",
+            "La vieille devait être beaucoup plus grande quand elle était petite."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_3_petit__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Mesquin ; médiocre.",
+          "sourced_examples": [
+            "Ah ! Ce que tu dis est vraiment petit !",
+            "M. le prince lui répondit fièrement qu’il était las de rendre compte de ses actions à de petits messieurs comme lui, qui en jugeraient à leur mode."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_4_petit__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Qui est peu élevé en quantité, qui n’atteint pas la mesure ordinaire.",
+          "sourced_examples": [
+            "Les Spartiates étaient petits en nombre, grands de cœur, ambitieux et violents ; de fausses lois n’en aurait tiré que de pâles coquins ; Lycurgue en fit d’héroïques brigands.",
+            "Un petit nombre de convives a repris du dessert."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_5_petit__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "En raccourci, en miniature.",
+          "sourced_examples": [
+            "Cette ville est un petit paris.",
+            "D'autres immigrants venus de pays plus lointains ont pris racine au Québec, essentiellement dans la région montréalaise où se sont multipliés les quartiers que l'on baptise par les pays d'origine d'une partie de leur population : Petite Italie, Petit Haïti, Petite Grèce, Petite Portugal, Petit Liban, Petit Maghreb. Pour la même raison Trois-Rivières a eu sa Petite Pologne où vivaient de nombreux Polonais embauchés à l'usine de textile Wabasso."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_6_petit__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Familier) Marque d’affection.",
+          "sourced_examples": [
+            "Mon petit mari.",
+            "Chère petite."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_7_petit__adj__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Péjoratif) Marque de rabaissement.",
+          "sourced_examples": [
+            "Et ce petit imbécile prétentieux qui nous raconte tout sur une Chine qu’il ne connaît pas ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_8_petit__adj__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "(Sciences) Négligeable, dont on peut s’abstenir de tenir compte dans les calculs sans qu'ils soient significativement altérés.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_9_petit__adj__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "Appel adressé à un jeune garçon.",
+          "sourced_examples": [
+            "Non, bien certainement, il n’y a plus aujourd’hui des couchers de soleils comme ceux-là… Quand ils s’annonçaient plus spécialement magnifiques ou extraordinaires, et que je n’y étais pas, tante Berthe, qui n’en manquait pas un, m’appelait en hâte : « Petit !… petit !… viens vite ! »"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "petit__adj__1",
+          "sense_id": "__ws_10_petit__adj__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "Appel répété lancé aux volailles d'une basse-cour pour les rassembler.",
+          "sourced_examples": [
+            "Petits ! Petits !",
+            "La maman donna à manger aux pigeons sans appeler : petits, petits ; elle jetait les graines comme ça, de loin, d’ailleurs."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "petit__adj__1",
+        "sense_id": "__ws_1_petit__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|petitesse|NOM|petit|ADJ",
+          "subtype": "suffixation",
+          "direction": "9495->9504",
+          "label": "后缀 · -esse",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_petit__adj__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "小",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "De taille réduite",
+          "mapped_sense_id": "__ws_1_petit__adj__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_petit__adj__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "年轻",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Jeune",
+          "mapped_sense_id": "__ws_2_petit__adj__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "453e83b0f13d227dd2072e15ad81f8637120cc0f3520845df7a62a1c496d1672"
+    },
+    {
+      "stable_lexeme_key": "bon|ADJ",
+      "runtime_lexeme_id": 1515,
+      "lemma": "bon",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1140.0305,
+        "lexique_frequency": 1011.253,
+        "contextual_diversity": 96.3319
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_1_bon__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Qui a des qualités conformes à ce que l’on attendait.",
+          "sourced_examples": [
+            "C’est un bon outil que tu utilises.",
+            "Quelle bonne idée !"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_2_bon__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Qui est avantageux ; favorable ; utile ; convenable.",
+          "sourced_examples": [
+            "Les cache-nez masculins et féminins sont d'un goût parfait au Comptoir des Indes, et, à cette époque de fin d’année, il est bon de signaler les dessins les plus séduisants et les plus nouveaux.",
+            "Le monsieur ventripotent qui tient la caisse est en train de servir un digestif à un homme qui semble être un bon client."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_3_bon__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Agréable pour pratiquer une activité.",
+          "sourced_examples": [
+            "Alors l’eau était bonne ?",
+            "La neige était bonne ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_4_bon__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Généreux, qui fait le bien.",
+          "sourced_examples": [
+            "Cet homme est très bon avec les autres.",
+            "Vous êtes trop bon."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_5_bon__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Conforme aux normes, à la raison, à la justice, à la morale, au devoir, à l’honnêteté.",
+          "sourced_examples": [
+            "C’est un bon père.",
+            "Faire un bon usage de sa fortune."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_6_bon__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "D’un goût agréable, gouteux.",
+          "sourced_examples": [
+            "As-tu jamais mangé quelque chose d’aussi bon ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_7_bon__adj__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Informel) Se dit d’une blague ou d’un trait d’humour très efficace, qui fait beaucoup rire.",
+          "sourced_examples": [
+            "Angelo se résolut à conter une plaisanterie. Santa s’arracha un rire avant de s’écrier : – Haha ! Elle est bonne !",
+            "Haha ! C'est bon, ça !"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_8_bon__adj__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "D’une certaine intensité ; d'une certaine quantité.",
+          "sourced_examples": [
+            "Elle comptait les clous de la porte depuis un bon moment lorsqu'elle entendit le grincement d'une porte qu'on ouvre et le bruit d'un verrou tiré […].",
+            "Après lui avoir massé le cuir chevelu pendant une bonne minute, elle lui remit la tête sous le jet en s'attachant à ne pas crisper les doigts pendant qu'elle le rinçait."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_9_bon__adj__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "(Très familier) Attirant physiquement. Surtout au féminin.",
+          "sourced_examples": [
+            "Putain grave comme elle est bonne !",
+            "Le raisonnement semble logique : « Si je mets une photo de moi avec une meuf bonne, toutes les meufs vont croire que je suis un bogosse irrésistible qui se tape uniquement des meufs bonnes, et vont vouloir me pécho par mimétisme »."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_10_bon__adj__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "(Absolument) Je te souhaite un bon … Note : Formule de politesse pour souhaiter quelque chose de bon à l’interlocuteur.",
+          "sourced_examples": [
+            "— Bonne journée !— Merci, toi aussi.",
+            "Bon courage !"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_11_bon__adj__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "(Québec) Être doué, talentueux.",
+          "sourced_examples": [
+            "J’ai trouvé que cette chanteuse était vraiment bonne."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "bon__adj__1",
+          "sense_id": "__ws_12_bon__adj__1",
+          "sense_number": "12",
+          "source_order": 12,
+          "definition_fr": "(Nouvelle-Calédonie) (Familier) Qui va bien.",
+          "sourced_examples": [
+            "Il est bon ou quoi ?"
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "bon__adj__1",
+        "sense_id": "__ws_1_bon__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|bonté|NOM|bon|ADJ",
+          "subtype": "suffixation",
+          "direction": "1515->1533",
+          "label": "后缀 · -té",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_bon__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "好",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "c928f1b14775481ac15856d88467c0dd292a7e594a3a0f5501016e96084c4187"
+    },
+    {
+      "stable_lexeme_key": "nouveau|ADJ",
+      "runtime_lexeme_id": 8740,
+      "lemma": "nouveau",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1079.5398,
+        "lexique_frequency": 493.136,
+        "contextual_diversity": 67.94091
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_1_nouveau__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Objectivement) Qui n’existait pas auparavant, avant telle date donnée, avec rien de pareil ni de comparable.",
+          "sourced_examples": [
+            "Le nouveau campement est établi à une douzaine de kilomètres de l’ancien, dans une plaine ondulée et verdoyante.",
+            "Ces personnes nouvelles, que les jeunes gens trouvaient fort anciennes, et que d’ailleurs certains vieillards qui n’avaient pas été que dans le grand monde croyaient bien reconnaître pour ne pas être si nouvelles que cela, n’offraient pas seulement à la société les divertissements de conversation politique et de musique dans l’intimité qui lui convenaient ; il fallait encore que ce fussent elles qui les offrissent, car pour que les choses paraissent nouvelles si elles sont anciennes, et même si elles sont nouvelles, il faut en art, comme en médecine, comme en mondanité, des noms nouveaux."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_2_nouveau__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Subjectivement) Que l’on n’avait jamais vu auparavant.",
+          "sourced_examples": [
+            "Un nouveau visage : une personne qu’on n’a pas encore vue. Qui n’avait jamais été vu(e).",
+            "Un nouveau député fraichement élu."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_3_nouveau__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Qui tire de son caractère récent une valeur de création, d’invention, un sentiment de nouveauté intrinsèque.",
+          "sourced_examples": [
+            "Il semble que les premiers mots des Métamorphoses d’Ovide, In nova fert animus, soient la devise du genre humain […] Un colporteur ne se chargera pas d’un Virgile, d’un Horace, mais d’un livre nouveau […] Les femmes se plaignent depuis le commencement du monde des infidélités qu’on leur fait en faveur du premier objet nouveau qui se présente, et qui n’a souvent que cette nouveauté pour tout mérite.",
+            "La mauvéine a été la nouvelle couleur du milieu du xixe siècle. Elle a été à l’origine de la mauve mania."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_4_nouveau__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Nouveau pour quelqu’un ; qui était jusqu’ici inconnu de lui ; dont il n’a pas l’habitude.",
+          "sourced_examples": [
+            "Enfin, si on lui vole sa maîtresse, il est douteux qu’il puisse faire totalement abstraction de la réalité de cet incident et s’en dédommager par la surprise d’un sentiment nouveau.",
+            "Le critère minimum permettant de reconnaitre une innovation est le fait d’être nouveau pour la firme [… ] Une innovation est nouvelle pour le marché quand l’entreprise est la première à la lancer sur le son marché […] Une innovation est nouvelle pour le monde quand l’entreprise est la première à la lancer sur tous les marchés et dans tous les secteurs d’activité, nationaux et internationaux."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_5_nouveau__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Œnologie) En parlant d’un vin : ayant subi une très courte vinification, et consommé moins d’un an après la récolte.",
+          "sourced_examples": [
+            "Ainsi, ils en font un vin bourru, c'est-à-dire , un vin nouveau et doux qui n'a point fermenté, et qu'ils vendent aussitôt."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_6_nouveau__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Pour les personnes) Qui n’a pas d’expérience ou d’habitude ; sans ancienneté.",
+          "sourced_examples": [
+            "Cette serveuse est nouvelle. Elle commence aujourd’hui."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_7_nouveau__adj__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Autre, qui succède à un moment donné à un être ou à une chose de même ordre.",
+          "sourced_examples": [
+            "Avant-hier il a plu toute la journée, mais le soir, malgré le ciel couvert, tout le monde guettait anxieusement l’apparition de la lune nouvelle.",
+            "Le nouveau permis de conduire arrive en 2013."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_8_nouveau__adj__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "Ressemblant, semblable, en conformité, dans une suite temporelle, avec une autre personne ou une autre chose.",
+          "sourced_examples": [
+            "Sebastian Vettel, le nouveau fangio selon Sir Stirling Moss.",
+            "Messi, le nouveau Maradona."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "nouveau__adj__1",
+          "sense_id": "__ws_9_nouveau__adj__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "De plus, supplémentaire.",
+          "sourced_examples": [
+            "Nouveau naufrage d’un bateau de migrants en Méditerranée."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "nouveau__adj__1",
+        "sense_id": "__ws_1_nouveau__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|nouveauté|NOM|nouveau|ADJ",
+          "subtype": "suffixation",
+          "direction": "8740->8744",
+          "label": "后缀 · -té",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_nouveau__adj__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "新",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "(Objectivement) Qui n’existait pas auparavant, avant telle date donnée, avec rien de pareil ni de comparable.",
+          "mapped_sense_id": "__ws_1_nouveau__adj__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_nouveau__adj__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "新",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "(Subjectivement) Que l’on n’avait jamais vu auparavant.",
+          "mapped_sense_id": "__ws_2_nouveau__adj__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "7d442168cd9f05f6592cf3327b8b755c9491d7ba99349a22c4fae3f86804623a"
+    },
+    {
+      "stable_lexeme_key": "jeune|ADJ",
+      "runtime_lexeme_id": 7168,
+      "lemma": "jeune",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 878.3185,
+        "lexique_frequency": 241.797,
+        "contextual_diversity": 47.21678
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "jeune__adj__1",
+          "sense_id": "__ws_1_jeune__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Qui est dans une phase au commencement de sa vie ou de son développement ; qui n’est guère avancé en âge, en parlant des humains, des animaux ou des végétaux.",
+          "sourced_examples": [
+            "J’aurais pu […] accepter les offres engageantes des jeunes et jolies Mangavériennes, avoir là des enfants bronzés qui auraient grandi libres et heureux sous le chaud soleil de la Polynésie.",
+            "Plus d’un jeune instituteur stagiaire a retrouvé dans le siècle celle pour qui s’échafaudaient ses odes et ses sonnets."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jeune__adj__1",
+          "sense_id": "__ws_2_jeune__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Parfois) Qui n’a pas l’âge habituel par rapport aux emplois, aux dignités qu’on ne donne ordinairement qu’à des hommes faits ou à des personnes déjà avancées en âge.",
+          "sourced_examples": [
+            "Il est trop jeune pour un emploi si important.",
+            "Il a été élu académicien bien jeune."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jeune__adj__1",
+          "sense_id": "__ws_3_jeune__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Qui a encore quelque chose de l’ardeur, de la vivacité et de l’agrément de la jeunesse, au-delà de l'âge réel.",
+          "sourced_examples": [
+            "Malgré son âge, elle a su rester jeune.",
+            "J'aime les vieux jeunes par en dedans, c'est une clé de ma compréhension du dialogue intergénérationnel. J'aime les vieux dans la mesure où ils ne sont pas que vieux, de la même manière que j'aime les jeunes qui ne font pas qu'être jeunes en s'intéressant un tant soit peu aux questions éternelles de la philosophie."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jeune__adj__1",
+          "sense_id": "__ws_4_jeune__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Qui est propre à une personne dans la jeunesse.",
+          "sourced_examples": [
+            "De jeunes désirs. — De jeunes ardeurs.",
+            "Cette pensée enflammait son jeune courage."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jeune__adj__1",
+          "sense_id": "__ws_5_jeune__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Familier) Qui ne sied qu’à des personnes jeunes.",
+          "sourced_examples": [
+            "Cette couleur est jeune. Cela fait jeune.",
+            "Cette couleur est trop jeune pour moi.,"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jeune__adj__1",
+          "sense_id": "__ws_6_jeune__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Qui est nouveau, qui n’existe que depuis récemment.",
+          "sourced_examples": [
+            "Premier problème, le jeu vidéo reste un secteur jeune. Suffisamment jeune, en tout cas, pour que les pionniers d’hier soient les dirigeants d’aujourd’hui."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jeune__adj__1",
+          "sense_id": "__ws_7_jeune__adj__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Qui manque d’expérience, de maturité ; qui est étourdi, évaporé.",
+          "sourced_examples": [
+            "Mon Dieu, qu’il est jeune!"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jeune__adj__1",
+          "sense_id": "__ws_8_jeune__adj__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "(Spécialement) (Eaux & Forêts) Qualifie un taillis, des baliveaux, d’un an.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "jeune__adj__1",
+        "sense_id": "__ws_1_jeune__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|jeunesse|NOM|jeune|ADJ",
+          "subtype": "suffixation",
+          "direction": "7168->7170",
+          "label": "后缀 · -esse",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_jeune__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "年轻",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "683e1378efb6e34520ad7ff94868cd5efdbbcd50e83d66c7f7778ffc43618eb4"
+    },
+    {
+      "stable_lexeme_key": "seul|ADJ",
+      "runtime_lexeme_id": 11900,
+      "lemma": "seul",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 821.6381,
+        "lexique_frequency": 808.089,
+        "contextual_diversity": 78.36344
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "seul__adj__1",
+          "sense_id": "__ws_1_seul__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Qui est sans compagnie ; qui n’est pas avec d’autres.",
+          "sourced_examples": [
+            "Elle se chargea de tout, prit le billet, fit enregistrer les bagages, installa la voyageuse dans un compartiment de dames seules.",
+            "— Il reconnaît que les âmes sont impénétrables aux âmes, et il en souffre. Il se sent seul quand il pense, seul quand il écrit. Quoi qu’on fasse, on est toujours seul au monde. C’est ce qu’il veut dire. Il a raison. On s’explique toujours, on ne se comprend jamais."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "seul__adj__1",
+          "sense_id": "__ws_2_seul__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Orphelin, dans les expressions :",
+          "sourced_examples": [
+            "Être seul au monde, être seul sur la Terre, n’avoir pas de famille, n’être uni à personne par les liens de l’affection, de l’amitié, vivre dans l’isolement."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "seul__adj__1",
+          "sense_id": "__ws_3_seul__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Musique) En solo.",
+          "sourced_examples": [
+            "Voix seule, Voix qui n’est pas mêlée à d’autres, qui chante pendant que les autres se taisent."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "seul__adj__1",
+          "sense_id": "__ws_4_seul__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "À l’exclusion de tout autre ; unique. — Note : Dans cette acception, il se place généralement avant le nom, tandis qu’il se met ordinairement après dans le premier sens : Un seul homme, un homme unique. Un homme seul, un homme qui se trouve sans compagnie. Il est à noter qu’en emploi adverbial, le mot continue de s’accorder.",
+          "sourced_examples": [
+            "Les rez-de-chaussée étaient seuls accessibles, car le feu avait détruit tous les escaliers qui conduisaient aux étages supérieurs.",
+            "Il y a de belles salles de bains, de spacieux cabinets de toilette, une salle de gymnastique et trois seules chambres à coucher."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "seul__adj__1",
+          "sense_id": "__ws_5_seul__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Elliptiquement,",
+          "sourced_examples": [
+            "Le gouvernement d’un seul, la monarchie absolue.",
+            "Le pouvoir, l’autorité d’un seul."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "seul__adj__1",
+        "sense_id": "__ws_1_seul__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|seul|ADJ|solitaire|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "11900->12059",
+          "label": "异形词族 · -aire",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|seul|ADJ|solitude|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "11900->12061",
+          "label": "异形词族 · -itude",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_seul__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "单",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "36ee7f3a38dcb1c4117ab1f96c09841bcbedf23b25610c3a17c90862f64e3313"
+    },
+    {
+      "stable_lexeme_key": "français|ADJ",
+      "runtime_lexeme_id": 5501,
+      "lemma": "français",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 709.875,
+        "lexique_frequency": 30.756,
+        "contextual_diversity": 10.07961
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "français__adj__1",
+          "sense_id": "__ws_1_français__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Relatif à la France, ou à ses habitants, ou à sa culture.",
+          "sourced_examples": [
+            "Qu’a apporté le peuple français à l’histoire mondiale? Selon moi, ce n’est pas la révolution de 1789, mais un esprit chevaleresque.",
+            "Les Allemands ont considérablement embelli Strasbourg et nombre d’Alsaciens préféraient l’organisation allemande au laisser-aller français."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "français__adj__1",
+          "sense_id": "__ws_2_français__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Linguistique) Relatif à la langue française, au français.",
+          "sourced_examples": [
+            "Mais pour qu’une grammaire française soit respectée, il faut premièrement que la langue française continue à être employée et, ceux qui s’efforcent de l’empailler en conviendront, cette condition suppose l’existence d’un certain nombre de Français.",
+            "Il n’était pas indifférent que les déclarations de Rinri s’adressant à une francophone s’énoncent soit en français, soit en japonais : la langue française représentait sans doute ce territoire à la fois prestigieux et licencieux où l’on pouvait s’encanailler de sentiments inavouables."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "français__adj__1",
+        "sense_id": "__ws_1_français__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "26ff84db4ffe2813c2ec3aa1bcbf9cdaef321356b08828f0e49a4a30b38df088"
+    },
+    {
+      "stable_lexeme_key": "beau|ADJ",
+      "runtime_lexeme_id": 1335,
+      "lemma": "beau",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 701.9926,
+        "lexique_frequency": 451.259,
+        "contextual_diversity": 49.1335
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "beau__adj__1",
+          "sense_id": "__ws_1_beau__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "D’aspect agréable à l’œil ou à l’oreille.",
+          "sourced_examples": [
+            "Il n’y a de beau que ce qui nous semble inutile !",
+            "On ne pouvait voir de fille plus fraîche, plus riante ; elle était blonde, avec de beaux yeux bleus, des joues roses et des dents blanches comme du lait ; […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "beau__adj__1",
+          "sense_id": "__ws_2_beau__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Par extension) Agréable.",
+          "sourced_examples": [
+            "Et puis, je continuais à embellir ma maison : […]. Les lilas plantés par Sam étaient en fleur à présent et, l'un dans l'autre, la vie était belle."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "beau__adj__1",
+          "sense_id": "__ws_3_beau__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Météorologie) Qualifie un temps ensoleillé.",
+          "sourced_examples": [
+            "Le ciel demeurait beau, mais le vent fraîchissait et le roulis de l’aéronat s’accentuait.",
+            "[…], c'était pour se lancer dans une grande ou une petite randonnée trégoroise, qu'il fît beau, « moins beau ou guère beau », « mais c'est alors, disait-il, que les cœurs connaissent leur beau fixe sans grand rapport avec celui du baromètre »."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "beau__adj__1",
+          "sense_id": "__ws_4_beau__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Cuisine) Gros.",
+          "sourced_examples": [
+            "Prendre trois belles tomates."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "beau__adj__1",
+          "sense_id": "__ws_5_beau__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Grand.",
+          "sourced_examples": [
+            "— Pourquoi n’as-tu pas mangé un morceau de pain ?<br"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "beau__adj__1",
+          "sense_id": "__ws_6_beau__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Dans les noms composés de parenté, indique que la relation est due à une alliance (incluant un second mariage).",
+          "sourced_examples": [
+            "Le beau-frère est le frère de l’épouse ou l’époux de la sœur (ou de la belle-sœur)."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "beau__adj__2",
+          "sense_id": "__ws_1_beau__adj__2",
+          "sense_number": "1",
+          "source_order": 7,
+          "definition_fr": "Relatif à Beaux, commune française située dans le département de la Haute-Loire.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "beau__adj__1",
+        "sense_id": "__ws_1_beau__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|beauté|NOM|beau|ADJ",
+          "subtype": "suffixation",
+          "direction": "1335->1341",
+          "label": "后缀 · -té",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|beau|ADJ|embellir|VER",
+          "subtype": "prefixation",
+          "direction": "1335->4532",
+          "label": "前缀 · en-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_beau__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "漂亮",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_beau__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "美丽",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_beau__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "好看",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_beau__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "优美",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_5_beau__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "帅",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "92838c906b34d673db41e0d3fadcd4840111d69e21701cc15ea8b18b4a1c4828"
+    },
+    {
+      "stable_lexeme_key": "dernier|ADJ",
+      "runtime_lexeme_id": 3623,
+      "lemma": "dernier",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 554.1171,
+        "lexique_frequency": 517.108,
+        "contextual_diversity": 65.59859
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "dernier__adj__1",
+          "sense_id": "__ws_1_dernier__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Dans un ensemble trié, l’élément qui arrive après tous les autres.",
+          "sourced_examples": [
+            "Le 31 décembre est le dernier jour de l’année.",
+            "Le dernier né."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "dernier__adj__1",
+          "sense_id": "__ws_2_dernier__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Ultime, qui est après tous les autres, ou après lequel il n’y en a pas d’autre.",
+          "sourced_examples": [
+            "Déjà, autour du cadavre, les voisins s’affairaient pour sa dernière toilette. À terre, une bassine d’eau rougie, ses vêtements maculés, […].",
+            "Le dernier jour des terriens était arrivé et Arcvad le puissant avait décrété leur mort pour minuit, heure de Mars : 11 heures du matin à New-York."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "dernier__adj__1",
+          "sense_id": "__ws_3_dernier__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(En particulier) Le plus récent.",
+          "sourced_examples": [
+            "[…] ; ses variantes successives ont abouti à l'échelle MSK 64 (Medvelev, Sponheuer, Karnik) que l'on modifie de temps en temps, de sorte que l'on doit toujours rappeler l'année de la dernière mise à jour.",
+            "Les dernières nouveautés du Salon de l'électronique de Las Vegas."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "dernier__adj__1",
+          "sense_id": "__ws_4_dernier__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "De la dernière période.",
+          "sourced_examples": [
+            "Le nommé Lechat, ouvrier à Bolmont, commune de Remilly, a été arrêté ces jours derniers pour avoir proféré, dans un cabaret à Sormonne, des propos offensants envers le Président de la République.",
+            "Le dernier Foucault sera très marqué par la lecture de ce livre et fera entrer Hadot au Collège de France en 1982."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "dernier__adj__1",
+          "sense_id": "__ws_5_dernier__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Par hyperbole) Extrême en son genre, en bien ou en mal.",
+          "sourced_examples": [
+            "Je me suis comporté comme le dernier des idiots.",
+            "Arriver au dernier degré de la perfection. — Cela est du dernier ridicule. — On l’a traité avec le dernier mépris."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "dernier__adj__1",
+          "sense_id": "__ws_6_dernier__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Le plus vil, le plus méprisable.",
+          "sourced_examples": [
+            "Sa femme était morte, ses enfants le détestaient, une rebeue lui parlait comme à un chien, pour le Syndicat il était un traître, pour le gouvernement le dernier des cons, il ne serait pas ministre et sans doute plus député pour longtemps, qu'est-ce qui lui restait ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "dernier__adj__1",
+          "sense_id": "__ws_7_dernier__adj__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Le moins souhaitable, ce qu’il faut le plus éviter.",
+          "sourced_examples": [
+            "C’était la dernière chose à faire !",
+            "Il aurait fallu éviter le plus possible de faire cette chose."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "dernier__adj__1",
+        "sense_id": "__ws_1_dernier__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_dernier__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "最后",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Dans un ensemble trié, l’élément qui arrive après tous les autres.",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_dernier__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "最终",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Dans un ensemble trié, l’élément qui arrive après tous les autres.",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_dernier__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "最新",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Le plus récent.",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "50ccd6906c7248a35505c0c83d76c27af78dde9b47efd5522c81caf37b16398a"
+    },
+    {
+      "stable_lexeme_key": "sûr|ADJ",
+      "runtime_lexeme_id": 12623,
+      "lemma": "sûr",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 542.9035,
+        "lexique_frequency": 1016.275,
+        "contextual_diversity": 88.18126
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "sûr__adj__1",
+          "sense_id": "__ws_1_sûr__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Dont on ne doute pas ; certain ; indubitable ; vrai.",
+          "sourced_examples": [
+            "Cela est-il bien sûr ?",
+            "Cela est d’un effet sûr."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "sûr__adj__1",
+          "sense_id": "__ws_2_sûr__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Qui doit arriver infailliblement, ou qu’on considère comme devant nécessairement arriver.",
+          "sourced_examples": [
+            "Le pire n'est pas toujours sûr.",
+            "Rien n’est si sûr que la mort."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "sûr__adj__1",
+          "sense_id": "__ws_3_sûr__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Qui ne trompe pas, qui ne saurait tromper.",
+          "sourced_examples": [
+            "Il a la mémoire sûre.",
+            "Avoir le goût sûr : Discerner parfaitement la qualité des mets, du vin, des ouvrages de l’esprit."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "sûr__adj__1",
+          "sense_id": "__ws_4_sûr__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Sans risque, sans danger.",
+          "sourced_examples": [
+            "Le train est un moyen de transport sûr.",
+            "Monsieur, reprit-il, tout l'honneur sera pour moi. Je ne vous quitte plus que je ne vous aie mis en lieu sûr."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "sûr__adj__1",
+          "sense_id": "__ws_5_sûr__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "En qui on peut se fier.",
+          "sourced_examples": [
+            "C’est un ami sûr.",
+            "Ce banquier est sûr."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "sûr__adj__1",
+          "sense_id": "__ws_6_sûr__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "En parlant des lieux, des chemins, etc., signifie où l’on est en sûreté, dont on peut se servir sans danger.",
+          "sourced_examples": [
+            "Les chemins sont sûrs.",
+            "Cette rade est sûre."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "sûr__adj__1",
+          "sense_id": "__ws_7_sûr__adj__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Qui n'éprouve aucun doute ; assuré, confiant.",
+          "sourced_examples": [
+            "Lui que j’ai connu si sûr de lui-même, d’une fatuité toute naturelle, conscient de son bon droit, […], le voici devant moi presque timide […].",
+            "Si le percepteur n'était pas arrivé dans la région avant le début de la saison pluvieuse, les villageois étaient sûrs d'échapper pour un an au prélèvement fiscal. Si le percepteur se présentait, ils ignoraient combien ils allaient devoir payer."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "sûr__adj__1",
+        "sense_id": "__ws_1_sûr__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|assurer|VER|sûr|ADJ",
+          "subtype": "prefixation",
+          "direction": "12623->913",
+          "label": "前缀 · a-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|sécuriser|VER|sûr|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "12623->12576",
+          "label": "异形词族 · -iser",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|sécurité|NOM|sûr|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "12623->12577",
+          "label": "异形词族 · -ité",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|sûreté|NOM|sûr|ADJ",
+          "subtype": "suffixation",
+          "direction": "12623->12625",
+          "label": "后缀 · -té",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "7c1682b6a84342d971f48b2bbd41752a63b8e48b6d06ee796410ae03fc6f376f"
+    },
+    {
+      "stable_lexeme_key": "vieux|ADJ",
+      "runtime_lexeme_id": 13541,
+      "lemma": "vieux",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 433.0616,
+        "lexique_frequency": 246.07,
+        "contextual_diversity": 50.39957
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_1_vieux__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "D’un certain âge (relatif à un autre).",
+          "sourced_examples": [
+            "Je suis le plus vieux de ma classe.",
+            "Un vieil homme, une vieille femme."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_2_vieux__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Ancien, qui existe depuis longtemps.",
+          "sourced_examples": [
+            "De vieilles rapsodies.",
+            "Les vieilles coutumes."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_3_vieux__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Qui appartient à une époque passée ou dépassée.",
+          "sourced_examples": [
+            "D'abord, les transformations de la vieille Autriche qu'il évoque avec mélancolie, son charme suranné, la tradition artistique de Vienne qui se maintient d'abord dans les années trente alors que les nationalismes sont de plus en plus virulents, mais qui ne survivra pas à l'annexion de l'Autriche par l'Allemagne hitlérienne en 1938 [...]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_4_vieux__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Qui a l'apparence de la vétusté ou les dehors de la vieillesse.",
+          "sourced_examples": [
+            "Les gendarmes étaient venus à pied, par sept kilomètres de vieux chemins.",
+            "Il a un air vieux."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_5_vieux__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "S’emploie avec les adverbes plus et moins, et autres semblables, pour marquer la différence d’âge entre deux personnes ou choses.",
+          "sourced_examples": [
+            "Il n’a que vingt ans, et vous en avez vingt-cinq, vous êtes plus vieux que lui.",
+            "Il n’est pas si vieux que vous."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_6_vieux__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Personne qui exerce une profession, un métier, qui mène un certain genre de vie depuis longtemps.",
+          "sourced_examples": [
+            "Vieux magistrat.",
+            "Vieux capitaine."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_7_vieux__adj__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Sert aussi à marquer les anciennes habitudes, et surtout les habitudes vicieuses.",
+          "sourced_examples": [
+            "Vieil ivrogne.",
+            "Vieux débauché."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_8_vieux__adj__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "S’emploie familièrement dans des phrases de dénigrement.",
+          "sourced_examples": [
+            "Vieux coquin.",
+            "Vieux sorcier, vieille sorcière."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_9_vieux__adj__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "S’emploie pour exprimer la vénération qu’inspire le nom d’un homme célèbre mort depuis longtemps, en laissant une grande renommée.",
+          "sourced_examples": [
+            "Le vieux Corneille.",
+            "Le vieil Homère."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_10_vieux__adj__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "Par comparaison et opposition à nouveau.",
+          "sourced_examples": [
+            "La vieille ville.",
+            "La vieille cour."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vieux__adj__1",
+          "sense_id": "__ws_11_vieux__adj__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "Choses qui sont usées, principalement des habits, des meubles, par opposition à neuf.",
+          "sourced_examples": [
+            "Vieil habit.",
+            "Vieux chapeau."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "vieux__adj__1",
+        "sense_id": "__ws_1_vieux__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|vieillesse|NOM|vieux|ADJ",
+          "subtype": "suffixation",
+          "direction": "13541->13530",
+          "label": "后缀 · -esse",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "11078c2f7b49b7d0d3689f918010f6968c3d3c98d6490618fc54dd5239006821"
+    },
+    {
+      "stable_lexeme_key": "vrai|ADJ",
+      "runtime_lexeme_id": 13702,
+      "lemma": "vrai",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 419.8399,
+        "lexique_frequency": 817.032,
+        "contextual_diversity": 87.89039
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_1_vrai__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Qui est conforme à la vérité, à ce qui est réellement.",
+          "sourced_examples": [
+            "Cette proposition est vraie, sera toujours vraie.",
+            "Dites des choses vraies, si vous voulez qu’on vous croie."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_2_vrai__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Qui est réellement ce qu’on le dit être ou qu’il doit être, qui a toutes les qualités essentielles à sa nature. — Note : En ce sens, il se met le plus souvent avant le nom.",
+          "sourced_examples": [
+            "Le vrai Dieu. — La vraie religion.",
+            "Du vrai marbre. — Un vrai diamant."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_3_vrai__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Familier) (Par hyperbole) Qui a les qualités de.",
+          "sourced_examples": [
+            "Cet homme est un vrai cheval, un vrai lion, etc."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_4_vrai__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Familier) (Par hyperbole) Qui a l'apparence de.",
+          "sourced_examples": [
+            "Quand j'étais à Hollywood, j’ai remarqué que tous les acteurs américains ne buvaient pas. Nous, les Britanniques, on est des vrais alcolos, à côté.",
+            "C’est un vrai supplice, un vrai martyre, etc."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_5_vrai__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Sens figuré) Qui est unique, essentiel, principal.",
+          "sourced_examples": [
+            "La vraie cause, le vrai motif de son action est le désir de vous être utile."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_6_vrai__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Qui convient.",
+          "sourced_examples": [
+            "Voilà la vraie place de ce tableau.",
+            "Voilà des rubans de la vraie couleur qu’il fallait à sa robe."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_7_vrai__adj__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Art, Littérature) Qui exprime, qui rend avec vérité la nature, les pensées, les objets.",
+          "sourced_examples": [
+            "Un style vrai. — Des caractères vrais.",
+            "Un coloris vrai. — Des tons vrais."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_8_vrai__adj__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "(Astronomie) Qui est conforme à la marche réelle du soleil.",
+          "sourced_examples": [
+            "Midi vrai. — Jour vrai."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_9_vrai__adj__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "Qui parle, qui agit sans déguisement, en parlant des personnes.",
+          "sourced_examples": [
+            "Une personne vraie. — Cet homme est vrai.",
+            "On a attaché beaucoup d’importance à définir ce qu’est un vrai homme ou une vraie femme, j’ai hâte qu’on s’attarde à ce qu’est une femme vraie et un homme vrai."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_10_vrai__adj__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "(Mathématiques) Qui indique un résultat affirmatif ou positif, en parlant d’un état dans une logique booléenne.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "vrai__adj__1",
+          "sense_id": "__ws_11_vrai__adj__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "(Pris adverbialement) Vraiment.",
+          "sourced_examples": [
+            "— J’en ai un superbe à la maison. Je vous l’apporterai demain.— Demain, vrai ?",
+            "Non, vrai ! il n’y a pas de pièces de théâtre capables de vous donner de ces émotions-là."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "vrai__adj__1",
+        "sense_id": "__ws_1_vrai__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|vrai|ADJ|vérifier|VER",
+          "subtype": "semantic_derivation",
+          "direction": "13702->13731",
+          "label": "异形词族 · -ifier",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|vrai|ADJ|vérité|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "13702->13734",
+          "label": "异形词族 · -ité",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_vrai__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "真的",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "0cbd2aa8706a8c11fe61fb0d15b5e4ab54e5546f89f9c23358ec8b879ed41ea1"
+    },
+    {
+      "stable_lexeme_key": "aujourd'hui|ADV",
+      "runtime_lexeme_id": 1034,
+      "lemma": "aujourd'hui",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 711.084,
+        "lexique_frequency": 370.585,
+        "contextual_diversity": 67.72352
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "aujourd’hui__adv__1",
+          "sense_id": "__ws_1_aujourd’hui__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "À la date présente, ce jour même.",
+          "sourced_examples": [
+            "Il arrive aujourd’hui à midi.",
+            "Hâtons-nous aujourd’hui de jouir de la vie."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "aujourd’hui__adv__1",
+          "sense_id": "__ws_2_aujourd’hui__adv__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "À présent, à l'époque où l'on vit.",
+          "sourced_examples": [
+            "[…] jadis, on croyait que la férule était l’outil le plus nécessaire pour le maître d’école ; aujourd’hui, les peines corporelles ont disparu de notre enseignement public.",
+            "À l’abri du monopole et de la paix qui en résultait, les Groenlandais se multiplièrent et aujourd’hui, deux cents ans après l’arrivée de Hans Egede, ils sont au nombre de 15.000 […]"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "aujourd’hui__adv__1",
+          "sense_id": "__ws_3_aujourd’hui__adv__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Date quelconque par rapport à une autre qui en est très proche. — Note : Dans ce sens, on l’oppose ordinairement à demain ou à hier.",
+          "sourced_examples": [
+            "Aujourd’hui, elle veut une chose, demain elle en voudra une autre.",
+            "Aujourd'hui, maman est morte. Ou peut-être hier, je ne sais pas. — (Albert Camus, L'Étranger, Les classiques des sciences sociales, 2015.)"
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "aujourd’hui__adv__1",
+        "sense_id": "__ws_1_aujourd’hui__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_aujourd’hui__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "今天",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "À la date présente.",
+          "mapped_sense_id": "__ws_1_aujourd’hui__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_aujourd’hui__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "今日",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "À la date présente.",
+          "mapped_sense_id": "__ws_1_aujourd’hui__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_aujourd’hui__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "本日",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "À la date présente.",
+          "mapped_sense_id": "__ws_1_aujourd’hui__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_aujourd’hui__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "今日",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "À présent, à l'époque où l'on vit.",
+          "mapped_sense_id": "__ws_2_aujourd’hui__adv__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_5_aujourd’hui__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "今天",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "À présent, à l'époque où l'on vit.",
+          "mapped_sense_id": "__ws_2_aujourd’hui__adv__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "45ed1cb7eb3efb8d95d71cbc0d863327e454bc7a56000b2ebef659cb43885323"
+    },
+    {
+      "stable_lexeme_key": "près|ADV",
+      "runtime_lexeme_id": 10252,
+      "lemma": "près",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 522.1869,
+        "lexique_frequency": 75.351,
+        "contextual_diversity": 49.64483
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "près__adv__1",
+          "sense_id": "__ws_1_près__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "À petite distance, à proximité.",
+          "sourced_examples": [
+            "Demeure-t-il loin ? Non, il demeure tout près.",
+            "La Chapelle-près-Sées est une commune limitrophe de Sées."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "près__adv__1",
+          "sense_id": "__ws_2_près__adv__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "À peu de temps, avant ou après.",
+          "sourced_examples": [
+            "Je ne puis vous faire ce travail pour demain : c’est trop près.",
+            "Il est près de partir."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "près__adv__1",
+          "sense_id": "__ws_3_près__adv__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "À peu de chose près.",
+          "sourced_examples": [
+            "Voilà qui est entendu : vous alliez à Agadès, vous irez à Agadem... Je vous nomme au commandement de la Section méhariste d'Agadem... Vous voyez, à une lettre près, votre destination n'a pas changé..."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "près__adv__1",
+          "sense_id": "__ws_4_près__adv__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Administration) (Soutenu) En délégation auprès de.",
+          "sourced_examples": [
+            "Cet arrêt confirmait la décision, prise par la CJR un mois plus tôt, de refuser d’entendre comme témoin le procureur général près la Cour de cassation, François Molins, dans la procédure visant le ministre."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "près__adv__1",
+        "sense_id": "__ws_1_près__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "0d157971fdc4371c2b03ea342eda10c210e5b4fe987e6e2b07c4dc439bec762e"
+    },
+    {
+      "stable_lexeme_key": "peut-être|ADV",
+      "runtime_lexeme_id": 9514,
+      "lemma": "peut-être",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 518.22,
+        "lexique_frequency": 958.383,
+        "contextual_diversity": 88.96663
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "peut-être__adv__1",
+          "sense_id": "__ws_1_peut-être__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Cela se peut, possiblement. Note : exprime une supposition ou une possibilité.",
+          "sourced_examples": [
+            "[…] ; il me semble n’y avoir vu encore que des visages effarouchés ou rébarbatifs. Peut-être aussi les Parisiens ont-ils peur de l’orage.",
+            "Étonnez-vous donc, après tout ça, que les Évêques aient chanté le Te Deum pour Napoléon III ; l’homme couvert de sang ne leur déplait pas ; c’est peut-être même à cela qu’ils reconnaissent le favori de Dieu."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "peut-être__adv__1",
+          "sense_id": "__ws_2_peut-être__adv__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Avec mais) J’admets que …, mais ce n’est pas important ici. Note : exprime une concession à l’interlocuteur concernant le fait.",
+          "sourced_examples": [
+            "Jusqu’à présent, vous avez peut-être dit la vérité, mais, maintenant, je sais que vous mentez.",
+            "— […] Votre pays a une frontière avec l’Allemagne et vous ne pouviez pas savoir ce que nous, qui vivons à l’autre bout de la planète, nous savons ?— […] La Belgique a peut-être une frontière avec l’Allemagne mais le Japon, pendant la dernière guerre, a eu bien plus qu’une frontière en commun avec l’Allemagne !"
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "peut-être__adv__1",
+        "sense_id": "__ws_1_peut-être__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_peut-être__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "可能",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Supposition ou possibilité",
+          "mapped_sense_id": "__ws_1_peut-être__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_yue_1_peut-être__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "可能",
+          "target_language_code": "yue",
+          "learner_language_eligibility": "nondefault_chinese_variant",
+          "translation_gloss": "Supposition ou possibilité",
+          "mapped_sense_id": "__ws_1_peut-être__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_yue_2_peut-être__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "或者",
+          "target_language_code": "yue",
+          "learner_language_eligibility": "nondefault_chinese_variant",
+          "translation_gloss": "Supposition ou possibilité",
+          "mapped_sense_id": "__ws_1_peut-être__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_yue_3_peut-être__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "可能",
+          "target_language_code": "yue",
+          "learner_language_eligibility": "nondefault_chinese_variant",
+          "translation_gloss": "Concession",
+          "mapped_sense_id": "__ws_2_peut-être__adv__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_peut-être__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "可能",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Supposition ou possibilité",
+          "mapped_sense_id": "__ws_1_peut-être__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_peut-être__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "也许",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Supposition ou possibilité",
+          "mapped_sense_id": "__ws_1_peut-être__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_peut-être__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "或许",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Supposition ou possibilité",
+          "mapped_sense_id": "__ws_1_peut-être__adv__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_peut-être__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "可能",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Concession",
+          "mapped_sense_id": "__ws_2_peut-être__adv__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "a3c5dc08f689d2f18108c3b3c32c020216c53b6591ff3634f3ac9007e7110bf0"
+    },
+    {
+      "stable_lexeme_key": "mieux|ADV",
+      "runtime_lexeme_id": 8077,
+      "lemma": "mieux",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 372.4432,
+        "lexique_frequency": 575.095,
+        "contextual_diversity": 86.87232
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "mieux__adv__1",
+          "sense_id": "__ws_1_mieux__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Comparatif de bien. D’une manière plus accomplie, d’une façon plus avantageuse.",
+          "sourced_examples": [
+            "Dès que quelques-uns paraissent se trouver un peu mieux, on se hâte de les mettre à la porte pour faire place à d'autres, […].",
+            "Ça va mieux ça va mieux Je ne pense presque plus À nous deux à nous deux Ça m'a pris du temps c'est vrai Ce n'est pas encore ça mais Ça va mieux ça va mieux."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "mieux__adv__1",
+          "sense_id": "__ws_2_mieux__adv__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Davantage ; plus ; pour indiquer la préférence.",
+          "sourced_examples": [
+            "Notons qu'il existe, entre les deux races, quelques exemples d'un type mixte : voici un putto couronné de lierre dont la tête fait penser à celle d'un satyreau, ou, mieux encore, un putto sur le point de se métamorphoser en satyreau, […].",
+            "J’aime mieux cette étoffe que l’autre. — Il vaut mieux, mieux vaut, Il est plus à propos, plus avantageux."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "mieux__adv__1",
+          "sense_id": "__ws_3_mieux__adv__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Parler gaga) Plus.",
+          "sourced_examples": [
+            "C'est mieux cher si tu achètes à l'unité."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "mieux__adv__1",
+        "sense_id": "__ws_1_mieux__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "9055de58c875ea3953e489fa636c37ad6c5f8f5aacb74bac9018277466c90089"
+    },
+    {
+      "stable_lexeme_key": "surtout|ADV",
+      "runtime_lexeme_id": 12492,
+      "lemma": "surtout",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 352.3972,
+        "lexique_frequency": 118.937,
+        "contextual_diversity": 36.65646
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "surtout__adv__1",
+          "sense_id": "__ws_1_surtout__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Principalement ; plus que toute autre chose.",
+          "sourced_examples": [
+            "L’élève du cheval de trait et du mulet est aujourd’hui une industrie très-prospère et surtout très-rémunératrice […]",
+            "[…] les variations de température qu’on constate en Champagne, surtout au printemps, donnent à cette région un caractère continental […]"
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "surtout__adv__1",
+        "sense_id": "__ws_1_surtout__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "5aeca78af4360278a29c22d52c584b293e5696d2307f53d15b0c9ec2a97e5c4c"
+    },
+    {
+      "stable_lexeme_key": "loin|ADV",
+      "runtime_lexeme_id": 7520,
+      "lemma": "loin",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 350.9547,
+        "lexique_frequency": 229.807,
+        "contextual_diversity": 56.67483
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "loin__adv__1",
+          "sense_id": "__ws_1_loin__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Se trouvant à une grande distance.",
+          "sourced_examples": [
+            "Ces maisons sont loin d’ici.",
+            "Nous sommes parents, mais de loin, nous sommes parents à un degré éloigné."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "loin__adv__1",
+          "sense_id": "__ws_2_loin__adv__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Se situant à une période très antérieure ou très postérieure à l’instant présent.",
+          "sourced_examples": [
+            "L’été est loin.",
+            "Cet homme a beaucoup d’expérience et de pénétration, il voit loin dans l’avenir."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "loin__adv__1",
+          "sense_id": "__ws_3_loin__adv__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Sens figuré) Avec excès.",
+          "sourced_examples": [
+            "Porter loin, pousser loin sa haine, son ressentiment, son animosité, sa vengeance, ses prétentions, etc."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "loin__adv__1",
+          "sense_id": "__ws_4_loin__adv__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Sens figuré) Profondément.",
+          "sourced_examples": [
+            "Aristote a été loin dans la connaissance des choses naturelles."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "loin__adv__1",
+          "sense_id": "__ws_5_loin__adv__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Sens figuré) Haut.",
+          "sourced_examples": [
+            "Aller loin, s’élever à de hauts emplois, être favorisé par la fortune.",
+            "Ce jeune homme est exceptionnellement doué, il ira loin."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "loin__adv__1",
+        "sense_id": "__ws_1_loin__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|lointain|ADJ|loin|ADV",
+          "subtype": "suffixation",
+          "direction": "7520->7522",
+          "label": "后缀 · -ain",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "f3d1b8e414d267dc1dbac26525b55b2a7538093dab2a888eaf75e27e0a392d7a"
+    },
+    {
+      "stable_lexeme_key": "d'abord|ADV",
+      "runtime_lexeme_id": 3536,
+      "lemma": "d'abord",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 318.4814,
+        "lexique_frequency": 154.38,
+        "contextual_diversity": 45.84966
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "d’abord__adv__1",
+          "sense_id": "__ws_1_d’abord__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Littéraire) Lors du premier contact.",
+          "sourced_examples": [
+            "Jamalou, le concierge, s’apercevant que la voûte se trouvait éclairée, alla se rendre compte du fait et ne vit rien d’abord qui l’étonnât."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "d’abord__adv__1",
+          "sense_id": "__ws_2_d’abord__adv__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Au commencement ; premièrement.",
+          "sourced_examples": [
+            "D'abord réservées aux scientifiques, les Pyrénées ont ensuite accueilli un tourisme prudent en attendant les pyrénéistes, ivres de conquêtes.",
+            "Nous aborderons d’abord les aspects théoriques, puis nous passerons à la pratique."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "d’abord__adv__1",
+          "sense_id": "__ws_3_d’abord__adv__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Par extension) (Familier) Déjà ; premièrement — Note : Il s’utilise alors pour donner de l’importance à une affirmation.",
+          "sourced_examples": [
+            "Moi, d’abord, je n’essaie pas de truander."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "d’abord__adv__1",
+          "sense_id": "__ws_4_d’abord__adv__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Prioritairement.",
+          "sourced_examples": [
+            "Les femmes et les enfants d’abord."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "d’abord__adv__1",
+          "sense_id": "__ws_5_d’abord__adv__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Auparavant. — Note : Il introduit une précondition.",
+          "sourced_examples": [
+            "On ne s’improvise pas usurier, il faut parvenir d’abord à une méritoire insertion dans la mafia des gens bien placés pour exploiter leur prochain."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "d’abord__adv__1",
+          "sense_id": "__ws_6_d’abord__adv__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Principalement.",
+          "sourced_examples": [
+            "Dès l’instant où, à l’occasion de cette réédition, je me suis retourné vers les premières pages que j’ai écrites, c’est cela d’abord, que j’ai eu envie de consigner ici."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "d’abord__adv__1",
+          "sense_id": "__ws_7_d’abord__adv__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Québec) (Familier) Puisque c’est comme ça.",
+          "sourced_examples": [
+            "Eh bien, je vais y aller d’abord."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "d’abord__adv__1",
+        "sense_id": "__ws_1_d’abord__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "10949cbf5a7620c122f30b91019185b816a1314280586aecaa2877bb6dd6fe8d"
+    },
+    {
+      "stable_lexeme_key": "an|NOM",
+      "runtime_lexeme_id": 524,
+      "lemma": "an",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1795.6585,
+        "lexique_frequency": 812.361,
+        "contextual_diversity": 79.24525
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "an__nom__1",
+          "sense_id": "__ws_1_an__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Temps que met la Terre à accomplir une révolution autour du Soleil et qui se divise en douze mois. Année (voir Notes plus bas).",
+          "sourced_examples": [
+            "Je ne suis pas arrivé à l’âge de quatre-vingt ans pour rétracter en rien les convictions de ma vie entière.",
+            "Autour d’une table, un groupe d’hommes étaient rassemblés, et une femme de trente à trente-cinq ans s’accoudait sur le comptoir."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "an__nom__1",
+          "sense_id": "__ws_2_an__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(France) (Histoire) L'une des années du calendrier républicain des Français, commencée le 22 septembre 1792.",
+          "sourced_examples": [
+            "L’ordonnance de 1681 et l’arrêté de l’an IX ne laissent pas aux particuliers la faculté d’établir, quand, comme et où bon leur semble, des madragues.",
+            "Le 16 germinal de l’an II (5 avril 1794) fut rendu le fatal verdict contre les dantonistes, auxquels, avons-nous dit, se trouvaient accolés d’ailleurs des hommes peu dignes de recommandation."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "an__nom__1",
+          "sense_id": "__ws_3_an__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Au pluriel) Le temps qui passe.",
+          "sourced_examples": [
+            "Grazyna avait beau prétendre que l’âge importait peu, en se regardant dans la glace de sa table de toilette, il s’avouait forcé de reconnaître que le poids des ans n’était pas du tout une invention de poète…",
+            "L'interlocuteur avait vite fait de s'apercevoir que, si le corps s'affaissait sous le poids des ans, l'esprit, par contre, était des plus lucides.."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "an__nom__1",
+          "sense_id": "__ws_4_an__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Astronomie observationnelle, Mécanique céleste) (Par extension) Période de révolution d’une autre planète.",
+          "sourced_examples": [
+            "Le 6 août, le robot Curiosity fêtera les deux ans de son arrivée sur Mars. Ce qui correspond à un peu plus d’un an martien, soit 687 jours terrestres... Lentement mais sûrement, l’exploration se poursuit.",
+            "Détentrice du premier rang dans le panthéon des dieux célestes, la planète Vénus devait également jouer un rôle primordial dans la vie de tous les jours. […]. Le cycle de 52 ans représentait un laps de temps sacré étroitement lié avec la rotation de la planète Vénus et les divisions du temps de l'année et des cycles se fondaient sur le partage de l’an vénusien. […]. Tous les 52 ans, le calendrier sacré de 260 jours coïncidait avec le calendrier solaire de 365 jours."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "an__nom__2",
+          "sense_id": "__ws_1_an__nom__2",
+          "sense_number": "1",
+          "source_order": 5,
+          "definition_fr": "Première lettre de l’alphabet géorgien, ka.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "an__nom__1",
+        "sense_id": "__ws_1_an__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|annuel|ADJ|an|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "524->588",
+          "label": "异形词族 · -el",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_an__nom__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "年",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_an__nom__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "岁",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Âge",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "8076b705b14ec282f8abb9ca290bda6289abe6d35880b958088e7275762d3e94"
+    },
+    {
+      "stable_lexeme_key": "homme|NOM",
+      "runtime_lexeme_id": 6194,
+      "lemma": "homme",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1776.8652,
+        "lexique_frequency": 1248.636,
+        "contextual_diversity": 80.37048
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "Homme__nom__1",
+          "sense_id": "__ws_1_Homme__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Humain, être humain. Note d’usage : Terme pouvant être employé avec une capitale pour parler du genre ou de l’espèce humaine dans son ensemble, au singulier.",
+          "sourced_examples": [
+            "L’évangile de la fête est celui de la visite des Rois mages qui offrirent à l’enfant Jésus leurs présents symboliques: l’or car il est Roi, l’encens car il est Dieu et la myrrhe car il est Homme.",
+            "L’origine de l’Homme."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "homme__nom__1",
+          "sense_id": "__ws_1_homme__nom__1",
+          "sense_number": "1",
+          "source_order": 2,
+          "definition_fr": "(Anthropologie, Genres humains et identités de genre) Être humain adulte de genre ou de sexe masculin, par opposition à la femme et à l’enfant.",
+          "sourced_examples": [
+            "Version ultraséduisante chez Fuller (Le Port de la drogue) qui utilisa sa nervosité au service d’une sorte de pédagogie amoureuse aussi violente qu’efficace, lorsqu’un homme et une femme construisent une histoire d’amour à coups de gifles (reçues par Jean Peters, la meilleure des teigneuses hollywoodiennes).",
+            "Il y a des moments où je me demande si vous avez quinze ans ou si vous êtes un homme […]"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "homme__nom__1",
+          "sense_id": "__ws_2_homme__nom__1",
+          "sense_number": "2",
+          "source_order": 3,
+          "definition_fr": "(Par extension) Subalterne masculin, vassal.",
+          "sourced_examples": [
+            "Le seigneur féodal pouvait, par faute d’homme, mettre en sa main le fief qui relevait de lui.",
+            "Ce dernier Wallenrod, des vrais Wallenrod-Tustall Bartenstild, avait acheté presque autant de balles de coton que l’Empereur perdit d’hommes pendant sa sublime campagne de France."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "homme__nom__1",
+          "sense_id": "__ws_3_homme__nom__1",
+          "sense_number": "3",
+          "source_order": 4,
+          "definition_fr": "(En particulier) Personne masculine douée de sentiments humains, soumise aux grandeurs et vicissitudes des êtres humains.",
+          "sourced_examples": [
+            "Sa prudence naturelle l’eût retenu d’ailleurs, bien qu’il ne fût point « homme » — appliquons-lui ce mot — à laisser échapper quelque bonne occasion, si elle se présentait."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "homme__nom__1",
+          "sense_id": "__ws_4_homme__nom__1",
+          "sense_number": "4",
+          "source_order": 5,
+          "definition_fr": "(Précédé d’un adjectif possessif) Personne masculine dont il a été fait mention précédemment.",
+          "sourced_examples": [
+            "Si vous pensez ainsi, vous n’êtes pas mon homme.",
+            "Je ne suis pas leur homme."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "homme__nom__1",
+          "sense_id": "__ws_5_homme__nom__1",
+          "sense_number": "5",
+          "source_order": 6,
+          "definition_fr": "(Précédé d’un adjectif possessif) (Famille) Conjoint, époux, compagnon dans un couple.",
+          "sourced_examples": [
+            "Elle sentit ce que contient l’expression « mon homme ». Un « homme » est un gouvernement qui nous bat pour nous montrer qu’il est le maître, mais qui saurait nous défendre au moment du danger.",
+            "Sur cette terre, ma seule joie, mon seul bonheurC’est mon homme.J’ai donné tout c’que j’ai, mon amour et tout mon cœurÀ mon homme […]"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "homme__nom__1",
+          "sense_id": "__ws_6_homme__nom__1",
+          "sense_number": "6",
+          "source_order": 7,
+          "definition_fr": "(Collectif ou générique) Être d’une espèce humaine, du genre scientifique Homo, souvent par opposition à l’animal ; l’ensemble des humains, en particulier de l’espèce humaine actuelle (Homo sapiens). — Note : on écrit souvent, depuis les années 1960, Homme avec une majuscule pour lever l’ambiguïté avec « être humain de genre ou sexe masculin ». Cet usage peut être considéré sexiste, en particulier au Canada. Pour cette raison, une tendance se dessine qui consiste à remplacer quand c’est possible homme par humain. Amnesty International dit les droits humains à la place des droits de l’homme.",
+          "sourced_examples": [
+            "L'homme, nous le savons, est un singe qui s'est levé dans la savane et a conquis le monde.",
+            "De nombreux caractères, comme l’allaitement, conduisent aux mêmes modèles de parentés chez l’homme, le poulet et l’ornithorynque que la myoglobine."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "homme__nom__1",
+          "sense_id": "__ws_7_homme__nom__1",
+          "sense_number": "7",
+          "source_order": 8,
+          "definition_fr": "(Sociologie) Être humain, peu importe son genre ou sexe, ayant des valeurs sociales et morales.",
+          "sourced_examples": [
+            "Être homme est facile ; être un homme est difficile.\n(做人容易成人难)",
+            "Il savait maintenant parler la langue du désert, il connaissait ces hommes qui, au début, lui avaient semblé si mystérieux et qui, après tout, n’étaient que des hommes comme tous les autres, ni pires, ni meilleurs, autres seulement."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "Homme__nom__1",
+        "sense_id": "__ws_1_Homme__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|humain|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->6259",
+          "label": "异形词族 · -ain",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|humaniste|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->6265",
+          "label": "异形词族 · -iste",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|masculin|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->7909",
+          "label": "异形词族 · -in",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|viril|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->13579",
+          "label": "异形词族 · -il",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "46f72e795fb61f12e1c92d1a6350333d708650445d76b994a57a93d87a54cca0"
+    },
+    {
+      "stable_lexeme_key": "jour|NOM",
+      "runtime_lexeme_id": 7199,
+      "lemma": "jour",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1619.8349,
+        "lexique_frequency": 920.943,
+        "contextual_diversity": 80.41641
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_1_jour__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Période de vingt-quatre heures, commençant généralement à minuit ; en certains lieux et à certaines époques, le jour commençait plutôt avec le lever ou le coucher du soleil.",
+          "sourced_examples": [
+            "C’est impossible, car le train va bientôt stopper à Ghéok-Tepé, puis à Askhabad, d’où il repartira aux premières lueurs du jour.",
+            "Le résultat de l’analyse sera connu dans deux jours. — Une semaine comporte sept jours."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_2_jour__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Par extension) Cette même période sur d’autres corps célestes.",
+          "sourced_examples": [
+            "Le temps utile aux mesures est relatif aux objets : ainsi l'année et le jour jupitériens ne sont pas l'année et le jour terrestres. Les rotations sur soi ou autour du soleil ne sont pas les mêmes, les objets célestes n'ont pas la même vitesse, etc...",
+            "Le jour solaire moyen est plus long que le jour sidéral d’un peu moins de quatre minutes."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_3_jour__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(En particulier) (Métrologie) Unité de mesure du temps (compatible avec le Système international) dérivée de la seconde. Symbole d (du latin diurnus).",
+          "sourced_examples": [
+            "1 jour = 86400 secondes = 24 heures"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_4_jour__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Par extension) Date particulière du calendrier.",
+          "sourced_examples": [
+            "Lorsque la troupe des pastoureaux entra dans Orléans, le jour de saint Barnabas, l’évêque de cette ville interdit à tous ses clercs d’assister à ses prédications ; car, disait-il, ce sont les souricières du diable.",
+            "C’est le 6 avril 1917, le jour du Vendredi-Saint, une semaine avant l’offensive du Chemin des Dames, que le maréchal des logis Clérisse s’envola sur un Sopwith-Clerget […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_5_jour__nom__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Jour de la semaine. Un des sept noms de jour de chaque semaine.",
+          "sourced_examples": [
+            "Quel jour sommes-nous ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_6_jour__nom__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Agriculture) (Archaïsme) Étendue de terrain qu’un attelage pouvait labourer en une journée de travail.",
+          "sourced_examples": [
+            "Son fief de Portieux avec ses jours de terres et ses fauchées de prés lui furent retirées; on le dépouilla du fief de Magnenville, […]",
+            "HOMMÉE, Mesure agraire employée en Lorraine, […]. C'est la dixième partie d'un jour de terre."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_7_jour__nom__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Vie. Note : Ce terme est généralement utilisé au pluriel.",
+          "sourced_examples": [
+            "Je lui dépeignis spontanément, et sans m’aider d’aucun texte ancien, la mélancolie douce du soir et la beauté de cette terre natale qui nous nourrit, non seulement de pain et de vin, mais encore d’idées, de sentiments et de croyances, et qui nous recevra tous dans son sein maternel, comme des petits enfants fatigués d’un long jour.",
+            "Il a mis fin à ses jours."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_8_jour__nom__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "Période durant laquelle le soleil apporte sa lumière, pour une zone donnée de la Terre.",
+          "sourced_examples": [
+            "Marthe n’était pas ordinairement matineuse, et elle n’avait pas l’habitude de voir lever le soleil pendant cette saison ; elle ne savait donc pas trop à quelle heure précise il serait jour.",
+            "Le lendemain, j’ai vu la chambre dans la simplicité de la lumière du jour."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_9_jour__nom__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "Source de lumière ; percement par lequel la lumière peut pénétrer.",
+          "sourced_examples": [
+            "Les « jours » ménagés dans les parois n’étaient donc point obstrués.",
+            "De grandes bâtisses aveugles, presque sans jours, grisâtres, salies par le temps et roussies par le soleil."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_10_jour__nom__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "(Par extension) Lumière du jour ou parfois d’une autre source lumineuse.",
+          "sourced_examples": [
+            "[…] ; tous tenaient à la main droite ou des épées, ou des piques, ou des arquebuses, et quelques-uns, à la main gauche, des flambeaux qui répandaient sur cette scène un jour funèbre et vacillant, […].",
+            "C’était le jour morose d’avant la première aurore, qui éclaire le sommeil du monde et apporte les rêves énervés du matin."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_11_jour__nom__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "(Par extension) Trou dans une surface continue ou un tamis.",
+          "sourced_examples": [
+            "La laine tombe dans un grand cylindre sans arbre intérieur, en toile métallique à jours de 5 à 6 millimètres pour permettre aux impuretés de sortir.",
+            "Le ventre dans lequel ses mains allaient avoir à travailler pendant cent quatre-vingt-sept jours n’était plus séparé de lui que par le réseau à jours octogonaux de la grille de sécurité."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_12_jour__nom__1",
+          "sense_number": "12",
+          "source_order": 12,
+          "definition_fr": "(Par extension) Espace ménagé dans l’étoffe d’un vêtement.",
+          "sourced_examples": [
+            "Que penseraient les demoiselles Hermeline, si elles la voyaient arriver au pensionnat avec ces bas de coton blanc à jours, qu’elle mettait aujourd’hui pour la première fois, hypothèse qui était presque du domaine de la réalité, car les bas du dimanche finissent le plus souvent par devenir des bas de tous les jours."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_13_jour__nom__1",
+          "sense_number": "13",
+          "source_order": 13,
+          "definition_fr": "(Vieilli) Manière dont un objet est frappé par la lumière.",
+          "sourced_examples": [
+            "Ce tableau devrait être placé dans un autre jour.",
+            "Mettre quelque chose dans son jour, le placer à un jour convenable, de manière qu’on puisse le bien voir."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_14_jour__nom__1",
+          "sense_number": "14",
+          "source_order": 14,
+          "definition_fr": "(Sens figuré) Manière de présenter quelqu'un ou quelque chose.",
+          "sourced_examples": [
+            "Une chose qui s’offre, qui se présente, que l’on voit sous un jour favorable.",
+            "Il me présenta la chose sous un jour si avantageux que j’acceptai sa proposition."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_15_jour__nom__1",
+          "sense_number": "15",
+          "source_order": 15,
+          "definition_fr": "(Peinture) Imitation de la lumière qui se répand sur les objets représentés dans un tableau.",
+          "sourced_examples": [
+            "Dans ce tableau, le jour vient d’en haut."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_16_jour__nom__1",
+          "sense_number": "16",
+          "source_order": 16,
+          "definition_fr": "(Industrie minière) L’ensemble des tâches effectuées en dehors de la mine proprement dite.",
+          "sourced_examples": [
+            "Dans le cas où un ouvrier d’une catégorie du fond serait, pour insuffisance physique, déplacé dans un service de jour, cet ouvrier sera reclassé dans la catégorie du jour de même numéro."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_17_jour__nom__1",
+          "sense_number": "17",
+          "source_order": 17,
+          "definition_fr": "(Industrie minière) Installations situées à l’extérieur d’une mine.",
+          "sourced_examples": [
+            "Remonter au jour."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "jour__nom__1",
+          "sense_id": "__ws_18_jour__nom__1",
+          "sense_number": "18",
+          "source_order": 18,
+          "definition_fr": "Jour de la semaine où a lieu la réception des relations d'une personne.",
+          "sourced_examples": [
+            "Mes amies, et Zaza elle-même, jouaient avec aisance leur rôle mondain ; elles paraissaient au « jour » de leur mère, servaient le thé, souriaient, disaient aimablement des riens ; moi je souriais mal, je ne savais pas faire du charme, de l’esprit ni même des concessions."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "jour__nom__1",
+        "sense_id": "__ws_1_jour__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|diurne|ADJ|jour|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "7199->3836",
+          "label": "异形词族",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|journalier|ADJ|jour|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "7199->7202",
+          "label": "异形词族 · -ier",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_jour__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "天",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Période de vingt-quatre heures",
+          "mapped_sense_id": "__ws_1_jour__nom__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_jour__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "日子",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Période de vingt-quatre heures",
+          "mapped_sense_id": "__ws_1_jour__nom__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_jour__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "天",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Unité de mesure du temps",
+          "mapped_sense_id": "__ws_3_jour__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_jour__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "白天",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Période durant laquelle le soleil apporte sa lumière",
+          "mapped_sense_id": "__ws_8_jour__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "2f839cfdde343f463a3e5d7bfb80c03558710de6de2ad09ad46d5f18ba51b640"
+    },
+    {
+      "stable_lexeme_key": "femme|NOM",
+      "runtime_lexeme_id": 5171,
+      "lemma": "femme",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1346.6246,
+        "lexique_frequency": 645.807,
+        "contextual_diversity": 76.83405
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "femme__nom__1",
+          "sense_id": "__ws_1_femme__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Être humain adulte de genre ou de sexe féminin (par opposition à fille, fillette, femme-enfant).",
+          "sourced_examples": [
+            "Mais peu avant sa vingtième année, quand de jeune fille elle devint femme et vit s’effiler sous les seins le premier pli charmant de la maturité qui va naître, il lui vint tout à coup des ambitions.",
+            "Mes tempes battent ; toute ma chair va à cette femme presque nue et charmante dans le matin et dans le transparent vêtement qui enferme la douce odeur d’elle."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "femme__nom__1",
+          "sense_id": "__ws_2_femme__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Conjointe ; épouse ; partenaire.",
+          "sourced_examples": [
+            "Néanmoins la foi conjugale est sans cesse violée dans les grandes sociétés policées. Il est peu de maris qui soient fidèles à leurs femmes ; il est peu de femmes qui soient fidelles à leurs maris.",
+            "L'affaire de la femme Mouley diffère de celle de la femme Lelarge en deux points assez remarquables: sa déclaration frauduleuse n'avait pas pour but direct l’engagement de ses biens dotaux; elle ne portait que sur les biens de son mari, […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "femme__nom__1",
+          "sense_id": "__ws_3_femme__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Personne adulte de genre féminin, qui possède les qualités supposées des femmes.",
+          "sourced_examples": [
+            "Tout penseur complet doit être femme par les côtés délicats du cœur.",
+            "— Monsieur, je ne suis qu’une femme, et, par conséquent, mon jugement est peu de chose."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "femme__nom__1",
+          "sense_id": "__ws_4_femme__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Vieilli) (Au pluriel) Personnel féminin. → voir femme de ménage et femme de chambre.",
+          "sourced_examples": [
+            "Elle se tourna de l’autre côté en achevant ces paroles, et commanda à sa ﬁlle d’appeler ses femmes sans vouloir l’écouter, ni parler davantage.",
+            "Faut-il que j’appelle vos femmes ? demanda le roi."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "femme__nom__1",
+          "sense_id": "__ws_5_femme__nom__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(En apposition) Avant ou après un nom épicène pour lever une ambiguïté.",
+          "sourced_examples": [
+            "Si seules de rares femmes photographes marquent l’histoire de la photographie au XIXe siècle, elles prennent superbement leur revanche à partir des années vingt.",
+            "Si elle réussissait comme femme-policier, elle pouvait réussir dans n'importe quel domaine. Les autres agents secrets de son service disaient qu'elle avait des couilles. Pour eux, c'était un compliment, et Jezzie l'acceptait comme tel."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "femme__nom__1",
+        "sense_id": "__ws_1_femme__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|femme|NOM|féminin|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "5171->5639",
+          "label": "异形词族 · -in",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|femme|NOM|féministe|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "5171->5644",
+          "label": "异形词族 · -iniste",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_femme__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "妇女",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Être humain adulte de genre ou sexe féminin",
+          "mapped_sense_id": "__ws_1_femme__nom__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_femme__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "女人",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Être humain adulte de genre ou sexe féminin",
+          "mapped_sense_id": "__ws_1_femme__nom__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "d9d8b3a3c6820660dfd4b88ed8f8c026bce1bf99a3ec45a2b6e1b6ce58c12afd"
+    },
+    {
+      "stable_lexeme_key": "heure|NOM",
+      "runtime_lexeme_id": 6145,
+      "lemma": "heure",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1270.7439,
+        "lexique_frequency": 609.022,
+        "contextual_diversity": 67.28261
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_1_heure__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Métrologie) Unité de mesure du temps, compatible avec le Système international, dérivée de la seconde, dont le symbole est h. 1 heure = 60 minutes = 3600 secondes.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_2_heure__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Durée mesurée par cette unité.",
+          "sourced_examples": [
+            "La grande avenue était complètement déserte : on avait accordé trois heures aux habitants pour vider les lieux, et tout le monde, semblait-il, s’était hâté d’en profiter.",
+            "[…] on la fait tremper pendant trois ou quatre heures, après quoi on la retire du bain, on laisse égoutter et on essore."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_3_heure__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Par extension) Ce temps qui est consacré à une tâche, à une activité, etc. — Note d’usage : Il est alors suivi de la préposition de.",
+          "sourced_examples": [
+            "Le tatouage, en effet, est une institution dans la marine américaine et des heures de service sont spécialement réservées à ce divertissement artistique."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_4_heure__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Une des vingt-quatre divisions de la journée, durant soixante minutes.",
+          "sourced_examples": [
+            "Les heures de ces dimanches pareillement nus, glissent, lentes, torpides. Le temps semble s’être arrêté…"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_5_heure__nom__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Moment d’une journée.",
+          "sourced_examples": [
+            "C’est l’heure charmante où l’alouette s’élève dans le ciel, salue de ses trilles et de ses roulades le matin jeune, virginal et triomphant."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_6_heure__nom__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Moment du jour considéré par rapport au temps, aux heures écoulées depuis minuit ou depuis midi. Note : Écrit au pluriel excepté une heure, mais employé souvent au singulier. Peut être suivi par la minute ou par et demie.",
+          "sourced_examples": [
+            "Les veilles furent fixées à deux heures chacune, en ce moment, neuf heures et demie sonnaient à l’église de Kervenheim.",
+            "A midi, j'allais à la messe militaire. […]. De retour, nous dînions à deux heures et demie, et à cinq heures nous gagnions le théâtre où se donnait un opéra tragi-comique."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_7_heure__nom__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Militaire) (Anglicisme) (Au pluriel) Indique l’heure et la minute sur le cadran de 24 heures montrées respectivement avec deux chiffres.",
+          "sourced_examples": [
+            "Le 5 septembre, alors que la 3e division canadienne commençait d’investir Boulogne et Calais, le Régiment était prêt à avancer à 0730 heures, mais ne partait qu’à 0830 heures."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_8_heure__nom__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "(Horlogerie) Indication de l’heure qu’il est, donnée par une horloge, par une montre, etc.",
+          "sourced_examples": [
+            "Je me souviens que, dans les champs, les grillons chantaient et que, très loin, à la lisière du bois, j’entendais le chat-huant sonnant les heures nocturnes […]",
+            "Sur le grands paquebots, on obtient chaque jour l’heure par T.S.F. et l’on peut connaître l’heure à moins d’un cinquième de seconde."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_9_heure__nom__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "(Au pluriel) (Rare) Les signes d’un cadran qui servent à l’indication des heures.",
+          "sourced_examples": [
+            "Les heures de ce cadran sont en chiffres romains, en chiffres arabes. Les heures de ce cadran sont effacées."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_10_heure__nom__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "Moment qu’on indique, qu’on fixe pour un rendez-vous, pour une affaire, etc.",
+          "sourced_examples": [
+            "Choisir une heure. Fixer une heure. Convenir d’une heure. Il m’a donné heure à cinq heures.",
+            "Donner son heure. Demander à quelqu’un son heure."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_11_heure__nom__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "Moment de la journée où l’on fait habituellement quelque chose.",
+          "sourced_examples": [
+            "Il est l’heure de dîner. Il est l’heure de se coucher.",
+            "Il est l’heure de se retirer. Avancer l’heure du dîner."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_12_heure__nom__1",
+          "sense_number": "12",
+          "source_order": 12,
+          "definition_fr": "Divers moments de la journée, par rapport à la manière dont on les passe, dont on les emploie. — Note : Dans ce sens on le met ordinairement au pluriel, et il est souvent précédé de l’adjectif possessif.",
+          "sourced_examples": [
+            "Passer les heures entières à quelque chose. Passer agréablement les heures. Employer bien, employer mal les heures.",
+            "Avoir ses heures d’étude, ses heures de récréation. Il n’a point de temps à perdre, toutes ses heures sont précieuses, lui sont précieuses."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_13_heure__nom__1",
+          "sense_number": "13",
+          "source_order": 13,
+          "definition_fr": "(Plus largement) Temps, moment ou époque quelconque.",
+          "sourced_examples": [
+            "La canonnade de Valmy retentissait encore à l’heure où se réunissait la Convention nationale, le 21 septembre 1792.",
+            "« Connaissez-vous mieux que lui les problèmes de l’heure ? »"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_14_heure__nom__1",
+          "sense_number": "14",
+          "source_order": 14,
+          "definition_fr": "(Avec article défini et complément de nom et, souvent, le verbe sonner) Moment où une chose arrive ou doit arriver.",
+          "sourced_examples": [
+            "L'heure de la Révolution a-t-elle sonné ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_15_heure__nom__1",
+          "sense_number": "15",
+          "source_order": 15,
+          "definition_fr": "(Absolument) (Avec l’adjectif possessif) Temps, moment où quelque chose doit arriver à quelqu’un.",
+          "sourced_examples": [
+            "Naguère l’artiste rebuté par la stupidité de la foule se repliait dans sa coquille, œuvrait silencieusement, en garde contre le pompiérisme odieux de son époque, attendant son heure qui sonnait toujours trop tard.",
+            "Il y avait longtemps qu’il sollicitait; enfin son heure est venue, on lui a donné le poste qu’il désirait."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_16_heure__nom__1",
+          "sense_number": "16",
+          "source_order": 16,
+          "definition_fr": "(En particulier) Le moment de la mort.",
+          "sourced_examples": [
+            "Il est réchappé d’une grande maladie, son heure n’était pas encore venue. Mon heure est arrivée."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_17_heure__nom__1",
+          "sense_number": "17",
+          "source_order": 17,
+          "definition_fr": "(Astronomie) Unité d’angle valant 15 degrés.",
+          "sourced_examples": [
+            "Heure d’ascension droite."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_18_heure__nom__1",
+          "sense_number": "18",
+          "source_order": 18,
+          "definition_fr": "(Militaire) (Par extension) Trente degrés, utilisé pour indiquer les directions approximatives selon le cadran de 12 heures.",
+          "sourced_examples": [
+            "Cible à 3 heures : Cible à droite."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_19_heure__nom__1",
+          "sense_number": "19",
+          "source_order": 19,
+          "definition_fr": "(Au pluriel) (Religion) (Par ellipse) Livre d’heures. → voir heures",
+          "sourced_examples": [
+            "M. Brentano possède encore quarante miniatures de la plus grande beauté, tirées d’un Livre d’heures de ce même trésorier, et qui, à juger d’après les miniatures de la traduction de Josèphe, sont aussi de la main de Jean Fouquet."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "heure__nom__1",
+        "sense_id": "__ws_1_heure__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|heure|NOM|horaire|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6145->6222",
+          "label": "异形词族 · -aire",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_heure__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "小时",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Unité de mesure du temps",
+          "mapped_sense_id": "__ws_1_heure__nom__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_heure__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "点",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Heures écoulées depuis minuit ou midi",
+          "mapped_sense_id": "__ws_6_heure__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "38d8e288ebe34c5cdabeeace84213acd323a59f780ae313bed60f80bfdf51aec"
+    },
+    {
+      "stable_lexeme_key": "temps|NOM",
+      "runtime_lexeme_id": 12739,
+      "lemma": "temps",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1202.5783,
+        "lexique_frequency": 1123.649,
+        "contextual_diversity": 94.62952
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_1_temps__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Durée des choses, marquée par certaines périodes, et principalement par la révolution apparente du soleil ; écart entre le déroulement de deux événements.",
+          "sourced_examples": [
+            "Le temps, « cette image mobile / De l’immobile éternité », mesuré ici-bas par la succession des êtres, qui sans cesse changent et se renouvellent, se voit, se sent, se compte, existe. Plus haut, il n’y a point de changement ni de succession, de nouveauté ni d’ancienneté, d’hier ni de lendemain : tout y paraît, et tout y est constamment le même.",
+            "Le seul recours contre le temps est de le mesurer à ce double pas, comme ceux qui ont affaire personnellement à lui, les sentinelles, les officiers de quart."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_2_temps__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Par extension) (Mythologie) Sa représentation sous la figure d’un vieillard ailé qui d’une main tient une faux, et de l’autre un sablier.",
+          "sourced_examples": [
+            "Le Temps est représenté sous la figure d'un vieillard , tenant une faux de la main droite , et de l'autre un serpent qui se mord la queue. On lui donne des ailes, et l'on place près de lui un sablier. La faux indique que le Temps moissonne tout; le serpent qui forme un cercle désigne l'éternité, qui n'a ni commencement ni fin. Le sablier indiqué la mesure du Temps et les ailes, sa rapidité.",
+            "Il s'avançait, précédé d'un escadron de mousquetaires Louis XIII, montés sur des chevaux de troupe, et suivi par un char monumental qui portait tous les dieux de l'Olympe, y compris le Temps, armé de la faux classique."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_3_temps__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Durée limitée, par opposition à l’éternité.",
+          "sourced_examples": [
+            "Platon a dit que le temps est une image mobile de l’éternité immobile.",
+            "Avant tous les temps, avant les temps, avant le temps, Avant la création du monde."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_4_temps__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Spécialement) Durée longue ; époque ; période ; ère.",
+          "sourced_examples": [
+            "Tous ont successivement combattu pour ou contre les Jacobins, selon les temps & les circonstances.",
+            "C’est que Marguerite était non-seulement la plus belle, mais encore la plus lettrée des femmes de son temps."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_5_temps__nom__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Spécialement) Succession des jours, des heures, des moments, considérée par rapport aux différents travaux, aux diverses occupations des personnes.",
+          "sourced_examples": [
+            "J’aurais voulu visiter le fameux sanctuaire d’Atesh-Gâh ; mais il est à vingt-deux verstes de la ville, et le temps m’eût manqué.",
+            "Il s’acharnera au travail, il ne ménagera ni son temps, ni ses forces, à une époque où le radium et la radiothérapie profonde était encore inconnue."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_6_temps__nom__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Durée limitée.",
+          "sourced_examples": [
+            "Ce soldat a fait son temps de service. — Prêtez-moi cela pour quelque temps. — Cela n’a pas laissé de durer un certain tempsCe qui m’émerveillait le plus dans les premiers temps, c'était l’étonnante habileté de nos poneys à se tirer d'affaire au milieu d'un chaos de débris volcaniques où un piéton aurait pu difficilement trouver son chemin. Quand Napoléon III fut empoigné à Boulogne pour avoir donné une seconde représentation du débarquement à Cannes, on le jeta au cachot et on l’emmena à Paris sans lui donner le temps de changer de chemise."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_7_temps__nom__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Époque déterminée.",
+          "sourced_examples": [
+            "Payer dans le temps porté par l’obligation. — Prévenir le temps. — Devancer le temps. — Le temps approche.",
+            "Dès que le temps sera venu, sera échu. — Marquez-moi précisément le temps. — Elle est accouchée avant le temps."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_8_temps__nom__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "Conjoncture ; occasion propre ; moment.",
+          "sourced_examples": [
+            "Signe (ou marqueur) de ces temps troubles, jamais les affaires « aux faux policiers » n'ont autant proliféré que sous l’Occupation. Il faut dire que les temps étaient propices.",
+            "Le temps est favorable. — Un temps plus opportun. — Laisser passer le temps de faire quelque chose."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_9_temps__nom__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "Les siècles, les différentes époques par rapport à la chronologie, des différents âges de la vie.",
+          "sourced_examples": [
+            "Les temps fabuleux. — Les temps héroïques. — Les temps historiques. — Du temps d’Auguste.",
+            "Nous n’avons pas vu, nous ne verrons pas cela de notre temps. — Ils vivaient dans le même temps."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_10_temps__nom__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "Période déterminée par rapport à l’état où sont les choses pour le gouvernement d’un pays, pour les manières de vivre, pour les modes, etc.",
+          "sourced_examples": [
+            "Le temps approche où le grand commerce va, plus que les guerres de chevalerie, tenter les jeunes Anglais aventureux.",
+            "C’était un bon temps, un temps heureux. — Un temps misérable, un temps de corruption, un temps de trouble."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_11_temps__nom__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "Moment précis, en escrime ou en exercices militaires, pendant lesquels il faut faire certains mouvements qui sont distingués et séparés par des pauses.",
+          "sourced_examples": [
+            "Pousser une botte en deux temps, en trois temps. — Temps d’arrêt."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_12_temps__nom__1",
+          "sense_number": "12",
+          "source_order": 12,
+          "definition_fr": "(Danse, Musique) Chacune des principales divisions de la mesure, dont les unes sont plus marquées que les autres dans l’exécution, quoique d’ailleurs elles soient égales en durée.",
+          "sourced_examples": [
+            "Et voici que des guirlandes de jeunes filles, fleurs rieuses dans leurs corolles couleur de ciel, couleur d'eau, couleur de feuille, essaient la cadence des rondes dont le cornemusiste joufflu guidera aigrement les temps.",
+            "Mesure à deux temps, à trois temps, à quatre temps. — La mesure se divise en temps forts et en temps faibles."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_13_temps__nom__1",
+          "sense_number": "13",
+          "source_order": 13,
+          "definition_fr": "Rythme, en parlant de métrique de la phrase ou du vers.",
+          "sourced_examples": [
+            "Les temps forts. — Le temps marqué."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_14_temps__nom__1",
+          "sense_number": "14",
+          "source_order": 14,
+          "definition_fr": "Une des pauses ou un des silences qu’on observe entre certaines phrases, entre certains mots, dans une déclamation.",
+          "sourced_examples": [
+            "Lorsqu’on parle en public, il est bon d’observer des temps entre certains mots, entre certaines phrases.",
+            "Après ce vers, il y a un temps à garder. — Prendre un temps."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_15_temps__nom__1",
+          "sense_number": "15",
+          "source_order": 15,
+          "definition_fr": "(Grammaire) Quelqu’une des différentes formes qui marquent dans les verbes le moment auquel se rapporte l’action ou l’état dont on parle.",
+          "sourced_examples": [
+            "Un lecteur m'écrit « La prof de français nous a dit qu'il est inutile d'apprendre à conjuguer le passé simple, car c'est un temps archaïque, aujourd'hui complètement inusité »."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_16_temps__nom__1",
+          "sense_number": "16",
+          "source_order": 16,
+          "definition_fr": "Disposition de l’air ; état de l’atmosphère ; climat du moment.",
+          "sourced_examples": [
+            "On établit un service aérostatique. Chaque jour, lorsque le temps le permet, un ou plusieurs ballons sont lancés.",
+            "Depuis quelques jours, le temps s’est enfin remis au beau."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "temps__nom__1",
+        "sense_id": "__ws_1_temps__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|contemporain|ADJ|temps|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "12739->3023",
+          "label": "异形词族 · -conXain",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|temporaire|ADJ|temps|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "12739->12736",
+          "label": "异形词族 · -aire",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|temporel|ADJ|temps|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "12739->12738",
+          "label": "异形词族 · -el",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_temps__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "时间",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Durée des choses",
+          "mapped_sense_id": "__ws_1_temps__nom__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_temps__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "时",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Durée des choses",
+          "mapped_sense_id": "__ws_1_temps__nom__1",
+          "structural_match_for_selected_sense": true,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_temps__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "时",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Période, époque",
+          "mapped_sense_id": "__ws_4_temps__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_temps__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "时代",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Période, époque",
+          "mapped_sense_id": "__ws_4_temps__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_5_temps__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "段时间",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Période, époque",
+          "mapped_sense_id": "__ws_4_temps__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_6_temps__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "时态",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "(Grammaire)",
+          "mapped_sense_id": "__ws_15_temps__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_7_temps__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "时制",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "(Grammaire)",
+          "mapped_sense_id": "__ws_15_temps__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_8_temps__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "天气",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Disposition de l’air, état de l’atmosphère",
+          "mapped_sense_id": "__ws_16_temps__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "dd55456bee84a0c089d3068a5ed3c1d27e86376880d4dfbe5bbb47606babb93b"
+    }
+  ],
+  "artifact_hash": "c8432af8fedd8542b3ec971b6d8b33e89b935308137c19bcd54a38dbdf34fcf6"
+}

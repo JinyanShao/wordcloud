@@ -1,0 +1,3818 @@
+{
+  "schema_version": 1,
+  "part": 4,
+  "parent_artifact_hash": "df180edf19db921b8d578dc9f492d9e09d33d111f9cb13d2411dfe3353494b1e",
+  "items": [
+    {
+      "stable_lexeme_key": "déclarer|VER",
+      "runtime_lexeme_id": 4080,
+      "lemma": "déclarer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 125.4513,
+        "lexique_frequency": 41.139,
+        "contextual_diversity": 6.00429
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_1_déclarer__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Faire connaître d’une façon manifeste.",
+          "sourced_examples": [
+            "Il me déconcerta en me déclarant à brûle-pourpoint : « Il faut rendre libre la polygamie. »",
+            "[…] l’ouverture donnait sur la loge de Gaby Million où la vedette avait laissé ses chiens. Les bêtes se mirent à aboyer.<br"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_2_déclarer__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Faire connaître d’une façon décisive, par acte public, par autorité publique.",
+          "sourced_examples": [
+            "On le déclara coupable de haute trahison.",
+            "Son mariage a été déclaré nul."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_3_déclarer__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Pronominal) S’expliquer, se manifester ou se faire connaître.",
+          "sourced_examples": [
+            "Il ne veut point se déclarer là-dessus.",
+            "Il s’est déclaré l’auteur de ce livre."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_4_déclarer__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Pronominal) Exprimer des sentiments d'amour à quelqu'un.",
+          "sourced_examples": [
+            "Je lui ai dit : « Ma sœur a du sentiment pour vous ; il faut vous déclarer. »",
+            "Fernande fût morte plutôt que de se déclarer, crime inexpiable à l’époque pour une amoureuse, mais ses silences et ses beaux regards noyés parlèrent pour elle."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_5_déclarer__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Pronominal) Se prononcer ou prendre parti pour ou contre quelqu’un, pour ou contre quelque chose.",
+          "sourced_examples": [
+            "Tenant la bride un peu haute à ce peuple déjà fort aliéné du service du Roi, il l'empêche de se déclarer et occupa les forts châteaux de Rosemont et de la Ferté-Chauldron.",
+            "Il est le premier ministre de la Guerre qui se soit déclaré hostile à l’alliance franco-russe, thème favori des hommes de la « Jésuitière »."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_6_déclarer__verb__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Pronominal) Prendre parti dans une guerre commencée.",
+          "sourced_examples": [
+            "Cette nation n’hésita plus à se déclarer. Le participe passé Déclaré, ée, s’emploie adjectivement dans ce sens.",
+            "Ennemi déclaré."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "déclarer__verb__1",
+        "sense_id": "__ws_1_déclarer__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|clair|ADJ|déclarer|VER",
+          "subtype": "semantic_derivation",
+          "direction": "2461->4080",
+          "label": "异形词族 · -dé1X",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|déclaration|NOM|déclarer|VER",
+          "subtype": "suffixation",
+          "direction": "4080->4079",
+          "label": "后缀 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "8c3ca42d1084681d79a412dd83e06fa317fc83af6927d91e040398064d79bd3e"
+    },
+    {
+      "stable_lexeme_key": "développer|VER",
+      "runtime_lexeme_id": 4466,
+      "lemma": "développer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 116.9959,
+        "lexique_frequency": 25.392,
+        "contextual_diversity": 3.85487
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_1_développer__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Dégager une chose de ce qui l’enveloppe.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_2_développer__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Déployer une chose enveloppée, pliée.",
+          "sourced_examples": [
+            "Adrienne se leva. Développant sa taille élancée, elle nous fit un salut gracieux, et rentra en courant dans le château.",
+            "Le triage se fait sur des claies sur lesquelles le trieur commence par développer la toison qu’on arrive à reconstituer à plat."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_3_développer__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Sens figuré) Faire qu’un être ou une chose se forme ou se transforme, tant au sens physique qu’au sens moral.",
+          "sourced_examples": [
+            "Il n’existe au Pérou aucune institution pour l’éducation de l’un ou de l’autre sexe ; l’intelligence ne s’y développe que par les forces natives.",
+            "Par conséquent, quand les personnes en surpoids sont traitées comme des moins que rien et qu'elles développent des problèmes de santé liés au stress, on leur affirme que ces problèmes sont de leur faute, que c'est à cause de leur poids."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_4_développer__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Répandre dans l'espace ou le temps.",
+          "sourced_examples": [
+            "Lorsque le christianisme fut suffisamment déve­loppé, la littérature des apocalypses cessa d’être beaucoup cultivée, encore que l'idée qui en faisait le fond continuât à exercer son influence ; […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_5_développer__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Géométrie) Étendre une surface courbe, en respectant ses dimensions, sur un plan.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_6_développer__verb__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Architecture) Représenter sur un plan les diverses faces d’un objet.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_7_développer__verb__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Photographie) Faire apparaître, à l’aide de procédés chimiques, les images que la lumière a produites sur le cliché.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_8_développer__verb__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "Exposer, présenter, faire voir quelque chose en détail.",
+          "sourced_examples": [
+            "Développer le plan, le sujet d’un ouvrage.",
+            "Développer un système."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_9_développer__verb__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "(Algèbre) Transformer une expression algébrique en une somme d’éléments.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_10_développer__verb__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "(Algèbre) Pousser aussi loin que possible les opérations d’une expression algébrique, qui y sont indiquées.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_11_développer__verb__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "(Programmation) Réaliser, implanter, implémenter (un programme).",
+          "sourced_examples": [
+            "Nous développons une “tokenisation” de licence de jeux vidéo, explique David Hanson, cofondateur et PDG d’Ultra.io."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_12_développer__verb__1",
+          "sense_number": "12",
+          "source_order": 12,
+          "definition_fr": "Se former ou se transformer (en parlant d'un organisme).",
+          "sourced_examples": [
+            "Ce plant s’est développé à partir d'une graine tombée là au hasard de nos va-et-vient.",
+            "Toute société ne peut exister qu’à la condition de se déconcréter, de se fluidifier, de se développer, de grandir, en un mot de progresser incessamment dans la vie."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_13_développer__verb__1",
+          "sense_number": "13",
+          "source_order": 13,
+          "definition_fr": "S’améliorer (en parlant d’une faculté).",
+          "sourced_examples": [
+            "Son habileté au jeu de paume s’est grandement développée par la pratique."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_14_développer__verb__1",
+          "sense_number": "14",
+          "source_order": 14,
+          "definition_fr": "S’étendre.",
+          "sourced_examples": [
+            "Puis, dans les années quatre-vingt à l’initiative du Cepralmar, s’est développée la mytiliculture en mer ouverte sur filières.",
+            "L’armée se développa dans la plaine. — À l’extrémité de cette vallée, le fleuve se développe majestueusement."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "développer__verb__1",
+        "sense_id": "__ws_1_développer__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|développement|NOM|développer|VER",
+          "subtype": "suffixation",
+          "direction": "4466->4465",
+          "label": "后缀 · -ment",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "ddab238ad3014e5baf0aeffc9ee4ae2d13310b8fd136d163eb5bf03e73d78d27"
+    },
+    {
+      "stable_lexeme_key": "suffire|VER",
+      "runtime_lexeme_id": 12390,
+      "lemma": "suffire",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 109.8432,
+        "lexique_frequency": 169.472,
+        "contextual_diversity": 38.62982
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_1_suffire__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Pouvoir satisfaire à quelque chose ou à un but donné.",
+          "sourced_examples": [
+            "Quelques-uns ont crû qu'il étoit impossible que ces particules salées de la terre suffissent toujours & ne fussent pas enfin tout-à-fait lavées par l'eau de l'océan […].",
+            "[…], ces savants explorateurs du sol, ont ouvert la voie qu’il fallait suivre dans les études de ce genre, […]; mais la vie de plusieurs hommes ne saurait suffire à cette grande œuvre, […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_2_suffire__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Pouvoir subvenir ou pouvoir satisfaire aux exigences de quelqu’un.",
+          "sourced_examples": [
+            "Mais que pour l'heure le tesmoignage de Grégoire Archeuesque de Tours lui suffirait à cause de sa religieuse & saincte vie, […].",
+            "Ma nièce a cent mille livres de rente, et cela lui suffira; j'en ai trois cent mille que je vous abandonne si je n'ai pas d'héritiers, et dans le cas contraire, je vous assure cinquante mille écus de douaire."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_3_suffire__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Fournir assez, faire ce qui est nécessaire pour qu’une chose se réalise.",
+          "sourced_examples": [
+            "Il leur suffisait de tremper le bout des doigts dans une pipe de cidre ou une cuvée de vin pour changer cidre et vin en bouse liquide.",
+            "Existe-t-il un type de preuves incontournables qu’il suffirait d’évoquer pour persuader de la justesse de sa position ses opposants les plus tenaces ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_4_suffire__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Être à la cause de quelque chose ; déclencher ou conditionner un évènement.",
+          "sourced_examples": [
+            "La récolte a été très déficitaire, ce qui a suffit à maintenir les prix.",
+            "Comme toutes les réformes monétaires, la stabilisation de la monnaie allemande a provoqué une crise économique, ou plus exactement, elle n’a pas suffi à en préserver le Reich."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_5_suffire__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Familier) Ne plus être nécessaire de fournir ou de faire quelque chose. — Note : Se dit dans une requête signalant à quelqu'un que les conditions nécessaires à une fin ont été atteintes ou que les exigences sont remplies.",
+          "sourced_examples": [
+            "Je suis sûr que mes égaux ne me mépriseront pas, et cela me suffit, car leur suffrage est le seul auquel j'aspire.",
+            "Je pense donc je pète, et ça suffira à mon bonheur de vache pleine regardant défiler le train blindé de l'abondance à travers un paysage de poubelles renversées."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_5.a_suffire__verb__1",
+          "sense_number": "5.a",
+          "source_order": 6,
+          "definition_fr": "(Familier) (Impersonnel) Voilà qui est bien, c’est assez, n’en parlons plus. — Note : Il marque souvent l’agacement. — Il est souvent à l'impératif.",
+          "sourced_examples": [
+            "Si j'avais un quelconque pouvoir politique, je commencerais par ça. Je dirais : “Bon maintenant ça suffit. On se met tous autour d'une table et on dit chacun ce que l'on veut, […]”."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_6_suffire__verb__1",
+          "sense_number": "6",
+          "source_order": 7,
+          "definition_fr": "(Impersonnel) Être en suffisante quantité. — Note : Il est suivi de de, de que, de à ou de pour.",
+          "sourced_examples": [
+            "On voudrait faire pleurer M. Dugué de la Fauconnerie, qu’il suffirait de lui dire : — Est-ce vrai que vous ne tenez pas au suffrage universel ?",
+            "En décembre 1876, […]: l'image de marque de la fonte lorraine n'est pas bonne. On va jusqu'à dire qu’il suffit d'un kilo d'acier lorrain dans un wagon d'acier anglais pour gâcher le mélange."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_7_suffire__verb__1",
+          "sense_number": "7",
+          "source_order": 8,
+          "definition_fr": "(Pronominal) Suffire à ses propres besoins, avoir ou gagner assez pour pourvoir à ses besoins.",
+          "sourced_examples": [
+            "Elle a deux cents francs de loyer, il faut qu’elle se suffise avec cinquante francs par mois.",
+            "Au total l’offre de marchandises n'est pas pléthorique mais reste à l'échelle d’un hameau d'une quarantaine d'habitants qui se suffisent vraisemblablement à eux-mêmes sur le plan alimentaire […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_8_suffire__verb__1",
+          "sense_number": "8",
+          "source_order": 9,
+          "definition_fr": "(Pronominal) Trouver en soi le moyen de se passer des autres.",
+          "sourced_examples": [
+            "Réduit à moi seul, je me nourris, il est vrai, de ma propre substance, mais elle ne s'épuise pas ; je me suffis à moi-même, quoique je rumine, pour ainsi dire, à vide, & que mon imagination tarie, & mes idées éteintes ne fournissent plus d'alimens à mon cœur."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "suffire__verb__1",
+        "sense_id": "__ws_1_suffire__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|suffire|VER|suffisant|ADJ",
+          "subtype": "conversion",
+          "direction": "12390->12393",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "1c2a93ac1fd7144f3a863b6fb15278d9e1ced6630af96fad76acc6f211c3ccd4"
+    },
+    {
+      "stable_lexeme_key": "obliger|VER",
+      "runtime_lexeme_id": 8824,
+      "lemma": "obliger",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 107.872,
+        "lexique_frequency": 84.722,
+        "contextual_diversity": 16.30282
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_1_obliger__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Mettre quelqu’un dans l’obligation de faire ou de dire quelque chose.",
+          "sourced_examples": [
+            "Les défenseurs, après avoir perdu les faubourgs, manquant d’eau, furent obligés de capituler.",
+            "– Je suis citoyen britannique ! – continua Bert, obstiné. – Vous n’êtes pas obligés d’écouter, mais rien ne me force à me taire."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_2_obliger__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Droit) Lier quelqu’un par un contrat, par une promesse, contraindre à exécuter la chose à laquelle on s’est engagé.",
+          "sourced_examples": [
+            "Son contrat l’oblige à cela.",
+            "Faire obliger le mari et la femme."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_3_obliger__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Économie) Hypothéquer ou cautionner.",
+          "sourced_examples": [
+            "Il a obligé tous ses biens.",
+            "S’obliger pour quelqu’un, lui servir de caution, répondre des pertes ou des dommages qui peuvent arriver par sa faute, des engagements qu’il ne remplirait pas."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_4_obliger__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Contraindre, forcer ou mettre dans la nécessité de faire quelque chose.",
+          "sourced_examples": [
+            "Or, nous devons tout essayer pour maintenir peuplés ces plateaux de sol ingrat et non chercher à éloigner la population, l'obligeant à vivre dans des usines malsaines, […].",
+            "C’est les Jésuites qui ont fait assassiner Henri IV ; c’est encore eux qui ont fait révoquer l’Édit de Nantes, à la suite de quoi tous les protestants ont été obligés de quitter la France; […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_5_obliger__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Attacher quelqu’un par un service, faire plaisir.",
+          "sourced_examples": [
+            "Il était généreux ; il ne craignait point d'obliger des ingrats, suivant ce grand précepte de Zoroastre : \"Quand tu manges, donne à manger aux chiens, dussent-ils te mordre.\"",
+            "Vous m’obligerez beaucoup de ne pas chercher à me revoir."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "obliger__verb__1",
+        "sense_id": "__ws_1_obliger__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|obligation|NOM|obliger|VER",
+          "subtype": "suffixation",
+          "direction": "8824->8821",
+          "label": "后缀 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|obligatoire|ADJ|obliger|VER",
+          "subtype": "suffixation",
+          "direction": "8824->8822",
+          "label": "后缀 · -oire",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|obliger|VER|obligé|ADJ",
+          "subtype": "conversion",
+          "direction": "8824->8825",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "7a85b144fedf44efcc1c2b5f2fa2b278c5db225116ef121d7aa65ecea059fc8d"
+    },
+    {
+      "stable_lexeme_key": "étonner|VER",
+      "runtime_lexeme_id": 14160,
+      "lemma": "étonner",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 94.8579,
+        "lexique_frequency": 39.421,
+        "contextual_diversity": 9.18861
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "étonner__verb__1",
+          "sense_id": "__ws_1_étonner__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Sens étymologique concret) Ébranler à la manière du tonnerre.",
+          "sourced_examples": [
+            "Il [le travail au feu] était utilisé dans l'antiquité pour « étonner » les roches les plus dures.",
+            "Au XIXe siècle, étonner pouvait prendre le sens d’un coup de foudre amoureux."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "étonner__verb__1",
+          "sense_id": "__ws_2_étonner__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Surprendre par quelque chose d’extraordinaire, d’inattendu ; frapper de stupeur.",
+          "sourced_examples": [
+            "On est alors fort étonné de retrouver les morceaux de bismuth intacts, leur aspect extérieur ne diffère en rien de ce qu’il était avant la chauffe.",
+            "J’écoute le vaguemestre nous lire le courrier qui part : il approuve sans réserve la carte du colonel : Tout va bien, mais est étonné par celle du capitaine adjoint qui écrit à ses deux fillettes : Bonjour dominical du papa : Il n’aurait jamais cru que c’était un calotin !"
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "étonner__verb__1",
+        "sense_id": "__ws_1_étonner__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|étonnant|ADJ|étonner|VER",
+          "subtype": "conversion",
+          "direction": "14160->14158",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|étonnement|NOM|étonner|VER",
+          "subtype": "suffixation",
+          "direction": "14160->14159",
+          "label": "后缀 · -ment",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|étonner|VER|étonné|ADJ",
+          "subtype": "conversion",
+          "direction": "14160->14161",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "3ab14d9aae3ffefe6c7a729dcfaf5a477e1d969c7cf4215b335fa1be6af12349"
+    },
+    {
+      "stable_lexeme_key": "pauvre|ADJ",
+      "runtime_lexeme_id": 9363,
+      "lemma": "pauvre",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 139.2067,
+        "lexique_frequency": 109.864,
+        "contextual_diversity": 31.57073
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_1_pauvre__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Qui est dans la pauvreté ; qui ne dispose pas de ressources suffisantes.",
+          "sourced_examples": [
+            "Mais quand donc les a-t-il achetées ? Et avec quoi ? Il disait tantôt qu’il était pauvre, qu’il n’avait pas d’argent.",
+            "Ma femme aurait désiré être riche, et voilà que j’étais pauvre, avec mes petits appointements de deux mille francs."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_2_pauvre__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Qui dénote la pauvreté.",
+          "sourced_examples": [
+            "Une ville, une maison pauvre."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_3_pauvre__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Qui ne renferme, ne dispose que de peu de quelque chose.",
+          "sourced_examples": [
+            "Un aliment pauvre en gras, en fer, en vitamines, en sel.",
+            "Une personne pauvre d’esprit, d’argent, de talent, de ressources."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_4_pauvre__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Qui inspire la pitié, la compassion.",
+          "sourced_examples": [
+            "D’ailleurs, ce qui est particulier à la politique de l’histoire sainte, c’est que, chaque fois qu’un personnage marquant fait quelque chose de mal, c’est toujours le pauvre peuple qui écope.",
+            "Le soleil est revenu; c'est une souffrance de moins pour les pauvres gens qui enduraient à la fois le froid et la faim."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_4.a_pauvre__adj__1",
+          "sense_number": "4.a",
+          "source_order": 5,
+          "definition_fr": "Il se dit aussi par manière de plainte.",
+          "sourced_examples": [
+            "Voilà mon pauvre manteau tout gâté.",
+            "Nos pauvres vignes sont toutes gelées."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_5_pauvre__adj__1",
+          "sense_number": "5",
+          "source_order": 6,
+          "definition_fr": "Qui inspire le mépris.",
+          "sourced_examples": [
+            "Pauvre imbécile !",
+            "Il a fait un pauvre discours."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_6_pauvre__adj__1",
+          "sense_number": "6",
+          "source_order": 7,
+          "definition_fr": "Mort, décédé.",
+          "sourced_examples": [
+            "Mon pauvre grand-père.",
+            "Que mon pauvre père n’était-il là !"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_7_pauvre__adj__1",
+          "sense_number": "7",
+          "source_order": 8,
+          "definition_fr": "Sans variété ; sans subtilité.",
+          "sourced_examples": [
+            "Enfin les îles sorties des eaux (atolls) portent une flore extrêmement pauvre, venue par des apports lointains.",
+            "Cet enfant a un vocabulaire bien pauvre pour son âge."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "pauvre__adj__1",
+        "sense_id": "__ws_1_pauvre__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|pauvreté|NOM|pauvre|ADJ",
+          "subtype": "suffixation",
+          "direction": "9363->9365",
+          "label": "后缀 · -té",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "5ce75717789d189c35b428ab637aa2ae2c4086fa4320149c6ef4c7741e3a2a7c"
+    },
+    {
+      "stable_lexeme_key": "professionnel|ADJ",
+      "runtime_lexeme_id": 10105,
+      "lemma": "professionnel",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 107.607,
+        "lexique_frequency": 31.598,
+        "contextual_diversity": 8.6237
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "professionnel__adj__1",
+          "sense_id": "__ws_1_professionnel__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Qui est relatif à une profession.",
+          "sourced_examples": [
+            "La création des jurandes et des maîtrises leur fut funeste, car ces organisations n'étaient pas seulement professionnelles mais religieuses.",
+            "Dans le Nord-Ouest amazonien, par exemple, environ un siècle après l'abattis, il devient à peu près impossible à un botaniste professionnel de distinguer la végétation secondaire de la forêt primaire environnante (Sastre 1975)."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "professionnel__adj__1",
+          "sense_id": "__ws_2_professionnel__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(En particulier) Qualifie la formation des apprentis à leur métier.",
+          "sourced_examples": [
+            "Enseignement professionnel.",
+            "Cours professionnels."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "professionnel__adj__1",
+        "sense_id": "__ws_1_professionnel__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|professionnel|ADJ|profession|NOM",
+          "subtype": "suffixation",
+          "direction": "10102->10105",
+          "label": "后缀 · -el",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_professionnel__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "者",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "48cf0000d34dd644e6131d26a12a8ddc684914a171c61dab85a14ed948ce7d00"
+    },
+    {
+      "stable_lexeme_key": "actuel|ADJ",
+      "runtime_lexeme_id": 161,
+      "lemma": "actuel",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 99.2638,
+        "lexique_frequency": 19.177,
+        "contextual_diversity": 3.95744
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "actuel__adj__1",
+          "sense_id": "__ws_1_actuel__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Qui est présent, qui a lieu, ou qui a cours, qui est usité dans le moment présent.",
+          "sourced_examples": [
+            "La production mondiale actuelle est d’environ 13,5 millions de tonnes de pois secs et 4,8 millions de tonnes de pois frais.",
+            "Les mœurs actuelles."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "actuel__adj__1",
+          "sense_id": "__ws_2_actuel__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Vieilli) Qui se traduit par des actes.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "actuel__adj__1",
+          "sense_id": "__ws_3_actuel__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Philosophie, Théologie) Qui existe réellement, concrètement, factuellement ; par opposition à diverses qualifications : potentiel, virtuel, habituel, originel, etc.",
+          "sourced_examples": [
+            "Volonté actuelle s’oppose à volonté potentielle.",
+            "Intention actuelle s’oppose à intention virtuelle."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "actuel__adj__1",
+        "sense_id": "__ws_1_actuel__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|actualiser|VER|actuel|ADJ",
+          "subtype": "suffixation",
+          "direction": "161->159",
+          "label": "后缀 · -iser",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|actualité|NOM|actuel|ADJ",
+          "subtype": "suffixation",
+          "direction": "161->160",
+          "label": "后缀 · -ité",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "e794eda06cb49c3dcbf30e3b1a5bc388fe35aaeed789d34054bcf356e5bb29a1"
+    },
+    {
+      "stable_lexeme_key": "public|ADJ",
+      "runtime_lexeme_id": 10398,
+      "lemma": "public",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 97.9924,
+        "lexique_frequency": 48.978,
+        "contextual_diversity": 19.86681
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_1_public__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Qui appartient au peuple dans son entier.",
+          "sourced_examples": [
+            "[…] ; & nous avons réglé nos deffenses, non seulement par ce qu'il nous a paru de l’intérêt public , & du droit du Pays, mais encore par ce qu'il nous a paru des intentions du Pays, suivant les Procès Verbaux des Assemblées générales de 1701. & 1708. […].",
+            "Leurs plaintes, long-temps étouffées, furent enfin entendues de dehors, et l'autorité avertie par la clameur publique, et après un sérieux examen, mit en arrestation les époux Granger, […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_2_public__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Qui relève de l'État; étatique.",
+          "sourced_examples": [
+            "Ainsi la télévision publique est-elle un thème de débat, une posture obligée, une rhétorique de salon qui mériterait de figurer dans les mythologies des couches cultivées.",
+            "Celui-ci voit dans les causes profondes de ce malaise la défaillance des politiques publiques : moyens « notoirement insuffisants », réformes « insuffisamment pensées de façon systémique », trop souvent envisagées comme « des rustines visant à gérer les flux dans un contexte de sous-dotation », comme la déjudiciarisation de certains contentieux qui « ne saurait constituer le socle d’une politique judiciaire » et qui a aujourd’hui « atteint ses limites »."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_3_public__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Qui est commun ; à l’usage de tous.",
+          "sourced_examples": [
+            "Et ne sera hors de propos, faire icy mention de la loy Paienne, laquelle defendoit aux femmes de filler en cheminãt par les rues & voies publiques.",
+            "D'où mon irritation contre ceux qui pratiquent le « ne pas se gêner », soit en fumant malgré l'affiche qui l'interdit, soit en se tenant avec  leur compagne dans un lieu public comme s'ils étaient dans le même lit, […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_4_public__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Qui est manifeste, su ou connu de tout le monde.",
+          "sourced_examples": [
+            "Il y a beaucoup de scandales de diverse nature prêts à éclater, sans compter ceux qui sont déjà publics. Le lien qui les réunit échappe encore à tout le monde, sauf à quelques initiés.",
+            "Sont maintenus sur les tableaux de recensement les jeunes gens que la notoriété publique a désignés comme ayant l'âge requis, et qui n'ont pas justifié d'un âge différent dans les formes voulues par l'article 14 de la loi."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_5_public__adj__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Qui a lieu en présence de tout le monde.",
+          "sourced_examples": [
+            "[…] ; mais ce reproche adressé ici, dans un discours public, par un député et par le défenseur du droit public, tel que M. le député Lasker […], ce reproche public fait, ici, au chancelier de ne pas connaître les lois, signifie tout au moins qu'il ne sait pas des lois autant qu'il devrait en savoir dans sa position.",
+            "Cette dernière a présenté des excuses publiques à l’actrice, apache et yaqui, jadis célébrée par des militants pour sa démarche, mais mise au ban par les professionnels du cinéma."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_6_public__adj__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Programmation) Se dit d’une variable dont la portée n’est pas restreinte, et qui est donc visible depuis tout le programme.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "public__adj__1",
+        "sense_id": "__ws_1_public__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|publicité|NOM|public|ADJ",
+          "subtype": "suffixation",
+          "direction": "10398->10403",
+          "label": "后缀 · -ité",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_public__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "公有",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui appartient au peuple dans son entier",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_public__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "公共",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui appartient au peuple dans son entier",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_public__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "国有",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui appartient à l'État",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_public__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "国营",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui appartient à l'État",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_5_public__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "公有",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui est commun, à l'usage de tous",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_6_public__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "公共",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui est commun, à l'usage de tous",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_7_public__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "公开",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Manifeste, connu de tout le monde",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_8_public__adj__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "公开",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui se fait en présence de tout le monde",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "1e3a425b16708aa623f6e968a9ea3bc015464292c91176d0718487eb87653f0b"
+    },
+    {
+      "stable_lexeme_key": "lors|ADV",
+      "runtime_lexeme_id": 7546,
+      "lemma": "lors",
+      "pos": "ADV",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 126.3132,
+        "lexique_frequency": 47.278,
+        "contextual_diversity": 17.11727
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "lors__adv__1",
+          "sense_id": "__ws_1_lors__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Ce temps-là. S’emploie seulement en composition dans les locutions suivantes :",
+          "sourced_examples": [
+            "depuis lors",
+            "dès lors"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "lors__adv__1",
+          "sense_id": "__ws_2_lors__adv__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Désuet) Quand, au moment où, utilisé dans la locution « lors que » qui a donné lorsque.",
+          "sourced_examples": [
+            "Lors que Dieu traite avec les hommes par le moyen des Anges, ce n'eſt pas-à-dire que les Anges ſoient nécessaires pour cette communication, ainsi que Platon le pretendoit, Dieu les y employe pour des raiſons que la Philoſophie ne penetrera jamais, & qui ne peuvent eſtre parfaitement connuës que de luy ſeul. Bernard Le Bouyer de Fontenelle, des oracles, 1728"
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "lors__adv__1",
+        "sense_id": "__ws_1_lors__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "2426a0c5c400afc179541c4fd3e993f5801d99afa42c5b192dac12987b9c3c24"
+    },
+    {
+      "stable_lexeme_key": "que|ADV",
+      "runtime_lexeme_id": 10552,
+      "lemma": "que",
+      "pos": "ADV",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 83.0147,
+        "lexique_frequency": 0.095,
+        "contextual_diversity": 99.7428
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "que__adv__1",
+          "sense_id": "__ws_1_que__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Marque une emphase.",
+          "sourced_examples": [
+            "Que je t’aime, que je t’aime, que je t’aimeQue je t’aime, que je t’aime, que je t’aime"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "que__adv__2",
+          "sense_id": "__ws_1_que__adv__2",
+          "sense_number": "1",
+          "source_order": 2,
+          "definition_fr": "Introduit une forme impérative, qui marque souvent un souhait davantage qu’un ordre réel, afin qu’une chose (conjuguée au subjonctif) se réalise, à la première personne du singulier ou la troisième personne (au singulier ou pluriel, marquant souvent aussi l’agacement) : l’adverbe seul est très semblable à l’impératif impersonnel sous-entendu « fasse » (→ voir faire) ou l’indicatif impersonnel il faut, suivi du même subjonctif et relié par la même conjonction de subordination.",
+          "sourced_examples": [
+            "Dieu dit : « Que la lumière soit ! » Et la lumière fut.",
+            "Que la Force soit avec toi."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "que__adv__3",
+          "sense_id": "__ws_1_que__adv__3",
+          "sense_number": "1",
+          "source_order": 3,
+          "definition_fr": "Personne excepté, rien excepté. Seulement. Utilisé avec ne.",
+          "sourced_examples": [
+            "Vivre pour le meilleurSe vouloir pour tout se donnerPlus riche de ne rien garderQue l’amour",
+            "Ce siècle ne dit rien à son cœur, il ne parle qu’à son esprit."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "que__adv__1",
+        "sense_id": "__ws_1_que__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "5667b2ed85c57ba50c817709502fbedb89847cea5b843b96680ad68d55bff86e"
+    },
+    {
+      "stable_lexeme_key": "rapport|NOM",
+      "runtime_lexeme_id": 10707,
+      "lemma": "rapport",
+      "pos": "NOM",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 143.1362,
+        "lexique_frequency": 148.778,
+        "contextual_diversity": 32.55052
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_1_rapport__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Économie) (Peu usité) Revenu, produit d’une chose.",
+          "sourced_examples": [
+            "On cultive la gesse comme les pois, soit au champ, soit au jardin. Son produit est en raison de la qualité de la terre où on la sème ; mais pour qu'elle devienne d'un grand rapport , il faut la placer dans un bon fonds.",
+            "Cette place, cet emploi est de grand rapport, d’un grand rapport, d’un bon rapport, Les profits, les émoluments de cette place, de cet emploi sont considérables."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2_rapport__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Travail) Compte-rendu d’une activité ; témoignage de choses vues ou entendues.",
+          "sourced_examples": [
+            "Il a fait un fidèle rapport de ce qu’il a vu. — Je m’en tiens à son rapport."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.a_rapport__nom__1",
+          "sense_number": "2.a",
+          "source_order": 3,
+          "definition_fr": "(Vieilli) Récits qu’on fait, par indiscrétion ou par malignité, de certaines choses que l’on prétend avoir vu faire ou entendu dire.",
+          "sourced_examples": [
+            "Ajouter foi aux rapports. — On les a brouillés ensemble par de faux rapports."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.b_rapport__nom__1",
+          "sense_number": "2.b",
+          "source_order": 4,
+          "definition_fr": "(Management) Compte qu’on rend à quelqu’un de quelque chose dont on est chargé.",
+          "sourced_examples": [
+            "Alexandre de Gavinard, le grand financier […] rédigeait […] le septième rapport qu’il devait présenter, le jour même, à la septième société de crédit dont il était l’inévitable président.",
+            "Le banquier ayant le devoir de s’informer est fautif s’il consent des concours avec des documents comptables non assortis du visa du commissaire aux comptes ou lorsqu'il ne prend pas connaissance de leur rapport."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.c_rapport__nom__1",
+          "sense_number": "2.c",
+          "source_order": 5,
+          "definition_fr": "(Militaire) Compte-rendu des diverses opérations effectuées dans l’unité : mutations, punitions, demandes, etc.",
+          "sourced_examples": [
+            "Aller au rapport."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.d_rapport__nom__1",
+          "sense_number": "2.d",
+          "source_order": 6,
+          "definition_fr": "(Chasse) Compte-rendu de la quête qu’on a faite et du lieu où est la bête qu’on a détournée.",
+          "sourced_examples": [
+            "Le lieutenant de la vénerie n’a pas encore fait son rapport. — Dès que le valet de limier eut fait son rapport."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.e_rapport__nom__1",
+          "sense_number": "2.e",
+          "source_order": 7,
+          "definition_fr": "(Droit) Exposé qu’un juge fait d’un procès devant les autres juges d’un même tribunal.",
+          "sourced_examples": [
+            "Ouï le rapport. — Mon procès est au rapport de tel conseiller. — Faire le rapport d’une affaire, d’un procès."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.f_rapport__nom__1",
+          "sense_number": "2.f",
+          "source_order": 8,
+          "definition_fr": "(Administration) Exposé dans lequel on rend compte d’un travail, d’un examen particulier fait par un comité, par une commission.",
+          "sourced_examples": [
+            "Faire un rapport sur des pétitions, sur un projet de loi. — Le rapport de la commission lui fut très favorable. — On a ordonné l’impression de ce rapport."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.g_rapport__nom__1",
+          "sense_number": "2.g",
+          "source_order": 9,
+          "definition_fr": "(Justice) Témoignage que rendent, par ordre de justice ou autrement, les médecins, les chirurgiens, les experts.",
+          "sourced_examples": [
+            "Suivant le rapport des médecins. — Selon le rapport de cet architecte, cette maison ne menace pas ruine. — Homologuer un rapport d’expert."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3_rapport__nom__1",
+          "sense_number": "3",
+          "source_order": 10,
+          "definition_fr": "(Courant) Relation entre des choses ou des personnes.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.a_rapport__nom__1",
+          "sense_number": "3.a",
+          "source_order": 11,
+          "definition_fr": "Convenance ; conformité ; analogie.",
+          "sourced_examples": [
+            "Les glaces de la mer Blanche n’avaient que peu de rapports avec celles de la banquise, et les cargos étaient précédés et convoyés par de remarquables « brise-glaces ».",
+            "C’est drôle qu’il se fût plutôt entiché de la gamine… Céline Thiébault pourtant était plus en rapport d’âge avec lui. Ce n’eût été ni moins décent, ni moins excusable."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.b_rapport__nom__1",
+          "sense_number": "3.b",
+          "source_order": 12,
+          "definition_fr": "Liaison, de connexion, de relation que certaines choses ont ensemble.",
+          "sourced_examples": [
+            "Le rapport qui existe entre la doctrine chrétienne et la rectitude des mœurs, Taine le lui avait montré : chaque fois que l’homme se fait païen, il se retrouve voluptueux et dur.",
+            "– Alice, tu ne vas pas sortir comme ça ? demande Hermine alarmée.Alice la regarda durement.– Rapport ? Parce que j’ai laissé le noir ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.c_rapport__nom__1",
+          "sense_number": "3.c",
+          "source_order": 13,
+          "definition_fr": "Accord, de la correspondance plus ou moins exacte des diverses parties d’un ouvrage, d’un tout.",
+          "sourced_examples": [
+            "Le style de cet ouvrage n’est pas en rapport avec le sujet, avec les idées.",
+            "Sa dépense n’est pas en rapport avec sa fortune."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.d_rapport__nom__1",
+          "sense_number": "3.d",
+          "source_order": 14,
+          "definition_fr": "Relation des choses à une fin, de leur tendance vers un but.",
+          "sourced_examples": [
+            "Voir que même fuité ça passait crème, ça valait pour autorisation. En fin de compte le rapport entre le risque que je prenais et l'effet réel pour la boîte, était assez minable.",
+            "Les actions humaines sont bonnes ou mauvaises, selon le rapport qu’elles ont à une bonne ou à une mauvaise fin."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.e_rapport__nom__1",
+          "sense_number": "3.e",
+          "source_order": 15,
+          "definition_fr": "Relations que les personnes ont entre elles.",
+          "sourced_examples": [
+            "Sumner Maine fait observer que les rapports des gouvernements et des citoyens ont été bouleversés de fond en comble depuis la fin du XVIIIe siècle […]",
+            "À Philippe Auguste, qui venait de rappeler les juifs dans son royaume, il reprocha véhémentement de n’avoir pas tenu compte des lois canoniques réglementant les rapports entre chrétiens et juifs."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.f_rapport__nom__1",
+          "sense_number": "3.f",
+          "source_order": 16,
+          "definition_fr": "Rapport sexuel.",
+          "sourced_examples": [
+            "A la fin d'août 1897, 4 jours après des rapports avec une femme suspecte, il se forma chez le malade deux petites ulcérations dans le sillon rétroglandulaire qui selon le diagnostic du médecin local, présentait toutes les propriétés des chancres mous ; […].",
+            "Toute femme suspectée d’avoir des rapports avec une autre femme était considérée comme une tribade, comme une fricatrice, car elle usurpait à l’homme le rôle qui procédait du frottement."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.g_rapport__nom__1",
+          "sense_number": "3.g",
+          "source_order": 17,
+          "definition_fr": "(Grammaire) Relation que les mots ont les uns avec les autres, dans la construction.",
+          "sourced_examples": [
+            "Le rapport de l’adjectif au nom. — Le rapport du participe passé au nom qui le précède."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_4_rapport__nom__1",
+          "sense_number": "4",
+          "source_order": 18,
+          "definition_fr": "(Mathématiques) Résultat de la comparaison de deux quantités.",
+          "sourced_examples": [
+            "Les rectangles dont le rapport de la longueur à la largeur est de 1+√2 ont été baptisés rectangles « restants », « vestiges » (left-over rectangles), par l’origamiste britannique David Mitchell."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_4.a_rapport__nom__1",
+          "sense_number": "4.a",
+          "source_order": 19,
+          "definition_fr": "(Mécanique, Automobile) Vitesse choisie par le conducteur d'un véhicule.",
+          "sourced_examples": [
+            "Oups! J'ai dû me tromper dans les vitesses! Je vais changer de rapport!"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_5_rapport__nom__1",
+          "sense_number": "5",
+          "source_order": 20,
+          "definition_fr": "(Argent) Remboursement, restitution d’une chose indûment perçue.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_5.a_rapport__nom__1",
+          "sense_number": "5.a",
+          "source_order": 21,
+          "definition_fr": "(Droit) Action par laquelle celui qui a reçu une somme, une terre, etc., la rapporte à la masse de la succession pour faire compte au partage.",
+          "sourced_examples": [
+            "Ordonner le rapport. — Il avait reçu cent mille francs, il a été obligé au rapport.",
+            "Les fruits de la chose donnée ne sont point sujets à rapport. — Rapport à la succession, rapport à la masse."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_5.b_rapport__nom__1",
+          "sense_number": "5.b",
+          "source_order": 22,
+          "definition_fr": "(Administration) Action par laquelle un comptable rapporte la somme qu’il a mal à propos portée en dépense.",
+          "sourced_examples": [
+            "Toute dépense rejetée soumet le comptable au rapport de la somme."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_6_rapport__nom__1",
+          "sense_number": "6",
+          "source_order": 23,
+          "definition_fr": "(Vieilli) (Familier) ou (Québec) Vapeur incommode, désagréable, qui monte de l’estomac à la bouche.",
+          "sourced_examples": [
+            "Un rapport aigre. — Avoir des rapports."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "rapport__nom__1",
+        "sense_id": "__ws_1_rapport__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|rapporter|VER|rapport|NOM",
+          "subtype": "conversion",
+          "direction": null,
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "ec2f418caf6c93f65cc4e4923457c81883147dacd50337a289a07aa29378fa61"
+    },
+    {
+      "stable_lexeme_key": "regard|NOM",
+      "runtime_lexeme_id": 10871,
+      "lemma": "regard",
+      "pos": "NOM",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 141.5148,
+        "lexique_frequency": 46.718,
+        "contextual_diversity": 14.26209
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_1_regard__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Manière de diriger les yeux vers quelque chose afin de voir.",
+          "sourced_examples": [
+            "Si elle jetait des regards autour d'elle, c'était par un mouvement triste, et vous eussiez dit qu'elle réservait le feu de ses yeux pour d'occultes contemplations.",
+            "Pendant quelques secondes il roula son cigare entre le pouce et l’index, à hauteur de l’œil droit, suivit du regard le mince filet de fumée qui montait en spirale bleuâtre […]"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_2_regard__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Expression des yeux, quant aux sentiments, aux états d’âme de la personne qui regarde.",
+          "sourced_examples": [
+            "Cet homme, sans chaperon et sans veste, au regard abruti, à la barbe et aux sourcils tachetés de plâtre, c'était son père!",
+            "« Louis... taisez-vous », dit Philippe le Bel en posant sur son fils un regard glacé."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_3_regard__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Considération d'un objet par l'attention, par la pensée.",
+          "sourced_examples": [
+            "Cela mérite d’arrêter notre regard quelques instants.",
+            "Ce peuple attire tous les regards par son héroïsme."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_4_regard__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Architecture, Maçonnerie) Ouverture maçonnée, souvent dans le sol, pratiquée pour faciliter la visite d’un aqueduc, d’un conduit, d'une canalisation, etc.",
+          "sourced_examples": [
+            "Une seule de ces citernes a été découverte par nous ; […]. On y descend par un escalier, […], et on pouvait puiser l’eau qu’elle contenait par un regard avec margelle que l’on voit le long de ce mur en montant à la porte de l’Aude.",
+            "Il faut creuser un regard dans le sol de la cave, qui reçoit l'eau et l'évacue grâce à une petite pompe de relevage immergée."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_5_regard__nom__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Géologie) Ouverture que forme une faille.",
+          "sourced_examples": [
+            "Un regard de faille."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "regard__nom__1",
+        "sense_id": "__ws_1_regard__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|regarder|VER|regard|NOM",
+          "subtype": "conversion",
+          "direction": null,
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "7b81ee92b23fb1d07413be7436d605228b7bcb72c3840f083c0f4b5432aee55e"
+    },
+    {
+      "stable_lexeme_key": "chef|NOM",
+      "runtime_lexeme_id": 2270,
+      "lemma": "chef",
+      "pos": "NOM",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 131.2962,
+        "lexique_frequency": 220.117,
+        "contextual_diversity": 35.3368
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_1_chef__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Vieilli) ou (Littéraire) Tête.",
+          "sourced_examples": [
+            "« Je vous aurais bien accompagné, fit Blazius ; mais le chef me branle pour mon vieil âge, et je ne suis plus bon que le verre au poing, en des conflits de bouteilles et batailles de pots. »",
+            "L’École Normale est une institution que les nations envient à la République : elle est une des têtes de la France qui est pourvue de chefs comme une hydre."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_2_chef__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(En particulier) Crâne d'un saint.",
+          "sourced_examples": [
+            "Arrivé à sa demeure de Dampierre, près de Langres, Gualon y dépose le chef de saint Mammès.",
+            "[…] Pour enrichir ce nouveau sanctuaire il y transféra, des catacombes où elles reposaient, les dépouilles des martyrs Sébastien, Gorgonius et Tiburce. Ce lui fut sans doute l'occasion de détacher du corps le chef de saint Sébastien pour le conserver séparément dans un vase précieux."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_3_chef__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Article ou point principal.",
+          "sourced_examples": [
+            "On parle souvent de la rapidité extraordinaire avec laquelle les Américains ont jeté leur voie ferrée à travers les plaines du Far-West. Mais, qu’on le sache, les Russes ne leur cèdent en rien de ce chef, […].",
+            "Les divers chefs d’une loi. — Les principaux chefs d’une demande. — Sa doctrine se réduisait à trois chefs."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_4_chef__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(En particulier) (Par ellipse) (Droit) Motif ou raison d’une action judiciaire. → voir chef d’accusation",
+          "sourced_examples": [
+            "Les parents d’un bébé trouvé mort dans son berceau à Bray-Saint-Aignan (Loiret) ont été mis en examen ce vendredi du chef de « meurtre d’un mineur de moins de 15 ans » et placés en détention.",
+            "Or, les \"Contenus\" transmis à la plate-forme par l’utilisateur étant susceptibles de comprendre des données personnelles, la clause qui confère au fournisseur du service un droit de modification, d’agrégation sur tous les contenus générés par l’utilisation du service, sans informer précisément l’utilisateur la finalité des traitements, est illicite comme contraire aux dispositions de l’article 32-I de la Loi Informatique et Libertés précitée. Elle sera donc réputée non écrite de ce chef."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_5_chef__nom__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Initiative ; responsabilité.",
+          "sourced_examples": [
+            "Nos adversaires, les betteraviculteurs, simulent, d'un autre côté, de craindre de voir jeter sur le marché, déjà bondé d'alcool d'industrie, 5 à 600.000 hectolitres d'alcool de vin, et parfois même plus, et redoutent, de ce chef, de voir s'ajouter à la crise viticole celle des alcools, par la concurrence à bas prix qu'ils viendraient leur faire; […].",
+            "Le non-paiement des cotisations sociales est constitutif d'infraction pénale dans le chef de l’employeur, ou de ses préposés et mandataires qui ont la responsabilité du paiement des cotisations."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_6_chef__nom__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Héraldique) Nom donné au tiers supérieur d’un écu.",
+          "sourced_examples": [
+            "Duroie — d’azur, au cygne d’argent, becqué et membré de gueules, au chef d’or, chargé de trois merlettes de sable.",
+            "Sur le carré du milieu, les armes de la ville étaient représentées au moyen d’artifices floraux et végétaux et M. Abel les redéchiffra mentalement au passage : « Parti de gueules et de sinople aux trois martels d’argent, le chef cousu de France »."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_7_chef__nom__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Par extension) Toute partie principale d’un ensemble.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_8_chef__nom__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "(Par extension) (Art) Bout par lequel l’on a commencé la fabrication d'une étoffe.",
+          "sourced_examples": [
+            "Le chef d’une étoffe."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_9_chef__nom__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "(Anatomie) Partie ventrue d’un muscle.",
+          "sourced_examples": [
+            "Le quadriceps est composé de quatre chefs."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_10_chef__nom__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "(Tissage) Petite bande de tissu spécial tissée au départ d’une pièce de tissu.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_1_chef__nom__2",
+          "sense_number": "1",
+          "source_order": 11,
+          "definition_fr": "Celui ou celle qui est à la tête d’un corps, d’une assemblée, etc., qui y a le premier rang et la principale autorité.",
+          "sourced_examples": [
+            "Sous un chef tel que ce chevalier, il n’y a point de lâches frayeurs, point de froides hésitations.",
+            "Un jour, la chef d’équipe m’a appelée."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_2_chef__nom__2",
+          "sense_number": "2",
+          "source_order": 12,
+          "definition_fr": "(En particulier) Personne qui en commande d’autres. — Note : Le chef peut être autoproclamé, élu, imposé par une autorité, qui peut être elle-même considérée comme chef.",
+          "sourced_examples": [
+            "Pour lancer contre nous ces furieux prédicateurs, il faut que les chefs du clergé se soient sentis bien atteints.",
+            "C'est plutôt le contraire qui est vrai ou qui du moins renferme la plus forte part de vérité : maintes fois l'aristocratie mérita le nom de « kakistocratie », dit-il, qu'il soit empereur ou chef de bureau, dont Léopold de Ranke se sert dans son histoire."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_3_chef__nom__2",
+          "sense_number": "3",
+          "source_order": 13,
+          "definition_fr": "(En particulier) (Sens générique) Officier ou sous-officier de grade quelconque, quelquefois en apposition.",
+          "sourced_examples": [
+            "Il est toujours dangereux d'avoir plus d'esprit que son chef.",
+            "Maréchal des logis chef. Adjudant chef. Gardien chef."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_4_chef__nom__2",
+          "sense_number": "4",
+          "source_order": 14,
+          "definition_fr": "(Marine, Militaire) Vaisseau qui est le premier de la ligne de bataille, qui tient la tête de l’armée navale.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_5_chef__nom__2",
+          "sense_number": "5",
+          "source_order": 15,
+          "definition_fr": "(Sens figuré) Celui ou celle sous la conduite de qui on se place.",
+          "sourced_examples": [
+            "Le fourgon de tête […] est également pourvu d’une plate-forme et d’une passerelle. Un couloir intérieur permet au chef de train de le traverser pour atteindre le tender et la locomotive, si cela est nécessaire.",
+            "Moi, en tous cas, si j'étais chef de fabrication, ça irait pas comme ça, Monsieur, ça tournerait autrement rond que ça tourne, en tous cas, c'est pas malin d'avoir nommé le Charly à ma place!"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_6_chef__nom__2",
+          "sense_number": "6",
+          "source_order": 16,
+          "definition_fr": "(Par extension) (Cuisine) Responsable de la cuisine dans un restaurant.",
+          "sourced_examples": [
+            "Le duo saintais a terminé en queue de peloton de l’épreuve où les candidats affrontaient le chef Christophe Renou, en fabriquant un gâteau sans moule."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_7_chef__nom__2",
+          "sense_number": "7",
+          "source_order": 17,
+          "definition_fr": "(Par ellipse) Chef d’orchestre.",
+          "sourced_examples": [
+            "Quand le chef monta sur l’estrade, le pianiste leva les yeux et lui sourit. Puis il hocha la tête, et l'on entendit le frémissement des violons, la pulsion d'un pouls profond qui annonçait l’entrée du piano."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_8_chef__nom__2",
+          "sense_number": "8",
+          "source_order": 18,
+          "definition_fr": "(Histoire) (Coloniale) Titre de titulaire d’une autorité traditionnelle.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_9_chef__nom__2",
+          "sense_number": "9",
+          "source_order": 19,
+          "definition_fr": "(Canada) Dirigeant principal d'une communauté des Premières Nations.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_10_chef__nom__2",
+          "sense_number": "10",
+          "source_order": 20,
+          "definition_fr": "(Argot) (Familier) Terme utilisé pour s’adresser à un homme, mec, gars.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "chef__nom__1",
+        "sense_id": "__ws_2_chef__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|chef|NOM|chevet|NOM",
+          "subtype": "suffixation",
+          "direction": "2270->2293",
+          "label": "后缀 · -et",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "73eb80c4de4ec104238b1cfb62a3a96e60cd7beb92e8a02f1cc201423d86fb77"
+    },
+    {
+      "stable_lexeme_key": "travers|NOM",
+      "runtime_lexeme_id": 13072,
+      "lemma": "travers",
+      "pos": "NOM",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 129.7233,
+        "lexique_frequency": 80.095,
+        "contextual_diversity": 25.59859
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_1_travers__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Étendue d’un corps considéré dans sa largeur.",
+          "sourced_examples": [
+            "Il s’en faut d’un travers de doigt que ces planches ne se joignent.",
+            "Il était très difficile d'atteindre sa bouche par en dessous. Son nez trempait dans le vin. Enfin, en passant de biais, je réussis à lui donner la becquée, qu'elle avala coup sur coup, poursuivant la cuiller chaque fois que je la retirais, sans cesser de grogner un ronronnement de colère comme un petit faucon. Elle but ainsi à peu près la valeur de deux travers de doigt."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_2_travers__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Marine) Les allures du voilier. Le vent de travers (2) se situe entre le petit largue et le largue.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_2.a_travers__nom__1",
+          "sense_number": "2.a",
+          "source_order": 3,
+          "definition_fr": "Côté, flanc.",
+          "sourced_examples": [
+            "Ce vaisseau présentait son travers à la marée, au vent, au feu de l’ennemi."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_2.b_travers__nom__1",
+          "sense_number": "2.b",
+          "source_order": 4,
+          "definition_fr": "Allure où le vent apparent est à angle droit du cap",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_3_travers__nom__1",
+          "sense_number": "3",
+          "source_order": 5,
+          "definition_fr": "(Boucherie) Bord des dernières côtes. Du travers (3) de porc boucané façon guyanaise.",
+          "sourced_examples": [
+            "En rentrant à Midwood, Billy trouve un mot punaisé sur sa porte. Une invitation à manger des travers de porc, du coleslaw et une tarte aux cerises chez les Ragland...",
+            "Ce travers de porc était délicieux."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_4_travers__nom__1",
+          "sense_number": "4",
+          "source_order": 6,
+          "definition_fr": "(Sens figuré) Bizarrerie, irrégularité d’esprit et d’humeur, disposition fâcheuse, défaut de caractère.",
+          "sourced_examples": [
+            "Il [...] avait des moyens et de l'éducation dont il ne se servait que fort rarement, car par un travers d'esprit alors assez commun, il se complaisait à prendre des airs de sacripant, toujours jurant, sacrant et ne parlant que de pourfendre les gens avec son grand sabre.",
+            "Le plus curieux, c’est qu’ils sont presque tous affligés d’un travers, d’un vice, d’un maboulisme périlleux, d’une tare, ou qu’ils ont des histoires intimes, des saletés familiales, tous, les plus respectés, les plus grands, les plus insoupçonnés."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_5_travers__nom__1",
+          "sense_number": "5",
+          "source_order": 7,
+          "definition_fr": "(Histoire) (Droit d’Ancien Régime) Péage sur les routes, les ponts, etc.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "travers__nom__1",
+        "sense_id": "__ws_1_travers__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "02451f0800066085feeb6aadef7132e54435b3acee637d489020a455c8991f66"
+    },
+    {
+      "stable_lexeme_key": "obtenir|VER",
+      "runtime_lexeme_id": 8846,
+      "lemma": "obtenir",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 123.0933,
+        "lexique_frequency": 140.854,
+        "contextual_diversity": 19.89284
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "obtenir__verb__1",
+          "sense_id": "__ws_1_obtenir__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Se faire accorder par tel ou tel moyen une chose que l’on désire.",
+          "sourced_examples": [
+            "Et il réfléchissait. Ce qui est inintelligible, se dit-il, c’est la disproportion qui existe entre les promesses que Jésus lui fit et les résultats qu’elles obtinrent.",
+            "Fernando de Noronha étant le bagne brésilien de l’État de Pernambuco, nous obtenons du directeur du pénitencier que deux cents forçats soient mis à notre disposition."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "obtenir__verb__1",
+          "sense_id": "__ws_2_obtenir__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(En particulier) (Justice) Parvenir à avoir, de la justice, ce qu’on demande.",
+          "sourced_examples": [
+            "Des créanciers récalcitrants ont obtenu un jugement contre moi et mon compte est bloqué chez Hachette."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "obtenir__verb__1",
+          "sense_id": "__ws_3_obtenir__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Sciences) Avoir pour résultat de son action.",
+          "sourced_examples": [
+            "[…] ; en outre, différents auteurs adaptèrent à des zootropes, soit des figures construites d’après mes notations chronographiques, soit des images obtenues par le célèbre photographe américain, et obtinrent ainsi une représentation saisissante d’animaux en mouvement.",
+            "Par ce procédé chimique, on obtient tel produit."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "obtenir__verb__1",
+        "sense_id": "__ws_1_obtenir__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|obtenir|VER|obtention|NOM",
+          "subtype": "suffixation",
+          "direction": "8846->8847",
+          "label": "后缀 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "54b9f8eb2802c44389dbc74996b2766b61a7924aa8201fdf9f3681b358e49db5"
+    },
+    {
+      "stable_lexeme_key": "remettre|VER",
+      "runtime_lexeme_id": 10936,
+      "lemma": "remettre",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 116.8434,
+        "lexique_frequency": 144.367,
+        "contextual_diversity": 21.08236
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_1_remettre__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Mettre une chose à l’endroit où elle était auparavant.",
+          "sourced_examples": [
+            "N’importe, dit Coconnas, j’ai bien de la peine à remettre mon épée dans le fourreau avant de m’être assuré qu’elle pique aussi bien que les lardoires de ce gaillard-là.",
+            "[…] il ôtait son grand habit noisette, remettait sa perruque dans la boîte et tirait de nouveau son bonnet de soie sur ses oreilles, en disant […]"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_2_remettre__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Mettre de nouveau.",
+          "sourced_examples": [
+            "[…] par quel biais le remettre sur la bonne voie ? Ni menaces, ni gronderies n’ont réussi.",
+            "On achetait des avenues, des tours, des hôtels, des avions... Ensuite on restaurait le tout à grand frais, et on remettait l'ensemble sur le marché."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_3_remettre__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Reconnaître.",
+          "sourced_examples": [
+            "Il me remit aussitôt.",
+            "J’ai peine à vous remettre."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_4_remettre__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Rétablir les personnes, les choses dans l’état où elles étaient auparavant.",
+          "sourced_examples": [
+            "Croyez-vous que quelqu’un d’autre aurait pu non seulement faire cela, avec ma femme et moi dormant, toutes fenêtres pouvertes, à vingt mètres de là, mais encore remettre tout en ordre et recimenter les dalles?",
+            "On l’a remis dans tous ses biens, dans tous ses droits."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_5_remettre__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Familier) Réconcilier, raccommoder, en parlant de personnes.",
+          "sourced_examples": [
+            "Remettre bien ensemble des personnes qui étaient brouillées."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_6_remettre__verb__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Médecine) Raccommoder, remboîter un membre, un os démis, disloqué, cassé.",
+          "sourced_examples": [
+            "— Et ton épaule démise? — On me l’a très bien remise à l'hôpital je n'en souffre plus et, demain, je ne porterai plus mon bras en écharpe.",
+            "On a eu bien de la peine à lui remettre la jambe."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_7_remettre__verb__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Rétablir la santé, redonner des forces.",
+          "sourced_examples": [
+            "L’usage du lait est ce qui l’a remis.",
+            "Après une longue convalescence, le voilà tout à fait remis."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_8_remettre__verb__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "Rassurer, redonner de l’assurance, faire revenir du trouble, de l’inquiétude, de la frayeur où l’on était.",
+          "sourced_examples": [
+            "Ce que vous lui avez dit lui a un peu remis l’esprit.",
+            "On a eu bien de la peine à la remettre de la frayeur qu’elle éprouvait."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_9_remettre__verb__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "Mettre une chose entre les mains de quelqu’un à qui elle appartient ou à qui elle est destinée.",
+          "sourced_examples": [
+            "[…] la mère Paul était rouée et profitait des pièces qu’on lui remettait de temps en temps pour jurer qu’on avait dû se tromper en la gratifiant d’un jeton de bar. ",
+            "On lui a remis sa montre, qui lui avait été volée."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_10_remettre__verb__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "(Vieilli) Se dessaisir entre les mains de celui à qui il appartient d’y pourvoir, en parlant d’un bénéfice, d’une charge.",
+          "sourced_examples": [
+            "Il remit sa charge, son gouvernement entre les mains du roi."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_11_remettre__verb__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "Mettre comme en dépôt, confier au soin, à la prudence de quelqu’un.",
+          "sourced_examples": [
+            "Je lui ai remis entre les mains tout l’argent que j’avais, tout ce que j’avais.",
+            "Il quitta l’armée et remit le commandement des troupes à son successeur."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_12_remettre__verb__1",
+          "sense_number": "12",
+          "source_order": 12,
+          "definition_fr": "Livrer, abandonner à ceux qui sont préposés.",
+          "sourced_examples": [
+            "Toutes les correspondances doivent être remises au vaguemestre. La surveillance est ainsi plus facile.",
+            "Remettre un criminel entre les mains de la justice."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_13_remettre__verb__1",
+          "sense_number": "13",
+          "source_order": 13,
+          "definition_fr": "Faire grâce à une personne de quelque chose qu’on était en droit d’exiger d’elle.",
+          "sourced_examples": [
+            "On lui a remis le tiers des intérêts qu’il devait.",
+            "À Reynolds il demanda trois choses : qu’il lui remît une dette de trente livres contractée envers lui quelque temps auparavant ; qu’il lût la Bible régulièrement ; qu’il ne touchât jamais à ses pinceaux le dimanche."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_14_remettre__verb__1",
+          "sense_number": "14",
+          "source_order": 14,
+          "definition_fr": "(Religion) Pardonner.",
+          "sourced_examples": [
+            "Il n’y a que Dieu qui ait le pouvoir de remettre les péchés.",
+            "L’orfèvre. – Ce n’est pas mon métier de suivre les foires ; j’irai cependant à Montolivet par piété. C’est un saint pèlerinage, voisin, et qui remet tous les péchés."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_15_remettre__verb__1",
+          "sense_number": "15",
+          "source_order": 15,
+          "definition_fr": "Différer, renvoyer à un autre temps.",
+          "sourced_examples": [
+            "Remettez les nominations, vous pourrez les signer après-demain."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_16_remettre__verb__1",
+          "sense_number": "16",
+          "source_order": 16,
+          "definition_fr": "Obliger à recommencer une étude, un apprentissage, un exercice.",
+          "sourced_examples": [
+            "Remettre quelqu’un à l’A B C.",
+            "On l’a remis aux premiers éléments."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_17_remettre__verb__1",
+          "sense_number": "17",
+          "source_order": 17,
+          "definition_fr": "(Jeu de paume & Tennis) Recommencer.",
+          "sourced_examples": [
+            "Balle à remettre."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_18_remettre__verb__1",
+          "sense_number": "18",
+          "source_order": 18,
+          "definition_fr": "(Sports hippiques) Dans une course de trot, faire courir de nouveau au trot régulier un cheval qui a commis un écart dans ses allures.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_19_remettre__verb__1",
+          "sense_number": "19",
+          "source_order": 19,
+          "definition_fr": "(Belgique) Rendre, vomir.",
+          "sourced_examples": [
+            "J’ai envie de remettre."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_20_remettre__verb__1",
+          "sense_number": "20",
+          "source_order": 20,
+          "definition_fr": "(Pronominal) Recommencer, se mettre à nouveau.",
+          "sourced_examples": [
+            "Et Charles IX se remit à siffler tranquillement et plus juste que jamais son air favori.",
+            "Un autre eût quitté une pareille femme, il l’eût tuée peut-être : moi, je me remis à l’aimer."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_21_remettre__verb__1",
+          "sense_number": "21",
+          "source_order": 21,
+          "definition_fr": "(Pronominal) Se rappeler l’idée, le souvenir, en parlant de quelque chose ou de quelqu’un.",
+          "sourced_examples": [
+            "Quand je me remets’ l’état où je l’ai vu.",
+            "Ne vous remettez-vous point son visage ?"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_22_remettre__verb__1",
+          "sense_number": "22",
+          "source_order": 22,
+          "definition_fr": "(Pronominal) Se rétablir, retrouver ses forces, sa santé, sa sérénité, après une maladie ou tout autre trouble.",
+          "sourced_examples": [
+            "M. Courtois n'était plus le même homme. Il avait eu le temps de se remettre un peu. Sa figure s'essayait à exprimer une froideur majestueuse.",
+            "Il était très fatigué… Il est allé se remettre dans sa famille"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_23_remettre__verb__1",
+          "sense_number": "23",
+          "source_order": 23,
+          "definition_fr": "(Pronominal) (Familier) Réconcilier, raccommoder, en parlant de personnes.",
+          "sourced_examples": [
+            "Se remettre bien avec quelqu’un."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_24_remettre__verb__1",
+          "sense_number": "24",
+          "source_order": 24,
+          "definition_fr": "(Par extension) Être prêt à faire tout ce qui conviendra à la personne entre les mains de qui on se remet.",
+          "sourced_examples": [
+            "Il se remet entre vos mains et ne fera que ce que vous voudrez."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_25_remettre__verb__1",
+          "sense_number": "25",
+          "source_order": 25,
+          "definition_fr": "(Par extension) Se résigner, s’abandonner.",
+          "sourced_examples": [
+            "Se remettre entre les mains de Dieu, entre les mains de la Providence."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_26_remettre__verb__1",
+          "sense_number": "26",
+          "source_order": 26,
+          "definition_fr": "(Pronominal) Se rapporter à quelqu’un, à ce qu’il dira, à ce qu’il fera.",
+          "sourced_examples": [
+            "Du reste je me remets à ce que vous dira mon frère.",
+            "Je m’en remettrai à qui vous voudrez."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_27_remettre__verb__1",
+          "sense_number": "27",
+          "source_order": 27,
+          "definition_fr": "(Pronominal) (Chasse) S’abattre en quelque endroit, après avoir fait son vol, en parlant d’une perdrix.",
+          "sourced_examples": [
+            "Je l’ai vue se remettre en tel endroit.",
+            "Elle s’est remise vers le bord du bois."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_28_remettre__verb__1",
+          "sense_number": "28",
+          "source_order": 28,
+          "definition_fr": "(Pronominal) (Météorologie) (Familier) Revenir au beau.",
+          "sourced_examples": [
+            "Le temps se remet."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_29_remettre__verb__1",
+          "sense_number": "29",
+          "source_order": 29,
+          "definition_fr": "(Familier) Recommencer.",
+          "sourced_examples": [
+            "– Bien entendu, dis-je à nos matamores, vous êtes prêts à remettre ça ?– Un peu, oui ! À la première occase, on se déguise en courant d’air.",
+            "— Vivement dimanche qu’on remette ça. Qu’est-ce qu’on s’est fendu la gueule !"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_30_remettre__verb__1",
+          "sense_number": "30",
+          "source_order": 30,
+          "definition_fr": "(Familier) Servir une nouvelle tournée de boissons.",
+          "sourced_examples": [
+            "Le territorial clignait de l’œil en regardant Tiennette qui « remettait ça », remplissait les verres."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "remettre__verb__1",
+        "sense_id": "__ws_2_remettre__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|mettre|VER|remettre|VER",
+          "subtype": "prefixation",
+          "direction": "8039->10936",
+          "label": "前缀 · re-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|remettre|VER|remise|NOM",
+          "subtype": "conversion",
+          "direction": "10936->10937",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "1b787f862ed12e2e2bbe631ece7bd0057872befb7bb86789a6c69a7dce72708f"
+    },
+    {
+      "stable_lexeme_key": "paraître|VER",
+      "runtime_lexeme_id": 9199,
+      "lemma": "paraître",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 109.9528,
+        "lexique_frequency": 92.367,
+        "contextual_diversity": 19.84997
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_1_paraître__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Être exposé à la vue ; se faire ou se laisser voir ; se manifester.",
+          "sourced_examples": [
+            "Tirez les cordes de votre arc jusqu’à vos oreilles, et abattez de vos traits tous ceux qui paraîtront sur le rempart.",
+            "Le jour commençait à paraître; la générale retentissait, battue dans toutes les sections de Paris; ce mouvement et ce bruit se répercutaient jusque dans la tour, et glaçaient le sang dans les veines de l'abbé de Firmont et de Cléry."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_2_paraître__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Être mis en vente ou en circulation, en parlant d’un livre ou d’une publication.",
+          "sourced_examples": [
+            "Die Gleichheit parait sur quatre grandes pages : son tirage est faible : 4000 exemplaires en 1900.",
+            "« Un autre livre paraîtra en 2023, il aura pour cadre le Brésil, l’Inde ou la France », dévoile la Saintongeaise."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_3_paraître__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Briller ; se distinguer ; se faire remarquer.",
+          "sourced_examples": [
+            "Il partait dans la vie les mains vides, et méprisait les biens qui s’acquièrent. Pour pallier cette indigence, il ne lui restait qu’une issue : paraître.",
+            "Il ne s'était pas diverti à paraître dans les salons, hauts lieux du papillonnage, où paonnaient des sots éventés et des sirènes plâtrées, et où cancanaient des caillettes d'alcôve et des potiches au ventre rembourré."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_4_paraître__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Sembler ; avoir l’apparence.",
+          "sourced_examples": [
+            "Quelque peu disposé que vous parussiez à accepter la place d’académicien, il a cru vraisemblablement entrevoir dans vos yeux une envie d'y être forcé, et s'est persuadé qu'au moment que vous seriez élu vous ne vous feriez plus prier pour occuper une place qu'on ne pourrait plus vous soupçonner d'avoir recherchée : il s'est trompé et vous l'avez refusée.",
+            "La courte nuit d’été lui parut cependant interminablement longue. Il éprouvait une sensation désagréable d’insécurité et il s’imaginait, sans la moindre raison, que le jour la dissiperait."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_5_paraître__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Se montrer dans un lieu ou dans certaines circonstances.",
+          "sourced_examples": [
+            "Tout à coup la porte opposée à celle par laquelle il était entré s’ouvrit, et deux pages parurent, portant des flambeaux […].",
+            "Il appuya sur le bouton d’une sonnette. Un domestique en livrée parut aussitôt."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "paraître__verb__1",
+        "sense_id": "__ws_1_paraître__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|apparaître|VER|paraître|VER",
+          "subtype": "prefixation",
+          "direction": "9199->663",
+          "label": "前缀 · a-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|paraître|VER|parution|NOM",
+          "subtype": "suffixation",
+          "direction": "9199->9294",
+          "label": "后缀 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|paraître|VER|reparaître|VER",
+          "subtype": "prefixation",
+          "direction": "9199->11006",
+          "label": "前缀 · re-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_paraître__verb__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "好像",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Sembler, avoir l'apparence",
+          "mapped_sense_id": "__ws_4_paraître__verb__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "e89581176fbf8b9d71d039a41b4d81c945439abe0d8084e5ec7c878c72b8e059"
+    },
+    {
+      "stable_lexeme_key": "élever|VER",
+      "runtime_lexeme_id": 13951,
+      "lemma": "élever",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 106.478,
+        "lexique_frequency": 49.93,
+        "contextual_diversity": 10.56491
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_1_élever__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Mettre plus haut, porter plus haut, rendre plus haut.",
+          "sourced_examples": [
+            "La région que nous parcourons est une vaste plaine monotone, sans arbres et presque sans reliefs, qui s'élève insensiblement à fur et à mesure que nous avançons.",
+            "A un appel de sonnette on plaçait les plats et tout ce qui était nécessaire sur un monte-charge qui s’élevait jusqu’à la salle à manger et redescendait aussitôt."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_2_élever__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Sens figuré) Porter vers ce qui est plus grand que soi, en parlant de ses pensées, de son âme, de ses désirs.",
+          "sourced_examples": [
+            "Élever son cœur, son esprit, son âme à Dieu,"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_3_élever__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Sens figuré) Fortifier, ennoblir, en parlant de l’âme, de l’esprit.",
+          "sourced_examples": [
+            "Il faut bien noter aussi que lorsqu’elle célèbre des Saints, elle s’élève et diffère ; alors elle s’exhausse dans une flambée d’âme ; […].",
+            "La lecture de cet ouvrage élève l’esprit. — Dans la contemplation de la nature, l’âme s’élève."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_4_élever__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Sens figuré) Investir de quelque dignité, placer dans un haut rang, rendre supérieur en pouvoir, en fortune, en gloire.",
+          "sourced_examples": [
+            "La faveur l’a élevé de bien bas.",
+            "Élever quelqu’un aux charges, aux dignités, aux honneurs ; l’élever au plus haut rang."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_5_élever__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Sens figuré) Augmenter de quantité, de prix, de valeur.",
+          "sourced_examples": [
+            "Élever le prix des denrées. — Le prix de cette marchandise s’est élevé à cent francs.",
+            "Élever le taux de l’intérêt. — Élever la valeur d’une monnaie."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_6_élever__verb__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Faire construire.",
+          "sourced_examples": [
+            "Celle-ci, mariée à un ingénieur du P.-L.-M., vivait avec ses trois enfants, dans une maisonnette que le ménage avait fait élever, après la guerre, sur un lotissement de Brunoy.",
+            "Élever une statue à un grand homme. — Élever un obélisque."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_7_élever__verb__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Sens figuré) Opposer, proposer ou faire naître, en parlant de doutes, de scrupules, de difficultés.",
+          "sourced_examples": [
+            "Vous élevez là une difficulté, une chicane bien étrange.",
+            "Élever des doutes sur la réalité d’un fait."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_8_élever__verb__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "Nourrir un enfant, entretenir son existence jusqu’à ce qu’il ait acquis une certaine force.",
+          "sourced_examples": [
+            "Si Joséphine ne se mariait pas, elle continuerait à « turbiner » pour la maison, la vieille élèverait le mioche, et lui, le patron, empocherait la galette que le Pape, de gré ou de force lui remettrait.",
+            "Cette femme a eu plusieurs enfants, mais elle n’a pu en élever aucun. — Cet enfant est faible, il sera malaisé à élever."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_9_élever__verb__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "(Par analogie) Nourrir et protéger des animaux ou des plantes pour favoriser leur croissance.",
+          "sourced_examples": [
+            "Les paons sont difficiles à élever.",
+            "J’ai eu de la peine à élever ces plantes, ces fleurs, ces arbres."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_10_élever__verb__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "(Sens figuré) Instruire ; former par l’éducation.",
+          "sourced_examples": [
+            "Elles sont élevées pour devenir de bonnes épouses, recevant des dînettes et des minicuisines comme cadeaux de Noël, de faux aspirateurs ou fers à repasser, des poussettes et des poupons.",
+            "Son père, […], est surnommé « Camélinat le Rouge » pour ses convictions républicaines. Cet austère paysan a élevé ses enfants dans l’aversion de la monarchie, puis de l’Empire."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_11_élever__verb__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "(Pronominal) (En particulier) S’enorgueillir.",
+          "sourced_examples": [
+            "Celui qui s’élève sera abaissé."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_12_élever__verb__1",
+          "sense_number": "12",
+          "source_order": 12,
+          "definition_fr": "(Pronominal) (Sens figuré) Présenter, développer sur un sujet.",
+          "sourced_examples": [
+            "S’élever à de hautes considérations sur l’actualité politique.",
+            "(Sens figuré) S’élever à la conception d’un ordre général de l’univers."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_13_élever__verb__1",
+          "sense_number": "13",
+          "source_order": 13,
+          "definition_fr": "(Pronominal) (Sens figuré) Avoir la valeur, le prix de.",
+          "sourced_examples": [
+            "Son ardoise s’élevait à deux mille packs."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_14_élever__verb__1",
+          "sense_number": "14",
+          "source_order": 14,
+          "definition_fr": "(Pronominal) Se former ; survenir ; naître. Note : Se dit tant au propre qu’au figuré.",
+          "sourced_examples": [
+            "Quelques polémiques se sont élevées au sujet de l’existence d’une race de chèvre aborigène en Belgique.",
+            "A cet instant, dans le passage, d’autres voix s’élevèrent, accompagnées d’un martèlement de pas précipités."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_15_élever__verb__1",
+          "sense_number": "15",
+          "source_order": 15,
+          "definition_fr": "(Pronominal) S’opposer ou se déclarer contre quelqu’un ou contre ce qu’il propose.",
+          "sourced_examples": [
+            "Si Gobineau a été l'objet du dégoût, de la crainte, de l’ostracisme de nos « rationalistes », c'est qu'il s'est élevé à la fois contre leurs faux raisonnements et contre leur absurde principe de la primauté de la raison : […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_16_élever__verb__1",
+          "sense_number": "16",
+          "source_order": 16,
+          "definition_fr": "(Pronominal) Accuser quelqu’un, porter témoignage contre lui.",
+          "sourced_examples": [
+            "Les preuves qui s’élèvent contre l’accusé."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_17_élever__verb__1",
+          "sense_number": "17",
+          "source_order": 17,
+          "definition_fr": "(Pronominal) (Sens passif) Être dressé.",
+          "sourced_examples": [
+            "Au dessus, le pan de mur s’élevait en triangle comme un fronton, la bordure ornée de dorure."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "élever__verb__1",
+        "sense_id": "__ws_1_élever__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|élevage|NOM|élever|VER",
+          "subtype": "suffixation",
+          "direction": "13951->13950",
+          "label": "后缀 · -age",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|élever|VER|éleveur|NOM",
+          "subtype": "suffixation",
+          "direction": "13951->13952",
+          "label": "后缀 · -eur",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|élever|VER|élevé|ADJ",
+          "subtype": "conversion",
+          "direction": "13951->13953",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|élever|VER|élève|NOM",
+          "subtype": "conversion",
+          "direction": "13951->13970",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|élever|VER|élévation|NOM",
+          "subtype": "suffixation",
+          "direction": "13951->13978",
+          "label": "后缀 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "9dc6de31884acd968fa9ed2a0065c8c0c2e7a29b77295b8d0503d07ad705e0d1"
+    },
+    {
+      "stable_lexeme_key": "assurer|VER",
+      "runtime_lexeme_id": 913,
+      "lemma": "assurer",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 103.4754,
+        "lexique_frequency": 144.633,
+        "contextual_diversity": 21.85548
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_1_assurer__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Rendre stable.",
+          "sourced_examples": [
+            "Ce n’est qu’en frémissant qu’il posait le pied dans un bateau, ce véhicule nautique fût-il assuré par une traille à roulettes.",
+            "Alors, assurant son lorgnon sur son nez et collant contre lui les pans de sa redingote, il se risqua à travers les magasins qui sentaient terriblement l’épicerie."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_2_assurer__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Sens figuré) Prendre une contenance, un maintien ou un visage ferme.",
+          "sourced_examples": [
+            "Assurer sa contenance, son maintien, son visage."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_3_assurer__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Garantir la réalisation ou le bon fonctionnement. — Note d’usage : Il est suivi de la préposition de.",
+          "sourced_examples": [
+            "Assurer le ravitaillement d’un avion en carburant."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_4_assurer__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Manège) Accoutumer un cheval à souffrir le mors.",
+          "sourced_examples": [
+            "Assurer la bouche d’un cheval."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_5_assurer__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Marine) Arborer le pavillon de sa nation en tirant un coup de canon.",
+          "sourced_examples": [
+            "Assurer le pavillon."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_6_assurer__verb__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Rendre une chose sûre.",
+          "sourced_examples": [
+            "Le Courrier français, qui n’y allait pas par quatre chemins, demanda énergiquement que la circulation fût interdite sur le chemin de fer du Nord tant que la sécurité des voyageurs n’y serait pas assurée.",
+            "Grâce à cette mesure protectrice, les petits cultivateurs belges sont assurés de ne pas payer leurs engrais quatre fois ce qu’ils valent […]"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_7_assurer__verb__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "Garantir un droit, faire qu’il ne périclite pas.",
+          "sourced_examples": [
+            "Assurer une hypothèque, une créance.",
+            "Assurer à quelqu’un une somme, une rente, une pension, etc. : Lui en assurer le paiement sur des objets qui offrent une suffisante garantie."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_8_assurer__verb__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "Garantir, par un acte, la propriété d’un bien à quelqu’un, pour qu’il en jouisse après la mort du donateur.",
+          "sourced_examples": [
+            "Il assura tous ses biens à son neveu, après sa mort."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_9_assurer__verb__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "Procurer d’une façon certaine et durable.",
+          "sourced_examples": [
+            "La transmission des télégrammes est assurée par deux câbles et un puissant poste de T.S.F.",
+            "Peu à peu, il agrandit son établissement, lui adjoignit un hôtel borgne où de savantes « passes » lui assurèrent de larges profits."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_10_assurer__verb__1",
+          "sense_number": "10",
+          "source_order": 10,
+          "definition_fr": "Garantir ou faire garantir par un contrat d’assurance ; contracter une assurance.",
+          "sourced_examples": [
+            "Assurer à tant pour cent.",
+            "Faire assurer des marchandises."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_11_assurer__verb__1",
+          "sense_number": "11",
+          "source_order": 11,
+          "definition_fr": "Engager fortement quelqu’un à regarder une chose comme certaine, à y croire. — Note : Avec un nom de personne pour complément d’objet.",
+          "sourced_examples": [
+            "Assurer quelqu’un de sa reconnaissance, etc.",
+            "Assurez-le de mon respect, de mon dévouement, etc."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_12_assurer__verb__1",
+          "sense_number": "12",
+          "source_order": 12,
+          "definition_fr": "(Escalade) En escalade, garantir que son coéquipier sera bien encordé en cas de chute.",
+          "sourced_examples": [
+            "La neige tenait bon, on descendit. Puis on força un ressaut de glace à 52° où Rémoville m’assura à la longue corde."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_13_assurer__verb__1",
+          "sense_number": "13",
+          "source_order": 13,
+          "definition_fr": "(Intransitif) Affirmer ou certifier une chose ; prétendre avec assurance.",
+          "sourced_examples": [
+            "Bien que les bonnes ne manquassent pas, ainsi que la fermière l’assurait péremptoirement, l’excellente femme cherchait, et ne trouvait rien.",
+            "Les officiers assurent qu'il y a plusieurs postes de télégraphie sans fil aux forteresses, mais à l'usage exclusif du commandant en chef."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_14_assurer__verb__1",
+          "sense_number": "14",
+          "source_order": 14,
+          "definition_fr": "(Intransitif) Rendre certain d’une chose.",
+          "sourced_examples": [
+            "Ce qu’il a déjà fait nous assure de sa fidélité pour l’avenir.",
+            "Je veux être assuré de ses intentions."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_15_assurer__verb__1",
+          "sense_number": "15",
+          "source_order": 15,
+          "definition_fr": "(Intransitif) (Familier) Être à la hauteur.",
+          "sourced_examples": [
+            "Hier je suis allé passer le permis de conduire et je n’ai pas assuré. — Une manière de dire que j’ai raté le permis.",
+            "[…] l’image de la brute virile qui assure au pieu revenait en force depuis quelques années […]"
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_16_assurer__verb__1",
+          "sense_number": "16",
+          "source_order": 16,
+          "definition_fr": "(Pronominal) (Avec les prépositions Dans et En); Établir sa confiance.",
+          "sourced_examples": [
+            "Malheur à celui qui ne s’assure que dans ses richesses !",
+            "Il faut s’assurer en Dieu."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_17_assurer__verb__1",
+          "sense_number": "17",
+          "source_order": 17,
+          "definition_fr": "(Pronominal) Se procurer la certitude d’un fait.",
+          "sourced_examples": [
+            "Charles se leva […] s’approcha de la porte, tendit l’oreille pour s’assurer que personne n’était aux écoutes […]",
+            "[…] les Sarrazins qui s’étaient assurés de la maîtrise de la Méditerranée, avaient provoqué la ruine du commerce français et il faudra attendre jusqu’aux Croisades pour voir la marine française reconquérir la libre circulation sur la mer."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_18_assurer__verb__1",
+          "sense_number": "18",
+          "source_order": 18,
+          "definition_fr": "(Pronominal) Arrêter, emprisonner, en parlant de quelqu’un. — Note d’usage : Il est suivi de la préposition de.",
+          "sourced_examples": [
+            "S’assurer de sa personne."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_19_assurer__verb__1",
+          "sense_number": "19",
+          "source_order": 19,
+          "definition_fr": "(Pronominal) Se garantir la protection, le suffrage de quelqu’un dans les choses où l’on a besoin de lui. — Note d’usage : Il est suivi de la préposition de.",
+          "sourced_examples": [
+            "S’assurer de son parrain."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_20_assurer__verb__1",
+          "sense_number": "20",
+          "source_order": 20,
+          "definition_fr": "(Pronominal) Réserver, retenir une chose pour la rendre sûre.",
+          "sourced_examples": [
+            "Nous avions envie de passer là quelques jours, c’était même mon projet quand j’ai quitté Nohant. Je m’assure d’une petite auberge adorablement située où, en été, l’on serait fort bien ; mais nos amis ne veulent pas que nous les quittions : le temps se refroidit sensiblement, et ce lieu-ci est particulièrement froid."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "assurer__verb__1",
+        "sense_id": "__ws_1_assurer__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|assurance|NOM|assurer|VER",
+          "subtype": "suffixation",
+          "direction": "913->912",
+          "label": "后缀 · -ance",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|assurer|VER|rassurer|VER",
+          "subtype": "prefixation",
+          "direction": "913->10725",
+          "label": "前缀 · re-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|assurer|VER|sûr|ADJ",
+          "subtype": "prefixation",
+          "direction": "12623->913",
+          "label": "前缀 · a-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "d38bb80bbe68e2a31ddc49d56afa0a9ba6fd4f30c0b52a159d825b579e95fa06"
+    },
+    {
+      "stable_lexeme_key": "moindre|ADJ",
+      "runtime_lexeme_id": 8206,
+      "lemma": "moindre",
+      "pos": "ADJ",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 34.5556,
+        "lexique_frequency": 45.62,
+        "contextual_diversity": 16.39314
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "moindre__adj__1",
+          "sense_id": "__ws_1_moindre__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Comparatif de petit : Plus petit.",
+          "sourced_examples": [
+            "Au plus fort de cet examen de conscience et de la folie de mademoiselle Raimonde, la porte de la loge s’ouvrit avec fracas pour donner passage à un non moindre personnage que Son Excellence M. le comte de Vaize.",
+            "[…], on pourrait dire que le soldat était convaincu que la moindre défaillance du moindre des troupiers pouvait compromettre le succès de l’ensemble et la vie de tous ses camarades - et que le soldat agissait en conséquence."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "moindre__adj__1",
+          "sense_id": "__ws_2_moindre__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Superlatif de petit : Le plus petit. — Note d’usage : Il est alors toujours précédé d’un article défini ou d’un autre déterminant défini.",
+          "sourced_examples": [
+            "A Beduaram il entre dans cette vaste et monotone plaine saharienne, sans végétation et où l’empreinte même de l’animal ne laisse qu’une trace insensible que le moindre vent efface.",
+            "Il eût fallu hurler pour échanger la moindre phrase."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "moindre__adj__1",
+          "sense_id": "__ws_3_moindre__adj__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Précédé d’une négation) Aucun. — Note d’usage : Toujours précédé d’un article défini.",
+          "sourced_examples": [
+            "Il répéta sa question. Ils s’obstinaient à ne point faire la moindre attention à lui.",
+            "Bien que souffrant d'une néphrite chronique avec complications cardiaques, il ne voulut pas consentir à prendre le moindre repos, […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "moindre__adj__1",
+          "sense_id": "__ws_4_moindre__adj__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Archaïsme) Petit.",
+          "sourced_examples": [
+            "La fourmi n’est pas prêteuse, c’est là son moindre défaut."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "moindre__adj__1",
+        "sense_id": "__ws_1_moindre__adj__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "623b8ab0547262be9613687a516ce456a51a8624a152da30b64ad78b06c8a687"
+    },
+    {
+      "stable_lexeme_key": "au-delà|ADV",
+      "runtime_lexeme_id": 1005,
+      "lemma": "au-delà",
+      "pos": "ADV",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 37.2293,
+        "lexique_frequency": 19.272,
+        "contextual_diversity": 8.32976
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "au-delà__adv__1",
+          "sense_id": "__ws_1_au-delà__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Plus loin que. Un peu plus loin, de l'autre côté (par rapport à un point, un lieu exprimé), à l'extérieur.",
+          "sourced_examples": [
+            "Cette supposition n’a rien d’improbable, car les vues ambitieuses des rois francs n’allaient guère au-delà de la perspective d’un gain immédiat et personnel; […].",
+            "Hormis quelques scènes isolées, mes premiers souvenirs ne remontent guère au-delà de 1910 et à notre jardin de Sanvic, près du Havre, si grand à mes yeux d'enfant, agrémenté d'une pelouse encadrée de rhododendrons."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "au-delà__adv__1",
+          "sense_id": "__ws_2_au-delà__adv__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Indique ce qui dépasse un seuil.",
+          "sourced_examples": [
+            "La bière est une boisson rafraîchissante, saine et nourrissante, […]; à Londres, par exemple, la consommation locale s’élève annuellement au-delà de 250 millions de litres.",
+            "Mais il fallait que ce bon mouvement ne demeurât point exceptionnel, et se prolongeât au-delà du succès."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "au-delà__adv__1",
+        "sense_id": "__ws_1_au-delà__adv__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "4afc8f4c3bad1e667e607d951522e5318753328baa43559f478a5ed0e4de3468"
+    },
+    {
+      "stable_lexeme_key": "terme|NOM",
+      "runtime_lexeme_id": 12768,
+      "lemma": "terme",
+      "pos": "NOM",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 89.4695,
+        "lexique_frequency": 46.956,
+        "contextual_diversity": 12.37906
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_1_terme__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Désuet) Borne marquant une limite et faite d’un buste terminé en gaine, en souvenir du dieu Terme.",
+          "sourced_examples": [
+            "F° 67r° : un dessin formant scène – satyre fustigeant une satyresse, devant une statue-terme de Priape. Copie d’un détail d’une gravure de M. Raimondi ([…]) d’après un bas-relief antique à Rome."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_2_terme__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Par extension) Fin d’un espace à parcourir.",
+          "sourced_examples": [
+            "Au terme d’un ancien chemin usé jusqu’à l’enrochement […], le hameau des vieux marais dérobe sa dizaine de masures à ras du sol, à l’orée de la Fagne.",
+            "Il est parvenu au terme de la carrière."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_3_terme__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Par extension) Fin d’une période de temps.",
+          "sourced_examples": [
+            "Le Saufconduit donné pour un tems marqué expire au bout du terme; & si le porteur ne s’est point retiré avant ce tems là, il peut être arrêté, & même puni, […].",
+            "Les opérations de broyage marquent usuellement le terme des opérations d’épuration des fines, que celles-ci soient destinées à l’agglomération ou à la carbonisation."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_4_terme__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Borne ; limite où s’arrête quelque chose.",
+          "sourced_examples": [
+            "Il a mis un terme à son ambition, à ses extravagances.",
+            "Il y a un terme où il faut s’arrêter. - Il est un terme à tout."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_5_terme__nom__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Finance) Moment fixé d’avance pour un paiement.",
+          "sourced_examples": [
+            "Au terme de janvier j’ai vendu d’abord mon buffet […]",
+            "Les loyers des maisons se payaient à Paris aux quatre termes accoutumés."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_6_terme__nom__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "(Par métonymie) Somme due au bout du terme.",
+          "sourced_examples": [
+            "Le jeune homme annonçait sa visite pour le soir, et il vint en effet, je m’en souviens, demander terme pour une rente que Fanny Thompson, sa mère, payait à la signora.",
+            "La Commune […] fit remise à tous les locataires parisiens des termes d'octobre 1870, janvier et avril 1871."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_7_terme__nom__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Sans article ou avec adjectif possessif) Temps au bout duquel une femme doit accoucher, dans le cours ordinaire de la nature.",
+          "sourced_examples": [
+            "Elle n’est pas à terme.",
+            "Elle est accouchée avant terme."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_8_terme__nom__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "(Par analogie) Date prévue de la mise à bas, en parlant des femelles de quelques animaux, des vaches, des juments, etc.",
+          "sourced_examples": [
+            "Sa jument a mis bas avant terme.",
+            "Une vache qui n’est pas encore à terme."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_9_terme__nom__1",
+          "sense_number": "9",
+          "source_order": 9,
+          "definition_fr": "(Au pluriel) État, nature des relations qu’on entretient avec quelqu’un.",
+          "sourced_examples": [
+            "Et tous, me voyant en bons termes avec le maître tout-puissant, sont pour moi pleins d’amabilité et de prévenances."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_1_terme__nom__2",
+          "sense_number": "1",
+          "source_order": 10,
+          "definition_fr": "(Linguistique) Expression d’une idée ; mot ou phrase.",
+          "sourced_examples": [
+            "Quels termes saurai-je trouver, suffisamment simples dans leur sublimité, — suffisamment sublimes dans leur simplicité, — pour la simple énonciation de mon thème ?",
+            "Nous sommes arrivés, de critique en critique, à cette triste conclusion : que le juste et l'injuste, dont nous pensions jadis avoir le discernement, sont termes de convention, vagues, indéter­minables ; […]."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_2_terme__nom__2",
+          "sense_number": "2",
+          "source_order": 11,
+          "definition_fr": "(Logique, Mathématiques) Chacun des éléments d’un rapport, d’une relation, d’une comparaison ou d’une progression.",
+          "sourced_examples": [
+            "Classiquement, on admet que le taux de chaleur reçu par le système se décompose en deux termes, l'un volumique et l'autre surfacique."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_3_terme__nom__2",
+          "sense_number": "3",
+          "source_order": 12,
+          "definition_fr": "(Mathématiques) Chacune des quantités qui composent une équation ou une expression algébrique et qui sont séparées par les signes plus (+) ou moins (-).",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_4_terme__nom__2",
+          "sense_number": "4",
+          "source_order": 13,
+          "definition_fr": "(Mathématiques) Chacun des opérandes dans une addition, sans distinguer entre cumulateur et cumulande.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_5_terme__nom__2",
+          "sense_number": "5",
+          "source_order": 14,
+          "definition_fr": "(Logique) Chacune des trois parties d’un syllogisme qui, combinés deux à deux, forment les parties.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_6_terme__nom__2",
+          "sense_number": "6",
+          "source_order": 15,
+          "definition_fr": "Chacun des deux objets que l’on compare l’un avec l’autre ou qui ont de la relation ou du rapport entre eux.",
+          "sourced_examples": [
+            "Choisissez mieux vos termes de comparaison. - Ce terme de comparaison n’est point exact."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_7_terme__nom__2",
+          "sense_number": "7",
+          "source_order": 16,
+          "definition_fr": "(Au pluriel) Tournure, façon de parler qui est particulière à chaque art, à chaque science",
+          "sourced_examples": [
+            "Ensuite celle-là n’est qu’une substitution de termes, car entre l’innéité et la primordialité, il n’y a pas de différence pratique, et les adversaires de l’une sont nécessairement ceux de l’autre aussi.",
+            "Il ne sait pas les termes de l’art."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__3",
+          "sense_id": "__ws_1_terme__nom__3",
+          "sense_number": "1",
+          "source_order": 17,
+          "definition_fr": "(Sculpture) Chez les Romains, divinité dont la représentation en forme de borne servait de limite aux héritages et à l’État.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "terme__nom__3",
+          "sense_id": "__ws_2_terme__nom__3",
+          "sense_number": "2",
+          "source_order": 18,
+          "definition_fr": "(Par métonymie) Statue d’architecture composé d’un buste humain avec le bas du corps se terminant dans une gaine.",
+          "sourced_examples": [
+            "La porte est encadrée par quatre beaux termes féminins.",
+            "C’était, dans le fond du parc, un hémicycle de cinq grandes niches de rocailles surmontées de balustres et séparées par des termes géants. L’un de ces termes, à l’angle du monument, les dominait de sa nudité monstrueuse, et abaissait sur eux son regard de pierre farouche et doux."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "terme__nom__1",
+        "sense_id": "__ws_2_terme__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "a8e1cfe4ef744575b5e1bcb1fcc5b0ba1e78c52c53e0381e20711299845743df"
+    },
+    {
+      "stable_lexeme_key": "antenne|NOM",
+      "runtime_lexeme_id": 609,
+      "lemma": "antenne",
+      "pos": "NOM",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 8.0514,
+        "lexique_frequency": 11.737,
+        "contextual_diversity": 3.04654
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_1_antenne__nom__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "(Marine) (Vieilli) Longue vergue qui s’attache obliquement au mât, pour soutenir une voile triangulaire.",
+          "sourced_examples": [
+            "L’antenne tient lieu de la vergue dans les voiles latines, mais il est beaucoup moins dangereux de se tenir sur les vergues, car elles sont toujours dans une position horizontale.",
+            "Le gros bout d'une antenne s'appelle carnal : c'est où est frappé l’oste , ou c'est aussi l’empointure inférieure de la voile."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_2_antenne__nom__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "(Par analogie) Élément secondaire d'un ensemble quelconque qui dérive de la structure principale et qui y reste liée.",
+          "sourced_examples": [
+            "Au moment de l'armistice, le raccordement avec la voie normale à Saint-Hilaire était posé; celui d’Autry était en cours d'exécution. Les antennes de pénétration s'arrêtaient respectivement à Quilly (3 kilomètres au sud de Coulommes-et-Marqueny) et à Pauvres, celle de Tugny n'était pas commencée."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_3_antenne__nom__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "(Marine) (Vieilli) (Désuet) Rang de futailles placées les unes sur les autres dans la cale.",
+          "sourced_examples": [],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_4_antenne__nom__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "(Entomologie, Zoologie) Appendice articulé en forme de corne, que les insectes portent sur la tête, et que l’on croit être pour eux l’organe principal du tact.",
+          "sourced_examples": [
+            "L’antenne de ce Leptodactyle se compose de dix articles bien comptés. Le premier, ou l'article basilaire qui forme le pédicule de toute l’antenne, est corroïde et d'une conformation ordinaire.",
+            "On peut même couper avec des ciseaux les deux antennes d'un Zygène sans troubler son repas, bien qu'une goutte de sang jaune vienne perler sur la surface de section."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_5_antenne__nom__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "(Sens figuré) Ce qui permet aux personnes de percevoir intuitivement ou intellectuellement leur environnement.",
+          "sourced_examples": [
+            "Pas davantage n'avait-il pu acquérir les antennes, indispensables aux politiques, dont la pratique des affaires pourvoit d'aventure ceux auquel la nature, en les dotant d'intelligence, a refusé l'intuition.",
+            "Ces gens-là, on le sait, possèdent de redoutables antennes : incapables d’éprouver certains sentiments, ils les détectent infailliblement chez les autres, lors même que ceux-ci n’en sont pas encore avertis."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_6_antenne__nom__1",
+          "sense_number": "6",
+          "source_order": 6,
+          "definition_fr": "Antenne (5) de radio-transmission de Saint-Valentin\n (Technique, Télécommunications) Appareillage métallique passif isolé de la terre et relié à des appareils de radiocommunication, destiné à émettre ou recevoir des ondes radio.",
+          "sourced_examples": [
+            "Tous les bras disponibles travaillaient à la confection d’un mât, auquel les électriciens du Vaterland accrocheraient les longues antennes de l’appareil de télégraphie sans fil qui devait enfin relier le Prince au monde extérieur.",
+            "Les antennes de l'appareil étaient toutes secouées, dans la nuit, d'une vibration puissante, et le récepteur enregistrait à mesure les mots d'une dépêche en langue espagnole lancée par la station de Nauen."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_7_antenne__nom__1",
+          "sense_number": "7",
+          "source_order": 7,
+          "definition_fr": "(Par métonymie) Chaîne de radio ou de télévision.",
+          "sourced_examples": [
+            "Critiqués sur l'antenne de RMC par Jérôme Rothen et Jean-Michel Larqué pour les tenues arborées en arrivant à Clairefontaine, les Bleus ont été défendus par Jules Koundé.",
+            "Plus de nos jours... Ne rien cacher tout étaler... Nous c'est l'ère du bikinisme, de l’àpoilisme. Ni dissimulation ni tricherie, tout sur les antennes, les écrans et les ondes, capté par les populations."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_8_antenne__nom__1",
+          "sense_number": "8",
+          "source_order": 8,
+          "definition_fr": "(Par extension) Implantation locale d’une organisation.",
+          "sourced_examples": [
+            "L’antenne de la mairie est dans la troisième rue à gauche"
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "antenne__nom__1",
+        "sense_id": "__ws_2_antenne__nom__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_antenne__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "触角",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "(Entomologie) Organe des insectes",
+          "mapped_sense_id": "__ws_3_antenne__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_2_antenne__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "天线",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "(Technique) Appareil pour recevoir un signal",
+          "mapped_sense_id": "__ws_5_antenne__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_3_antenne__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "办事处",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Implantation locale d'une organisation",
+          "mapped_sense_id": "__ws_6_antenne__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_antenne__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "天线",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "(Technique) Appareil pour recevoir un signal",
+          "mapped_sense_id": "__ws_5_antenne__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "44ef8ce267e63ec77230fc2fd1787f2e06f5b8eef63748a1975d4a5628391c43"
+    },
+    {
+      "stable_lexeme_key": "constituer|VER",
+      "runtime_lexeme_id": 2989,
+      "lemma": "constituer",
+      "pos": "VER",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 67.8359,
+        "lexique_frequency": 7.579,
+        "contextual_diversity": 1.04562
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_1_constituer__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "definition_fr": "Concourir, avec d’autres éléments, à former une chose en un tout ou l’essence d’une chose.",
+          "sourced_examples": [
+            "Les habitants passagers des garnis qui constituent la population nomade de Paris ne représentent malheureusement pas à eux seuls la population misérable.",
+            "Les grands festivals annuels en Bretagne constituent les vitrines de promotion de toute cette culture populaire : le FIL de Lorient, la Cornouaille de Quimper, la Lune de Landerneau, les Étonnants voyageurs de Saint-Malo, les (nouvelles) Vieilles charrues de Carhaix et son salon du livre bratin, également en plein développement."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_2_constituer__verb__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "definition_fr": "Établir quelqu’un dans une situation légale.",
+          "sourced_examples": [
+            "Eh bien! mère Antoine, allez lui dire que j’ai tué ma femme, et que je viens me constituer prisonnier."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_3_constituer__verb__1",
+          "sense_number": "3",
+          "source_order": 3,
+          "definition_fr": "Établir une chose d’une façon fixe, définitive.",
+          "sourced_examples": [
+            "Constituer une rente, une pension. - Constituer une dot, constituer telle somme, tel héritage en dot."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_4_constituer__verb__1",
+          "sense_number": "4",
+          "source_order": 4,
+          "definition_fr": "Organiser, former.",
+          "sourced_examples": [
+            "Il s’agit de se tenir à l’affut des affaires, de les suivre de près, de constituer des dossiers sur chacun des as de la finance tripatouillarde, d’étudier leurs faiblesses et même leurs vices.",
+            "Selon l'usage solidement établi autrefois, les marqueteurs se sont immédiatement constitués en corporation. Celle-ci était fortement organisée, l’amîn et le mohtasseb disposaient de pouvoirs certains et incontestés."
+          ],
+          "source_id": "dbnary_fr"
+        },
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_5_constituer__verb__1",
+          "sense_number": "5",
+          "source_order": 5,
+          "definition_fr": "Vérifier les pouvoirs et nommer le bureau, en parlant d’une assemblée.",
+          "sourced_examples": [
+            "L’assemblée est constituée. - Les députés du tiers état se constituèrent en assemblée nationale."
+          ],
+          "source_id": "dbnary_fr"
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "constituer__verb__1",
+        "sense_id": "__ws_1_constituer__verb__1"
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|constituer|VER|constitution|NOM",
+          "subtype": "suffixation",
+          "direction": "2989->2990",
+          "label": "后缀 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|constituer|VER|reconstituer|VER",
+          "subtype": "prefixation",
+          "direction": "2989->10804",
+          "label": "前缀 · re-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "7e3138bc5ded96a300a53bfd4d37a13ed664818ea6df9dbea28baf8d4ef2b79e"
+    }
+  ],
+  "artifact_hash": "46f37f8944b524607f600a9e361e8893498fbc79a6e8d34013e16e0d0abc1d97"
+}
