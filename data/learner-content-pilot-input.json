@@ -1,0 +1,942 @@
+{
+  "schema_version": 2,
+  "scope": "Facts for exactly 20 pilot identities; not learner text or runtime data.",
+  "items": [
+    {
+      "identity": {
+        "stable_lexeme_key": "être|VER",
+        "runtime_lexeme_id": 14232,
+        "entry_id": "être__verb__1",
+        "sense_id": "__ws_1_être__verb__1"
+      },
+      "sample_type": "high_frequency_multisense_no_family",
+      "lemma": "être",
+      "pos": "VER",
+      "definition_fr": "Définir un état, une caractéristique du sujet. Note : En grammaire, ce type de verbe est appelé une copule, et le mot qu’il introduit est un attribut. En linguistique, il existe différentes manières de caractériser ces constructions attributives, existentielles, locatives ou posturales qui peuvent être introduites en français par être.",
+      "sourced_examples": [
+        "Les anciens avaient justement montré le rôle de l’organisme vivant comme cause génératrice des maladies, les éléments extérieurs en étant les causes provocatrices.",
+        "De fait, René se sentait apaisé plus que ne l’eût été aucun mortel en un lieu moins épouvantable qu'un franc-bord de canal au milieu de la nuit."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/%C3%AAtre"
+      },
+      "existing_zh_hint": {
+        "value": "乃；做",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": []
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "avoir|VER",
+        "runtime_lexeme_id": 1157,
+        "entry_id": "avoir__verb__1",
+        "sense_id": "__ws_1_avoir__verb__1"
+      },
+      "sample_type": "high_frequency_multisense_no_family",
+      "lemma": "avoir",
+      "pos": "VER",
+      "definition_fr": "Être en relation possessive, soit concrète ou abstraite, soit permanente ou occasionnelle, dont le possesseur est le sujet et le possédé est le complément d’objet direct.",
+      "sourced_examples": [
+        "Et les cédilles, ça ressemblait à rien ces zigouigouis, quant au verbe avoir qui s’accordait tantôt avec le complément d’objet direct tantôt pas, c’était un cauchemar.",
+        "Pierre a deux filles. Cadet Rouselle a trois maisons."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/avoir"
+      },
+      "existing_zh_hint": {
+        "value": "享有；具备",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": []
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "pouvoir|VER",
+        "runtime_lexeme_id": 9976,
+        "entry_id": "pouvoir__verb__1",
+        "sense_id": "__ws_1_pouvoir__verb__1"
+      },
+      "sample_type": "high_frequency_multisense_no_family",
+      "lemma": "pouvoir",
+      "pos": "VER",
+      "definition_fr": "(Auxiliaire) Être capable de ; avoir la faculté de ; être en état de ; être en mesure de.",
+      "sourced_examples": [
+        "Un léger souffle l’avertissait de ces présences. Geisha le comparait à ces vagues vents coulis traversant certaines pièces bien closes sans qu’on puisse découvrir d’où ils viennent.",
+        "Elles deux ne pouvaient passer pour des aristocrates ; au mieux pouvait-on les prendre pour des hoberelles d’une lointaine province."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/pouvoir"
+      },
+      "existing_zh_hint": {
+        "value": "势力；可以",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": []
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "aujourd'hui|ADV",
+        "runtime_lexeme_id": 1034,
+        "entry_id": "aujourd’hui__adv__1",
+        "sense_id": "__ws_1_aujourd’hui__adv__1"
+      },
+      "sample_type": "high_frequency_multisense_no_family",
+      "lemma": "aujourd'hui",
+      "pos": "ADV",
+      "definition_fr": "À la date présente, ce jour même.",
+      "sourced_examples": [
+        "Il arrive aujourd’hui à midi.",
+        "Hâtons-nous aujourd’hui de jouir de la vie."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/aujourd%27hui"
+      },
+      "existing_zh_hint": {
+        "value": "今儿；今天",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": []
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "chose|NOM",
+        "runtime_lexeme_id": 2339,
+        "entry_id": "chose__nom__1",
+        "sense_id": "__ws_1_chose__nom__1"
+      },
+      "sample_type": "high_frequency_multisense_no_family",
+      "lemma": "chose",
+      "pos": "NOM",
+      "definition_fr": "Objet, idée ou abstraction quelconque, sans pouvoir, vouloir, ou devoir l’identifier ou la nommer. Note d’usage : La signification du mot chose se déduit par la manière dont on l’emploie dans la phrase, où il remplace ce qu’il n’est pas possible (ou pas souhaitable) de nommer. Peut aussi remplacer un ensemble d’objets inanimés (ou d’idées) qu’on devine par le contexte.",
+      "sourced_examples": [
+        "Le bon sens est la chose du monde la mieux partagée.  René Descartes, incipit au Discours de la méthode, 1637.",
+        "En effet, mon oncle, ma cousine donne dans le vrai de la chose."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/chose"
+      },
+      "existing_zh_hint": {
+        "value": "东西；事情",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": []
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "aller|VER",
+        "runtime_lexeme_id": 406,
+        "entry_id": "aller__verb__1",
+        "sense_id": "__ws_1_aller__verb__1"
+      },
+      "sample_type": "high_frequency_multisense_with_nonfamily_relation",
+      "lemma": "aller",
+      "pos": "VER",
+      "definition_fr": "Se déplacer jusqu'à un endroit.",
+      "sourced_examples": [
+        "Dès le lendemain, Lucien, en tilbury, et suivi de deux laquais à cheval, alla pour mettre des cartes chez les dames auxquelles il avait eu l’honneur d’être présenté la veille.",
+        "Tous les fleuves vont à la mer, a dit l’Ecclésiaste dans un magnifique langage, et la mer ne déborde point, et ils retournent aux lieux d'où ils sont sortis pour couler de nouveau."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/aller"
+      },
+      "existing_zh_hint": {
+        "value": "出国；刚要",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|aller|NOM|aller|VER",
+          "subtype": "conversion",
+          "direction": null,
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|aller|VER|allée|NOM",
+          "subtype": "conversion",
+          "direction": "406->429",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "grand|ADJ",
+        "runtime_lexeme_id": 5859,
+        "entry_id": "grand__adj__1",
+        "sense_id": "__ws_1_grand__adj__1"
+      },
+      "sample_type": "sourced_suffix_form_observable",
+      "lemma": "grand",
+      "pos": "ADJ",
+      "definition_fr": "(Par analogie) De dimensions (hauteur/taille, longueur, profondeur, etc.) importantes, qui dépassent celles de ses semblables, ou de longue durée. Par exemple, de volume supérieur à la moyenne (ou normale) des individus de même espèce et sexe et d’âge similaire.",
+      "sourced_examples": [
+        "Le bourreau chef jeta un coup d’œil sur la besogne et parut mécontent : la découpure n’était pas assez grande.",
+        "Pendant un grand mois, ils s’enfermèrent, ils ne sortirent pas une seule fois de la Souleiade."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/grand"
+      },
+      "existing_zh_hint": {
+        "value": "伟大；大型",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|grandeur|NOM|grand|ADJ",
+          "subtype": "suffixation",
+          "direction": "5859->5866",
+          "label": "后缀 · -eur",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "grandeur|NOM",
+        "runtime_lexeme_id": 5866,
+        "entry_id": "grandeur__nom__1",
+        "sense_id": "__ws_1_grandeur__nom__1"
+      },
+      "sample_type": "sourced_suffix_form_observable",
+      "lemma": "grandeur",
+      "pos": "NOM",
+      "definition_fr": "Étendue, taille en hauteur, en longueur, en largeur, etc.",
+      "sourced_examples": [
+        "Ce vase est de la grandeur convenable.",
+        "Des tableaux de différentes grandeurs."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/grandeur"
+      },
+      "existing_zh_hint": {
+        "value": "大小",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|grandeur|NOM|grand|ADJ",
+          "subtype": "suffixation",
+          "direction": "5859->5866",
+          "label": "后缀 · -eur",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "petit|ADJ",
+        "runtime_lexeme_id": 9495,
+        "entry_id": "petit__adj__1",
+        "sense_id": "__ws_1_petit__adj__1"
+      },
+      "sample_type": "sourced_suffix_form_observable",
+      "lemma": "petit",
+      "pos": "ADJ",
+      "definition_fr": "De taille réduite.",
+      "sourced_examples": [
+        "Un petit caillou.",
+        "C’est un homme de petite taille."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/petit"
+      },
+      "existing_zh_hint": {
+        "value": "低矮；区区",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|petitesse|NOM|petit|ADJ",
+          "subtype": "suffixation",
+          "direction": "9495->9504",
+          "label": "后缀 · -esse",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "petitesse|NOM",
+        "runtime_lexeme_id": 9504,
+        "entry_id": "petitesse__nom__1",
+        "sense_id": "__ws_1_petitesse__nom__1"
+      },
+      "sample_type": "sourced_suffix_form_observable",
+      "lemma": "petitesse",
+      "pos": "NOM",
+      "definition_fr": "Petite dimension, petite étendue, petit volume.",
+      "sourced_examples": [
+        "Mais, pour contre-balancer de tels désavantages, la marquise d’Aubrion avait donné à sa fille un air très distingué, l’avait soumise à une hygiène qui maintenait provisoirement le nez à un ton de chair raisonnable, lui avait appris l’art de se mettre avec goût, l’avait dotée de jolies manières, lui avait enseigné ces regards mélancoliques qui intéressent un homme et lui font croire qu’il va rencontrer l’ange si vainement cherché ; elle lui avait montré la manœuvre du pied, pour l’avancer à propos et en faire admirer la petitesse, au moment où le nez avait l’impertinence de rougir ; enfin, elle avait tiré de sa fille un parti très satisfaisant.",
+        "La Girafe […] ne soutient point longtemps cet effort, qu’elle ressent comme une fatigue : c’est que ses poumons n’ont pas assez d’ampleur ; défaut que révèle la petitesse du coffre qui les contient."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/petitesse"
+      },
+      "existing_zh_hint": {
+        "value": "卑劣",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|petitesse|NOM|petit|ADJ",
+          "subtype": "suffixation",
+          "direction": "9495->9504",
+          "label": "后缀 · -esse",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "bon|ADJ",
+        "runtime_lexeme_id": 1515,
+        "entry_id": "bon__adj__1",
+        "sense_id": "__ws_1_bon__adj__1"
+      },
+      "sample_type": "sourced_suffix_form_observable",
+      "lemma": "bon",
+      "pos": "ADJ",
+      "definition_fr": "Qui a des qualités conformes à ce que l’on attendait.",
+      "sourced_examples": [
+        "C’est un bon outil que tu utilises.",
+        "Quelle bonne idée !"
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/bon"
+      },
+      "existing_zh_hint": {
+        "value": "不赖；优良",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|bonté|NOM|bon|ADJ",
+          "subtype": "suffixation",
+          "direction": "1515->1533",
+          "label": "后缀 · -té",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "bonté|NOM",
+        "runtime_lexeme_id": 1533,
+        "entry_id": "bonté__nom__1",
+        "sense_id": "__ws_1_bonté__nom__1"
+      },
+      "sample_type": "sourced_suffix_form_observable",
+      "lemma": "bonté",
+      "pos": "NOM",
+      "definition_fr": "Qualité de ce qui est bon.",
+      "sourced_examples": [
+        "Comme les poires ne peuvent se conserver long-temps dans leur premier état de bonté, & qu'on ne peut souvent les garder d'une saison à une autre.",
+        "Les bas et surtout les gants dits de fil d’Écosse attestent assez la bonté et l'utilité de ce fil : ils sont frais durent longtemps et résistent à la sueur."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/bont%C3%A9"
+      },
+      "existing_zh_hint": {
+        "value": "仁慈；善心",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|bonté|NOM|bon|ADJ",
+          "subtype": "suffixation",
+          "direction": "1515->1533",
+          "label": "后缀 · -té",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "aimer|VER",
+        "runtime_lexeme_id": 351,
+        "entry_id": "aimer__verb__1",
+        "sense_id": "__ws_1_aimer__verb__1"
+      },
+      "sample_type": "sourced_suffix_form_observable",
+      "lemma": "aimer",
+      "pos": "VER",
+      "definition_fr": "Ressentir un fort sentiment d’attirance pour quelqu’un ou quelque chose.",
+      "sourced_examples": [
+        "Vous aviez été mon nourrisson, car votre mère était morte en vous mettant au monde. De ce jour-là, moi, sœur de lait de votre mère, je vous aimai comme mon propre enfant.",
+        "Déjà, Jacques aimait Yasmina, follement, avec toute l’intensité débordante d’un premier amour chez un homme à la fois très sensuel et très rêveur en qui l’amour de la chair se spiritualisait, revêtait la forme d’une tendresse vraie…"
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/aimer"
+      },
+      "existing_zh_hint": {
+        "value": "喜好；喜欢",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|aimable|ADJ|aimer|VER",
+          "subtype": "suffixation",
+          "direction": "351->348",
+          "label": "后缀 · -able",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|aimer|VER|amateur|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "351->458",
+          "label": "异形词族 · -eur",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "aimable|ADJ",
+        "runtime_lexeme_id": 348,
+        "entry_id": "aimable__adj__1",
+        "sense_id": "__ws_3_aimable__adj__1"
+      },
+      "sample_type": "sourced_suffix_form_observable",
+      "lemma": "aimable",
+      "pos": "ADJ",
+      "definition_fr": "Qui se comporte de façon socialement correcte avec les autres, qui fait preuve de politesse et de gentillesse.",
+      "sourced_examples": [
+        "Ultracompétente et plutôt aimable (pour peu que vous respectiez son statut), elle sait contourner le règlement pour sauver la peau d’un malade : en l'occurrence, bibi.",
+        "La politique du Japon rappelle le caractère de ses habitants : aimable et pleine de sollicitude à la face du monde, elle opprime, vole et massacre de l’autre côté du décor."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/aimable"
+      },
+      "existing_zh_hint": {
+        "value": "乖巧；亲切",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|aimable|ADJ|aimer|VER",
+          "subtype": "suffixation",
+          "direction": "351->348",
+          "label": "后缀 · -able",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "faire|VER",
+        "runtime_lexeme_id": 5081,
+        "entry_id": "faire__verb__1",
+        "sense_id": "__ws_1_faire__verb__1"
+      },
+      "sample_type": "opaque_sourced_family",
+      "lemma": "faire",
+      "pos": "VER",
+      "definition_fr": "Faire (2) à manger.\n Créer, produire, fabriquer, en parlant de toute œuvre matérielle.",
+      "sourced_examples": [
+        "Cet oiseau, très facile à apprivoiser, se promène comme les poules autour des habitations; nous en avons vu une paire apprivoisée qui faisait son nid sur un arbre.",
+        "Alors les questions commençaient: « Tante, comment les petites abeilles font-elles du miel clair et comment du miel noir? n'est-ce pas, les abeilles qui font du miel doré sont jaunes, et celles qui font du miel foncé sont noires? »"
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/faire"
+      },
+      "existing_zh_hint": {
+        "value": "作出；使得",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|défaire|VER|faire|VER",
+          "subtype": "prefixation",
+          "direction": "5081->4147",
+          "label": "前缀 · dé1-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|faction|NOM|faire|VER",
+          "subtype": "suffixation",
+          "direction": "5081->5063",
+          "label": "后缀 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|facture|NOM|faire|VER",
+          "subtype": "semantic_derivation",
+          "direction": "5081->5066",
+          "label": "异形词族 · -ure",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|faire|VER|fait|ADJ",
+          "subtype": "conversion",
+          "direction": "5081->5086",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|faire|VER|fait|NOM",
+          "subtype": "conversion",
+          "direction": null,
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|faire|VER|façon|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "5081->5163",
+          "label": "异形词族 · -on",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|faire|VER|refaire|VER",
+          "subtype": "prefixation",
+          "direction": "5081->10853",
+          "label": "前缀 · re-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "façon|NOM",
+        "runtime_lexeme_id": 5163,
+        "entry_id": "façon__nom__1",
+        "sense_id": "__ws_1_façon__nom__1"
+      },
+      "sample_type": "opaque_sourced_family",
+      "lemma": "façon",
+      "pos": "NOM",
+      "definition_fr": "Action de faire ; usité en ce sens seulement avec la préposition de, dans le style familier, et signifiant « par le fait de quelqu’un, par son œuvre ».",
+      "sourced_examples": [
+        "Il doit lancer contre elle un trait de ma façon.",
+        "Ce héros de ma façon sort un peu des règles de la tragédie […]"
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/fa%C3%A7on"
+      },
+      "existing_zh_hint": {
+        "value": "以致；做工",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|faire|VER|façon|NOM",
+          "subtype": "semantic_derivation",
+          "direction": "5081->5163",
+          "label": "异形词族 · -on",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|façonner|VER|façon|NOM",
+          "subtype": "conversion",
+          "direction": null,
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "voir|VER",
+        "runtime_lexeme_id": 13641,
+        "entry_id": "voir__verb__1",
+        "sense_id": "__ws_1_voir__verb__1"
+      },
+      "sample_type": "opaque_sourced_family",
+      "lemma": "voir",
+      "pos": "VER",
+      "definition_fr": "Percevoir l’image des objets par l’organe de la vue.",
+      "sourced_examples": [
+        "[…] ; et l’on voyait déjà quelques embarcations filer doucement sur l’eau que battaient les grands avirons, pareils à des vols de goélands lents et bas.",
+        "– Pourtant —fit Bert— j’aimerais bien en voir un… rien que pour pouvoir y croire quand je l’aurais vu.<br"
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/voir"
+      },
+      "existing_zh_hint": {
+        "value": "看见；看到",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|prévoir|VER|voir|VER",
+          "subtype": "prefixation",
+          "direction": "13641->10364",
+          "label": "pré- 前缀",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|revoir|VER|voir|VER",
+          "subtype": "prefixation",
+          "direction": "13641->11141",
+          "label": "re- 前缀",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|visible|ADJ|voir|VER",
+          "subtype": "semantic_derivation",
+          "direction": "13641->13592",
+          "label": "异形词族 · -ible",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|vision|NOM|voir|VER",
+          "subtype": "semantic_derivation",
+          "direction": "13641->13594",
+          "label": "异形词族 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|voir|VER|voyant|ADJ",
+          "subtype": "conversion",
+          "direction": "13641->13695",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|conversion|voir|VER|vue|NOM",
+          "subtype": "conversion",
+          "direction": "13641->13707",
+          "label": "词性转换",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "vision|NOM",
+        "runtime_lexeme_id": 13594,
+        "entry_id": "vision__nom__1",
+        "sense_id": "__ws_1_vision__nom__1"
+      },
+      "sample_type": "opaque_sourced_family",
+      "lemma": "vision",
+      "pos": "NOM",
+      "definition_fr": "(Didactique) Action, capacité de voir ; vue.",
+      "sourced_examples": [
+        "Ses yeux, doués d’une extrême puissance de vision, comme tous ceux de ces indigènes nomades, habitués aux ténèbres des longues nuits de l’hiver arctique, ne pouvaient la tromper.",
+        "[…], nous passons sous le pont suspendu de Brooklyn et devant Manhattan et ses gratte-ciel, et ma dernière vision de New-York me laisse une impression de ville monstrueuse et titanesque."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/vision"
+      },
+      "existing_zh_hint": {
+        "value": "愿景；目光",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|vision|NOM|voir|VER",
+          "subtype": "semantic_derivation",
+          "direction": "13641->13594",
+          "label": "异形词族 · -ion",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "homme|NOM",
+        "runtime_lexeme_id": 6194,
+        "entry_id": "Homme__nom__1",
+        "sense_id": "__ws_1_Homme__nom__1"
+      },
+      "sample_type": "opaque_sourced_family",
+      "lemma": "homme",
+      "pos": "NOM",
+      "definition_fr": "Humain, être humain. Note d’usage : Terme pouvant être employé avec une capitale pour parler du genre ou de l’espèce humaine dans son ensemble, au singulier.",
+      "sourced_examples": [
+        "L’évangile de la fête est celui de la visite des Rois mages qui offrirent à l’enfant Jésus leurs présents symboliques: l’or car il est Roi, l’encens car il est Dieu et la myrrhe car il est Homme.",
+        "L’origine de l’Homme."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/homme"
+      },
+      "existing_zh_hint": {
+        "value": "男人；男儿",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|humain|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->6259",
+          "label": "异形词族 · -ain",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|humaniste|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->6265",
+          "label": "异形词族 · -iste",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|masculin|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->7909",
+          "label": "异形词族 · -in",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|viril|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->13579",
+          "label": "异形词族 · -il",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    },
+    {
+      "identity": {
+        "stable_lexeme_key": "humain|ADJ",
+        "runtime_lexeme_id": 6259,
+        "entry_id": "humain__adj__1",
+        "sense_id": "__ws_1_humain__adj__1"
+      },
+      "sample_type": "opaque_sourced_family",
+      "lemma": "humain",
+      "pos": "ADJ",
+      "definition_fr": "(Anthropologie) Relatif à l’espèce humaine.",
+      "sourced_examples": [
+        "Aucune forme humaine ne surgit entre les halliers, aucun bruit humain ne m’arrive. Partout le silence et partout la solitude !",
+        "Lorsque l’on ne peut faire autrement que d’affronter le mauvais temps, les forces humaines se décuplent et l’esprit devient plus clairvoyant."
+      ],
+      "sense_source": {
+        "source_id": "dbnary_fr",
+        "source_url": "https://fr.wiktionary.org/wiki/humain"
+      },
+      "existing_zh_hint": {
+        "value": "人情味；人道",
+        "status": "hint_only_not_sense_fact"
+      },
+      "relevant_sourced_relations": [
+        {
+          "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|humain|ADJ",
+          "subtype": "semantic_derivation",
+          "direction": "6194->6259",
+          "label": "异形词族 · -ain",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|humain|ADJ|humanisme|NOM",
+          "subtype": "suffixation",
+          "direction": "6259->6263",
+          "label": "后缀 · -isme",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|suffixation|humain|ADJ|humanité|NOM",
+          "subtype": "suffixation",
+          "direction": "6259->6267",
+          "label": "后缀 · -ité",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        },
+        {
+          "stable_relation_key": "fam|derivational_morphology|prefixation|humain|ADJ|inhumain|ADJ",
+          "subtype": "prefixation",
+          "direction": "6259->6784",
+          "label": "前缀 · in-",
+          "source_boundary": {
+            "source_id": "demonette_2",
+            "review_status": "sourced",
+            "relation": "fam",
+            "dimension": "derivational_morphology"
+          }
+        }
+      ]
+    }
+  ],
+  "input_facts_sha256": "e6648ebc57ccd45f589dc6f9aec4087439a806aa21c656fd42da7f28eea8fba6"
+}
