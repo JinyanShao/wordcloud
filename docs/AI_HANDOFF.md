@@ -19,4 +19,5 @@
 ## Release status and next work
 
 - GitHub Pages was published from `main` at `15ced88` on 2026-09-07.  Runtime CI and deployment succeeded; the production site was checked with accent-insensitive `ecole` search and the `école` family.  The browser console has only a non-functional missing `favicon.ico` 404.
+- Phase 1 deterministic learner content was published from `main` at `18330a2` on 2026-09-08.  Runtime CI and Pages deployment succeeded; production verification confirmed loading, search, the family sidebar, `同结构的其他词族`, and `learner-content.js` on desktop and a 390px mobile viewport.
 - The next content-quality priority is editorial review of the 347 new audit-sample rows and learner-facing Chinese explanations/examples.  Do not turn spelling similarity or AI drafts into sourced word-family claims.
