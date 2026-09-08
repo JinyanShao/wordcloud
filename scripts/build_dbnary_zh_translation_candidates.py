@@ -51,6 +51,7 @@ def build():
   else: tier="entry_ambiguous_candidate"; reasons=(["multiple_current_senses"] if len(senses[entry["id"]])>1 else [])+(["multiple_chinese_forms"] if len(forms)>1 else [])+["no_structural_sense_mapping"]
   item={"translation_stable_ref":f"dbnary_fr:{r['translation_id']}","chinese_written_form":r["written_form"],"target_language_code":r["target_language_code"],
         "learner_language_pool":CHINESE_CODES[r["target_language_code"]],"translation_gloss":g["text"] if g else None,"gloss_sense_number":g["sense_number"] if g else None,
+        "learner_language_eligibility":"default_learner_chinese" if r["target_language_code"] in {"zho","cmn"} else "nondefault_chinese_variant",
         "mapped_sense_id":mapped,"candidate_class":tier,"ambiguity_reasons":reasons,
         "enhanced_sense_links":[],"enhanced_source_version":None,
         "source_provenance":{"source_id":"dbnary_fr","snapshot_sha256":pinned_hash,"translation_subject":r["translation_id"],"is_translation_of":r["source_entry_id"]}}
