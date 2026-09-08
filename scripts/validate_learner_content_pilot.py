@@ -1,82 +1,104 @@
 #!/usr/bin/env python3
-"""Validate the bounded learner-content pilot against the SQLite fact source."""
+"""Validate pilot structure and fact references; semantic correctness needs review."""
 
 from __future__ import annotations
 
-import argparse
 import json
 import re
 import sqlite3
 import unicodedata
 from pathlib import Path
 
-from build_learner_content_pilot import DB_PATH, OUTPUT_PATH, build, fact_hash
+from build_learner_content_pilot import DB_PATH, OUTPUT_PATH, build
 
+ROOT = Path(__file__).resolve().parents[1]
+DRAFT_PATH = ROOT / "data" / "learner-content-pilot.json"
 STATUSES = {"ai_draft", "reviewed", "blocked"}
 EXAMPLE_TYPES = {"sourced", "ai_generated"}
-REQUIRED = {"model", "generation_version", "input_facts_sha256"}
-# Deliberately tiny review list for the 20 pilot examples, not a morphology engine.
-ALLOWED_FORMS = {"être": {"est"}, "avoir": {"ai", "j'ai"}, "pouvoir": {"peux"},
-                 "aller": {"allons"}, "aimer": {"aime", "j'aime"}, "faire": {"fais"},
-                 "voir": {"vois"}, "grand": {"grande"}}
 
 
-def normalized(value: str) -> str:
-    return unicodedata.normalize("NFC", value).lower()
+def norm(value: str) -> str:
+    return unicodedata.normalize("NFC", value.replace("’", "'")).lower()
 
 
-def contains_target(item: dict, lemma: str) -> bool:
-    tokens = set(re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ’']+", normalized(item["example_fr"])))
-    return normalized(lemma) in tokens or bool(tokens & ALLOWED_FORMS.get(normalized(lemma), set()))
+def tokens(text: str) -> set[str]:
+    result = set()
+    for token in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ’']+", norm(text)):
+        result.add(token)
+        if "'" in token:
+            result.add(token.rsplit("'", 1)[1])
+        if "’" in token:
+            result.add(token.rsplit("’", 1)[1])
+    return result
 
 
-def validate(payload: dict) -> list[str]:
+def attested_forms(conn: sqlite3.Connection, lexeme_id: int, lemma: str, pos: str) -> set[str]:
+    forms = {norm(lemma)}
+    forms.update(row[0] for row in conn.execute("SELECT normalized FROM aliases WHERE lexeme_id=?", (lexeme_id,)))
+    forms.update(row[0] for row in conn.execute(
+        "SELECT normalized_form FROM lexique_entries WHERE normalized_lemma=? AND pos=?", (norm(lemma), pos)
+    ))
+    return forms
+
+
+def validate(draft: dict, facts: dict) -> tuple[list[str], int]:
     errors: list[str] = []
-    if payload.get("schema_version") != 1 or len(payload.get("items", [])) != 20:
-        return ["pilot must have schema version 1 and exactly 20 items"]
-    if payload != build():
-        errors.append("pilot is not the deterministic output of its generator")
+    unknown_forms = 0
+    if draft.get("schema_version") != 2 or len(draft.get("items", [])) != 20:
+        return ["pilot must have schema version 2 and exactly 20 items"], unknown_forms
+    if draft.get("provenance", {}).get("input_facts_sha256") != facts.get("input_facts_sha256"):
+        errors.append("draft provenance does not match the reviewable input facts")
+    if draft.get("provenance", {}).get("actual_model") != "unknown":
+        errors.append("actual model must be unknown unless reliably available")
+    fact_by_id = {tuple(x["identity"][key] for key in ("stable_lexeme_key", "entry_id", "sense_id")): x for x in facts["items"]}
     conn = sqlite3.connect(DB_PATH)
     try:
         seen = set()
-        for item in payload["items"]:
-            key = (item.get("lexeme_id"), item.get("entry_id"), item.get("sense_id"))
-            if key in seen: errors.append(f"duplicate item {key}")
+        for item in draft["items"]:
+            identity = item.get("identity", {})
+            key = tuple(identity.get(name) for name in ("stable_lexeme_key", "entry_id", "sense_id"))
+            if key in seen: errors.append(f"duplicate learner identity {key}")
             seen.add(key)
-            row = conn.execute("SELECT l.lemma FROM lexemes l JOIN lexeme_senses s ON s.lexeme_id=l.id WHERE l.id=? AND s.entry_id=? AND s.id=?", key).fetchone()
-            if not row:
-                errors.append(f"missing lexeme/sense {key}"); continue
+            fact = fact_by_id.get(key)
+            if not fact:
+                errors.append(f"orphan learner identity {key}"); continue
+            if identity.get("runtime_lexeme_id") != fact["identity"]["runtime_lexeme_id"]:
+                errors.append(f"runtime id mismatch {key}")
             status = item.get("content_status")
             if status not in STATUSES: errors.append(f"invalid status {key}")
-            provenance = item.get("provenance", {})
-            if not REQUIRED <= provenance.keys(): errors.append(f"incomplete provenance {key}")
-            edge_ids = item.get("relation_edge_ids", [])
-            explanation = item.get("relation_explanation_zh")
-            if bool(explanation) != bool(edge_ids): errors.append(f"relation explanation/edge mismatch {key}")
-            for edge_id in edge_ids:
-                edge = conn.execute("""SELECT 1 FROM official_edges e JOIN official_edge_sources x ON x.edge_id=e.id AND x.source_id='demonette_2'
-                    WHERE e.id=? AND e.relation='fam' AND e.dimension='derivational_morphology' AND e.review_status='sourced'
-                      AND (e.a_id=? OR e.b_id=?)""", (edge_id, key[0], key[0])).fetchone()
-                if not edge: errors.append(f"unsourced or unrelated relation edge {edge_id} for {key}")
-            if provenance.get("input_facts_sha256") != fact_hash(conn, key[0], key[1], key[2], edge_ids): errors.append(f"fact hash mismatch {key}")
+            rels = set(item.get("relation_stable_keys", []))
+            known_rels = {x["stable_relation_key"] for x in fact["relevant_sourced_relations"]}
+            if not rels <= known_rels: errors.append(f"unknown sourced relation key {key}")
+            if bool(item.get("relation_explanation_zh")) != bool(rels):
+                errors.append(f"relation explanation/key mismatch {key}")
             if status == "blocked":
                 if any(item.get(field) for field in ("gloss_zh_short", "usage_note_zh", "relation_explanation_zh", "example_fr", "example_zh")):
-                    errors.append(f"blocked item contains learner content {key}")
-            else:
-                if not item.get("gloss_zh_short") or not item.get("example_fr") or not item.get("example_zh"):
-                    errors.append(f"draft lacks required learner fields {key}")
-                if item.get("example_source_type") not in EXAMPLE_TYPES: errors.append(f"invalid example source {key}")
-                if not contains_target(item, row[0]): errors.append(f"example misses lemma or approved form {key}")
+                    errors.append(f"blocked item contains learner draft {key}")
+                continue
+            if not item.get("gloss_zh_short") or not item.get("example_fr") or not item.get("example_zh"):
+                errors.append(f"draft lacks required learner fields {key}")
+            if item.get("example_source_type") not in EXAMPLE_TYPES:
+                errors.append(f"invalid example source type {key}")
+            if item.get("example_source_type") == "sourced":
+                if item["example_fr"] not in fact["sourced_examples"]:
+                    errors.append(f"sourced example not present in bound sense {key}")
+                source = item.get("example_provenance", {})
+                if source.get("source_id") != fact["sense_source"]["source_id"]:
+                    errors.append(f"sourced example attribution mismatch {key}")
+            forms = attested_forms(conn, identity["runtime_lexeme_id"], fact["lemma"], fact["pos"])
+            if not forms:
+                unknown_forms += 1
+            elif not (tokens(item["example_fr"]) & forms):
+                errors.append(f"example lacks an attested target form {key}")
     finally:
         conn.close()
-    return errors
+    return errors, unknown_forms
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--check", action="store_true")
-    args = parser.parse_args()
-    payload = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
-    errors = validate(payload)
+    facts = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    draft = json.loads(DRAFT_PATH.read_text(encoding="utf-8"))
+    errors, unknown = validate(draft, facts)
     if errors: raise SystemExit("\n".join(errors))
-    print(json.dumps({"ok": True, "items": len(payload["items"]), "blocked": sum(x["content_status"] == "blocked" for x in payload["items"])}))
+    print(json.dumps({"ok": True, "items": len(draft["items"]), "form_validation_unknown": unknown,
+                      "semantic_review": "required"}))
