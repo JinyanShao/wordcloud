@@ -1,0 +1,1016 @@
+{
+  "schema_version": 1,
+  "scope": "Phase 2B fact input only; no learner draft or semantic judgment.",
+  "items": [
+    {
+      "group": "A",
+      "stable_lexeme_key": "abaisser|VER",
+      "runtime_lexeme_id": 2,
+      "entry_id": "abaisser__verb__1",
+      "sense_id": "__ws_1_abaisser__verb__1",
+      "lemma": "abaisser",
+      "pos": "VER",
+      "cefr": "B2",
+      "definition_fr": "Mettre en position plus basse, faire descendre, diminuer la hauteur.",
+      "sourced_examples": [
+        "Une vis de rappel micrométrique peut ensuite soulever ou abaisser la lunette par un mouvement doux et modérable, pour faire atteindre plus exactement à son axe optique la hauteur voulue.",
+        "J’examine à la dérobée son sein qui se soulève et qui s’abaisse, et sa figure immobile, et le livre vivant qui est uni à elle."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_abaisser__verb__1",
+          "chinese_written_form": "放下",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Mettre plus bas.",
+          "mapped_sense_id": "__ws_1_abaisser__verb__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "3fc4231989e74b51edbe14c015d89cbdd3e9929d94f8f2061270ef94d0041281"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "abandonner|VER",
+      "runtime_lexeme_id": 4,
+      "entry_id": "abandonner__verb__1",
+      "sense_id": "__ws_3_abandonner__verb__1",
+      "lemma": "abandonner",
+      "pos": "VER",
+      "cefr": "A2",
+      "definition_fr": "Laisser.",
+      "sourced_examples": [
+        "On ne doit employer le crud-ammoniac qu’après l’avoir abandonné à l’air pendant un certain temps, ou l’avoir répandu dans le sol plusieurs mois avant les semailles ou plantations.",
+        "Les horlogers purifient l'huile d'olive, pour graisser les rouages délicats des montres , en y introduisant une lame de plomb dans une bouteille bouchée, qu'ils tiennent exposée au soleil. Peu à peu l'huile se couvre d'une masse caséiforme, qui se dépose ensuite au fond du vase , et abandonne l'huile limpide."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_abandonner__verb__1",
+          "chinese_written_form": "遗弃",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Laisser",
+          "mapped_sense_id": "__ws_3_abandonner__verb__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "70ea32b3b7a530e27d1ff7049c4d51f0fa448ef87e7259f088c8b3de1b3d8c61"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "abîmer|VER",
+      "runtime_lexeme_id": 62,
+      "entry_id": "abîmer__verb__1",
+      "sense_id": "__ws_4_abîmer__verb__1",
+      "lemma": "abîmer",
+      "pos": "VER",
+      "cefr": "B2",
+      "definition_fr": "(Sens figuré) (Familier) Endommager beaucoup.",
+      "sourced_examples": [
+        "Le vent abîme le parasol.",
+        "La pluie a abîmé mon chapeau."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_abîmer__verb__1",
+          "chinese_written_form": "弄坏",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Endommager",
+          "mapped_sense_id": "__ws_4_abîmer__verb__1"
+        },
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_2_abîmer__verb__1",
+          "chinese_written_form": "破坏",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Endommager",
+          "mapped_sense_id": "__ws_4_abîmer__verb__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "27b797aacd586c9c4c88a2b53af4e25318efb7b6d957cf0255450e9f0242e198"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "amant|NOM",
+      "runtime_lexeme_id": 457,
+      "entry_id": "amant__nom__2",
+      "sense_id": "__ws_1_amant__nom__2",
+      "lemma": "amant",
+      "pos": "NOM",
+      "cefr": "B2",
+      "definition_fr": "Celui qui reçoit les faveurs d’une femme (ou, plus rarement, d’un homme) avec laquelle il n’est pas marié.",
+      "sourced_examples": [
+        "Elle savait que beaucoup d’entre les filles de sa race avaient des amants, qu’elles se cachaient soigneusement de leurs familles, mais que, généralement, cela finissait par un mariage.",
+        "Pour choisir un amant, il suffit qu’on en ait envie. Et pour choisir un mari, combien le jugement serait plus sûr et plus libre, si l’on avait d’abord eu l’amant."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_amant__nom__2",
+          "chinese_written_form": "情人",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Celui qui reçoit les faveurs d’une femme avec laquelle il n’est pas marié.",
+          "mapped_sense_id": "__ws_1_amant__nom__2"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "a176f1fe727a051a6bc259ce08e7473088092ed2ae82dfbc26f91bcae9d05346"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "antenne|NOM",
+      "runtime_lexeme_id": 609,
+      "entry_id": "antenne__nom__1",
+      "sense_id": "__ws_3_antenne__nom__1",
+      "lemma": "antenne",
+      "pos": "NOM",
+      "cefr": "B2",
+      "definition_fr": "(Marine) (Vieilli) (Désuet) Rang de futailles placées les unes sur les autres dans la cale.",
+      "sourced_examples": [],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_antenne__nom__1",
+          "chinese_written_form": "触角",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "(Entomologie) Organe des insectes",
+          "mapped_sense_id": "__ws_3_antenne__nom__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "b95c168ec4580248f33c95492dde6efa8bd8ff4ce8d59eaeb65b76bb808c228a"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "antiquité|NOM",
+      "runtime_lexeme_id": 635,
+      "entry_id": "antiquité__nom__1",
+      "sense_id": "__ws_4_antiquité__nom__1",
+      "lemma": "antiquité",
+      "pos": "NOM",
+      "cefr": "A1",
+      "definition_fr": "Objets plus ou moins anciens.",
+      "sourced_examples": [
+        "Magasin d’antiquités. — Marchand d’antiquités.",
+        "L’imagination ne manquait pas à Julia. Elle ouvrit bientôt à l’autre bout de la ville un magasin d’antiquités, le premier sans doute qu'il y eût eu jamais dans le département, achetant tout ce qu’on lui offrait de rencontre sur son chemin ou dans les encans."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_antiquité__nom__1",
+          "chinese_written_form": "古董",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Objets plus ou moins anciens.",
+          "mapped_sense_id": "__ws_4_antiquité__nom__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "79c339ce7f41571f73f40d0584b687b413feeeb80232fddcf8e0a8da6bf34c20"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "antérieur|ADJ",
+      "runtime_lexeme_id": 642,
+      "entry_id": "antérieur__adj__1",
+      "sense_id": "__ws_2_antérieur__adj__1",
+      "lemma": "antérieur",
+      "pos": "ADJ",
+      "cefr": "B2",
+      "definition_fr": "Qui est avant, qui précède, par rapport au lieu, dans l’espace.",
+      "sourced_examples": [
+        "Mrs. Paulina Barnett causait de ces choses dans sa propre chambre, dont la fenêtre s’ouvrait sur la partie antérieure de l’enceinte."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_antérieur__adj__1",
+          "chinese_written_form": "前部",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui précède dans l’espace",
+          "mapped_sense_id": "__ws_2_antérieur__adj__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "4f0905660812c918a4bc57b0aa73d42b4b986ab973ea1d7dc61f9430539801e9"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "apercevoir|VER",
+      "runtime_lexeme_id": 652,
+      "entry_id": "apercevoir__verb__1",
+      "sense_id": "__ws_1_apercevoir__verb__1",
+      "lemma": "apercevoir",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Commencer à voir.",
+      "sourced_examples": [
+        "Tantôt il leur semblait apercevoir les soldats alignés, les cavaliers rapides comme une vision d’Ossian ; […].",
+        "En les apercevant, Bert s’aplatit sur le sol, rampa jusqu’à un creux propice et demeura étendu là à contempler leurs efforts."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_apercevoir__verb__1",
+          "chinese_written_form": "瞥见",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Commencer à voir",
+          "mapped_sense_id": "__ws_1_apercevoir__verb__1"
+        },
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_2_apercevoir__verb__1",
+          "chinese_written_form": "看见",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Commencer à voir",
+          "mapped_sense_id": "__ws_1_apercevoir__verb__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "1ae1ccfe611c04ccf2dc320907046584297e3fd5a1b46fdd0c2d3dc865b788c8"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "appareil|NOM",
+      "runtime_lexeme_id": 664,
+      "entry_id": "appareil__nom__1",
+      "sense_id": "__ws_1_appareil__nom__1",
+      "lemma": "appareil",
+      "pos": "NOM",
+      "cefr": "A1",
+      "definition_fr": "Objet complexe conçu par l’homme afin de faciliter un travail.",
+      "sourced_examples": [
+        "Tous les bras disponibles travaillaient à la confection d’un mât, auquel les électriciens du Vaterland accrocheraient les longues antennes de l’appareil de télégraphie sans fil qui devait enfin relier le Prince au monde extérieur."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_appareil__nom__1",
+          "chinese_written_form": "仪器",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Objet construit par l’homme",
+          "mapped_sense_id": "__ws_1_appareil__nom__1"
+        },
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_2_appareil__nom__1",
+          "chinese_written_form": "器具",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Objet construit par l’homme",
+          "mapped_sense_id": "__ws_1_appareil__nom__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "e1ba5b72ee650b464402f6e0d9fdc17353998055a2f3090e4468a71f7fc100e6"
+    },
+    {
+      "group": "A",
+      "stable_lexeme_key": "apéritif|NOM",
+      "runtime_lexeme_id": 727,
+      "entry_id": "apéritif__nom__1",
+      "sense_id": "__ws_2_apéritif__nom__1",
+      "lemma": "apéritif",
+      "pos": "NOM",
+      "cefr": "A1",
+      "definition_fr": "Boisson alcoolisée servie avant un repas, considérée comme un stimulant pour l’appétit.",
+      "sourced_examples": [
+        "Il se bornait à des recommandations anodines et à des conseils mitigés : ne buvez pas tant d’apéritifs, un verre de bon vin fait beaucoup plus de bien.",
+        "Flatté, il allait m'adresser courtoisement la parole lorsque la vieille dame, maîtresse du logis, servit l’apéritif."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "exact_structural_sense_mapping",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_apéritif__nom__1",
+          "chinese_written_form": "餐前酒",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Boisson prise avant un repas",
+          "mapped_sense_id": "__ws_2_apéritif__nom__1"
+        },
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_apéritif__nom__1",
+          "chinese_written_form": "开胃酒",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Boisson prise avant un repas",
+          "mapped_sense_id": "__ws_2_apéritif__nom__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "4802c135eb4c04433873886728e32deab9c0231ab16a17bf58a175e29f3a7596"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "être|VER",
+      "runtime_lexeme_id": 14232,
+      "entry_id": "être__verb__1",
+      "sense_id": "__ws_1_être__verb__1",
+      "lemma": "être",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Définir un état, une caractéristique du sujet. Note : En grammaire, ce type de verbe est appelé une copule, et le mot qu’il introduit est un attribut. En linguistique, il existe différentes manières de caractériser ces constructions attributives, existentielles, locatives ou posturales qui peuvent être introduites en français par être.",
+      "sourced_examples": [
+        "Les anciens avaient justement montré le rôle de l’organisme vivant comme cause génératrice des maladies, les éléments extérieurs en étant les causes provocatrices.",
+        "De fait, René se sentait apaisé plus que ne l’eût été aucun mortel en un lieu moins épouvantable qu'un franc-bord de canal au milieu de la nuit."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_être__verb__1",
+          "chinese_written_form": "是",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Copule",
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_être__verb__1",
+          "chinese_written_form": "在",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Se trouver dans une location, une situation",
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_être__verb__1",
+          "chinese_written_form": "被",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Auxiliaire passif",
+          "mapped_sense_id": null
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "28114184682f93ba04bc255dc75ca88dd50dd5344924d6870c9cd81fe2ec6490"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "faire|VER",
+      "runtime_lexeme_id": 5081,
+      "entry_id": "faire__verb__1",
+      "sense_id": "__ws_1_faire__verb__1",
+      "lemma": "faire",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Faire (2) à manger.\n Créer, produire, fabriquer, en parlant de toute œuvre matérielle.",
+      "sourced_examples": [
+        "Cet oiseau, très facile à apprivoiser, se promène comme les poules autour des habitations; nous en avons vu une paire apprivoisée qui faisait son nid sur un arbre.",
+        "Alors les questions commençaient: « Tante, comment les petites abeilles font-elles du miel clair et comment du miel noir? n'est-ce pas, les abeilles qui font du miel doré sont jaunes, et celles qui font du miel foncé sont noires? »"
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_faire__verb__1",
+          "chinese_written_form": "做",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Créer, produire, fabriquer",
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_faire__verb__1",
+          "chinese_written_form": "制作",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Créer, produire, fabriquer",
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_faire__verb__1",
+          "chinese_written_form": "制造",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Créer, produire, fabriquer",
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_faire__verb__1",
+          "chinese_written_form": "做",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Préparer un repas, le cuisiner",
+          "mapped_sense_id": null
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "7d07e95a8ef8e627e93b35ebb9bfebb7ad945b72b150cdbdb7f78384cb04c554"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "homme|NOM",
+      "runtime_lexeme_id": 6194,
+      "entry_id": "Homme__nom__1",
+      "sense_id": "__ws_1_Homme__nom__1",
+      "lemma": "homme",
+      "pos": "NOM",
+      "cefr": "A1",
+      "definition_fr": "Humain, être humain. Note d’usage : Terme pouvant être employé avec une capitale pour parler du genre ou de l’espèce humaine dans son ensemble, au singulier.",
+      "sourced_examples": [
+        "L’évangile de la fête est celui de la visite des Rois mages qui offrirent à l’enfant Jésus leurs présents symboliques: l’or car il est Roi, l’encens car il est Dieu et la myrrhe car il est Homme.",
+        "L’origine de l’Homme."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "aff19d58eff2e6e1c55f329519e3bb4d4b3fad244393151429cd9a77506ed7ac"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "grand|ADJ",
+      "runtime_lexeme_id": 5859,
+      "entry_id": "grand__adj__1",
+      "sense_id": "__ws_1_grand__adj__1",
+      "lemma": "grand",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "definition_fr": "(Par analogie) De dimensions (hauteur/taille, longueur, profondeur, etc.) importantes, qui dépassent celles de ses semblables, ou de longue durée. Par exemple, de volume supérieur à la moyenne (ou normale) des individus de même espèce et sexe et d’âge similaire.",
+      "sourced_examples": [
+        "Le bourreau chef jeta un coup d’œil sur la besogne et parut mécontent : la découpure n’était pas assez grande.",
+        "Pendant un grand mois, ils s’enfermèrent, ils ne sortirent pas une seule fois de la Souleiade."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_grand__adj__1",
+          "chinese_written_form": "大",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "De dimensions importantes",
+          "mapped_sense_id": "__ws_1_grand__adj__1"
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_grand__adj__1",
+          "chinese_written_form": "高",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "De hauteur importante|1.a)",
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_grand__adj__1",
+          "chinese_written_form": "长大的",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Qui a grandi",
+          "mapped_sense_id": "__ws_2_grand__adj__1"
+        },
+        {
+          "candidate_class": "sense_mapped_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_grand__adj__1",
+          "chinese_written_form": "有名",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Célèbre, admirable",
+          "mapped_sense_id": "__ws_7_grand__adj__1"
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "d37fd912b99133dbfb1fccbcaf9b670439d058b1900abf0f41fda993a1fb368c"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "antiquité|NOM",
+      "runtime_lexeme_id": 635,
+      "entry_id": "Antiquité__nom__1",
+      "sense_id": "__ws_1_Antiquité__nom__1",
+      "lemma": "antiquité",
+      "pos": "NOM",
+      "cefr": "A1",
+      "definition_fr": "Période très ancienne de l’Histoire.",
+      "sourced_examples": [
+        "L'Antiquité est une époque où les connaissances se transmettaient oralement et étaient facilement mémorisées.",
+        "Même dans les âges d’ignorance, la lumière de l’Antiquité ne s’est jamais complètement éteinte au milieu de nous ; elle y brille parmi les ténèbres des temps les plus reculés."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_Antiquité__nom__1",
+          "chinese_written_form": "古代史",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Antiquité gréco-romaine",
+          "mapped_sense_id": null
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "b1093efcdd6b0efb4a66a5b9fd90b42cb1a87d9a5c1e8e8fa458621d7770905f"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "aboiement|NOM",
+      "runtime_lexeme_id": 13,
+      "entry_id": "aboiement__nom__1",
+      "sense_id": "__ws_1_aboiement__nom__1",
+      "lemma": "aboiement",
+      "pos": "NOM",
+      "cefr": "B2",
+      "definition_fr": "Son émis par le chien et par d’autres canidés.",
+      "sourced_examples": [
+        "À l’époque du frai, il pousse spontanément un petit cri peu harmonieux, qui participe de l’aboiement du roquet et du pépiement du poussin.",
+        "La porte ayant été ouverte, les chiens s'échappèrent en jetant de longs aboiements de satisfaction."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_aboiement__nom__1",
+          "chinese_written_form": "犬吠",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_aboiement__nom__1",
+          "chinese_written_form": "叫声",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_aboiement__nom__1",
+          "chinese_written_form": "吠声",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "7a2ae27e60031954187bf8660d8cccbcd7be67d893799cff84ba281873a95805"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "abroger|VER",
+      "runtime_lexeme_id": 35,
+      "entry_id": "abroger__verb__1",
+      "sense_id": "__ws_1_abroger__verb__1",
+      "lemma": "abroger",
+      "pos": "VER",
+      "cefr": "C1",
+      "definition_fr": "(Droit) Rendre nul, principalement en parlant de lois, de coutumes.",
+      "sourced_examples": [
+        "… les lois humaines sont quelquefois surprises par des motifs dont la raison éclairée ne reconnaît pas toujours la justice ; ce qui oblige ensuite la sagesse des Législateurs d’abroger des lois qu’ils ont faites eux-mêmes.",
+        "Le gouvernement a décidé d'abroger la loi sur les taxes, après plusieurs mois de protestations. Cette loi a donc été annulée ou supprimée."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_abroger__verb__1",
+          "chinese_written_form": "废止",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Rendre nul. principalement en parlant de lois, de coutumes",
+          "mapped_sense_id": null
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "39f8dc0c6f6b049c904bb850f97955c88cd5d7738bd822d94a76a5bc07f7ce4e"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "acteur|NOM",
+      "runtime_lexeme_id": 149,
+      "entry_id": "acteur__nom__1",
+      "sense_id": "__ws_1_acteur__nom__1",
+      "lemma": "acteur",
+      "pos": "NOM",
+      "cefr": "B1",
+      "definition_fr": "Personne qui représente un personnage dans une pièce de théâtre, un film…",
+      "sourced_examples": [
+        "Les acteurs sont prêts, on va commencer. - Il faut cinq acteurs pour jouer cette pièce. - On applaudit l’acteur, mais on siffla la pièce.",
+        "Dans Peter Pan, George Darling et James Crochet sont incarnés par le même acteur."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_acteur__nom__1",
+          "chinese_written_form": "演员",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "personne qui représente un personnage dans un spectacle",
+          "mapped_sense_id": null
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "102326a05952e16864be21c80596874a2af3f85f3bd5abef271af87a2dd2dbd6"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "antibiotique|ADJ",
+      "runtime_lexeme_id": 616,
+      "entry_id": "antibiotique__adj__1",
+      "sense_id": "__ws_1_antibiotique__adj__1",
+      "lemma": "antibiotique",
+      "pos": "ADJ",
+      "cefr": "C1",
+      "definition_fr": "Pourvu d’une action destructrice à l’égard des micro-organismes.",
+      "sourced_examples": [
+        "De nombreuses moisissures ont des effets antibiotiques."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_antibiotique__adj__1",
+          "chinese_written_form": "抗生素",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null
+        },
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_2_antibiotique__adj__1",
+          "chinese_written_form": "抗菌素",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "49488adcaea47a7d1d198f453f5700c51f6e18c8cf1db95b3d694c3a3e8852f5"
+    },
+    {
+      "group": "B",
+      "stable_lexeme_key": "anticiper|VER",
+      "runtime_lexeme_id": 620,
+      "entry_id": "anticiper__verb__1",
+      "sense_id": "__ws_1_anticiper__verb__1",
+      "lemma": "anticiper",
+      "pos": "VER",
+      "cefr": "B1",
+      "definition_fr": "Devancer.",
+      "sourced_examples": [
+        "Anticiper le temps, le jour.",
+        "Le terme n’était pas échu, il a anticipé le paiement, il l’a anticipé de huit jours."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "entry_level_or_multi_candidate_ambiguity",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [
+        {
+          "candidate_class": "entry_ambiguous_candidate",
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_anticiper__verb__1",
+          "chinese_written_form": "预测",
+          "target_language_code": "cmn",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": null,
+          "mapped_sense_id": null
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "3c0979bbcccad6c8cd1976206a98fa66bcef0948292c602a34e0adfe1f8b954f"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "pouvoir|VER",
+      "runtime_lexeme_id": 9976,
+      "entry_id": "pouvoir__verb__1",
+      "sense_id": "__ws_1_pouvoir__verb__1",
+      "lemma": "pouvoir",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "(Auxiliaire) Être capable de ; avoir la faculté de ; être en état de ; être en mesure de.",
+      "sourced_examples": [
+        "Un léger souffle l’avertissait de ces présences. Geisha le comparait à ces vagues vents coulis traversant certaines pièces bien closes sans qu’on puisse découvrir d’où ils viennent.",
+        "Elles deux ne pouvaient passer pour des aristocrates ; au mieux pouvait-on les prendre pour des hoberelles d’une lointaine province."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "60a088d8e78b684a3292e9f8e069c93082ededc1da6a877dfb73910a8d2d3802"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "venir|VER",
+      "runtime_lexeme_id": 13435,
+      "entry_id": "venir__verb__1",
+      "sense_id": "__ws_1_venir__verb__1",
+      "lemma": "venir",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Se rendre sur le lieu où se trouve celui qui parle ou dont on parle.",
+      "sourced_examples": [
+        "venez ici, mon enfant.",
+        "Vers la fin de l'automne, une nuit qu'il faisait sa garde habituelle entre ses deux compagnons Mahmoud et Saïd, ce dernier vint à lui et, légèrement embarrassé, lui confia qu'il aimait Fatouma et qu'il voudrait bien l'épouser."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "134ce8430b1e778bd1bd718b8c25b48a07a3a6c731c4d528716a20ae4230eeee"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "prendre|VER",
+      "runtime_lexeme_id": 9997,
+      "entry_id": "prendre__verb__1",
+      "sense_id": "__ws_1_prendre__verb__1",
+      "lemma": "prendre",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Saisir, mettre en sa main.",
+      "sourced_examples": [
+        "[…] Joseph offre un bouquet de roses à son amoureuse, qui étend la main pour le prendre.",
+        "De joyeuse humeur, le mari cause avec force gestes, prend parfois les mains de sa femme, la taille aussi […]"
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "44b6b9a3110c9350b8ee7aeac2a04d4567af64c178f202a6a9593962fb568791"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "falloir|VER",
+      "runtime_lexeme_id": 5089,
+      "entry_id": "falloir__verb__1",
+      "sense_id": "__ws_1_falloir__verb__1",
+      "lemma": "falloir",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Être de nécessité, de devoir, d’obligation, de bienséance.",
+      "sourced_examples": [
+        "Rabalan se sentit troublé. Du moment que le maire affirmait d’une façon aussi autoritaire qu’il était sorcier, il fallait le croire… Ça l’étonnait pourtant.",
+        "Les prairies, émaillées de saxifrages, sont clôturées de murs en pierres sèches qu'il nous faut franchir à tout instant."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "3bb7dde4c9b02e65579ba844f0af1d31a76871b36b013adf8f2881f80e234f07"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "mettre|VER",
+      "runtime_lexeme_id": 8039,
+      "entry_id": "mettre__verb__1",
+      "sense_id": "__ws_1_mettre__verb__1",
+      "lemma": "mettre",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Placer une personne, ou un animal, ou une chose dans un lieu déterminé.",
+      "sourced_examples": [
+        "Tous les millions que je possède je les ai mis dans un grand coffre, sous le tombeau de Charlemagne, à Aix-la-Chapelle.",
+        "Mettre un cheval dans l’écurie, à l’écurie; un oiseau dans une cage, en cage. — Mettre du foin dans le grenier, au grenier. — Mettre du bois dans la cheminée."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "e1d13c485572bf1f6b55f6e719901fc03b113d07cf7685e45ffc93d06c62cdcb"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "donner|VER",
+      "runtime_lexeme_id": 3902,
+      "entry_id": "donner__verb__1",
+      "sense_id": "__ws_1_donner__verb__1",
+      "lemma": "donner",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Faire un don ; transférer, sans rétribution, la propriété d’une chose que l’on possède ou dont on jouit, à une autre personne.",
+      "sourced_examples": [
+        "[…] puis le voyant mort, car vous le tuâtes du coup, vous prîtes la fuite sur le cheval qu’il vous avait donné.",
+        "Les synagogues furent données au clergé pour qu’il les transformât en églises."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "c348667180fb359048039ee219132a9b10cf6eaf319974203d082bf73b80372c"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "demander|VER",
+      "runtime_lexeme_id": 3587,
+      "entry_id": "demander__verb__1",
+      "sense_id": "__ws_1_demander__verb__1",
+      "lemma": "demander",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Indiquer à quelqu’un par des paroles, par un écrit ou tout autre moyen ce qu’on désire obtenir de lui.",
+      "sourced_examples": [
+        "Tu me mets l’eau à la bouche, raconte-moi tout, j’ai hâte de savoir pourquoi tu m’as demandé de te rejoindre.",
+        "Ils demandent ensuite cent francs chacun de gratification quand ils auront trouvé le pêcheur pour nous conduire à l’Oyapok."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "a7a3937a7e480e2e43e6260ea8721333d0510ec5bd26bdbad31d650a32a8b940"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "rester|VER",
+      "runtime_lexeme_id": 11085,
+      "entry_id": "rester__verb__1",
+      "sense_id": "__ws_1_rester__verb__1",
+      "lemma": "rester",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Continuer d’être à un endroit ou dans un état.",
+      "sourced_examples": [
+        "[…], où il ne restait que les gardes municipaux et des pompiers travaillant à circonscrire l’incendie qu'ils n’espéraient plus éteindre.",
+        "Plût aux dieux que Teresa fût restée muette elle aussi ! Elle ne cessait de crier […]"
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "e3afa42287b1b3587877fa99d02f26cf65a83a1b3f580516cbbc7df3157d4689"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "partir|VER",
+      "runtime_lexeme_id": 9287,
+      "entry_id": "partir__verb__1",
+      "sense_id": "__ws_1_partir__verb__1",
+      "lemma": "partir",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Tirer son origine, avoir son commencement, avoir pour point de départ.",
+      "sourced_examples": [
+        "Et pourquoi au seul endroit où ça aurait été intéressant que ça gonfle et que ça déchire les vêtements, ça ne marche pas ? Ça part de trop petit ?",
+        "Tous les nerfs partent du cerveau."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "3e4cdd0dfdf4269f86013cf697f6b3fa42827e8a9a6105a013a51f527fa2cd2a"
+    },
+    {
+      "group": "C",
+      "stable_lexeme_key": "appeler|VER",
+      "runtime_lexeme_id": 680,
+      "entry_id": "appeler__verb__1",
+      "sense_id": "__ws_1_appeler__verb__1",
+      "lemma": "appeler",
+      "pos": "VER",
+      "cefr": "A1",
+      "definition_fr": "Désigner quelqu’un par son nom ; pourvoir quelqu’un d’un nom.",
+      "sourced_examples": [
+        "[…] ; trois mois auparavant, c’est-à-dire à l’époque où sa mère vivait encore, on l’avait appelé le prince de Béarn ; on l’appelait maintenant le roi de Navarre, en attendant qu’on l’appelât Henri IV.",
+        "Le sucre de raisin que l’on appelle aussi glucose, se rencontre dans les fruits sucrés qui présentent en même temps une saveur acide, comme les raisins, les groseilles, etc."
+      ],
+      "learner_sense_selection": {
+        "selection_status": "ai_draft",
+        "selection_rationale": "no_default_chinese_candidate",
+        "uncertainty": "semantic_editorial_review_required"
+      },
+      "matching_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "input_hash": "7e9e572e4736587ee27123d05b4c80c45723a4e079e5be50fe7b40cffbd6f611"
+    }
+  ],
+  "artifact_hash": "99adb91a7dd79453ae5df47246281f2cfcd8f11456b3d566fde1bd482057f07b"
+}
