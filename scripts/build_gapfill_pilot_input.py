@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Deterministically build the 30-record Phase 2B fact input artifact."""
+"""Deterministically build the historical 30-record Phase 2B fact input.
+
+Do not use candidate availability to select senses for a future milestone.
+The future contract is: learner-priority sense selection (independent
+editorial judgment) -> candidate lookup -> structural and semantic filtering.
+``sense_mapped_candidate`` is a structural DBnary mapping, not an approved
+learner gloss.  Lexeme-level CEFR is only a discovery signal.
+"""
 import hashlib,json,sqlite3
 from collections import defaultdict
 from pathlib import Path
