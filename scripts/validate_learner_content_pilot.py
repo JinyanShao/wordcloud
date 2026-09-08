@@ -9,11 +9,12 @@ import sqlite3
 import unicodedata
 from pathlib import Path
 
-from build_learner_content_pilot import DB_PATH, OUTPUT_PATH, build
+from build_learner_content_pilot import DB_PATH, INPUT_PATH, build
 
 ROOT = Path(__file__).resolve().parents[1]
 DRAFT_PATH = ROOT / "data" / "learner-content-pilot.json"
 STATUSES = {"ai_draft", "reviewed", "blocked"}
+SELECTION_STATUSES = {"ai_draft", "reviewed", "blocked"}
 EXAMPLE_TYPES = {"sourced", "ai_generated"}
 
 
@@ -64,6 +65,11 @@ def validate(draft: dict, facts: dict) -> tuple[list[str], int]:
                 errors.append(f"orphan learner identity {key}"); continue
             if identity.get("runtime_lexeme_id") != fact["identity"]["runtime_lexeme_id"]:
                 errors.append(f"runtime id mismatch {key}")
+            selection = fact.get("selection", {})
+            if selection.get("selection_status") not in SELECTION_STATUSES:
+                errors.append(f"invalid learner-sense selection status {key}")
+            if selection.get("primary_learner_sense") != {"entry_id": key[1], "sense_id": key[2]}:
+                errors.append(f"draft is not bound to selected primary sense {key}")
             status = item.get("content_status")
             if status not in STATUSES: errors.append(f"invalid status {key}")
             rels = set(item.get("relation_stable_keys", []))
@@ -96,7 +102,7 @@ def validate(draft: dict, facts: dict) -> tuple[list[str], int]:
 
 
 if __name__ == "__main__":
-    facts = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    facts = json.loads(INPUT_PATH.read_text(encoding="utf-8"))
     draft = json.loads(DRAFT_PATH.read_text(encoding="utf-8"))
     errors, unknown = validate(draft, facts)
     if errors: raise SystemExit("\n".join(errors))

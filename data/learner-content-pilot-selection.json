@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "scope": "Editorial learner-sense selections for the fixed 20-lexeme pilot. They are AI drafts, not sourced frequency facts.",
+  "items": [
+    {"stable_lexeme_key":"être|VER","primary_learner_sense":{"entry_id":"être__verb__1","sense_id":"__ws_1_être__verb__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"常用系动词义；现有数据不证明它是频率最高义。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"avoir|VER","primary_learner_sense":{"entry_id":"avoir__verb__1","sense_id":"__ws_1_avoir__verb__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"基础的拥有义。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"pouvoir|VER","primary_learner_sense":{"entry_id":"pouvoir__verb__1","sense_id":"__ws_1_pouvoir__verb__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"基础能力/可能义。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"aujourd'hui|ADV","primary_learner_sense":{"entry_id":"aujourd’hui__adv__1","sense_id":"__ws_1_aujourd’hui__adv__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"日期当日义最适合初学者。","uncertainty":null},
+    {"stable_lexeme_key":"chose|NOM","primary_learner_sense":{"entry_id":"chose__nom__1","sense_id":"__ws_1_chose__nom__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"泛指未具体命名的事物。","uncertainty":"broad_polysemy"},
+    {"stable_lexeme_key":"aller|VER","primary_learner_sense":{"entry_id":"aller__verb__1","sense_id":"__ws_1_aller__verb__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"基础移动义。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"grand|ADJ","primary_learner_sense":{"entry_id":"grand__adj__1","sense_id":"__ws_1_grand__adj__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"尺寸大义。","uncertainty":null},
+    {"stable_lexeme_key":"grandeur|NOM","primary_learner_sense":{"entry_id":"grandeur__nom__1","sense_id":"__ws_1_grandeur__nom__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"尺寸、大小义。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"petit|ADJ","primary_learner_sense":{"entry_id":"petit__adj__1","sense_id":"__ws_1_petit__adj__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"尺寸小义。","uncertainty":null},
+    {"stable_lexeme_key":"petitesse|NOM","primary_learner_sense":{"entry_id":"petitesse__nom__1","sense_id":"__ws_1_petitesse__nom__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"明确的尺寸小义，适合作为低频但可解释的对照。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"bon|ADJ","primary_learner_sense":{"entry_id":"bon__adj__1","sense_id":"__ws_1_bon__adj__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"一般评价义。","uncertainty":"broad_polysemy"},
+    {"stable_lexeme_key":"bonté|NOM","primary_learner_sense":{"entry_id":"bonté__nom__1","sense_id":"__ws_3_bonté__nom__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"现代常用的道德善良义；替换 V2 的物品品质义。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"aimer|VER","primary_learner_sense":{"entry_id":"aimer__verb__1","sense_id":"__ws_1_aimer__verb__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"爱、喜欢义。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"aimable|ADJ","primary_learner_sense":{"entry_id":"aimable__adj__1","sense_id":"__ws_3_aimable__adj__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"待人友善义。","uncertainty":"semantic_relation_not_transparent"},
+    {"stable_lexeme_key":"faire|VER","primary_learner_sense":{"entry_id":"faire__verb__1","sense_id":"__ws_1_faire__verb__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"做、制作义。","uncertainty":"broad_polysemy"},
+    {"stable_lexeme_key":"façon|NOM","primary_learner_sense":{"entry_id":"façon__nom__1","sense_id":"__ws_2_façon__nom__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"常用的方式、做法义；替换 V2 的特定义法。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"voir|VER","primary_learner_sense":{"entry_id":"voir__verb__1","sense_id":"__ws_1_voir__verb__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"视觉感知义。","uncertainty":"broad_polysemy"},
+    {"stable_lexeme_key":"vision|NOM","primary_learner_sense":{"entry_id":"vision__nom__1","sense_id":"__ws_1_vision__nom__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"视觉能力义。","uncertainty":"frequency_not_sourced"},
+    {"stable_lexeme_key":"homme|NOM","primary_learner_sense":{"entry_id":"Homme__nom__1","sense_id":"__ws_1_Homme__nom__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"大写时表示人类整体；保留大小写提示。","uncertainty":"register_and_capitalization"},
+    {"stable_lexeme_key":"humain|ADJ","primary_learner_sense":{"entry_id":"humain__adj__1","sense_id":"__ws_1_humain__adj__1"},"secondary_learner_senses":[],"selection_status":"ai_draft","selection_reason":"与人类有关义。","uncertainty":"frequency_not_sourced"}
+  ]
+}
