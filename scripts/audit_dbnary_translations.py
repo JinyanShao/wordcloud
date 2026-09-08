@@ -33,7 +33,7 @@ def run():
     a1a2={r[0] for r in conn.execute("SELECT id FROM lexemes WHERE status='eligible' AND cefr_level IN ('A1','A2')")}
     pilot=json.loads(PILOT.read_text())["items"]
     pilot_by_key={(x["lemma"].lower(),x["pos"]):x for x in pilot}
-    total=0; code_counts=Counter(); chinese=[]; glosses={}; target_stats=Counter()
+    total=0; code_counts=Counter(); chinese=[]; raw_sources=set(); glosses={}; target_stats=Counter()
     for block in stream_blocks(RAW):
         if "dbnary:Translation" not in block: 
             if "dbnary:Gloss" in block:
@@ -51,6 +51,7 @@ def run():
         source=local_name(values(block,"dbnary:isTranslationOf")[0]) if values(block,"dbnary:isTranslationOf") else None
         gloss=local_name(values(block,"dbnary:gloss")[0]) if values(block,"dbnary:gloss") else None
         if code in {"zho","chi","cmn","yue"} or (form and form[1] and form[1].lower().startswith("zh")):
+            if source: raw_sources.add(source)
             chinese.append({"source":source,"gloss":gloss,"form":form[0] if form else None,"form_lang":form[1] if form else None,"code":code})
     by_entry=defaultdict(list)
     chinese_lexemes=set(); searchable_lexemes=set(); a1a2_lexemes=set(); direct_sense=0; entry_only=0; gloss_count=0; gloss_mappable=0
@@ -86,7 +87,7 @@ def run():
                                        "sample_forms":[x["form"] for x in hits[:5]]}
     result={"snapshot":"fr_dbnary_ontolex_2026-09-01","raw_sha256":actual_hash,"translation_records_total":total,"target_language_codes":code_counts,
             "chinese_target_codes":sorted({x["code"] for x in chinese}),"chinese_translation_records":len(chinese),
-            "chinese_distinct_french_entries":len(by_entry),"chinese_distinct_french_lexemes":len(chinese_lexemes),
+            "chinese_distinct_raw_translation_targets":len(raw_sources),"chinese_distinct_french_entries":len(by_entry),"chinese_distinct_french_lexemes":len(chinese_lexemes),
             "searchable_lexemes":len(searchable),"searchable_with_chinese":len(searchable_lexemes),
             "a1a2_eligible_lexemes":len(a1a2),"a1a2_with_chinese":len(a1a2_lexemes),
             "chinese_with_gloss":gloss_count,"gloss_sense_number_mappable":gloss_mappable,
