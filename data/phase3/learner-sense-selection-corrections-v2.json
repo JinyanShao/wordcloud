@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "scope": "Sparse Phase 3 learner-primary sense correction overlay discovered during full content authoring. Apply after learner-sense-500-selection-reviewed.json; latest correction wins. This preserves the v1 review audit trail instead of rewriting it.",
+  "review_provenance": {
+    "review_surface": "ChatGPT external semantic review",
+    "actual_model": "GPT-5.6 Sol",
+    "review_version": "phase3-500-sense-review-v2-surgical-corrections",
+    "review_status": "external_semantic_reviewed",
+    "policy": "Correct only concrete residual learner-priority failures observed while authoring the full batch. Prefer ordinary modern learner usage over marked, culinary, metonymic, didactic, archaic, occult, or dictionary-first senses."
+  },
+  "source_review_jsonl": "data/phase3/sense-review/all-500-review.jsonl",
+  "corrections": [
+    {"key":"combien|ADV","old_sense_id":"__ws_3_combien__adv__1","new_sense_id":"__ws_1_combien__adv__1","source_review_line":74,"reason":"A1 learner priority is ordinary interrogative/degree 'combien' rather than the marked considerable-quantity use."},
+    {"key":"langue|NOM","old_sense_id":"__ws_2_langue__nom__1","new_sense_id":"__ws_4_langue__nom__1","source_review_line":109,"reason":"A1 learner priority is language as a communication system; the selected culinary animal-tongue sense is clearly secondary."},
+    {"key":"fait|NOM","old_sense_id":"__ws_1_fait__nom__1","new_sense_id":"__ws_3_fait__nom__1","source_review_line":118,"reason":"For learner-facing 'fait', objective/observable fact is more central than an act or deed."},
+    {"key":"histoire|NOM","old_sense_id":"__ws_1_histoire__nom__1","new_sense_id":"__ws_8_histoire__nom__1","source_review_line":372,"reason":"A1 everyday learner priority is a story/tale; the source-first historical-narrative sense is less immediately useful."},
+    {"key":"classique|ADJ","old_sense_id":"__ws_1_classique__adj__1","new_sense_id":"__ws_3_classique__adj__1","source_review_line":180,"reason":"A2 learner priority is conventional/traditional and not extravagant, rather than the specialized author-of-established-authority sense."},
+    {"key":"appeler|VER","old_sense_id":"__ws_1_appeler__verb__1","new_sense_id":"__ws_22_appeler__verb__1","source_review_line":403,"reason":"A1 core learner use is pronominal s'appeler 'to be called / be named'."},
+    {"key":"impression|NOM","old_sense_id":"__ws_1_impression__nom__1","new_sense_id":"__ws_7_impression__nom__1","source_review_line":214,"reason":"A2 learner priority is mental impression/feeling, especially avoir l'impression, not the physical printing/imprint action."},
+    {"key":"sang|NOM","old_sense_id":"__ws_2_sang__nom__1","new_sense_id":"__ws_1_sang__nom__1","source_review_line":216,"reason":"A2 learner priority is anatomical blood; the selected figurative battlefield-blood sense is secondary."},
+    {"key":"peau|NOM","old_sense_id":"__ws_2_peau__nom__1","new_sense_id":"__ws_1_peau__nom__1","source_review_line":219,"reason":"A2 learner priority is anatomical skin; the selected metonymic 'person themself' use is secondary."},
+    {"key":"émission|NOM","old_sense_id":"__ws_1_émission__nom__1","new_sense_id":"__ws_2_émission__nom__1","source_review_line":220,"reason":"A2 learner priority is a radio/television programme; the didactic act-of-emitting sense is less useful."},
+    {"key":"évoquer|VER","old_sense_id":"__ws_1_évoquer__verb__1","new_sense_id":"__ws_4_évoquer__verb__1","source_review_line":272,"reason":"Modern learner priority is to evoke/bring something back to mind, not to summon spirits."},
+    {"key":"animer|VER","old_sense_id":"__ws_1_animer__verb__1","new_sense_id":"__ws_2_animer__verb__1","source_review_line":291,"reason":"Learner priority is to enliven/give movement and liveliness, rather than literally endow an organized body with life."},
+    {"key":"illustrer|VER","old_sense_id":"__ws_1_illustrer__verb__1","new_sense_id":"__ws_3_illustrer__verb__1","source_review_line":293,"reason":"Learner priority is to illustrate an idea with an example, rather than make someone illustrious."},
+    {"key":"engager|VER","old_sense_id":"__ws_1_engager__verb__1","new_sense_id":"__ws_6_engager__verb__1","source_review_line":255,"reason":"A2 learner priority among available sourced senses is to hire/employ by contract, not to pawn an object."}
+  ],
+  "summary": {"correction_count":14,"sense_reselection_count":14,"blocked_change_count":0}
+}
