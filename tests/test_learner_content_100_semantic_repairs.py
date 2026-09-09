@@ -1,0 +1,16 @@
+import sys,unittest
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
+from build_learner_content_100_draft import TEXT
+
+class SemanticRepairTests(unittest.TestCase):
+ def test_external_review_repairs_are_exact(self):
+  expected={
+   'bon|ADJ':('好的；质量好的','C’est un bon choix.','这是一个好的选择。'),'seul|ADJ':('独自的；单独的','Il vit seul.','他独自生活。'),'français|ADJ':('法国的；法国人的','C’est une entreprise française.','这是一家法国企业。'),'dernier|ADJ':('最后的','C’est le dernier train.','这是最后一班火车。'),'jour|NOM':('天；一天','Je reste ici un jour.','我在这里待一天。'),'vie|NOM':('一生；生命历程','Elle a vécu ici toute sa vie.','她一生都住在这里。'),'personne|NOM':('人；个人','C’est une personne très calme.','这是一个很沉静的人。'),'pays|NOM':('国家','La France est un grand pays.','法国是一个大国。'),'pouvoir|VER':('能；能够','Elle peut porter cette boîte.','她能搬这个箱子。'),'vouloir|VER':('想；打算','Je veux apprendre le français.','我想学法语。'),'savoir|VER':('知道；知晓','Je sais la réponse.','我知道答案。'),'prendre|VER':('拿；抓取','Prends ce livre.','拿这本书。'),'passer|VER':('经过；穿过','Le bus passe devant l’école.','公交车经过学校门前。'),'trouver|VER':('找到；发现','J’ai trouvé mes clés.','我找到了钥匙。'),'parler|VER':('说话；讲话','L’enfant commence à parler.','孩子开始说话。'),'mettre|VER':('放；放置','Je mets le livre sur la table.','我把书放在桌上。'),'présent|ADJ':('在场的','Tous les élèves sont présents.','所有学生都到了。'),'naturel|ADJ':('自然的；与自然有关的','Les ressources naturelles sont importantes.','自然资源很重要。'),'inquiet|ADJ':('不安的；焦虑的','Il est inquiet depuis ce matin.','他从今天早上起一直很不安。'),'simplement|ADV':('简单地；简明地','Explique simplement la règle.','简单解释一下这个规则。'),'particulièrement|ADV':('格外地；显著地','Il est particulièrement calme aujourd’hui.','他今天格外平静。'),'ailleurs|ADV':('在别处；到别处','Il travaille ailleurs aujourd’hui.','他今天在别处工作。'),'loi|NOM':('法律；法律规定','La loi protège les citoyens.','法律保护公民。'),'agir|VER':('行动；采取行动','Il faut agir vite.','必须迅速行动。'),'pousser|VER':('推；推动','Pousse la porte.','推这扇门。'),'lancer|VER':('扔；投掷','Il lance le ballon.','他投出球。'),'mener|VER':('带；带领','Elle mène les enfants à l’école.','她带孩子们去学校。'),'suffire|VER':('足够；够用','Cette somme suffit pour payer le repas.','这笔钱够付这顿饭的钱。'),'pauvre|ADJ':('贫穷的；贫困的','Cette famille est pauvre.','这个家庭很贫穷。'),'professionnel|ADJ':('职业的；与职业有关的','La formation professionnelle commence lundi.','职业培训周一开始。'),'public|ADJ':('公共的；公有的','C’est un service public.','这是一项公共服务。'),'chef|NOM':('负责人；领导','Le chef parle à son équipe.','负责人和他的团队说话。'),'remettre|VER':('放回；重新放到原处','Je remets le livre sur l’étagère.','我把书放回书架上。'),'élever|VER':('抬高；举起','Elle élève la main.','她举起手。'),'moindre|ADJ':('较小的；更小的','Le risque est moindre aujourd’hui.','今天风险更小。'),'au-delà|ADV':('在更远处；在……另一边','Le village est au-delà de la rivière.','村庄在河的另一边。'),'déclarer|VER':('声明；表明','Elle déclare son intention de partir.','她表明自己打算离开。')}
+  self.assertEqual(len(expected),37)
+  for key,value in expected.items(): self.assertEqual(TEXT[key],value,key)
+ def test_forbidden_primary_sense_drift_examples_are_absent(self):
+  values=' '.join(' '.join(v) for v in TEXT.values())
+  for text in ('Il n’y a personne ici.','Tu peux entrer.','sait nager','prends le train','mon manteau','document au professeur','élève ses enfants'):
+   self.assertNotIn(text,values)
+if __name__=='__main__': unittest.main()
