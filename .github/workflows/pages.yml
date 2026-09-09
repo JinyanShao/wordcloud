@@ -22,6 +22,7 @@ jobs:
       - name: Validate reviewed learner runtime
         run: |
           python3 scripts/validate_learner_sense_reviewed_source.py
+          python3 scripts/validate_phase3_final_content.py
           python3 scripts/validate_learner_sense_runtime.py
 
       - name: Validate static runtime
