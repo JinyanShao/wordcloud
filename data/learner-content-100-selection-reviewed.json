@@ -1,0 +1,1146 @@
+{
+  "schema_version": 1,
+  "scope": "Authoritative external semantic selection for the frozen Phase 2C 100-lexeme set. Selection review is distinct from learner-text review.",
+  "base_input_artifact_hash": "33f750df52f16e117d6dadec17741db6c761e9cbb9d6bcad0c99dc6adf02b30c",
+  "items": [
+    {
+      "stable_lexeme_key": "grand|ADJ",
+      "runtime_lexeme_id": 5859,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "grand__adj__1",
+        "sense_id": "__ws_1_grand__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "petit|ADJ",
+      "runtime_lexeme_id": 9495,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "petit__adj__1",
+        "sense_id": "__ws_1_petit__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "bon|ADJ",
+      "runtime_lexeme_id": 1515,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "bon__adj__1",
+        "sense_id": "__ws_1_bon__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "nouveau|ADJ",
+      "runtime_lexeme_id": 8740,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "nouveau__adj__1",
+        "sense_id": "__ws_1_nouveau__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "jeune|ADJ",
+      "runtime_lexeme_id": 7168,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "jeune__adj__1",
+        "sense_id": "__ws_1_jeune__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "seul|ADJ",
+      "runtime_lexeme_id": 11900,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "seul__adj__1",
+        "sense_id": "__ws_1_seul__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "français|ADJ",
+      "runtime_lexeme_id": 5501,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "français__adj__1",
+        "sense_id": "__ws_1_français__adj__1"
+      },
+      "secondary_learner_senses": [
+        {
+          "entry_id": "français__adj__1",
+          "sense_id": "__ws_2_français__adj__1"
+        }
+      ]
+    },
+    {
+      "stable_lexeme_key": "beau|ADJ",
+      "runtime_lexeme_id": 1335,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "beau__adj__1",
+        "sense_id": "__ws_1_beau__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "dernier|ADJ",
+      "runtime_lexeme_id": 3623,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "dernier__adj__1",
+        "sense_id": "__ws_1_dernier__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "sûr|ADJ",
+      "runtime_lexeme_id": 12623,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "sûr__adj__1",
+        "sense_id": "__ws_1_sûr__adj__1"
+      },
+      "secondary_learner_senses": [
+        {
+          "entry_id": "sûr__adj__1",
+          "sense_id": "__ws_4_sûr__adj__1"
+        }
+      ]
+    },
+    {
+      "stable_lexeme_key": "vieux|ADJ",
+      "runtime_lexeme_id": 13541,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "vieux__adj__1",
+        "sense_id": "__ws_1_vieux__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "vrai|ADJ",
+      "runtime_lexeme_id": 13702,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "vrai__adj__1",
+        "sense_id": "__ws_1_vrai__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "aujourd'hui|ADV",
+      "runtime_lexeme_id": 1034,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "aujourd’hui__adv__1",
+        "sense_id": "__ws_1_aujourd’hui__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "près|ADV",
+      "runtime_lexeme_id": 10252,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "près__adv__1",
+        "sense_id": "__ws_1_près__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "peut-être|ADV",
+      "runtime_lexeme_id": 9514,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "peut-être__adv__1",
+        "sense_id": "__ws_1_peut-être__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "mieux|ADV",
+      "runtime_lexeme_id": 8077,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "mieux__adv__1",
+        "sense_id": "__ws_1_mieux__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "surtout|ADV",
+      "runtime_lexeme_id": 12492,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "surtout__adv__1",
+        "sense_id": "__ws_1_surtout__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "loin|ADV",
+      "runtime_lexeme_id": 7520,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "loin__adv__1",
+        "sense_id": "__ws_1_loin__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "d'abord|ADV",
+      "runtime_lexeme_id": 3536,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "d’abord__adv__1",
+        "sense_id": "__ws_2_d’abord__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "an|NOM",
+      "runtime_lexeme_id": 524,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "an__nom__1",
+        "sense_id": "__ws_1_an__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "homme|NOM",
+      "runtime_lexeme_id": 6194,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "homme__nom__1",
+        "sense_id": "__ws_1_homme__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "jour|NOM",
+      "runtime_lexeme_id": 7199,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "jour__nom__1",
+        "sense_id": "__ws_1_jour__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "femme|NOM",
+      "runtime_lexeme_id": 5171,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "femme__nom__1",
+        "sense_id": "__ws_1_femme__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "heure|NOM",
+      "runtime_lexeme_id": 6145,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "heure__nom__1",
+        "sense_id": "__ws_1_heure__nom__1"
+      },
+      "secondary_learner_senses": [
+        {
+          "entry_id": "heure__nom__1",
+          "sense_id": "__ws_6_heure__nom__1"
+        }
+      ]
+    },
+    {
+      "stable_lexeme_key": "temps|NOM",
+      "runtime_lexeme_id": 12739,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "temps__nom__1",
+        "sense_id": "__ws_1_temps__nom__1"
+      },
+      "secondary_learner_senses": [
+        {
+          "entry_id": "temps__nom__1",
+          "sense_id": "__ws_16_temps__nom__1"
+        }
+      ]
+    },
+    {
+      "stable_lexeme_key": "monde|NOM",
+      "runtime_lexeme_id": 8230,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "monde__nom__1",
+        "sense_id": "__ws_5_monde__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "vie|NOM",
+      "runtime_lexeme_id": 13527,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "vie__nom__1",
+        "sense_id": "__ws_3_vie__nom__1"
+      },
+      "secondary_learner_senses": [
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_7_vie__nom__1"
+        }
+      ]
+    },
+    {
+      "stable_lexeme_key": "enfant|NOM",
+      "runtime_lexeme_id": 4649,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "enfant__nom__1",
+        "sense_id": "__ws_1_enfant__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "chose|NOM",
+      "runtime_lexeme_id": 2339,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "chose__nom__1",
+        "sense_id": "__ws_1_chose__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "personne|NOM",
+      "runtime_lexeme_id": 9466,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "personne__nom__1",
+        "sense_id": "__ws_1_personne__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "année|NOM",
+      "runtime_lexeme_id": 593,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "année__nom__1",
+        "sense_id": "__ws_1_année__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "maison|NOM",
+      "runtime_lexeme_id": 7716,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "maison__nom__1",
+        "sense_id": "__ws_1_maison__nom__1"
+      },
+      "secondary_learner_senses": [
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_2_maison__nom__1"
+        }
+      ]
+    },
+    {
+      "stable_lexeme_key": "pays|NOM",
+      "runtime_lexeme_id": 9373,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "pays__nom__1",
+        "sense_id": "__ws_1_pays__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "être|VER",
+      "runtime_lexeme_id": 14232,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "être__verb__1",
+        "sense_id": "__ws_1_être__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "avoir|VER",
+      "runtime_lexeme_id": 1157,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "avoir__verb__1",
+        "sense_id": "__ws_1_avoir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "faire|VER",
+      "runtime_lexeme_id": 5081,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "faire__verb__1",
+        "sense_id": "__ws_4_faire__verb__1"
+      },
+      "secondary_learner_senses": [
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_1_faire__verb__1"
+        }
+      ]
+    },
+    {
+      "stable_lexeme_key": "aller|VER",
+      "runtime_lexeme_id": 406,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "aller__verb__1",
+        "sense_id": "__ws_1_aller__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "dire|VER",
+      "runtime_lexeme_id": 3749,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "dire__verb__1",
+        "sense_id": "__ws_1_dire__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "pouvoir|VER",
+      "runtime_lexeme_id": 9976,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "pouvoir__verb__1",
+        "sense_id": "__ws_1_pouvoir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "voir|VER",
+      "runtime_lexeme_id": 13641,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "voir__verb__1",
+        "sense_id": "__ws_1_voir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "vouloir|VER",
+      "runtime_lexeme_id": 13685,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "vouloir__verb__1",
+        "sense_id": "__ws_1_vouloir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "savoir|VER",
+      "runtime_lexeme_id": 11753,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "savoir__verb__1",
+        "sense_id": "__ws_1_savoir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "venir|VER",
+      "runtime_lexeme_id": 13435,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "venir__verb__1",
+        "sense_id": "__ws_1_venir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "prendre|VER",
+      "runtime_lexeme_id": 9997,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "prendre__verb__1",
+        "sense_id": "__ws_1_prendre__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "devoir|VER",
+      "runtime_lexeme_id": 3672,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "devoir__verb__1",
+        "sense_id": "__ws_2_devoir__verb__1"
+      },
+      "secondary_learner_senses": [
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_1_devoir__verb__1"
+        }
+      ]
+    },
+    {
+      "stable_lexeme_key": "passer|VER",
+      "runtime_lexeme_id": 9311,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "passer__verb__1",
+        "sense_id": "__ws_1_passer__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "trouver|VER",
+      "runtime_lexeme_id": 13173,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "trouver__verb__1",
+        "sense_id": "__ws_1_trouver__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "parler|VER",
+      "runtime_lexeme_id": 9249,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "parler__verb__1",
+        "sense_id": "__ws_1_parler__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "falloir|VER",
+      "runtime_lexeme_id": 5089,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "falloir__verb__1",
+        "sense_id": "__ws_1_falloir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "mettre|VER",
+      "runtime_lexeme_id": 8039,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "mettre__verb__1",
+        "sense_id": "__ws_1_mettre__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "social|ADJ",
+      "runtime_lexeme_id": 12012,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "social__adj__1",
+        "sense_id": "__ws_1_social__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "haut|ADJ",
+      "runtime_lexeme_id": 6120,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "haut__adj__1",
+        "sense_id": "__ws_1_haut__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "présent|ADJ",
+      "runtime_lexeme_id": 10329,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "présent__adj__1",
+        "sense_id": "__ws_1_présent__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "naturel|ADJ",
+      "runtime_lexeme_id": 8598,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "naturel__adj__1",
+        "sense_id": "__ws_1_naturel__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "économique|ADJ",
+      "runtime_lexeme_id": 13848,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "économique__adj__1",
+        "sense_id": "__ws_3_économique__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "entier|ADJ",
+      "runtime_lexeme_id": 4731,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "entier__adj__1",
+        "sense_id": "__ws_1_entier__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "parisien|ADJ",
+      "runtime_lexeme_id": 9239,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "parisien__adj__1",
+        "sense_id": "__ws_1_parisien__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "inquiet|ADJ",
+      "runtime_lexeme_id": 6826,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "inquiet__adj__1",
+        "sense_id": "__ws_2_inquiet__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "cependant|ADV",
+      "runtime_lexeme_id": 2138,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "cependant__adv__1",
+        "sense_id": "__ws_2_cependant__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "simplement|ADV",
+      "runtime_lexeme_id": 11966,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "simplement__adv__1",
+        "sense_id": "__ws_1_simplement__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "particulièrement|ADV",
+      "runtime_lexeme_id": 9283,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "particulièrement__adv__1",
+        "sense_id": "__ws_1_particulièrement__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "ailleurs|ADV",
+      "runtime_lexeme_id": 346,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "ailleurs__adv__1",
+        "sense_id": "__ws_1_ailleurs__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "point|NOM",
+      "runtime_lexeme_id": 9772,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "point__nom__1",
+        "sense_id": "__ws_7_point__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "corps|NOM",
+      "runtime_lexeme_id": 3175,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "corps__nom__1",
+        "sense_id": "__ws_2_corps__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "doute|NOM",
+      "runtime_lexeme_id": 3934,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "doute__nom__1",
+        "sense_id": "__ws_1_doute__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "loi|NOM",
+      "runtime_lexeme_id": 7519,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "loi__nom__1",
+        "sense_id": "__ws_1_loi__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "fond|NOM",
+      "runtime_lexeme_id": 5373,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "fond__nom__1",
+        "sense_id": "__ws_1_fond__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "emploi|NOM",
+      "runtime_lexeme_id": 4573,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "emploi__nom__1",
+        "sense_id": "__ws_6_emploi__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "développement|NOM",
+      "runtime_lexeme_id": 4465,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "développement__nom__1",
+        "sense_id": "__ws_1_développement__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "instant|NOM",
+      "runtime_lexeme_id": 6864,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "instant__nom__1",
+        "sense_id": "__ws_1_instant__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "tuer|VER",
+      "runtime_lexeme_id": 13197,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "tuer__verb__1",
+        "sense_id": "__ws_1_tuer__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "agir|VER",
+      "runtime_lexeme_id": 292,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "agir__verb__1",
+        "sense_id": "__ws_1_agir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "pousser|VER",
+      "runtime_lexeme_id": 9968,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "pousser__verb__1",
+        "sense_id": "__ws_1_pousser__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "lancer|VER",
+      "runtime_lexeme_id": 7326,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "lancer__verb__1",
+        "sense_id": "__ws_1_lancer__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "mener|VER",
+      "runtime_lexeme_id": 7992,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "mener__verb__1",
+        "sense_id": "__ws_1_mener__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "déclarer|VER",
+      "runtime_lexeme_id": 4080,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "déclarer__verb__1",
+        "sense_id": "__ws_1_déclarer__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "développer|VER",
+      "runtime_lexeme_id": 4466,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "développer__verb__1",
+        "sense_id": "__ws_3_développer__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "suffire|VER",
+      "runtime_lexeme_id": 12390,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "suffire__verb__1",
+        "sense_id": "__ws_1_suffire__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "obliger|VER",
+      "runtime_lexeme_id": 8824,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "obliger__verb__1",
+        "sense_id": "__ws_1_obliger__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "étonner|VER",
+      "runtime_lexeme_id": 14160,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "étonner__verb__1",
+        "sense_id": "__ws_2_étonner__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "pauvre|ADJ",
+      "runtime_lexeme_id": 9363,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "pauvre__adj__1",
+        "sense_id": "__ws_1_pauvre__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "professionnel|ADJ",
+      "runtime_lexeme_id": 10105,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "professionnel__adj__1",
+        "sense_id": "__ws_1_professionnel__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "actuel|ADJ",
+      "runtime_lexeme_id": 161,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "actuel__adj__1",
+        "sense_id": "__ws_1_actuel__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "public|ADJ",
+      "runtime_lexeme_id": 10398,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "public__adj__1",
+        "sense_id": "__ws_1_public__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "lors|ADV",
+      "runtime_lexeme_id": 7546,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "lors__adv__1",
+        "sense_id": "__ws_1_lors__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "que|ADV",
+      "runtime_lexeme_id": 10552,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "que__adv__1",
+        "sense_id": "__ws_1_que__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "rapport|NOM",
+      "runtime_lexeme_id": 10707,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "rapport__nom__1",
+        "sense_id": "__ws_3_rapport__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "regard|NOM",
+      "runtime_lexeme_id": 10871,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "regard__nom__1",
+        "sense_id": "__ws_1_regard__nom__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "chef|NOM",
+      "runtime_lexeme_id": 2270,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "chef__nom__2",
+        "sense_id": "__ws_1_chef__nom__2"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "travers|NOM",
+      "runtime_lexeme_id": 13072,
+      "selection_status": "blocked",
+      "selection_reason": "Standalone noun senses do not provide a clean learner-primary sense; the learner-relevant use is mainly multiword à travers.",
+      "primary_learner_sense": null,
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "obtenir|VER",
+      "runtime_lexeme_id": 8846,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "obtenir__verb__1",
+        "sense_id": "__ws_1_obtenir__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "remettre|VER",
+      "runtime_lexeme_id": 10936,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "remettre__verb__1",
+        "sense_id": "__ws_1_remettre__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "paraître|VER",
+      "runtime_lexeme_id": 9199,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "paraître__verb__1",
+        "sense_id": "__ws_4_paraître__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "élever|VER",
+      "runtime_lexeme_id": 13951,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "élever__verb__1",
+        "sense_id": "__ws_1_élever__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "assurer|VER",
+      "runtime_lexeme_id": 913,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "assurer__verb__1",
+        "sense_id": "__ws_3_assurer__verb__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "moindre|ADJ",
+      "runtime_lexeme_id": 8206,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "moindre__adj__1",
+        "sense_id": "__ws_1_moindre__adj__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "au-delà|ADV",
+      "runtime_lexeme_id": 1005,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "au-delà__adv__1",
+        "sense_id": "__ws_1_au-delà__adv__1"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "terme|NOM",
+      "runtime_lexeme_id": 12768,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "terme__nom__2",
+        "sense_id": "__ws_1_terme__nom__2"
+      },
+      "secondary_learner_senses": []
+    },
+    {
+      "stable_lexeme_key": "antenne|NOM",
+      "runtime_lexeme_id": 609,
+      "selection_status": "reviewed",
+      "selection_reason": "external_semantic_override",
+      "primary_learner_sense": {
+        "entry_id": "antenne__nom__1",
+        "sense_id": "__ws_6_antenne__nom__1"
+      },
+      "secondary_learner_senses": [],
+      "semantic_translation_binding_note": "External semantic review aligns the sourced DBnary 天线 record to this selected SQLite sense; its structural mapped_sense_id is stale and is not rewritten."
+    },
+    {
+      "stable_lexeme_key": "constituer|VER",
+      "runtime_lexeme_id": 2989,
+      "selection_status": "reviewed",
+      "selection_reason": "external_review_accepted_phase2c_proposal",
+      "primary_learner_sense": {
+        "entry_id": "constituer__verb__1",
+        "sense_id": "__ws_1_constituer__verb__1"
+      },
+      "secondary_learner_senses": []
+    }
+  ],
+  "artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8"
+}
