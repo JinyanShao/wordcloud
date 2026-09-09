@@ -1,0 +1,4158 @@
+{
+  "schema_version": 1,
+  "part": 2,
+  "parent_artifact_hash": "33f750df52f16e117d6dadec17741db6c761e9cbb9d6bcad0c99dc6adf02b30c",
+  "items": [
+    {
+      "stable_lexeme_key": "monde|NOM",
+      "lemma": "monde",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1132.9303,
+        "lexique_frequency": 873.522,
+        "contextual_diversity": 89.70147
+      },
+      "proposed_primary": {
+        "entry_id": "monde__nom__1",
+        "sense_id": "__ws_1_monde__nom__1",
+        "definition_fr": "Ensemble des choses et des êtres existants.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_1_monde__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Ensemble des choses et des êtres existants."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_2_monde__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Vieilli) Ensemble des corps célestes dont le Soleil est le centre."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_3_monde__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(En particulier) Sous-ensemble de choses ou d’êtres vus collectivement sous l'angle d'un point commun."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_4_monde__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Planète."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_5_monde__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(En particulier) Terre sur laquelle on vit."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_6_monde__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Par extension) Séjour des hommes sur le plan physique, ensemble des choses et des êtres parmi lesquels se passe notre vie."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_7_monde__nom__1",
+          "sense_number": "7",
+          "definition_fr": "Lieu vaste et très peuplé."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_8_monde__nom__1",
+          "sense_number": "8",
+          "definition_fr": "Le genre humain ; la plupart des hommes."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_9_monde__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(Avec un déterminant (adjectif ou complément de nom)) Univers caractérisé par des agents qui professent une doctrine, partagent des valeurs ou des caractéristiques communes ou s’inscrivent dans une pratique."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_10_monde__nom__1",
+          "sense_number": "10",
+          "definition_fr": "Un certain nombre de personnes."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_10.a_monde__nom__1",
+          "sense_number": "10.a",
+          "definition_fr": "Une grande quantité de personnes."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_10.b_monde__nom__1",
+          "sense_number": "10.b",
+          "definition_fr": "(Parfois employé au sens indéfini pour gens, personnes)"
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_11_monde__nom__1",
+          "sense_number": "11",
+          "definition_fr": "Gens qui sont sous les ordres de quelqu’un."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_11.a_monde__nom__1",
+          "sense_number": "11.a",
+          "definition_fr": "(En particulier) Les domestiques de quelqu’un."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_12_monde__nom__1",
+          "sense_number": "12",
+          "definition_fr": "Vie séculière, par opposition à la vie religieuse ou spirituelle."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_13_monde__nom__1",
+          "sense_number": "13",
+          "definition_fr": "Domaine de la vie extérieur à l'Église, à la foi."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_14_monde__nom__1",
+          "sense_number": "14",
+          "definition_fr": "Société des hommes, une partie de cette société."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_14.a_monde__nom__1",
+          "sense_number": "14.a",
+          "definition_fr": "Ensemble des personnes rapprochées par les relations, par la profession, par les habitudes."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_15_monde__nom__1",
+          "sense_number": "15",
+          "definition_fr": "Haute société."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_16_monde__nom__1",
+          "sense_number": "16",
+          "definition_fr": "Est quelquefois un terme augmentatif, soit qu’on affirme, soit qu’on nie."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_17_monde__nom__1",
+          "sense_number": "17",
+          "definition_fr": "(Sens figuré) (Par extension) Ensemble complexe et important."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_18_monde__nom__1",
+          "sense_number": "18",
+          "definition_fr": "(Sens figuré) (Par analogie) Imaginaire d’une personne."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_19_monde__nom__1",
+          "sense_number": "19",
+          "definition_fr": "(Héraldique) Meuble particulier représentant dans les armoiries une sphère prise dans un cintre en forme de T renversé et surmontée d'une croisette. À rapprocher de globe, sphère et sphère armillaire."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_20_monde__nom__1",
+          "sense_number": "20",
+          "definition_fr": "(Cartes à jouer, Ésotérisme) Arcane majeur et vingt-et-unième atout du tarot de Marseille et d’autres tarots divinatoires se rapprochant."
+        },
+        {
+          "entry_id": "monde__nom__1",
+          "sense_id": "__ws_21_monde__nom__1",
+          "sense_number": "21",
+          "definition_fr": "(Par analogie) (Informatique) Environnement d'un système d’exploitation."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_monde__nom__1",
+          "chinese_written_form": "世界",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Terre sur laquelle on vit",
+          "mapped_sense_id": "__ws_5_monde__nom__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "b0ade426dcb33cb9dd6e79ba66f6588f10be4b4f8f50ff286f3cd825d8a9f2cb"
+    },
+    {
+      "stable_lexeme_key": "vie|NOM",
+      "lemma": "vie",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1109.0659,
+        "lexique_frequency": 1015.437,
+        "contextual_diversity": 90.67973
+      },
+      "proposed_primary": {
+        "entry_id": "vie__nom__1",
+        "sense_id": "__ws_1_vie__nom__1",
+        "definition_fr": "(Biologie) Activité spontanée propre aux êtres organisés, qui se manifeste par les fonctions de nutrition et de reproduction, auxquelles s’ajoutent chez certains êtres les fonctions de relation et, chez l’être humain, la raison et le libre arbitre.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "biologie"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "Vie__nom__1",
+          "sense_id": "__ws_1_Vie__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Principe intangible, quasi personnel et intentionnel, apparemment éternel, se perpétuant et se manifestant à travers tous les êtres vivants, animaux et végétaux, et animant profondément et puissamment les êtres humains dans le sens de leur épanouissement."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_1_vie__nom__1",
+          "sense_number": "1",
+          "definition_fr": "(Biologie) Activité spontanée propre aux êtres organisés, qui se manifeste par les fonctions de nutrition et de reproduction, auxquelles s’ajoutent chez certains êtres les fonctions de relation et, chez l’être humain, la raison et le libre arbitre."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_2_vie__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(En particulier) Se dit de certaines activités de l’homme."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_3_vie__nom__1",
+          "sense_number": "3",
+          "definition_fr": "Tout l'espace de temps qui s’étend depuis la naissance jusqu'à la mort."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_4_vie__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Conditions dans lesquelles une personne vient au monde et passe son existence."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_5_vie__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Ce qui regarde la nourriture et la subsistance."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_6_vie__nom__1",
+          "sense_number": "6",
+          "definition_fr": "Ce qui regarde l’usage, les commodités ou les incommodités de la vie quotidienne."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_7_vie__nom__1",
+          "sense_number": "7",
+          "definition_fr": "Fait de vivre."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_8_vie__nom__1",
+          "sense_number": "8",
+          "definition_fr": "Façon de vivre."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_9_vie__nom__1",
+          "sense_number": "9",
+          "definition_fr": "Les occupations et les activités différentes de la vie."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_10_vie__nom__1",
+          "sense_number": "10",
+          "definition_fr": "Manière dont le monde se comporte."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_11_vie__nom__1",
+          "sense_number": "11",
+          "definition_fr": "(Par extension) Biographie ; relation historique ou récit des faits remarquables et des traits caractéristiques de la vie d’un homme illustre."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_12_vie__nom__1",
+          "sense_number": "12",
+          "definition_fr": "(Populaire) (avec une épithète) Criaillerie, querelle bruyante faite à quelqu’un."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_13_vie__nom__1",
+          "sense_number": "13",
+          "definition_fr": "État propre aux êtres vivants. Ensemble des activités spontanées sur notre planète depuis leur commencement."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_14_vie__nom__1",
+          "sense_number": "14",
+          "definition_fr": "(Par métonymie) Coût de la vie, cherté des denrées nécessaires à l’entretien des ménages."
+        },
+        {
+          "entry_id": "vie__nom__1",
+          "sense_id": "__ws_15_vie__nom__1",
+          "sense_number": "15",
+          "definition_fr": "(Jeux) Foulard qu’on introduit dans son pantalon par derrière, et dont l’adversaire doit se saisir. Jeu correspondant."
+        },
+        {
+          "entry_id": "vie__nom__2",
+          "sense_id": "__ws_1_vie__nom__2",
+          "sense_number": "1",
+          "definition_fr": "(Suisse) (Franche-Comté) Voie (qui peut être une rue, un chemin…)."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_vie__nom__1",
+          "chinese_written_form": "生命",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Période entre la naissance et la mort",
+          "mapped_sense_id": "__ws_3_vie__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_vie__nom__1",
+          "chinese_written_form": "生活",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Période entre la naissance et la mort",
+          "mapped_sense_id": "__ws_3_vie__nom__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "1b5eafd2520d62b3f0281f26bb9d937e8218f415aefbc9b4942908b533c53bb5"
+    },
+    {
+      "stable_lexeme_key": "enfant|NOM",
+      "lemma": "enfant",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1071.2554,
+        "lexique_frequency": 628.997,
+        "contextual_diversity": 55.7624
+      },
+      "proposed_primary": {
+        "entry_id": "enfant__nom__1",
+        "sense_id": "__ws_1_enfant__nom__1",
+        "definition_fr": "Personne qui n'a pas encore atteint l'adolescence.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "enfant__nom__1",
+          "sense_id": "__ws_1_enfant__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Personne qui n'a pas encore atteint l'adolescence."
+        },
+        {
+          "entry_id": "enfant__nom__1",
+          "sense_id": "__ws_2_enfant__nom__1",
+          "sense_number": "2",
+          "definition_fr": "Personne de tout âge considérée par rapport à ses parents."
+        },
+        {
+          "entry_id": "enfant__nom__1",
+          "sense_id": "__ws_3_enfant__nom__1",
+          "sense_number": "3",
+          "definition_fr": "Fils, par relation à ses parents."
+        },
+        {
+          "entry_id": "enfant__nom__1",
+          "sense_id": "__ws_4_enfant__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Par extension) Descendant, descendante en ligne directe et indirecte."
+        },
+        {
+          "entry_id": "enfant__nom__1",
+          "sense_id": "__ws_5_enfant__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Personne proche de manière affective, amicale, filiale."
+        },
+        {
+          "entry_id": "enfant__nom__1",
+          "sense_id": "__ws_6_enfant__nom__1",
+          "sense_number": "6",
+          "definition_fr": "Représentants les plus jeunes d’une population."
+        },
+        {
+          "entry_id": "enfant__nom__1",
+          "sense_id": "__ws_7_enfant__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Sens figuré) (Vieilli) Chose qui est produite par une autre, qui en naît, qui en résulte."
+        },
+        {
+          "entry_id": "enfant__nom__1",
+          "sense_id": "__ws_8_enfant__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(En apposition ou attribut, avec valeur d'adjectif). Qui a le caractère d’un enfant."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_enfant__nom__1",
+          "chinese_written_form": "孩子",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Jeune humain",
+          "mapped_sense_id": "__ws_1_enfant__nom__1",
+          "structural_match_for_selected_sense": true
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "8d62b482440bbea8bbd3c6af8ba07e8f81b47db1916dd915f7610b99f3b894c1"
+    },
+    {
+      "stable_lexeme_key": "chose|NOM",
+      "lemma": "chose",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 984.7281,
+        "lexique_frequency": 2089.133,
+        "contextual_diversity": 95.84201
+      },
+      "proposed_primary": {
+        "entry_id": "chose__nom__1",
+        "sense_id": "__ws_1_chose__nom__1",
+        "definition_fr": "Objet, idée ou abstraction quelconque, sans pouvoir, vouloir, ou devoir l’identifier ou la nommer. Note d’usage : La signification du mot chose se déduit par la manière dont on l’emploie dans la phrase, où il remplace ce qu’il n’est pas possible (ou pas souhaitable) de nommer. Peut aussi remplacer un ensemble d’objets inanimés (ou d’idées) qu’on devine par le contexte.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_1_chose__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Objet, idée ou abstraction quelconque, sans pouvoir, vouloir, ou devoir l’identifier ou la nommer. Note d’usage : La signification du mot chose se déduit par la manière dont on l’emploie dans la phrase, où il remplace ce qu’il n’est pas possible (ou pas souhaitable) de nommer. Peut aussi remplacer un ensemble d’objets inanimés (ou d’idées) qu’on devine par le contexte."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_2_chose__nom__1",
+          "sense_number": "2",
+          "definition_fr": "Mot, idée, évènement ou énumération dont on parle."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_3_chose__nom__1",
+          "sense_number": "3",
+          "definition_fr": "Concept, idée, ce qui a été, est, ou sera dit ou fait."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_4_chose__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Événements (voire des forces) qui dépassent l'entendement et que des mots ne sauraient retranscrire."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_5_chose__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Dans des expressions."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_6_chose__nom__1",
+          "sense_number": "6",
+          "definition_fr": "Inanimé par opposition à la personne."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_7_chose__nom__1",
+          "sense_number": "7",
+          "definition_fr": "Ce qui est réel, par opposition au nom ou au mot."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_8_chose__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Vieilli) Personne."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_9_chose__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(Familier) Bien, possession, propriété."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_10_chose__nom__1",
+          "sense_number": "10",
+          "definition_fr": "(Jurisprudence) Tout ce qui est distinct des personnes et des actions et qui peut être de quelque usage humain."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_11_chose__nom__1",
+          "sense_number": "11",
+          "definition_fr": "(Familier) (Par euphémisme) Parties génitales masculines."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_12_chose__nom__1",
+          "sense_number": "12",
+          "definition_fr": "Mot-joker employé pour remplacer un mot qu’on se refuse à prononcer ou à écrire."
+        },
+        {
+          "entry_id": "chose__nom__1",
+          "sense_id": "__ws_13_chose__nom__1",
+          "sense_number": "13",
+          "definition_fr": "(Par euphémisme) Ce qui concerne l’acte sexuel."
+        },
+        {
+          "entry_id": "chose__nom__2",
+          "sense_id": "__ws_1_chose__nom__2",
+          "sense_number": "1",
+          "definition_fr": "(Familier) (En apposition) Mal à l’aise."
+        },
+        {
+          "entry_id": "chose__nom__2",
+          "sense_id": "__ws_2_chose__nom__2",
+          "sense_number": "2",
+          "definition_fr": "(Vieilli) (En apposition) Niais."
+        },
+        {
+          "entry_id": "chose__nom__3",
+          "sense_id": "__ws_1_chose__nom__3",
+          "sense_number": "1",
+          "definition_fr": "Cocktail fait à partir de jus de pamplemousse mélangé à un soda de saveur amère."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_chose__nom__1",
+          "chinese_written_form": "东西",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_chose__nom__1",
+          "chinese_written_form": "事",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_chose__nom__1",
+          "chinese_written_form": "事儿",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "c456de5974eae78d39f2a8fd4805f9ea00a74d15aa0ee4015ddb5d398c5aa1bb"
+    },
+    {
+      "stable_lexeme_key": "personne|NOM",
+      "lemma": "personne",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 934.2075,
+        "lexique_frequency": 440.332,
+        "contextual_diversity": 89.98928
+      },
+      "proposed_primary": {
+        "entry_id": "personne__nom__1",
+        "sense_id": "__ws_1_personne__nom__1",
+        "definition_fr": "Être humain considéré en tant qu’individu.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_1_personne__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Être humain considéré en tant qu’individu."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_2_personne__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Philosophie) Individu ou entité consciente d'elle-même et à laquelle on reconnaît des droits."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_3_personne__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Grammaire) Rôle que tient la personne ou la chose en cause dans l’acte d’énonciation. Note : Première personne : je, nous ;Deuxième personne : tu, vous ;Troisième personne : il, elle, ils, elles."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_4_personne__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Précédé d’un adjectif possessif, se dit de la vie, du corps, du physique de celui qui parle, à qui l’on parle, ou dont on parle."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_5_personne__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Personnage."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_6_personne__nom__1",
+          "sense_number": "6",
+          "definition_fr": "Se dit, dans certaines locutions, des femmes seulement."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_7_personne__nom__1",
+          "sense_number": "7",
+          "definition_fr": "Se dit quelquefois d’un homme ou d’une femme, considérés en eux-mêmes."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_8_personne__nom__1",
+          "sense_number": "8",
+          "definition_fr": "Sert, dans certaines expressions, à donner plus de force, d’ampleur, de solennité à ce que l’on dit."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_9_personne__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(Droit) Sujet de droits, doué de capacité et responsable."
+        },
+        {
+          "entry_id": "personne__nom__1",
+          "sense_id": "__ws_10_personne__nom__1",
+          "sense_number": "10",
+          "definition_fr": "(Religion) Hypostase divine, dans la théologie chrétienne."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_personne__nom__1",
+          "chinese_written_form": "人",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être humain",
+          "mapped_sense_id": "__ws_1_personne__nom__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_personne__nom__1",
+          "chinese_written_form": "人",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être humain",
+          "mapped_sense_id": "__ws_1_personne__nom__1",
+          "structural_match_for_selected_sense": true
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "c92e525ec71b1499037bd8259ef89eb3e89015fa89450a08b7e74c0117fefa4f"
+    },
+    {
+      "stable_lexeme_key": "année|NOM",
+      "lemma": "année",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 891.2136,
+        "lexique_frequency": 360.839,
+        "contextual_diversity": 50.74862
+      },
+      "proposed_primary": {
+        "entry_id": "année__nom__1",
+        "sense_id": "__ws_1_année__nom__1",
+        "definition_fr": "Subdivision du temps, correspondant à la durée d’une révolution de la Terre autour du Soleil, qui comporte 365 jours (ou 366 jours dans l’année bissextile), 52 semaines environ, 12 mois solaires.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "année__nom__1",
+          "sense_id": "__ws_1_année__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Subdivision du temps, correspondant à la durée d’une révolution de la Terre autour du Soleil, qui comporte 365 jours (ou 366 jours dans l’année bissextile), 52 semaines environ, 12 mois solaires."
+        },
+        {
+          "entry_id": "année__nom__1",
+          "sense_id": "__ws_2_année__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Par extension) Temps nécessaire à la révolution d’une planète autour de son étoile."
+        },
+        {
+          "entry_id": "année__nom__1",
+          "sense_id": "__ws_3_année__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Par analogie) Durée de douze mois, sans égard à l’époque où elle commence ni à l’époque où elle finit."
+        },
+        {
+          "entry_id": "année__nom__1",
+          "sense_id": "__ws_4_année__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Ce que l’on doit recevoir ou payer par année ; annuité."
+        },
+        {
+          "entry_id": "année__nom__1",
+          "sense_id": "__ws_5_année__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Éducation) Niveau de classe."
+        },
+        {
+          "entry_id": "année__nom__1",
+          "sense_id": "__ws_6_année__nom__1",
+          "sense_number": "6",
+          "definition_fr": "Période en rapport au climat ou aux cultures agricoles."
+        },
+        {
+          "entry_id": "année__nom__1",
+          "sense_id": "__ws_7_année__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Au pluriel) Décennie commençant en multiple de dix. → voir années"
+        },
+        {
+          "entry_id": "année__nom__1",
+          "sense_id": "__ws_8_année__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Au pluriel) Les différents âges de la vie."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_année__nom__1",
+          "chinese_written_form": "年",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Année terrestre",
+          "mapped_sense_id": "__ws_1_année__nom__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_année__nom__1",
+          "chinese_written_form": "年代",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Au pluriel) Décennie commençant en multiple de dix",
+          "mapped_sense_id": "__ws_7_année__nom__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "99a5ddadcafd7aa1e8f85aac7a0f027f7ed6ce2b11585fe7b6c83ab0cf0ad09c"
+    },
+    {
+      "stable_lexeme_key": "maison|NOM",
+      "lemma": "maison",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 855.3365,
+        "lexique_frequency": 602.927,
+        "contextual_diversity": 71.85548
+      },
+      "proposed_primary": {
+        "entry_id": "maison__nom__1",
+        "sense_id": "__ws_1_maison__nom__1",
+        "definition_fr": "(Construction) Bâtiment servant de logis, d’habitation, de demeure.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "construction"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_1_maison__nom__1",
+          "sense_number": "1",
+          "definition_fr": "(Construction) Bâtiment servant de logis, d’habitation, de demeure."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_2_maison__nom__1",
+          "sense_number": "2",
+          "definition_fr": "Ménage, foyer ; tout ce qui a rapport aux affaires domestiques (qu’il s’agisse réellement d’une maison ou d’une autre forme d’habitation)."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_3_maison__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Par métonymie) Maisonnée, famille."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_4_maison__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Sens figuré) Lignée ; famille, en parlant des familles nobles et illustres."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_5_maison__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Entreprise ayant une identité bien définie, souvent présentée comme prestigieuse."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_6_maison__nom__1",
+          "sense_number": "6",
+          "definition_fr": "Commerce, boutique."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_7_maison__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(En particulier) Maison d’édition."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_8_maison__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Histoire, Religion) Établissement d’une communauté religieuse."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_9_maison__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(Astrologie) Un des fuseaux obtenus après division du ciel par les astrologues afin d’établir un thème astral."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_10_maison__nom__1",
+          "sense_number": "10",
+          "definition_fr": "(Argot) Maison close ; lupanar."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_11_maison__nom__1",
+          "sense_number": "11",
+          "definition_fr": "(Argot) (Péjoratif) Maison poulaga, police."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_12_maison__nom__1",
+          "sense_number": "12",
+          "definition_fr": "(Droit féodal) Redevance sur le transport des vins par voie fluviale."
+        },
+        {
+          "entry_id": "maison__nom__1",
+          "sense_id": "__ws_13_maison__nom__1",
+          "sense_number": "13",
+          "definition_fr": "(Curling) Cible circulaire dessinée sur la glace ; là où la pierre doit être lancée."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_maison__nom__1",
+          "chinese_written_form": "房子",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Bâtiment servant de logis, d’habitation, de demeure",
+          "mapped_sense_id": "__ws_1_maison__nom__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_maison__nom__1",
+          "chinese_written_form": "家",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Foyer",
+          "mapped_sense_id": "__ws_2_maison__nom__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "b34d841fdfc31f30ad3a7c6910328334b3e40830bc51f4fde76530dd8c9889cd"
+    },
+    {
+      "stable_lexeme_key": "pays|NOM",
+      "lemma": "pays",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 771.7224,
+        "lexique_frequency": 171.291,
+        "contextual_diversity": 33.87018
+      },
+      "proposed_primary": {
+        "entry_id": "pays__nom__1",
+        "sense_id": "__ws_1_pays__nom__1",
+        "definition_fr": "(Géographie) Territoire d’une nation.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "géographie"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_1_pays__nom__1",
+          "sense_number": "1",
+          "definition_fr": "(Géographie) Territoire d’une nation."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_2_pays__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Par extension) Patrie."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_3_pays__nom__1",
+          "sense_number": "3",
+          "definition_fr": "Province natale."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_4_pays__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Fraction cohérente du territoire national."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_5_pays__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(En particulier) Village duquel on est issu."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_6_pays__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Par métonymie) Nation, État."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_7_pays__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Par métonymie) Population d’une contrée."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_8_pays__nom__1",
+          "sense_number": "8",
+          "definition_fr": "Région géographique."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_9_pays__nom__1",
+          "sense_number": "9",
+          "definition_fr": "Zone géographique, du point de vue du climat, de la fertilité, etc."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_10_pays__nom__1",
+          "sense_number": "10",
+          "definition_fr": "Contrée, région ou terre productrice."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_11_pays__nom__1",
+          "sense_number": "11",
+          "definition_fr": "(Par extension) Terroir, campagne."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_12_pays__nom__1",
+          "sense_number": "12",
+          "definition_fr": "(Militaire) Terrain."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_13_pays__nom__1",
+          "sense_number": "13",
+          "definition_fr": "Monde imaginaire."
+        },
+        {
+          "entry_id": "pays__nom__1",
+          "sense_id": "__ws_14_pays__nom__1",
+          "sense_number": "14",
+          "definition_fr": "(Poétique) (Sens figuré) Domaine, monde, univers."
+        },
+        {
+          "entry_id": "pays__nom__2",
+          "sense_id": "__ws_1_pays__nom__2",
+          "sense_number": "1",
+          "definition_fr": "Personne originaire de la même région qu’une autre, compatriote."
+        },
+        {
+          "entry_id": "pays__nom__2",
+          "sense_id": "__ws_2_pays__nom__2",
+          "sense_number": "2",
+          "definition_fr": "Souvent employé dans le milieu du compagnonnage pour appeler un autre compagnon."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_pays__nom__1",
+          "chinese_written_form": "国家",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Territoire d’une nation.",
+          "mapped_sense_id": "__ws_1_pays__nom__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_pays__nom__1",
+          "chinese_written_form": "祖国",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Lieu de naissance, province natale.",
+          "mapped_sense_id": "__ws_3_pays__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_pays__nom__1",
+          "chinese_written_form": "国家",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "État, nation.",
+          "mapped_sense_id": "__ws_6_pays__nom__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "a607d9f711a71f69e6e085a247377dbc039f10778608ae5427310c3c1233a212"
+    },
+    {
+      "stable_lexeme_key": "être|VER",
+      "lemma": "être",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 28371.4745,
+        "lexique_frequency": 35040.212,
+        "contextual_diversity": 99.87906
+      },
+      "proposed_primary": {
+        "entry_id": "être__verb__1",
+        "sense_id": "__ws_1_être__verb__1",
+        "definition_fr": "Définir un état, une caractéristique du sujet. Note : En grammaire, ce type de verbe est appelé une copule, et le mot qu’il introduit est un attribut. En linguistique, il existe différentes manières de caractériser ces constructions attributives, existentielles, locatives ou posturales qui peuvent être introduites en français par être.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_1_être__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Définir un état, une caractéristique du sujet. Note : En grammaire, ce type de verbe est appelé une copule, et le mot qu’il introduit est un attribut. En linguistique, il existe différentes manières de caractériser ces constructions attributives, existentielles, locatives ou posturales qui peuvent être introduites en français par être."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_2_être__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Se situer, se trouver, rester, spécifiant une location, une situation."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_3_être__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Absolument) Exister."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_4_être__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Impersonnel) (Soutenu) Il y a."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_5_être__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Impersonnel) Le moment de la journée. Note : Dans certaines régions, le démonstratif est utilisé à la place du pronom impersonnel afin de demander : C’est quelle heure ?"
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_6_être__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Le jour de la semaine ou la date du moment."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_7_être__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Familier) Aller, se rendre. Note : Avec l’auxiliaire avoir."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_8_être__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(Auxiliaire) Verbe auxiliaire servant à former les temps composés de certains verbes intransitifs indiquant un mouvement ou un changement d’état et tous les verbes réflexifs."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_9_être__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Auxiliaire) Verbe auxiliaire servant à former la forme passive."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_10_être__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Informel) (Construit avec sur ou dessus) S’occuper d’une affaire particulière, s’en occuper."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_11_être__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Construit avec à) Indique un lien de possession."
+        },
+        {
+          "entry_id": "être__verb__1",
+          "sense_id": "__ws_12_être__verb__1",
+          "sense_number": "12",
+          "definition_fr": "(Impersonnel) Joint à l’adverbe en et employé comme verbe impersonnel, sert à exprimer une comparaison."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_être__verb__1",
+          "chinese_written_form": "是",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Copule",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_être__verb__1",
+          "chinese_written_form": "在",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Se trouver dans une location, une situation",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_être__verb__1",
+          "chinese_written_form": "被",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Auxiliaire passif",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "0c6620f7f312d6f4ee06545f9fe3429a368cfcf17fe7357f7a6495e40c458e2b"
+    },
+    {
+      "stable_lexeme_key": "avoir|VER",
+      "lemma": "avoir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 19212.1423,
+        "lexique_frequency": 13032.016,
+        "contextual_diversity": 99.73362
+      },
+      "proposed_primary": {
+        "entry_id": "avoir__verb__1",
+        "sense_id": "__ws_1_avoir__verb__1",
+        "definition_fr": "Être en relation possessive, soit concrète ou abstraite, soit permanente ou occasionnelle, dont le possesseur est le sujet et le possédé est le complément d’objet direct.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "avoir__verb__1",
+          "sense_id": "__ws_1_avoir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Être en relation possessive, soit concrète ou abstraite, soit permanente ou occasionnelle, dont le possesseur est le sujet et le possédé est le complément d’objet direct."
+        },
+        {
+          "entry_id": "avoir__verb__1",
+          "sense_id": "__ws_2_avoir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Intransitif) Être dans un certain état, anormal."
+        },
+        {
+          "entry_id": "avoir__verb__1",
+          "sense_id": "__ws_3_avoir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Se procurer, obtenir quelque chose."
+        },
+        {
+          "entry_id": "avoir__verb__1",
+          "sense_id": "__ws_4_avoir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Familier) Tromper, berner, leurrer quelqu’un."
+        },
+        {
+          "entry_id": "avoir__verb__1",
+          "sense_id": "__ws_5_avoir__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Familier) Posséder sexuellement une femme."
+        },
+        {
+          "entry_id": "avoir__verb__1",
+          "sense_id": "__ws_6_avoir__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(J’ai … qui …) Introduit une nouvelle information concernant le locuteur sans relation thème-rhème."
+        },
+        {
+          "entry_id": "avoir__verb__1",
+          "sense_id": "__ws_7_avoir__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Auxiliaire) Auxiliaire servant à former les temps composés, signifiant le passé, la complétion ou l’expérience. Note : Certains verbes demandent être comme auxiliaire. En français moderne, le passé composé est beaucoup plus courant que le passé simple."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_avoir__verb__1",
+          "chinese_written_form": "有",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Posséder",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "95f52a6922c7fa7cb4841910cf1a6ad1e994df8e249e0b285d08f7239faebdb6"
+    },
+    {
+      "stable_lexeme_key": "faire|VER",
+      "lemma": "faire",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 5619.6584,
+        "lexique_frequency": 9061.728,
+        "contextual_diversity": 99.11359
+      },
+      "proposed_primary": {
+        "entry_id": "faire__verb__1",
+        "sense_id": "__ws_1_faire__verb__1",
+        "definition_fr": "Faire (2) à manger.\n Créer, produire, fabriquer, en parlant de toute œuvre matérielle.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_1_faire__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Faire (2) à manger.\n Créer, produire, fabriquer, en parlant de toute œuvre matérielle."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_2_faire__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(En particulier) Préparer un repas, le cuisiner."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_3_faire__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Élaborer, en parlant des œuvres de l’intelligence et de l’imagination."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_4_faire__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Opérer, effectuer, exécuter, accomplir, réaliser, que ce soit d’ordre physique ou d’ordre moral."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_5_faire__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(En particulier) Dire."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_6_faire__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(En particulier) Générer son bruit, son cri typique, en parlant d'un animal, d'un appareil, etc."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_7_faire__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(En particulier) Accorder ; donner ; offrir."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_8_faire__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(En particulier) Provoquer."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_9_faire__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(En particulier) Pratiquer."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_10_faire__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(En particulier) (Argot) Dérober ; faire les poches."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_11_faire__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Avoir dans son domaine professionnel ou dans sa gamme proposée à la vente."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_12_faire__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Se mouvoir dans un déplacement d’un lieu à un autre."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_13_faire__verb__1",
+          "sense_number": "13",
+          "definition_fr": "Signaler, indiquer un état de choses."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_14_faire__verb__1",
+          "sense_number": "14",
+          "definition_fr": "Disposer, ranger, arranger, mettre dans un état convenable."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_15_faire__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(En particulier) Farder ; maquiller."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_16_faire__verb__1",
+          "sense_number": "16",
+          "definition_fr": "Amasser, assembler, mettre ensemble, en parlant d’argent ou d’autres choses dont on a besoin de se pourvoir."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_17_faire__verb__1",
+          "sense_number": "17",
+          "definition_fr": "Employer ses forces, ses talents, l’activité de son esprit à quelque chose ; s’en occuper, y passer son temps."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_18_faire__verb__1",
+          "sense_number": "18",
+          "definition_fr": "Observer, mettre en pratique, souvent par obligation ou par précepte."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_19_faire__verb__1",
+          "sense_number": "19",
+          "definition_fr": "Exécuter ou pratiquer certaines choses que l’on s’oblige à achever en un certain temps."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_20_faire__verb__1",
+          "sense_number": "20",
+          "definition_fr": "Former, façonner, perfectionner quelqu’un."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_21_faire__verb__1",
+          "sense_number": "21",
+          "definition_fr": "Former, composer, constituer un tout, une seule chose, en parlant de deux ou de plusieurs choses qui s’unissent, s’ajoutent, etc."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_22_faire__verb__1",
+          "sense_number": "22",
+          "definition_fr": "Constituer l’essence d’une chose."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_23_faire__verb__1",
+          "sense_number": "23",
+          "definition_fr": "Être la cause de tel ou tel résultat ou en être l’occasion."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_24_faire__verb__1",
+          "sense_number": "24",
+          "definition_fr": "(Péjoratif) Se donner une apparence mensongère."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_25_faire__verb__1",
+          "sense_number": "25",
+          "definition_fr": "(Familier) Donner l’air, créer une impression particulière."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_26_faire__verb__1",
+          "sense_number": "26",
+          "definition_fr": "(Familier) Vaquer, se trouver ou être présent dans un lieu."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_27_faire__verb__1",
+          "sense_number": "27",
+          "definition_fr": "Changer, transformer en. — Note : : Il est alors construit avec la préposition de."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_28_faire__verb__1",
+          "sense_number": "28",
+          "definition_fr": "Employer quelqu’un ou quelque chose, en disposer, en tirer parti d’une façon ou d’une autre. — Note : : Il est alors construit avec la préposition de."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_29_faire__verb__1",
+          "sense_number": "29",
+          "definition_fr": "S’emploie souvent en tant que verbe-substitut pour éviter la répétition du verbe précédent, précédé des conjonctions comme, ainsi que, autant que, moins que, plus que, etc., et accompagné du pronom personnel le (l’), celui-ci représentant l’action décrite juste avant."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_30_faire__verb__1",
+          "sense_number": "30",
+          "definition_fr": "Mais on ne doit pas confondre cet emploi avec une autre tournure (sans conjonction de subordination) dans laquelle faire, conservant le sens d’exécuter, opérer, effectuer, etc., a également pour complément le pronom le qui représente le verbe précédent."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_31_faire__verb__1",
+          "sense_number": "31",
+          "definition_fr": "(Jeu)"
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_32_faire__verb__1",
+          "sense_number": "32",
+          "definition_fr": "(Marine)"
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_33_faire__verb__1",
+          "sense_number": "33",
+          "definition_fr": "(Transport) (Intransitif) Approvisionner."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_34_faire__verb__1",
+          "sense_number": "34",
+          "definition_fr": "(Médecine) Être atteint, être malade de, montrer les symptômes de."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_35_faire__verb__1",
+          "sense_number": "35",
+          "definition_fr": "(Militaire) Effectuer ce qui est ordonné."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_36_faire__verb__1",
+          "sense_number": "36",
+          "definition_fr": "(Militaire) Combattre dans une guerre."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_37_faire__verb__1",
+          "sense_number": "37",
+          "definition_fr": "Voyager dans un pays ; visiter un lieu."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_38_faire__verb__1",
+          "sense_number": "38",
+          "definition_fr": "(Belgique) (Populaire) (Vieilli) Exercer un métier."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_39_faire__verb__1",
+          "sense_number": "39",
+          "definition_fr": "(Intransitif) Agir."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_40_faire__verb__1",
+          "sense_number": "40",
+          "definition_fr": "(Intransitif) (Vieilli) Être convenable, produire un effet agréable (aujourd’hui, on utilise plutôt le verbe aller)."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_41_faire__verb__1",
+          "sense_number": "41",
+          "definition_fr": "(Intransitif) (Familier) Se décharger le ventre, déféquer."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_42_faire__verb__1",
+          "sense_number": "42",
+          "definition_fr": "(Intransitif) (Vieilli) Être efficace."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_43_faire__verb__1",
+          "sense_number": "43",
+          "definition_fr": "(Pronominal) Devenir, embrasser une profession, une idée, une religion."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_44_faire__verb__1",
+          "sense_number": "44",
+          "definition_fr": "(Pronominal) Indique une chose que l’on s’accorde ou que l’on s’impose à soi-même."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_45_faire__verb__1",
+          "sense_number": "45",
+          "definition_fr": "(Pronominal) S’habituer, s’accoutumer à quelque chose."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_46_faire__verb__1",
+          "sense_number": "46",
+          "definition_fr": "(Pronominal) Se former."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_47_faire__verb__1",
+          "sense_number": "47",
+          "definition_fr": "(Pronominal) Se créer."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_48_faire__verb__1",
+          "sense_number": "48",
+          "definition_fr": "(Pronominal) Être possible, se produire."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_49_faire__verb__1",
+          "sense_number": "49",
+          "definition_fr": "(Pronominal) Être couramment pratiqué."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_50_faire__verb__1",
+          "sense_number": "50",
+          "definition_fr": "(Pronominal) (Vulgaire) Posséder sexuellement."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_51_faire__verb__1",
+          "sense_number": "51",
+          "definition_fr": "(Pronominal) (Familier) Se le faire ou se la faire : Finir par se montrer violent."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_52_faire__verb__1",
+          "sense_number": "52",
+          "definition_fr": "(Impersonnel) Indique un état météorologique."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_53_faire__verb__1",
+          "sense_number": "53",
+          "definition_fr": "(Impersonnel) S’emploie pour marquer la nature, l’état, la disposition ou les qualités de certaines choses."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_54_faire__verb__1",
+          "sense_number": "54",
+          "definition_fr": "(Impersonnel) Être la cause."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_55_faire__verb__1",
+          "sense_number": "55",
+          "definition_fr": "(Impersonnel) Y avoir."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_56_faire__verb__1",
+          "sense_number": "56",
+          "definition_fr": "(Pronominal) (Impersonnel) Arriver."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_57_faire__verb__1",
+          "sense_number": "57",
+          "definition_fr": "(Pronominal) (Impersonnel) Être convenable. — Note : Se dit surtout des actes de politesse ou de cérémonie qu’il est de bon ton d’accomplir en telle ou telle circonstance."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_58_faire__verb__1",
+          "sense_number": "58",
+          "definition_fr": "Commencer à être."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_59_faire__verb__1",
+          "sense_number": "59",
+          "definition_fr": "(Auxiliaire) Aux formes simple ou pronominale (se faire), peut être auxiliaire de mode et se construire avec un infinitif pour signifier : être la cause (proche ou lointaine) de quelque chose ou d’une action. Le sujet du verbe à l’infinitif peut être exprimé dans la phrase ou être absent de la phrase. De même, le complément d’objet du verbe à l’infinitif n’est pas toujours exprimé."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_60_faire__verb__1",
+          "sense_number": "60",
+          "definition_fr": "Expressions qui veulent toutes dire la même chose : laisse-moi tranquille."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_61_faire__verb__1",
+          "sense_number": "61",
+          "definition_fr": "Durer, tenir."
+        },
+        {
+          "entry_id": "faire__verb__1",
+          "sense_id": "__ws_62_faire__verb__1",
+          "sense_number": "62",
+          "definition_fr": "Avoir de l'importance pour quelqu'un."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_faire__verb__1",
+          "chinese_written_form": "做",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Créer, produire, fabriquer",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_faire__verb__1",
+          "chinese_written_form": "制作",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Créer, produire, fabriquer",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_faire__verb__1",
+          "chinese_written_form": "制造",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Créer, produire, fabriquer",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_faire__verb__1",
+          "chinese_written_form": "做",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Préparer un repas, le cuisiner",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "edff92ae53977498ce0f8325cda1d7f746a5fe5dcaad6902e25414a9ea94f69d"
+    },
+    {
+      "stable_lexeme_key": "aller|VER",
+      "lemma": "aller",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 3931.7558,
+        "lexique_frequency": 9795.946,
+        "contextual_diversity": 98.69871
+      },
+      "proposed_primary": {
+        "entry_id": "aller__verb__1",
+        "sense_id": "__ws_1_aller__verb__1",
+        "definition_fr": "Se déplacer jusqu'à un endroit.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_1_aller__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Se déplacer jusqu'à un endroit."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_2_aller__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Auxiliaire) Suivi d’un infinitif, il sert de semi-auxiliaire pour conjuguer un verbe au futur proche, indiquant que quelque chose est sur le point d’avoir lieu."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_3_aller__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Fonctionner, en parlant d’un mécanisme, d’un projet ou de la santé de quelqu'un."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_4_aller__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Indique la façon dont une chose sied à quelqu'un ou à quelque chose d’autre ; convenir, être assorti."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_5_aller__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Indique l’étendue de certaines choses."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_6_aller__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Marque la destination d’un chemin, la direction des choses."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_7_aller__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Sens figuré) Indique une évolution, un progrès de quelque chose."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_8_aller__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Désigne l'objectif, le résultat de quelque chose."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_9_aller__verb__1",
+          "sense_number": "9",
+          "definition_fr": "Manière dont on agit, dont on se comporte en de certaines choses, et, dans cette acception, on l’emploie souvent avec la particule y (y aller)."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_10_aller__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Vieilli) (Jeux de hasard) Miser au jeu."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_11_aller__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Il se joint au participe présent d’un verbe pour lui exprimer, avec l’idée d’une progression, celle d’une certaine durée de l’action. — Note : Voyez l'entrée participe présent."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_12_aller__verb__1",
+          "sense_number": "12",
+          "definition_fr": "À l’impératif, il sert également à faire des souhaits, des exhortations ou des menaces et à marquer de l’indignation."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_13_aller__verb__1",
+          "sense_number": "13",
+          "definition_fr": "À l’impératif, invitation à continuer, à poursuivre ce qui était en cours."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_14_aller__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Impersonnel) (y aller de) Joint à l'adverbe y et employé comme verbe impersonnel, sert à marquer ce qui est mis en cause, de quoi il s’agit."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_15_aller__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Impersonnel) (en aller de) Joint à l'adverbe en et employé comme verbe impersonnel, il sert à exprimer une comparaison."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_16_aller__verb__1",
+          "sense_number": "16",
+          "definition_fr": "(Ellipse de aller à la selle) Déféquer."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_17_aller__verb__1",
+          "sense_number": "17",
+          "definition_fr": "Aller à la rencontre, aller au combat, aller à l’affrontement."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_18_aller__verb__1",
+          "sense_number": "18",
+          "definition_fr": "Continuer à vivre, survivre."
+        },
+        {
+          "entry_id": "aller__verb__1",
+          "sense_id": "__ws_19_aller__verb__1",
+          "sense_number": "19",
+          "definition_fr": "(Très rare) Mêler."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_aller__verb__1",
+          "chinese_written_form": "去",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Se déplacer jusqu’à un endroit",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "9ae08cb4133d9f18ea6051c24bec4272e3334accea0ff1a293f207bcc9b50ea3"
+    },
+    {
+      "stable_lexeme_key": "dire|VER",
+      "lemma": "dire",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 3665.3357,
+        "lexique_frequency": 6099.386,
+        "contextual_diversity": 97.61482
+      },
+      "proposed_primary": {
+        "entry_id": "dire__verb__1",
+        "sense_id": "__ws_1_dire__verb__1",
+        "definition_fr": "Exprimer par la parole.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_1_dire__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Exprimer par la parole."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_2_dire__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Ordonner, conseiller."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_3_dire__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Énoncer par écrit."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_4_dire__verb__1",
+          "sense_number": "4",
+          "definition_fr": "S’emploie souvent dans le sens de répondre à une objection."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_5_dire__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Poétique) Célébrer, chanter, raconter."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_6_dire__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Courant) Débiter ; réciter."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_7_dire__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Juger ; croire ; penser."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_8_dire__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Dénoter, signifier, indiquer, marquer."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_9_dire__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Sens figuré) S’emploie en parlant des actions, des gestes, des regards, etc., qui manifestent la pensée de quelqu’un."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_10_dire__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Familier) Dénoncer."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_11_dire__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Exprimer ce que l'on pense, ce que l'on ressent, ce que l'on voit."
+        },
+        {
+          "entry_id": "dire__verb__1",
+          "sense_id": "__ws_12_dire__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Déclamer en public des vers, une tirade, une scène de tragédie."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_dire__verb__1",
+          "chinese_written_form": "说",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Exprimer par la parole",
+          "mapped_sense_id": "__ws_1_dire__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_dire__verb__1",
+          "chinese_written_form": "告诉",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Exprimer par la parole",
+          "mapped_sense_id": "__ws_1_dire__verb__1",
+          "structural_match_for_selected_sense": true
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "e4f8f692991a613983407c62bd4a458156a03786a3e88d957ca7139adab93d2d"
+    },
+    {
+      "stable_lexeme_key": "pouvoir|VER",
+      "lemma": "pouvoir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 3423.8487,
+        "lexique_frequency": 6267.658,
+        "contextual_diversity": 97.35915
+      },
+      "proposed_primary": {
+        "entry_id": "pouvoir__verb__1",
+        "sense_id": "__ws_1_pouvoir__verb__1",
+        "definition_fr": "(Auxiliaire) Être capable de ; avoir la faculté de ; être en état de ; être en mesure de.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "auxiliaire"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_1_pouvoir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "(Auxiliaire) Être capable de ; avoir la faculté de ; être en état de ; être en mesure de."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_2_pouvoir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Avoir la possibilité matérielle de faire quelque chose."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_3_pouvoir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Auxiliaire) Avoir la permission de faire quelque chose."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_4_pouvoir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Auxiliaire) Exprime une possibilité, un choix, qui s’offre à une personne."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_5_pouvoir__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(En particulier) (Ironique) Utilisé pour une proposition insultante, dans le but de faire taire, d’envoyer promener."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_6_pouvoir__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Exprime une éventualité, une probabilité, ou une hypothèse. On peut dire aussi : « Il se peut que … » (+ subjonctif)."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_7_pouvoir__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Interrogatif) Fait appel à la bonne volonté de l’interlocuteur."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_8_pouvoir__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(Proverbial) Définit un souhait, un désir."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_9_pouvoir__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Transitif) S’emploie au subjonctif présent par une manière de vœu, de souhait."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_10_pouvoir__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Intransitif) Se dit encore pour marquer la possibilité de quelque événement, de quelque dessein."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_10.a_pouvoir__verb__1",
+          "sense_number": "10.a",
+          "definition_fr": "(Impersonnel) (Pronominal) Employé soit seul, soit avec le pronom se, dans cette acception."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_11_pouvoir__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Transitif) Avoir l’autorité, le crédit, le moyen, la faculté, etc., de faire."
+        },
+        {
+          "entry_id": "pouvoir__verb__1",
+          "sense_id": "__ws_12_pouvoir__verb__1",
+          "sense_number": "12",
+          "definition_fr": "N’en pouvoir plus, N’en plus pouvoir, être dans un accablement causé soit par la vieillesse, soit par la maladie, soit par la fatigue, le travail, la faim, la soif, ou encore par la souffrance morale, l’inquiétude, le chagrin."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "995ee861a159c49481584d9cc67992561bc881b54bfb4ac12c9a5bdba7483231"
+    },
+    {
+      "stable_lexeme_key": "voir|VER",
+      "lemma": "voir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 2293.6748,
+        "lexique_frequency": 3679.82,
+        "contextual_diversity": 95.95836
+      },
+      "proposed_primary": {
+        "entry_id": "voir__verb__1",
+        "sense_id": "__ws_1_voir__verb__1",
+        "definition_fr": "Percevoir l’image des objets par l’organe de la vue.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_1_voir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Percevoir l’image des objets par l’organe de la vue."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_2_voir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Donner en vis-à-vis, avoir une vue."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_3_voir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Par extension) (Militaire) Avoir une vue découverte sur une cible en sorte qu’on est à portée de la battre avec le canon."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_4_voir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Être le lieu où se déroule une action ; en être le siège."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_5_voir__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Vivre pendant une période désignée, avoir connu cette époque."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_6_voir__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Sens figuré) (Familier) Imaginer, représenter."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_7_voir__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Prendre soin de quelqu'un, le traiter."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_8_voir__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(Inversement) Consulter."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_9_voir__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Absolument) Être en état de percevoir l’image des objets."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_10_voir__verb__1",
+          "sense_number": "10",
+          "definition_fr": "Être témoin de l’état d’une personne ou d’une chose."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_11_voir__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Être témoin de faits, d’événements contemporains, ou en avoir seulement entendu parler."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_12_voir__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Faire des observations et des remarques en lisant ; se reporter à ce que l’on lit."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_13_voir__verb__1",
+          "sense_number": "13",
+          "definition_fr": "Fréquenter."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_14_voir__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(En particulier) Avoir une relation amoureuse."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_15_voir__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(En particulier) Avoir une entrevue, une conversation, avec quelqu’un."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_16_voir__verb__1",
+          "sense_number": "16",
+          "definition_fr": "(Spécialement) (Avec la négation) (Familier) Supporter."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_17_voir__verb__1",
+          "sense_number": "17",
+          "definition_fr": "Acquérir la connaissance des choses du monde, dans les voyages ou dans le commerce des hommes."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_18_voir__verb__1",
+          "sense_number": "18",
+          "definition_fr": "Regarder, considérer avec attention."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_19_voir__verb__1",
+          "sense_number": "19",
+          "definition_fr": "Examiner, vérifier, se réserver de prendre un parti."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_20_voir__verb__1",
+          "sense_number": "20",
+          "definition_fr": "(Familier) Vérifier par soi-même une assertion, une information."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_21_voir__verb__1",
+          "sense_number": "21",
+          "definition_fr": "S’apercevoir, se rendre compte, comprendre."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_22_voir__verb__1",
+          "sense_number": "22",
+          "definition_fr": "Inspecter avec autorité, veiller à."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_23_voir__verb__1",
+          "sense_number": "23",
+          "definition_fr": "Éprouver, essayer."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_24_voir__verb__1",
+          "sense_number": "24",
+          "definition_fr": "(Par analogie) Juger par le sens du goût, de l’odorat, du toucher ou de l’ouïe, en parlant des choses que l’on connaît."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_25_voir__verb__1",
+          "sense_number": "25",
+          "definition_fr": "Juger ; apprécier ; envisager."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_26_voir__verb__1",
+          "sense_number": "26",
+          "definition_fr": "(Familier) Étudier, apprendre."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_27_voir__verb__1",
+          "sense_number": "27",
+          "definition_fr": "Aller faire quelque chose."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_28_voir__verb__1",
+          "sense_number": "28",
+          "definition_fr": "(Québec) (Désuet) (Par euphémisme et apocope de voir ses règles) Avoir ses menstruations."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_29_voir__verb__1",
+          "sense_number": "29",
+          "definition_fr": "(Religion) Connaître par l’intelligence."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_30_voir__verb__1",
+          "sense_number": "30",
+          "definition_fr": "(Pronominal) (Sens propre) Voir soi-même. Voir l’un l’autre."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_31_voir__verb__1",
+          "sense_number": "31",
+          "definition_fr": "(Pronominal) (Avec un adjectif ou avec un participe passé) Être."
+        },
+        {
+          "entry_id": "voir__verb__1",
+          "sense_id": "__ws_32_voir__verb__1",
+          "sense_number": "32",
+          "definition_fr": "(Pronominal) (Avec un infinitif) Construction pour faire du COD, du COI ou du quelqu’un en question le sujet. Note : La construction passive en français avec être ne peut faire que du COD le sujet."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_voir__verb__1",
+          "chinese_written_form": "看",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Percevoir l’image des objets par l’organe de la vue",
+          "mapped_sense_id": "__ws_1_voir__verb__1",
+          "structural_match_for_selected_sense": true
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "38aed8ffc4a51423c784d3652cd9bf8ae895d43dda678cb9438a6e35b5f6ea01"
+    },
+    {
+      "stable_lexeme_key": "vouloir|VER",
+      "lemma": "vouloir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1940.959,
+        "lexique_frequency": 5239.237,
+        "contextual_diversity": 97.50765
+      },
+      "proposed_primary": {
+        "entry_id": "vouloir__verb__1",
+        "sense_id": "__ws_1_vouloir__verb__1",
+        "definition_fr": "Avoir l’intention, la volonté de faire quelque chose, s’y déterminer.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_1_vouloir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Avoir l’intention, la volonté de faire quelque chose, s’y déterminer."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_2_vouloir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(En particulier) Avoir une volonté agissante, efficace."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_3_vouloir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Commander, exiger avec autorité."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_4_vouloir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Avoir autorité sur l’homme, en parlant des choses."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_5_vouloir__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Désirer ; souhaiter."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_6_vouloir__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Permettre ; consentir."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_7_vouloir__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Prétendre ; affirmer avec une grande insistance."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_8_vouloir__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Demander un prix d’une chose qu’on veut vendre."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_9_vouloir__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Sujet chose) Nécessiter, avoir besoin de."
+        },
+        {
+          "entry_id": "vouloir__verb__1",
+          "sense_id": "__ws_10_vouloir__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Sujet chose) En tournure négative, indique qu'une chose résiste à une volonté humaine."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_vouloir__verb__1",
+          "chinese_written_form": "要",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Avoir l’intention, la volonté de faire quelque chose, s’y déterminer",
+          "mapped_sense_id": "__ws_1_vouloir__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_vouloir__verb__1",
+          "chinese_written_form": "要",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Désirer, souhaiter",
+          "mapped_sense_id": "__ws_5_vouloir__verb__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "84d6a6d3a30c650a1b4c037b282a23e83c33e0b478cd951fb9c7be6a8e43daa0"
+    },
+    {
+      "stable_lexeme_key": "savoir|VER",
+      "lemma": "savoir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1693.8059,
+        "lexique_frequency": 4973.842,
+        "contextual_diversity": 97.78781
+      },
+      "proposed_primary": {
+        "entry_id": "savoir__verb__1",
+        "sense_id": "__ws_1_savoir__verb__1",
+        "definition_fr": "Appréhender par l’esprit ou la connaissance ; connaître de façon certaine.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_1_savoir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Appréhender par l’esprit ou la connaissance ; connaître de façon certaine."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_2_savoir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Avoir dans la mémoire."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_3_savoir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Posséder quelque science, quelque art, être instruit, habile en quelque profession, en quelque exercice."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_4_savoir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Absolument) Avoir l’esprit orné et rempli de choses utiles."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_5_savoir__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Être accoutumé ou exercé à une chose, la bien faire."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_6_savoir__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Avoir le pouvoir, la force, le moyen, l’adresse, l’habileté de faire quelque chose."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_7_savoir__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Pouvoir. — Note : Dans ce sens, il s’emploie surtout avec le conditionnel et avec la négation ne."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_8_savoir__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(Belgique) Pouvoir — Note : Dans le sens « avoir la capacité de ». Il peut être à l’indicatif, dans une phrase positive."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_9_savoir__verb__1",
+          "sense_number": "9",
+          "definition_fr": "Apprendre, être instruit ou être informé de quelque chose."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_10_savoir__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(En parlant d’une personne ou d’une chose) Être informé qu’une personne ou qu’une chose existe ou peut être trouvée."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_11_savoir__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Connaître, reconnaître, distinguer."
+        },
+        {
+          "entry_id": "savoir__verb__1",
+          "sense_id": "__ws_12_savoir__verb__1",
+          "sense_number": "12",
+          "definition_fr": "(Archaïsme) À savoir ; précède une explicitation par une énumération."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_savoir__verb__1",
+          "chinese_written_form": "知",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être informé d’un fait, appréhender par l’esprit",
+          "mapped_sense_id": "__ws_1_savoir__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_savoir__verb__1",
+          "chinese_written_form": "知道",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être informé d’un fait, appréhender par l’esprit",
+          "mapped_sense_id": "__ws_1_savoir__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_savoir__verb__1",
+          "chinese_written_form": "会",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Posséder quelque science, quelque art, être instruit, habile en quelque profession, en quelque exercice",
+          "mapped_sense_id": "__ws_3_savoir__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_savoir__verb__1",
+          "chinese_written_form": "知",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "3531b77bde4ae12092e336ca2a3478c5a7d8f53bddb525bfca1e01a7cc547031"
+    },
+    {
+      "stable_lexeme_key": "venir|VER",
+      "lemma": "venir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1546.968,
+        "lexique_frequency": 2424.339,
+        "contextual_diversity": 84.8714
+      },
+      "proposed_primary": {
+        "entry_id": "venir__verb__1",
+        "sense_id": "__ws_1_venir__verb__1",
+        "definition_fr": "Se rendre sur le lieu où se trouve celui qui parle ou dont on parle.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_1_venir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Se rendre sur le lieu où se trouve celui qui parle ou dont on parle."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_2_venir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "S’étendre jusqu’à un point précis, atteindre une limite."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_3_venir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Survenir, arriver, se produire inopinément ou fortuitement."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_4_venir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Se déplacer en sens inverse, quand celui qui parle invite un autre à l’accompagner."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_5_venir__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Parvenir à la connaissance de quelqu’un."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_6_venir__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Arriver par succession, échoir."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_7_venir__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Succéder."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_8_venir__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Provenir de ; trouver son origine dans."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_9_venir__verb__1",
+          "sense_number": "9",
+          "definition_fr": "Naître → voir venir au monde."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_10_venir__verb__1",
+          "sense_number": "10",
+          "definition_fr": "Pousser ; croître ; être produit."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_11_venir__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Devenir."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_12_venir__verb__1",
+          "sense_number": "12",
+          "definition_fr": "(Auxiliaire) Semi-auxiliaire du passé récent. → voir venir de."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_13_venir__verb__1",
+          "sense_number": "13",
+          "definition_fr": "(Impersonnel) Forme impersonnelle, voir aussi revenir."
+        },
+        {
+          "entry_id": "venir__verb__1",
+          "sense_id": "__ws_14_venir__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Anglicisme) Jouir."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "8a42204a5e67dbed6e35f68f428b5a22e41a470f559933555ce8fc76cce69294"
+    },
+    {
+      "stable_lexeme_key": "prendre|VER",
+      "lemma": "prendre",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1440.6035,
+        "lexique_frequency": 1894.187,
+        "contextual_diversity": 82.88579
+      },
+      "proposed_primary": {
+        "entry_id": "prendre__verb__1",
+        "sense_id": "__ws_1_prendre__verb__1",
+        "definition_fr": "Saisir, mettre en sa main.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_1_prendre__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Saisir, mettre en sa main."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_2_prendre__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Saisir une chose, l’enlever, la tirer à soi autrement qu’avec la main."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_3_prendre__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Saisir les choses avec leur gueule, leur bec, leurs griffes, etc., en parlant des animaux."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_4_prendre__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Mettre sur soi, en parlant des habits, des vêtements."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_5_prendre__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Vieilli) Commencer à porter."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_6_prendre__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Emporter avec soi certaines choses par besoin ou par précaution."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_7_prendre__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Emporter en cachette ou de force, ôter à quelqu’un ce qu’il possède, le lui dérober."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_8_prendre__verb__1",
+          "sense_number": "8",
+          "definition_fr": "S’emparer, se saisir par force d’une chose ou d’une personne."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_9_prendre__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Par extension) (Très familier) Dominer sexuellement."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_10_prendre__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Jeux) Enlever à l’adversaire."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_11_prendre__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Faire des levées d’hommes."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_12_prendre__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Arrêter quelqu’un pour le conduire en prison."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_13_prendre__verb__1",
+          "sense_number": "13",
+          "definition_fr": "Butiner à la guerre, y faire des prisonniers."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_14_prendre__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Militaire) Se rendre maître par la force des armes ou autrement, d’une place forte."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_15_prendre__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Chasse, Pêche) Attraper à la chasse ou à la pêche."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_16_prendre__verb__1",
+          "sense_number": "16",
+          "definition_fr": "Poursuivre et saisir un gibier, en parlant des animaux de chasse, des oiseaux de proie, des prédateurs."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_17_prendre__verb__1",
+          "sense_number": "17",
+          "definition_fr": "(Sens figuré) S’emparer de quelqu’un, gagner quelqu’un en s’attaquant à son esprit, à son cœur, à ses sens."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_18_prendre__verb__1",
+          "sense_number": "18",
+          "definition_fr": "Surprendre."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_19_prendre__verb__1",
+          "sense_number": "19",
+          "definition_fr": "Attaquer ; aborder."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_20_prendre__verb__1",
+          "sense_number": "20",
+          "definition_fr": "Manger, boire, avaler, absorber, en parlant des aliments, des boissons, des médicaments solides ou liquides."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_21_prendre__verb__1",
+          "sense_number": "21",
+          "definition_fr": "Faire usage pour sa santé, pour son agrément, etc."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_22_prendre__verb__1",
+          "sense_number": "22",
+          "definition_fr": "(Vieilli) Se faire contaminer par contagion, en parlant des maladies."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_23_prendre__verb__1",
+          "sense_number": "23",
+          "definition_fr": "Atteindre par surprise."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_24_prendre__verb__1",
+          "sense_number": "24",
+          "definition_fr": "Fixer sur le corps."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_25_prendre__verb__1",
+          "sense_number": "25",
+          "definition_fr": "Contracter ; adopter."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_26_prendre__verb__1",
+          "sense_number": "26",
+          "definition_fr": "Se donner, employer, en parlant de titres, de qualités, de noms."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_27_prendre__verb__1",
+          "sense_number": "27",
+          "definition_fr": "Acquérir, acheter."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_28_prendre__verb__1",
+          "sense_number": "28",
+          "definition_fr": "Demander, percevoir un prix pour quelque chose que l’on vend."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_29_prendre__verb__1",
+          "sense_number": "29",
+          "definition_fr": "Recevoir ; accepter."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_30_prendre__verb__1",
+          "sense_number": "30",
+          "definition_fr": "Bénéficier de."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_31_prendre__verb__1",
+          "sense_number": "31",
+          "definition_fr": "Emprunter, tirer de."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_32_prendre__verb__1",
+          "sense_number": "32",
+          "definition_fr": "(En particulier) (Famille) Recevoir des traits psychologiques ou physiques de son ascendance."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_33_prendre__verb__1",
+          "sense_number": "33",
+          "definition_fr": "Engager des personnes, ou s’engager avec elles, sous certaines conditions."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_34_prendre__verb__1",
+          "sense_number": "34",
+          "definition_fr": "Joindre quelqu’un en quelque endroit, pour se rendre ailleurs avec lui."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_35_prendre__verb__1",
+          "sense_number": "35",
+          "definition_fr": "Emmener avec soi."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_36_prendre__verb__1",
+          "sense_number": "36",
+          "definition_fr": "Recueillir, donner l’hospitalité."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_37_prendre__verb__1",
+          "sense_number": "37",
+          "definition_fr": "Ôter, retirer, retrancher une partie d’un tout."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_38_prendre__verb__1",
+          "sense_number": "38",
+          "definition_fr": "Retrancher de quelque chose pour subvenir à autre chose."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_39_prendre__verb__1",
+          "sense_number": "39",
+          "definition_fr": "Se charger d’une chose, entrer en possession, en jouissance d’une chose à certaines conditions."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_40_prendre__verb__1",
+          "sense_number": "40",
+          "definition_fr": "(Marine) Charger quelque chose, recevoir quelqu’un, à bord."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_41_prendre__verb__1",
+          "sense_number": "41",
+          "definition_fr": "Engager et conduire, en parlant d’une affaire."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_42_prendre__verb__1",
+          "sense_number": "42",
+          "definition_fr": "Choisir, préférer ou adopter de préférence ; se décider pour."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_43_prendre__verb__1",
+          "sense_number": "43",
+          "definition_fr": "Choisir une route, un chemin, s’y mettre en marche, en parlant particulièrement de ceux qui voyagent, qui cheminent."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_44_prendre__verb__1",
+          "sense_number": "44",
+          "definition_fr": "(Par extension) (Absolument) Choisir d’entrer dans un chemin quand on a le choix entre plusieurs."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_45_prendre__verb__1",
+          "sense_number": "45",
+          "definition_fr": "(Par extension) Utiliser un mode de locomotion qui se présente au choix."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_46_prendre__verb__1",
+          "sense_number": "46",
+          "definition_fr": "(En particulier) Couper, utiliser, façonner, de certaines façons, en parlant des étoffes, des viandes, et plus généralement ce que l’on coupe ou tranche avec art."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_47_prendre__verb__1",
+          "sense_number": "47",
+          "definition_fr": "(Sens figuré) Entendre, comprendre, concevoir, expliquer, interpréter, considérer d’une certaine manière."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_48_prendre__verb__1",
+          "sense_number": "48",
+          "definition_fr": "(Sens figuré) Adopter ou soutenir avec chaleur ou conviction."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_49_prendre__verb__1",
+          "sense_number": "49",
+          "definition_fr": "Éprouver, en parlant des sentiments, des passions, des affections et des répugnances."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_50_prendre__verb__1",
+          "sense_number": "50",
+          "definition_fr": "Obtenir, recueillir."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_51_prendre__verb__1",
+          "sense_number": "51",
+          "definition_fr": "Fixer, en parlant d’une date."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_52_prendre__verb__1",
+          "sense_number": "52",
+          "definition_fr": "Déterminer par la mesure, les dimensions, la grandeur d’une chose."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_53_prendre__verb__1",
+          "sense_number": "53",
+          "definition_fr": "Rédiger, relever, fixer sur le papier."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_54_prendre__verb__1",
+          "sense_number": "54",
+          "definition_fr": "(Par ellipse) Prendre du temps ; durer."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_55_prendre__verb__1",
+          "sense_number": "55",
+          "definition_fr": "(Intransitif) S’enraciner, pousser, croître."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_56_prendre__verb__1",
+          "sense_number": "56",
+          "definition_fr": "(Intransitif) (Sens figuré) Réussir, trouver son lectorat, son auditoire, en parlant d’un ouvrage de l’esprit, d’une proposition, d’un compliment, etc."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_57_prendre__verb__1",
+          "sense_number": "57",
+          "definition_fr": "(Intransitif) Adhérer, s’attacher, produire son effet."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_58_prendre__verb__1",
+          "sense_number": "58",
+          "definition_fr": "(Intransitif) Faire une impression trop forte à la gorge, au nez."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_59_prendre__verb__1",
+          "sense_number": "59",
+          "definition_fr": "(Intransitif) Se geler ; se coaguler ; s’épaissir ; se solidifier."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_60_prendre__verb__1",
+          "sense_number": "60",
+          "definition_fr": "(Intransitif) Contribuer à un bon ou à un mauvais résultat. → voir bien en prendre et mal en prendre"
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_61_prendre__verb__1",
+          "sense_number": "61",
+          "definition_fr": "Atteindre une année de plus en âge."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_62_prendre__verb__1",
+          "sense_number": "62",
+          "definition_fr": "(Intransitif) Être atteint."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_63_prendre__verb__1",
+          "sense_number": "63",
+          "definition_fr": "Subir."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_64_prendre__verb__1",
+          "sense_number": "64",
+          "definition_fr": "Affecter, entamer, gagner sur quelque chose."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_65_prendre__verb__1",
+          "sense_number": "65",
+          "definition_fr": "(Pronominal) S’attacher, s’accrocher."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_66_prendre__verb__1",
+          "sense_number": "66",
+          "definition_fr": "(Pronominal) Concevoir un sentiment pour quelqu’un."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_67_prendre__verb__1",
+          "sense_number": "67",
+          "definition_fr": "(Pronominal) Provoquer, s’attaquer à quelqu’un."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_68_prendre__verb__1",
+          "sense_number": "68",
+          "definition_fr": "(Pronominal) Se contracter, en parlant de maladies."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_69_prendre__verb__1",
+          "sense_number": "69",
+          "definition_fr": "(Pronominal) Se figer, se solidifier."
+        },
+        {
+          "entry_id": "prendre__verb__1",
+          "sense_id": "__ws_70_prendre__verb__1",
+          "sense_number": "70",
+          "definition_fr": "Émouvoir, provoquer une émotion."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "23f0274b4d9e2cf044df49d57ed4d876daad5e4f3768f620915385ddfa42209e"
+    },
+    {
+      "stable_lexeme_key": "devoir|VER",
+      "lemma": "devoir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1433.0362,
+        "lexique_frequency": 3830.592,
+        "contextual_diversity": 92.18157
+      },
+      "proposed_primary": {
+        "entry_id": "devoir__verb__1",
+        "sense_id": "__ws_1_devoir__verb__1",
+        "definition_fr": "Avoir à payer une somme d’argent, à rendre ou à donner quelque chose que ce soit.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_1_devoir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Avoir à payer une somme d’argent, à rendre ou à donner quelque chose que ce soit."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_2_devoir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Auxiliaire) (Suivi de l’infinitif) Être obligé à quelque chose par la morale, par la loi, par sa condition, par l’honneur, par la bienséance, etc."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_3_devoir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Auxiliaire) Être dans la nécessité de. — Note : Il est alors suivi d'un infinitif."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_4_devoir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Être redevable à, tenir de."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_5_devoir__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Auxiliaire) Il se dit aussi pour marquer qu’il y a une espèce de justice, de raison, de nécessité, etc., qu’une chose soit."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_6_devoir__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Être inévitable."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_7_devoir__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Auxiliaire) Suivi d’un infinitif, il joue aussi en quelque sorte le rôle d’un auxiliaire et se dit de ce qui paraît vraisemblable, probable, plus ou moins certain."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_8_devoir__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(Auxiliaire) Il se dit de ce qu’on croit, ou qu’on présume, ou qu’on suppose qui arrivera."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_9_devoir__verb__1",
+          "sense_number": "9",
+          "definition_fr": "À l’imparfait du subjonctif (dusse), et en tête de la phrase, il s’emploie dans le sens de quand même."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_10_devoir__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Auxiliaire) Il se dit aussi pour marquer l’intention qu’on a de faire quelque chose."
+        },
+        {
+          "entry_id": "devoir__verb__1",
+          "sense_id": "__ws_11_devoir__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Pronominal) Se dit spécialement pour être dans l’obligation morale de se donner, de se dévouer à sa famille, à sa patrie, à ses amis."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_devoir__verb__1",
+          "chinese_written_form": "欠",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Avoir à payer une somme d’argent, à rendre ou à donner quelque chose que ce soit",
+          "mapped_sense_id": "__ws_1_devoir__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_devoir__verb__1",
+          "chinese_written_form": "必须",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être obligé à quelque chose...",
+          "mapped_sense_id": "__ws_2_devoir__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_devoir__verb__1",
+          "chinese_written_form": "必得",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être obligé à quelque chose...",
+          "mapped_sense_id": "__ws_2_devoir__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_devoir__verb__1",
+          "chinese_written_form": "务必",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être obligé à quelque chose...",
+          "mapped_sense_id": "__ws_2_devoir__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_5_devoir__verb__1",
+          "chinese_written_form": "非得",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être obligé à quelque chose...",
+          "mapped_sense_id": "__ws_2_devoir__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_6_devoir__verb__1",
+          "chinese_written_form": "一定",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être obligé à quelque chose...",
+          "mapped_sense_id": "__ws_2_devoir__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_7_devoir__verb__1",
+          "chinese_written_form": "得",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être obligé à quelque chose...",
+          "mapped_sense_id": "__ws_2_devoir__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_8_devoir__verb__1",
+          "chinese_written_form": "只好",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être obligé à quelque chose...",
+          "mapped_sense_id": "__ws_2_devoir__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_9_devoir__verb__1",
+          "chinese_written_form": "不得不",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Être obligé à quelque chose...",
+          "mapped_sense_id": "__ws_2_devoir__verb__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "921bda26624ce268bee3af748be14b70bf00f326b7d8b883c831014cb81afc02"
+    },
+    {
+      "stable_lexeme_key": "passer|VER",
+      "lemma": "passer",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1363.3642,
+        "lexique_frequency": 1522.114,
+        "contextual_diversity": 83.20882
+      },
+      "proposed_primary": {
+        "entry_id": "passer__verb__1",
+        "sense_id": "__ws_1_passer__verb__1",
+        "definition_fr": "Aller d’un lieu à un autre, traverser un espace.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_1_passer__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Aller d’un lieu à un autre, traverser un espace."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_2_passer__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Changer de nature, de qualité, d’état."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_3_passer__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Traverser en subissant."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_4_passer__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Aller chez quelqu’un, visiter, rendre visite."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_5_passer__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Mourir, expirer."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_6_passer__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Traverser l’esprit."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_7_passer__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Être examiné ; être évalué ; être jugé."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_8_passer__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Être élu, être voté."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_9_passer__verb__1",
+          "sense_number": "9",
+          "definition_fr": "Être reçu, être admis à un emploi, un grade, à un examen, un test, un cours."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_10_passer__verb__1",
+          "sense_number": "10",
+          "definition_fr": "Être reçu par l’usage ; avoir cours."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_11_passer__verb__1",
+          "sense_number": "11",
+          "definition_fr": "S’introduire ou se glisser, en parlant des choses."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_12_passer__verb__1",
+          "sense_number": "12",
+          "definition_fr": "(Transitif) Enfiler sur le corps, en parlant d'un vêtement."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_13_passer__verb__1",
+          "sense_number": "13",
+          "definition_fr": "Être supportable, suffisant."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_14_passer__verb__1",
+          "sense_number": "14",
+          "definition_fr": "Faire une transition d’un sujet à l’autre."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_15_passer__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Jeux, Poker) Ne pas jouer, lorsque son tour vient."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_16_passer__verb__1",
+          "sense_number": "16",
+          "definition_fr": "Déborder la place où elles devraient être, en parlant des parties de vêtements."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_17_passer__verb__1",
+          "sense_number": "17",
+          "definition_fr": "Changer de main ; transmettre de l’un à l’autre, en parlant des choses."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_18_passer__verb__1",
+          "sense_number": "18",
+          "definition_fr": "Être facile à manger, à digérer."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_19_passer__verb__1",
+          "sense_number": "19",
+          "definition_fr": "S’écouler, ne pas demeurer dans un état permanent."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_20_passer__verb__1",
+          "sense_number": "20",
+          "definition_fr": "Finir, cesser."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_21_passer__verb__1",
+          "sense_number": "21",
+          "definition_fr": "(Théâtre, Cinéma) Être joué."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_22_passer__verb__1",
+          "sense_number": "22",
+          "definition_fr": "(Éducation, Jeux vidéo) Monter un niveau, après avoir terminé le précédent."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_23_passer__verb__1",
+          "sense_number": "23",
+          "definition_fr": "(Transitif) Traverser."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_24_passer__verb__1",
+          "sense_number": "24",
+          "definition_fr": "(Transitif) Transporter d’un lieu à un autre."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_25_passer__verb__1",
+          "sense_number": "25",
+          "definition_fr": "(Transitif) Faire traverser."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_26_passer__verb__1",
+          "sense_number": "26",
+          "definition_fr": "(Transitif) Tamiser, filtrer."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_27_passer__verb__1",
+          "sense_number": "27",
+          "definition_fr": "(Transitif) (Vieilli) Tamiser, en parlant de substances en poudre ou en grains."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_28_passer__verb__1",
+          "sense_number": "28",
+          "definition_fr": "(Transitif) (Médecine) Excréter."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_29_passer__verb__1",
+          "sense_number": "29",
+          "definition_fr": "(Transitif) Transmettre, communiquer."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_30_passer__verb__1",
+          "sense_number": "30",
+          "definition_fr": "(Commerce) Transmettre la propriété d’un billet, une lettre de change, à l’ordre de quelqu’un, par un endossement."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_31_passer__verb__1",
+          "sense_number": "31",
+          "definition_fr": "(Transitif) Vendre, en parlant d’objets."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_32_passer__verb__1",
+          "sense_number": "32",
+          "definition_fr": "(Transitif) Aller au-delà ; excéder ; dépasser."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_33_passer__verb__1",
+          "sense_number": "33",
+          "definition_fr": "Être au-dessus des forces du corps ou des facultés de l’esprit, dépasser."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_34_passer__verb__1",
+          "sense_number": "34",
+          "definition_fr": "Devancer, dépasser."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_35_passer__verb__1",
+          "sense_number": "35",
+          "definition_fr": "Surmonter en mérite, valoir mieux, de quelque manière que ce soit."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_36_passer__verb__1",
+          "sense_number": "36",
+          "definition_fr": "Faire mouvoir, faire glisser une chose sur une autre."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_37_passer__verb__1",
+          "sense_number": "37",
+          "definition_fr": "(Transitif) Exposer ; soumettre à l’action de."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_38_passer__verb__1",
+          "sense_number": "38",
+          "definition_fr": "(Transitif) (Cuisine) Faire cuire plus ou moins rapidement."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_39_passer__verb__1",
+          "sense_number": "39",
+          "definition_fr": "(Transitif) Toucher, mentionner."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_40_passer__verb__1",
+          "sense_number": "40",
+          "definition_fr": "(Transitif) Omettre quelque chose, ou ne pas en parler."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_41_passer__verb__1",
+          "sense_number": "41",
+          "definition_fr": "(Transitif) Accorder, pardonner, consentir."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_42_passer__verb__1",
+          "sense_number": "42",
+          "definition_fr": "(Transitif) Faire par-devant notaire, en parlant des actes."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_43_passer__verb__1",
+          "sense_number": "43",
+          "definition_fr": "(Transitif) (Comptabilité) Enregistrer."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_44_passer__verb__1",
+          "sense_number": "44",
+          "definition_fr": "(Transitif) Transférer d’un registre ou d’un chapitre à un autre."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_45_passer__verb__1",
+          "sense_number": "45",
+          "definition_fr": "(Transitif) Consumer, employer, en parlant du temps."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_46_passer__verb__1",
+          "sense_number": "46",
+          "definition_fr": "(Transitif) Transférer au téléphone, mettre en relation."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_47_passer__verb__1",
+          "sense_number": "47",
+          "definition_fr": "(Transitif) Réussir une année scolaire, un examen."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_48_passer__verb__1",
+          "sense_number": "48",
+          "definition_fr": "(Pronominal) S’écouler, en parlant du temps."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_49_passer__verb__1",
+          "sense_number": "49",
+          "definition_fr": "(Pronominal) (Familier) Se terminer."
+        },
+        {
+          "entry_id": "passer__verb__1",
+          "sense_id": "__ws_50_passer__verb__1",
+          "sense_number": "50",
+          "definition_fr": "(Transitude) Dans le cas d'une personne trans, passer pour une personne cis."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_passer__verb__1",
+          "chinese_written_form": "过",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "S’écouler",
+          "mapped_sense_id": "__ws_19_passer__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_passer__verb__1",
+          "chinese_written_form": "升級",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Éducation) (Jeux vidéo) Monter un niveau",
+          "mapped_sense_id": "__ws_22_passer__verb__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "9c84fca8338f1859fd3e3a84a0c077714a628496bb6d4df70d9be0f630b2c030"
+    },
+    {
+      "stable_lexeme_key": "trouver|VER",
+      "lemma": "trouver",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1239.4098,
+        "lexique_frequency": 1476.832,
+        "contextual_diversity": 74.109
+      },
+      "proposed_primary": {
+        "entry_id": "trouver__verb__1",
+        "sense_id": "__ws_1_trouver__verb__1",
+        "definition_fr": "Rencontrer la personne ou la chose que l’on cherche.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_1_trouver__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Rencontrer la personne ou la chose que l’on cherche."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_2_trouver__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Rencontrer par hasard."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_3_trouver__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Parvenir à l'état ou à la situation que l'on souhaite."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_4_trouver__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Surprendre."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_5_trouver__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Découvrir, inventer par un effort intellectuel."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_6_trouver__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Remarquer ou reconnaître en quelqu’un ou en quelque chose une qualité bonne ou mauvaise."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_7_trouver__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Estimer ; juger."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_8_trouver__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Se donner le moyen, obtenir l’occasion de."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_9_trouver__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Pronominal) Se rencontrer en un lieu, y être, en parlant des personnes et des choses."
+        },
+        {
+          "entry_id": "trouver__verb__1",
+          "sense_id": "__ws_10_trouver__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Pronominal) (Sens figuré) Être en situation de ; être en état de ; en parlant d’une personne ou d’une chose."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_trouver__verb__1",
+          "chinese_written_form": "找到",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Rencontrer la personne ou la chose que l’on cherche",
+          "mapped_sense_id": "__ws_1_trouver__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_trouver__verb__1",
+          "chinese_written_form": "在",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Pronominal) Se rencontrer en un lieu, y être",
+          "mapped_sense_id": "__ws_9_trouver__verb__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "2502c08a669a483ee6bb7c054712b7da02e05e3e95dd870bfc7bdd3cb3c8020b"
+    },
+    {
+      "stable_lexeme_key": "parler|VER",
+      "lemma": "parler",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1230.1596,
+        "lexique_frequency": 2026.244,
+        "contextual_diversity": 88.40325
+      },
+      "proposed_primary": {
+        "entry_id": "parler__verb__1",
+        "sense_id": "__ws_1_parler__verb__1",
+        "definition_fr": "User de la faculté du langage ; proférer, prononcer, articuler des mots.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_1_parler__verb__1",
+          "sense_number": "1",
+          "definition_fr": "User de la faculté du langage ; proférer, prononcer, articuler des mots."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_2_parler__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Par analogie) Imiter le langage de l’homme, en parlant de certains oiseaux comme les perroquets, les sansonnets, les geais, les pies, etc."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_3_parler__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Exprimer sa pensée en articulant les mots d’une langue."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_4_parler__verb__1",
+          "sense_number": "4",
+          "definition_fr": "S’exprimer sur certains sujets."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_5_parler__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Adresser la parole, avoir un entretien, converser."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_6_parler__verb__1",
+          "sense_number": "6",
+          "definition_fr": "S’entretenir de."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_7_parler__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Absolument) Révéler, dévoiler quelque chose."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_8_parler__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Expliquer ses sentiments, sa pensée, déclarer son intention, sa volonté."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_9_parler__verb__1",
+          "sense_number": "9",
+          "definition_fr": "Intervenir, prendre la parole pour ou contre quelqu’un ou quelque chose."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_10_parler__verb__1",
+          "sense_number": "10",
+          "definition_fr": "Prononcer un discours, prendre la parole en public."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_11_parler__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Par extension) Expliquer sa pensée par écrit."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_12_parler__verb__1",
+          "sense_number": "12",
+          "definition_fr": "(Sens figuré) Manifester ses sentiments, ses pensées par un autre moyen que celui de la parole."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_13_parler__verb__1",
+          "sense_number": "13",
+          "definition_fr": "(Sens figuré) Provoquer des émotions, des sentiments en parlant des choses qui ont ou qui semblent avoir une sorte de langage."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_14_parler__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Sens figuré) (Par analogie) Démontrer ou confirmer ses qualités."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_15_parler__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Transitif) Se servir d’un langage."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_16_parler__verb__1",
+          "sense_number": "16",
+          "definition_fr": "(Transitif) S’entretenir de quelque chose, en raisonner, en discourir. Note : dans ce cas on ne met jamais l’article devant le nom."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_17_parler__verb__1",
+          "sense_number": "17",
+          "definition_fr": "(Transitif) (Péjoratif) Être sceptique sur le sujet. Note : forme transitive de tu parles."
+        },
+        {
+          "entry_id": "parler__verb__1",
+          "sense_id": "__ws_18_parler__verb__1",
+          "sense_number": "18",
+          "definition_fr": "(Psychologie) Mettre en mots ou en récit un psychotraumatisme de façon à en alerter autrui et/ou à en réduire les séquelles."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_10_parler__verb__1",
+          "chinese_written_form": "说语",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_parler__verb__1",
+          "chinese_written_form": "讲话",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Proférer, prononcer, articuler des mots",
+          "mapped_sense_id": "__ws_1_parler__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_parler__verb__1",
+          "chinese_written_form": "说话",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Proférer, prononcer, articuler des mots",
+          "mapped_sense_id": "__ws_1_parler__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_parler__verb__1",
+          "chinese_written_form": "讲",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Proférer, prononcer, articuler des mots",
+          "mapped_sense_id": "__ws_1_parler__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_parler__verb__1",
+          "chinese_written_form": "说",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Proférer, prononcer, articuler des mots",
+          "mapped_sense_id": "__ws_1_parler__verb__1",
+          "structural_match_for_selected_sense": true
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_5_parler__verb__1",
+          "chinese_written_form": "说话",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Adresser la parole, avoir un entretien, converser",
+          "mapped_sense_id": "__ws_5_parler__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_6_parler__verb__1",
+          "chinese_written_form": "说",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Adresser la parole, avoir un entretien, converser",
+          "mapped_sense_id": "__ws_5_parler__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_7_parler__verb__1",
+          "chinese_written_form": "讲",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Se servir d’un langage",
+          "mapped_sense_id": "__ws_15_parler__verb__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_8_parler__verb__1",
+          "chinese_written_form": "说",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_9_parler__verb__1",
+          "chinese_written_form": "说话",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "source_friendly",
+      "input_hash": "61d48af8a8d08dce45bdef59acd0d8f3d2b3e40bf45ec65fbaa4f5a1b00df901"
+    },
+    {
+      "stable_lexeme_key": "falloir|VER",
+      "lemma": "falloir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1196.2639,
+        "lexique_frequency": 1197.82,
+        "contextual_diversity": 84.33558
+      },
+      "proposed_primary": {
+        "entry_id": "falloir__verb__1",
+        "sense_id": "__ws_1_falloir__verb__1",
+        "definition_fr": "Être de nécessité, de devoir, d’obligation, de bienséance.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "falloir__verb__1",
+          "sense_id": "__ws_1_falloir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Être de nécessité, de devoir, d’obligation, de bienséance."
+        },
+        {
+          "entry_id": "falloir__verb__1",
+          "sense_id": "__ws_2_falloir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Être ce dont on a besoin."
+        },
+        {
+          "entry_id": "falloir__verb__1",
+          "sense_id": "__ws_3_falloir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Ce que l’on doit donner d’argent à quelqu’un pour un prix, pour un salaire."
+        },
+        {
+          "entry_id": "falloir__verb__1",
+          "sense_id": "__ws_4_falloir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Manquer. Note : Il se conjugue avec l’auxiliaire être."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "cdc6bcea54755212b46dcce60f89bc58bbf5f8c0f20f554b089d26fb16db3bbb"
+    },
+    {
+      "stable_lexeme_key": "mettre|VER",
+      "lemma": "mettre",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 1179.717,
+        "lexique_frequency": 944.31,
+        "contextual_diversity": 66.47887
+      },
+      "proposed_primary": {
+        "entry_id": "mettre__verb__1",
+        "sense_id": "__ws_1_mettre__verb__1",
+        "definition_fr": "Placer une personne, ou un animal, ou une chose dans un lieu déterminé.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_1_mettre__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Placer une personne, ou un animal, ou une chose dans un lieu déterminé."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_2_mettre__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Par ellipse) (Vulgaire) Introduire un pénis lors d’un rapport sexuel."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_3_mettre__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Sens figuré) Infliger quelque chose à quelqu’un."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_4_mettre__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Sens figuré) Placer une personne, ou un animal, ou une chose dans une situation."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_5_mettre__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Revêtir, enfiler sur soi, en parlant de ce qui sert à l’habillement, à la parure."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_6_mettre__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Quelquefois) Porter habituellement sur soi."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_7_mettre__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Cuisine) Accommoder, apprêter d’une certaine façon, en parlant des choses qui se mangent."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_8_mettre__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Placer ou employer d’une certaine manière, en parlant de l’argent qu’on possède."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_9_mettre__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Agriculture) Ensemencer, planter, employer d’une certaine manière, en parlant des terres."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_10_mettre__verb__1",
+          "sense_number": "10",
+          "definition_fr": "Écrire sur le papier, dans un livre."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_11_mettre__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Au sens physique ou moral) Faire passer d’un état à un autre, en parlant des personnes et des choses — Note : Dans cette acception, le complément est souvent précédé de la préposition en."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_12_mettre__verb__1",
+          "sense_number": "12",
+          "definition_fr": "(Quelquefois) Ajouter à quelque chose une partie qui y manque."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_13_mettre__verb__1",
+          "sense_number": "13",
+          "definition_fr": "(Par extension) Action, pour un marchand, d’ajouter de la marchandise dans la partie destinée à un client."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_14_mettre__verb__1",
+          "sense_number": "14",
+          "definition_fr": "Employer ses qualités et ses dispositions morales, les manifester dans ses actions, dans ses discours, dans ses ouvrages."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_15_mettre__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Absolument) Miser."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_16_mettre__verb__1",
+          "sense_number": "16",
+          "definition_fr": "(Familier) Admettre, supposer. — Note : Il est alors généralement suivi de que et d’un verbe conjugué à l’indicatif ou au subjonctif."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_17_mettre__verb__1",
+          "sense_number": "17",
+          "definition_fr": "(Auxiliaire) À la forme simple, peut être auxiliaire de mode factitif et se construire avec un infinitif et une préposition pour signifier : faire consister, faire exister. Le sujet du verbe à l’infinitif peut être exprimé dans la phrase ou être absent de la phrase. De même, le complément d’objet du verbe à l’infinitif n’est pas toujours exprimé."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_18_mettre__verb__1",
+          "sense_number": "18",
+          "definition_fr": "(Auxiliaire) À la forme pronominale, peut être auxiliaire de mode inchoatif. Il est alors pronominal et suivi de la préposition à et d’un verbe à l’infinitif. Il signifie : commencer."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_19_mettre__verb__1",
+          "sense_number": "19",
+          "definition_fr": "Temps nécessaire."
+        },
+        {
+          "entry_id": "mettre__verb__1",
+          "sense_id": "__ws_20_mettre__verb__1",
+          "sense_number": "20",
+          "definition_fr": "Déposer quelqu’un, au terme d’un déplacement dans un véhicule."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "3a8971b858ede6761b3b43e548dce1687032375da2a859128f1156b1adc9dda1"
+    }
+  ],
+  "artifact_hash": "a8432cfee7a3f917bb10422396fc683e8796e2608c6ab752c7ef0e0fee09a514"
+}

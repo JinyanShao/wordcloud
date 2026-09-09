@@ -117,8 +117,15 @@
         "sense_id": "__ws_1_grand__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "par analogie"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|grandeur|NOM|grand|ADJ",
@@ -184,7 +191,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "a61f4af97834bf05408ccdadcddcefce1a63b61d9ebd2207304aa5d51f3b60c2"
+      "input_hash": "bf29e2d0a281010cc92d135c5c9c723dddabf52f27c43dcb935dbba8ecdd5ff8"
     },
     {
       "stable_lexeme_key": "petit|ADJ",
@@ -319,8 +326,13 @@
         "sense_id": "__ws_1_petit__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|petitesse|NOM|petit|ADJ",
@@ -362,7 +374,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "453e83b0f13d227dd2072e15ad81f8637120cc0f3520845df7a62a1c496d1672"
+      "input_hash": "80919cc15aaf29829a0b3547f2af1ca9e1d5690f1128c33449489edde69db8de"
     },
     {
       "stable_lexeme_key": "bon|ADJ",
@@ -523,8 +535,13 @@
         "sense_id": "__ws_1_bon__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|bonté|NOM|bon|ADJ",
@@ -554,7 +571,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "c928f1b14775481ac15856d88467c0dd292a7e594a3a0f5501016e96084c4187"
+      "input_hash": "fe9229f448ac1e95c249be4f79f65549f46fb83a05cbf89b98df04b6606071a5"
     },
     {
       "stable_lexeme_key": "nouveau|ADJ",
@@ -679,8 +696,15 @@
         "sense_id": "__ws_1_nouveau__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "objectivement"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|nouveauté|NOM|nouveau|ADJ",
@@ -722,7 +746,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "7d442168cd9f05f6592cf3327b8b755c9491d7ba99349a22c4fae3f86804623a"
+      "input_hash": "c06e10545e1c3de92389a780664d08f3fb09966c9bf85eaeceae6f1206e58ec9"
     },
     {
       "stable_lexeme_key": "jeune|ADJ",
@@ -833,8 +857,13 @@
         "sense_id": "__ws_1_jeune__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|jeunesse|NOM|jeune|ADJ",
@@ -864,7 +893,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "683e1378efb6e34520ad7ff94868cd5efdbbcd50e83d66c7f7778ffc43618eb4"
+      "input_hash": "6cf31ce33d4d2e75b373eb95b1e8c836b96f6948699a7d26358af9203288e6cc"
     },
     {
       "stable_lexeme_key": "seul|ADJ",
@@ -942,8 +971,13 @@
         "sense_id": "__ws_1_seul__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|seul|ADJ|solitaire|NOM",
@@ -985,7 +1019,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "36ee7f3a38dcb1c4117ab1f96c09841bcbedf23b25610c3a17c90862f64e3313"
+      "input_hash": "9209c0c1a248891a67276ac80c4a817aaaa6de59cf948e9a6d903fb0348f6bf7"
     },
     {
       "stable_lexeme_key": "français|ADJ",
@@ -1029,12 +1063,17 @@
         "sense_id": "__ws_1_français__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "26ff84db4ffe2813c2ec3aa1bcbf9cdaef321356b08828f0e49a4a30b38df088"
+      "input_hash": "f4a4d22c0ab559bbd52f07e551848f3e57436f817b0dcaf477351759ad379b68"
     },
     {
       "stable_lexeme_key": "beau|ADJ",
@@ -1131,8 +1170,13 @@
         "sense_id": "__ws_1_beau__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|beauté|NOM|beau|ADJ",
@@ -1222,7 +1266,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "92838c906b34d673db41e0d3fadcd4840111d69e21701cc15ea8b18b4a1c4828"
+      "input_hash": "038a3ead3e978ace318cba56982d6ea05b05bff7be15f5595c6c37468667f030"
     },
     {
       "stable_lexeme_key": "dernier|ADJ",
@@ -1325,8 +1369,13 @@
         "sense_id": "__ws_1_dernier__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -1367,7 +1416,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "50ccd6906c7248a35505c0c83d76c27af78dde9b47efd5522c81caf37b16398a"
+      "input_hash": "b3fa4c3e1dfd0485511188e2f0f7186e934803a35cfda03f8469708de34bb092"
     },
     {
       "stable_lexeme_key": "sûr|ADJ",
@@ -1471,8 +1520,13 @@
         "sense_id": "__ws_1_sûr__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|assurer|VER|sûr|ADJ",
@@ -1525,7 +1579,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "7c1682b6a84342d971f48b2bbd41752a63b8e48b6d06ee796410ae03fc6f376f"
+      "input_hash": "a44d81728891389917b43717b3ce154233d7fd0158489082de0f29d80997a317"
     },
     {
       "stable_lexeme_key": "vieux|ADJ",
@@ -1676,8 +1730,13 @@
         "sense_id": "__ws_1_vieux__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|vieillesse|NOM|vieux|ADJ",
@@ -1694,7 +1753,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "11078c2f7b49b7d0d3689f918010f6968c3d3c98d6490618fc54dd5239006821"
+      "input_hash": "288586d0a1e47e2f874899144cdf2f14cfa2e301a052a060a461942422626e83"
     },
     {
       "stable_lexeme_key": "vrai|ADJ",
@@ -1840,8 +1899,13 @@
         "sense_id": "__ws_1_vrai__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|vrai|ADJ|vérifier|VER",
@@ -1883,7 +1947,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "0cbd2aa8706a8c11fe61fb0d15b5e4ab54e5546f89f9c23358ec8b879ed41ea1"
+      "input_hash": "5b6819e31bdec15fd767f0a5af60f5423d3ef7eaae9d09eb382be9d51a4230d1"
     },
     {
       "stable_lexeme_key": "aujourd'hui|ADV",
@@ -1939,8 +2003,13 @@
         "sense_id": "__ws_1_aujourd’hui__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -2005,7 +2074,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "45ed1cb7eb3efb8d95d71cbc0d863327e454bc7a56000b2ebef659cb43885323"
+      "input_hash": "de9a7c57542d32b88b859136045422c3f3848f4b2d022052eae7c747d64a4a43"
     },
     {
       "stable_lexeme_key": "près|ADV",
@@ -2071,12 +2140,17 @@
         "sense_id": "__ws_1_près__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "0d157971fdc4371c2b03ea342eda10c210e5b4fe987e6e2b07c4dc439bec762e"
+      "input_hash": "c141b4e73e5fadf7ddbbdee83492a8aec0ba9905c3de9bc3a94f2bd1fdca852e"
     },
     {
       "stable_lexeme_key": "peut-être|ADV",
@@ -2120,8 +2194,13 @@
         "sense_id": "__ws_1_peut-être__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -2222,7 +2301,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "a3c5dc08f689d2f18108c3b3c32c020216c53b6591ff3634f3ac9007e7110bf0"
+      "input_hash": "fc647b2982a5d2c600d095d8428e665d4d075c421190934e9f61e79345ad2449"
     },
     {
       "stable_lexeme_key": "mieux|ADV",
@@ -2277,12 +2356,17 @@
         "sense_id": "__ws_1_mieux__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "9055de58c875ea3953e489fa636c37ad6c5f8f5aacb74bac9018277466c90089"
+      "input_hash": "c49db921c00a52bfd0662402a922105bfed5b9b15f83573c26f46f9cb634f9fe"
     },
     {
       "stable_lexeme_key": "surtout|ADV",
@@ -2314,12 +2398,17 @@
         "sense_id": "__ws_1_surtout__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "5aeca78af4360278a29c22d52c584b293e5696d2307f53d15b0c9ec2a97e5c4c"
+      "input_hash": "3ebeef5a94f907934de57cd46e0823aa61cb479bdcb3eb32331520b13d581ad6"
     },
     {
       "stable_lexeme_key": "loin|ADV",
@@ -2397,8 +2486,13 @@
         "sense_id": "__ws_1_loin__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|lointain|ADJ|loin|ADV",
@@ -2415,7 +2509,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "f3d1b8e414d267dc1dbac26525b55b2a7538093dab2a888eaf75e27e0a392d7a"
+      "input_hash": "8ec7db9fbccb645559f2f8e7984d3a9fa31139577b117701c4880e01814c4fb3"
     },
     {
       "stable_lexeme_key": "d'abord|ADV",
@@ -2510,15 +2604,20 @@
       ],
       "proposed_primary_learner_sense": {
         "entry_id": "d’abord__adv__1",
-        "sense_id": "__ws_1_d’abord__adv__1"
+        "sense_id": "__ws_2_d’abord__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "10949cbf5a7620c122f30b91019185b816a1314280586aecaa2877bb6dd6fe8d"
+      "input_hash": "39253f18da721516e38d36202089bdac4ffa5350b85c285a11ad57fecf33d389"
     },
     {
       "stable_lexeme_key": "an|NOM",
@@ -2595,8 +2694,13 @@
         "sense_id": "__ws_1_an__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|annuel|ADJ|an|NOM",
@@ -2638,7 +2742,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "8076b705b14ec282f8abb9ca290bda6289abe6d35880b958088e7275762d3e94"
+      "input_hash": "83ca5966bededa8c9873f3cdaf7d2f2981c8eb060a0f71e70281a78db28b3825"
     },
     {
       "stable_lexeme_key": "homme|NOM",
@@ -2749,12 +2853,20 @@
         }
       ],
       "proposed_primary_learner_sense": {
-        "entry_id": "Homme__nom__1",
-        "sense_id": "__ws_1_Homme__nom__1"
+        "entry_id": "homme__nom__1",
+        "sense_id": "__ws_1_homme__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "anthropologie",
+          "genres humains et identités de genre"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|homme|NOM|humain|ADJ",
@@ -2805,9 +2917,46 @@
           }
         }
       ],
-      "selected_sense_chinese_candidates": [],
-      "candidate_review_bucket": "no_candidate",
-      "input_hash": "46f72e795fb61f12e1c92d1a6350333d708650445d76b994a57a93d87a54cca0"
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_homme__nom__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "男人",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Être humain adulte de genre ou sexe masculin",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_homme__nom__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "男的",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Être humain adulte de genre ou sexe masculin",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_homme__nom__1",
+          "candidate_class": "entry_ambiguous_candidate",
+          "chinese_written_form": "人",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Être humain du genre Homo",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "a76ad8ffef67387e6611928f4543d7a2181bca524469e6b55385be1597266765"
     },
     {
       "stable_lexeme_key": "jour|NOM",
@@ -3036,8 +3185,13 @@
         "sense_id": "__ws_1_jour__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|diurne|ADJ|jour|NOM",
@@ -3115,7 +3269,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "2f839cfdde343f463a3e5d7bfb80c03558710de6de2ad09ad46d5f18ba51b640"
+      "input_hash": "33cc5f6510ad73525e93b7fd3e723f0cb53715da14d9f7042af8676f202f929e"
     },
     {
       "stable_lexeme_key": "femme|NOM",
@@ -3195,8 +3349,13 @@
         "sense_id": "__ws_1_femme__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|femme|NOM|féminin|ADJ",
@@ -3250,7 +3409,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "d9d8b3a3c6820660dfd4b88ed8f8c026bce1bf99a3ec45a2b6e1b6ce58c12afd"
+      "input_hash": "eee29530ed2b33188f760e2208284aac0afe8607221792679be50527c0d61daf"
     },
     {
       "stable_lexeme_key": "heure|NOM",
@@ -3485,8 +3644,15 @@
         "sense_id": "__ws_1_heure__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "métrologie"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|heure|NOM|horaire|ADJ",
@@ -3528,7 +3694,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "38d8e288ebe34c5cdabeeace84213acd323a59f780ae313bed60f80bfdf51aec"
+      "input_hash": "bbee8d734d90a994d7a9ebee3ac8243fd2f75b97c16d5f3f538fe7a0eeded32b"
     },
     {
       "stable_lexeme_key": "temps|NOM",
@@ -3736,8 +3902,13 @@
         "sense_id": "__ws_1_temps__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|contemporain|ADJ|temps|NOM",
@@ -3875,7 +4046,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "dd55456bee84a0c089d3068a5ed3c1d27e86376880d4dfbe5bbb47606babb93b"
+      "input_hash": "4aeaa27efe69989680c5b8d6473cac4d7b14ce00e9f079ec9d3f7fff706bf394"
     },
     {
       "stable_lexeme_key": "monde|NOM",
@@ -4186,8 +4357,13 @@
         "sense_id": "__ws_1_monde__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|mondain|ADJ|monde|NOM",
@@ -4229,7 +4405,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "857c23b22643d3d669cee83426da2c31d2ca1e8a8dbe0434924107a4e6b28403"
+      "input_hash": "b0ade426dcb33cb9dd6e79ba66f6588f10be4b4f8f50ff286f3cd825d8a9f2cb"
     },
     {
       "stable_lexeme_key": "vie|NOM",
@@ -4440,12 +4616,19 @@
         }
       ],
       "proposed_primary_learner_sense": {
-        "entry_id": "Vie__nom__1",
-        "sense_id": "__ws_1_Vie__nom__1"
+        "entry_id": "vie__nom__1",
+        "sense_id": "__ws_1_vie__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "biologie"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|vie|NOM|vital|ADJ",
@@ -4472,9 +4655,34 @@
           }
         }
       ],
-      "selected_sense_chinese_candidates": [],
-      "candidate_review_bucket": "no_candidate",
-      "input_hash": "ae669dc8819c6d0709e958ab70ce35f2894aecdd7f3bf2c2d8e73d9d8fc5f1bf"
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_vie__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "生命",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Période entre la naissance et la mort",
+          "mapped_sense_id": "__ws_3_vie__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_vie__nom__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "生活",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Période entre la naissance et la mort",
+          "mapped_sense_id": "__ws_3_vie__nom__1",
+          "structural_match_for_selected_sense": false,
+          "semantic_status": "requires_semantic_review",
+          "automatic_learner_gloss_approval": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "1b5eafd2520d62b3f0281f26bb9d937e8218f415aefbc9b4942908b533c53bb5"
     },
     {
       "stable_lexeme_key": "enfant|NOM",
@@ -4586,8 +4794,13 @@
         "sense_id": "__ws_1_enfant__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|enfanter|VER|enfant|NOM",
@@ -4629,7 +4842,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "32b001d94dca37d00cf6f82df4ede7a3f7a256179fb5dae9c897bea0567f251a"
+      "input_hash": "8d62b482440bbea8bbd3c6af8ba07e8f81b47db1916dd915f7610b99f3b894c1"
     },
     {
       "stable_lexeme_key": "chose|NOM",
@@ -4832,8 +5045,13 @@
         "sense_id": "__ws_1_chose__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -4874,7 +5092,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "0d1f8bdfc80f3b40c7a46f84d3161db983bf5dcacc780834830b7f84aa822b3a"
+      "input_hash": "c456de5974eae78d39f2a8fd4805f9ea00a74d15aa0ee4015ddb5d398c5aa1bb"
     },
     {
       "stable_lexeme_key": "personne|NOM",
@@ -5008,8 +5226,13 @@
         "sense_id": "__ws_1_personne__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|personnel|ADJ|personne|NOM",
@@ -5051,7 +5274,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "479e6f057427deb11ed66ce40d5b5fce3337fabc6e78aa61decce0e3963cc4ba"
+      "input_hash": "c92e525ec71b1499037bd8259ef89eb3e89015fa89450a08b7e74c0117fefa4f"
     },
     {
       "stable_lexeme_key": "année|NOM",
@@ -5166,8 +5389,13 @@
         "sense_id": "__ws_1_année__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -5196,7 +5424,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "d6956dbedbcbd2ee3b39cd3ebf34a08d312aa960d05304847daffd628e1a5aaa"
+      "input_hash": "99a5ddadcafd7aa1e8f85aac7a0f027f7ed6ce2b11585fe7b6c83ab0cf0ad09c"
     },
     {
       "stable_lexeme_key": "maison|NOM",
@@ -5365,8 +5593,15 @@
         "sense_id": "__ws_1_maison__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "construction"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|maisonnette|NOM|maison|NOM",
@@ -5408,7 +5643,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "9028527f5392ca773601ad277ce03e94b54d2b76a3688ca7e7788c140a726e87"
+      "input_hash": "b34d841fdfc31f30ad3a7c6910328334b3e40830bc51f4fde76530dd8c9889cd"
     },
     {
       "stable_lexeme_key": "pays|NOM",
@@ -5612,8 +5847,15 @@
         "sense_id": "__ws_1_pays__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "géographie"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|paysan|ADJ|pays|NOM",
@@ -5679,7 +5921,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "940b0ca2b96af825669600df65c157d4f528c1f4537162645e732ab8f6947335"
+      "input_hash": "a607d9f711a71f69e6e085a247377dbc039f10778608ae5427310c3c1233a212"
     },
     {
       "stable_lexeme_key": "être|VER",
@@ -5832,11 +6074,16 @@
       ],
       "proposed_primary_learner_sense": {
         "entry_id": "être__verb__1",
-        "sense_id": "__ws_2_être__verb__1"
+        "sense_id": "__ws_1_être__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -5877,7 +6124,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "e502d0a86bef0f8e4c83fd05093ff0eb20415c0135d0f89a08cfaecffbe0036a"
+      "input_hash": "0c6620f7f312d6f4ee06545f9fe3429a368cfcf17fe7357f7a6495e40c458e2b"
     },
     {
       "stable_lexeme_key": "avoir|VER",
@@ -5978,8 +6225,13 @@
         "sense_id": "__ws_1_avoir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -5996,7 +6248,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "346769edbbbb6912ee5650ba38e5f72c69916210234b914074cfc17bdc7a55e9"
+      "input_hash": "95f52a6922c7fa7cb4841910cf1a6ad1e994df8e249e0b285d08f7239faebdb6"
     },
     {
       "stable_lexeme_key": "faire|VER",
@@ -6754,8 +7006,13 @@
         "sense_id": "__ws_1_faire__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|défaire|VER|faire|VER",
@@ -6893,7 +7150,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "816322d7ad5c90bac1167d9d0fbd7bfcf2b8c91653932026e1257c98c9886e02"
+      "input_hash": "edff92ae53977498ce0f8325cda1d7f746a5fe5dcaad6902e25414a9ea94f69d"
     },
     {
       "stable_lexeme_key": "aller|VER",
@@ -7134,11 +7391,16 @@
       ],
       "proposed_primary_learner_sense": {
         "entry_id": "aller__verb__1",
-        "sense_id": "__ws_2_aller__verb__1"
+        "sense_id": "__ws_1_aller__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|aller|NOM|aller|VER",
@@ -7180,7 +7442,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "5d8ce000daf98a074da91bb3ece1728c19aa960933dc2ae9ffbe5cebd76509b9"
+      "input_hash": "9ae08cb4133d9f18ea6051c24bec4272e3334accea0ff1a293f207bcc9b50ea3"
     },
     {
       "stable_lexeme_key": "dire|VER",
@@ -7340,8 +7602,13 @@
         "sense_id": "__ws_1_dire__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|dire|VER|dit|ADJ",
@@ -7395,7 +7662,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "5d17ee7f128e5ca685325b1163f359fcbcd39eccb3caeeadf3e7271205ad2e71"
+      "input_hash": "e4f8f692991a613983407c62bd4a458156a03786a3e88d957ca7139adab93d2d"
     },
     {
       "stable_lexeme_key": "pouvoir|VER",
@@ -7566,12 +7833,19 @@
         "sense_id": "__ws_1_pouvoir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "auxiliaire"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "c0f5fe75700aa668bc34e0d1df9d70ec3692479aafbc53b0cce1e225961b1889"
+      "input_hash": "995ee861a159c49481584d9cc67992561bc881b54bfb4ac12c9a5bdba7483231"
     },
     {
       "stable_lexeme_key": "voir|VER",
@@ -7964,8 +8238,13 @@
         "sense_id": "__ws_1_voir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|prévoir|VER|voir|VER",
@@ -8055,7 +8334,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "4a158608076b0f48e6492cf8774d104a3855b6efdd8607fdc921e8ca6a1166f0"
+      "input_hash": "38aed8ffc4a51423c784d3652cd9bf8ae895d43dda678cb9438a6e35b5f6ea01"
     },
     {
       "stable_lexeme_key": "vouloir|VER",
@@ -8190,8 +8469,13 @@
         "sense_id": "__ws_1_vouloir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|vouloir|NOM|vouloir|VER",
@@ -8233,7 +8517,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "f01437d598f47a2123c569b82779f8087369e68e8647ccfda2a6f98d894a53e7"
+      "input_hash": "84d6a6d3a30c650a1b4c037b282a23e83c33e0b478cd951fb9c7be6a8e43daa0"
     },
     {
       "stable_lexeme_key": "savoir|VER",
@@ -8393,8 +8677,13 @@
         "sense_id": "__ws_1_savoir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|savant|ADJ|savoir|VER",
@@ -8460,7 +8749,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "c9b51e8b5af5fbf5c404c4c230fa1b8e49a6e74d323942ca1fccff88a830270f"
+      "input_hash": "3531b77bde4ae12092e336ca2a3478c5a7d8f53bddb525bfca1e01a7cc547031"
     },
     {
       "stable_lexeme_key": "venir|VER",
@@ -8644,8 +8933,13 @@
         "sense_id": "__ws_1_venir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|revenir|VER|venir|VER",
@@ -8662,7 +8956,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "9c6b1ef7444e8d0cba56df323c5af196bec614024cc640c0cc9309ebc665fcc1"
+      "input_hash": "8a42204a5e67dbed6e35f68f428b5a22e41a470f559933555ce8fc76cce69294"
     },
     {
       "stable_lexeme_key": "prendre|VER",
@@ -9493,8 +9787,13 @@
         "sense_id": "__ws_1_prendre__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|prendre|VER|preneur|NOM",
@@ -9547,7 +9846,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "cc53f8ac54340eea049a4ef6f52575f7fc81e9f9e94b3ff87fdc4c556350c664"
+      "input_hash": "23f0274b4d9e2cf044df49d57ed4d876daad5e4f3768f620915385ddfa42209e"
     },
     {
       "stable_lexeme_key": "devoir|VER",
@@ -9697,8 +9996,13 @@
         "sense_id": "__ws_1_devoir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|devoir|VER|débit|NOM",
@@ -9824,7 +10128,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "547ba8a748fe4bfcd798f1d6ab3b396d97a07202f68add69ee14301a2405d3d4"
+      "input_hash": "921bda26624ce268bee3af748be14b70bf00f326b7d8b883c831014cb81afc02"
     },
     {
       "stable_lexeme_key": "passer|VER",
@@ -10421,8 +10725,13 @@
         "sense_id": "__ws_1_passer__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|passer|VER|pas|NOM",
@@ -10524,7 +10833,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "31bbbb2dc9806a0fde3f7279026d0aa671d750d9dbc222be7c9bff5cf3d27a80"
+      "input_hash": "9c84fca8338f1859fd3e3a84a0c077714a628496bb6d4df70d9be0f630b2c030"
     },
     {
       "stable_lexeme_key": "trouver|VER",
@@ -10662,8 +10971,13 @@
         "sense_id": "__ws_1_trouver__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|retrouver|VER|trouver|VER",
@@ -10705,7 +11019,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "3e30257901542befcbd1e79bd36893b7245a5a34b2b49cae019797276513e9ef"
+      "input_hash": "2502c08a669a483ee6bb7c054712b7da02e05e3e95dd870bfc7bdd3cb3c8020b"
     },
     {
       "stable_lexeme_key": "parler|VER",
@@ -10932,8 +11246,13 @@
         "sense_id": "__ws_1_parler__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|parlement|NOM|parler|VER",
@@ -11107,7 +11426,7 @@
         }
       ],
       "candidate_review_bucket": "source_friendly",
-      "input_hash": "c41c0bfbebecd97f0ace024008d024775a5b822256e16160ea37d0a0f903d580"
+      "input_hash": "61d48af8a8d08dce45bdef59acd0d8f3d2b3e40bf45ec65fbaa4f5a1b00df901"
     },
     {
       "stable_lexeme_key": "falloir|VER",
@@ -11175,12 +11494,17 @@
         "sense_id": "__ws_1_falloir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "5dc2fedd8a3dcf40416e42841d0be33c28983e0ea6388f230b221e2ae601d11a"
+      "input_hash": "cdc6bcea54755212b46dcce60f89bc58bbf5f8c0f20f554b089d26fb16db3bbb"
     },
     {
       "stable_lexeme_key": "mettre|VER",
@@ -11434,8 +11758,13 @@
         "sense_id": "__ws_1_mettre__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|metteur|NOM|mettre|VER",
@@ -11488,7 +11817,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "954ddc49bd9c572c66c0e079b1e498f52cfe391c19c78b0eb43ac01c3c0b2a23"
+      "input_hash": "3a8971b858ede6761b3b43e548dce1687032375da2a859128f1156b1adc9dda1"
     },
     {
       "stable_lexeme_key": "social|ADJ",
@@ -11578,8 +11907,13 @@
         "sense_id": "__ws_1_social__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|socialisme|NOM|social|ADJ",
@@ -11608,7 +11942,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "2253d9301cf1063b7f91b5fafc68ee3cd220c8585fc04a4f9a0448fb4492706d"
+      "input_hash": "dfcf3518d27c76762820ee63207781d1170e0d452c20f2761415ff4591da460d"
     },
     {
       "stable_lexeme_key": "haut|ADJ",
@@ -11845,8 +12179,13 @@
         "sense_id": "__ws_1_haut__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|altitude|NOM|haut|ADJ",
@@ -11887,7 +12226,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "0f34ebecbc26acff53161a9b2acb290712363d788c7b3e334729b89cdb921fe6"
+      "input_hash": "5942d84f71a530289444cd10e88821b15c2209bd142d5e3956864ea219161ea3"
     },
     {
       "stable_lexeme_key": "présent|ADJ",
@@ -11965,8 +12304,13 @@
         "sense_id": "__ws_1_présent__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|présenter|VER|présent|ADJ",
@@ -11996,7 +12340,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "baa26ca1b7195e93cbecf89e3507b1c83f0c67292a6b6b9c709913ff01f2c021"
+      "input_hash": "a8c5f7a4b98a67a5d2cd977bbad3a4fa65b0994aff037b3fed3502b84920c022"
     },
     {
       "stable_lexeme_key": "naturel|ADJ",
@@ -12225,8 +12569,13 @@
         "sense_id": "__ws_1_naturel__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|naturel|ADJ|nature|NOM",
@@ -12243,7 +12592,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "a53a68cc3922e5dfdc6164d669145ecabeb0ba8875178c1bbd6a6b9bb3c69cbd"
+      "input_hash": "a9d79d964adf8404088114bf345fa2c35bf30345fc4da584ee82dd7a1ddccbc0"
     },
     {
       "stable_lexeme_key": "économique|ADJ",
@@ -12298,8 +12647,13 @@
         "sense_id": "__ws_1_économique__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|économie|NOM|économique|ADJ",
@@ -12316,7 +12670,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "075f395e81a4775076085f17c7df964ce895f49a67a65294d9d12855f1ec3704"
+      "input_hash": "9f38705d285f586a0f733ddb33ec004edf9464f9e45892912e5838cced373d37"
     },
     {
       "stable_lexeme_key": "entier|ADJ",
@@ -12406,12 +12760,17 @@
         "sense_id": "__ws_1_entier__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "2d7dfffa6c49ae8dee666762291b4b6ed476048b59ee0675436af1e33e4aa5b6"
+      "input_hash": "ff89982d80e3ecda7f489947987169393bb27f3d07bbdf7d9318e032cf550355"
     },
     {
       "stable_lexeme_key": "parisien|ADJ",
@@ -12466,12 +12825,17 @@
         "sense_id": "__ws_1_parisien__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "9686736bc53a2e3ea89424fa6bdf62178e50f063a226c0e9d75bb7eb0ccf6797"
+      "input_hash": "1cae5d647244d60964036b5948b1a17d05dc5dd31aa8e666e625f049fb6357fe"
     },
     {
       "stable_lexeme_key": "inquiet|ADJ",
@@ -12558,8 +12922,13 @@
         "sense_id": "__ws_1_inquiet__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|inquiet|ADJ|inquiétude|NOM",
@@ -12576,7 +12945,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "6f948ddfe7d7546c4e0827fed2d3f64bf13f8e6eb351b1fffb3c712fa3ccc270"
+      "input_hash": "78a40976eaddac37bf8e726ba776ec6d4a34601647285a0548561036e402e4ab"
     },
     {
       "stable_lexeme_key": "cependant|ADV",
@@ -12619,8 +12988,13 @@
         "sense_id": "__ws_1_cependant__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -12649,7 +13023,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "2c1a3a7c43715994940d395153b601c6bbc44f212307d2511fc61ce7b6bd87c1"
+      "input_hash": "be306c4f38841f88b03014f1a090ae458f46dc0f8c587f9e72b5f3126992be88"
     },
     {
       "stable_lexeme_key": "simplement|ADV",
@@ -12726,12 +13100,17 @@
         "sense_id": "__ws_1_simplement__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "a6dde17e02a67db0b9ca75673a7fec7222581d1a6fd2d2485c886ce1718cc681"
+      "input_hash": "1d593e51ac1cdf3c80a0018fa88613aa1aca8ae125f678a2432566617843afc3"
     },
     {
       "stable_lexeme_key": "particulièrement|ADV",
@@ -12810,12 +13189,17 @@
         "sense_id": "__ws_1_particulièrement__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "13c6974a9f5b2824db634efb1c2c2307125ea3b189f93253fd31b22d5ba82bd6"
+      "input_hash": "a248e5d924cc5da08a2dd683202bd476f5245ee424dfeffcefd98b616a871e87"
     },
     {
       "stable_lexeme_key": "ailleurs|ADV",
@@ -12858,12 +13242,17 @@
         "sense_id": "__ws_1_ailleurs__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "e87fa564a0f56051c2d80ab36003a67ebae4873ca4c75b87f0c2296d32686933"
+      "input_hash": "07cbc712dbba4a004ae1d342a18e574ae4c0e3f9d263753b8aab8ca8682ce2c9"
     },
     {
       "stable_lexeme_key": "point|NOM",
@@ -13279,8 +13668,15 @@
         "sense_id": "__ws_1_point__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "couture"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|poindre|VER|point|NOM",
@@ -13394,7 +13790,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "ea37e13fd7c4ad3c7726300307cad7bc87e16a9c112ee3d7908aa02679d6e2ca"
+      "input_hash": "099a96e6d856786705a6835bca84d1c3bb2d5512a4fc365a457c70936eb9c9f7"
     },
     {
       "stable_lexeme_key": "corps|NOM",
@@ -13766,8 +14162,13 @@
         "sense_id": "__ws_1_corps__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -13784,7 +14185,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "9c4cea9eaeecb79b004f5542bfd9702cd13018ed493a1213a85666fe511c34d1"
+      "input_hash": "91c97d5f44dbf8a72489b3329a68c98c775d81bfad4bca8340e8c7ab877bcca9"
     },
     {
       "stable_lexeme_key": "doute|NOM",
@@ -13840,8 +14241,13 @@
         "sense_id": "__ws_1_doute__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|douter|VER|doute|NOM",
@@ -13870,7 +14276,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "ff04412e66a2ed5c4848892d6add7d0bf1766a48e6422b27a01a31c31b47dbfe"
+      "input_hash": "2fcc6c3105592651e73dcc4c5fbc19ed1e64bfcb43a5d073851235c8336ea9ff"
     },
     {
       "stable_lexeme_key": "loi|NOM",
@@ -14002,8 +14408,13 @@
         "sense_id": "__ws_1_loi__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|loi|NOM|législatif|ADJ",
@@ -14057,7 +14468,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "d2ae720db1fbadcb6992ac41dead047950f39f925a1b18e302b1be9ea877314b"
+      "input_hash": "d14dc1656cf10aca197a6a1bd765c1809a6f2b7da4e52fd71fa5f0c9c51226bb"
     },
     {
       "stable_lexeme_key": "fond|NOM",
@@ -14316,11 +14727,16 @@
       ],
       "proposed_primary_learner_sense": {
         "entry_id": "fond__nom__1",
-        "sense_id": "__ws_2_fond__nom__1"
+        "sense_id": "__ws_1_fond__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|enfoncer|VER|fond|NOM",
@@ -14361,7 +14777,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "2fdb6ccd0e249ce78ba8a0d85d3545d06adf402ec743c7283a463e520b05d841"
+      "input_hash": "6db1c438159a6b420deb5247442f90004b3fe4a7a6c927c633e6226244207d35"
     },
     {
       "stable_lexeme_key": "emploi|NOM",
@@ -14461,8 +14877,13 @@
         "sense_id": "__ws_1_emploi__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|emploi|NOM|employer|VER",
@@ -14479,7 +14900,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "dcdef49f34dd32f7725c11f37bdd859aeec34e5d03085e80959aef997f8257d6"
+      "input_hash": "9d5613a4b33f3e0f70eecec13d865e5c8c88f8715a2508e8111452771cb418e7"
     },
     {
       "stable_lexeme_key": "développement|NOM",
@@ -14589,8 +15010,13 @@
         "sense_id": "__ws_1_développement__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|développement|NOM|développer|VER",
@@ -14607,7 +15033,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "c0c07ea5647dc5632135151401abacc480130edd4e46b37323b3ac78a4194126"
+      "input_hash": "8284b85b9c76f31d0a91320d4befcecfe4667f39fcd18c02aaad60cb64897c30"
     },
     {
       "stable_lexeme_key": "instant|NOM",
@@ -14650,8 +15076,13 @@
         "sense_id": "__ws_1_instant__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|instantané|ADJ|instant|NOM",
@@ -14668,7 +15099,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "f219a6054a3827e3002c06266970eeb44a0404e323ab0a9f3a2e2b9b8748fe00"
+      "input_hash": "ce9e011777ce836d58d64da4ef4acd8058729eeab1088c61c32d6caac562a4ad"
     },
     {
       "stable_lexeme_key": "tuer|VER",
@@ -14818,8 +15249,13 @@
         "sense_id": "__ws_1_tuer__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|tuer|VER|tueur|NOM",
@@ -14836,7 +15272,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "7a4df954b8b2a7f40edf3fe621b85de27fc81c5c5b16fe59e900dcf312c4ce43"
+      "input_hash": "b4946af7f9326b2bae0bd8ef8e4f22cf3782ec3b3fc940f2baed6102cf4b36e0"
     },
     {
       "stable_lexeme_key": "agir|VER",
@@ -14951,8 +15387,13 @@
         "sense_id": "__ws_1_agir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|actif|ADJ|agir|VER",
@@ -14993,7 +15434,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "f62568e745a2bf9abe48e263e6e9734c110b5bdd02ed72f8ce8979685fc69dcc"
+      "input_hash": "281dc783272a35952e4a5f9e70dd511c71138acfec968c6546dd57452b9112ef"
     },
     {
       "stable_lexeme_key": "pousser|VER",
@@ -15307,8 +15748,13 @@
         "sense_id": "__ws_1_pousser__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|pousser|VER|pousse|NOM",
@@ -15361,7 +15807,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "f4bcc4a11d9a0048981cd360cea69cb8577927b98925691bfd7429421492a405"
+      "input_hash": "ea5176420dded4e8896b70702dfaea37b99ef7e0fa44f9e257416a3a29132745"
     },
     {
       "stable_lexeme_key": "lancer|VER",
@@ -15604,8 +16050,13 @@
         "sense_id": "__ws_1_lancer__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|lancer|VER|lance|NOM",
@@ -15658,7 +16109,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "93d55b9a3db2ba861ad932259e4b971d50a2d1e80b404596eccd3953bd4d9a99"
+      "input_hash": "33222bf07360c1d2b42013501957550625990d48a6be0a55c7ae75939921a3b7"
     },
     {
       "stable_lexeme_key": "mener|VER",
@@ -15856,8 +16307,13 @@
         "sense_id": "__ws_1_mener__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|amener|VER|mener|VER",
@@ -15886,7 +16342,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "cf5716df4d0459560e213c1c807b83d41e08daa5dcbec948ed7b87c5d6b88f78"
+      "input_hash": "6ee2e4ea198d05205c84deb8ac8433f361f53b25a86c9ae2f7fe263e4cbd2e17"
     },
     {
       "stable_lexeme_key": "déclarer|VER",
@@ -15978,8 +16434,13 @@
         "sense_id": "__ws_1_déclarer__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|semantic_derivation|clair|ADJ|déclarer|VER",
@@ -16008,7 +16469,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "8c3ca42d1084681d79a412dd83e06fa317fc83af6927d91e040398064d79bd3e"
+      "input_hash": "b198c04a2a5f5ddc65ea9912d9930b77887675f30bc3ca7775eefbbe2b1ba6ce"
     },
     {
       "stable_lexeme_key": "développer|VER",
@@ -16175,8 +16636,13 @@
         "sense_id": "__ws_1_développer__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|développement|NOM|développer|VER",
@@ -16193,7 +16659,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "ddab238ad3014e5baf0aeffc9ee4ae2d13310b8fd136d163eb5bf03e73d78d27"
+      "input_hash": "11ed98ddddd364d1f89a41bdc36887f6a6e8d0956e255ebcc063fd09692a2f61"
     },
     {
       "stable_lexeme_key": "suffire|VER",
@@ -16319,8 +16785,13 @@
         "sense_id": "__ws_1_suffire__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|suffire|VER|suffisant|ADJ",
@@ -16337,7 +16808,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "1c2a93ac1fd7144f3a863b6fb15278d9e1ced6630af96fad76acc6f211c3ccd4"
+      "input_hash": "df8a0f461d3e2e5b97e47e9008f9864d9d24459ff388ba60b9afa2db233c4157"
     },
     {
       "stable_lexeme_key": "obliger|VER",
@@ -16417,8 +16888,13 @@
         "sense_id": "__ws_1_obliger__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|obligation|NOM|obliger|VER",
@@ -16459,7 +16935,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "7a85b144fedf44efcc1c2b5f2fa2b278c5db225116ef121d7aa65ecea059fc8d"
+      "input_hash": "59f11d7f13053307f9c25ab65bd62ec285be04a49b18e7c277b4cad50dbdcd8f"
     },
     {
       "stable_lexeme_key": "étonner|VER",
@@ -16503,8 +16979,15 @@
         "sense_id": "__ws_1_étonner__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "sens étymologique concret"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|étonnant|ADJ|étonner|VER",
@@ -16545,7 +17028,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "3ab14d9aae3ffefe6c7a729dcfaf5a477e1d969c7cf4215b335fa1be6af12349"
+      "input_hash": "65c06ae65bb4af62cbc3375bd0d47ac3e6048cead5d14eb715adee1d274bcbfd"
     },
     {
       "stable_lexeme_key": "pauvre|ADJ",
@@ -16660,8 +17143,13 @@
         "sense_id": "__ws_1_pauvre__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|pauvreté|NOM|pauvre|ADJ",
@@ -16678,7 +17166,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "5ce75717789d189c35b428ab637aa2ae2c4086fa4320149c6ef4c7741e3a2a7c"
+      "input_hash": "085a252b32c63b8164c67cc286934dc09686cca8b797ae7d7c31e578654ab4ad"
     },
     {
       "stable_lexeme_key": "professionnel|ADJ",
@@ -16722,8 +17210,13 @@
         "sense_id": "__ws_1_professionnel__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|professionnel|ADJ|profession|NOM",
@@ -16753,7 +17246,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "48cf0000d34dd644e6131d26a12a8ddc684914a171c61dab85a14ed948ce7d00"
+      "input_hash": "aff2bb444e9895d92f37213e0d7a43b7827e01bae704be25ded5dd154116d562"
     },
     {
       "stable_lexeme_key": "actuel|ADJ",
@@ -16806,8 +17299,13 @@
         "sense_id": "__ws_1_actuel__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|actualiser|VER|actuel|ADJ",
@@ -16836,7 +17334,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "e794eda06cb49c3dcbf30e3b1a5bc388fe35aaeed789d34054bcf356e5bb29a1"
+      "input_hash": "a6ceb0b2092ad7f42569b8cf78a52919a45501e1ee5ccbc45dedf95ab7e98a09"
     },
     {
       "stable_lexeme_key": "public|ADJ",
@@ -16925,8 +17423,13 @@
         "sense_id": "__ws_1_public__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|publicité|NOM|public|ADJ",
@@ -17040,7 +17543,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "1e3a425b16708aa623f6e968a9ea3bc015464292c91176d0718487eb87653f0b"
+      "input_hash": "9f36c2f66d8589055e9d87fd2ff9518c1d3452c7a9d4eab9ab8440ebfcdc8c64"
     },
     {
       "stable_lexeme_key": "lors|ADV",
@@ -17083,12 +17586,17 @@
         "sense_id": "__ws_1_lors__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "2426a0c5c400afc179541c4fd3e993f5801d99afa42c5b192dac12987b9c3c24"
+      "input_hash": "8a00d884bbaa05ed94393653d76f49ae60261acab7077f8b39be9715680eea1b"
     },
     {
       "stable_lexeme_key": "que|ADV",
@@ -17143,12 +17651,17 @@
         "sense_id": "__ws_1_que__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "5667b2ed85c57ba50c817709502fbedb89847cea5b843b96680ad68d55bff86e"
+      "input_hash": "2952ca7930d11a3e93d3b78f287160644372670c6327617ae2ae573b2caf9223"
     },
     {
       "stable_lexeme_key": "rapport|NOM",
@@ -17426,8 +17939,16 @@
         "sense_id": "__ws_1_rapport__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "économie",
+          "peu usité"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|rapporter|VER|rapport|NOM",
@@ -17444,7 +17965,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "ec2f418caf6c93f65cc4e4923457c81883147dacd50337a289a07aa29378fa61"
+      "input_hash": "c44872d26860bd928a6f656a330316158e3333bb48f9e1595ca545ff75b84a2b"
     },
     {
       "stable_lexeme_key": "regard|NOM",
@@ -17523,8 +18044,13 @@
         "sense_id": "__ws_1_regard__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|conversion|regarder|VER|regard|NOM",
@@ -17541,7 +18067,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "7b81ee92b23fb1d07413be7436d605228b7bcb72c3840f083c0f4b5432aee55e"
+      "input_hash": "ea00f70daac008eff9c5fb47037e94a50296f4d9bdeae022203ef1290ab2083f"
     },
     {
       "stable_lexeme_key": "chef|NOM",
@@ -17779,8 +18305,15 @@
         "sense_id": "__ws_2_chef__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "en particulier"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|chef|NOM|chevet|NOM",
@@ -17797,7 +18330,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "73eb80c4de4ec104238b1cfb62a3a96e60cd7beb92e8a02f1cc201423d86fb77"
+      "input_hash": "df9e0e5b57068a83edde8d9fd674afaec27e36727e84016ddeeedebbe397fbcf"
     },
     {
       "stable_lexeme_key": "travers|NOM",
@@ -17891,12 +18424,17 @@
         "sense_id": "__ws_1_travers__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "02451f0800066085feeb6aadef7132e54435b3acee637d489020a455c8991f66"
+      "input_hash": "ceeb1c5cdf000edbe4bb5791aaab4e0b4ce7db9ed83e653cac1e3f955d9cc766"
     },
     {
       "stable_lexeme_key": "obtenir|VER",
@@ -17951,8 +18489,13 @@
         "sense_id": "__ws_1_obtenir__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|obtenir|VER|obtention|NOM",
@@ -17969,7 +18512,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "54b9f8eb2802c44389dbc74996b2766b61a7924aa8201fdf9f3681b358e49db5"
+      "input_hash": "ce9a3439a93791ca5d59ed256cc99a7e7a145b1ef8616450fe5d5bb57dacce46"
     },
     {
       "stable_lexeme_key": "remettre|VER",
@@ -18333,11 +18876,16 @@
       ],
       "proposed_primary_learner_sense": {
         "entry_id": "remettre__verb__1",
-        "sense_id": "__ws_2_remettre__verb__1"
+        "sense_id": "__ws_1_remettre__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|mettre|VER|remettre|VER",
@@ -18366,7 +18914,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "1b787f862ed12e2e2bbe631ece7bd0057872befb7bb86789a6c69a7dce72708f"
+      "input_hash": "03edacff179c412cfc819455383c320c190602016c2d25d73d319f5fba61aab9"
     },
     {
       "stable_lexeme_key": "paraître|VER",
@@ -18446,8 +18994,13 @@
         "sense_id": "__ws_1_paraître__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|prefixation|apparaître|VER|paraître|VER",
@@ -18501,7 +19054,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "e89581176fbf8b9d71d039a41b4d81c945439abe0d8084e5ec7c878c72b8e059"
+      "input_hash": "9bc87405256b6df0be9cb439f6fb8109fa1006e088c4582f7cd4452d01f4527d"
     },
     {
       "stable_lexeme_key": "élever|VER",
@@ -18719,8 +19272,13 @@
         "sense_id": "__ws_1_élever__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|élevage|NOM|élever|VER",
@@ -18785,7 +19343,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "9dc6de31884acd968fa9ed2a0065c8c0c2e7a29b77295b8d0503d07ad705e0d1"
+      "input_hash": "dda26ee54da4af124133612e7e61d419b430770e347d233a73dcbc51873206c1"
     },
     {
       "stable_lexeme_key": "assurer|VER",
@@ -19036,8 +19594,13 @@
         "sense_id": "__ws_1_assurer__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|assurance|NOM|assurer|VER",
@@ -19078,7 +19641,7 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "d38bb80bbe68e2a31ddc49d56afa0a9ba6fd4f30c0b52a159d825b579e95fa06"
+      "input_hash": "cd5d1ef82ce06a4eebcfdafa7d7d72fa47c5bce02b16fee096b8262a3df57990"
     },
     {
       "stable_lexeme_key": "moindre|ADJ",
@@ -19145,12 +19708,17 @@
         "sense_id": "__ws_1_moindre__adj__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "623b8ab0547262be9613687a516ce456a51a8624a152da30b64ad78b06c8a687"
+      "input_hash": "9fde936d905ea7f1a373cf5189d8d61c2661847e7f80f773ae80e4bd1643d371"
     },
     {
       "stable_lexeme_key": "au-delà|ADV",
@@ -19194,12 +19762,17 @@
         "sense_id": "__ws_1_au-delà__adv__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "4afc8f4c3bad1e667e607d951522e5318753328baa43559f478a5ed0e4de3468"
+      "input_hash": "6396a7fa5514b99cf7b9e343cad9ec08bed2a0dba159afbf44cf8360a7b9242a"
     },
     {
       "stable_lexeme_key": "terme|NOM",
@@ -19419,12 +19992,19 @@
         "sense_id": "__ws_2_terme__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "par extension"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "a8e1cfe4ef744575b5e1bcb1fcc5b0ba1e78c52c53e0381e20711299845743df"
+      "input_hash": "fc487e70910ac65ac65c7468327e048f6a420863d7c7fc1f962e1b89cec837af"
     },
     {
       "stable_lexeme_key": "antenne|NOM",
@@ -19535,8 +20115,15 @@
         "sense_id": "__ws_2_antenne__nom__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [
+          "par analogie"
+        ],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [],
       "selected_sense_chinese_candidates": [
         {
@@ -19589,7 +20176,7 @@
         }
       ],
       "candidate_review_bucket": "ambiguous",
-      "input_hash": "44ef8ce267e63ec77230fc2fd1787f2e06f5b8eef63748a1975d4a5628391c43"
+      "input_hash": "6bd0cbfb5f8c5ff8ab192c08ad41db3188b3c57ae4b4cb53fbf6f186f0a01501"
     },
     {
       "stable_lexeme_key": "constituer|VER",
@@ -19666,8 +20253,13 @@
         "sense_id": "__ws_1_constituer__verb__1"
       },
       "selection_status": "needs_semantic_review",
-      "selection_reason": "candidate-independent lowest policy penalty; source-order tiebreaker",
+      "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
       "uncertainty": "mechanical proposal; frequency and semantic fitness require external review",
+      "proposal_marker_analysis": {
+        "leading_labels": [],
+        "penalty_flags": [],
+        "surface_mismatch_penalty_applied": false
+      },
       "relevant_sourced_family_relations": [
         {
           "stable_relation_key": "fam|derivational_morphology|suffixation|constituer|VER|constitution|NOM",
@@ -19696,8 +20288,8 @@
       ],
       "selected_sense_chinese_candidates": [],
       "candidate_review_bucket": "no_candidate",
-      "input_hash": "7e3138bc5ded96a300a53bfd4d37a13ed664818ea6df9dbea28baf8d4ef2b79e"
+      "input_hash": "72814e111dff9a57a03ef37993758df943686e6c6106bef295bae8b2e10ff411"
     }
   ],
-  "artifact_hash": "df180edf19db921b8d578dc9f492d9e09d33d111f9cb13d2411dfe3353494b1e"
+  "artifact_hash": "33f750df52f16e117d6dadec17741db6c761e9cbb9d6bcad0c99dc6adf02b30c"
 }

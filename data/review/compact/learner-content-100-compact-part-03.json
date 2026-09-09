@@ -1,0 +1,2463 @@
+{
+  "schema_version": 1,
+  "part": 3,
+  "parent_artifact_hash": "33f750df52f16e117d6dadec17741db6c761e9cbb9d6bcad0c99dc6adf02b30c",
+  "items": [
+    {
+      "stable_lexeme_key": "social|ADJ",
+      "lemma": "social",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 208.6548,
+        "lexique_frequency": 36.237,
+        "contextual_diversity": 5.31231
+      },
+      "proposed_primary": {
+        "entry_id": "social__adj__1",
+        "sense_id": "__ws_1_social__adj__1",
+        "definition_fr": "Relatif à une société, une communauté, une collectivité.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "social__adj__1",
+          "sense_id": "__ws_1_social__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Relatif à une société, une communauté, une collectivité."
+        },
+        {
+          "entry_id": "social__adj__1",
+          "sense_id": "__ws_2_social__adj__1",
+          "sense_number": "2",
+          "definition_fr": "(Par extension) (Politique) Qui se préoccupe du fonctionnement de la société et de ses conséquences."
+        },
+        {
+          "entry_id": "social__adj__1",
+          "sense_id": "__ws_3_social__adj__1",
+          "sense_number": "3",
+          "definition_fr": "Caractéristique de la vie en société, par opposition à l'état naturel."
+        },
+        {
+          "entry_id": "social__adj__1",
+          "sense_id": "__ws_4_social__adj__1",
+          "sense_number": "4",
+          "definition_fr": "(Écologie) Qui vit en société."
+        },
+        {
+          "entry_id": "social__adj__1",
+          "sense_id": "__ws_5_social__adj__1",
+          "sense_number": "5",
+          "definition_fr": "(Botanique) Qualifie une plante qui forme des peuplements denses."
+        },
+        {
+          "entry_id": "social__adj__1",
+          "sense_id": "__ws_6_social__adj__1",
+          "sense_number": "6",
+          "definition_fr": "Relatif aux sociétés commerciales, industrielles, financières."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "dfcf3518d27c76762820ee63207781d1170e0d452c20f2761415ff4591da460d"
+    },
+    {
+      "stable_lexeme_key": "haut|ADJ",
+      "lemma": "haut",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 138.063,
+        "lexique_frequency": 63.475,
+        "contextual_diversity": 38.0741
+      },
+      "proposed_primary": {
+        "entry_id": "haut__adj__1",
+        "sense_id": "__ws_1_haut__adj__1",
+        "definition_fr": "De grande hauteur (dimension verticale). — Note : Par opposition à bas et à petit, en parlant d’un objet considéré par rapport à tous les autres objets du même genre, ou seulement par comparaison à un ou à plusieurs autres.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_1_haut__adj__1",
+          "sense_number": "1",
+          "definition_fr": "De grande hauteur (dimension verticale). — Note : Par opposition à bas et à petit, en parlant d’un objet considéré par rapport à tous les autres objets du même genre, ou seulement par comparaison à un ou à plusieurs autres."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_2_haut__adj__1",
+          "sense_number": "2",
+          "definition_fr": "Qualifie également certaines choses qui sont situées au-dessus d’autres."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_3_haut__adj__1",
+          "sense_number": "3",
+          "definition_fr": "(En particulier) Qualifie le temps qu'il fait, lorsque les nuages sont élevés, il n’y a pas à craindre la pluie."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_4_haut__adj__1",
+          "sense_number": "4",
+          "definition_fr": "Qualifie certains pays qui sont plus éloignés de la mer, ou plus proches de la source de quelque grande rivière, ou aussi plus montagneux."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_5_haut__adj__1",
+          "sense_number": "5",
+          "definition_fr": "Qualifie qui est éloigné dans le temps, qui est des époques lointaines."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_6_haut__adj__1",
+          "sense_number": "6",
+          "definition_fr": "Qui est est levé ; qui est relevé."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_7_haut__adj__1",
+          "sense_number": "7",
+          "definition_fr": "(Quelquefois) Qui est profond."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_8_haut__adj__1",
+          "sense_number": "8",
+          "definition_fr": "(Marine) Qualifie une marée à son point le plus élevé."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_9_haut__adj__1",
+          "sense_number": "9",
+          "definition_fr": "(Marine) Qualifie une mer qui est agitée."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_10_haut__adj__1",
+          "sense_number": "10",
+          "definition_fr": "(Musique) Qualifie des sons élevés, aigus, que l'on parle de la musique ou des instruments."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_11_haut__adj__1",
+          "sense_number": "11",
+          "definition_fr": "(Par extension) Qualifie la voix, lorsqu’elle est sonore, éclatante, et qu’elle se fait entendre de loin."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_12_haut__adj__1",
+          "sense_number": "12",
+          "definition_fr": "(Sens figuré) (Familier) Qualifie une manière de parler, un ton fier, menaçant, arrogant."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_13_haut__adj__1",
+          "sense_number": "13",
+          "definition_fr": "(Sens figuré) Qui est supérieur, excellent, éminent, distingué dans son genre, en parlant des personnes et des choses."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_14_haut__adj__1",
+          "sense_number": "14",
+          "definition_fr": "(Sens figuré) Qui est supérieur du point de vue moral."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_15_haut__adj__1",
+          "sense_number": "15",
+          "definition_fr": "(Jeu de cartes) Qualifie les cartes qui ont le plus de valeur."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_16_haut__adj__1",
+          "sense_number": "16",
+          "definition_fr": "(Commerce) Qui est d'une valeur considérable, extraordinaire."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_17_haut__adj__1",
+          "sense_number": "17",
+          "definition_fr": "(Par extension) (Commerce) Qualifie des denrées dont le prix est élevé."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_18_haut__adj__1",
+          "sense_number": "18",
+          "definition_fr": "(Péjoratif) Qui est excessif dans son genre."
+        },
+        {
+          "entry_id": "haut__adj__1",
+          "sense_id": "__ws_19_haut__adj__1",
+          "sense_number": "19",
+          "definition_fr": "(En particulier) (Quelquefois) Qui est fier, orgueilleux, impérieux ; hautain."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "5942d84f71a530289444cd10e88821b15c2209bd142d5e3956864ea219161ea3"
+    },
+    {
+      "stable_lexeme_key": "présent|ADJ",
+      "lemma": "présent",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 105.7313,
+        "lexique_frequency": 48.867,
+        "contextual_diversity": 25.47152
+      },
+      "proposed_primary": {
+        "entry_id": "présent__adj__1",
+        "sense_id": "__ws_1_présent__adj__1",
+        "definition_fr": "Qui est, qui se trouve actuellement dans le lieu dont on parle.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "présent__adj__1",
+          "sense_id": "__ws_1_présent__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Qui est, qui se trouve actuellement dans le lieu dont on parle."
+        },
+        {
+          "entry_id": "présent__adj__1",
+          "sense_id": "__ws_2_présent__adj__1",
+          "sense_number": "2",
+          "definition_fr": "(Sens figuré) Alerte, actif, efficace."
+        },
+        {
+          "entry_id": "présent__adj__1",
+          "sense_id": "__ws_3_présent__adj__1",
+          "sense_number": "3",
+          "definition_fr": "Se dit aussi des choses auxquelles on songe, dont on se souvient, que l’on croit voir encore."
+        },
+        {
+          "entry_id": "présent__adj__1",
+          "sense_id": "__ws_4_présent__adj__1",
+          "sense_number": "4",
+          "definition_fr": "Qui est actuel, qui est dans le temps où nous sommes."
+        },
+        {
+          "entry_id": "présent__adj__1",
+          "sense_id": "__ws_5_présent__adj__1",
+          "sense_number": "5",
+          "definition_fr": "(Grammaire) Qualifie le temps grammatical situant l’action au moment où on l’énonce."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_présent__adj__1",
+          "chinese_written_form": "在场",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Là où l’on est",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "a8c5f7a4b98a67a5d2cd977bbad3a4fa65b0994aff037b3fed3502b84920c022"
+    },
+    {
+      "stable_lexeme_key": "naturel|ADJ",
+      "lemma": "naturel",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 97.5218,
+        "lexique_frequency": 36.079,
+        "contextual_diversity": 8.28383
+      },
+      "proposed_primary": {
+        "entry_id": "naturel__adj__1",
+        "sense_id": "__ws_1_naturel__adj__1",
+        "definition_fr": "Qui est relatif à la nature, à l’ensemble des êtres et des choses, à l’ordre qui les régit.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_1_naturel__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Qui est relatif à la nature, à l’ensemble des êtres et des choses, à l’ordre qui les régit."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_2_naturel__adj__1",
+          "sense_number": "2",
+          "definition_fr": "Ce qui est conforme aux lois de la nature, par opposition à surnaturel."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_3_naturel__adj__1",
+          "sense_number": "3",
+          "definition_fr": "Ce qui est suit le cours spontané des choses, par opposition à artificiel ou forcé."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_4_naturel__adj__1",
+          "sense_number": "4",
+          "definition_fr": "Qui est conforme à la nature particulière de chaque espèce, de chaque individu, de chaque chose."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_5_naturel__adj__1",
+          "sense_number": "5",
+          "definition_fr": "Qui est conforme au tempérament, aux penchants innés d’un individu."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_6_naturel__adj__1",
+          "sense_number": "6",
+          "definition_fr": "(Mathématiques) Qualifie les entiers positifs (plus grands que zéro)."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_7_naturel__adj__1",
+          "sense_number": "7",
+          "definition_fr": "Qualifie ce que nous faisons en conséquence de nos habitudes."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_8_naturel__adj__1",
+          "sense_number": "8",
+          "definition_fr": "Qualifie les sentiments inspirés par les liens du sang, la naissance, le milieu où l’on vit."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_9_naturel__adj__1",
+          "sense_number": "9",
+          "definition_fr": "(Famille, Société) Qui a un lien de parenté biologique, sans reconnaissance institutionnelle ; le terme s’oppose à légitime et à adoptif."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_10_naturel__adj__1",
+          "sense_number": "10",
+          "definition_fr": "Qui est conforme à la raison ou à l’usage commun."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_11_naturel__adj__1",
+          "sense_number": "11",
+          "definition_fr": "Se dit, à la forme négative, d’une chose où l’on soupçonne quelque tromperie."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_12_naturel__adj__1",
+          "sense_number": "12",
+          "definition_fr": "Qui s’offre d’abord à l’esprit."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_13_naturel__adj__1",
+          "sense_number": "13",
+          "definition_fr": "Ce qui est produit par la nature seule, par opposition à ce qui a été fait par l’homme, à ce qui est artificiel."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_14_naturel__adj__1",
+          "sense_number": "14",
+          "definition_fr": "Dessiné par la configuration du sol, par opposition à un tracé résultant de conventions diplomatiques."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_15_naturel__adj__1",
+          "sense_number": "15",
+          "definition_fr": "Pur, non contrefait."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_16_naturel__adj__1",
+          "sense_number": "16",
+          "definition_fr": "(Musique) Simple, qui n’est affectée ni d’un dièse, ni d’un bémol."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_17_naturel__adj__1",
+          "sense_number": "17",
+          "definition_fr": "Se dit des qualités intellectuelles ou morales qui viennent de la nature seule, qui sont innées, par opposition à ce qui est acquis, cultivé, factice."
+        },
+        {
+          "entry_id": "naturel__adj__1",
+          "sense_id": "__ws_18_naturel__adj__1",
+          "sense_number": "18",
+          "definition_fr": "Qui est sans affectation, sans contrainte, sans effort."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "a9d79d964adf8404088114bf345fa2c35bf30345fc4da584ee82dd7a1ddccbc0"
+    },
+    {
+      "stable_lexeme_key": "économique|ADJ",
+      "lemma": "économique",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 97.4119,
+        "lexique_frequency": 7.627,
+        "contextual_diversity": 2.13105
+      },
+      "proposed_primary": {
+        "entry_id": "économique__adj__1",
+        "sense_id": "__ws_1_économique__adj__1",
+        "definition_fr": "Qui diminue les frais ou la dépense.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "économique__adj__1",
+          "sense_id": "__ws_1_économique__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Qui diminue les frais ou la dépense."
+        },
+        {
+          "entry_id": "économique__adj__1",
+          "sense_id": "__ws_2_économique__adj__1",
+          "sense_number": "2",
+          "definition_fr": "Qui concerne l’économie ou au gouvernement d’un ménage, d’une maison."
+        },
+        {
+          "entry_id": "économique__adj__1",
+          "sense_id": "__ws_3_économique__adj__1",
+          "sense_number": "3",
+          "definition_fr": "Relatif à l’économie politique ; économicopolitique."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "9f38705d285f586a0f733ddb33ec004edf9464f9e45892912e5838cced373d37"
+    },
+    {
+      "stable_lexeme_key": "entier|ADJ",
+      "lemma": "entier",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 93.5834,
+        "lexique_frequency": 79.854,
+        "contextual_diversity": 17.05144
+      },
+      "proposed_primary": {
+        "entry_id": "entier__adj__1",
+        "sense_id": "__ws_1_entier__adj__1",
+        "definition_fr": "Qui a toutes ses parties, ou que l’on considère dans toute son étendue.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "entier__adj__1",
+          "sense_id": "__ws_1_entier__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Qui a toutes ses parties, ou que l’on considère dans toute son étendue."
+        },
+        {
+          "entry_id": "entier__adj__1",
+          "sense_id": "__ws_2_entier__adj__1",
+          "sense_number": "2",
+          "definition_fr": "(Mathématiques) Se dit des nombres composés d’une ou plusieurs unités."
+        },
+        {
+          "entry_id": "entier__adj__1",
+          "sense_id": "__ws_3_entier__adj__1",
+          "sense_number": "3",
+          "definition_fr": "(Botanique) se dit d’un élément de plante (pétale ou feuille) qui n’a aucune découpure sur ses bords."
+        },
+        {
+          "entry_id": "entier__adj__1",
+          "sense_id": "__ws_4_entier__adj__1",
+          "sense_number": "4",
+          "definition_fr": "(Sens figuré) Qui n’a subi aucune altération."
+        },
+        {
+          "entry_id": "entier__adj__1",
+          "sense_id": "__ws_5_entier__adj__1",
+          "sense_number": "5",
+          "definition_fr": "(Sens figuré) Qui ne supporte aucune atténuation dans ses opinions, dans ses convictions, qui ne se laisse point entamer par la discussion."
+        },
+        {
+          "entry_id": "entier__adj__1",
+          "sense_id": "__ws_6_entier__adj__1",
+          "sense_number": "6",
+          "definition_fr": "(Au masculin) Qui n’a pas été castré. Il faut noter que le cheval entier se distingue de l'étalon par le fait que, même s'il peut se reproduire, ce n'est pas un reproducteur reconnu par les haras et les éleveurs Par extension et anthropomorphisme, les chevaux qui n'ont jamais sailli sont appelés entier, et ceux qui ont sailli sont appelés étalons (même sans être officiellement reconnus)"
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "ff89982d80e3ecda7f489947987169393bb27f3d07bbdf7d9318e032cf550355"
+    },
+    {
+      "stable_lexeme_key": "parisien|ADJ",
+      "lemma": "parisien",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 90.186,
+        "lexique_frequency": 1.304,
+        "contextual_diversity": 0.30618
+      },
+      "proposed_primary": {
+        "entry_id": "parisien__adj__1",
+        "sense_id": "__ws_1_parisien__adj__1",
+        "definition_fr": "Relatif à Paris ou aux Parisiens.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "parisien__adj__1",
+          "sense_id": "__ws_1_parisien__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Relatif à Paris ou aux Parisiens."
+        },
+        {
+          "entry_id": "parisien__adj__1",
+          "sense_id": "__ws_2_parisien__adj__1",
+          "sense_number": "2",
+          "definition_fr": "Qui a le caractère ou l’air de Paris."
+        },
+        {
+          "entry_id": "parisien__adj__1",
+          "sense_id": "__ws_3_parisien__adj__1",
+          "sense_number": "3",
+          "definition_fr": "D'une inspiration légère et frivole, voire érotique."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "1cae5d647244d60964036b5948b1a17d05dc5dd31aa8e666e625f049fb6357fe"
+    },
+    {
+      "stable_lexeme_key": "inquiet|ADJ",
+      "lemma": "inquiet",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 86.0433,
+        "lexique_frequency": 48.804,
+        "contextual_diversity": 40.30006
+      },
+      "proposed_primary": {
+        "entry_id": "inquiet__adj__1",
+        "sense_id": "__ws_1_inquiet__adj__1",
+        "definition_fr": "En parlant d'une émotion ou d'une activité, qui prive du repos moral ou psychologique.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "inquiet__adj__1",
+          "sense_id": "__ws_1_inquiet__adj__1",
+          "sense_number": "1",
+          "definition_fr": "En parlant d'une émotion ou d'une activité, qui prive du repos moral ou psychologique."
+        },
+        {
+          "entry_id": "inquiet__adj__1",
+          "sense_id": "__ws_2_inquiet__adj__1",
+          "sense_number": "2",
+          "definition_fr": "En parlant d'une personne, qui ne connaît pas le repos moral ou psychologique."
+        },
+        {
+          "entry_id": "inquiet__adj__1",
+          "sense_id": "__ws_3_inquiet__adj__1",
+          "sense_number": "3",
+          "definition_fr": "(Spécialement) Qui craint un événement malheureux."
+        },
+        {
+          "entry_id": "inquiet__adj__1",
+          "sense_id": "__ws_4_inquiet__adj__1",
+          "sense_number": "4",
+          "definition_fr": "Qui n’est jamais content de la situation, de l’état où il se trouve, et qui désire toujours quelque changement."
+        },
+        {
+          "entry_id": "inquiet__adj__1",
+          "sense_id": "__ws_5_inquiet__adj__1",
+          "sense_number": "5",
+          "definition_fr": "(Vieilli) Qui ne trouve pas le repos physique."
+        },
+        {
+          "entry_id": "inquiet__adj__1",
+          "sense_id": "__ws_6_inquiet__adj__1",
+          "sense_number": "6",
+          "definition_fr": "(Par extension) Qualifie un sommeil qui est souvent interrompu et qui est troublé par quelque cause physique ou morale."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "78a40976eaddac37bf8e726ba776ec6d4a34601647285a0548561036e402e4ab"
+    },
+    {
+      "stable_lexeme_key": "cependant|ADV",
+      "lemma": "cependant",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 150.1748,
+        "lexique_frequency": 27.554,
+        "contextual_diversity": 10.50367
+      },
+      "proposed_primary": {
+        "entry_id": "cependant__adv__1",
+        "sense_id": "__ws_1_cependant__adv__1",
+        "definition_fr": "Pendant ce temps ; entretemps. — Note : Désigne, dans ce sens, une action parallèle.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "cependant__adv__1",
+          "sense_id": "__ws_1_cependant__adv__1",
+          "sense_number": "1",
+          "definition_fr": "Pendant ce temps ; entretemps. — Note : Désigne, dans ce sens, une action parallèle."
+        },
+        {
+          "entry_id": "cependant__adv__1",
+          "sense_id": "__ws_2_cependant__adv__1",
+          "sense_number": "2",
+          "definition_fr": "Néanmoins ; toutefois ; nonobstant cela."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_cependant__adv__1",
+          "chinese_written_form": "不过",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Néanmoins, toutefois,...",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_cependant__adv__1",
+          "chinese_written_form": "然而",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Néanmoins, toutefois,...",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "be306c4f38841f88b03014f1a090ae458f46dc0f8c587f9e72b5f3126992be88"
+    },
+    {
+      "stable_lexeme_key": "simplement|ADV",
+      "lemma": "simplement",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 103.5238,
+        "lexique_frequency": 106.883,
+        "contextual_diversity": 30.52511
+      },
+      "proposed_primary": {
+        "entry_id": "simplement__adv__1",
+        "sense_id": "__ws_1_simplement__adv__1",
+        "definition_fr": "Sans complication.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "simplement__adv__1",
+          "sense_id": "__ws_1_simplement__adv__1",
+          "sense_number": "1",
+          "definition_fr": "Sans complication."
+        },
+        {
+          "entry_id": "simplement__adv__1",
+          "sense_id": "__ws_2_simplement__adv__1",
+          "sense_number": "2",
+          "definition_fr": "Seulement."
+        },
+        {
+          "entry_id": "simplement__adv__1",
+          "sense_id": "__ws_3_simplement__adv__1",
+          "sense_number": "3",
+          "definition_fr": "D’une manière simple, sans recherche, sans ornement."
+        },
+        {
+          "entry_id": "simplement__adv__1",
+          "sense_id": "__ws_4_simplement__adv__1",
+          "sense_number": "4",
+          "definition_fr": "Naïvement, sans détour."
+        },
+        {
+          "entry_id": "simplement__adv__1",
+          "sense_id": "__ws_5_simplement__adv__1",
+          "sense_number": "5",
+          "definition_fr": "Bonnement, sans finesse."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "1d593e51ac1cdf3c80a0018fa88613aa1aca8ae125f678a2432566617843afc3"
+    },
+    {
+      "stable_lexeme_key": "particulièrement|ADV",
+      "lemma": "particulièrement",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 86.6263,
+        "lexique_frequency": 15.68,
+        "contextual_diversity": 6.65187
+      },
+      "proposed_primary": {
+        "entry_id": "particulièrement__adv__1",
+        "sense_id": "__ws_1_particulièrement__adv__1",
+        "definition_fr": "D’une manière singulière ou remarquable.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "particulièrement__adv__1",
+          "sense_id": "__ws_1_particulièrement__adv__1",
+          "sense_number": "1",
+          "definition_fr": "D’une manière singulière ou remarquable."
+        },
+        {
+          "entry_id": "particulièrement__adv__1",
+          "sense_id": "__ws_2_particulièrement__adv__1",
+          "sense_number": "2",
+          "definition_fr": "D’une manière spéciale ; spécialement."
+        },
+        {
+          "entry_id": "particulièrement__adv__1",
+          "sense_id": "__ws_3_particulièrement__adv__1",
+          "sense_number": "3",
+          "definition_fr": "(Avec de) Un nombre particulier de, une quantité particulière de."
+        },
+        {
+          "entry_id": "particulièrement__adv__1",
+          "sense_id": "__ws_4_particulièrement__adv__1",
+          "sense_number": "4",
+          "definition_fr": "Dans l’intimité, d’une manière intime."
+        },
+        {
+          "entry_id": "particulièrement__adv__1",
+          "sense_id": "__ws_5_particulièrement__adv__1",
+          "sense_number": "5",
+          "definition_fr": "En détail."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "a248e5d924cc5da08a2dd683202bd476f5245ee424dfeffcefd98b616a871e87"
+    },
+    {
+      "stable_lexeme_key": "ailleurs|ADV",
+      "lemma": "ailleurs",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 85.9554,
+        "lexique_frequency": 102.481,
+        "contextual_diversity": 33.48898
+      },
+      "proposed_primary": {
+        "entry_id": "ailleurs__adv__1",
+        "sense_id": "__ws_1_ailleurs__adv__1",
+        "definition_fr": "En un autre lieu.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "ailleurs__adv__1",
+          "sense_id": "__ws_1_ailleurs__adv__1",
+          "sense_number": "1",
+          "definition_fr": "En un autre lieu."
+        },
+        {
+          "entry_id": "ailleurs__adv__1",
+          "sense_id": "__ws_2_ailleurs__adv__1",
+          "sense_number": "2",
+          "definition_fr": "Dans un autre passage d’un document."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "07cbc712dbba4a004ae1d342a18e574ae4c0e3f9d263753b8aab8ca8682ce2c9"
+    },
+    {
+      "stable_lexeme_key": "point|NOM",
+      "lemma": "point",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 216.313,
+        "lexique_frequency": 277.604,
+        "contextual_diversity": 59.16105
+      },
+      "proposed_primary": {
+        "entry_id": "point__nom__1",
+        "sense_id": "__ws_1_point__nom__1",
+        "definition_fr": "(Couture) Action de piquer dans un tissu avec une aiguille enfilée ou résultat de cette action, piqûre.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "couture"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_1_point__nom__1",
+          "sense_number": "1",
+          "definition_fr": "(Couture) Action de piquer dans un tissu avec une aiguille enfilée ou résultat de cette action, piqûre."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_2_point__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Dentelle) Sorte de dentelle de fil, faite à l’aiguille, qui prend diverses nominations, selon les lieux où se font les différentes espèces de cette dentelle, la manière dont elles sont faites, ou les personnes qui les ont mises en vogue."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_3_point__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Menuiserie) Parquet en point de Hongrie, parquet dont les lames sont disposées en rangs obliques."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_4_point__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Petit trou qu’on fait à des courroies, à des étrivières pour y passer l’ardillon."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_5_point__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Douleur piquante."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_6_point__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Géométrie) La plus petite portion d’étendue qu’il soit possible de concevoir, considérée, par abstraction, comme n’ayant aucune étendue. (Par extension) Minimum d’espace qui puisse être perçu. Aussi, intersection de 2 droites."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_7_point__nom__1",
+          "sense_number": "7",
+          "definition_fr": "Endroit fixe et déterminé."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_8_point__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Marine) Latitude et longitude du lieu où un navire se trouve en mer."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_9_point__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(Spécialement) (Chimie, Physique) Réunion des conditions (de température, de pression, d'humidité, etc.) pour que se réalise un phénomène."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_10_point__nom__1",
+          "sense_number": "10",
+          "definition_fr": "(Typographie) Petite marque ronde que l’on emploie à différents usages dans l’écriture."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_11_point__nom__1",
+          "sense_number": "11",
+          "definition_fr": "(Musique) Signe que l’on met après une note et qui augmente de moitié sa valeur."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_12_point__nom__1",
+          "sense_number": "12",
+          "definition_fr": "(Sculpture) Marques que l’on fait sur toutes les parties les plus saillantes d’une statue que l’on veut copier."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_13_point__nom__1",
+          "sense_number": "13",
+          "definition_fr": "(Finance, Jeux) Unité arbitraire définie selon les règles de chaque domaine."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_14_point__nom__1",
+          "sense_number": "14",
+          "definition_fr": "(Argot) (Vieilli) Unité monétaire, en général : franc."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_15_point__nom__1",
+          "sense_number": "15",
+          "definition_fr": "(Jeux) Nombre qu’on attribue à chaque joueur, et qui varie selon les jeux et leurs règles ; score."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_16_point__nom__1",
+          "sense_number": "16",
+          "definition_fr": "(Éducation) Marques, notation qui servent à noter la bonne ou la mauvaise conduite des écoliers et à évaluer les fautes qu’ils font dans leurs devoirs."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_17_point__nom__1",
+          "sense_number": "17",
+          "definition_fr": "(Métrologie) (Désuet) Douzième partie d’une ligne, soit 1/144 pied, soit environ 0,188 mm."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_18_point__nom__1",
+          "sense_number": "18",
+          "definition_fr": "(Métrologie) (Typographie) Mesure qui sert à déterminer la force du corps (la taille) des caractères et qui vaut environ quatre dixièmes de millimètre."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_19_point__nom__1",
+          "sense_number": "19",
+          "definition_fr": "(Sens figuré) Parties qui forment la division de certains discours, de certains ouvrages."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_20_point__nom__1",
+          "sense_number": "20",
+          "definition_fr": "Réunion, rendez-vous."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_21_point__nom__1",
+          "sense_number": "21",
+          "definition_fr": "Question, difficulté particulière en quelque genre de connaissance que ce soit."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_22_point__nom__1",
+          "sense_number": "22",
+          "definition_fr": "Ce qu’il y a d’important, de principal dans une affaire, dans une question, dans une difficulté."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_23_point__nom__1",
+          "sense_number": "23",
+          "definition_fr": "État ; situation."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_24_point__nom__1",
+          "sense_number": "24",
+          "definition_fr": "Degré, période."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_25_point__nom__1",
+          "sense_number": "25",
+          "definition_fr": "Instant, moment, temps précis dans lequel on fait quelque chose."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_26_point__nom__1",
+          "sense_number": "26",
+          "definition_fr": "Action de poindre."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_27_point__nom__1",
+          "sense_number": "27",
+          "definition_fr": "Point de pourcentage. — Note d’usage : Il est alors utilisé pour distinguer les cas où la valeur en pourcentage est augmentée d’un certain pourcentage d’elle-même des cas où elle est augmentée d’un certain pourcentage de la valeur totale."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_28_point__nom__1",
+          "sense_number": "28",
+          "definition_fr": "Signe de ponctuation indiquant la fin d’une phrase."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_29_point__nom__1",
+          "sense_number": "29",
+          "definition_fr": "Signe diacritique placé au dessus de certaines lettres."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_30_point__nom__1",
+          "sense_number": "30",
+          "definition_fr": "(Construction, Électrotechnique) Site d’acquisition de donnée, dans une gestion technique centralisée."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_31_point__nom__1",
+          "sense_number": "31",
+          "definition_fr": "Point barre."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_32_point__nom__1",
+          "sense_number": "32",
+          "definition_fr": "(Cartographie) Élément graphique minimal, correspondant pratiquement en cartographie, à une tache de forme compacte et de très faibles dimensions."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_33_point__nom__1",
+          "sense_number": "33",
+          "definition_fr": "(Navigation) Position géographique d’un navire ou d’un aéronef déterminée par des observations optiques, radioélectroniques, etc."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_34_point__nom__1",
+          "sense_number": "34",
+          "definition_fr": "Valeur d'un ticket détachable d'une carte de rationnement, en usage en France pendant l’occupation allemande et peu après la fin de la guerre."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_35_point__nom__1",
+          "sense_number": "35",
+          "definition_fr": "Élément de calcul de la retraite."
+        },
+        {
+          "entry_id": "point__nom__1",
+          "sense_id": "__ws_36_point__nom__1",
+          "sense_number": "36",
+          "definition_fr": "Unité de mesure arbitraire utilisée pour les châssis entoilés destinés aux peintres. Voir aussi : Point sur l’encyclopédie Wikipédia"
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_point__nom__1",
+          "chinese_written_form": "点",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Géométrie) La plus petite portion d’étendue qu’il soit possible",
+          "mapped_sense_id": "__ws_6_point__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_point__nom__1",
+          "chinese_written_form": "点",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Endroit fixe et déterminé",
+          "mapped_sense_id": "__ws_7_point__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_point__nom__1",
+          "chinese_written_form": "句号",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Petite marque ronde que l’on emploie à différents usages dans l’écriture.",
+          "mapped_sense_id": "__ws_10_point__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_point__nom__1",
+          "chinese_written_form": "句点",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Petite marque ronde que l’on emploie à différents usages dans l’écriture.",
+          "mapped_sense_id": "__ws_10_point__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_5_point__nom__1",
+          "chinese_written_form": "分数",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Jeux) Nombre qu’on attribue à chaque joueur, et qui varie selon les jeux et leurs règles ; score",
+          "mapped_sense_id": "__ws_15_point__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_6_point__nom__1",
+          "chinese_written_form": "分数",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Éducation) Marques, notation qui servent à évaluer les fautes qu’ils font dans leurs devoirs",
+          "mapped_sense_id": "__ws_16_point__nom__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "099a96e6d856786705a6835bca84d1c3bb2d5512a4fc365a457c70936eb9c9f7"
+    },
+    {
+      "stable_lexeme_key": "corps|NOM",
+      "lemma": "corps",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 200.8651,
+        "lexique_frequency": 258.585,
+        "contextual_diversity": 48.32058
+      },
+      "proposed_primary": {
+        "entry_id": "corps__nom__1",
+        "sense_id": "__ws_1_corps__nom__1",
+        "definition_fr": "Portion de matière qui forme un tout individuel et distinct.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_1_corps__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Portion de matière qui forme un tout individuel et distinct."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_2_corps__nom__1",
+          "sense_number": "2",
+          "definition_fr": "Organisme de l’être humain, d’un animal ou de tout être animé, vivant ou mort."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_3_corps__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Anatomie) Tronc, partie de l’homme qui est entre le cou et les hanches."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_4_corps__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Par métonymie) Partie de certains vêtements qui s’applique à la partie supérieure du corps, corset, corsage."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_5_corps__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Vieilli) Personne, individu."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_6_corps__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Droit) Personne considérée par opposition aux biens, aux marchandises, etc."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_7_corps__nom__1",
+          "sense_number": "7",
+          "definition_fr": "Personne sujette à être emprisonnée par ordre de justice."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_8_corps__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Vieilli) Personne du roi."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_9_corps__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(En particulier) Cadavre ; dépouille. — Note : Dans ce sens, il ne se dit que du corps humain."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_10_corps__nom__1",
+          "sense_number": "10",
+          "definition_fr": "(Par extension) Défunt."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_11_corps__nom__1",
+          "sense_number": "11",
+          "definition_fr": "(Christianisme) Eucharistie, chair symbolique du Christ."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_12_corps__nom__1",
+          "sense_number": "12",
+          "definition_fr": "(Mathématiques) Anneau dont l’ensemble des éléments non nuls forme un groupe pour la deuxième loi de composition interne."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_13_corps__nom__1",
+          "sense_number": "13",
+          "definition_fr": "Partie principale d’un objet, son cœur, son centre."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_14_corps__nom__1",
+          "sense_number": "14",
+          "definition_fr": "Élément massif d’un meuble."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_15_corps__nom__1",
+          "sense_number": "15",
+          "definition_fr": "(Numismatique) Figure qui est représentée sur une devise, par opposition aux paroles qui accompagnent cette figure et qu’on nomme l’âme de la devise."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_16_corps__nom__1",
+          "sense_number": "16",
+          "definition_fr": "Consistance de certains objets qui sont minces et flexibles."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_17_corps__nom__1",
+          "sense_number": "17",
+          "definition_fr": "Consistance des choses liquides qu’on fait cuire ou épaissir par le feu ou autrement."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_18_corps__nom__1",
+          "sense_number": "18",
+          "definition_fr": "Force, vigueur de certains vins, de certaines liqueurs."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_19_corps__nom__1",
+          "sense_number": "19",
+          "definition_fr": "(Sens figuré) Société, union de plusieurs personnes qui vivent sous les mêmes lois, les mêmes coutumes, les mêmes règles."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_20_corps__nom__1",
+          "sense_number": "20",
+          "definition_fr": "(En particulier) Compagnie ou communauté particulière, dans l’État ou dans l’Église. L'Assemblée nationale française, dont un des ancêtres fut le Corps législatif sous le Consulat et l'Empire, fait partie des « corps constitués ». – Ici à Versailles pour l'élection présidentielle de 1939."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_21_corps__nom__1",
+          "sense_number": "21",
+          "definition_fr": "(Militaire) Corps d’armée ; troupe importante."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_22_corps__nom__1",
+          "sense_number": "22",
+          "definition_fr": "(Militaire) (En particulier) Régiment ou troupe, par rapport à ceux qui en font partie."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_23_corps__nom__1",
+          "sense_number": "23",
+          "definition_fr": "Réunion, ensemble de ceux qui appartiennent à certaines armes spéciales."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_24_corps__nom__1",
+          "sense_number": "24",
+          "definition_fr": "Groupe de militaires ou de fonctionnaires civils soumis au même statut."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_25_corps__nom__1",
+          "sense_number": "25",
+          "definition_fr": "(Sens figuré) Désigne la réalité."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_26_corps__nom__1",
+          "sense_number": "26",
+          "definition_fr": "(Typographie) Principal trait dont une lettre est formée ; de la dimension de la pièce fondue qui supporte l’œil de la lettre et qui se mesure par points typographiques du côté du cran."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_27_corps__nom__1",
+          "sense_number": "27",
+          "definition_fr": "Corpus, recueil, assemblage de plusieurs pièces, de plusieurs ouvrages de divers auteurs, en un ou plusieurs tomes."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_28_corps__nom__1",
+          "sense_number": "28",
+          "definition_fr": "Corps de doctrine, réunion de principes qui forment un système."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_29_corps__nom__1",
+          "sense_number": "29",
+          "definition_fr": "(Anatomie) Excroissances charnues, tumeurs, callosités, etc."
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_30_corps__nom__1",
+          "sense_number": "30",
+          "definition_fr": "(Cartographie) Dimension variable d'un caractère typographique mesurée dans un plan parallèle à la surface imprimante parallèlement à la ligne de base"
+        },
+        {
+          "entry_id": "corps__nom__1",
+          "sense_id": "__ws_31_corps__nom__1",
+          "sense_number": "31",
+          "definition_fr": "(Métallurgie) (Musique) Partie centrale d’une cloche, la plus grande, qui transmet les vibrations."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_corps__nom__1",
+          "chinese_written_form": "身",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "91c97d5f44dbf8a72489b3329a68c98c775d81bfad4bca8340e8c7ab877bcca9"
+    },
+    {
+      "stable_lexeme_key": "doute|NOM",
+      "lemma": "doute",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 157.9066,
+        "lexique_frequency": 100.87,
+        "contextual_diversity": 38.20269
+      },
+      "proposed_primary": {
+        "entry_id": "doute__nom__1",
+        "sense_id": "__ws_1_doute__nom__1",
+        "definition_fr": "Incertitude sur l’existence ou la vérité d’une chose, sur l'exactitude ou la fausseté d’une idée, d’une affirmation.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "doute__nom__1",
+          "sense_id": "__ws_1_doute__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Incertitude sur l’existence ou la vérité d’une chose, sur l'exactitude ou la fausseté d’une idée, d’une affirmation."
+        },
+        {
+          "entry_id": "doute__nom__1",
+          "sense_id": "__ws_2_doute__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Philosophie) Méthode par laquelle l’esprit, suspendant son jugement, ne reçoit pour vrai que ce qu’il connaît évidemment être tel."
+        },
+        {
+          "entry_id": "doute__nom__1",
+          "sense_id": "__ws_3_doute__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Religion) État d’esprit de celui qui doute des doctrines de la religion."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "2fcc6c3105592651e73dcc4c5fbc19ed1e64bfcb43a5d073851235c8336ea9ff"
+    },
+    {
+      "stable_lexeme_key": "loi|NOM",
+      "lemma": "loi",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 149.8466,
+        "lexique_frequency": 105.082,
+        "contextual_diversity": 19.61115
+      },
+      "proposed_primary": {
+        "entry_id": "loi__nom__1",
+        "sense_id": "__ws_1_loi__nom__1",
+        "definition_fr": "Règle, obligations écrites, prescrites ou tacites, auxquelles les personnes se doivent de se conformer.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_1_loi__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Règle, obligations écrites, prescrites ou tacites, auxquelles les personnes se doivent de se conformer."
+        },
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_2_loi__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Droit) Prescription de l’autorité législative (État, Union européenne, jurisprudence ou usages) qui règle, ordonne, permet ou défend."
+        },
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_3_loi__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Par extension) Toute règle qui est reçue dans le pays et qui y a force de loi, soit qu’elle ait rapport au gouvernement général, soit qu’elle fixe le droit des particuliers."
+        },
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_4_loi__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Puissance ; autorité."
+        },
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_5_loi__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Religion) Ensemble des règles de conduite émanant de Dieu ou de ses représentants sur la terre ; les livres sacrés recensant lesdites règles."
+        },
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_6_loi__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Sciences) Postulat ou énoncé vrai sous certaines conditions."
+        },
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_7_loi__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Mathématiques) Probabilité sur R associée à une variable aléatoire réelle, aussi appelée loi de probabilité."
+        },
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_8_loi__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Physique) Ce qui règle l’ordre du monde physique."
+        },
+        {
+          "entry_id": "loi__nom__1",
+          "sense_id": "__ws_9_loi__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(Fantastique) L’une des deux forces du monde, relative à l’ordre par opposition au chaos, dans certaines fictions fantastiques."
+        },
+        {
+          "entry_id": "loi__nom__2",
+          "sense_id": "__ws_1_loi__nom__2",
+          "sense_number": "1",
+          "definition_fr": "(Numismatique) Titre auquel les monnaies doivent être alliées et fabriquées. → voir aloi"
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_loi__nom__1",
+          "chinese_written_form": "法律",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Prescription de l’autorité législative qui règle, ordonne, permet ou défend.",
+          "mapped_sense_id": "__ws_2_loi__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_loi__nom__1",
+          "chinese_written_form": "法",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Prescription de l’autorité législative qui règle, ordonne, permet ou défend.",
+          "mapped_sense_id": "__ws_2_loi__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_loi__nom__1",
+          "chinese_written_form": "律",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Prescription de l’autorité législative qui règle, ordonne, permet ou défend.",
+          "mapped_sense_id": "__ws_2_loi__nom__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "d14dc1656cf10aca197a6a1bd765c1809a6f2b7da4e52fd71fa5f0c9c51226bb"
+    },
+    {
+      "stable_lexeme_key": "fond|NOM",
+      "lemma": "fond",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 147.2931,
+        "lexique_frequency": 90.244,
+        "contextual_diversity": 29.91274
+      },
+      "proposed_primary": {
+        "entry_id": "fond__nom__1",
+        "sense_id": "__ws_1_fond__nom__1",
+        "definition_fr": "Endroit le plus bas, le plus intérieur d’une chose creuse.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_1_fond__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Endroit le plus bas, le plus intérieur d’une chose creuse."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_2_fond__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Par métonymie) Partie de liquide qui reste au fond."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_3_fond__nom__1",
+          "sense_number": "3",
+          "definition_fr": "Couche de terre, de sable, de rochers ou de vase que recouvre l’eau de la mer, d’un lac, d’une rivière à un endroit donné."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_4_fond__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Marine) Hauteur de l’eau dans un endroit donné. → voir haut-fond et basfond"
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_5_fond__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Terrain considéré par rapport à son degré de fermeté, à sa qualité, à sa composition."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_6_fond__nom__1",
+          "sense_number": "6",
+          "definition_fr": "Ce qu’il y a de plus éloigné de l’entrée, de l’abord ; ce qu’il y a de plus reculé, de plus retiré dans un lieu, dans un pays. — (Sens figuré) Se dit quelquefois pour la chose même."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_7_fond__nom__1",
+          "sense_number": "7",
+          "definition_fr": "Ce qui forme le côté d’une chose opposé à l’entrée, à l’ouverture."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_8_fond__nom__1",
+          "sense_number": "8",
+          "definition_fr": "Derrière ou fondement."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_9_fond__nom__1",
+          "sense_number": "9",
+          "definition_fr": "Première ou plus basse tissure sur laquelle on fait un dessin, une peinture, ou quelque nouvel ouvrage."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_10_fond__nom__1",
+          "sense_number": "10",
+          "definition_fr": "(Par extension) Plan le plus reculé d’un paysage ou la représentation du lieu de la scène dans un tableau d’histoire, etc."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_11_fond__nom__1",
+          "sense_number": "11",
+          "definition_fr": "(Théâtre) Décor qui forme l’arrière de la scène."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_12_fond__nom__1",
+          "sense_number": "12",
+          "definition_fr": "(Sens figuré) Essentiel par opposition à l’accessoire."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_13_fond__nom__1",
+          "sense_number": "13",
+          "definition_fr": "(En particulier) (Droit) Ce qui fait la matière d’un procès, par opposition à tout ce qui n’est que forme ou exception."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_14_fond__nom__1",
+          "sense_number": "14",
+          "definition_fr": "(En particulier) (Littéraire) Dans une rédaction, aspect ayant trait aux idées, par opposition à la forme."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_15_fond__nom__1",
+          "sense_number": "15",
+          "definition_fr": "(Sens figuré) Ce qu’il y a de plus intérieur, de plus intime, de plus caché, de plus secret dans le cœur, dans l’âme, etc."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_16_fond__nom__1",
+          "sense_number": "16",
+          "definition_fr": "(Sport) Endurance, faculté de soutenir une épreuve sur la durée. → voir demi-fond et ski de fond"
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_17_fond__nom__1",
+          "sense_number": "17",
+          "definition_fr": "(Cuisine) Bouillon ou jus, gras ou maigre, destiné au mouillement des sauces."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_18_fond__nom__1",
+          "sense_number": "18",
+          "definition_fr": "(Cartographie) Carte reproduite totalement ou partiellement, en une ou plusieurs couleurs souvent atténuées, servant de repère pour une surcharge représentant des phénomènes localisables déterminés."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_19_fond__nom__1",
+          "sense_number": "19",
+          "definition_fr": "(Cartographie) Image topographique obtenue par un procédé quelconque et associée à une surcharge obtenue par d’autres procédés, pour réaliser une carte. Note : en d’autres termes, ces acceptions distinguent un fond topographique et une surcharge, soit non topographique et constituant le thème essentiel de la carte, soit quelconque mais réalisée par d’autres techniques que le fond."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_20_fond__nom__1",
+          "sense_number": "20",
+          "definition_fr": "(Chaudronnerie) Extrémité plane (disque) ou bombée (ellipsoïde, anse de panier) fermant un réservoir sous pression."
+        },
+        {
+          "entry_id": "fond__nom__1",
+          "sense_id": "__ws_21_fond__nom__1",
+          "sense_number": "21",
+          "definition_fr": "(Industrie minière) L’ensemble des tâches effectuées à l’intérieur de la mine."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "6db1c438159a6b420deb5247442f90004b3fe4a7a6c927c633e6226244207d35"
+    },
+    {
+      "stable_lexeme_key": "emploi|NOM",
+      "lemma": "emploi",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 142.3393,
+        "lexique_frequency": 37.193,
+        "contextual_diversity": 10.56644
+      },
+      "proposed_primary": {
+        "entry_id": "emploi__nom__1",
+        "sense_id": "__ws_1_emploi__nom__1",
+        "definition_fr": "Usage qu’on fait de quelque chose.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "emploi__nom__1",
+          "sense_id": "__ws_1_emploi__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Usage qu’on fait de quelque chose."
+        },
+        {
+          "entry_id": "emploi__nom__1",
+          "sense_id": "__ws_2_emploi__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Jurisprudence et finance) Collocation de certaines sommes d’argent ou de capitaux."
+        },
+        {
+          "entry_id": "emploi__nom__1",
+          "sense_id": "__ws_3_emploi__nom__1",
+          "sense_number": "3",
+          "definition_fr": "Placement obligatoire des sommes revenant à des usufruitiers, à des mineurs, dans une succession. → voir remploi."
+        },
+        {
+          "entry_id": "emploi__nom__1",
+          "sense_id": "__ws_4_emploi__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Action d’employer une somme et d’en faire mention dans un compte, soit en dépense, soit en recette."
+        },
+        {
+          "entry_id": "emploi__nom__1",
+          "sense_id": "__ws_5_emploi__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Manière dont on emploie, dont on peut employer."
+        },
+        {
+          "entry_id": "emploi__nom__1",
+          "sense_id": "__ws_6_emploi__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Économie) Occupation, fonction d’une personne employée dans l'administration, l'agriculture, le commerce ou l’industrie."
+        },
+        {
+          "entry_id": "emploi__nom__1",
+          "sense_id": "__ws_7_emploi__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Théâtre) Catégorie de rôles pour lesquels un acteur peut être employé."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "9d5613a4b33f3e0f70eecec13d865e5c8c88f8715a2508e8111452771cb418e7"
+    },
+    {
+      "stable_lexeme_key": "développement|NOM",
+      "lemma": "développement",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 141.3976,
+        "lexique_frequency": 10.354,
+        "contextual_diversity": 3.52266
+      },
+      "proposed_primary": {
+        "entry_id": "développement__nom__1",
+        "sense_id": "__ws_1_développement__nom__1",
+        "definition_fr": "Action de développer, de se développer ou résultat de cette action, au propre et au figuré.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "développement__nom__1",
+          "sense_id": "__ws_1_développement__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Action de développer, de se développer ou résultat de cette action, au propre et au figuré."
+        },
+        {
+          "entry_id": "développement__nom__1",
+          "sense_id": "__ws_2_développement__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Absolument) (Économie) Croissance économique."
+        },
+        {
+          "entry_id": "développement__nom__1",
+          "sense_id": "__ws_3_développement__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Souvent au pluriel) Exposition plus ou moins détaillée, par opposition aux vues, aux considérations générales."
+        },
+        {
+          "entry_id": "développement__nom__1",
+          "sense_id": "__ws_4_développement__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Photographie) Action de développer un cliché."
+        },
+        {
+          "entry_id": "développement__nom__1",
+          "sense_id": "__ws_5_développement__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Géométrie) Figure de carton ou de papier dont les parties, étant pliées et rejointes, composent la surface d’un solide."
+        },
+        {
+          "entry_id": "développement__nom__1",
+          "sense_id": "__ws_6_développement__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Mécanique) Nombre de mètres qu’une bicyclette parcourt sur un coup de pédale."
+        },
+        {
+          "entry_id": "développement__nom__1",
+          "sense_id": "__ws_7_développement__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Programmation) Programmation informatique."
+        },
+        {
+          "entry_id": "développement__nom__1",
+          "sense_id": "__ws_8_développement__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Théâtre) Fait de développer une action, une intrigue."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "8284b85b9c76f31d0a91320d4befcecfe4667f39fcd18c02aaad60cb64897c30"
+    },
+    {
+      "stable_lexeme_key": "instant|NOM",
+      "lemma": "instant",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 141.2172,
+        "lexique_frequency": 164.066,
+        "contextual_diversity": 43.7278
+      },
+      "proposed_primary": {
+        "entry_id": "instant__nom__1",
+        "sense_id": "__ws_1_instant__nom__1",
+        "definition_fr": "Durée très brève, voire infinitésimale.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "instant__nom__1",
+          "sense_id": "__ws_1_instant__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Durée très brève, voire infinitésimale."
+        },
+        {
+          "entry_id": "instant__nom__1",
+          "sense_id": "__ws_2_instant__nom__1",
+          "sense_number": "2",
+          "definition_fr": "Point précis, moment exact ou défini, dans le temps."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "ce9e011777ce836d58d64da4ef4acd8058729eeab1088c61c32d6caac562a4ad"
+    },
+    {
+      "stable_lexeme_key": "tuer|VER",
+      "lemma": "tuer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 261.0859,
+        "lexique_frequency": 969.965,
+        "contextual_diversity": 58.55328
+      },
+      "proposed_primary": {
+        "entry_id": "tuer__verb__1",
+        "sense_id": "__ws_1_tuer__verb__1",
+        "definition_fr": "Ôter la vie d’une manière violente ; ne se dit pas quand il s’agit d'une euthanasie, ni à la forme pronominale dans le cas d’une mort accidentelle par noyade, étouffement ou empoisonnement : on emploie alors se noyer, s’étouffer, s’empoisonner.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_1_tuer__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Ôter la vie d’une manière violente ; ne se dit pas quand il s’agit d'une euthanasie, ni à la forme pronominale dans le cas d’une mort accidentelle par noyade, étouffement ou empoisonnement : on emploie alors se noyer, s’étouffer, s’empoisonner."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_2_tuer__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Provoquer une mort violente par accident ; provoquer une mort naturelle en parlant des maladies."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_3_tuer__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Par extension) Causer la mort."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_4_tuer__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Par hyperbole) Fatiguer excessivement le corps, altérer la santé."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_5_tuer__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Familier) (Sens figuré) Incommoder ; provoquer une forte émotion le plus souvent négative, comme la colère, et parfois positive, comme le rire."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_6_tuer__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Sens figuré) Faire disparaitre ; anéantir."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_7_tuer__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Sens figuré) Détruire l’effet d’une chose."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_8_tuer__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Dissiper, occuper, en parlant du temps, de la durée."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_9_tuer__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Pronominal) Se suicider."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_10_tuer__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Pronominal) (Par hyperbole) (Suivi de la préposition à et d'un infinitif) Se donner beaucoup de peine."
+        },
+        {
+          "entry_id": "tuer__verb__1",
+          "sense_id": "__ws_11_tuer__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Centre-Ouest) Éteindre en parlant d'une bougie, d'une chandelle. Note : ne s'emploie plus guère que dans tue la chandelle, qui s'utilise encore à la campagne pour signifier éteins la lumière"
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "b4946af7f9326b2bae0bd8ef8e4f22cf3782ec3b3fc940f2baed6102cf4b36e0"
+    },
+    {
+      "stable_lexeme_key": "agir|VER",
+      "lemma": "agir",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 241.9016,
+        "lexique_frequency": 205.873,
+        "contextual_diversity": 32.18463
+      },
+      "proposed_primary": {
+        "entry_id": "agir__verb__1",
+        "sense_id": "__ws_1_agir__verb__1",
+        "definition_fr": "Faire quelque chose.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "agir__verb__1",
+          "sense_id": "__ws_1_agir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Faire quelque chose."
+        },
+        {
+          "entry_id": "agir__verb__1",
+          "sense_id": "__ws_2_agir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Se dit souvent par opposition aux paroles, aux discours, etc., et signifie procéder à l’exécution de quelque chose."
+        },
+        {
+          "entry_id": "agir__verb__1",
+          "sense_id": "__ws_3_agir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Opérer, produire quelque effet ou faire quelque impression."
+        },
+        {
+          "entry_id": "agir__verb__1",
+          "sense_id": "__ws_4_agir__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Négocier, s’employer en quelque affaire."
+        },
+        {
+          "entry_id": "agir__verb__1",
+          "sense_id": "__ws_5_agir__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Poursuivre en justice."
+        },
+        {
+          "entry_id": "agir__verb__1",
+          "sense_id": "__ws_6_agir__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Se conduire, se comporter."
+        },
+        {
+          "entry_id": "agir__verb__1",
+          "sense_id": "__ws_7_agir__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Pronominal) (Impersonnel) (avec de) Sert à marquer de quoi il est question."
+        },
+        {
+          "entry_id": "agir__verb__1",
+          "sense_id": "__ws_8_agir__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(Transitif) (Philosophie) (Littéraire) Activer."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "281dc783272a35952e4a5f9e70dd511c71138acfec968c6546dd57452b9112ef"
+    },
+    {
+      "stable_lexeme_key": "pousser|VER",
+      "lemma": "pousser",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 166.2954,
+        "lexique_frequency": 111.981,
+        "contextual_diversity": 13.21188
+      },
+      "proposed_primary": {
+        "entry_id": "pousser__verb__1",
+        "sense_id": "__ws_1_pousser__verb__1",
+        "definition_fr": "Faire pression contre quelqu’un ou contre quelque chose, pour le déplacer ou l’ôter de sa place.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_1_pousser__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Faire pression contre quelqu’un ou contre quelque chose, pour le déplacer ou l’ôter de sa place."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_2_pousser__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Toucher doucement pour avertir quelqu’un de quelque chose ou pour lui faire prendre garde à quelque chose."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_3_pousser__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Imprimer quelque mouvement à un corps, soit en le lançant, soit en le frappant."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_4_pousser__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Escrime) Porter un coup."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_5_pousser__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Reliure) Imprimer sur le cuir des ornements, par le moyen de roulettes ou de fers à dorer."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_6_pousser__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Sortir avec force en parlant des paroles, des sons."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_7_pousser__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Porter plus loin ; reculer."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_8_pousser__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Prolonger ; étendre."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_9_pousser__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Sens figuré) Presser, attaquer, choquer quelqu’un."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_10_pousser__verb__1",
+          "sense_number": "10",
+          "definition_fr": "Engager fortement, inciter quelqu’un."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_11_pousser__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Sens figuré) Porter en avant quelqu’un, le faire avancer."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_12_pousser__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Faire faire des progrès, en parlant d’un écolier, d’un élève."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_13_pousser__verb__1",
+          "sense_number": "13",
+          "definition_fr": "Faire donner tout l’effort dont il est capable, en parlant de choses ou d’animaux."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_14_pousser__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Sens figuré) Porter, étendre, en parlant des choses."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_15_pousser__verb__1",
+          "sense_number": "15",
+          "definition_fr": "Faire croître, faire se développer, en parlant des arbres, des plantes, des racines, des branches, des fleurs, etc."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_16_pousser__verb__1",
+          "sense_number": "16",
+          "definition_fr": "Offrir un prix d'achat plus élevé lors d’une vente aux enchères."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_17_pousser__verb__1",
+          "sense_number": "17",
+          "definition_fr": "(Intransitif) Croître, se développer, en parlant des végétaux, mais aussi des parties du corps."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_18_pousser__verb__1",
+          "sense_number": "18",
+          "definition_fr": "(Intransitif) (Architecture) Exercer une poussée, une pression, en parlant des terres, des voûtes, etc., par leur poids, s’appuient contre les constructions destinées à les soutenir."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_19_pousser__verb__1",
+          "sense_number": "19",
+          "definition_fr": "(Intransitif) Se porter en avant, s’avancer."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_20_pousser__verb__1",
+          "sense_number": "20",
+          "definition_fr": "(Intransitif) (Familier) Continuer sa route, sa marche."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_21_pousser__verb__1",
+          "sense_number": "21",
+          "definition_fr": "(Intransitif) (Élevage) Avoir la respiration difficile, en parlant des chevaux."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_22_pousser__verb__1",
+          "sense_number": "22",
+          "definition_fr": "(Intransitif) (Familier) Exagérer, abuser."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_23_pousser__verb__1",
+          "sense_number": "23",
+          "definition_fr": "Exercer une contraction musculaire pour faciliter la défécation, l’accouchement."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_24_pousser__verb__1",
+          "sense_number": "24",
+          "definition_fr": "(Pronominal) (Familier) Se mettre en avant."
+        },
+        {
+          "entry_id": "pousser__verb__1",
+          "sense_id": "__ws_25_pousser__verb__1",
+          "sense_number": "25",
+          "definition_fr": "(Informatique) Envoyer un élément vers une machine distante."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "ea5176420dded4e8896b70702dfaea37b99ef7e0fa44f9e257416a3a29132745"
+    },
+    {
+      "stable_lexeme_key": "lancer|VER",
+      "lemma": "lancer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 140.7888,
+        "lexique_frequency": 93.516,
+        "contextual_diversity": 12.06062
+      },
+      "proposed_primary": {
+        "entry_id": "lancer__verb__1",
+        "sense_id": "__ws_1_lancer__verb__1",
+        "definition_fr": "Jeter en avant avec force, avec raideur, pour atteindre au loin.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_1_lancer__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Jeter en avant avec force, avec raideur, pour atteindre au loin."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_2_lancer__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Jeter en hauteur, en l’air, avec force."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_3_lancer__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Sens figuré) Jeter."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_4_lancer__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Diffuser une première fois."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_5_lancer__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Dire avec force et vivacité."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_6_lancer__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Chasse) Faire sortir la proie de l’endroit où elle est pour lui donner les chiens."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_7_lancer__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Marine) Faire sortir un bateau du chantier à la mer, dans un fleuve, en le laissant glisser sur un plan incliné."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_8_lancer__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(Marine) Se détourner accidentellement de sa route, en parlant d'un navire"
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_9_lancer__verb__1",
+          "sense_number": "9",
+          "definition_fr": "Faire partir très vite."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_10_lancer__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Sens figuré) Pousser, introduire, mettre le pied à l’étrier."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_11_lancer__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Créer ; établir."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_12_lancer__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Commercialiser ; mettre sur le marché."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_13_lancer__verb__1",
+          "sense_number": "13",
+          "definition_fr": "(Exploitation forestière) Débarder des bois en leur faisant dévaler une pente."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_14_lancer__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Pronominal) Se jeter avec impétuosité, avec effort."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_15_lancer__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Pronominal) (Sens figuré) Entrer."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_16_lancer__verb__1",
+          "sense_number": "16",
+          "definition_fr": "(Sens figuré) Oser ; se jeter à l’eau."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_17_lancer__verb__1",
+          "sense_number": "17",
+          "definition_fr": "(Pronominal) (Sens figuré) Commencer ; activer."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_18_lancer__verb__1",
+          "sense_number": "18",
+          "definition_fr": "(Familier) Provoquer des élancements douloureux."
+        },
+        {
+          "entry_id": "lancer__verb__1",
+          "sense_id": "__ws_19_lancer__verb__1",
+          "sense_number": "19",
+          "definition_fr": "(Familier) Mettre en marche, démarrer (un moteur), allumer (un appareil)."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "33222bf07360c1d2b42013501957550625990d48a6be0a55c7ae75939921a3b7"
+    },
+    {
+      "stable_lexeme_key": "mener|VER",
+      "lemma": "mener",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 139.0779,
+        "lexique_frequency": 103.528,
+        "contextual_diversity": 11.70239
+      },
+      "proposed_primary": {
+        "entry_id": "mener__verb__1",
+        "sense_id": "__ws_1_mener__verb__1",
+        "definition_fr": "Conduire quelqu’un vers un être ou une chose.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_1_mener__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Conduire quelqu’un vers un être ou une chose."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_2_mener__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Par extension) Aller, se diriger vers, en parlant d’un chemin, d’une route."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_3_mener__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Conduire par force en quelque endroit."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_4_mener__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Diriger, entraîner à sa suite."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_5_mener__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Diriger, conduire des animaux."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_6_mener__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Diriger un véhicule, une embarcation."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_7_mener__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Voiturer quelqu’un ou quelque chose."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_8_mener__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Se faire accompagner de ou par."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_9_mener__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Sens figuré) Faire agir, gouverner quelqu’un à sa guise."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_10_mener__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Chasse) Forcer à suivre."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_11_mener__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Sens figuré) Diriger, déterminer les hommes."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_12_mener__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Administrer, diriger, en parlant des choses."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_13_mener__verb__1",
+          "sense_number": "13",
+          "definition_fr": "Diriger le développement de quelque chose."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_14_mener__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Sport) (Intransitif) Avoir un meilleur score que l’adversaire au cours d’un match."
+        },
+        {
+          "entry_id": "mener__verb__1",
+          "sense_id": "__ws_15_mener__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Jeux de boules) Lancer le but et entamer la partie ou une nouvelle manche (appelée de ce fait une « mène »)."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "6ee2e4ea198d05205c84deb8ac8433f361f53b25a86c9ae2f7fe263e4cbd2e17"
+    }
+  ],
+  "artifact_hash": "3407effebe57b05ef3aed7ccde174de6eed4bb2fecac19be958d948dbf2a6b68"
+}

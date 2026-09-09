@@ -1,0 +1,2186 @@
+{
+  "schema_version": 1,
+  "part": 4,
+  "parent_artifact_hash": "33f750df52f16e117d6dadec17741db6c761e9cbb9d6bcad0c99dc6adf02b30c",
+  "items": [
+    {
+      "stable_lexeme_key": "déclarer|VER",
+      "lemma": "déclarer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 125.4513,
+        "lexique_frequency": 41.139,
+        "contextual_diversity": 6.00429
+      },
+      "proposed_primary": {
+        "entry_id": "déclarer__verb__1",
+        "sense_id": "__ws_1_déclarer__verb__1",
+        "definition_fr": "Faire connaître d’une façon manifeste.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_1_déclarer__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Faire connaître d’une façon manifeste."
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_2_déclarer__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Faire connaître d’une façon décisive, par acte public, par autorité publique."
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_3_déclarer__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Pronominal) S’expliquer, se manifester ou se faire connaître."
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_4_déclarer__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Pronominal) Exprimer des sentiments d'amour à quelqu'un."
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_5_déclarer__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Pronominal) Se prononcer ou prendre parti pour ou contre quelqu’un, pour ou contre quelque chose."
+        },
+        {
+          "entry_id": "déclarer__verb__1",
+          "sense_id": "__ws_6_déclarer__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Pronominal) Prendre parti dans une guerre commencée."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "b198c04a2a5f5ddc65ea9912d9930b77887675f30bc3ca7775eefbbe2b1ba6ce"
+    },
+    {
+      "stable_lexeme_key": "développer|VER",
+      "lemma": "développer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 116.9959,
+        "lexique_frequency": 25.392,
+        "contextual_diversity": 3.85487
+      },
+      "proposed_primary": {
+        "entry_id": "développer__verb__1",
+        "sense_id": "__ws_1_développer__verb__1",
+        "definition_fr": "Dégager une chose de ce qui l’enveloppe.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_1_développer__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Dégager une chose de ce qui l’enveloppe."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_2_développer__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Déployer une chose enveloppée, pliée."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_3_développer__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Sens figuré) Faire qu’un être ou une chose se forme ou se transforme, tant au sens physique qu’au sens moral."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_4_développer__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Répandre dans l'espace ou le temps."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_5_développer__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Géométrie) Étendre une surface courbe, en respectant ses dimensions, sur un plan."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_6_développer__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Architecture) Représenter sur un plan les diverses faces d’un objet."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_7_développer__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Photographie) Faire apparaître, à l’aide de procédés chimiques, les images que la lumière a produites sur le cliché."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_8_développer__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Exposer, présenter, faire voir quelque chose en détail."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_9_développer__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Algèbre) Transformer une expression algébrique en une somme d’éléments."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_10_développer__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Algèbre) Pousser aussi loin que possible les opérations d’une expression algébrique, qui y sont indiquées."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_11_développer__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Programmation) Réaliser, implanter, implémenter (un programme)."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_12_développer__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Se former ou se transformer (en parlant d'un organisme)."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_13_développer__verb__1",
+          "sense_number": "13",
+          "definition_fr": "S’améliorer (en parlant d’une faculté)."
+        },
+        {
+          "entry_id": "développer__verb__1",
+          "sense_id": "__ws_14_développer__verb__1",
+          "sense_number": "14",
+          "definition_fr": "S’étendre."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "11ed98ddddd364d1f89a41bdc36887f6a6e8d0956e255ebcc063fd09692a2f61"
+    },
+    {
+      "stable_lexeme_key": "suffire|VER",
+      "lemma": "suffire",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 109.8432,
+        "lexique_frequency": 169.472,
+        "contextual_diversity": 38.62982
+      },
+      "proposed_primary": {
+        "entry_id": "suffire__verb__1",
+        "sense_id": "__ws_1_suffire__verb__1",
+        "definition_fr": "Pouvoir satisfaire à quelque chose ou à un but donné.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_1_suffire__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Pouvoir satisfaire à quelque chose ou à un but donné."
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_2_suffire__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Pouvoir subvenir ou pouvoir satisfaire aux exigences de quelqu’un."
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_3_suffire__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Fournir assez, faire ce qui est nécessaire pour qu’une chose se réalise."
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_4_suffire__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Être à la cause de quelque chose ; déclencher ou conditionner un évènement."
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_5_suffire__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Familier) Ne plus être nécessaire de fournir ou de faire quelque chose. — Note : Se dit dans une requête signalant à quelqu'un que les conditions nécessaires à une fin ont été atteintes ou que les exigences sont remplies."
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_5.a_suffire__verb__1",
+          "sense_number": "5.a",
+          "definition_fr": "(Familier) (Impersonnel) Voilà qui est bien, c’est assez, n’en parlons plus. — Note : Il marque souvent l’agacement. — Il est souvent à l'impératif."
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_6_suffire__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Impersonnel) Être en suffisante quantité. — Note : Il est suivi de de, de que, de à ou de pour."
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_7_suffire__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Pronominal) Suffire à ses propres besoins, avoir ou gagner assez pour pourvoir à ses besoins."
+        },
+        {
+          "entry_id": "suffire__verb__1",
+          "sense_id": "__ws_8_suffire__verb__1",
+          "sense_number": "8",
+          "definition_fr": "(Pronominal) Trouver en soi le moyen de se passer des autres."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "df8a0f461d3e2e5b97e47e9008f9864d9d24459ff388ba60b9afa2db233c4157"
+    },
+    {
+      "stable_lexeme_key": "obliger|VER",
+      "lemma": "obliger",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 107.872,
+        "lexique_frequency": 84.722,
+        "contextual_diversity": 16.30282
+      },
+      "proposed_primary": {
+        "entry_id": "obliger__verb__1",
+        "sense_id": "__ws_1_obliger__verb__1",
+        "definition_fr": "Mettre quelqu’un dans l’obligation de faire ou de dire quelque chose.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_1_obliger__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Mettre quelqu’un dans l’obligation de faire ou de dire quelque chose."
+        },
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_2_obliger__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Droit) Lier quelqu’un par un contrat, par une promesse, contraindre à exécuter la chose à laquelle on s’est engagé."
+        },
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_3_obliger__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Économie) Hypothéquer ou cautionner."
+        },
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_4_obliger__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Contraindre, forcer ou mettre dans la nécessité de faire quelque chose."
+        },
+        {
+          "entry_id": "obliger__verb__1",
+          "sense_id": "__ws_5_obliger__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Attacher quelqu’un par un service, faire plaisir."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "59f11d7f13053307f9c25ab65bd62ec285be04a49b18e7c277b4cad50dbdcd8f"
+    },
+    {
+      "stable_lexeme_key": "étonner|VER",
+      "lemma": "étonner",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 94.8579,
+        "lexique_frequency": 39.421,
+        "contextual_diversity": 9.18861
+      },
+      "proposed_primary": {
+        "entry_id": "étonner__verb__1",
+        "sense_id": "__ws_1_étonner__verb__1",
+        "definition_fr": "(Sens étymologique concret) Ébranler à la manière du tonnerre.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "sens étymologique concret"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "étonner__verb__1",
+          "sense_id": "__ws_1_étonner__verb__1",
+          "sense_number": "1",
+          "definition_fr": "(Sens étymologique concret) Ébranler à la manière du tonnerre."
+        },
+        {
+          "entry_id": "étonner__verb__1",
+          "sense_id": "__ws_2_étonner__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Surprendre par quelque chose d’extraordinaire, d’inattendu ; frapper de stupeur."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "65c06ae65bb4af62cbc3375bd0d47ac3e6048cead5d14eb715adee1d274bcbfd"
+    },
+    {
+      "stable_lexeme_key": "pauvre|ADJ",
+      "lemma": "pauvre",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 139.2067,
+        "lexique_frequency": 109.864,
+        "contextual_diversity": 31.57073
+      },
+      "proposed_primary": {
+        "entry_id": "pauvre__adj__1",
+        "sense_id": "__ws_1_pauvre__adj__1",
+        "definition_fr": "Qui est dans la pauvreté ; qui ne dispose pas de ressources suffisantes.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_1_pauvre__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Qui est dans la pauvreté ; qui ne dispose pas de ressources suffisantes."
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_2_pauvre__adj__1",
+          "sense_number": "2",
+          "definition_fr": "Qui dénote la pauvreté."
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_3_pauvre__adj__1",
+          "sense_number": "3",
+          "definition_fr": "Qui ne renferme, ne dispose que de peu de quelque chose."
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_4_pauvre__adj__1",
+          "sense_number": "4",
+          "definition_fr": "Qui inspire la pitié, la compassion."
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_4.a_pauvre__adj__1",
+          "sense_number": "4.a",
+          "definition_fr": "Il se dit aussi par manière de plainte."
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_5_pauvre__adj__1",
+          "sense_number": "5",
+          "definition_fr": "Qui inspire le mépris."
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_6_pauvre__adj__1",
+          "sense_number": "6",
+          "definition_fr": "Mort, décédé."
+        },
+        {
+          "entry_id": "pauvre__adj__1",
+          "sense_id": "__ws_7_pauvre__adj__1",
+          "sense_number": "7",
+          "definition_fr": "Sans variété ; sans subtilité."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "085a252b32c63b8164c67cc286934dc09686cca8b797ae7d7c31e578654ab4ad"
+    },
+    {
+      "stable_lexeme_key": "professionnel|ADJ",
+      "lemma": "professionnel",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 107.607,
+        "lexique_frequency": 31.598,
+        "contextual_diversity": 8.6237
+      },
+      "proposed_primary": {
+        "entry_id": "professionnel__adj__1",
+        "sense_id": "__ws_1_professionnel__adj__1",
+        "definition_fr": "Qui est relatif à une profession.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "professionnel__adj__1",
+          "sense_id": "__ws_1_professionnel__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Qui est relatif à une profession."
+        },
+        {
+          "entry_id": "professionnel__adj__1",
+          "sense_id": "__ws_2_professionnel__adj__1",
+          "sense_number": "2",
+          "definition_fr": "(En particulier) Qualifie la formation des apprentis à leur métier."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_professionnel__adj__1",
+          "chinese_written_form": "者",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": null,
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "aff2bb444e9895d92f37213e0d7a43b7827e01bae704be25ded5dd154116d562"
+    },
+    {
+      "stable_lexeme_key": "actuel|ADJ",
+      "lemma": "actuel",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 99.2638,
+        "lexique_frequency": 19.177,
+        "contextual_diversity": 3.95744
+      },
+      "proposed_primary": {
+        "entry_id": "actuel__adj__1",
+        "sense_id": "__ws_1_actuel__adj__1",
+        "definition_fr": "Qui est présent, qui a lieu, ou qui a cours, qui est usité dans le moment présent.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "actuel__adj__1",
+          "sense_id": "__ws_1_actuel__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Qui est présent, qui a lieu, ou qui a cours, qui est usité dans le moment présent."
+        },
+        {
+          "entry_id": "actuel__adj__1",
+          "sense_id": "__ws_2_actuel__adj__1",
+          "sense_number": "2",
+          "definition_fr": "(Vieilli) Qui se traduit par des actes."
+        },
+        {
+          "entry_id": "actuel__adj__1",
+          "sense_id": "__ws_3_actuel__adj__1",
+          "sense_number": "3",
+          "definition_fr": "(Philosophie, Théologie) Qui existe réellement, concrètement, factuellement ; par opposition à diverses qualifications : potentiel, virtuel, habituel, originel, etc."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "a6ceb0b2092ad7f42569b8cf78a52919a45501e1ee5ccbc45dedf95ab7e98a09"
+    },
+    {
+      "stable_lexeme_key": "public|ADJ",
+      "lemma": "public",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 97.9924,
+        "lexique_frequency": 48.978,
+        "contextual_diversity": 19.86681
+      },
+      "proposed_primary": {
+        "entry_id": "public__adj__1",
+        "sense_id": "__ws_1_public__adj__1",
+        "definition_fr": "Qui appartient au peuple dans son entier.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_1_public__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Qui appartient au peuple dans son entier."
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_2_public__adj__1",
+          "sense_number": "2",
+          "definition_fr": "Qui relève de l'État; étatique."
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_3_public__adj__1",
+          "sense_number": "3",
+          "definition_fr": "Qui est commun ; à l’usage de tous."
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_4_public__adj__1",
+          "sense_number": "4",
+          "definition_fr": "Qui est manifeste, su ou connu de tout le monde."
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_5_public__adj__1",
+          "sense_number": "5",
+          "definition_fr": "Qui a lieu en présence de tout le monde."
+        },
+        {
+          "entry_id": "public__adj__1",
+          "sense_id": "__ws_6_public__adj__1",
+          "sense_number": "6",
+          "definition_fr": "(Programmation) Se dit d’une variable dont la portée n’est pas restreinte, et qui est donc visible depuis tout le programme."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_public__adj__1",
+          "chinese_written_form": "公有",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Qui appartient au peuple dans son entier",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_2_public__adj__1",
+          "chinese_written_form": "公共",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Qui appartient au peuple dans son entier",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_3_public__adj__1",
+          "chinese_written_form": "国有",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Qui appartient à l'État",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_4_public__adj__1",
+          "chinese_written_form": "国营",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Qui appartient à l'État",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_5_public__adj__1",
+          "chinese_written_form": "公有",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Qui est commun, à l'usage de tous",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_6_public__adj__1",
+          "chinese_written_form": "公共",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Qui est commun, à l'usage de tous",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_7_public__adj__1",
+          "chinese_written_form": "公开",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Manifeste, connu de tout le monde",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_8_public__adj__1",
+          "chinese_written_form": "公开",
+          "target_language_code": "zho",
+          "candidate_class": "entry_ambiguous_candidate",
+          "translation_gloss": "Qui se fait en présence de tout le monde",
+          "mapped_sense_id": null,
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "9f36c2f66d8589055e9d87fd2ff9518c1d3452c7a9d4eab9ab8440ebfcdc8c64"
+    },
+    {
+      "stable_lexeme_key": "lors|ADV",
+      "lemma": "lors",
+      "pos": "ADV",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 126.3132,
+        "lexique_frequency": 47.278,
+        "contextual_diversity": 17.11727
+      },
+      "proposed_primary": {
+        "entry_id": "lors__adv__1",
+        "sense_id": "__ws_1_lors__adv__1",
+        "definition_fr": "Ce temps-là. S’emploie seulement en composition dans les locutions suivantes :",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "lors__adv__1",
+          "sense_id": "__ws_1_lors__adv__1",
+          "sense_number": "1",
+          "definition_fr": "Ce temps-là. S’emploie seulement en composition dans les locutions suivantes :"
+        },
+        {
+          "entry_id": "lors__adv__1",
+          "sense_id": "__ws_2_lors__adv__1",
+          "sense_number": "2",
+          "definition_fr": "(Désuet) Quand, au moment où, utilisé dans la locution « lors que » qui a donné lorsque."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "8a00d884bbaa05ed94393653d76f49ae60261acab7077f8b39be9715680eea1b"
+    },
+    {
+      "stable_lexeme_key": "que|ADV",
+      "lemma": "que",
+      "pos": "ADV",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 83.0147,
+        "lexique_frequency": 0.095,
+        "contextual_diversity": 99.7428
+      },
+      "proposed_primary": {
+        "entry_id": "que__adv__1",
+        "sense_id": "__ws_1_que__adv__1",
+        "definition_fr": "Marque une emphase.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "que__adv__1",
+          "sense_id": "__ws_1_que__adv__1",
+          "sense_number": "1",
+          "definition_fr": "Marque une emphase."
+        },
+        {
+          "entry_id": "que__adv__2",
+          "sense_id": "__ws_1_que__adv__2",
+          "sense_number": "1",
+          "definition_fr": "Introduit une forme impérative, qui marque souvent un souhait davantage qu’un ordre réel, afin qu’une chose (conjuguée au subjonctif) se réalise, à la première personne du singulier ou la troisième personne (au singulier ou pluriel, marquant souvent aussi l’agacement) : l’adverbe seul est très semblable à l’impératif impersonnel sous-entendu « fasse » (→ voir faire) ou l’indicatif impersonnel il faut, suivi du même subjonctif et relié par la même conjonction de subordination."
+        },
+        {
+          "entry_id": "que__adv__3",
+          "sense_id": "__ws_1_que__adv__3",
+          "sense_number": "1",
+          "definition_fr": "Personne excepté, rien excepté. Seulement. Utilisé avec ne."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "2952ca7930d11a3e93d3b78f287160644372670c6327617ae2ae573b2caf9223"
+    },
+    {
+      "stable_lexeme_key": "rapport|NOM",
+      "lemma": "rapport",
+      "pos": "NOM",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 143.1362,
+        "lexique_frequency": 148.778,
+        "contextual_diversity": 32.55052
+      },
+      "proposed_primary": {
+        "entry_id": "rapport__nom__1",
+        "sense_id": "__ws_1_rapport__nom__1",
+        "definition_fr": "(Économie) (Peu usité) Revenu, produit d’une chose.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "économie",
+            "peu usité"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_1_rapport__nom__1",
+          "sense_number": "1",
+          "definition_fr": "(Économie) (Peu usité) Revenu, produit d’une chose."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2_rapport__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Travail) Compte-rendu d’une activité ; témoignage de choses vues ou entendues."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.a_rapport__nom__1",
+          "sense_number": "2.a",
+          "definition_fr": "(Vieilli) Récits qu’on fait, par indiscrétion ou par malignité, de certaines choses que l’on prétend avoir vu faire ou entendu dire."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.b_rapport__nom__1",
+          "sense_number": "2.b",
+          "definition_fr": "(Management) Compte qu’on rend à quelqu’un de quelque chose dont on est chargé."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.c_rapport__nom__1",
+          "sense_number": "2.c",
+          "definition_fr": "(Militaire) Compte-rendu des diverses opérations effectuées dans l’unité : mutations, punitions, demandes, etc."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.d_rapport__nom__1",
+          "sense_number": "2.d",
+          "definition_fr": "(Chasse) Compte-rendu de la quête qu’on a faite et du lieu où est la bête qu’on a détournée."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.e_rapport__nom__1",
+          "sense_number": "2.e",
+          "definition_fr": "(Droit) Exposé qu’un juge fait d’un procès devant les autres juges d’un même tribunal."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.f_rapport__nom__1",
+          "sense_number": "2.f",
+          "definition_fr": "(Administration) Exposé dans lequel on rend compte d’un travail, d’un examen particulier fait par un comité, par une commission."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_2.g_rapport__nom__1",
+          "sense_number": "2.g",
+          "definition_fr": "(Justice) Témoignage que rendent, par ordre de justice ou autrement, les médecins, les chirurgiens, les experts."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3_rapport__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Courant) Relation entre des choses ou des personnes."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.a_rapport__nom__1",
+          "sense_number": "3.a",
+          "definition_fr": "Convenance ; conformité ; analogie."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.b_rapport__nom__1",
+          "sense_number": "3.b",
+          "definition_fr": "Liaison, de connexion, de relation que certaines choses ont ensemble."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.c_rapport__nom__1",
+          "sense_number": "3.c",
+          "definition_fr": "Accord, de la correspondance plus ou moins exacte des diverses parties d’un ouvrage, d’un tout."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.d_rapport__nom__1",
+          "sense_number": "3.d",
+          "definition_fr": "Relation des choses à une fin, de leur tendance vers un but."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.e_rapport__nom__1",
+          "sense_number": "3.e",
+          "definition_fr": "Relations que les personnes ont entre elles."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.f_rapport__nom__1",
+          "sense_number": "3.f",
+          "definition_fr": "Rapport sexuel."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_3.g_rapport__nom__1",
+          "sense_number": "3.g",
+          "definition_fr": "(Grammaire) Relation que les mots ont les uns avec les autres, dans la construction."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_4_rapport__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Mathématiques) Résultat de la comparaison de deux quantités."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_4.a_rapport__nom__1",
+          "sense_number": "4.a",
+          "definition_fr": "(Mécanique, Automobile) Vitesse choisie par le conducteur d'un véhicule."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_5_rapport__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Argent) Remboursement, restitution d’une chose indûment perçue."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_5.a_rapport__nom__1",
+          "sense_number": "5.a",
+          "definition_fr": "(Droit) Action par laquelle celui qui a reçu une somme, une terre, etc., la rapporte à la masse de la succession pour faire compte au partage."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_5.b_rapport__nom__1",
+          "sense_number": "5.b",
+          "definition_fr": "(Administration) Action par laquelle un comptable rapporte la somme qu’il a mal à propos portée en dépense."
+        },
+        {
+          "entry_id": "rapport__nom__1",
+          "sense_id": "__ws_6_rapport__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Vieilli) (Familier) ou (Québec) Vapeur incommode, désagréable, qui monte de l’estomac à la bouche."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "c44872d26860bd928a6f656a330316158e3333bb48f9e1595ca545ff75b84a2b"
+    },
+    {
+      "stable_lexeme_key": "regard|NOM",
+      "lemma": "regard",
+      "pos": "NOM",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 141.5148,
+        "lexique_frequency": 46.718,
+        "contextual_diversity": 14.26209
+      },
+      "proposed_primary": {
+        "entry_id": "regard__nom__1",
+        "sense_id": "__ws_1_regard__nom__1",
+        "definition_fr": "Manière de diriger les yeux vers quelque chose afin de voir.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_1_regard__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Manière de diriger les yeux vers quelque chose afin de voir."
+        },
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_2_regard__nom__1",
+          "sense_number": "2",
+          "definition_fr": "Expression des yeux, quant aux sentiments, aux états d’âme de la personne qui regarde."
+        },
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_3_regard__nom__1",
+          "sense_number": "3",
+          "definition_fr": "Considération d'un objet par l'attention, par la pensée."
+        },
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_4_regard__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Architecture, Maçonnerie) Ouverture maçonnée, souvent dans le sol, pratiquée pour faciliter la visite d’un aqueduc, d’un conduit, d'une canalisation, etc."
+        },
+        {
+          "entry_id": "regard__nom__1",
+          "sense_id": "__ws_5_regard__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Géologie) Ouverture que forme une faille."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "ea00f70daac008eff9c5fb47037e94a50296f4d9bdeae022203ef1290ab2083f"
+    },
+    {
+      "stable_lexeme_key": "chef|NOM",
+      "lemma": "chef",
+      "pos": "NOM",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 131.2962,
+        "lexique_frequency": 220.117,
+        "contextual_diversity": 35.3368
+      },
+      "proposed_primary": {
+        "entry_id": "chef__nom__1",
+        "sense_id": "__ws_2_chef__nom__1",
+        "definition_fr": "(En particulier) Crâne d'un saint.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "en particulier"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_1_chef__nom__1",
+          "sense_number": "1",
+          "definition_fr": "(Vieilli) ou (Littéraire) Tête."
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_2_chef__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(En particulier) Crâne d'un saint."
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_3_chef__nom__1",
+          "sense_number": "3",
+          "definition_fr": "Article ou point principal."
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_4_chef__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(En particulier) (Par ellipse) (Droit) Motif ou raison d’une action judiciaire. → voir chef d’accusation"
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_5_chef__nom__1",
+          "sense_number": "5",
+          "definition_fr": "Initiative ; responsabilité."
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_6_chef__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Héraldique) Nom donné au tiers supérieur d’un écu."
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_7_chef__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Par extension) Toute partie principale d’un ensemble."
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_8_chef__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Par extension) (Art) Bout par lequel l’on a commencé la fabrication d'une étoffe."
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_9_chef__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(Anatomie) Partie ventrue d’un muscle."
+        },
+        {
+          "entry_id": "chef__nom__1",
+          "sense_id": "__ws_10_chef__nom__1",
+          "sense_number": "10",
+          "definition_fr": "(Tissage) Petite bande de tissu spécial tissée au départ d’une pièce de tissu."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_1_chef__nom__2",
+          "sense_number": "1",
+          "definition_fr": "Celui ou celle qui est à la tête d’un corps, d’une assemblée, etc., qui y a le premier rang et la principale autorité."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_2_chef__nom__2",
+          "sense_number": "2",
+          "definition_fr": "(En particulier) Personne qui en commande d’autres. — Note : Le chef peut être autoproclamé, élu, imposé par une autorité, qui peut être elle-même considérée comme chef."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_3_chef__nom__2",
+          "sense_number": "3",
+          "definition_fr": "(En particulier) (Sens générique) Officier ou sous-officier de grade quelconque, quelquefois en apposition."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_4_chef__nom__2",
+          "sense_number": "4",
+          "definition_fr": "(Marine, Militaire) Vaisseau qui est le premier de la ligne de bataille, qui tient la tête de l’armée navale."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_5_chef__nom__2",
+          "sense_number": "5",
+          "definition_fr": "(Sens figuré) Celui ou celle sous la conduite de qui on se place."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_6_chef__nom__2",
+          "sense_number": "6",
+          "definition_fr": "(Par extension) (Cuisine) Responsable de la cuisine dans un restaurant."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_7_chef__nom__2",
+          "sense_number": "7",
+          "definition_fr": "(Par ellipse) Chef d’orchestre."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_8_chef__nom__2",
+          "sense_number": "8",
+          "definition_fr": "(Histoire) (Coloniale) Titre de titulaire d’une autorité traditionnelle."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_9_chef__nom__2",
+          "sense_number": "9",
+          "definition_fr": "(Canada) Dirigeant principal d'une communauté des Premières Nations."
+        },
+        {
+          "entry_id": "chef__nom__2",
+          "sense_id": "__ws_10_chef__nom__2",
+          "sense_number": "10",
+          "definition_fr": "(Argot) (Familier) Terme utilisé pour s’adresser à un homme, mec, gars."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "df9e0e5b57068a83edde8d9fd674afaec27e36727e84016ddeeedebbe397fbcf"
+    },
+    {
+      "stable_lexeme_key": "travers|NOM",
+      "lemma": "travers",
+      "pos": "NOM",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 129.7233,
+        "lexique_frequency": 80.095,
+        "contextual_diversity": 25.59859
+      },
+      "proposed_primary": {
+        "entry_id": "travers__nom__1",
+        "sense_id": "__ws_1_travers__nom__1",
+        "definition_fr": "Étendue d’un corps considéré dans sa largeur.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_1_travers__nom__1",
+          "sense_number": "1",
+          "definition_fr": "Étendue d’un corps considéré dans sa largeur."
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_2_travers__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Marine) Les allures du voilier. Le vent de travers (2) se situe entre le petit largue et le largue."
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_2.a_travers__nom__1",
+          "sense_number": "2.a",
+          "definition_fr": "Côté, flanc."
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_2.b_travers__nom__1",
+          "sense_number": "2.b",
+          "definition_fr": "Allure où le vent apparent est à angle droit du cap"
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_3_travers__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Boucherie) Bord des dernières côtes. Du travers (3) de porc boucané façon guyanaise."
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_4_travers__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Sens figuré) Bizarrerie, irrégularité d’esprit et d’humeur, disposition fâcheuse, défaut de caractère."
+        },
+        {
+          "entry_id": "travers__nom__1",
+          "sense_id": "__ws_5_travers__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Histoire) (Droit d’Ancien Régime) Péage sur les routes, les ponts, etc."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "ceeb1c5cdf000edbe4bb5791aaab4e0b4ce7db9ed83e653cac1e3f955d9cc766"
+    },
+    {
+      "stable_lexeme_key": "obtenir|VER",
+      "lemma": "obtenir",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 123.0933,
+        "lexique_frequency": 140.854,
+        "contextual_diversity": 19.89284
+      },
+      "proposed_primary": {
+        "entry_id": "obtenir__verb__1",
+        "sense_id": "__ws_1_obtenir__verb__1",
+        "definition_fr": "Se faire accorder par tel ou tel moyen une chose que l’on désire.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "obtenir__verb__1",
+          "sense_id": "__ws_1_obtenir__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Se faire accorder par tel ou tel moyen une chose que l’on désire."
+        },
+        {
+          "entry_id": "obtenir__verb__1",
+          "sense_id": "__ws_2_obtenir__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(En particulier) (Justice) Parvenir à avoir, de la justice, ce qu’on demande."
+        },
+        {
+          "entry_id": "obtenir__verb__1",
+          "sense_id": "__ws_3_obtenir__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Sciences) Avoir pour résultat de son action."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "ce9a3439a93791ca5d59ed256cc99a7e7a145b1ef8616450fe5d5bb57dacce46"
+    },
+    {
+      "stable_lexeme_key": "remettre|VER",
+      "lemma": "remettre",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 116.8434,
+        "lexique_frequency": 144.367,
+        "contextual_diversity": 21.08236
+      },
+      "proposed_primary": {
+        "entry_id": "remettre__verb__1",
+        "sense_id": "__ws_1_remettre__verb__1",
+        "definition_fr": "Mettre une chose à l’endroit où elle était auparavant.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_1_remettre__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Mettre une chose à l’endroit où elle était auparavant."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_2_remettre__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Mettre de nouveau."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_3_remettre__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Reconnaître."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_4_remettre__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Rétablir les personnes, les choses dans l’état où elles étaient auparavant."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_5_remettre__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Familier) Réconcilier, raccommoder, en parlant de personnes."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_6_remettre__verb__1",
+          "sense_number": "6",
+          "definition_fr": "(Médecine) Raccommoder, remboîter un membre, un os démis, disloqué, cassé."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_7_remettre__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Rétablir la santé, redonner des forces."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_8_remettre__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Rassurer, redonner de l’assurance, faire revenir du trouble, de l’inquiétude, de la frayeur où l’on était."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_9_remettre__verb__1",
+          "sense_number": "9",
+          "definition_fr": "Mettre une chose entre les mains de quelqu’un à qui elle appartient ou à qui elle est destinée."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_10_remettre__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Vieilli) Se dessaisir entre les mains de celui à qui il appartient d’y pourvoir, en parlant d’un bénéfice, d’une charge."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_11_remettre__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Mettre comme en dépôt, confier au soin, à la prudence de quelqu’un."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_12_remettre__verb__1",
+          "sense_number": "12",
+          "definition_fr": "Livrer, abandonner à ceux qui sont préposés."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_13_remettre__verb__1",
+          "sense_number": "13",
+          "definition_fr": "Faire grâce à une personne de quelque chose qu’on était en droit d’exiger d’elle."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_14_remettre__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Religion) Pardonner."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_15_remettre__verb__1",
+          "sense_number": "15",
+          "definition_fr": "Différer, renvoyer à un autre temps."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_16_remettre__verb__1",
+          "sense_number": "16",
+          "definition_fr": "Obliger à recommencer une étude, un apprentissage, un exercice."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_17_remettre__verb__1",
+          "sense_number": "17",
+          "definition_fr": "(Jeu de paume & Tennis) Recommencer."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_18_remettre__verb__1",
+          "sense_number": "18",
+          "definition_fr": "(Sports hippiques) Dans une course de trot, faire courir de nouveau au trot régulier un cheval qui a commis un écart dans ses allures."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_19_remettre__verb__1",
+          "sense_number": "19",
+          "definition_fr": "(Belgique) Rendre, vomir."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_20_remettre__verb__1",
+          "sense_number": "20",
+          "definition_fr": "(Pronominal) Recommencer, se mettre à nouveau."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_21_remettre__verb__1",
+          "sense_number": "21",
+          "definition_fr": "(Pronominal) Se rappeler l’idée, le souvenir, en parlant de quelque chose ou de quelqu’un."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_22_remettre__verb__1",
+          "sense_number": "22",
+          "definition_fr": "(Pronominal) Se rétablir, retrouver ses forces, sa santé, sa sérénité, après une maladie ou tout autre trouble."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_23_remettre__verb__1",
+          "sense_number": "23",
+          "definition_fr": "(Pronominal) (Familier) Réconcilier, raccommoder, en parlant de personnes."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_24_remettre__verb__1",
+          "sense_number": "24",
+          "definition_fr": "(Par extension) Être prêt à faire tout ce qui conviendra à la personne entre les mains de qui on se remet."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_25_remettre__verb__1",
+          "sense_number": "25",
+          "definition_fr": "(Par extension) Se résigner, s’abandonner."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_26_remettre__verb__1",
+          "sense_number": "26",
+          "definition_fr": "(Pronominal) Se rapporter à quelqu’un, à ce qu’il dira, à ce qu’il fera."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_27_remettre__verb__1",
+          "sense_number": "27",
+          "definition_fr": "(Pronominal) (Chasse) S’abattre en quelque endroit, après avoir fait son vol, en parlant d’une perdrix."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_28_remettre__verb__1",
+          "sense_number": "28",
+          "definition_fr": "(Pronominal) (Météorologie) (Familier) Revenir au beau."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_29_remettre__verb__1",
+          "sense_number": "29",
+          "definition_fr": "(Familier) Recommencer."
+        },
+        {
+          "entry_id": "remettre__verb__1",
+          "sense_id": "__ws_30_remettre__verb__1",
+          "sense_number": "30",
+          "definition_fr": "(Familier) Servir une nouvelle tournée de boissons."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "03edacff179c412cfc819455383c320c190602016c2d25d73d319f5fba61aab9"
+    },
+    {
+      "stable_lexeme_key": "paraître|VER",
+      "lemma": "paraître",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 109.9528,
+        "lexique_frequency": 92.367,
+        "contextual_diversity": 19.84997
+      },
+      "proposed_primary": {
+        "entry_id": "paraître__verb__1",
+        "sense_id": "__ws_1_paraître__verb__1",
+        "definition_fr": "Être exposé à la vue ; se faire ou se laisser voir ; se manifester.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_1_paraître__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Être exposé à la vue ; se faire ou se laisser voir ; se manifester."
+        },
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_2_paraître__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Être mis en vente ou en circulation, en parlant d’un livre ou d’une publication."
+        },
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_3_paraître__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Briller ; se distinguer ; se faire remarquer."
+        },
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_4_paraître__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Sembler ; avoir l’apparence."
+        },
+        {
+          "entry_id": "paraître__verb__1",
+          "sense_id": "__ws_5_paraître__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Se montrer dans un lieu ou dans certaines circonstances."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_paraître__verb__1",
+          "chinese_written_form": "好像",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Sembler, avoir l'apparence",
+          "mapped_sense_id": "__ws_4_paraître__verb__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "9bc87405256b6df0be9cb439f6fb8109fa1006e088c4582f7cd4452d01f4527d"
+    },
+    {
+      "stable_lexeme_key": "élever|VER",
+      "lemma": "élever",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 106.478,
+        "lexique_frequency": 49.93,
+        "contextual_diversity": 10.56491
+      },
+      "proposed_primary": {
+        "entry_id": "élever__verb__1",
+        "sense_id": "__ws_1_élever__verb__1",
+        "definition_fr": "Mettre plus haut, porter plus haut, rendre plus haut.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_1_élever__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Mettre plus haut, porter plus haut, rendre plus haut."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_2_élever__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Sens figuré) Porter vers ce qui est plus grand que soi, en parlant de ses pensées, de son âme, de ses désirs."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_3_élever__verb__1",
+          "sense_number": "3",
+          "definition_fr": "(Sens figuré) Fortifier, ennoblir, en parlant de l’âme, de l’esprit."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_4_élever__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Sens figuré) Investir de quelque dignité, placer dans un haut rang, rendre supérieur en pouvoir, en fortune, en gloire."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_5_élever__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Sens figuré) Augmenter de quantité, de prix, de valeur."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_6_élever__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Faire construire."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_7_élever__verb__1",
+          "sense_number": "7",
+          "definition_fr": "(Sens figuré) Opposer, proposer ou faire naître, en parlant de doutes, de scrupules, de difficultés."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_8_élever__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Nourrir un enfant, entretenir son existence jusqu’à ce qu’il ait acquis une certaine force."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_9_élever__verb__1",
+          "sense_number": "9",
+          "definition_fr": "(Par analogie) Nourrir et protéger des animaux ou des plantes pour favoriser leur croissance."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_10_élever__verb__1",
+          "sense_number": "10",
+          "definition_fr": "(Sens figuré) Instruire ; former par l’éducation."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_11_élever__verb__1",
+          "sense_number": "11",
+          "definition_fr": "(Pronominal) (En particulier) S’enorgueillir."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_12_élever__verb__1",
+          "sense_number": "12",
+          "definition_fr": "(Pronominal) (Sens figuré) Présenter, développer sur un sujet."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_13_élever__verb__1",
+          "sense_number": "13",
+          "definition_fr": "(Pronominal) (Sens figuré) Avoir la valeur, le prix de."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_14_élever__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Pronominal) Se former ; survenir ; naître. Note : Se dit tant au propre qu’au figuré."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_15_élever__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Pronominal) S’opposer ou se déclarer contre quelqu’un ou contre ce qu’il propose."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_16_élever__verb__1",
+          "sense_number": "16",
+          "definition_fr": "(Pronominal) Accuser quelqu’un, porter témoignage contre lui."
+        },
+        {
+          "entry_id": "élever__verb__1",
+          "sense_id": "__ws_17_élever__verb__1",
+          "sense_number": "17",
+          "definition_fr": "(Pronominal) (Sens passif) Être dressé."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "dda26ee54da4af124133612e7e61d419b430770e347d233a73dcbc51873206c1"
+    },
+    {
+      "stable_lexeme_key": "assurer|VER",
+      "lemma": "assurer",
+      "pos": "VER",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 103.4754,
+        "lexique_frequency": 144.633,
+        "contextual_diversity": 21.85548
+      },
+      "proposed_primary": {
+        "entry_id": "assurer__verb__1",
+        "sense_id": "__ws_1_assurer__verb__1",
+        "definition_fr": "Rendre stable.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_1_assurer__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Rendre stable."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_2_assurer__verb__1",
+          "sense_number": "2",
+          "definition_fr": "(Sens figuré) Prendre une contenance, un maintien ou un visage ferme."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_3_assurer__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Garantir la réalisation ou le bon fonctionnement. — Note d’usage : Il est suivi de la préposition de."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_4_assurer__verb__1",
+          "sense_number": "4",
+          "definition_fr": "(Manège) Accoutumer un cheval à souffrir le mors."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_5_assurer__verb__1",
+          "sense_number": "5",
+          "definition_fr": "(Marine) Arborer le pavillon de sa nation en tirant un coup de canon."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_6_assurer__verb__1",
+          "sense_number": "6",
+          "definition_fr": "Rendre une chose sûre."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_7_assurer__verb__1",
+          "sense_number": "7",
+          "definition_fr": "Garantir un droit, faire qu’il ne périclite pas."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_8_assurer__verb__1",
+          "sense_number": "8",
+          "definition_fr": "Garantir, par un acte, la propriété d’un bien à quelqu’un, pour qu’il en jouisse après la mort du donateur."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_9_assurer__verb__1",
+          "sense_number": "9",
+          "definition_fr": "Procurer d’une façon certaine et durable."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_10_assurer__verb__1",
+          "sense_number": "10",
+          "definition_fr": "Garantir ou faire garantir par un contrat d’assurance ; contracter une assurance."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_11_assurer__verb__1",
+          "sense_number": "11",
+          "definition_fr": "Engager fortement quelqu’un à regarder une chose comme certaine, à y croire. — Note : Avec un nom de personne pour complément d’objet."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_12_assurer__verb__1",
+          "sense_number": "12",
+          "definition_fr": "(Escalade) En escalade, garantir que son coéquipier sera bien encordé en cas de chute."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_13_assurer__verb__1",
+          "sense_number": "13",
+          "definition_fr": "(Intransitif) Affirmer ou certifier une chose ; prétendre avec assurance."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_14_assurer__verb__1",
+          "sense_number": "14",
+          "definition_fr": "(Intransitif) Rendre certain d’une chose."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_15_assurer__verb__1",
+          "sense_number": "15",
+          "definition_fr": "(Intransitif) (Familier) Être à la hauteur."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_16_assurer__verb__1",
+          "sense_number": "16",
+          "definition_fr": "(Pronominal) (Avec les prépositions Dans et En); Établir sa confiance."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_17_assurer__verb__1",
+          "sense_number": "17",
+          "definition_fr": "(Pronominal) Se procurer la certitude d’un fait."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_18_assurer__verb__1",
+          "sense_number": "18",
+          "definition_fr": "(Pronominal) Arrêter, emprisonner, en parlant de quelqu’un. — Note d’usage : Il est suivi de la préposition de."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_19_assurer__verb__1",
+          "sense_number": "19",
+          "definition_fr": "(Pronominal) Se garantir la protection, le suffrage de quelqu’un dans les choses où l’on a besoin de lui. — Note d’usage : Il est suivi de la préposition de."
+        },
+        {
+          "entry_id": "assurer__verb__1",
+          "sense_id": "__ws_20_assurer__verb__1",
+          "sense_number": "20",
+          "definition_fr": "(Pronominal) Réserver, retenir une chose pour la rendre sûre."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "cd5d1ef82ce06a4eebcfdafa7d7d72fa47c5bce02b16fee096b8262a3df57990"
+    },
+    {
+      "stable_lexeme_key": "moindre|ADJ",
+      "lemma": "moindre",
+      "pos": "ADJ",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 34.5556,
+        "lexique_frequency": 45.62,
+        "contextual_diversity": 16.39314
+      },
+      "proposed_primary": {
+        "entry_id": "moindre__adj__1",
+        "sense_id": "__ws_1_moindre__adj__1",
+        "definition_fr": "Comparatif de petit : Plus petit.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "moindre__adj__1",
+          "sense_id": "__ws_1_moindre__adj__1",
+          "sense_number": "1",
+          "definition_fr": "Comparatif de petit : Plus petit."
+        },
+        {
+          "entry_id": "moindre__adj__1",
+          "sense_id": "__ws_2_moindre__adj__1",
+          "sense_number": "2",
+          "definition_fr": "Superlatif de petit : Le plus petit. — Note d’usage : Il est alors toujours précédé d’un article défini ou d’un autre déterminant défini."
+        },
+        {
+          "entry_id": "moindre__adj__1",
+          "sense_id": "__ws_3_moindre__adj__1",
+          "sense_number": "3",
+          "definition_fr": "(Précédé d’une négation) Aucun. — Note d’usage : Toujours précédé d’un article défini."
+        },
+        {
+          "entry_id": "moindre__adj__1",
+          "sense_id": "__ws_4_moindre__adj__1",
+          "sense_number": "4",
+          "definition_fr": "(Archaïsme) Petit."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "9fde936d905ea7f1a373cf5189d8d61c2661847e7f80f773ae80e4bd1643d371"
+    },
+    {
+      "stable_lexeme_key": "au-delà|ADV",
+      "lemma": "au-delà",
+      "pos": "ADV",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 37.2293,
+        "lexique_frequency": 19.272,
+        "contextual_diversity": 8.32976
+      },
+      "proposed_primary": {
+        "entry_id": "au-delà__adv__1",
+        "sense_id": "__ws_1_au-delà__adv__1",
+        "definition_fr": "Plus loin que. Un peu plus loin, de l'autre côté (par rapport à un point, un lieu exprimé), à l'extérieur.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "au-delà__adv__1",
+          "sense_id": "__ws_1_au-delà__adv__1",
+          "sense_number": "1",
+          "definition_fr": "Plus loin que. Un peu plus loin, de l'autre côté (par rapport à un point, un lieu exprimé), à l'extérieur."
+        },
+        {
+          "entry_id": "au-delà__adv__1",
+          "sense_id": "__ws_2_au-delà__adv__1",
+          "sense_number": "2",
+          "definition_fr": "Indique ce qui dépasse un seuil."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "6396a7fa5514b99cf7b9e343cad9ec08bed2a0dba159afbf44cf8360a7b9242a"
+    },
+    {
+      "stable_lexeme_key": "terme|NOM",
+      "lemma": "terme",
+      "pos": "NOM",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 89.4695,
+        "lexique_frequency": 46.956,
+        "contextual_diversity": 12.37906
+      },
+      "proposed_primary": {
+        "entry_id": "terme__nom__1",
+        "sense_id": "__ws_2_terme__nom__1",
+        "definition_fr": "(Par extension) Fin d’un espace à parcourir.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "par extension"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_1_terme__nom__1",
+          "sense_number": "1",
+          "definition_fr": "(Désuet) Borne marquant une limite et faite d’un buste terminé en gaine, en souvenir du dieu Terme."
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_2_terme__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Par extension) Fin d’un espace à parcourir."
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_3_terme__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Par extension) Fin d’une période de temps."
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_4_terme__nom__1",
+          "sense_number": "4",
+          "definition_fr": "Borne ; limite où s’arrête quelque chose."
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_5_terme__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Finance) Moment fixé d’avance pour un paiement."
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_6_terme__nom__1",
+          "sense_number": "6",
+          "definition_fr": "(Par métonymie) Somme due au bout du terme."
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_7_terme__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Sans article ou avec adjectif possessif) Temps au bout duquel une femme doit accoucher, dans le cours ordinaire de la nature."
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_8_terme__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Par analogie) Date prévue de la mise à bas, en parlant des femelles de quelques animaux, des vaches, des juments, etc."
+        },
+        {
+          "entry_id": "terme__nom__1",
+          "sense_id": "__ws_9_terme__nom__1",
+          "sense_number": "9",
+          "definition_fr": "(Au pluriel) État, nature des relations qu’on entretient avec quelqu’un."
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_1_terme__nom__2",
+          "sense_number": "1",
+          "definition_fr": "(Linguistique) Expression d’une idée ; mot ou phrase."
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_2_terme__nom__2",
+          "sense_number": "2",
+          "definition_fr": "(Logique, Mathématiques) Chacun des éléments d’un rapport, d’une relation, d’une comparaison ou d’une progression."
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_3_terme__nom__2",
+          "sense_number": "3",
+          "definition_fr": "(Mathématiques) Chacune des quantités qui composent une équation ou une expression algébrique et qui sont séparées par les signes plus (+) ou moins (-)."
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_4_terme__nom__2",
+          "sense_number": "4",
+          "definition_fr": "(Mathématiques) Chacun des opérandes dans une addition, sans distinguer entre cumulateur et cumulande."
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_5_terme__nom__2",
+          "sense_number": "5",
+          "definition_fr": "(Logique) Chacune des trois parties d’un syllogisme qui, combinés deux à deux, forment les parties."
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_6_terme__nom__2",
+          "sense_number": "6",
+          "definition_fr": "Chacun des deux objets que l’on compare l’un avec l’autre ou qui ont de la relation ou du rapport entre eux."
+        },
+        {
+          "entry_id": "terme__nom__2",
+          "sense_id": "__ws_7_terme__nom__2",
+          "sense_number": "7",
+          "definition_fr": "(Au pluriel) Tournure, façon de parler qui est particulière à chaque art, à chaque science"
+        },
+        {
+          "entry_id": "terme__nom__3",
+          "sense_id": "__ws_1_terme__nom__3",
+          "sense_number": "1",
+          "definition_fr": "(Sculpture) Chez les Romains, divinité dont la représentation en forme de borne servait de limite aux héritages et à l’État."
+        },
+        {
+          "entry_id": "terme__nom__3",
+          "sense_id": "__ws_2_terme__nom__3",
+          "sense_number": "2",
+          "definition_fr": "(Par métonymie) Statue d’architecture composé d’un buste humain avec le bas du corps se terminant dans une gaine."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "fc487e70910ac65ac65c7468327e048f6a420863d7c7fc1f962e1b89cec837af"
+    },
+    {
+      "stable_lexeme_key": "antenne|NOM",
+      "lemma": "antenne",
+      "pos": "NOM",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 8.0514,
+        "lexique_frequency": 11.737,
+        "contextual_diversity": 3.04654
+      },
+      "proposed_primary": {
+        "entry_id": "antenne__nom__1",
+        "sense_id": "__ws_2_antenne__nom__1",
+        "definition_fr": "(Par analogie) Élément secondaire d'un ensemble quelconque qui dérive de la structure principale et qui y reste liée.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [
+            "par analogie"
+          ],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_1_antenne__nom__1",
+          "sense_number": "1",
+          "definition_fr": "(Marine) (Vieilli) Longue vergue qui s’attache obliquement au mât, pour soutenir une voile triangulaire."
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_2_antenne__nom__1",
+          "sense_number": "2",
+          "definition_fr": "(Par analogie) Élément secondaire d'un ensemble quelconque qui dérive de la structure principale et qui y reste liée."
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_3_antenne__nom__1",
+          "sense_number": "3",
+          "definition_fr": "(Marine) (Vieilli) (Désuet) Rang de futailles placées les unes sur les autres dans la cale."
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_4_antenne__nom__1",
+          "sense_number": "4",
+          "definition_fr": "(Entomologie, Zoologie) Appendice articulé en forme de corne, que les insectes portent sur la tête, et que l’on croit être pour eux l’organe principal du tact."
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_5_antenne__nom__1",
+          "sense_number": "5",
+          "definition_fr": "(Sens figuré) Ce qui permet aux personnes de percevoir intuitivement ou intellectuellement leur environnement."
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_6_antenne__nom__1",
+          "sense_number": "6",
+          "definition_fr": "Antenne (5) de radio-transmission de Saint-Valentin\n (Technique, Télécommunications) Appareillage métallique passif isolé de la terre et relié à des appareils de radiocommunication, destiné à émettre ou recevoir des ondes radio."
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_7_antenne__nom__1",
+          "sense_number": "7",
+          "definition_fr": "(Par métonymie) Chaîne de radio ou de télévision."
+        },
+        {
+          "entry_id": "antenne__nom__1",
+          "sense_id": "__ws_8_antenne__nom__1",
+          "sense_number": "8",
+          "definition_fr": "(Par extension) Implantation locale d’une organisation."
+        }
+      ],
+      "selected_sense_chinese_candidates": [
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_1_antenne__nom__1",
+          "chinese_written_form": "触角",
+          "target_language_code": "cmn",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Entomologie) Organe des insectes",
+          "mapped_sense_id": "__ws_3_antenne__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_2_antenne__nom__1",
+          "chinese_written_form": "天线",
+          "target_language_code": "cmn",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Technique) Appareil pour recevoir un signal",
+          "mapped_sense_id": "__ws_5_antenne__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_cmn_3_antenne__nom__1",
+          "chinese_written_form": "办事处",
+          "target_language_code": "cmn",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "Implantation locale d'une organisation",
+          "mapped_sense_id": "__ws_6_antenne__nom__1",
+          "structural_match_for_selected_sense": false
+        },
+        {
+          "candidate_stable_ref": "dbnary_fr:__tr_zho_1_antenne__nom__1",
+          "chinese_written_form": "天线",
+          "target_language_code": "zho",
+          "candidate_class": "sense_mapped_candidate",
+          "translation_gloss": "(Technique) Appareil pour recevoir un signal",
+          "mapped_sense_id": "__ws_5_antenne__nom__1",
+          "structural_match_for_selected_sense": false
+        }
+      ],
+      "candidate_review_bucket": "ambiguous",
+      "input_hash": "6bd0cbfb5f8c5ff8ab192c08ad41db3188b3c57ae4b4cb53fbf6f186f0a01501"
+    },
+    {
+      "stable_lexeme_key": "constituer|VER",
+      "lemma": "constituer",
+      "pos": "VER",
+      "cefr": "B2",
+      "frequency_signals": {
+        "flelex_frequency": 67.8359,
+        "lexique_frequency": 7.579,
+        "contextual_diversity": 1.04562
+      },
+      "proposed_primary": {
+        "entry_id": "constituer__verb__1",
+        "sense_id": "__ws_1_constituer__verb__1",
+        "definition_fr": "Concourir, avec d’autres éléments, à former une chose en un tout ou l’essence d’une chose.",
+        "selection_reason": "candidate-independent leading-label and lexical-entry-surface policy; source-order tiebreaker",
+        "marker_analysis": {
+          "leading_labels": [],
+          "penalty_flags": [],
+          "surface_mismatch_penalty_applied": false
+        }
+      },
+      "all_senses": [
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_1_constituer__verb__1",
+          "sense_number": "1",
+          "definition_fr": "Concourir, avec d’autres éléments, à former une chose en un tout ou l’essence d’une chose."
+        },
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_2_constituer__verb__1",
+          "sense_number": "2",
+          "definition_fr": "Établir quelqu’un dans une situation légale."
+        },
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_3_constituer__verb__1",
+          "sense_number": "3",
+          "definition_fr": "Établir une chose d’une façon fixe, définitive."
+        },
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_4_constituer__verb__1",
+          "sense_number": "4",
+          "definition_fr": "Organiser, former."
+        },
+        {
+          "entry_id": "constituer__verb__1",
+          "sense_id": "__ws_5_constituer__verb__1",
+          "sense_number": "5",
+          "definition_fr": "Vérifier les pouvoirs et nommer le bureau, en parlant d’une assemblée."
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "candidate_review_bucket": "no_candidate",
+      "input_hash": "72814e111dff9a57a03ef37993758df943686e6c6106bef295bae8b2e10ff411"
+    }
+  ],
+  "artifact_hash": "deac2837aea3e88b16395184439c62e7a899b4a1b7e3b25b613a5326d6ea3a50"
+}
