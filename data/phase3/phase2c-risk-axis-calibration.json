@@ -1,0 +1,1341 @@
+{
+  "schema_version": 1,
+  "scope": "Phase 2C calibration split by sense-selection versus content-authoring risk; neither tier is semantic approval.",
+  "sense_selection_corrected_records": 18,
+  "sense_selection_corrected_by_tier": {
+    "high": 13,
+    "medium": 5
+  },
+  "dangerous_low_sense_false_negatives": [],
+  "content_drift_regression_records": 16,
+  "content_drift_by_tier": {
+    "high": 16
+  },
+  "content_drift_low_false_negatives": [],
+  "records": [
+    {
+      "stable_lexeme_key": "actuel|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "agir|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "ailleurs|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "aller|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "année|NOM",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "antenne|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "late_source_sense_selection",
+        "many_senses",
+        "marked_predecessor_requires_adjudication"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "an|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "assurer|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "au-delà|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "aujourd'hui|ADV",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "avoir|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "beau|ADJ",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "bon|ADJ",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "cependant|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "chef|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "late_source_sense_selection",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "chose|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "constituer|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "corps|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "d'abord|ADV",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "dernier|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "devoir|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "dire|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "doute|NOM",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "déclarer|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "développement|NOM",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "développer|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "emploi|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "late_source_sense_selection",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "enfant|NOM",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "entier|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "faire|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "late_source_sense_selection",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "falloir|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "femme|NOM",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "fond|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "français|ADJ",
+      "sense_selection_tier": "low",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [],
+      "content_authoring_flags": [
+        "phase2c_content_drift_regression"
+      ]
+    },
+    {
+      "stable_lexeme_key": "grand|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "haut|ADJ",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "heure|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "homme|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "inquiet|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "instant|NOM",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "jeune|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "jour|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "lancer|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "loin|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "loi|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "lors|ADV",
+      "sense_selection_tier": "low",
+      "content_authoring_tier": "low",
+      "sense_selection_flags": [],
+      "content_authoring_flags": []
+    },
+    {
+      "stable_lexeme_key": "maison|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "mener|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "mettre|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "mieux|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "moindre|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "monde|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "late_source_sense_selection",
+        "many_senses",
+        "marked_predecessor_requires_adjudication"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "naturel|ADJ",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "nouveau|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "obliger|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "obtenir|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "paraître|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "late_source_sense_selection"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "parisien|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "parler|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "particulièrement|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "passer|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "pauvre|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "pays|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "personne|NOM",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "petit|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "peut-être|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "point|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "late_source_sense_selection",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "pousser|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "pouvoir|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "prendre|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "professionnel|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "près|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "présent|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "public|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "que|ADV",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "rapport|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "late_source_sense_selection",
+        "many_senses",
+        "marked_predecessor_requires_adjudication"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "regard|NOM",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "remettre|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "savoir|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "seul|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "simplement|ADV",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "social|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "suffire|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "surtout|ADV",
+      "sense_selection_tier": "low",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [],
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "sûr|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "temps|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "terme|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "late_source_sense_selection",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "multiple_lexical_entries",
+        "proposed_specialized_domain"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible",
+        "specialized_usage"
+      ]
+    },
+    {
+      "stable_lexeme_key": "trouver|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "tuer|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "venir|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "vieux|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "vie|NOM",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "late_source_sense_selection",
+        "many_senses",
+        "multiple_lexical_entries"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "voir|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "vouloir|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "vrai|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "économique|ADJ",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "medium",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "élever|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "phase2c_content_drift_regression",
+        "sibling_sense_confusion_possible"
+      ]
+    },
+    {
+      "stable_lexeme_key": "étonner|VER",
+      "sense_selection_tier": "medium",
+      "content_authoring_tier": "low",
+      "sense_selection_flags": [
+        "marked_predecessor_requires_adjudication"
+      ],
+      "content_authoring_flags": []
+    },
+    {
+      "stable_lexeme_key": "être|VER",
+      "sense_selection_tier": "high",
+      "content_authoring_tier": "high",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "extreme_polysemy",
+        "many_senses"
+      ],
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ]
+    }
+  ],
+  "artifact_hash": "1a5e2d54f5b380de55ed25a406660e0c28f7b99208cac231420005a0b6a01984"
+}

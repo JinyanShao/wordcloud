@@ -1,0 +1,824 @@
+{
+  "schema_version": 1,
+  "parent_artifact_hash": "398f2536bbc7b40a972477f75c3b0f854c040d878ade62ab25b6f53f9ff4bf90",
+  "review_route": "auto_sense_candidate",
+  "items": [
+    {
+      "stable_lexeme_key": "prêt|ADJ",
+      "runtime_lexeme_id": 10368,
+      "parent_input_hash": "15c6ffb799b15a308ea3dc3e3b8fde30fb90a7a9e10271b0d0a0cd1f4ec96f69",
+      "proposed_primary_learner_sense": {
+        "entry_id": "prêt__adj__1",
+        "sense_id": "__ws_1_prêt__adj__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "c1a94ad8997c998e15d10b574140e9730d07caa8e8d5a6c57c33bd5dad2b86ac"
+    },
+    {
+      "stable_lexeme_key": "international|ADJ",
+      "runtime_lexeme_id": 6949,
+      "parent_input_hash": "0ad080a30b109503c9fbc19b697309d1b27946abec3f4d9339aed6603bdf530e",
+      "proposed_primary_learner_sense": {
+        "entry_id": "international__adj__1",
+        "sense_id": "__ws_1_international__adj__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_single_candidate_only"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "a1f01e19add40483d9fdecdcaee7b90529139ba595b8d26eca5dfedfd4ec1015"
+    },
+    {
+      "stable_lexeme_key": "responsable|ADJ",
+      "runtime_lexeme_id": 11065,
+      "parent_input_hash": "ae5260dedc350214ea229f8a7d9e44d1f83123d16edd171221f9a846bf005efe",
+      "proposed_primary_learner_sense": {
+        "entry_id": "responsable__adj__1",
+        "sense_id": "__ws_1_responsable__adj__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_single_candidate_only"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "69fc0607facbe1869b758e62bb901dceac8e4fc2297d34f7c1f3a7dc3a2c4473"
+    },
+    {
+      "stable_lexeme_key": "autour|ADV",
+      "runtime_lexeme_id": 1092,
+      "parent_input_hash": "184c1a39dbd86b20891cd27cf61a57731ff0bbb46c8d14dab2717da8603bdea5",
+      "proposed_primary_learner_sense": {
+        "entry_id": "autour__adv__1",
+        "sense_id": "__ws_1_autour__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "1e3848108f44f55e03bbccb1dca9ae0df4b17fef08b083f94b6a9cb10038c9c1"
+    },
+    {
+      "stable_lexeme_key": "parfois|ADV",
+      "runtime_lexeme_id": 9230,
+      "parent_input_hash": "18b047fb8cbfd206b0e51c6d659c081f1c6fcaba76c7c194a3ca331c13e7a0a4",
+      "proposed_primary_learner_sense": {
+        "entry_id": "parfois__adv__1",
+        "sense_id": "__ws_1_parfois__adv__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "a9da2ded88741db4bd42f2880d72782c38366816bdb895188c730582eb67d25f"
+    },
+    {
+      "stable_lexeme_key": "soudain|ADV",
+      "runtime_lexeme_id": 12120,
+      "parent_input_hash": "29dfde36172c7c72ffbbeadb13f8a5275c2379277f623e99b5db8b7dc44d11ad",
+      "proposed_primary_learner_sense": {
+        "entry_id": "soudain__adv__1",
+        "sense_id": "__ws_1_soudain__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "b89e3bdf31a9b367c364b4df5a4a789687933507fa45821b47c8746994b11029"
+    },
+    {
+      "stable_lexeme_key": "aussitôt|ADV",
+      "runtime_lexeme_id": 1047,
+      "parent_input_hash": "7cfb5984245d9f0b487c776e1528429b8da0f663234208ea66fd468d389d9f8c",
+      "proposed_primary_learner_sense": {
+        "entry_id": "aussitôt__adv__1",
+        "sense_id": "__ws_1_aussitôt__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "07e65e33eefaf0ab35d03da9b24ee9bd0128b6569d2518598a2c96c3bcd30e6f"
+    },
+    {
+      "stable_lexeme_key": "finalement|ADV",
+      "runtime_lexeme_id": 5266,
+      "parent_input_hash": "6c0dcf779cb94c50be6b3147cb0529ef7265855d70b4ca8f33b02defb8468140",
+      "proposed_primary_learner_sense": {
+        "entry_id": "finalement__adv__1",
+        "sense_id": "__ws_1_finalement__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "structural_mapping_only"
+      ],
+      "translation_tier": "low",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "source_reuse_candidate",
+      "content_route": "content_sample_qa",
+      "record_hash": "906d4f93e349e2df4ef7c59fb220ab2f367e9a01d38c2a16022d81776a421adf"
+    },
+    {
+      "stable_lexeme_key": "lentement|ADV",
+      "runtime_lexeme_id": 7389,
+      "parent_input_hash": "75a6836b10e3156abade2a360ff9d7a443783544d52c0091526a0e0a806db0b6",
+      "proposed_primary_learner_sense": {
+        "entry_id": "lentement__adv__1",
+        "sense_id": "__ws_1_lentement__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "2285da4b542fce9d6f4683287638e38799d6e4bfb9125dfa7948f5545fdb4bd7"
+    },
+    {
+      "stable_lexeme_key": "auprès|ADV",
+      "runtime_lexeme_id": 1038,
+      "parent_input_hash": "ada1a82af5d1f025d7e31cf8d81b3b2727515ec97229c542893a1e19b1d28be3",
+      "proposed_primary_learner_sense": {
+        "entry_id": "auprès__adv__1",
+        "sense_id": "__ws_1_auprès__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "506cd5ace35905c1adf8a5e41718d1ea9089f208dbce4e78095cf4e4c39428b7"
+    },
+    {
+      "stable_lexeme_key": "facilement|ADV",
+      "runtime_lexeme_id": 5058,
+      "parent_input_hash": "1a888fb16626c8f9688d0f0493258e286fd9f94721a3bbaf72fa02abd5c131d1",
+      "proposed_primary_learner_sense": {
+        "entry_id": "facilement__adv__1",
+        "sense_id": "__ws_1_facilement__adv__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "6acda2e3792527d353d049716a8f6c9c34d9138ff9c054bb70f87231423d66db"
+    },
+    {
+      "stable_lexeme_key": "exactement|ADV",
+      "runtime_lexeme_id": 4886,
+      "parent_input_hash": "36cb53cc9ec5e1d1491c7386671e4c95042245aed5655b7d4b55ffc03dfa5174",
+      "proposed_primary_learner_sense": {
+        "entry_id": "exactement__adv__1",
+        "sense_id": "__ws_1_exactement__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "37c9b8e53533fc588eddd20696fc40e7806f29f9b2251ddb093a2ec81957c39c"
+    },
+    {
+      "stable_lexeme_key": "ben|ADV",
+      "runtime_lexeme_id": 1354,
+      "parent_input_hash": "e3cc2dad42a1275d15f6f0442f813cfaf038e33e3b0d10b7d8dcae6768bd9c1e",
+      "proposed_primary_learner_sense": {
+        "entry_id": "ben__adv__1",
+        "sense_id": "__ws_1_ben__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "11f2ba71bc4001323210913310648c5b9ee8898a85ba92bd8d372e4bbe7fc74d"
+    },
+    {
+      "stable_lexeme_key": "choisir|VER",
+      "runtime_lexeme_id": 2328,
+      "parent_input_hash": "48633bc38f50218178eab956c6543da8a2ec4df49b9aeb3f1f9507257b2d4829",
+      "proposed_primary_learner_sense": {
+        "entry_id": "choisir__verb__1",
+        "sense_id": "__ws_1_choisir__verb__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "cb74d506969143c3fce74f92c89902433195812f319e89bc28ecb5ff74b7efdd"
+    },
+    {
+      "stable_lexeme_key": "suivant|ADJ",
+      "runtime_lexeme_id": 12403,
+      "parent_input_hash": "3f7a7b4f9d99798d0897953c94e69fe2c8f02eb6a1238017712aeb3de29850ac",
+      "proposed_primary_learner_sense": {
+        "entry_id": "suivant__adj__1",
+        "sense_id": "__ws_1_suivant__adj__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "2457659b620fa0768f8f28d83866953eb3038fd2006e1f2cb7831b777c77dde0"
+    },
+    {
+      "stable_lexeme_key": "divers|ADJ",
+      "runtime_lexeme_id": 3843,
+      "parent_input_hash": "34ddc41c33a58136355ef14f7829a15693cb5f875fc46e94a848ae73f88173bd",
+      "proposed_primary_learner_sense": {
+        "entry_id": "divers__adj__1",
+        "sense_id": "__ws_1_divers__adj__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_sample_qa",
+      "record_hash": "39fc4c37458b2a27fbee2b051ea6b55091daf4411461e22ee5353c383109c530"
+    },
+    {
+      "stable_lexeme_key": "administratif|ADJ",
+      "runtime_lexeme_id": 188,
+      "parent_input_hash": "895133ccf0cec8296e232879fee48e6ad5956396fff5941848273d835370959b",
+      "proposed_primary_learner_sense": {
+        "entry_id": "administratif__adj__1",
+        "sense_id": "__ws_1_administratif__adj__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "1749be2d82a0e72b7ecbae45fd3952841780b9a69334eb810659757320948e1c"
+    },
+    {
+      "stable_lexeme_key": "touristique|ADJ",
+      "runtime_lexeme_id": 12949,
+      "parent_input_hash": "69f0784f9c6c3c62e18600d10510d7f399e6285f79b7c2523736a0027776c78b",
+      "proposed_primary_learner_sense": {
+        "entry_id": "touristique__adj__1",
+        "sense_id": "__ws_1_touristique__adj__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "4eeb8a8571f2ddb64c194d8161130243e57dc194318b08c37883cd16aba1f351"
+    },
+    {
+      "stable_lexeme_key": "avant|ADV",
+      "runtime_lexeme_id": 1110,
+      "parent_input_hash": "b21be3c4c3514d99395771837fbb3285bd8a392ab23575b1144809b6dcff114b",
+      "proposed_primary_learner_sense": {
+        "entry_id": "avant__adv__1",
+        "sense_id": "__ws_1_avant__adv__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_single_candidate_only"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "db10342a9d2bf52ed670140d7941a834881f69bf36ba8836d1d735f85a2784b3"
+    },
+    {
+      "stable_lexeme_key": "tranquillement|ADV",
+      "runtime_lexeme_id": 13024,
+      "parent_input_hash": "06f6d334fe4fde188352bd81712adcce2c34d3d29c443b7b3b0599b620ae7501",
+      "proposed_primary_learner_sense": {
+        "entry_id": "tranquillement__adv__1",
+        "sense_id": "__ws_1_tranquillement__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "93d1a5aa054ed7b9c4d7d4f53139b3b89ecc77babf54a0dbd63ee6f2f3f887c0"
+    },
+    {
+      "stable_lexeme_key": "marre|ADV",
+      "runtime_lexeme_id": 7892,
+      "parent_input_hash": "34dff32c690f6adc9c6a455834274b1317a4fe4b269cf135593ca6754d03f1a6",
+      "proposed_primary_learner_sense": {
+        "entry_id": "marre__adv__1",
+        "sense_id": "__ws_1_marre__adv__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "80c3772d611e02cbf9b9d80d516430c13c6265189aada7cd335d49653173ff9c"
+    },
+    {
+      "stable_lexeme_key": "concerner|VER",
+      "runtime_lexeme_id": 2810,
+      "parent_input_hash": "8b30cc03b4083661dc4bc2c99255e555cb28efc9933b385329c7799204baf0af",
+      "proposed_primary_learner_sense": {
+        "entry_id": "concerner__verb__1",
+        "sense_id": "__ws_1_concerner__verb__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_single_candidate_only",
+        "nondefault_language_variant_present"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_sample_qa",
+      "record_hash": "b50de965972e73c93d8406cef26b413930f626ce1c13c84bae31fa55252d32ad"
+    },
+    {
+      "stable_lexeme_key": "surveiller|VER",
+      "runtime_lexeme_id": 12498,
+      "parent_input_hash": "59cab4fb2250fef5a59a7db8fca6ad3e99bfe020e53f71da0bac3ceac7be2241",
+      "proposed_primary_learner_sense": {
+        "entry_id": "surveiller__verb__1",
+        "sense_id": "__ws_1_surveiller__verb__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "349e45dc840a24fd99ac0e69a54021ac347f12de090a6caf7eea78398a9fc65d"
+    },
+    {
+      "stable_lexeme_key": "exclamer|VER",
+      "runtime_lexeme_id": 4915,
+      "parent_input_hash": "5e2a5ce3fa52727958d8d8bb1686205e64486fa48b3bd2ec921b3c4aae0f7b7f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "exclamer__verb__1",
+        "sense_id": "__ws_1_exclamer__verb__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "7498a01330d42f8a9a2cc74f3ff61535c624c84336a8e69a423dfd1c98306a5b"
+    },
+    {
+      "stable_lexeme_key": "rassurer|VER",
+      "runtime_lexeme_id": 10725,
+      "parent_input_hash": "1b2aac39c39f81cc45766440bc70f057a3b13b3035694f78fa3992d05304ee8c",
+      "proposed_primary_learner_sense": {
+        "entry_id": "rassurer__verb__1",
+        "sense_id": "__ws_1_rassurer__verb__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "b2a28fd08902a09953d8943b4e7a3d569aa5af7f0a989e753c653efacafbf89a"
+    },
+    {
+      "stable_lexeme_key": "familial|ADJ",
+      "runtime_lexeme_id": 5091,
+      "parent_input_hash": "837d393f86ec83fa984dd7de941cc083cb81e42ac3a204707606568a7591e043",
+      "proposed_primary_learner_sense": {
+        "entry_id": "familial__adj__1",
+        "sense_id": "__ws_1_familial__adj__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "92e95de8cc1d44aca8d3fe7803b349d09d9d6e6cc0e912c079d8d5b7ffdc5b1d"
+    },
+    {
+      "stable_lexeme_key": "étrange|ADJ",
+      "runtime_lexeme_id": 14169,
+      "parent_input_hash": "b0beccb2e778d8a3dae579bfcc4d5a3c01eeffb16224382395b191bf195dfed0",
+      "proposed_primary_learner_sense": {
+        "entry_id": "étrange__adj__1",
+        "sense_id": "__ws_1_étrange__adj__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_sample_qa",
+      "record_hash": "ed14b4eedcd266c0ab1df005cffff0bf927a6e10978c6b642a500719e1110694"
+    },
+    {
+      "stable_lexeme_key": "technique|ADJ",
+      "runtime_lexeme_id": 12716,
+      "parent_input_hash": "62c8152b52d273aa5901a600e57b009ea04f428ea5209d1f32af8d41449e8c58",
+      "proposed_primary_learner_sense": {
+        "entry_id": "technique__adj__1",
+        "sense_id": "__ws_1_technique__adj__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "c3fcbf231a98dd05fa6bb25eb4f84e2924bc35b7f60d4b98a11b61b80024b884"
+    },
+    {
+      "stable_lexeme_key": "artistique|ADJ",
+      "runtime_lexeme_id": 840,
+      "parent_input_hash": "bd7aae8e84ac9cd784028a1d4b9a7316868a71d88f91b2c8a9f17316d9f03d87",
+      "proposed_primary_learner_sense": {
+        "entry_id": "artistique__adj__1",
+        "sense_id": "__ws_1_artistique__adj__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "fd0f53c2b7e7defaef6da425595f1097ee1805b89ef973a1e90601c23ccf6b50"
+    },
+    {
+      "stable_lexeme_key": "complètement|ADV",
+      "runtime_lexeme_id": 2747,
+      "parent_input_hash": "54e59f35799828261777b0784ecbc45587272cb3a80fd8083650ec0594022762",
+      "proposed_primary_learner_sense": {
+        "entry_id": "complètement__adv__1",
+        "sense_id": "__ws_1_complètement__adv__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "1e533f7d45a296f1a8c7d15b874adfb00ecbb9c405db676b1fc3177c97b45219"
+    },
+    {
+      "stable_lexeme_key": "autrefois|ADV",
+      "runtime_lexeme_id": 1094,
+      "parent_input_hash": "85c662643db28c59c4dd1bba1d3676ead23a960339504d4df7506491822c48a0",
+      "proposed_primary_learner_sense": {
+        "entry_id": "autrefois__adv__1",
+        "sense_id": "__ws_1_autrefois__adv__1"
+      },
+      "legacy_combined_risk": "low_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "dc87580f48700298e21faceb8349b7b3b2933de95ec321724848fda343733213"
+    },
+    {
+      "stable_lexeme_key": "résultat|NOM",
+      "runtime_lexeme_id": 11545,
+      "parent_input_hash": "1f848387826ef6ea7ab8ac55f0966afc028938559b22fc00a9cce47112f53f7e",
+      "proposed_primary_learner_sense": {
+        "entry_id": "résultat__nom__1",
+        "sense_id": "__ws_1_résultat__nom__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_single_candidate_only"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "f6f28f66df461af5bc05c73536cde4cafb48c9bd8707631a116b4823ed0c8a4c"
+    },
+    {
+      "stable_lexeme_key": "éviter|VER",
+      "runtime_lexeme_id": 14222,
+      "parent_input_hash": "0e3a4623cb6002a4794e71de2b4402154adb88f50d214c33f1ec0101673986a9",
+      "proposed_primary_learner_sense": {
+        "entry_id": "éviter__verb__1",
+        "sense_id": "__ws_1_éviter__verb__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "3ddf0ed8587b2d012c66d052ffef2d3e67f5b3a5e7b07eb8f6f55cdcd65c8ef1"
+    },
+    {
+      "stable_lexeme_key": "forcément|ADV",
+      "runtime_lexeme_id": 5397,
+      "parent_input_hash": "c07e82e44d378a9bfb3eb4afa5b8dce2b07586df4492c4e4cc5441dfa6e901cf",
+      "proposed_primary_learner_sense": {
+        "entry_id": "forcément__adv__1",
+        "sense_id": "__ws_1_forcément__adv__1"
+      },
+      "legacy_combined_risk": "medium_risk",
+      "sense_selection_flags": [],
+      "sense_selection_tier": "low",
+      "sense_selection_rationale": "one unmarked source sense with no detected competition",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [],
+      "content_authoring_tier": "low",
+      "review_route": "auto_sense_candidate",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_sample_qa",
+      "record_hash": "e04ff17361d23ae7f822f87ca7f4a91e8d934ea7503a8bf8c8a1cfc8821c38ed"
+    }
+  ],
+  "artifact_hash": "b52b5cafdd67191c6daa15f0aa74ffbfae3a779b3dc8c61e8a239a5a376efcde"
+}
