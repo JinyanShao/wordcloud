@@ -1,0 +1,4735 @@
+{
+  "schema_version": 1,
+  "parent_artifact_hash": "398f2536bbc7b40a972477f75c3b0f854c040d878ade62ab25b6f53f9ff4bf90",
+  "review_route": "human_sense_review",
+  "items": [
+    {
+      "stable_lexeme_key": "fort|ADJ",
+      "runtime_lexeme_id": 5419,
+      "parent_input_hash": "566161412847871d0ee3ae165c084496b0ba88d56b4b3a82bde30c556c2c45e8",
+      "proposed_primary_learner_sense": {
+        "entry_id": "fort__adj__1",
+        "sense_id": "__ws_1_fort__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "multiple_chinese_candidates",
+        "nondefault_language_variant_present",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "18264ce7a8d4608e2eaaec0503f1e9682eb63d476bfe79df1e8b75456cf34c1b"
+    },
+    {
+      "stable_lexeme_key": "gros|ADJ",
+      "runtime_lexeme_id": 5941,
+      "parent_input_hash": "a600c348a8fee2cd8c57916081c98462d04ecbecfac58fc065a4f62b6f00de42",
+      "proposed_primary_learner_sense": {
+        "entry_id": "gros__adj__1",
+        "sense_id": "__ws_1_gros__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "e6af00902717a6d154a810cd3103a3b20a2c1f481adf7db675ee1339230a9a1a"
+    },
+    {
+      "stable_lexeme_key": "blanc|ADJ",
+      "runtime_lexeme_id": 1456,
+      "parent_input_hash": "073c66a4bc8d557d4ea962a83da674a0b3cdd6b772195236ceefe8c8d82bcd31",
+      "proposed_primary_learner_sense": {
+        "entry_id": "blanc__adj__1",
+        "sense_id": "__ws_1_blanc__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; definition_complex_or_opaque; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "dc37c017c3f82b51b469442e2982f84ef53a730782863dbbdf993f8b228dccf5"
+    },
+    {
+      "stable_lexeme_key": "noir|ADJ",
+      "runtime_lexeme_id": 8669,
+      "parent_input_hash": "32450c054b49bde79c0bfe1619f20721b2a877354b63078c23453f9d254f8092",
+      "proposed_primary_learner_sense": {
+        "entry_id": "noir__adj__1",
+        "sense_id": "__ws_1_noir__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "5c27253a4408207877d8e1b1612dc23a5addba4cd4fca26378cf8f23948a80f2"
+    },
+    {
+      "stable_lexeme_key": "simple|ADJ",
+      "runtime_lexeme_id": 11965,
+      "parent_input_hash": "736d6d13d01a29f8d52aa6b2d3db03c89efbbf923cb3405f210c907b8e0d3ea7",
+      "proposed_primary_learner_sense": {
+        "entry_id": "simple__adj__1",
+        "sense_id": "__ws_1_simple__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates",
+        "nondefault_language_variant_present",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "0609db8c5349a4ccba2689c10e92d015cf1cf30019f0047c262046c913a003a9"
+    },
+    {
+      "stable_lexeme_key": "libre|ADJ",
+      "runtime_lexeme_id": 7411,
+      "parent_input_hash": "589c6a2d88800d3ae33e6649998fbb3127e6caa859eefbc686ca80f3d998c242",
+      "proposed_primary_learner_sense": {
+        "entry_id": "libre__adj__1",
+        "sense_id": "__ws_1_libre__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "0d468d41040663fdf11bcbbedd74b30dc31ff1a65a7d5de5f404350145467e61"
+    },
+    {
+      "stable_lexeme_key": "propre|ADJ",
+      "runtime_lexeme_id": 10182,
+      "parent_input_hash": "641fb6b52dff03e5a4bb1f5b2d39fbe5aba1e83ae334adc9fa1d613bd43a95f2",
+      "proposed_primary_learner_sense": {
+        "entry_id": "propre__adj__1",
+        "sense_id": "__ws_1_propre__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "bce916b2895cdca2e52f9373e101c0c18c6553621a9976a994ec321fbcb32206"
+    },
+    {
+      "stable_lexeme_key": "froid|ADJ",
+      "runtime_lexeme_id": 5542,
+      "parent_input_hash": "040c8d7280edd2725a0ea81c250b633ff766d0b9303e41723244c7c1d1897cdf",
+      "proposed_primary_learner_sense": {
+        "entry_id": "froid__adj__1",
+        "sense_id": "__ws_1_froid__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "70b3aad11fbb422bd465ed2acf2a18d7835a5c9a6aaf8b908b975f067f63d365"
+    },
+    {
+      "stable_lexeme_key": "chaud|ADJ",
+      "runtime_lexeme_id": 2249,
+      "parent_input_hash": "dbbde4dde904f6d7a9f9230de00552db6c7bf1124928156ab6646a7d6e6426bc",
+      "proposed_primary_learner_sense": {
+        "entry_id": "chaud__adj__1",
+        "sense_id": "__ws_1_chaud__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "34e6bc7ed07b7cb16563fc2714871c3724983ff7a1935de4e7243441db8af92c"
+    },
+    {
+      "stable_lexeme_key": "vert|ADJ",
+      "runtime_lexeme_id": 13480,
+      "parent_input_hash": "7334869dc45833df33da6a264d7252af5ad57722f08a8665e3487c603fa3bd25",
+      "proposed_primary_learner_sense": {
+        "entry_id": "vert__adj__1",
+        "sense_id": "__ws_1_vert__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "626fc9f4a8b9a9d5ac23bf14f926c5347906550ea8b26e248b9aa9b4fd3238c4"
+    },
+    {
+      "stable_lexeme_key": "clair|ADJ",
+      "runtime_lexeme_id": 2461,
+      "parent_input_hash": "5ab2691faaa67b951927e4dc7ef734f9b8932136fc62a5885f17fb0a061eb59d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "clair__adj__1",
+        "sense_id": "__ws_1_clair__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "c49560c3f44ef6ba5d2375433ad746c4746d261afc66f43567f2626f391cdf9c"
+    },
+    {
+      "stable_lexeme_key": "bas|ADJ",
+      "runtime_lexeme_id": 1295,
+      "parent_input_hash": "88390085e89bfda9778695f095617a22e056c0dd1a48f75b9d901bbb07b202d9",
+      "proposed_primary_learner_sense": {
+        "entry_id": "bas__adj__1",
+        "sense_id": "__ws_1_bas__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "96ec1f83b2d718d211d2b6138f319a1fc8c5607cf774adf0c6a0c1f4548b4b35"
+    },
+    {
+      "stable_lexeme_key": "travail|NOM",
+      "runtime_lexeme_id": 13067,
+      "parent_input_hash": "116b4af68856f05bb6a1705d9a3c27191dc45b5c38a21ce516748fcc2025df16",
+      "proposed_primary_learner_sense": {
+        "entry_id": "travail__nom__1",
+        "sense_id": "__ws_1_travail__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "structural_mapping_only"
+      ],
+      "translation_tier": "low",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "source_reuse_candidate",
+      "content_route": "content_semantic_review",
+      "record_hash": "d0d99003319928c4f025afc6f59a8db6c55b7f6c59e0eef5417ca064978c9ada"
+    },
+    {
+      "stable_lexeme_key": "ami|NOM",
+      "runtime_lexeme_id": 484,
+      "parent_input_hash": "314769ef82d58923844e55badc13cdc74c7ff57c0caf1a56a582f7f1a1afbc6a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "ami__nom__1",
+        "sense_id": "__ws_1_ami__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "2bfa89a4a7ef9867255900813d6211933af07a61fd021cfd27ba82fa0962942c"
+    },
+    {
+      "stable_lexeme_key": "fille|NOM",
+      "runtime_lexeme_id": 5255,
+      "parent_input_hash": "57100460b0dcfe678d962ff42d432f7c179e74faa3da5ec8a0a1c39c4ed1faa5",
+      "proposed_primary_learner_sense": {
+        "entry_id": "fille__nom__1",
+        "sense_id": "__ws_1_fille__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "multiple_chinese_candidates",
+        "nondefault_language_variant_present",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "dd2bdc15c18ef30ce2f0a5e0256ee3039cc0ff61829b9405a85129ec7c7f98db"
+    },
+    {
+      "stable_lexeme_key": "père|NOM",
+      "runtime_lexeme_id": 10461,
+      "parent_input_hash": "66dbde5845cc5eefd427842b1079255201ea875e4c723efd4301fb46d824f643",
+      "proposed_primary_learner_sense": {
+        "entry_id": "Père__nom__1",
+        "sense_id": "__ws_1_Père__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "1a3099be1e51e8c7608dc3a43d89c7fc07208b3d3f29110f7c25291290322031"
+    },
+    {
+      "stable_lexeme_key": "main|NOM",
+      "runtime_lexeme_id": 7704,
+      "parent_input_hash": "5df814ad972c6312dd9c002bbf3191e923825b53b5c8d92bc58bad22c8225613",
+      "proposed_primary_learner_sense": {
+        "entry_id": "main__nom__1",
+        "sense_id": "__ws_2_main__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; marked_predecessor_requires_adjudication; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "72bd5c647b71a049ceb2d97c124df5980dcf7996d621df101aad8667b2206f77"
+    },
+    {
+      "stable_lexeme_key": "gens|NOM",
+      "runtime_lexeme_id": 5755,
+      "parent_input_hash": "dc0d016da6183c0921ad9c58cace36cf162fc4d0993fd9dfa73788562c439e11",
+      "proposed_primary_learner_sense": {
+        "entry_id": "gens__nom__1",
+        "sense_id": "__ws_1_gens__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "12c72fd616173b71e9ee9dbe274cc31ce8f0b1142909cd08d9aabe624ca20f13"
+    },
+    {
+      "stable_lexeme_key": "rue|NOM",
+      "runtime_lexeme_id": 11309,
+      "parent_input_hash": "90b24becfccb3779d6a6868c615e2074c160da4a17cfb81f2fb2c0cc3a3ee1d3",
+      "proposed_primary_learner_sense": {
+        "entry_id": "rue__nom__1",
+        "sense_id": "__ws_1_rue__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "5f9b0a266913abf36f68afc7f531679c78ee25964daa68c4518e6a49d14464d2"
+    },
+    {
+      "stable_lexeme_key": "histoire|NOM",
+      "runtime_lexeme_id": 6173,
+      "parent_input_hash": "fa0b768de1f8e8853202a5dd80da7ac9cb7943afa3ec3d2211994d393fcd7d9d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "histoire__nom__1",
+        "sense_id": "__ws_1_histoire__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "3f12ce69de4b9727805daa2c51297f22dd2894061128ea405a421080e8f68629"
+    },
+    {
+      "stable_lexeme_key": "coup|NOM",
+      "runtime_lexeme_id": 3239,
+      "parent_input_hash": "ef109cdbba959a8965592ab09a4510e5ec6428f5b763996362c88a609af61fe5",
+      "proposed_primary_learner_sense": {
+        "entry_id": "coup__nom__1",
+        "sense_id": "__ws_1_coup__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "6389e508e048d0ac77651065a86acb377d2db65ca6c4437da66b8e497c2c407d"
+    },
+    {
+      "stable_lexeme_key": "tête|NOM",
+      "runtime_lexeme_id": 13270,
+      "parent_input_hash": "1c5a3b72c68990ae0454038620f9b99dcb5f1d609ae4d368fc05431f9d6886d8",
+      "proposed_primary_learner_sense": {
+        "entry_id": "tête__nom__1",
+        "sense_id": "__ws_2_tête__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; marked_predecessor_requires_adjudication; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "915560651780c4db6c8ce11f4c36062265b3285b456dc4b398b705b48aea5947"
+    },
+    {
+      "stable_lexeme_key": "mère|NOM",
+      "runtime_lexeme_id": 8440,
+      "parent_input_hash": "a55107fb28743a016afb4fb5eb05b22d4dfe5afc0d7f4a5683340b53769b2d60",
+      "proposed_primary_learner_sense": {
+        "entry_id": "Mère__nom__1",
+        "sense_id": "__ws_1_Mère__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "34f6e088803cde74fdbd1d4f25aa483d62d638ff1050026b112e354b12eb9070"
+    },
+    {
+      "stable_lexeme_key": "lieu|NOM",
+      "runtime_lexeme_id": 7432,
+      "parent_input_hash": "ad8475fff12d01ceb1c96de619e3bbbfc01a560ef3594a56cdddc1d1bfb22cdc",
+      "proposed_primary_learner_sense": {
+        "entry_id": "lieu__nom__1",
+        "sense_id": "__ws_1_lieu__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "611fd2f06205a51e6d0e9c752d16e151c7eb81bc214ffe8e6830b0618bbbea6e"
+    },
+    {
+      "stable_lexeme_key": "idée|NOM",
+      "runtime_lexeme_id": 6377,
+      "parent_input_hash": "d2162fe98c9ee467bb49412c54e82e2471de9eb5e570e5079b7c08869e55c8b2",
+      "proposed_primary_learner_sense": {
+        "entry_id": "idée__nom__1",
+        "sense_id": "__ws_1_idée__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "d8940b261e769cca5758bb20ecb88cec559c2b25f1ac6ac3372166da71332913"
+    },
+    {
+      "stable_lexeme_key": "madame|NOM",
+      "runtime_lexeme_id": 7670,
+      "parent_input_hash": "e1deb9b91666d673f406e26147bddf0c1542ca939daa7274d62af1ff99a9335f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "madame__nom__1",
+        "sense_id": "__ws_1_madame__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "9319f61b853df1525b934ce8797999f4cdaa606abe43ec7dad15c4dde856211f"
+    },
+    {
+      "stable_lexeme_key": "eau|NOM",
+      "runtime_lexeme_id": 4485,
+      "parent_input_hash": "44c81411d6704c399257a05e4db21a5b6d0fa2dee1a5f0606a27c46561a92849",
+      "proposed_primary_learner_sense": {
+        "entry_id": "eau__nom__1",
+        "sense_id": "__ws_1_eau__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates",
+        "nondefault_language_variant_present",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "1a1d6a24b0b6a66070160e64fde963513c52d9282720b5be630f4904ed4c7fd6"
+    },
+    {
+      "stable_lexeme_key": "un|NOM",
+      "runtime_lexeme_id": 13284,
+      "parent_input_hash": "9b41a320b0ee5ee2d9df37b96228873a56e53ec2ca3fb8f63b01b9837004dbbd",
+      "proposed_primary_learner_sense": {
+        "entry_id": "un__nom__1",
+        "sense_id": "__ws_1_un__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "1abaaf78b6ab8b4e6b7ada451dd71e5f993d1594a1d858acb6bc21de8ea1dd06"
+    },
+    {
+      "stable_lexeme_key": "air|NOM",
+      "runtime_lexeme_id": 354,
+      "parent_input_hash": "4b6ad5c7bbf80371a592b05e3f74514a93f0269880551f92a584b322cfaeafc2",
+      "proposed_primary_learner_sense": {
+        "entry_id": "air__nom__1",
+        "sense_id": "__ws_1_air__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "aa21d1af58650778481e5b397a9ad032f423543bb046564c3c082c47821c0164"
+    },
+    {
+      "stable_lexeme_key": "voix|NOM",
+      "runtime_lexeme_id": 13651,
+      "parent_input_hash": "7ff0424896134c05eb42bd30d814b8082291e6a9509fffea6c89b8c9e430e069",
+      "proposed_primary_learner_sense": {
+        "entry_id": "voix__nom__1",
+        "sense_id": "__ws_1_voix__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "1475fe0006e71b9e9334bd25e514d31ead4abb7ed36cb9229fef928502a0621a"
+    },
+    {
+      "stable_lexeme_key": "mot|NOM",
+      "runtime_lexeme_id": 8315,
+      "parent_input_hash": "bdab9a08c0f62befa86bc61e0ff3ac1f9c6fce975b8a5491513ee072e49c408f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "MOT__nom__1",
+        "sense_id": "__ws_1_MOT__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "b221ffce1c80a4aeb8633acb043b3bd5651ee2a5b60ab66cdd21b7c3adfa7c13"
+    },
+    {
+      "stable_lexeme_key": "terre|NOM",
+      "runtime_lexeme_id": 12778,
+      "parent_input_hash": "7973b31e546aaa5891d7405bb4cc7f6e04bcd9750bd4f4ed310df194bef0d7a6",
+      "proposed_primary_learner_sense": {
+        "entry_id": "terre__nom__1",
+        "sense_id": "__ws_1_terre__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "23d8a2d54ce48ee5035e7ef42cf7a85684907f7328624e408d45adcc438dc2da"
+    },
+    {
+      "stable_lexeme_key": "argent|NOM",
+      "runtime_lexeme_id": 766,
+      "parent_input_hash": "11125c67855a98dacf456292a0e2a550724ca0d782a18652a74927ffc97c8f2f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "argent__nom__1",
+        "sense_id": "__ws_4_argent__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "late_source_sense_selection",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; late_source_sense_selection; many_senses; marked_predecessor_requires_adjudication; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "4828e85aee1ed587e0b9a017903d1c1660be98729b73fae6602d1bfc3c4d5da3"
+    },
+    {
+      "stable_lexeme_key": "fin|NOM",
+      "runtime_lexeme_id": 5262,
+      "parent_input_hash": "ce0fb3ad4f07ad646b2cd3c958cd785f74119907aaa17307b069b20a01f3b4cb",
+      "proposed_primary_learner_sense": {
+        "entry_id": "fin__nom__1",
+        "sense_id": "__ws_1_fin__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "50d68e2146acdb8e3892979824bf10b6d568f4cb5c3a65d22443cb45603c5997"
+    },
+    {
+      "stable_lexeme_key": "raison|NOM",
+      "runtime_lexeme_id": 10655,
+      "parent_input_hash": "0ba48a38f7db4325dadaaca43748e2b538deaec587db9b48e07a8b893e407a62",
+      "proposed_primary_learner_sense": {
+        "entry_id": "raison__nom__1",
+        "sense_id": "__ws_1_raison__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "ad0a6d849fc6cc9bea8a278548fd8713049671b9cc432ad92d89b27eef9daecb"
+    },
+    {
+      "stable_lexeme_key": "pièce|NOM",
+      "runtime_lexeme_id": 9641,
+      "parent_input_hash": "b22fd8544bab05715224be00f06e1e065d555a31a53c7c896d297a1f7a9e1118",
+      "proposed_primary_learner_sense": {
+        "entry_id": "pièce__nom__1",
+        "sense_id": "__ws_1_pièce__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "74b1374a80d8643a82101f8ad2d94281832e27e392c7563f8ffa14f5c9360ce6"
+    },
+    {
+      "stable_lexeme_key": "droit|NOM",
+      "runtime_lexeme_id": 3967,
+      "parent_input_hash": "05f01ffbc0a5a6353976ac79de86b90c2e5c50bd670b5f3effa131c6541cf688",
+      "proposed_primary_learner_sense": {
+        "entry_id": "droit__nom__1",
+        "sense_id": "__ws_1_droit__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "f905cb97984a00e2cd9e97e8c44aaa20b2ff0dab27a29a74531cbdf7cda1b5a3"
+    },
+    {
+      "stable_lexeme_key": "tour|NOM",
+      "runtime_lexeme_id": 12946,
+      "parent_input_hash": "086990ab10b7238eb77958f2eb5d382fe622560f89a082299482d4ecaf5a137a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "Tour__nom__1",
+        "sense_id": "__ws_1_Tour__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "d0b14d10ee5878a65b86c80bdef754dbde57cef74c9bae7079be0dc9844a5ca1"
+    },
+    {
+      "stable_lexeme_key": "étude|NOM",
+      "runtime_lexeme_id": 14184,
+      "parent_input_hash": "1bb2913f068477b89ba170a26f8c7bb22ec59a098d6be31750546cb4d9209405",
+      "proposed_primary_learner_sense": {
+        "entry_id": "étude__nom__1",
+        "sense_id": "__ws_1_étude__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "a014f1d60b5303a30115759ad0c50818c4c57444aa3279e4948c0a25c4414834"
+    },
+    {
+      "stable_lexeme_key": "jeu|NOM",
+      "runtime_lexeme_id": 7165,
+      "parent_input_hash": "d212b4f4399542c1f63c256e66a287d9c4f7e8e6a82d0f2cf55dafae49f96c34",
+      "proposed_primary_learner_sense": {
+        "entry_id": "jeu__nom__1",
+        "sense_id": "__ws_1_jeu__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "structural_mapping_only"
+      ],
+      "translation_tier": "low",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "source_reuse_candidate",
+      "content_route": "content_semantic_review",
+      "record_hash": "712d08fcf6f422e2875858f4d37733ba7b68c4c35ed5445ab4bf31cc6d78a723"
+    },
+    {
+      "stable_lexeme_key": "mort|NOM",
+      "runtime_lexeme_id": 8305,
+      "parent_input_hash": "e7a5f13474a9e5e5279b851c12a9441d25640abd02662907703bbb36f8bb6b91",
+      "proposed_primary_learner_sense": {
+        "entry_id": "mort__nom__1",
+        "sense_id": "__ws_1_mort__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "structural_mapping_only"
+      ],
+      "translation_tier": "low",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "source_reuse_candidate",
+      "content_route": "content_semantic_review",
+      "record_hash": "add2e93e35cb1591abde141ff90707388fea8d769e761080f26247137fdac55a"
+    },
+    {
+      "stable_lexeme_key": "pied|NOM",
+      "runtime_lexeme_id": 9579,
+      "parent_input_hash": "3cf031913768977852d7e9a9796a19d8f41a7d79f4a000bd73805af4849e28b6",
+      "proposed_primary_learner_sense": {
+        "entry_id": "pied__nom__1",
+        "sense_id": "__ws_2_pied__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; marked_predecessor_requires_adjudication; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "116c711aacd6a188d742989cf8e0af94218e998e07d55fae37d1e3d2f1d2202d"
+    },
+    {
+      "stable_lexeme_key": "euro|NOM",
+      "runtime_lexeme_id": 4879,
+      "parent_input_hash": "b8282abccd4027c40bdc2274be2f8f26faf0516a418cd27cb15c057552a5923b",
+      "proposed_primary_learner_sense": {
+        "entry_id": "Euro__nom__1",
+        "sense_id": "__ws_1_Euro__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "8e3857622f5c71fa8d2ed95c83917a059e6b02944b1e9ba03701b7d5d5ce1bd7"
+    },
+    {
+      "stable_lexeme_key": "livre|NOM",
+      "runtime_lexeme_id": 7488,
+      "parent_input_hash": "50fcf9cf3da5461bfbb839df724daad8ae2e5329834687fcd3cf63cf88c4851d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "livre__nom__1",
+        "sense_id": "__ws_1_livre__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "de68b4e2fc84fa1f030e65bb17b7253b310fdfa7f00d7fd6605d8fcc4e7013dc"
+    },
+    {
+      "stable_lexeme_key": "donner|VER",
+      "runtime_lexeme_id": 3902,
+      "parent_input_hash": "a981d03138fe7f68c46cda7ec808a7a4325839498f5ba6f4a46d2f9adec6bada",
+      "proposed_primary_learner_sense": {
+        "entry_id": "donner__verb__1",
+        "sense_id": "__ws_1_donner__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "4949524009f212a4d55d391a34c6d7c5f21bf8840631163a9ee2ce63760f99a3"
+    },
+    {
+      "stable_lexeme_key": "arriver|VER",
+      "runtime_lexeme_id": 802,
+      "parent_input_hash": "c1e32d74cf51ced816b0d9770ee54a40e19a315f587686b25224009a4d64c165",
+      "proposed_primary_learner_sense": {
+        "entry_id": "arriver__verb__1",
+        "sense_id": "__ws_1_arriver__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "5d691caaae3e72f715fa83aa091f615444c956f5222611dc0c5eb5f68a045153"
+    },
+    {
+      "stable_lexeme_key": "connaître|VER",
+      "runtime_lexeme_id": 2928,
+      "parent_input_hash": "4093c6b2ddbacaeecc80ee9a69fd328adbc925b621a5fb48008b63f6d4860bc1",
+      "proposed_primary_learner_sense": {
+        "entry_id": "connaître__verb__1",
+        "sense_id": "__ws_1_connaître__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "cc06a6cb370a2092e6a5f0618da0f6da269b835d0e4928face12656b66268a3e"
+    },
+    {
+      "stable_lexeme_key": "partir|VER",
+      "runtime_lexeme_id": 9287,
+      "parent_input_hash": "92eae2eb44ef9065020352e762dce182fdb38055dd96befc08f102df49462051",
+      "proposed_primary_learner_sense": {
+        "entry_id": "partir__verb__1",
+        "sense_id": "__ws_1_partir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "8631401d89994a4fc3885b2fda1424f117bf728c09958b53e792af00f208ccb3"
+    },
+    {
+      "stable_lexeme_key": "répondre|VER",
+      "runtime_lexeme_id": 11499,
+      "parent_input_hash": "ef08914f237ecc6713f3e874abfa9f7248778fb01994efdb4487526bab6e0fe9",
+      "proposed_primary_learner_sense": {
+        "entry_id": "répondre__verb__1",
+        "sense_id": "__ws_1_répondre__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "5b5756d681bd248099fc291a9ce6231ab94b6f4b203b0dd0508c9bbc2ded1214"
+    },
+    {
+      "stable_lexeme_key": "entendre|VER",
+      "runtime_lexeme_id": 4724,
+      "parent_input_hash": "3f527ebf85378bd09032b17b67ed84207d72acfde606d253ccabc94e7450b9b8",
+      "proposed_primary_learner_sense": {
+        "entry_id": "entendre__verb__1",
+        "sense_id": "__ws_1_entendre__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "63c6847ab7cd1f8dd2bcdbcc911cb9e523eb0ba0eeac81c743b5ff3b25879126"
+    },
+    {
+      "stable_lexeme_key": "appeler|VER",
+      "runtime_lexeme_id": 680,
+      "parent_input_hash": "80d4feaa68899489a57370f4aa3fc7c28596bba2271e93156416d6863a02db19",
+      "proposed_primary_learner_sense": {
+        "entry_id": "appeler__verb__1",
+        "sense_id": "__ws_1_appeler__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "7e35767990ff0550277afbfc9867c411dd18d41792726eaa7649689d58541e7c"
+    },
+    {
+      "stable_lexeme_key": "sortir|VER",
+      "runtime_lexeme_id": 12108,
+      "parent_input_hash": "3e1a2f27865419604988b6c1c43465980414f86ef93f76a1e94383ed62296769",
+      "proposed_primary_learner_sense": {
+        "entry_id": "sortir__verb__1",
+        "sense_id": "__ws_1_sortir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "structural_mapping_only"
+      ],
+      "translation_tier": "low",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "source_reuse_candidate",
+      "content_route": "content_semantic_review",
+      "record_hash": "4d28e5118b2f5c6a592c3192ee5359d6896caf6c511be30f22f9029e15bc03f6"
+    },
+    {
+      "stable_lexeme_key": "vivre|VER",
+      "runtime_lexeme_id": 13623,
+      "parent_input_hash": "54d6b9a2a2227ebc2ddc937170cd9b393a3a55aab2ca9534d0c7c9a46991f98a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "vivre__verb__1",
+        "sense_id": "__ws_1_vivre__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "5838b46fe0f85f40c46b5815afc9a555454a0f619d420e51b2de085ed0d75847"
+    },
+    {
+      "stable_lexeme_key": "travailler|VER",
+      "runtime_lexeme_id": 13068,
+      "parent_input_hash": "694a2383fa39bc099a5d8e1f7f1894fdc04f515794b23f697a6a214d2ed713ed",
+      "proposed_primary_learner_sense": {
+        "entry_id": "travailler__verb__1",
+        "sense_id": "__ws_1_travailler__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "73572e6e7332fd28790805f3f25417bad094b946c0c668e9e4e464beb28ba65a"
+    },
+    {
+      "stable_lexeme_key": "laisser|VER",
+      "runtime_lexeme_id": 7310,
+      "parent_input_hash": "cf53f69ee2a83615915427f9af12eecfa1833270b48c2d9c1a4ace46d63d6bf0",
+      "proposed_primary_learner_sense": {
+        "entry_id": "laisser__verb__1",
+        "sense_id": "__ws_1_laisser__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "996df77c63ced2e795fb28d24bed1a37b5b88abcb5b6f3fc59f1d77285c8578a"
+    },
+    {
+      "stable_lexeme_key": "entrer|VER",
+      "runtime_lexeme_id": 4762,
+      "parent_input_hash": "4bd3a713b7b023aa4dc0c0cf72e9e87e6fc53b62d25f4d68211b66e64ded4135",
+      "proposed_primary_learner_sense": {
+        "entry_id": "entrer__verb__1",
+        "sense_id": "__ws_1_entrer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "1a7327f9d5bb0a1727992c6017fdd22291025226cfa64be17cc074878aeaede8"
+    },
+    {
+      "stable_lexeme_key": "revenir|VER",
+      "runtime_lexeme_id": 11130,
+      "parent_input_hash": "37a1a9bce073742985e8bd905761d5442bb398ff60fbe461b6095eb1d6d5b43a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "revenir__verb__1",
+        "sense_id": "__ws_1_revenir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "0b6e8cdfbe6a54e3977a87ffbb905b63c729259adde7f4a519f0a088d21ad8cc"
+    },
+    {
+      "stable_lexeme_key": "écrire|VER",
+      "runtime_lexeme_id": 13871,
+      "parent_input_hash": "0c04e9d2af195967b600a2a722e2762cc50ce925acf2064f7e348a0705d3760c",
+      "proposed_primary_learner_sense": {
+        "entry_id": "écrire__verb__1",
+        "sense_id": "__ws_1_écrire__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "structural_mapping_only"
+      ],
+      "translation_tier": "low",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "source_reuse_candidate",
+      "content_route": "content_semantic_review",
+      "record_hash": "d3de7cae9ba2d02683d1d918cf5176d65138f355e329fc697a4441bd6c552150"
+    },
+    {
+      "stable_lexeme_key": "arrêter|VER",
+      "runtime_lexeme_id": 821,
+      "parent_input_hash": "654615cee9320b56017cf1ed4c57f8750ee8babc6bf827c5b8ac3e805c6ba177",
+      "proposed_primary_learner_sense": {
+        "entry_id": "arrêter__verb__1",
+        "sense_id": "__ws_1_arrêter__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "ab9fa2066da91ef3a17841c498b193e24a4837e722a630844205ed1982c36c91"
+    },
+    {
+      "stable_lexeme_key": "porter|VER",
+      "runtime_lexeme_id": 9882,
+      "parent_input_hash": "4f4b418b121f53e41e776a5b722aa8fd093d465570171ab1719eec266d15b0e1",
+      "proposed_primary_learner_sense": {
+        "entry_id": "porter__verb__1",
+        "sense_id": "__ws_1_porter__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "ea0ca746aa4fc7e72ee2938a4dc79a83f88673c165bc7bde68696da1dc67412d"
+    },
+    {
+      "stable_lexeme_key": "rendre|VER",
+      "runtime_lexeme_id": 10969,
+      "parent_input_hash": "5b2acb441604b337acff70312df0e098edabfd99ba503b938592ceab138a9c9d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "rendre__verb__1",
+        "sense_id": "__ws_1_rendre__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "d116adb12fdf01ec17ae79f266855b1a4e8bff72874189ec9f628b16fbf2b359"
+    },
+    {
+      "stable_lexeme_key": "suivre|VER",
+      "runtime_lexeme_id": 12407,
+      "parent_input_hash": "9acc94ad2856d8477375fd4c8698d0bdf479df4e86d52beafdd3117994363dbb",
+      "proposed_primary_learner_sense": {
+        "entry_id": "suivre__verb__1",
+        "sense_id": "__ws_1_suivre__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "a4ce11458da550667f18fa13035cf0161cc1e1d6957cfeaea5cf7e6c37c9e26e"
+    },
+    {
+      "stable_lexeme_key": "tenir|VER",
+      "runtime_lexeme_id": 12752,
+      "parent_input_hash": "93fdb5cdd6ead71f8b416d6639191a64c00c98c8759680bb6ce29c8d4890445e",
+      "proposed_primary_learner_sense": {
+        "entry_id": "tenir__verb__1",
+        "sense_id": "__ws_1_tenir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "f6b575a4559961482faaeb00b01984ebfcba1b46ba20664041ffafd2de18faf4"
+    },
+    {
+      "stable_lexeme_key": "jouer|VER",
+      "runtime_lexeme_id": 7193,
+      "parent_input_hash": "d20d0e7ef341d26aec79391f4507d3b4abf70c481806a3f8d7a62e0f5ab9d139",
+      "proposed_primary_learner_sense": {
+        "entry_id": "jouer__verb__1",
+        "sense_id": "__ws_1_jouer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "definition_abstract_or_opaque",
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "7839ce8eab582d083dcd613e946b68974b6fb90495cf742fe4f06706713d4c9d"
+    },
+    {
+      "stable_lexeme_key": "rentrer|VER",
+      "runtime_lexeme_id": 10995,
+      "parent_input_hash": "4d6640beb96d19c460ebc5b7c07ce0deeacc83870c9d7b1d91a9ddc063e87000",
+      "proposed_primary_learner_sense": {
+        "entry_id": "rentrer__verb__1",
+        "sense_id": "__ws_1_rentrer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "26ec6ed2a20fc5113c77d2b34436e3804dc47c8da7c940b977624e9f13e516b4"
+    },
+    {
+      "stable_lexeme_key": "ouvrir|VER",
+      "runtime_lexeme_id": 9074,
+      "parent_input_hash": "a8fd4b0dd30905de639ad9ba64ef724f1abc5e8cd61f80b30b1aeae1232fb5fe",
+      "proposed_primary_learner_sense": {
+        "entry_id": "ouvrir__verb__1",
+        "sense_id": "__ws_1_ouvrir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "d598730225d135018414d463a6559c964c1c2b22a4b4c6ef68e95eef65f69f3e"
+    },
+    {
+      "stable_lexeme_key": "perdre|VER",
+      "runtime_lexeme_id": 9426,
+      "parent_input_hash": "8271c084bdd3ed28cd1db23851b643b5beea3c28aefcd5e33d8955719a9da12f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "perdre__verb__1",
+        "sense_id": "__ws_1_perdre__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "471b7126b8ad932f25bfd7174c4424b802c4042fc1dc72273ee0904a26e1ac2a"
+    },
+    {
+      "stable_lexeme_key": "tomber|VER",
+      "runtime_lexeme_id": 12890,
+      "parent_input_hash": "549def0eb96bc63b4cefe79dee48245aa04d856c012d838b9463680b8b2c49f5",
+      "proposed_primary_learner_sense": {
+        "entry_id": "tomber__verb__1",
+        "sense_id": "__ws_1_tomber__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "a517b2c0781158971af18066a4eaf5e80ceef31f478184ed44ee9e69ea26663c"
+    },
+    {
+      "stable_lexeme_key": "sentir|VER",
+      "runtime_lexeme_id": 11870,
+      "parent_input_hash": "88c10645fd4399540b447505a78045761c3733b890c19fe0316cad044a14743f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "sentir__verb__1",
+        "sense_id": "__ws_1_sentir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "de0a7650137d0a7fa84752dbbd0edfe7e7decfd54f21cca6de1d0abc1857724a"
+    },
+    {
+      "stable_lexeme_key": "oublier|VER",
+      "runtime_lexeme_id": 9050,
+      "parent_input_hash": "8f852c842f30adf72860d9eff39878d66c9df5fdb63ce8e42ac4f3bcbd7b8b58",
+      "proposed_primary_learner_sense": {
+        "entry_id": "oublier__verb__1",
+        "sense_id": "__ws_1_oublier__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "3e08d2df5b12b91e5615fc8b1e612072fe06cbb9655818d6e2046483f71279a4"
+    },
+    {
+      "stable_lexeme_key": "finir|VER",
+      "runtime_lexeme_id": 5280,
+      "parent_input_hash": "01bb12fadb65fba61fff2a39f3622a077401f446a5212b67818182f9dd2b28b7",
+      "proposed_primary_learner_sense": {
+        "entry_id": "finir__verb__1",
+        "sense_id": "__ws_1_finir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "e39e2fcd1bd17db1cf51d734d504d8429a7935e76efd1971dd51fec87f6450be"
+    },
+    {
+      "stable_lexeme_key": "découvrir|VER",
+      "runtime_lexeme_id": 4121,
+      "parent_input_hash": "9d2ea2300bbdf96e0d5f217073e65f11fb0b58a89fffda80d9d00289603aa068",
+      "proposed_primary_learner_sense": {
+        "entry_id": "découvrir__verb__1",
+        "sense_id": "__ws_1_découvrir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "6ef5865e2c02009561221c9e65ce6805ee0d9c381e9ac09dd1afa257331dbf1c"
+    },
+    {
+      "stable_lexeme_key": "lever|VER",
+      "runtime_lexeme_id": 7401,
+      "parent_input_hash": "7c3922286475c4af3363b09c8a54852134c905784a540d14809a1d233cc0d848",
+      "proposed_primary_learner_sense": {
+        "entry_id": "lever__verb__1",
+        "sense_id": "__ws_1_lever__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "da59907b16acbfc5d2d5d50472e07f16ed4db3a1a05b93c522fd8cc5220cd42b"
+    },
+    {
+      "stable_lexeme_key": "monter|VER",
+      "runtime_lexeme_id": 8268,
+      "parent_input_hash": "a55303f848d0959ae79c59a30f99a359ec7b8e637bdfef333f9298557db926ce",
+      "proposed_primary_learner_sense": {
+        "entry_id": "monter__verb__1",
+        "sense_id": "__ws_1_monter__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "8eaa1bb2063ddc6d854f152678669730f65225c3aa9020d404671205090983d8"
+    },
+    {
+      "stable_lexeme_key": "reconnaître|VER",
+      "runtime_lexeme_id": 10802,
+      "parent_input_hash": "ce6dbebfa010ce9a44dda65c06ec9472fcbe9f3e55714b42b5919f73d1de07fb",
+      "proposed_primary_learner_sense": {
+        "entry_id": "reconnaître__verb__1",
+        "sense_id": "__ws_1_reconnaître__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "d680e93e1bda5dd79d076d28b180cd32e28ee9f7252b6d14f006c4f94d18a95e"
+    },
+    {
+      "stable_lexeme_key": "recevoir|VER",
+      "runtime_lexeme_id": 10781,
+      "parent_input_hash": "8df0c66759ce41dc05171ced26cfe05ef9b76a8767b1af9ffa06aa31a9944b4e",
+      "proposed_primary_learner_sense": {
+        "entry_id": "recevoir__verb__1",
+        "sense_id": "__ws_1_recevoir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "28ce2ccc8b79fd61b70e5049aea4e14d0f785b0350a6abb17ae9e86557d5b353"
+    },
+    {
+      "stable_lexeme_key": "présenter|VER",
+      "runtime_lexeme_id": 10334,
+      "parent_input_hash": "766a035971c3423ebbc44692da452575e666b5ee760564334e6d85f1c0c92efa",
+      "proposed_primary_learner_sense": {
+        "entry_id": "présenter__verb__1",
+        "sense_id": "__ws_1_présenter__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "36c07c208667ff7de8ed0ded15b42440c28ad1500947bcea067357cf13ab75d5"
+    },
+    {
+      "stable_lexeme_key": "tourner|VER",
+      "runtime_lexeme_id": 12955,
+      "parent_input_hash": "ee4a33252e6ab14eab5357c2fc829d8b01832c828cdea7fe980a50e87347772f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "tourner__verb__1",
+        "sense_id": "__ws_1_tourner__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "a484bee23532e1821f49039e8ec3e7fe26872bb86f0e282171afa497f827dea9"
+    },
+    {
+      "stable_lexeme_key": "asseoir|VER",
+      "runtime_lexeme_id": 877,
+      "parent_input_hash": "a6b21e9144f715be951b8e2af7c8d7e2b808da6d15668f2cb3b83ae3051aedd9",
+      "proposed_primary_learner_sense": {
+        "entry_id": "asseoir__verb__1",
+        "sense_id": "__ws_1_asseoir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "393b77902f9762faefecf774f429b92951934004add5f1010b890993579a9257"
+    },
+    {
+      "stable_lexeme_key": "marcher|VER",
+      "runtime_lexeme_id": 7849,
+      "parent_input_hash": "cb2cf47bf2b12bf6a1ae2cce9682b5d493c47e21b56141315b9a87418e342bf1",
+      "proposed_primary_learner_sense": {
+        "entry_id": "marcher__verb__1",
+        "sense_id": "__ws_1_marcher__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "26b4fc9f81d94b172b36a5687aa38c988c55e3eb6ccc0af1146ec5fd2ac9e0ff"
+    },
+    {
+      "stable_lexeme_key": "vif|ADJ",
+      "runtime_lexeme_id": 13542,
+      "parent_input_hash": "aa0420744db8c1be31ee5eac012dc6e6928c4d116fcbbda08606bec2b6deee1d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "vif__adj__1",
+        "sense_id": "__ws_1_vif__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "ee1f5431c75a3469d6d983098fd29c4842bdc7d7f5d7151ff0cc0c10bc3cc828"
+    },
+    {
+      "stable_lexeme_key": "sauvage|ADJ",
+      "runtime_lexeme_id": 11742,
+      "parent_input_hash": "bfa95117c0571ce414c807e54ac4446829a93afcce76e4f4429e18cbfb7c62ee",
+      "proposed_primary_learner_sense": {
+        "entry_id": "sauvage__adj__1",
+        "sense_id": "__ws_1_sauvage__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "08d09be9380676a6942e1a73d40ad20dbdd9542b7a68c2e77d73b16a9d506065"
+    },
+    {
+      "stable_lexeme_key": "léger|ADJ",
+      "runtime_lexeme_id": 7632,
+      "parent_input_hash": "7a5adc38f53de19beaa31522088226a22480771c96e89f59cd5a24af49a1a3fc",
+      "proposed_primary_learner_sense": {
+        "entry_id": "léger__adj__1",
+        "sense_id": "__ws_1_léger__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "4f947c73d203b871b29626faf2df677d9d45743941b85f5d43d43292251b4803"
+    },
+    {
+      "stable_lexeme_key": "linguistique|ADJ",
+      "runtime_lexeme_id": 7452,
+      "parent_input_hash": "7e01b74a4db538f5e2ea30cd52755c00a22b02d71d7f27c4ae4931625240909a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "linguistique__adj__1",
+        "sense_id": "__ws_1_linguistique__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "proposed_specialized_domain"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "proposed_specialized_domain",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_single_candidate_only"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "specialized_usage"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "4eab80e42f207bf386659e4f1e13c4250688db1aee64f57d67a4d8f9f9e70130"
+    },
+    {
+      "stable_lexeme_key": "pis|ADV",
+      "runtime_lexeme_id": 9624,
+      "parent_input_hash": "3f1e0ef8db5a4dc5f2b48dc5ebc5cdfb63631f84c19d0eb5404209c24ac1f38d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "pis__adv__2",
+        "sense_id": "__ws_1_pis__adv__2"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "marked_predecessor_requires_adjudication",
+        "multiple_lexical_entries"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "marked_predecessor_requires_adjudication; multiple_lexical_entries",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "function_or_discourse_sense_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "549b3ea2b73dd8924369c4007c9fe6265edd26928e1b1a5f396ce9550223d685"
+    },
+    {
+      "stable_lexeme_key": "or|NOM",
+      "runtime_lexeme_id": 8965,
+      "parent_input_hash": "5d8e99e1599ba5f48cba918b91b401fdaee709db864ad1af101b9b9d6e2fc0d0",
+      "proposed_primary_learner_sense": {
+        "entry_id": "OR__nom__1",
+        "sense_id": "__ws_1_OR__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "34aea414390eb592f4dcbc6d1ae95364ffe33d286ffe5636a831e7fa091197c1"
+    },
+    {
+      "stable_lexeme_key": "valeur|NOM",
+      "runtime_lexeme_id": 13376,
+      "parent_input_hash": "d30a89a052ad4d367ff129810de76bdf784fabdbb790666b1f1a2e1d1cca9ea7",
+      "proposed_primary_learner_sense": {
+        "entry_id": "valeur__nom__1",
+        "sense_id": "__ws_1_valeur__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "ce64f59dea23ac8d29d136d6bfc956f5b66256941509b10be388aba615ec0515"
+    },
+    {
+      "stable_lexeme_key": "sujet|NOM",
+      "runtime_lexeme_id": 12408,
+      "parent_input_hash": "44b738b37b308608cd242210a9b797b88fc6258b6d8b4c412eeda83bd2a6f127",
+      "proposed_primary_learner_sense": {
+        "entry_id": "sujet__nom__1",
+        "sense_id": "__ws_1_sujet__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "d956a3e9c50974c1669cc2e6675121ac04ed48e4c9731383ed0eca8c004938b0"
+    },
+    {
+      "stable_lexeme_key": "président|NOM",
+      "runtime_lexeme_id": 10340,
+      "parent_input_hash": "e56afda13c51526ac527a234af83b52f0d3acf035761f65a183b8ac50350af07",
+      "proposed_primary_learner_sense": {
+        "entry_id": "Président__nom__1",
+        "sense_id": "__ws_1_Président__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "3df4ca28fef9133a95200382fe39b583923e29f695244883bb0287f3845b80f2"
+    },
+    {
+      "stable_lexeme_key": "garde|NOM",
+      "runtime_lexeme_id": 5699,
+      "parent_input_hash": "c83a486cf12212f1c78f141b78deb266be7067b94305a36098f8862ce6a370bb",
+      "proposed_primary_learner_sense": {
+        "entry_id": "garde__nom__1",
+        "sense_id": "__ws_1_garde__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "ebc376eea9f0f256b106f055c4cb1164caa5c34f27a67cb67c12f85cb3aa3b94"
+    },
+    {
+      "stable_lexeme_key": "force|NOM",
+      "runtime_lexeme_id": 5394,
+      "parent_input_hash": "7020dc70a3e63907a858312c26425f5eb1169c9a3f053cbb153d1bd7d8363a7a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "force__nom__1",
+        "sense_id": "__ws_1_force__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "5d6f2c67bc02791310e61dc4a83800f1748b1b6d7a2be1019bc46cf1969eb7ce"
+    },
+    {
+      "stable_lexeme_key": "condition|NOM",
+      "runtime_lexeme_id": 2851,
+      "parent_input_hash": "533d1f3d40ea3d1ffbbbeb0b1d9a5ee20f7f366bd727431cb143e7ee8580d186",
+      "proposed_primary_learner_sense": {
+        "entry_id": "condition__nom__1",
+        "sense_id": "__ws_1_condition__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "dc750d93ed2701c0f845c1593d47982f0b6c207262ef9d81f0aa7ba2ed57963a"
+    },
+    {
+      "stable_lexeme_key": "parole|NOM",
+      "runtime_lexeme_id": 9258,
+      "parent_input_hash": "1cf74a198dece6643d908d33444a6481563f7e9c3d6f74ee6a070e657a0fe8b7",
+      "proposed_primary_learner_sense": {
+        "entry_id": "parole__nom__1",
+        "sense_id": "__ws_1_parole__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "d13d166cf5d64f7b3bc6c8e467509a5fd449142c9fe2b8dc1a761c9b41b16430"
+    },
+    {
+      "stable_lexeme_key": "patron|NOM",
+      "runtime_lexeme_id": 9353,
+      "parent_input_hash": "372266671dfd527847240240c04859f338493003d06753f593b94e99c55196ec",
+      "proposed_primary_learner_sense": {
+        "entry_id": "patron__nom__1",
+        "sense_id": "__ws_1_patron__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "ddd4ef821f110f2cb9ef8ec16bb6e14c1f7dba49521e585780fd2555601d732b"
+    },
+    {
+      "stable_lexeme_key": "pratique|NOM",
+      "runtime_lexeme_id": 9991,
+      "parent_input_hash": "59bcfe68064dc0980256d73c6a09299df48b419316156bc4549c25787abeb2ae",
+      "proposed_primary_learner_sense": {
+        "entry_id": "pratique__nom__1",
+        "sense_id": "__ws_1_pratique__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "9addd72ec634ec8f396313436aafa4b14490f048e72d69559b31c338ea158c4d"
+    },
+    {
+      "stable_lexeme_key": "genre|NOM",
+      "runtime_lexeme_id": 5754,
+      "parent_input_hash": "ed0fc6818c59f002eaa5f5941af7e1c2b7b3457a5e6ff2cdee44b73b055a2241",
+      "proposed_primary_learner_sense": {
+        "entry_id": "genre__nom__1",
+        "sense_id": "__ws_1_genre__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "e0b6e99f693ed8b9db29707b53e40e542480dbb639b3e58cc751c6e5bd25b30e"
+    },
+    {
+      "stable_lexeme_key": "marque|NOM",
+      "runtime_lexeme_id": 7886,
+      "parent_input_hash": "d6044aa2baca2b1d121e78028959da0cdbf142af31d6f81b4fe45ac94dd2a054",
+      "proposed_primary_learner_sense": {
+        "entry_id": "marque__nom__1",
+        "sense_id": "__ws_1_marque__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "4cbcd0fa20d7650a78ed4984b664ca92910ac0702ba9a0d82320a2fcf82bd413"
+    },
+    {
+      "stable_lexeme_key": "chaîne|NOM",
+      "runtime_lexeme_id": 2268,
+      "parent_input_hash": "f3bc19d018686ba755a698ef65f06ed102dccf578adce8e0b713f2519f166665",
+      "proposed_primary_learner_sense": {
+        "entry_id": "chaîne__nom__1",
+        "sense_id": "__ws_1_chaîne__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates",
+        "nondefault_language_variant_present"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "93e75f0e59cdf1d6d6b6a6e14e0055d35b827fbb6db4db39529edddf82267152"
+    },
+    {
+      "stable_lexeme_key": "période|NOM",
+      "runtime_lexeme_id": 10496,
+      "parent_input_hash": "6f065da09478cab5e93f88a2430fa241b97b35a7b2226ad8f0a712634f459651",
+      "proposed_primary_learner_sense": {
+        "entry_id": "période__nom__1",
+        "sense_id": "__ws_1_période__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "da4e5d1d0d870530083d9d7662f16f7b2d7dcac3e8f3792f27efb5839ae63290"
+    },
+    {
+      "stable_lexeme_key": "élément|NOM",
+      "runtime_lexeme_id": 13974,
+      "parent_input_hash": "4e4998beed325f123f0266d12e988bb423f94703cb2e127403d698c766e37b01",
+      "proposed_primary_learner_sense": {
+        "entry_id": "élément__nom__1",
+        "sense_id": "__ws_1_élément__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "d5fd0a1c80fb49de0412060e38275adcdbcd81b6bef6774a4e3f09dba91f0124"
+    },
+    {
+      "stable_lexeme_key": "bouche|NOM",
+      "runtime_lexeme_id": 1558,
+      "parent_input_hash": "76d985d40b92a83d7289c7477c090c0766cb7b978853e7eaa902aa93dcd64248",
+      "proposed_primary_learner_sense": {
+        "entry_id": "bouche__nom__1",
+        "sense_id": "__ws_2_bouche__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; marked_predecessor_requires_adjudication; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "9ad8b679609475f0f6b111e3d7c73b75865f7e03d528d31b45b691f5b0887333"
+    },
+    {
+      "stable_lexeme_key": "retraite|NOM",
+      "runtime_lexeme_id": 11113,
+      "parent_input_hash": "38e53a0f047e5c7fffeb618d5f4e49ba7eacea4d510b554a0a70c55ba1277a25",
+      "proposed_primary_learner_sense": {
+        "entry_id": "retraite__nom__1",
+        "sense_id": "__ws_1_retraite__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "ed507ae62fbb96974d850e22a2335a8f730d4b1b938103ffb85e2d11f5f4f6ab"
+    },
+    {
+      "stable_lexeme_key": "fer|NOM",
+      "runtime_lexeme_id": 5177,
+      "parent_input_hash": "34cf68055a37316266d08fef6e2fe05daf6bb71bffa4806ed8342b42fbd0ee90",
+      "proposed_primary_learner_sense": {
+        "entry_id": "fer__nom__1",
+        "sense_id": "__ws_2_fer__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; marked_predecessor_requires_adjudication; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "7420954efcf97642e2244eb33e9ad764287402a69fe0705f59a0ed8adb64eba2"
+    },
+    {
+      "stable_lexeme_key": "article|NOM",
+      "runtime_lexeme_id": 828,
+      "parent_input_hash": "98e5e983d7628d7c0d300ea055f0d9103388c1466bfceb142e45576b71f1368c",
+      "proposed_primary_learner_sense": {
+        "entry_id": "article__nom__1",
+        "sense_id": "__ws_7_article__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "late_source_sense_selection",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; late_source_sense_selection; many_senses; marked_predecessor_requires_adjudication; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "0b269ef6cf3eedca6335ed0168692493570d1daef0f41e711408b765be484393"
+    },
+    {
+      "stable_lexeme_key": "titre|NOM",
+      "runtime_lexeme_id": 12864,
+      "parent_input_hash": "be778db3772030219ea72339475bd02ffd5ddfe88789b3a2db2244003358bf8a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "titre__nom__1",
+        "sense_id": "__ws_1_titre__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "1027c0a1ece613330bde5fa01d0c5343512621250e0f1c09af6fe94ed3e89b45"
+    },
+    {
+      "stable_lexeme_key": "style|NOM",
+      "runtime_lexeme_id": 12326,
+      "parent_input_hash": "24f3992d615f5719a156852051084e9d1ca16f9c4e5b211779aa1a2dc0a3b039",
+      "proposed_primary_learner_sense": {
+        "entry_id": "style__nom__1",
+        "sense_id": "__ws_3_style__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; marked_predecessor_requires_adjudication; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "17734a1bcec08d625d49688a4591aefcaff46ed551049949c7f5dfc63edb26ef"
+    },
+    {
+      "stable_lexeme_key": "chapeau|NOM",
+      "runtime_lexeme_id": 2209,
+      "parent_input_hash": "237fb5e9dcb619571d022ff08a6eee6a333d53676cce42815bad7f4c3a471421",
+      "proposed_primary_learner_sense": {
+        "entry_id": "chapeau__nom__1",
+        "sense_id": "__ws_1_chapeau__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "structural_mapping_only"
+      ],
+      "translation_tier": "low",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "source_reuse_candidate",
+      "content_route": "content_semantic_review",
+      "record_hash": "bc6d7150939c5522ef9d05c015c59a0e9afca945d19e100beeed51be7eaa00bf"
+    },
+    {
+      "stable_lexeme_key": "placer|VER",
+      "runtime_lexeme_id": 9652,
+      "parent_input_hash": "89162e072d04cb41cf9d78404c91ccade5d7f41fc80e44afc87ff56bb007984c",
+      "proposed_primary_learner_sense": {
+        "entry_id": "placer__verb__1",
+        "sense_id": "__ws_1_placer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "92786a8b2e5e0e27fe9cedcda71d820eb07414db9a94a67454988bdbdc3ff260"
+    },
+    {
+      "stable_lexeme_key": "remplir|VER",
+      "runtime_lexeme_id": 10949,
+      "parent_input_hash": "4665aba0e51e6e4635cab1a7667670692b6cc50f65f52a45a534709c9aca0674",
+      "proposed_primary_learner_sense": {
+        "entry_id": "remplir__verb__1",
+        "sense_id": "__ws_1_remplir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "82f0bdd2a6ebe3dde3f1becf9e0f4db85dc71eacc0840f04f2fdd170849ce785"
+    },
+    {
+      "stable_lexeme_key": "abandonner|VER",
+      "runtime_lexeme_id": 4,
+      "parent_input_hash": "bdb153f5c0c7270e195d55d6d364c681fb3d1f163cc7392e84de8e0422b35f32",
+      "proposed_primary_learner_sense": {
+        "entry_id": "abandonner__verb__1",
+        "sense_id": "__ws_1_abandonner__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "24b5408359dff9b634ef098457002ed37746739c59b0d80054c7d879e33c38f7"
+    },
+    {
+      "stable_lexeme_key": "enlever|VER",
+      "runtime_lexeme_id": 4683,
+      "parent_input_hash": "9c323b36f256cc513d4e751467b3d0d1f63967f40c9aa01399cf89e8357348c2",
+      "proposed_primary_learner_sense": {
+        "entry_id": "enlever__verb__1",
+        "sense_id": "__ws_1_enlever__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "3a1201c4748adc2913237378a447432b6f0e800e518b938cbb3404a941952e47"
+    },
+    {
+      "stable_lexeme_key": "sauter|VER",
+      "runtime_lexeme_id": 11739,
+      "parent_input_hash": "751e3ba3240114f83f8b26c29889cfbf1f74d987ff6a274cf60a7f36f9121de6",
+      "proposed_primary_learner_sense": {
+        "entry_id": "sauter__verb__1",
+        "sense_id": "__ws_1_sauter__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "8d3b264e4ff26e4b0c58d14503b1e12cd9a00409b97b02410a88a1d5e7823a5f"
+    },
+    {
+      "stable_lexeme_key": "séparer|VER",
+      "runtime_lexeme_id": 12604,
+      "parent_input_hash": "13f32ebd03ea97b3c3eb3fa500fdc79b9180618082b29e23f042f78a6617ca8a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "séparer__verb__1",
+        "sense_id": "__ws_1_séparer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "92e5d47498d60f8c3d1ad94a224a468e009ce9ee265237c7ece39b9b2ab1be41"
+    },
+    {
+      "stable_lexeme_key": "brûler|VER",
+      "runtime_lexeme_id": 1748,
+      "parent_input_hash": "65b31bfe88339c8edf2c62c75632befee93c8ef6d6bd9deff6b75bdd2229d56d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "brûler__verb__1",
+        "sense_id": "__ws_1_brûler__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "f8f217009e1e9548df1a0c65022b0b250d375d7caaf16072dda07eeea829d158"
+    },
+    {
+      "stable_lexeme_key": "fixer|VER",
+      "runtime_lexeme_id": 5293,
+      "parent_input_hash": "c9c107844b7a0588aa5377b50ca5d4049f1d14f79ab7554b63c6b548358551c8",
+      "proposed_primary_learner_sense": {
+        "entry_id": "fixer__verb__1",
+        "sense_id": "__ws_1_fixer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "cceb4c0edc82016f37c2be04de9823fea998618de243e7161cca4668d9737f9e"
+    },
+    {
+      "stable_lexeme_key": "casser|VER",
+      "runtime_lexeme_id": 2055,
+      "parent_input_hash": "2598ebea532b400c5f52ec302b5e12de9b4ebb5bdbfdbf1880d171022d5cff16",
+      "proposed_primary_learner_sense": {
+        "entry_id": "casser__verb__1",
+        "sense_id": "__ws_1_casser__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "0eedd832c8306781a819d1ae6e71e4f384cf0c92d53a5a10177e0bed3527c1bb"
+    },
+    {
+      "stable_lexeme_key": "retenir|VER",
+      "runtime_lexeme_id": 11097,
+      "parent_input_hash": "c9497f57e1627fa7c0224a0c23dc11effeb24333886f3bb02ced8f17b93ef703",
+      "proposed_primary_learner_sense": {
+        "entry_id": "retenir__verb__1",
+        "sense_id": "__ws_1_retenir__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "b0e061b73dd351ce9d2dc6d07206a5f541da8d4b575036c005b3348548ffaeee"
+    },
+    {
+      "stable_lexeme_key": "louer|VER",
+      "runtime_lexeme_id": 7557,
+      "parent_input_hash": "56e24d25ac3ffd3dbf23211b994b0f820c12c2442c0d246697fdcb0ebf9ad32f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "louer__verb__1",
+        "sense_id": "__ws_1_louer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "120472ef527cbb76c95c98c43109074354e45a74aa73a310e9ab674c4b46581f"
+    },
+    {
+      "stable_lexeme_key": "planter|VER",
+      "runtime_lexeme_id": 9683,
+      "parent_input_hash": "d04d9bf0ba8f092ea6a89fde40dc6806a805229aed50360d0acf7b668c8d777c",
+      "proposed_primary_learner_sense": {
+        "entry_id": "planter__verb__1",
+        "sense_id": "__ws_1_planter__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "3bd9f1f84ef06e321eccfab0f32396bcd98b59121d60064f15a4b6c551e85b9b"
+    },
+    {
+      "stable_lexeme_key": "dépendre|VER",
+      "runtime_lexeme_id": 4305,
+      "parent_input_hash": "8b9ec4c5cc99f7c217a26bb237e63bae43d630915c8d34cf3fb4157e2a328179",
+      "proposed_primary_learner_sense": {
+        "entry_id": "dépendre__verb__1",
+        "sense_id": "__ws_1_dépendre__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "b7ef26bfafcb0b529fb1d078c69ad92aef3f6c0f9b87c6be6ef1189ad086b7b1"
+    },
+    {
+      "stable_lexeme_key": "déposer|VER",
+      "runtime_lexeme_id": 4330,
+      "parent_input_hash": "c4771c04259471ff25c53387fa57c38a9bfc48b377963943f43ab3a6d8e475ea",
+      "proposed_primary_learner_sense": {
+        "entry_id": "déposer__verb__1",
+        "sense_id": "__ws_1_déposer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "de908f796a198f1f799c438ceab178de1073154652ead94cc31aa88ca6032ed6"
+    },
+    {
+      "stable_lexeme_key": "coller|VER",
+      "runtime_lexeme_id": 2608,
+      "parent_input_hash": "79b6ce03f51545780268abb83bc67a6445a49c5d6a830c726f65181ab688febd",
+      "proposed_primary_learner_sense": {
+        "entry_id": "coller__verb__1",
+        "sense_id": "__ws_1_coller__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "42cb049ed24e07c1efe742c26a791ffad052a736339254c0a477b71afc1bc884"
+    },
+    {
+      "stable_lexeme_key": "appuyer|VER",
+      "runtime_lexeme_id": 716,
+      "parent_input_hash": "7e6c362fae71d2ae89c41c63b47a03639d4254eea87791a4dda9683a28512d03",
+      "proposed_primary_learner_sense": {
+        "entry_id": "appuyer__verb__1",
+        "sense_id": "__ws_1_appuyer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "84c8fd8235773669124a64e273e5bf71c9e76a0a8b3f6e1cc77f1ac52c39a778"
+    },
+    {
+      "stable_lexeme_key": "exposer|VER",
+      "runtime_lexeme_id": 4987,
+      "parent_input_hash": "b3979d8b422816f832d4193f3255241d826f447034e0de01c5d841d307348d6d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "exposer__verb__1",
+        "sense_id": "__ws_1_exposer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "9137bf91155d54ddbe25fabcb4f25fcf93ef2d2e9bcf60556c69af1156bb397f"
+    },
+    {
+      "stable_lexeme_key": "ramasser|VER",
+      "runtime_lexeme_id": 10670,
+      "parent_input_hash": "0cf2834f8f1c622fec22a27f65ea61aeb627e5fc0568f2a0c0c00949e012884f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "ramasser__verb__1",
+        "sense_id": "__ws_1_ramasser__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "9811212af1ea8a50809b4186a146a78b3cda70d9802f42ec84a33400a5133b5b"
+    },
+    {
+      "stable_lexeme_key": "libérer|VER",
+      "runtime_lexeme_id": 7421,
+      "parent_input_hash": "0fa69b1c028fb9a051a50b25fc389e0d037e154d905f3fe3b73c0882712d1bd0",
+      "proposed_primary_learner_sense": {
+        "entry_id": "libérer__verb__1",
+        "sense_id": "__ws_1_libérer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "44a7ac8547e762d298907651b687ee7f46a089590eae789bcf2be9de202db4f5"
+    },
+    {
+      "stable_lexeme_key": "attraper|VER",
+      "runtime_lexeme_id": 993,
+      "parent_input_hash": "f57bfcc9da2d2abffa137f045b71c0dee22b9d4e76565e20f31a6d2d40d2d56e",
+      "proposed_primary_learner_sense": {
+        "entry_id": "attraper__verb__1",
+        "sense_id": "__ws_1_attraper__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "7ca5c71bf3e7c4c8b367716edcc78f3b55ed3b9704935cb6d704f23cbe3bc19a"
+    },
+    {
+      "stable_lexeme_key": "dater|VER",
+      "runtime_lexeme_id": 3568,
+      "parent_input_hash": "0a779603b6f786c5d68ccfd1b8bf09261d79d0b852c2a4dfd2b89c5733d40de7",
+      "proposed_primary_learner_sense": {
+        "entry_id": "dater__verb__1",
+        "sense_id": "__ws_1_dater__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "b96b8edb5c12862b5c39bb506ab0e2d6c73d1bc49cf0916616c536692ef8c79a"
+    },
+    {
+      "stable_lexeme_key": "privé|ADJ",
+      "runtime_lexeme_id": 10056,
+      "parent_input_hash": "9942cfac3f62acdd050cc8b40ae54750c9af47b359d2ac9e396a757cf457c27d",
+      "proposed_primary_learner_sense": {
+        "entry_id": "privé__adj__1",
+        "sense_id": "__ws_1_privé__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "nondefault_language_variant_present"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "637210552fb158c4731a373e02f70bf1eaf87fe2c7086f8ca427791ad8a75046"
+    },
+    {
+      "stable_lexeme_key": "ouvert|ADJ",
+      "runtime_lexeme_id": 9067,
+      "parent_input_hash": "e6f0c1177ded164110abb6474d9090a3d8934e94d6fb0d25d16b59db8a8575c6",
+      "proposed_primary_learner_sense": {
+        "entry_id": "ouvert__adj__1",
+        "sense_id": "__ws_1_ouvert__adj__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "79dea86fb27c4bff7d350bdff4f352d624a751a96ab9426c9741e385ca4685a7"
+    },
+    {
+      "stable_lexeme_key": "état|NOM",
+      "runtime_lexeme_id": 14136,
+      "parent_input_hash": "5bef3ddbd573451bf45a44f5b7030f74172116835b15eeb750f688d05f1bf222",
+      "proposed_primary_learner_sense": {
+        "entry_id": "État__nom__1",
+        "sense_id": "__ws_1_État__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "capitalization_variant",
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "capitalization_variant; competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "580e5bce586fa1a027716730f2a8da07db46f8eb73db4d02360f9b62d0a02417"
+    },
+    {
+      "stable_lexeme_key": "esprit|NOM",
+      "runtime_lexeme_id": 4829,
+      "parent_input_hash": "12095c2d247007c31b446917cc23e0207afc5ccf0283af65e07e5b2620fbd22e",
+      "proposed_primary_learner_sense": {
+        "entry_id": "esprit__nom__1",
+        "sense_id": "__ws_1_esprit__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "structural_mapping_only"
+      ],
+      "translation_tier": "low",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "source_reuse_candidate",
+      "content_route": "content_semantic_review",
+      "record_hash": "d4fbb36cb7303fe22e9e71ef7f8213f2cc463750b2e9347141e0342eeb619d71"
+    },
+    {
+      "stable_lexeme_key": "système|NOM",
+      "runtime_lexeme_id": 12562,
+      "parent_input_hash": "ff68327582f043e0b8fef6ce63521494fee7634f33a4c23d619513ebafb6dc8e",
+      "proposed_primary_learner_sense": {
+        "entry_id": "système__nom__1",
+        "sense_id": "__ws_1_système__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "94cb7d3b3aa5b45f2a4f8385453cef63c44b53093ddcc1158d5d99be08cbe2fe"
+    },
+    {
+      "stable_lexeme_key": "ligne|NOM",
+      "runtime_lexeme_id": 7436,
+      "parent_input_hash": "63f11f41689a27b1a002aa1732911584695f811457f3de5d439df31585ec091c",
+      "proposed_primary_learner_sense": {
+        "entry_id": "ligne__nom__1",
+        "sense_id": "__ws_1_ligne__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "e55d5a5dbbfef1bb14318e89f6ab40b154462a1843a46b635c45194d6189b5ea"
+    },
+    {
+      "stable_lexeme_key": "action|NOM",
+      "runtime_lexeme_id": 152,
+      "parent_input_hash": "60f73e9373efe03882bf6c8b4a0cd978328511193f346886a443d862eaaaca4f",
+      "proposed_primary_learner_sense": {
+        "entry_id": "action__nom__1",
+        "sense_id": "__ws_1_action__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "a67d29c037ed24e2161eebbde477d79a8630745c9d2240b3694d0dc24ba67bc3"
+    },
+    {
+      "stable_lexeme_key": "cadre|NOM",
+      "runtime_lexeme_id": 1843,
+      "parent_input_hash": "4f146d113df60cc990d95fbf800b67ec5d4d6c692f36badf07de5ed8a9191f1c",
+      "proposed_primary_learner_sense": {
+        "entry_id": "cadre__nom__1",
+        "sense_id": "__ws_1_cadre__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "272343566cc1b59bb42c0fe9f43e75897994f7f77350bfcba694653fb28679d6"
+    },
+    {
+      "stable_lexeme_key": "politique|NOM",
+      "runtime_lexeme_id": 9806,
+      "parent_input_hash": "7dcf003c5202df308d4e2fbb1e576af75d13ed6bb967b48f08c4694b7aadb1fc",
+      "proposed_primary_learner_sense": {
+        "entry_id": "politique__nom__1",
+        "sense_id": "__ws_1_politique__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "2fe781fff5207c8c59e4ee173892974d3de1ec998d74a92a00067c2a5282a8de"
+    },
+    {
+      "stable_lexeme_key": "mouvement|NOM",
+      "runtime_lexeme_id": 8354,
+      "parent_input_hash": "7d60e329e41925ff497fe7f79d266ab71ae2a41c9f9b76d779936491e033fdf7",
+      "proposed_primary_learner_sense": {
+        "entry_id": "mouvement__nom__1",
+        "sense_id": "__ws_1_mouvement__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "132737256e2160079658dfe6dee38452cbf75675efb8994ef3984d32129a1733"
+    },
+    {
+      "stable_lexeme_key": "lier|VER",
+      "runtime_lexeme_id": 7430,
+      "parent_input_hash": "376273c4ea39cfa53ee5fa90284bbae170d9f292b8e0a07920cd8bf3a62301cb",
+      "proposed_primary_learner_sense": {
+        "entry_id": "lier__verb__1",
+        "sense_id": "__ws_1_lier__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_not_sense_mapped",
+        "entry_level_or_ambiguous_candidate"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "679d7937eb22bcfec092a21cbdce1b69965cf0ea91400a862dba866771041575"
+    },
+    {
+      "stable_lexeme_key": "échapper|VER",
+      "runtime_lexeme_id": 13809,
+      "parent_input_hash": "1d9057696cfc2cd22760e4b2a1fe63c583bfbdf9d472432343b80160d82a8fa6",
+      "proposed_primary_learner_sense": {
+        "entry_id": "échapper__verb__1",
+        "sense_id": "__ws_1_échapper__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "e8a68feb3dbb402905274523237df6b981346cc9c88e499d0cf55cfd23d24ef3"
+    },
+    {
+      "stable_lexeme_key": "importer|VER",
+      "runtime_lexeme_id": 6484,
+      "parent_input_hash": "119c5e6fc89b18383d097ae3dde3ccd3c1f6382e5320aeb91012dedaef6c5f26",
+      "proposed_primary_learner_sense": {
+        "entry_id": "importer__verb__1",
+        "sense_id": "__ws_1_importer__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "eb27c148721b606c5e2c673f27bb53a0a785ce63e64334280dee9b60c49bab5e"
+    },
+    {
+      "stable_lexeme_key": "charger|VER",
+      "runtime_lexeme_id": 2227,
+      "parent_input_hash": "cec4131e33ad0ab8d083010ac7f54ecbc0c2c8dacde985b0988bf37c547148b0",
+      "proposed_primary_learner_sense": {
+        "entry_id": "charger__verb__1",
+        "sense_id": "__ws_1_charger__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "928330a252d7af05efed12dbf77eab79c671b5ce4ee6f3038ff03f41eed69329"
+    },
+    {
+      "stable_lexeme_key": "réduire|VER",
+      "runtime_lexeme_id": 11408,
+      "parent_input_hash": "b6424c30e5b5ac4fc1fee88a64c613e0afd8986c8e48c426a2cb458ef3953064",
+      "proposed_primary_learner_sense": {
+        "entry_id": "réduire__verb__1",
+        "sense_id": "__ws_1_réduire__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "cc72635df31c8b4fcb4c3f0e46ec8b08f5b160c0a98477f38ae0c28f005f48ee"
+    },
+    {
+      "stable_lexeme_key": "chercheur|NOM",
+      "runtime_lexeme_id": 2284,
+      "parent_input_hash": "b7debdaee75ffc3c11126488d7c78a387338acd7fa7ae95468b9d13be03ffc08",
+      "proposed_primary_learner_sense": {
+        "entry_id": "chercheur__nom__1",
+        "sense_id": "__ws_1_chercheur__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "medium",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "9448591463fbb38954d715410d30f7c83e5719a19333fbeaf5fa365c07a003c0"
+    },
+    {
+      "stable_lexeme_key": "réseau|NOM",
+      "runtime_lexeme_id": 11518,
+      "parent_input_hash": "ad11ce71ed592e1b4dc2b5ddb67f4d827ac94b2649f328cf217877a6631d549a",
+      "proposed_primary_learner_sense": {
+        "entry_id": "réseau__nom__1",
+        "sense_id": "__ws_1_réseau__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "multiple_lexical_entries",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; multiple_lexical_entries; source_order_only_tie",
+      "translation_flags": [
+        "entry_level_or_ambiguous_candidate",
+        "multiple_chinese_candidates",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "f8a73a4a04308cc1102f829740098ae37de4e2e8347ee1c68a397f0a17349cab"
+    },
+    {
+      "stable_lexeme_key": "représentation|NOM",
+      "runtime_lexeme_id": 11040,
+      "parent_input_hash": "c0a2e9e7e73e109e04a7b5e2d49b6dc2d51d649088b1aaf3d1e458d6853ff1cf",
+      "proposed_primary_learner_sense": {
+        "entry_id": "représentation__nom__1",
+        "sense_id": "__ws_1_représentation__nom__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "585ac92b5d62d6de5a181111e76eea53be5b76c2685e9d2b9f47446ea01d9f7e"
+    },
+    {
+      "stable_lexeme_key": "cesse|NOM",
+      "runtime_lexeme_id": 2160,
+      "parent_input_hash": "ceddb08d35ed9e26b28100bae84cf03809f3c1af0103bd2daa3a449e88a54142",
+      "proposed_primary_learner_sense": {
+        "entry_id": "cesse__nom__2",
+        "sense_id": "__ws_1_cesse__nom__2"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "marked_predecessor_requires_adjudication",
+        "multiple_lexical_entries",
+        "proposed_specialized_domain"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "marked_predecessor_requires_adjudication; multiple_lexical_entries; proposed_specialized_domain",
+      "translation_flags": [
+        "no_default_chinese_candidate"
+      ],
+      "translation_tier": "medium",
+      "content_authoring_flags": [
+        "specialized_usage"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_gap_fill",
+      "content_route": "content_semantic_review",
+      "record_hash": "87c53f00ddc1e1809935979e680d690e8a3670e8039cb906ea412fd04129e354"
+    },
+    {
+      "stable_lexeme_key": "étendre|VER",
+      "runtime_lexeme_id": 14139,
+      "parent_input_hash": "dc961a614e13c033b1e92b54c6498ddcb20dc4dc9a4f12870475cbfda83961a4",
+      "proposed_primary_learner_sense": {
+        "entry_id": "étendre__verb__1",
+        "sense_id": "__ws_1_étendre__verb__1"
+      },
+      "legacy_combined_risk": "high_risk",
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "extreme_polysemy",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "high",
+      "sense_selection_rationale": "competing_unmarked_ordinary_sense; extreme_polysemy; many_senses; source_order_only_tie",
+      "translation_flags": [
+        "candidate_gloss_domain_mismatch_possible",
+        "candidate_not_sense_mapped",
+        "structural_mapping_only"
+      ],
+      "translation_tier": "high",
+      "content_authoring_flags": [
+        "highly_polysemous_lemma",
+        "sibling_sense_confusion_possible"
+      ],
+      "content_authoring_tier": "high",
+      "review_route": "human_sense_review",
+      "translation_route": "ai_translation_disambiguation",
+      "content_route": "content_semantic_review",
+      "record_hash": "a79781459cd9dcc1302998a9b3fc04fbaddf9798e145be16ffa688c89e486a51"
+    }
+  ],
+  "artifact_hash": "50d1fa25bb5bd8c5e5bc58e271fb2fb7e01bd16b1acc232acbc5ea51824efa32"
+}
