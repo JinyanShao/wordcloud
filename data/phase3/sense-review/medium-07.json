@@ -1,0 +1,3143 @@
+{
+  "schema_version": 1,
+  "scope": "Compact French learner-primary sense review facts only; no adjudication, Chinese candidates, examples, family relations, or learner prose.",
+  "parent_input_artifact_hash": "7789faf53c792615d2e0f3c0c0627d2fe48323ef98b712650b949f5b3c6b7f01",
+  "parent_risk_artifact_hash": "398f2536bbc7b40a972477f75c3b0f854c040d878ade62ab25b6f53f9ff4bf90",
+  "sense_selection_tier": "medium",
+  "items": [
+    {
+      "stable_lexeme_key": "évoluer|VER",
+      "runtime_lexeme_id": 14225,
+      "lemma": "évoluer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 35.3363,
+        "lexique_frequency": 12.472,
+        "contextual_diversity": 1.76975
+      },
+      "current_proposed_sense": {
+        "entry_id": "évoluer__verb__1",
+        "sense_id": "__ws_1_évoluer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Se transformer progressivement.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "évoluer__verb__1",
+          "sense_id": "__ws_1_évoluer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Se transformer progressivement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "évoluer__verb__1",
+          "sense_id": "__ws_2_évoluer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Aéronautique, Marine, Militaire) Exécuter des évolutions.",
+          "leading_labels": [
+            "aéronautique",
+            "marine",
+            "militaire"
+          ]
+        },
+        {
+          "entry_id": "évoluer__verb__1",
+          "sense_id": "__ws_3_évoluer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Se déplacer, se mouvoir.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "évoluer__verb__1",
+          "sense_id": "__ws_4_évoluer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Jouer.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "93bbd4d5716d0a63aaa7bce85a93c46b5c16d610e1e73fbf8503c1e34b6d1bf2",
+      "record_hash": "1948b736542be978cf9b680d328922b15a400b797587515865d3ad5eb9dfb1d9"
+    },
+    {
+      "stable_lexeme_key": "définir|VER",
+      "runtime_lexeme_id": 4168,
+      "lemma": "définir",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 34.1742,
+        "lexique_frequency": 11.025,
+        "contextual_diversity": 1.64727
+      },
+      "current_proposed_sense": {
+        "entry_id": "définir__verb__1",
+        "sense_id": "__ws_1_définir__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Déterminer avec précision.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_1_définir__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Déterminer avec précision.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_1.a_définir__verb__1",
+          "sense_number": "1.a",
+          "entry_rank": 1,
+          "definition_fr": "(Religion) Fixer un point de dogme.",
+          "leading_labels": [
+            "religion"
+          ]
+        },
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_2_définir__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Caractériser quelqu’un ou quelque chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_3_définir__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Donner la (ou les) signification(s) d’un mot, quel sens on y attache.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_4_définir__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Programmation) Assigner une valeur à une variable, généralement après sa déclaration.",
+          "leading_labels": [
+            "programmation"
+          ]
+        },
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_5_définir__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Traduire dans un langage naturel une notion mathématique abstraite.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        },
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_6_définir__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) (Par extension) Parce que le travail mathématique consiste pour beaucoup dans ce passage abstrait-compréhensible, ce verbe est devenu un fourre-tout, synonyme de créer, concevoir, supposer, prouver, etc.",
+          "leading_labels": [
+            "mathématiques",
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_7_définir__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Rare) Délimiter, circonscrire.",
+          "leading_labels": [
+            "rare"
+          ]
+        },
+        {
+          "entry_id": "définir__verb__1",
+          "sense_id": "__ws_8_définir__verb__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Exprimer son identité, ce que l'on est, la façon dont on se voit.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "1b962afcaccec37d8df63d1760e17431996cc5fc8854acf963320f83a9229db7",
+      "record_hash": "7a8881169f18b31b97806bcb26916e3b25072038b1f0801dc70a1ac84af91a2e"
+    },
+    {
+      "stable_lexeme_key": "glisser|VER",
+      "runtime_lexeme_id": 5797,
+      "lemma": "glisser",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 33.7612,
+        "lexique_frequency": 32.215,
+        "contextual_diversity": 4.24525
+      },
+      "current_proposed_sense": {
+        "entry_id": "glisser__verb__1",
+        "sense_id": "__ws_1_glisser__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Se mettre en mouvement, comme en coulant sur une surface lisse ou le long d’un autre corps.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_1_glisser__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Se mettre en mouvement, comme en coulant sur une surface lisse ou le long d’un autre corps.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_2_glisser__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Se déplacer avec légèreté et aisance.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_3_glisser__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) (Québec) (Loisirs) Descendre des pentes neigeuses en glissant sur un traîneau, sur un carton, etc., voire sur le fessier.",
+          "leading_labels": [
+            "spécialement",
+            "québec",
+            "loisirs"
+          ]
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_4_glisser__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Effleurer un corps en parlant d'un instrument tranchant qui a dévié et qui n’entame pas profondément.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_5_glisser__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Passer légèrement sur quelque matière.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_6_glisser__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Ne faire qu’une impression légère, ou n’en faire aucune.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_7_glisser__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Vulgaire) (Vieilli) (Transitif) Copuler avec.",
+          "leading_labels": [
+            "vulgaire",
+            "vieilli",
+            "transitif"
+          ]
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_8_glisser__verb__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Transitif) ou (Pronominal) Faire entrer adroitement en quelque endroit ou en faire sortir.",
+          "leading_labels": [
+            "transitif"
+          ]
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_9_glisser__verb__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Transitif) (Sens figuré) Remettre discrètement quelque chose à quelqu'un.",
+          "leading_labels": [
+            "transitif",
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "glisser__verb__1",
+          "sense_id": "__ws_10_glisser__verb__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Handball) Au handball, s’engouffrer dans le dos de la défense.",
+          "leading_labels": [
+            "handball"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "2cc65004862f7682ee7c7c72c77839166c7bdf83c4fa6fbeb9128274b06baf09",
+      "record_hash": "9cc25b1edc30817e35747e71f0b627d576cd78f25acc02c0f68de602cfdaebde"
+    },
+    {
+      "stable_lexeme_key": "avouer|VER",
+      "runtime_lexeme_id": 1160,
+      "lemma": "avouer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 32.8996,
+        "lexique_frequency": 59.076,
+        "contextual_diversity": 8.12462
+      },
+      "current_proposed_sense": {
+        "entry_id": "avouer__verb__1",
+        "sense_id": "__ws_1_avouer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Confesser et reconnaître qu’une chose est ou n’est pas, témoigner de la vérité.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "avouer__verb__1",
+          "sense_id": "__ws_1_avouer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Confesser et reconnaître qu’une chose est ou n’est pas, témoigner de la vérité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "avouer__verb__1",
+          "sense_id": "__ws_2_avouer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Approuver ; ratifier ; admettre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "avouer__verb__1",
+          "sense_id": "__ws_3_avouer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Approuver ce qu’une personne a jugé à propos de faire d’après l’autorisation qu’on lui en a donnée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "avouer__verb__1",
+          "sense_id": "__ws_4_avouer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Se reconnaître l’auteur, le géniteur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "avouer__verb__1",
+          "sense_id": "__ws_5_avouer__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Être voué à.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "avouer__verb__1",
+          "sense_id": "__ws_6_avouer__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Se confesser ; en demeurer d’accord.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        },
+        {
+          "entry_id": "avouer__verb__1",
+          "sense_id": "__ws_7_avouer__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Reconnaître comme vrai.",
+          "leading_labels": [
+            "familier"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "968c5bc137d55693c25aa876206b9a577fb6e1f31afb671bd0e511503ef784f9",
+      "record_hash": "d346a752a97e5b95dc0169e0a2144e0ed82cd7554f6f99e4d2ef86c5072bd0ca"
+    },
+    {
+      "stable_lexeme_key": "mesurer|VER",
+      "runtime_lexeme_id": 8036,
+      "lemma": "mesurer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 32.6598,
+        "lexique_frequency": 15.854,
+        "contextual_diversity": 10.3169
+      },
+      "current_proposed_sense": {
+        "entry_id": "mesurer__verb__1",
+        "sense_id": "__ws_1_mesurer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Chercher à connaître, ou déterminer une quantité par le moyen d’une mesure.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "mesurer__verb__1",
+          "sense_id": "__ws_1_mesurer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Chercher à connaître, ou déterminer une quantité par le moyen d’une mesure.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "mesurer__verb__1",
+          "sense_id": "__ws_2_mesurer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Transitif) Proportionner.",
+          "leading_labels": [
+            "transitif"
+          ]
+        },
+        {
+          "entry_id": "mesurer__verb__1",
+          "sense_id": "__ws_3_mesurer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Régler avec sagesse, avec circonspection.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "mesurer__verb__1",
+          "sense_id": "__ws_4_mesurer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Intransitif) Avoir comme mesure.",
+          "leading_labels": [
+            "intransitif"
+          ]
+        },
+        {
+          "entry_id": "mesurer__verb__1",
+          "sense_id": "__ws_5_mesurer__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Lutter contre ; se comparer à ; vouloir s’égaler à.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "4eba7f2bbdcf44c3be8db25d78914229ffa8967bc257d931dc2c80436b456165",
+      "record_hash": "8f956c93ba032bb174b8743f9b6cd1ae16b47cf52dd07e41948cf06e4bf0cc4f"
+    },
+    {
+      "stable_lexeme_key": "inscrire|VER",
+      "runtime_lexeme_id": 6833,
+      "lemma": "inscrire",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 31.6257,
+        "lexique_frequency": 22.991,
+        "contextual_diversity": 3.37416
+      },
+      "current_proposed_sense": {
+        "entry_id": "inscrire__verb__1",
+        "sense_id": "__ws_1_inscrire__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Écrire le nom de quelqu’un, ou prendre note, faire mention de quelque chose sur un registre, sur une liste, etc.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "inscrire__verb__1",
+          "sense_id": "__ws_1_inscrire__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Écrire le nom de quelqu’un, ou prendre note, faire mention de quelque chose sur un registre, sur une liste, etc.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "inscrire__verb__1",
+          "sense_id": "__ws_2_inscrire__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Mettre une inscription.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "inscrire__verb__1",
+          "sense_id": "__ws_3_inscrire__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Géométrie) Tracer, dans l’intérieur d’une figure géométrique, une autre figure qui en touche le contour intérieurement.",
+          "leading_labels": [
+            "géométrie"
+          ]
+        },
+        {
+          "entry_id": "inscrire__verb__1",
+          "sense_id": "__ws_4_inscrire__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Laisser un souvenir inoubliable ou une trace visible.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "a0c5c43fe936a8333a369393e71f47569a6b66f85cddf0859d2d57a97d1dc74c",
+      "record_hash": "6cc19624760b0e39e381f09c6c65c91ba4408586a91b4c84b56a29e9d5bedfca"
+    },
+    {
+      "stable_lexeme_key": "diviser|VER",
+      "runtime_lexeme_id": 3853,
+      "lemma": "diviser",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 31.4688,
+        "lexique_frequency": 12.114,
+        "contextual_diversity": 1.5447
+      },
+      "current_proposed_sense": {
+        "entry_id": "diviser__verb__1",
+        "sense_id": "__ws_1_diviser__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Séparer en parties ; morceler ; fractionner.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "diviser__verb__1",
+          "sense_id": "__ws_1_diviser__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Séparer en parties ; morceler ; fractionner.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "diviser__verb__1",
+          "sense_id": "__ws_2_diviser__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Séparer en parts égales. Appliquer l’opération mathématique permettant d’arriver à ce résultat.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        },
+        {
+          "entry_id": "diviser__verb__1",
+          "sense_id": "__ws_3_diviser__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Susciter des opinions ou des réactions fortement opposées ; partager l’opinion, cliver.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "diviser__verb__1",
+          "sense_id": "__ws_4_diviser__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Typographie) Couper un mot à la fin d’une ligne, en se conformant aux règles établies.",
+          "leading_labels": [
+            "typographie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "baf0b4c4f8afd0331ee84510df2de952608674088a9ffeee799ec5485c1a7d1f",
+      "record_hash": "76db3c328c3be08349ac2b3f618213eb2c3892abf971cca6869581b705e876f8"
+    },
+    {
+      "stable_lexeme_key": "citer|VER",
+      "runtime_lexeme_id": 2445,
+      "lemma": "citer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 31.3411,
+        "lexique_frequency": 18.146,
+        "contextual_diversity": 3.96663
+      },
+      "current_proposed_sense": {
+        "entry_id": "citer__verb__1",
+        "sense_id": "__ws_2_citer__verb__1",
+        "sense_number": "2",
+        "entry_rank": 1,
+        "definition_fr": "Alléguer ; rapporter.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "citer__verb__1",
+          "sense_id": "__ws_1_citer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Droit) Assigner à comparaître devant une juridiction civile ou religieuse.",
+          "leading_labels": [
+            "droit"
+          ]
+        },
+        {
+          "entry_id": "citer__verb__1",
+          "sense_id": "__ws_2_citer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Alléguer ; rapporter.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "citer__verb__1",
+          "sense_id": "__ws_3_citer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Désigner le passage du livre que l’on allègue ou l’auteur de la nouvelle qu’on rapporte ; nommer celui de qui on tient une nouvelle, ou quelque chose de semblable.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "citer__verb__1",
+          "sense_id": "__ws_4_citer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Signaler, distinguer une personne ou une chose qui mérite d’être remarquée, de quelque manière que ce soit.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "citer__verb__1",
+          "sense_id": "__ws_5_citer__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Tauromachie) Action pour le toréador d’attirer l’attention du taureau, de le provoquer.",
+          "leading_labels": [
+            "tauromachie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "12b802de746d165b4239eb096b1a6f03da2ee64c2d302a60f5145d30738b83e6",
+      "record_hash": "4700dd4a07cd8bb6eb6269479f84bfda45a701463d0cf3686cb8eaed650cf0d6"
+    },
+    {
+      "stable_lexeme_key": "conserver|VER",
+      "runtime_lexeme_id": 2956,
+      "lemma": "conserver",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 31.1602,
+        "lexique_frequency": 13.187,
+        "contextual_diversity": 2.40968
+      },
+      "current_proposed_sense": {
+        "entry_id": "conserver__verb__1",
+        "sense_id": "__ws_1_conserver__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Maintenir en bon état ; apporter le soin nécessaire pour empêcher qu’une chose ne se gâte ou ne dépérisse.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "conserver__verb__1",
+          "sense_id": "__ws_1_conserver__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Maintenir en bon état ; apporter le soin nécessaire pour empêcher qu’une chose ne se gâte ou ne dépérisse.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "conserver__verb__1",
+          "sense_id": "__ws_2_conserver__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Maintenir dans un certain état. —Note : Le complément est alors accompagné d’un adjectif qui exprime cet état.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "conserver__verb__1",
+          "sense_id": "__ws_3_conserver__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Ne pas perdre, empêcher qu’une personne ou qu’une chose ne périsse.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "conserver__verb__1",
+          "sense_id": "__ws_4_conserver__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Assurer sa longévité en prenant beaucoup de soin de sa santé.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "conserver__verb__1",
+          "sense_id": "__ws_5_conserver__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Garder quelque chose, ne pas s’en défaire, ne pas y renoncer.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "conserver__verb__1",
+          "sense_id": "__ws_6_conserver__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Ne pas perdre ce qu’on a ; ne pas en être dépossédé ou privé.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "conserver__verb__1",
+          "sense_id": "__ws_7_conserver__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Soutenu) Conserver l’écoute : rester en ligne (au téléphone) ; quelques fois utilisé de manière intransitive. Note : la locution verbale « conserver l’écoute » est principalement utilisée par les standardistes.",
+          "leading_labels": [
+            "soutenu"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "d9ae217bd3358fad10adfd7655073669ec104e356c0d9c8791800e482c31b5fa",
+      "record_hash": "17f21eb02f3efa7b136ea2cf02185f448fb14880c69278c49dc2ef5ed033a11d"
+    },
+    {
+      "stable_lexeme_key": "mentir|VER",
+      "runtime_lexeme_id": 8006,
+      "lemma": "mentir",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 30.0287,
+        "lexique_frequency": 215.013,
+        "contextual_diversity": 20.40416
+      },
+      "current_proposed_sense": {
+        "entry_id": "mentir__verb__1",
+        "sense_id": "__ws_1_mentir__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Ne pas dire la vérité ; dire quelque chose de contraire à la vérité ; cacher la vérité ; induire volontairement en erreur.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "mentir__verb__1",
+          "sense_id": "__ws_1_mentir__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Ne pas dire la vérité ; dire quelque chose de contraire à la vérité ; cacher la vérité ; induire volontairement en erreur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "mentir__verb__1",
+          "sense_id": "__ws_2_mentir__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Déguiser ou cacher le caractère, en parlant du visage, de la physionomie d'une personne.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "mentir__verb__1",
+          "sense_id": "__ws_3_mentir__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Intransitif) (Vieilli) Donner un démenti par ses actes.",
+          "leading_labels": [
+            "intransitif",
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "mentir__verb__1",
+          "sense_id": "__ws_4_mentir__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) (réfléchi) Se persuader à soi-même une chose qu'on sait être fausse.",
+          "leading_labels": [
+            "pronominal",
+            "réfléchi"
+          ]
+        },
+        {
+          "entry_id": "mentir__verb__1",
+          "sense_id": "__ws_5_mentir__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) (réciproque) Se dire des mensonges les uns aux autres.",
+          "leading_labels": [
+            "pronominal",
+            "réciproque"
+          ]
+        },
+        {
+          "entry_id": "mentir__verb__1",
+          "sense_id": "__ws_6_mentir__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Transitif) (Désuet) Dire, répondre, manifester quelque chose de mensonger, d’insincère.",
+          "leading_labels": [
+            "transitif",
+            "désuet"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "99107902ad2d3b8039550695beeda2a4cb4beea2cb1515f40bce9ace10fc84fc",
+      "record_hash": "ebc325d44b0741f21981fc53e96ab8a02965a4fd1aee0ff9db315300eb918548"
+    },
+    {
+      "stable_lexeme_key": "ignorer|VER",
+      "runtime_lexeme_id": 6383,
+      "lemma": "ignorer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 28.9604,
+        "lexique_frequency": 165.263,
+        "contextual_diversity": 23.16442
+      },
+      "current_proposed_sense": {
+        "entry_id": "ignorer__verb__1",
+        "sense_id": "__ws_1_ignorer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Ne pas connaître.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "ignorer__verb__1",
+          "sense_id": "__ws_1_ignorer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Ne pas connaître.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "ignorer__verb__1",
+          "sense_id": "__ws_2_ignorer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "N’avoir pas une juste idée de soi-même, de ses forces.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "ignorer__verb__1",
+          "sense_id": "__ws_3_ignorer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Ne pas pratiquer une chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "ignorer__verb__1",
+          "sense_id": "__ws_4_ignorer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Ne pas tenir compte de quelque chose ; faire comme si elle n'était pas là.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "68357dc79df03b8c96c89bc17edf68bb6a6b7958136eb8e4fbfef09047424830",
+      "record_hash": "89a42fc20449542465507d4dc71373ced2adfa416de77f40bf1e8bda3bcc47c5"
+    },
+    {
+      "stable_lexeme_key": "fonder|VER",
+      "runtime_lexeme_id": 5380,
+      "lemma": "fonder",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 28.4485,
+        "lexique_frequency": 15.294,
+        "contextual_diversity": 1.96418
+      },
+      "current_proposed_sense": {
+        "entry_id": "fonder__verb__1",
+        "sense_id": "__ws_1_fonder__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Asseoir un bâtiment, un édifice sur des fondements.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "fonder__verb__1",
+          "sense_id": "__ws_1_fonder__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Asseoir un bâtiment, un édifice sur des fondements.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "fonder__verb__1",
+          "sense_id": "__ws_2_fonder__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) …",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "fonder__verb__1",
+          "sense_id": "__ws_3_fonder__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) …",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "fonder__verb__1",
+          "sense_id": "__ws_4_fonder__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Établir.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "fonder__verb__1",
+          "sense_id": "__ws_5_fonder__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Créer un établissement, une œuvre louable, utile en les dotant des fonds nécessaires pour leur entretien.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "fonder__verb__1",
+          "sense_id": "__ws_6_fonder__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Prendre quelque chose comme preuve ou quelqu’un comme appui ou garant de ce que l’on dit, de ce que l’on pense, de ce que l’on croit.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "fonder__verb__1",
+          "sense_id": "__ws_7_fonder__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "S’appuyer sur quelque chose à propos de ce qu’on dit, de ce qu’on croit ou de ce qu’on pense.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "51a70a0b6457f78de4b52ea07a1dd3c93c50bfa10c021d5e4091c9410e0e783e",
+      "record_hash": "bb74cdeaa271b744bafeedeba06924a4967e8d49837cdd72c77e07c24a0278d6"
+    },
+    {
+      "stable_lexeme_key": "privilégier|VER",
+      "runtime_lexeme_id": 10053,
+      "lemma": "privilégier",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 28.2601,
+        "lexique_frequency": 2.041,
+        "contextual_diversity": 0.55726
+      },
+      "current_proposed_sense": {
+        "entry_id": "privilégier__verb__1",
+        "sense_id": "__ws_1_privilégier__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Gratifier, doter d’un privilège, favoriser.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "privilégier__verb__1",
+          "sense_id": "__ws_1_privilégier__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Gratifier, doter d’un privilège, favoriser.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "privilégier__verb__1",
+          "sense_id": "__ws_2_privilégier__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Donner la priorité à quelque chose ou quelqu’un, lui accorder l’importance la plus élevée.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "098ea5ac9404d55d0cba2f5c774807dfada283d46c2dd51b6dbef5219680ec7b",
+      "record_hash": "cabd0651303e86ee7477df3901da6107164ae97f48ca34abb41a32b0d637acad"
+    },
+    {
+      "stable_lexeme_key": "consommer|VER",
+      "runtime_lexeme_id": 2973,
+      "lemma": "consommer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 25.5157,
+        "lexique_frequency": 7.193,
+        "contextual_diversity": 0.85732
+      },
+      "current_proposed_sense": {
+        "entry_id": "consommer__verb__1",
+        "sense_id": "__ws_1_consommer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Faire usage de quelque chose, utiliser.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_1_consommer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Faire usage de quelque chose, utiliser.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_2_consommer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Absorber.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_3_consommer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Cuisine) Réduire en cuisant.",
+          "leading_labels": [
+            "cuisine"
+          ]
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_4_consommer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Ingérer.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_5_consommer__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Boire, manger.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_6_consommer__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Boire une consommation dans un bar, un pub, une brasserie, un restaurant ou un café.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_7_consommer__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Absolument) Ingérer une substance psychotrope, une drogue.",
+          "leading_labels": [
+            "absolument"
+          ]
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_8_consommer__verb__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Droit) Se prévaloir de.",
+          "leading_labels": [
+            "droit"
+          ]
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_9_consommer__verb__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Littéraire) Achever, accomplir.",
+          "leading_labels": [
+            "littéraire"
+          ]
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_10_consommer__verb__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "Rendre valide un mariage par l’acte sexuel.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "consommer__verb__1",
+          "sense_id": "__ws_11_consommer__verb__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "Faire l’amour.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "2bf42ecb19e5f3ca158791b04536bf1b59301b4b938d15767a05ff2eddaecc21",
+      "record_hash": "7c94481ae52f111d2e596dd1bc6ebd631d659ab2126d7dffecbd58b0ab393ed7"
+    },
+    {
+      "stable_lexeme_key": "insister|VER",
+      "runtime_lexeme_id": 6844,
+      "lemma": "insister",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 24.5881,
+        "lexique_frequency": 38.313,
+        "contextual_diversity": 5.79608
+      },
+      "current_proposed_sense": {
+        "entry_id": "insister__verb__1",
+        "sense_id": "__ws_1_insister__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Appuyer sur quelque chose, s’y arrêter avec force.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "insister__verb__1",
+          "sense_id": "__ws_1_insister__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Appuyer sur quelque chose, s’y arrêter avec force.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "insister__verb__1",
+          "sense_id": "__ws_2_insister__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Faire instance, persévérer à demander, à vouloir une chose.",
+          "leading_labels": [
+            "par extension"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "3d538b04470d20193572c9efca5b23acd6a2b4fd1c96e980f9515c112a24a843",
+      "record_hash": "9e898512c563a197bd3a7aeef3c458cd4e2640911ce0978c1fd7ebfd148673b1"
+    },
+    {
+      "stable_lexeme_key": "cultiver|VER",
+      "runtime_lexeme_id": 3469,
+      "lemma": "cultiver",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 24.0611,
+        "lexique_frequency": 7.06,
+        "contextual_diversity": 1.07012
+      },
+      "current_proposed_sense": {
+        "entry_id": "cultiver__verb__1",
+        "sense_id": "__ws_1_cultiver__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Travailler une terre pour la rendre plus fertile et pour améliorer ses productions.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "cultiver__verb__1",
+          "sense_id": "__ws_1_cultiver__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Travailler une terre pour la rendre plus fertile et pour améliorer ses productions.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "cultiver__verb__1",
+          "sense_id": "__ws_2_cultiver__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Prendre soin des plantes.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "cultiver__verb__1",
+          "sense_id": "__ws_3_cultiver__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Désuet) Élever pour la production, en parlant des animaux.",
+          "leading_labels": [
+            "désuet"
+          ]
+        },
+        {
+          "entry_id": "cultiver__verb__1",
+          "sense_id": "__ws_4_cultiver__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Développer, perfectionner par l’instruction, par l’exercice.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "cultiver__verb__1",
+          "sense_id": "__ws_5_cultiver__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Entretenir avec soin.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "cultiver__verb__1",
+          "sense_id": "__ws_6_cultiver__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Conserver, entretenir, augmenter, en parlant des relations, des sentiments qui lient les personnes entre elles.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "94bdde1ee2e8618f99dfb5b80f9acc4a044e246cc641a209fd2d78a96f243ff1",
+      "record_hash": "e8340d33d545b6169889cb039abc33ac7add02b5120f6ee14dd7ace94b6b4b52"
+    },
+    {
+      "stable_lexeme_key": "animer|VER",
+      "runtime_lexeme_id": 577,
+      "lemma": "animer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 23.5765,
+        "lexique_frequency": 5.554,
+        "contextual_diversity": 1.59675
+      },
+      "current_proposed_sense": {
+        "entry_id": "animer__verb__1",
+        "sense_id": "__ws_1_animer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Douer de vie un corps organisé.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "animer__verb__1",
+          "sense_id": "__ws_1_animer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Douer de vie un corps organisé.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "animer__verb__1",
+          "sense_id": "__ws_2_animer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Douer de vivacité, de mouvement, d’une sorte de vie.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "animer__verb__1",
+          "sense_id": "__ws_3_animer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Donner de la force et de la chaleur à un ouvrage d’esprit, à un discours, soit par les traits vifs et brillants que l’on y jette, soit par la manière vive dont on le lit, dont on le prononce.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "animer__verb__1",
+          "sense_id": "__ws_4_animer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Encourager, exciter.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "animer__verb__1",
+          "sense_id": "__ws_5_animer__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Irriter, mettre en colère.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "animer__verb__1",
+          "sense_id": "__ws_6_animer__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Rare) Pousser, mouvoir.",
+          "leading_labels": [
+            "rare"
+          ]
+        },
+        {
+          "entry_id": "animer__verb__1",
+          "sense_id": "__ws_7_animer__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Sports hippiques) En parlant d'un cheval dans une course hippique, la mener, lui imprimer un rythme.",
+          "leading_labels": [
+            "sports hippiques"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "f4f11ef0bd1ea1a76646b99a6c4d9dff3da466aa95675bc316582071f786be26",
+      "record_hash": "bf4d04a18290881a52cb452c8ef4bcedcc53810c443bcb7f1f67a7c4305e2147"
+    },
+    {
+      "stable_lexeme_key": "allonger|VER",
+      "runtime_lexeme_id": 416,
+      "lemma": "allonger",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 22.8849,
+        "lexique_frequency": 29.364,
+        "contextual_diversity": 3.56093
+      },
+      "current_proposed_sense": {
+        "entry_id": "allonger__verb__1",
+        "sense_id": "__ws_1_allonger__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Rendre plus long.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_1_allonger__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Rendre plus long.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_2_allonger__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Ajouter un élément liquide à une boisson pour en augmenter le volume ou pour en diminuer la force.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_3_allonger__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Déployer ; étendre. — Note : Dans ce sens, on ne le dit guère qu’en parlant des membres ou de certaines parties du corps humain ou des animaux.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_4_allonger__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Porter les profits d’une charge, d’un emploi plus loin qu’ils ne devraient aller légitimement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_5_allonger__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Argot) Payer, verser (une certaine somme).",
+          "leading_labels": [
+            "argot"
+          ]
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_6_allonger__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Porter un coup, en allongeant le bras.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_7_allonger__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Faire durer davantage.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_8_allonger__verb__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Intransitif) Devenir plus long.",
+          "leading_labels": [
+            "intransitif"
+          ]
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_9_allonger__verb__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Devenir plus long, s'étendre.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_10_allonger__verb__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Sports hippiques) Faire courir un cheval sur une distance supérieure à celles auxquelles il est habitué.",
+          "leading_labels": [
+            "sports hippiques"
+          ]
+        },
+        {
+          "entry_id": "allonger__verb__1",
+          "sense_id": "__ws_11_allonger__verb__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "Hâter sa marche en faisant de plus grands pas.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "a95776fd44592996a6f812a3cfbbb8b10bccd1e446d28c5b989efedcaef2c848",
+      "record_hash": "f626ed1a73cfcf619ebf44bbcd19f4056524e3266729ab0c8722fc0a89a70d2c"
+    },
+    {
+      "stable_lexeme_key": "illustrer|VER",
+      "runtime_lexeme_id": 6394,
+      "lemma": "illustrer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 22.8471,
+        "lexique_frequency": 2.155,
+        "contextual_diversity": 0.88947
+      },
+      "current_proposed_sense": {
+        "entry_id": "illustrer__verb__1",
+        "sense_id": "__ws_1_illustrer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Rendre illustre.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "illustrer__verb__1",
+          "sense_id": "__ws_1_illustrer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Rendre illustre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "illustrer__verb__1",
+          "sense_id": "__ws_2_illustrer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Orner de gravures et de dessins un livre, un journal.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "illustrer__verb__1",
+          "sense_id": "__ws_3_illustrer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Rendre une idée saisissante par un exemple.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "5d5b110fcd5a9fe3a7313ab4a354e2f301f0615bc3fefcfa2144db85bc52f007",
+      "record_hash": "6566a6d5e46e6bef3686a7e948136d8bc14cc9799fbf3b7eff998339e98d925b"
+    },
+    {
+      "stable_lexeme_key": "applaudir|VER",
+      "runtime_lexeme_id": 683,
+      "lemma": "applaudir",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 22.6404,
+        "lexique_frequency": 14.218,
+        "contextual_diversity": 1.35028
+      },
+      "current_proposed_sense": {
+        "entry_id": "applaudir__verb__1",
+        "sense_id": "__ws_1_applaudir__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Intransitif) Battre des mains en signe d’approbation.",
+        "leading_labels": [
+          "intransitif"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "applaudir__verb__1",
+          "sense_id": "__ws_1_applaudir__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Intransitif) Battre des mains en signe d’approbation.",
+          "leading_labels": [
+            "intransitif"
+          ]
+        },
+        {
+          "entry_id": "applaudir__verb__1",
+          "sense_id": "__ws_2_applaudir__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Transitif) Donner son complet assentiment à une chose. — Note : En ce sens, il est le plus souvent suivi de la préposition « à ».",
+          "leading_labels": [
+            "transitif"
+          ]
+        },
+        {
+          "entry_id": "applaudir__verb__1",
+          "sense_id": "__ws_3_applaudir__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Transitif) Battre des mains en signe d’approbation à l'adresse de quelqu'un ou de quelque chose.",
+          "leading_labels": [
+            "transitif"
+          ]
+        },
+        {
+          "entry_id": "applaudir__verb__1",
+          "sense_id": "__ws_4_applaudir__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Se vanter, se glorifier.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        },
+        {
+          "entry_id": "applaudir__verb__1",
+          "sense_id": "__ws_5_applaudir__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Se féliciter de quelque chose.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "9bb898b231af9423569ba31f7f2f35c08a745ea721f1e6fd74ab8344987deb26",
+      "record_hash": "d5ad36cce6bb5a65dc88adecace9dee91be00c878e9dd596f7a2fd076f2b3ebc"
+    },
+    {
+      "stable_lexeme_key": "critiquer|VER",
+      "runtime_lexeme_id": 3365,
+      "lemma": "critiquer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 21.9108,
+        "lexique_frequency": 10.794,
+        "contextual_diversity": 6.66565
+      },
+      "current_proposed_sense": {
+        "entry_id": "critiquer__verb__1",
+        "sense_id": "__ws_1_critiquer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Péjoratif) Faire des critiques, des reproches, faire ressortir uniquement les défauts.",
+        "leading_labels": [
+          "péjoratif"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "critiquer__verb__1",
+          "sense_id": "__ws_1_critiquer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Péjoratif) Faire des critiques, des reproches, faire ressortir uniquement les défauts.",
+          "leading_labels": [
+            "péjoratif"
+          ]
+        },
+        {
+          "entry_id": "critiquer__verb__1",
+          "sense_id": "__ws_2_critiquer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Faire ressortir, par le discours ou par l’écrit, les défauts ou les qualités des choses ou des personnes.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "critiquer__verb__1",
+          "sense_id": "__ws_3_critiquer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Exercer son intelligence à démêler le vrai du faux, le bon du mauvais, le juste de l’injuste, en vue d’estimer la valeur de l’être ou de la chose qui est soumise à cet examen.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "d79765d73f066eb8979c2f856ecd9f9903ba90ec8379133049ede6a0d55b11c3",
+      "record_hash": "d2bfceb79ba225fe810a33f50585494644eece5fc4bd4c75f1201c47b96bca7d"
+    },
+    {
+      "stable_lexeme_key": "accomplir|VER",
+      "runtime_lexeme_id": 92,
+      "lemma": "accomplir",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 21.1092,
+        "lexique_frequency": 26.095,
+        "contextual_diversity": 5.00612
+      },
+      "current_proposed_sense": {
+        "entry_id": "accomplir__verb__1",
+        "sense_id": "__ws_1_accomplir__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Achever entièrement.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "accomplir__verb__1",
+          "sense_id": "__ws_1_accomplir__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Achever entièrement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "accomplir__verb__1",
+          "sense_id": "__ws_2_accomplir__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Mettre à exécution ; réaliser complètement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "accomplir__verb__1",
+          "sense_id": "__ws_3_accomplir__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Faire ce qui est exigé.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "accomplir__verb__1",
+          "sense_id": "__ws_4_accomplir__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Satisfaire à un engagement, remplir ses obligations.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "accomplir__verb__1",
+          "sense_id": "__ws_5_accomplir__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) S'achever.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        },
+        {
+          "entry_id": "accomplir__verb__1",
+          "sense_id": "__ws_6_accomplir__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Se réaliser pleinement.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "d18b4234b8987ce99bd760c732085284cbb68d86d113b08d6a53b6ea234b6a9a",
+      "record_hash": "422ea7a2e994f1d03d0e497925df6713059e470e23fa963cd8f4f20c90736c99"
+    },
+    {
+      "stable_lexeme_key": "désespérer|VER",
+      "runtime_lexeme_id": 4392,
+      "lemma": "désespérer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 20.1977,
+        "lexique_frequency": 11.842,
+        "contextual_diversity": 4.37385
+      },
+      "current_proposed_sense": {
+        "entry_id": "désespérer__verb__1",
+        "sense_id": "__ws_1_désespérer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Perdre l’espoir de quelque chose.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "désespérer__verb__1",
+          "sense_id": "__ws_1_désespérer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Perdre l’espoir de quelque chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "désespérer__verb__1",
+          "sense_id": "__ws_2_désespérer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Ne plus espérer une amélioration, un amendement, une bonne fin, en parlant d'une personne.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "désespérer__verb__1",
+          "sense_id": "__ws_3_désespérer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Mettre, pousser au désespoir.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "désespérer__verb__1",
+          "sense_id": "__ws_4_désespérer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Se tourmenter, s’agiter avec de grandes démonstrations de douleur, d’affliction.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "27eeb05ae90d751a3bd935cb29ea7822fb298e2bcdb506a6c61763dad9d88eb9",
+      "record_hash": "fb7d627d6502b60869e6422f9b22460e42064060f5cd5d063236e99844416655"
+    },
+    {
+      "stable_lexeme_key": "compléter|VER",
+      "runtime_lexeme_id": 2751,
+      "lemma": "compléter",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 19.2634,
+        "lexique_frequency": 5.804,
+        "contextual_diversity": 5.58328
+      },
+      "current_proposed_sense": {
+        "entry_id": "compléter__verb__1",
+        "sense_id": "__ws_1_compléter__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Rendre plus complet.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "compléter__verb__1",
+          "sense_id": "__ws_1_compléter__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Rendre plus complet.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "compléter__verb__1",
+          "sense_id": "__ws_2_compléter__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Topologie) Construire le complété d’un espace métrique.",
+          "leading_labels": [
+            "topologie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "bf3558518891ecbe155dd833e73fc5bc77fdf9e1d5b22d0b3c9251a95600758a",
+      "record_hash": "5148dd4bf79c41cf95eaf7ebfaa8073b81342e309341a36ac218804d8c1f16c3"
+    },
+    {
+      "stable_lexeme_key": "célébrer|VER",
+      "runtime_lexeme_id": 3521,
+      "lemma": "célébrer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 19.0105,
+        "lexique_frequency": 19.782,
+        "contextual_diversity": 10.96601
+      },
+      "current_proposed_sense": {
+        "entry_id": "célébrer__verb__1",
+        "sense_id": "__ws_1_célébrer__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Transitif) Louer avec éclat ; publier avec éloge.",
+        "leading_labels": [
+          "transitif"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "célébrer__verb__1",
+          "sense_id": "__ws_1_célébrer__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Transitif) Louer avec éclat ; publier avec éloge.",
+          "leading_labels": [
+            "transitif"
+          ]
+        },
+        {
+          "entry_id": "célébrer__verb__1",
+          "sense_id": "__ws_2_célébrer__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Marquer un évènement ou le retour périodique d’un évènement d’un certain éclat, d’une certaine pompe.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "célébrer__verb__1",
+          "sense_id": "__ws_3_célébrer__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Accomplir les rites ou les cérémonies d’un culte.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "célébrer__verb__1",
+          "sense_id": "__ws_4_célébrer__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Intransitif) (Québec) Faire la fête.",
+          "leading_labels": [
+            "intransitif",
+            "québec"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "8533166d0c13b1bdd105d8ae58c225d938386274dca83233d2e1aefbaa934d24",
+      "record_hash": "e8ea64d534cd5365b3ca98e1210d50d3a28641e65d1d1594db2afbae1a6beb91"
+    },
+    {
+      "stable_lexeme_key": "rattraper|VER",
+      "runtime_lexeme_id": 10740,
+      "lemma": "rattraper",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 18.3673,
+        "lexique_frequency": 35.851,
+        "contextual_diversity": 7.23974
+      },
+      "current_proposed_sense": {
+        "entry_id": "rattraper__verb__1",
+        "sense_id": "__ws_1_rattraper__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Reprendre, ressaisir.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_1_rattraper__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Reprendre, ressaisir.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_2_rattraper__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Familier) Rejoindre quelqu’un à qui on a laissé prendre les devants.",
+          "leading_labels": [
+            "sens figuré",
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_3_rattraper__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Regagner ce qu’on avait perdu.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_4_rattraper__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Absolument) et (Sens figuré) Attraper de nouveau, attraper une seconde fois.",
+          "leading_labels": [
+            "absolument"
+          ]
+        },
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_5_rattraper__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Piéger, tromper de nouveau. (Par extension) Faire prendre des risques.",
+          "leading_labels": [
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_6_rattraper__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Voix passive) (Sens figuré) Subir les conséquences de ses actes.",
+          "leading_labels": [
+            "voix passive",
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_7_rattraper__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Se retenir, se raccrocher.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        },
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_8_rattraper__verb__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) (Sens figuré) Atténuer, compenser une erreur, une faute qu’on était en train de commettre.",
+          "leading_labels": [
+            "pronominal",
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "rattraper__verb__1",
+          "sense_id": "__ws_9_rattraper__verb__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Se dédommager, regagner ce qu’on a perdu.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b19682f5219a582938b13428a2c955a12aec03537e648a971edb3f431e8ebec3",
+      "record_hash": "ec4e1da20c114f6e712c625c16805e4fc8bbb10c7147a13c6742485afb1a4ef7"
+    },
+    {
+      "stable_lexeme_key": "peindre|VER",
+      "runtime_lexeme_id": 9383,
+      "lemma": "peindre",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 17.9404,
+        "lexique_frequency": 27.506,
+        "contextual_diversity": 3.44764
+      },
+      "current_proposed_sense": {
+        "entry_id": "peindre__verb__1",
+        "sense_id": "__ws_1_peindre__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Enduire ou couvrir de peinture, de couleur ou de pigments.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "peindre__verb__1",
+          "sense_id": "__ws_1_peindre__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Enduire ou couvrir de peinture, de couleur ou de pigments.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "peindre__verb__1",
+          "sense_id": "__ws_2_peindre__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Représenter une personne ou une chose, par des lignes et par des couleurs.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "peindre__verb__1",
+          "sense_id": "__ws_3_peindre__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Décorer de figures ou d’ornements.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "peindre__verb__1",
+          "sense_id": "__ws_4_peindre__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Décrire, représenter quelque chose par des mots qui font image.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "peindre__verb__1",
+          "sense_id": "__ws_5_peindre__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) (Sens figuré) Se traduire, se manifester.",
+          "leading_labels": [
+            "pronominal",
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "peindre__verb__1",
+          "sense_id": "__ws_6_peindre__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) (Sens figuré) Représenter ses pensées, son style pour faire connaître son caractère et ses inclinations.",
+          "leading_labels": [
+            "pronominal",
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "372bb4042ba8bef3b2c54f052113719ab6a120b0b1830d05da93c44d95f286c4",
+      "record_hash": "702d578bfd6e77ac48ee71dcf25bb12416fa8220b6fcf97c23bbaf80331c2e94"
+    },
+    {
+      "stable_lexeme_key": "physique|ADJ",
+      "runtime_lexeme_id": 9558,
+      "lemma": "physique",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 96.0383,
+        "lexique_frequency": 22.563,
+        "contextual_diversity": 10.11023
+      },
+      "current_proposed_sense": {
+        "entry_id": "physique__adj__1",
+        "sense_id": "__ws_1_physique__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui s’exprime dans le monde matériel sous une forme mesurable.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "physique__adj__1",
+          "sense_id": "__ws_1_physique__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui s’exprime dans le monde matériel sous une forme mesurable.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "physique__adj__1",
+          "sense_id": "__ws_2_physique__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sciences) Relatif à la science de la physique.",
+          "leading_labels": [
+            "sciences"
+          ]
+        },
+        {
+          "entry_id": "physique__adj__1",
+          "sense_id": "__ws_3_physique__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui se rapporte au corps humain.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "physique__adj__1",
+          "sense_id": "__ws_4_physique__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Ressenti matériellement dans son propre corps, dans sa chair.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "physique__adj__1",
+          "sense_id": "__ws_4.a_physique__adj__1",
+          "sense_number": "4.a",
+          "entry_rank": 1,
+          "definition_fr": "Sensuel, charnel (par opposition à sentimental) ; sexuel.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "physique__adj__1",
+          "sense_id": "__ws_4.b_physique__adj__1",
+          "sense_number": "4.b",
+          "entry_rank": 1,
+          "definition_fr": "Incontrôlable, qui est de l’ordre du réflexe, viscéral (en parlant d’une réaction de rejet).",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "5a396e7f2cb541cf98930e6a959c6199f72c98317c1e91867e62831de6d1f052",
+      "record_hash": "fab6998ae189ebed251f590ae5b7a444da9c164a4e9e2ab7db39f1a7ca85dbeb"
+    },
+    {
+      "stable_lexeme_key": "littéraire|ADJ",
+      "runtime_lexeme_id": 7480,
+      "lemma": "littéraire",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 66.5611,
+        "lexique_frequency": 3.054,
+        "contextual_diversity": 0.90018
+      },
+      "current_proposed_sense": {
+        "entry_id": "littéraire__adj__1",
+        "sense_id": "__ws_1_littéraire__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui appartient aux lettres, à la littérature.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "littéraire__adj__1",
+          "sense_id": "__ws_1_littéraire__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui appartient aux lettres, à la littérature.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "littéraire__adj__1",
+          "sense_id": "__ws_2_littéraire__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Qualifie un esprit caractérisé par le goût et l’intelligence de la littérature.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "littéraire__adj__1",
+          "sense_id": "__ws_3_littéraire__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Se dit des qualités de composition et de style par lesquelles se caractérisent les œuvres qui appartiennent à la littérature.",
+          "leading_labels": [
+            "par extension"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "464f3087cbe2e3343073d7983776284d62943d2960b53e0d440681adc4847e3b",
+      "record_hash": "ad9d9607704c6c0b0b426fcd17d83402cac0cda7b0e520ebabc46eacfa15396f"
+    },
+    {
+      "stable_lexeme_key": "profond|ADJ",
+      "runtime_lexeme_id": 10115,
+      "lemma": "profond",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 61.2585,
+        "lexique_frequency": 39.453,
+        "contextual_diversity": 8.78291
+      },
+      "current_proposed_sense": {
+        "entry_id": "profond__adj__1",
+        "sense_id": "__ws_1_profond__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui a une cavité considérable ; dont le fond est éloigné de la surface, de l’ouverture, du bord, etc.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_1_profond__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui a une cavité considérable ; dont le fond est éloigné de la surface, de l’ouverture, du bord, etc.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_2_profond__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Agriculture) Qui plonge très loin dans la terre.",
+          "leading_labels": [
+            "en particulier",
+            "agriculture"
+          ]
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_3_profond__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Anatomie) Qualifie les muscles situés plus loin sous la peau que les autres.",
+          "leading_labels": [
+            "en particulier",
+            "anatomie"
+          ]
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_4_profond__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Qualifie une blessure, une plaie qui pénètre fort avant dans les chairs.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_5_profond__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Qui se prolonge, s’étend loin en arrière.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_6_profond__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie une salutation, une révérence, une inclination faite en se courbant extrêmement bas.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_7_profond__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui est difficile à pénétrer, à connaître.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_8_profond__adj__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Qui pénètre fort avant dans la connaissance des choses.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_9_profond__adj__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Qui met beaucoup de réflexion et de calcul dans ses desseins.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_10_profond__adj__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "Qui est grand ou extrême dans son genre, en parlant tant des choses physiques que des choses morales.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "profond__adj__1",
+          "sense_id": "__ws_11_profond__adj__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) Qualifie la réalité d’un isolement de la fréquentation, du commerce des hommes.",
+          "leading_labels": [
+            "spécialement"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "1b991078dd660d398ea6d3813bd97593d61178fdbe619655c046edb209923af9",
+      "record_hash": "418d157b1101a0e32ddc40b8b2039c8c7801a483daa9ef37a123a408e95bdbe4"
+    },
+    {
+      "stable_lexeme_key": "sombre|ADJ",
+      "runtime_lexeme_id": 12068,
+      "lemma": "sombre",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 59.8566,
+        "lexique_frequency": 34.237,
+        "contextual_diversity": 10.3414
+      },
+      "current_proposed_sense": {
+        "entry_id": "sombre__adj__1",
+        "sense_id": "__ws_1_sombre__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est peu éclairé ; qui reçoit peu de lumière ; qui est obscur.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "sombre__adj__1",
+          "sense_id": "__ws_1_sombre__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est peu éclairé ; qui reçoit peu de lumière ; qui est obscur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sombre__adj__1",
+          "sense_id": "__ws_2_sombre__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui est moins éclatant, qui est plus foncé que les autres, en parlant d’une teinte, d’une couleur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sombre__adj__1",
+          "sense_id": "__ws_3_sombre__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui est mélancolique, morne, taciturne ou chagrin.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "sombre__adj__1",
+          "sense_id": "__ws_4_sombre__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui est inquiétant ou menaçant.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "2a287d46bbd690fb4ebb41b726dc6d56acc12d53200d5562634aca15d9450dc3",
+      "record_hash": "fd54a0c5363ecef9d9cc4ef008dba7ef061a55af29a102bbe7a0aedaf8fa1268"
+    },
+    {
+      "stable_lexeme_key": "faible|ADJ",
+      "runtime_lexeme_id": 5071,
+      "lemma": "faible",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 58.4272,
+        "lexique_frequency": 45.687,
+        "contextual_diversity": 16.33037
+      },
+      "current_proposed_sense": {
+        "entry_id": "faible__adj__1",
+        "sense_id": "__ws_1_faible__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est débile, qui manque de force, de vigueur.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "faible__adj__1",
+          "sense_id": "__ws_1_faible__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est débile, qui manque de force, de vigueur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "faible__adj__1",
+          "sense_id": "__ws_1.a_faible__adj__1",
+          "sense_number": "1.a",
+          "entry_rank": 1,
+          "definition_fr": "Il s’applique également aux facultés intellectuelles.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "faible__adj__1",
+          "sense_id": "__ws_2_faible__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui manque de force morale, qui est trop indulgent, trop facile, sans fermeté.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "faible__adj__1",
+          "sense_id": "__ws_3_faible__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui manque de puissance, de ressources, etc.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "faible__adj__1",
+          "sense_id": "__ws_4_faible__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui n’a pas assez de grosseur, d’épaisseur, de force, de solidité, etc., en parlant des choses.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "faible__adj__1",
+          "sense_id": "__ws_5_faible__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) Qui est peu fortifié.",
+          "leading_labels": [
+            "militaire"
+          ]
+        },
+        {
+          "entry_id": "faible__adj__1",
+          "sense_id": "__ws_6_faible__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui est peu considérable en son genre sous le rapport de la quantité, de l’étendue, de la valeur, de l’intensité, de l’énergie, etc.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "faible__adj__1",
+          "sense_id": "__ws_7_faible__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Il s’emploie souvent avec les prépositions de ou en suivies d’un nom qui caractérise le genre de faiblesse.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "d38e68fbac079c67948251bdc24886dfa69ac8609e37e13a4bbd486b0acb96ee",
+      "record_hash": "ec4c579f4bb1582d8b30c60b31fa9488a2510f999eacd150315726b2c94f65d4"
+    },
+    {
+      "stable_lexeme_key": "récent|ADJ",
+      "runtime_lexeme_id": 11370,
+      "lemma": "récent",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 54.9965,
+        "lexique_frequency": 18.003,
+        "contextual_diversity": 2.65922
+      },
+      "current_proposed_sense": {
+        "entry_id": "récent__adj__1",
+        "sense_id": "__ws_1_récent__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui s’est produit il y a peu de temps.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "récent__adj__1",
+          "sense_id": "__ws_1_récent__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui s’est produit il y a peu de temps.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "récent__adj__1",
+          "sense_id": "__ws_2_récent__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui existe depuis peu.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "a917b599b8f2e638547fd115bb05ea9426c58ff88b25eaf1465888985bc9c9a1",
+      "record_hash": "dc301db1b9233b41b22a1ec2b07ef12646264203541d47b4f55b1c6c106fc92f"
+    },
+    {
+      "stable_lexeme_key": "unique|ADJ",
+      "runtime_lexeme_id": 13300,
+      "lemma": "unique",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 54.6053,
+        "lexique_frequency": 44.959,
+        "contextual_diversity": 15.71647
+      },
+      "current_proposed_sense": {
+        "entry_id": "unique__adj__1",
+        "sense_id": "__ws_1_unique__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est seul en son genre.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "unique__adj__1",
+          "sense_id": "__ws_1_unique__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est seul en son genre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "unique__adj__1",
+          "sense_id": "__ws_2_unique__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Désigne un objet mathématique qui est le seul à vérifier une propriété, éventuellement à transformations près.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        },
+        {
+          "entry_id": "unique__adj__1",
+          "sense_id": "__ws_3_unique__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Par hyperbole) Qui est de beaucoup au-dessus des autres et auquel les autres ne peuvent être comparés.",
+          "leading_labels": [
+            "sens figuré",
+            "par hyperbole"
+          ]
+        },
+        {
+          "entry_id": "unique__adj__1",
+          "sense_id": "__ws_4_unique__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Ironique) Se dit d’un homme ridicule, d’un extravagant, pour dire qu’il n’a pas son semblable.",
+          "leading_labels": [
+            "ironique"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "4e98651713f21c32f7cbd43a5da3fce57db653715c9f0525c30015dd6ac82542",
+      "record_hash": "ad24fe2fbf5e382ff03f275ff810807013adfa528ed7d655a36ab538f91635ad"
+    },
+    {
+      "stable_lexeme_key": "électronique|ADJ",
+      "runtime_lexeme_id": 13948,
+      "lemma": "électronique",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 45.4298,
+        "lexique_frequency": 7.861,
+        "contextual_diversity": 2.90416
+      },
+      "current_proposed_sense": {
+        "entry_id": "électronique__adj__1",
+        "sense_id": "__ws_1_électronique__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Relatif aux électrons.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "électronique__adj__1",
+          "sense_id": "__ws_1_électronique__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Relatif aux électrons.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "électronique__adj__1",
+          "sense_id": "__ws_2_électronique__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Produit à l’aide d’appareils électroniques.",
+          "leading_labels": [
+            "par extension"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "bde3f1ec6709defa1caf4c364834c95726690b952aa1033cf8ce59d936f3acc1",
+      "record_hash": "6a5b1835007b4e71c7da9b133e21034835dda250785d79cc3f7e4ab6fae873ff"
+    },
+    {
+      "stable_lexeme_key": "financier|ADJ",
+      "runtime_lexeme_id": 5274,
+      "lemma": "financier",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 43.1645,
+        "lexique_frequency": 17.902,
+        "contextual_diversity": 2.8169
+      },
+      "current_proposed_sense": {
+        "entry_id": "financier__adj__1",
+        "sense_id": "__ws_1_financier__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Relatif aux finances.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "financier__adj__1",
+          "sense_id": "__ws_1_financier__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Relatif aux finances.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "financier__adj__1",
+          "sense_id": "__ws_2_financier__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui a rapport aux gens de finance.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "7c435c985d4bb75828dd04f3ee2e74fae3974af678f4b77678fffa555f322098",
+      "record_hash": "6c1a01e5da5eeb61ff35e9e9f544ef98a62f2108d6d185d062c30cbcb2be1acb"
+    },
+    {
+      "stable_lexeme_key": "réel|ADJ",
+      "runtime_lexeme_id": 11411,
+      "lemma": "réel",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 40.013,
+        "lexique_frequency": 58.585,
+        "contextual_diversity": 12.6485
+      },
+      "current_proposed_sense": {
+        "entry_id": "réel__adj__1",
+        "sense_id": "__ws_1_réel__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Véritable, effectif, vrai, sans fiction ni figure.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "réel__adj__1",
+          "sense_id": "__ws_1_réel__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Véritable, effectif, vrai, sans fiction ni figure.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "réel__adj__1",
+          "sense_id": "__ws_2_réel__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Droit) Tangible, qui a rapport aux biens immeubles. S’oppose en ce sens à personnel.",
+          "leading_labels": [
+            "droit"
+          ]
+        },
+        {
+          "entry_id": "réel__adj__1",
+          "sense_id": "__ws_3_réel__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Se dit d'un nombre dont la partie imaginaire est nulle. Voir nombre réel.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "983fa273f1b3202dc4163809c0a40c3ad1fc7f1c9eeddf30ef7c029d8e1aa980",
+      "record_hash": "0e109cc0eda74e2adb996e85d5fdd54e5836ca93b69e561e6c2c3c33a810b98d"
+    },
+    {
+      "stable_lexeme_key": "debout|ADV",
+      "runtime_lexeme_id": 3574,
+      "lemma": "debout",
+      "pos": "ADV",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 51.5666,
+        "lexique_frequency": 77.896,
+        "contextual_diversity": 24.39375
+      },
+      "current_proposed_sense": {
+        "entry_id": "debout__adv__1",
+        "sense_id": "__ws_1_debout__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Verticalement.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "debout__adv__1",
+          "sense_id": "__ws_1_debout__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Verticalement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "debout__adv__1",
+          "sense_id": "__ws_2_debout__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Non tombé à terre.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "debout__adv__1",
+          "sense_id": "__ws_3_debout__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Sur ses pieds.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "debout__adv__1",
+          "sense_id": "__ws_4_debout__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Sur ses pattes, en parlant d’un quadrupède, lorsque, étant couché, il se relève et aussi quelquefois lorsqu’il se dresse sur ses pieds ou sur ses pattes de derrière.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "debout__adv__1",
+          "sense_id": "__ws_5_debout__adv__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Non fauché, non récolté, en parlant d’une culture.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "debout__adv__1",
+          "sense_id": "__ws_6_debout__adv__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "En dehors de son lit, levé.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "debout__adv__1",
+          "sense_id": "__ws_7_debout__adv__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Marine) Par le bout, par l’avant.",
+          "leading_labels": [
+            "marine"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "accdb422b436e3862be78b153e7d913bd0e2da6c0d4bdd6e2938d8916f78bb7e",
+      "record_hash": "91bb3a20661c6b1b310f6bca7fbdc01b49413ab32c6bcc7c571b2c54eebd0ad6"
+    },
+    {
+      "stable_lexeme_key": "voire|ADV",
+      "runtime_lexeme_id": 13642,
+      "lemma": "voire",
+      "pos": "ADV",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 47.8504,
+        "lexique_frequency": 8.06,
+        "contextual_diversity": 3.53644
+      },
+      "current_proposed_sense": {
+        "entry_id": "voire__adv__1",
+        "sense_id": "__ws_1_voire__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Littéraire) Et peut-être même ; et aussi.",
+        "leading_labels": [
+          "littéraire"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "voire__adv__1",
+          "sense_id": "__ws_1_voire__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Littéraire) Et peut-être même ; et aussi.",
+          "leading_labels": [
+            "littéraire"
+          ]
+        },
+        {
+          "entry_id": "voire__adv__1",
+          "sense_id": "__ws_2_voire__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Littéraire) Utilisé pour émettre un doute.",
+          "leading_labels": [
+            "littéraire"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "0f4205390724be337e2b691ef807ed650538309c0a1c5593e0d2e77a00d1aa1a",
+      "record_hash": "e8dbaaeb7558e36f02e508e1588d0be35f6365c29d3f7e7904cb3b7ab80153ed"
+    },
+    {
+      "stable_lexeme_key": "fort|ADV",
+      "runtime_lexeme_id": 5420,
+      "lemma": "fort",
+      "pos": "ADV",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 44.6974,
+        "lexique_frequency": 140.468,
+        "contextual_diversity": 46.37171
+      },
+      "current_proposed_sense": {
+        "entry_id": "fort__adv__1",
+        "sense_id": "__ws_1_fort__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "D’une manière forte et vigoureuse.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "fort__adv__1",
+          "sense_id": "__ws_1_fort__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière forte et vigoureuse.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "fort__adv__1",
+          "sense_id": "__ws_2_fort__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Beaucoup. — Note d’usage : Quand on le met devant un adjectif ou devant un adverbe, il marque le superlatif.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "f4a82d59b91f71561a4edd066320955ae0d832d3277dd1d9880d271aecbc2f70",
+      "record_hash": "9c6ad26282c5855645912b32fc0e6485914f2a6ac72b57f242db3ba4b9a96f5f"
+    }
+  ],
+  "artifact_hash": "72bd59cbc57e4ce4f98cd6e6db5fc0daf08027161a4782801a6a15f2a241f9de"
+}

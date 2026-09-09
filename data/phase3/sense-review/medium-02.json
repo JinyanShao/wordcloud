@@ -1,0 +1,3586 @@
+{
+  "schema_version": 1,
+  "scope": "Compact French learner-primary sense review facts only; no adjudication, Chinese candidates, examples, family relations, or learner prose.",
+  "parent_input_artifact_hash": "7789faf53c792615d2e0f3c0c0627d2fe48323ef98b712650b949f5b3c6b7f01",
+  "parent_risk_artifact_hash": "398f2536bbc7b40a972477f75c3b0f854c040d878ade62ab25b6f53f9ff4bf90",
+  "sense_selection_tier": "medium",
+  "items": [
+    {
+      "stable_lexeme_key": "cher|ADV",
+      "runtime_lexeme_id": 2281,
+      "lemma": "cher",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 107.5724,
+        "lexique_frequency": 26.272,
+        "contextual_diversity": 30.10716
+      },
+      "current_proposed_sense": {
+        "entry_id": "cher__adv__1",
+        "sense_id": "__ws_1_cher__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "À un prix élevé.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "cher__adv__1",
+          "sense_id": "__ws_1_cher__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "À un prix élevé.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "cher__adv__1",
+          "sense_id": "__ws_2_cher__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Au prix de grands sacrifices.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "cher__adv__1",
+          "sense_id": "__ws_3_cher__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Se dit pour faire entendre qu’on se vengera de quelqu’un.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "cher__adv__1",
+          "sense_id": "__ws_4_cher__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Se bien défendre avant de succomber.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "cher__adv__1",
+          "sense_id": "__ws_5_cher__adv__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Argot) (Lyonnais) Trop.",
+          "leading_labels": [
+            "argot",
+            "lyonnais"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "22907bb85dd2f314004149751b4dfa5cafbb8830e8bb5cc2317bcb340c8fc05f",
+      "record_hash": "004842ab98452469d2c49c7744c1db3f649083e0a9df123a675df23b7c4399cd"
+    },
+    {
+      "stable_lexeme_key": "tellement|ADV",
+      "runtime_lexeme_id": 12732,
+      "lemma": "tellement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 91.2243,
+        "lexique_frequency": 257.301,
+        "contextual_diversity": 53.74311
+      },
+      "current_proposed_sense": {
+        "entry_id": "tellement__adv__1",
+        "sense_id": "__ws_1_tellement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "De telle manière ; à un tel point.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "tellement__adv__1",
+          "sense_id": "__ws_1_tellement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "De telle manière ; à un tel point.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "tellement__adv__1",
+          "sense_id": "__ws_2_tellement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Tant ; en une telle quantité. — Note : S’emploie aussi avec que comme corrélatif. Un certain haut niveau de qualité dans la proposition précédente résulte à la proposition suivante.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "tellement__adv__1",
+          "sense_id": "__ws_3_tellement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Avec de) Un tel nombre de ; une telle quantité de.",
+          "leading_labels": [
+            "avec de"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "c2450ac9ca2694ea02060c3777e2bd59355fbdd647abe10cf9a506068463d9ab",
+      "record_hash": "f6dbcd23a9636106101cdbd8636242cc1ade977c887a79485681a8e6b3a9635e"
+    },
+    {
+      "stable_lexeme_key": "immédiatement|ADV",
+      "runtime_lexeme_id": 6445,
+      "lemma": "immédiatement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 78.7042,
+        "lexique_frequency": 52.867,
+        "contextual_diversity": 18.18279
+      },
+      "current_proposed_sense": {
+        "entry_id": "immédiatement__adv__1",
+        "sense_id": "__ws_1_immédiatement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "D’une manière immédiate, sans intermédiaire.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "immédiatement__adv__1",
+          "sense_id": "__ws_1_immédiatement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière immédiate, sans intermédiaire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "immédiatement__adv__1",
+          "sense_id": "__ws_2_immédiatement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Aussitôt ; sur-le-champ.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "c66370c1db2881cdf8e854c04134baeac49cc5242eb3db732a78b1a8e0b6dc63",
+      "record_hash": "99402c528c4caddffb3dfe604939cc8da1c27d3eb74f42a2afa4774c0d6cdad6"
+    },
+    {
+      "stable_lexeme_key": "rapidement|ADV",
+      "runtime_lexeme_id": 10703,
+      "lemma": "rapidement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 71.2857,
+        "lexique_frequency": 44.161,
+        "contextual_diversity": 16.52021
+      },
+      "current_proposed_sense": {
+        "entry_id": "rapidement__adv__1",
+        "sense_id": "__ws_1_rapidement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Avec rapidité ; d’une manière rapide.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "rapidement__adv__1",
+          "sense_id": "__ws_1_rapidement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Avec rapidité ; d’une manière rapide.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rapidement__adv__1",
+          "sense_id": "__ws_2_rapidement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "À grande vitesse.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rapidement__adv__1",
+          "sense_id": "__ws_3_rapidement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Dans peu de temps ; en peu de temps.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "e0bb5f408d81a83fa9f985234c575fea93260f7465ac6d3adad12512d588983d",
+      "record_hash": "a668120a72b7169f6f1222164000b83753bc3bd67cb715599ca4c060dcf37ac4"
+    },
+    {
+      "stable_lexeme_key": "sûrement|ADV",
+      "runtime_lexeme_id": 12624,
+      "lemma": "sûrement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 61.7327,
+        "lexique_frequency": 132.117,
+        "contextual_diversity": 38.12462
+      },
+      "current_proposed_sense": {
+        "entry_id": "sûrement__adv__1",
+        "sense_id": "__ws_1_sûrement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "De manière sûre ; certainement.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "sûrement__adv__1",
+          "sense_id": "__ws_1_sûrement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "De manière sûre ; certainement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sûrement__adv__1",
+          "sense_id": "__ws_2_sûrement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Avec sûreté, en sûreté, en toute assurance.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sûrement__adv__1",
+          "sense_id": "__ws_3_sûrement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Dans un sens affaibli et par antithèse exprimant l’incertitude) Probablement ; sans doute.",
+          "leading_labels": [
+            "dans un sens affaibli et par antithèse exprimant l'incertitude"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "12a828f52ade7bb0e69209fea59062e571d36465a4fc8d11d28f47073f91d7f0",
+      "record_hash": "4e0291e7e01df0d998164510d211613fa31e96cbb7ca63e74ff4ba8be797393b"
+    },
+    {
+      "stable_lexeme_key": "justement|ADV",
+      "runtime_lexeme_id": 7253,
+      "lemma": "justement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 54.7146,
+        "lexique_frequency": 42.117,
+        "contextual_diversity": 15.58481
+      },
+      "current_proposed_sense": {
+        "entry_id": "justement__adv__1",
+        "sense_id": "__ws_1_justement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Avec justice.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "justement__adv__1",
+          "sense_id": "__ws_1_justement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Avec justice.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "justement__adv__1",
+          "sense_id": "__ws_2_justement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Dans la juste proportion, ni plus ni moins qu’il ne faut, précisément.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "justement__adv__1",
+          "sense_id": "__ws_3_justement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie qu'on vient de parler de telle ou telle chose/personne.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "4feed1fa8245b130a83302d19b8d71243b0d5fb1f180c683263ae6596603431a",
+      "record_hash": "d12bd0916c94ba215fdde42f63e4a2802b3d74f4411124156401d3621af163cd"
+    },
+    {
+      "stable_lexeme_key": "évidemment|ADV",
+      "runtime_lexeme_id": 14216,
+      "lemma": "évidemment",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 53.763,
+        "lexique_frequency": 44.728,
+        "contextual_diversity": 15.90937
+      },
+      "current_proposed_sense": {
+        "entry_id": "évidemment__adv__1",
+        "sense_id": "__ws_1_évidemment__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "D’une manière évidente.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "évidemment__adv__1",
+          "sense_id": "__ws_1_évidemment__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière évidente.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "évidemment__adv__1",
+          "sense_id": "__ws_2_évidemment__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Il est certain que… ; indiscutablement. — Note : Dans cette acception, il se met au commencement de la phrase.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "505ce0f4e71d2fc505edd217b4466ffdd083f06f635b4504698ef8f09bd18d9c",
+      "record_hash": "29ab57b094918db7c249a9deaaf8e44c5cac17f90526cbdb7704b72cac599ee0"
+    },
+    {
+      "stable_lexeme_key": "certainement|ADV",
+      "runtime_lexeme_id": 2148,
+      "lemma": "certainement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 52.5258,
+        "lexique_frequency": 58.718,
+        "contextual_diversity": 20.22658
+      },
+      "current_proposed_sense": {
+        "entry_id": "certainement__adv__1",
+        "sense_id": "__ws_1_certainement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "D'une manière certaine.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "certainement__adv__1",
+          "sense_id": "__ws_1_certainement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "D'une manière certaine.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "certainement__adv__1",
+          "sense_id": "__ws_2_certainement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Sans doute ; en vérité ; assurément.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "certainement__adv__1",
+          "sense_id": "__ws_3_certainement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Très probablement mais exprimant une certaine incertitude.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "certainement__adv__1",
+          "sense_id": "__ws_4_certainement__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Ironique) Utilisé en ce sens pour marquer une certaine circonspection de manière atténuée, et qui signifie en définitive l’inverse de ce qu’il devrait signifier.",
+          "leading_labels": [
+            "ironique"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "61e382fdcae46c96cf17d5278bccca6c6e82be9c5782eb24720d39c508a79bbc",
+      "record_hash": "907bad08f2b4b94cc5d7880005d548023cc14da54fb3a921623b189fb9fa1dd1"
+    },
+    {
+      "stable_lexeme_key": "au-dessus|ADV",
+      "runtime_lexeme_id": 1007,
+      "lemma": "au-dessus",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 50.1174,
+        "lexique_frequency": 38.978,
+        "contextual_diversity": 14.20545
+      },
+      "current_proposed_sense": {
+        "entry_id": "au-dessus__adv__1",
+        "sense_id": "__ws_1_au-dessus__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Plus haut que.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "au-dessus__adv__1",
+          "sense_id": "__ws_1_au-dessus__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Plus haut que.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "au-dessus__adv__1",
+          "sense_id": "__ws_2_au-dessus__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) En amont.",
+          "leading_labels": [
+            "spécialement"
+          ]
+        },
+        {
+          "entry_id": "au-dessus__adv__1",
+          "sense_id": "__ws_3_au-dessus__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Toute espèce de supériorité, de prééminence, ou d’excès.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "au-dessus__adv__1",
+          "sense_id": "__ws_4_au-dessus__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Se dit, dans le sens qui précède, pour marquer une supériorité de nombre, de durée, de valeur, etc.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "au-dessus__adv__1",
+          "sense_id": "__ws_5_au-dessus__adv__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Ce dont une personne se dégage, s’affranchit.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "au-dessus__adv__1",
+          "sense_id": "__ws_6_au-dessus__adv__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Ce qu’une personne dédaigne ou brave, ce dont elle ne se met point en peine.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "au-dessus__adv__1",
+          "sense_id": "__ws_7_au-dessus__adv__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Tant au sens physique qu’au sens moral, ce qui est nuisible en soi, mais dont l’effet ou l’influence ne saurait atteindre la personne ou la chose dont on parle.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "au-dessus__adv__1",
+          "sense_id": "__ws_8_au-dessus__adv__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Théâtre) Position d'un comédien qui se trouve placé sur la scène derrière un meuble ou un objet vis-à-vis du public.",
+          "leading_labels": [
+            "théâtre"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "acc2e03fe6bed5b5da570eca7366262059ae63e115fa79848a931bf4a6608971",
+      "record_hash": "77b8698a60ba9f936c387b1822171383b2f119d11e2175d4d1c148119ac4a66e"
+    },
+    {
+      "stable_lexeme_key": "directement|ADV",
+      "runtime_lexeme_id": 3752,
+      "lemma": "directement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 43.0117,
+        "lexique_frequency": 38.886,
+        "contextual_diversity": 15.33987
+      },
+      "current_proposed_sense": {
+        "entry_id": "directement__adv__1",
+        "sense_id": "__ws_1_directement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "En ligne droite, tout droit.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "directement__adv__1",
+          "sense_id": "__ws_1_directement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "En ligne droite, tout droit.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "directement__adv__1",
+          "sense_id": "__ws_2_directement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) …",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "directement__adv__1",
+          "sense_id": "__ws_3_directement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière directe, sans détour.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "directement__adv__1",
+          "sense_id": "__ws_4_directement__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Sans intermédiaire, sans entremise.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "46bce0dd71583d0c231ed57c31b1995754cb367bb0e1b2aeda9ee8bc8e60575e",
+      "record_hash": "3b52c3a8e51f047f3e06ca65d4d76946e1ad21d2103f7f578ab50bf00caac1e0"
+    },
+    {
+      "stable_lexeme_key": "bas|ADV",
+      "runtime_lexeme_id": 1297,
+      "lemma": "bas",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 41.5414,
+        "lexique_frequency": 21.797,
+        "contextual_diversity": 42.4556
+      },
+      "current_proposed_sense": {
+        "entry_id": "bas__adv__1",
+        "sense_id": "__ws_1_bas__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "S’emploie avec les mêmes sens que l’adjectif, au propre et au figuré.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "bas__adv__1",
+          "sense_id": "__ws_1_bas__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "S’emploie avec les mêmes sens que l’adjectif, au propre et au figuré.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "bas__adv__1",
+          "sense_id": "__ws_2_bas__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Sans élever la voix.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "bas__adv__1",
+          "sense_id": "__ws_3_bas__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Dans un ton grave.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "85c860c33262f7a4116f4d175e0a552c3b6124c97b113057141d4c0c40380b96",
+      "record_hash": "4d75fed338f8748c13c3322ce07154e1d6f7e250411889a4ba4820061288f876"
+    },
+    {
+      "stable_lexeme_key": "doucement|ADV",
+      "runtime_lexeme_id": 3925,
+      "lemma": "doucement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 38.234,
+        "lexique_frequency": 83.699,
+        "contextual_diversity": 24.80404
+      },
+      "current_proposed_sense": {
+        "entry_id": "doucement__adv__1",
+        "sense_id": "__ws_1_doucement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Didactique) D’une manière douce.",
+        "leading_labels": [
+          "didactique"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_1_doucement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Didactique) D’une manière douce.",
+          "leading_labels": [
+            "didactique"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_2_doucement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Avec ménagement, délicatement, sans violence, sans brutalité.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_3_doucement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Lentement.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_4_doucement__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Sans bruit, avec peu de bruit.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_5_doucement__adv__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) À voix basse.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_6_doucement__adv__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Sans éprouver d’agitation, avec calme.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_7_doucement__adv__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Avec humanité, avec bonté.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_8_doucement__adv__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Sans sévérité, sans aigreur.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_9_doucement__adv__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Sans emportement.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_10_doucement__adv__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Agréablement.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "doucement__adv__1",
+          "sense_id": "__ws_11_doucement__adv__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Médiocrement, faiblement.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "64db982d516e97475baab828cb192e248d2a8a084be059ffe703f6e691328c2c",
+      "record_hash": "6cb93c3dd3035d546f7c15d7f263ce4a656118845f2a302cf31640aa968fbf4a"
+    },
+    {
+      "stable_lexeme_key": "heureusement|ADV",
+      "runtime_lexeme_id": 6146,
+      "lemma": "heureusement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 36.721,
+        "lexique_frequency": 35.405,
+        "contextual_diversity": 14.43815
+      },
+      "current_proposed_sense": {
+        "entry_id": "heureusement__adv__1",
+        "sense_id": "__ws_1_heureusement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "D’une manière heureuse, qui donne lieu à du bonheur.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "heureusement__adv__1",
+          "sense_id": "__ws_1_heureusement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière heureuse, qui donne lieu à du bonheur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "heureusement__adv__1",
+          "sense_id": "__ws_2_heureusement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Avec succès.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "heureusement__adv__1",
+          "sense_id": "__ws_3_heureusement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Par bonheur. — Note : En ce sens il se met souvent en tête de la phrase.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "heureusement__adv__1",
+          "sense_id": "__ws_3.a_heureusement__adv__1",
+          "sense_number": "3.a",
+          "entry_rank": 1,
+          "definition_fr": "Dans ce sens, il est quelquefois suivi de « que », en sous-entendant quelque verbe d’un sens très général, comme « il arrive », « il est arrivé ».",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "heureusement__adv__1",
+          "sense_id": "__ws_4_heureusement__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Avantageusement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "heureusement__adv__1",
+          "sense_id": "__ws_5_heureusement__adv__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Littérature) et d’arts. D’une manière habile, originale.",
+          "leading_labels": [
+            "littérature"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "68f3341e3bb0fa618763f973e6bb0a357872292abf731e794eb7b92bac74c2eb",
+      "record_hash": "1f872c060a03b9a2e50113bf38579d753f358b37c85c2494a1a2dfdfd745ca34"
+    },
+    {
+      "stable_lexeme_key": "haut|ADV",
+      "runtime_lexeme_id": 6122,
+      "lemma": "haut",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 29.4962,
+        "lexique_frequency": 35.544,
+        "contextual_diversity": 38.0741
+      },
+      "current_proposed_sense": {
+        "entry_id": "haut__adv__1",
+        "sense_id": "__ws_1_haut__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Dans la partie supérieure, à la partie supérieure, en un point élevé.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "haut__adv__1",
+          "sense_id": "__ws_1_haut__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Dans la partie supérieure, à la partie supérieure, en un point élevé.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "haut__adv__1",
+          "sense_id": "__ws_2_haut__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "À haute voix, fort, d’un ton intelligible.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "haut__adv__1",
+          "sense_id": "__ws_3_haut__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Sans ménagement, arrogamment.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "haut__adv__1",
+          "sense_id": "__ws_4_haut__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Musique) Dans un ton élevé ou aigu.",
+          "leading_labels": [
+            "musique"
+          ]
+        },
+        {
+          "entry_id": "haut__adv__1",
+          "sense_id": "__ws_5_haut__adv__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "À un prix considérable, à un montant considérable.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "afb07d172746ec4794fba4cf2f47e74fa9d451e0bc95a178bde3ab826f48262e",
+      "record_hash": "54166ec335d8bbcd0532a0cb5f8c81e78941c66f53c64d47454217694134b45f"
+    },
+    {
+      "stable_lexeme_key": "devant|ADV",
+      "runtime_lexeme_id": 3663,
+      "lemma": "devant",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 17.8858,
+        "lexique_frequency": 53.079,
+        "contextual_diversity": 56.81568
+      },
+      "current_proposed_sense": {
+        "entry_id": "devant__adv__1",
+        "sense_id": "__ws_1_devant__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "En avant de. Dans la direction ou l’espace qui s’étend en face de quelqu’un, de quelque chose.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "devant__adv__1",
+          "sense_id": "__ws_1_devant__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "En avant de. Dans la direction ou l’espace qui s’étend en face de quelqu’un, de quelque chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "devant__adv__1",
+          "sense_id": "__ws_2_devant__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) En avant de.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "devant__adv__1",
+          "sense_id": "__ws_3_devant__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "En présence de.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "63b5aab6b9c54eaca6b1d10a71bf2c272439d57d92696b6c383bee0c76a0bf4c",
+      "record_hash": "a0751a3e6ff348d7c751539cc8bb789e9c463d7aef3e6b4e186a703a2e2e7fbd"
+    },
+    {
+      "stable_lexeme_key": "monsieur|NOM",
+      "runtime_lexeme_id": 8252,
+      "lemma": "monsieur",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 732.3359,
+        "lexique_frequency": 639.25,
+        "contextual_diversity": 52.70055
+      },
+      "current_proposed_sense": {
+        "entry_id": "monsieur__nom__1",
+        "sense_id": "__ws_1_monsieur__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Appellation permettant de s’adresser de façon polie à un homme (un client, un professeur, un passant, etc.).",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_1_monsieur__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Appellation permettant de s’adresser de façon polie à un homme (un client, un professeur, un passant, etc.).",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_2_monsieur__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Homme dont on ne connaît pas le nom (pour une femme, on peut dire : dame, madame)",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_3_monsieur__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Terme courtois pour un homme (pour une femme, on dit : dame) (pour une fille ou une femme non-mariée, certains emploient encore : demoiselle).",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_4_monsieur__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Le chef, le maître de maison, dans le langage des domestiques.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_5_monsieur__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Homme qui a les dehors d’un bourgeois, dont le langage et les manières annoncent quelque éducation.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_6_monsieur__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Personnage d’un rang important (→ voir grand monsieur et gros monsieur).",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_7_monsieur__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Ancien patois normand) Nom donné, par antiphrase, au cochon.",
+          "leading_labels": [
+            "ancien patois normand"
+          ]
+        },
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_8_monsieur__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Dans le Bas-Maine, nom donné autrefois au vin.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "monsieur__nom__1",
+          "sense_id": "__ws_9_monsieur__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Péjoratif) (Mépris ironique) Un homme quelconque.",
+          "leading_labels": [
+            "péjoratif",
+            "mépris ironique"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "966ae78a4ce7d83ee025c4731d66b41e37a3e10c3a75f714e33889c4303974ae",
+      "record_hash": "1fd42e7770fbea5dbd8f7c3ed8978faf361d5aa85f0ea73d57e1583fb0746241"
+    },
+    {
+      "stable_lexeme_key": "ville|NOM",
+      "runtime_lexeme_id": 13558,
+      "lemma": "ville",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 693.5832,
+        "lexique_frequency": 296.149,
+        "contextual_diversity": 49.84844
+      },
+      "current_proposed_sense": {
+        "entry_id": "ville__nom__1",
+        "sense_id": "__ws_1_ville__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Assemblage ordonné d'un nombre assez considérable de maisons disposées par rues, et limitées parfois par une enceinte.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "ville__nom__1",
+          "sense_id": "__ws_1_ville__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Assemblage ordonné d'un nombre assez considérable de maisons disposées par rues, et limitées parfois par une enceinte.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "ville__nom__1",
+          "sense_id": "__ws_2_ville__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Entité administrative ayant légalement obtenu le statut de ville, comme par exemple certaines communes de Belgique ou du Luxembourg.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "ville__nom__1",
+          "sense_id": "__ws_3_ville__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) L’administration de cette cité.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "ville__nom__1",
+          "sense_id": "__ws_4_ville__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Population d’une ville.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "ville__nom__1",
+          "sense_id": "__ws_5_ville__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Vie urbaine, mœurs qui y règnent, par opposition au séjour, à la vie et aux mœurs de la campagne.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "ville__nom__1",
+          "sense_id": "__ws_6_ville__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire) (Par ellipse) Corps des officiers municipaux.",
+          "leading_labels": [
+            "histoire",
+            "par ellipse"
+          ]
+        },
+        {
+          "entry_id": "ville__nom__1",
+          "sense_id": "__ws_7_ville__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Par ellipse) Médecine de ville.",
+          "leading_labels": [
+            "par ellipse"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "538ff41274eebef8638e56f37f17b46c9fe0f538bce1a7c071f042fbb3c2fe16",
+      "record_hash": "5603946fde44ea26843bdb978ce15223fdd6418feec7fccb626b63593fb54cb4"
+    },
+    {
+      "stable_lexeme_key": "porte|NOM",
+      "runtime_lexeme_id": 9871,
+      "lemma": "porte",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 595.8551,
+        "lexique_frequency": 307.38,
+        "contextual_diversity": 65.31231
+      },
+      "current_proposed_sense": {
+        "entry_id": "porte__nom__1",
+        "sense_id": "__ws_1_porte__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Menuiserie) Ouverture battante dans un mur qui permet d’entrer ou sortir d’un endroit.",
+        "leading_labels": [
+          "menuiserie"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_1_porte__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Menuiserie) Ouverture battante dans un mur qui permet d’entrer ou sortir d’un endroit.",
+          "leading_labels": [
+            "menuiserie"
+          ]
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_2_porte__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Élément qui ferme certains meubles ou certaines constructions servant à divers usages.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_3_porte__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Ouverture permettant le passage dans l’enceinte d'une ville ; accès à cette ville souvent fortifié et défendu dans une muraille.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_4_porte__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Tout passage d’un lieu ou d’une situation, à un autre.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_5_porte__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sport) Espace entre deux piquets lors d’un slalom.",
+          "leading_labels": [
+            "sport"
+          ]
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_6_porte__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Géographie) Gorge ; défilé.",
+          "leading_labels": [
+            "géographie"
+          ]
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_7_porte__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Télécommunications) Signal permettant de sélectionner les parties d’une onde au cours d’un ou plusieurs intervalles de temps.",
+          "leading_labels": [
+            "télécommunications"
+          ]
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_8_porte__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Sorte de petit anneau où l’on fait entrer le crochet d’une agrafe et qui sert à la retenir.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_9_porte__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Électronique) Unité de base d’une fonction logique combinatoire.",
+          "leading_labels": [
+            "électronique"
+          ]
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_10_porte__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Par analogie) Lieu d’entrée ou de sortie d’un territoire.",
+          "leading_labels": [
+            "sens figuré",
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "porte__nom__1",
+          "sense_id": "__ws_11_porte__nom__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Territoire proche ; se rapporte à un événement proche de chez soi.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "316aa0aef6754f3bcc2bab7df7eac510a8202c1fc98d2fc7d6d5c9c9378d068b",
+      "record_hash": "f1ae6ce7bf75912570c6e75e48d11e1b2fe46610acb7768817ea69d7da7c7110"
+    },
+    {
+      "stable_lexeme_key": "place|NOM",
+      "runtime_lexeme_id": 9650,
+      "lemma": "place",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 572.0227,
+        "lexique_frequency": 275.266,
+        "contextual_diversity": 61.3166
+      },
+      "current_proposed_sense": {
+        "entry_id": "place__nom__1",
+        "sense_id": "__ws_1_place__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Lieu, endroit, espace qu’occupe ou que peut occuper une personne, une chose.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_1_place__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Lieu, endroit, espace qu’occupe ou que peut occuper une personne, une chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_2_place__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Endroit, lieu, espace que doit occuper une personne ou une chose par rapport aux convenances, à la bienséance, etc.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_3_place__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Logement qu’on occupe.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_4_place__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Dignité, charge, emploi qu’une personne occupe.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_5_place__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Éducation) Rang qu’un écolier obtient dans un classement.",
+          "leading_labels": [
+            "éducation"
+          ]
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_6_place__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Espace, lieu public, découvert et environné de bâtiments.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_7_place__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Voie de circulation entourant éventuellement un tel espace. Note : ce mot apparaît fréquemment dans les adresses.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_8_place__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Endroit de stationnement public.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_9_place__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "Lieu où s’assemblent les agents de change, les banquiers, les négociants pour y traiter leurs affaires et y opérer leurs transactions. (Par extension) Bourse. (Par métonymie) Ensemble des négociants, des banquiers d’une ville.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_10_place__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "Ville de guerre ou de garnison.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "place__nom__1",
+          "sense_id": "__ws_11_place__nom__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(Sports hippiques) Classement dans une course donnant lieu à une allocation ou à rétribution des parieurs en simple placé, sans pour autant être gagnant.",
+          "leading_labels": [
+            "sports hippiques"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b97d084b1cbeaf9cbf4c70a8f6c593c16b6c704f3299700876448ceed32b1e25",
+      "record_hash": "a4880cc45fdcabde43f3a9d3ebd8ba756a97aacc5d1beb4b8cefe04cb75f961d"
+    },
+    {
+      "stable_lexeme_key": "famille|NOM",
+      "runtime_lexeme_id": 5098,
+      "lemma": "famille",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 566.9113,
+        "lexique_frequency": 442.437,
+        "contextual_diversity": 62.95775
+      },
+      "current_proposed_sense": {
+        "entry_id": "famille__nom__1",
+        "sense_id": "__ws_1_famille__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Nom collectif) (Strictement) Ensemble formé par les parents et leurs enfants.",
+        "leading_labels": [
+          "nom collectif",
+          "strictement"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_1_famille__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Nom collectif) (Strictement) Ensemble formé par les parents et leurs enfants.",
+          "leading_labels": [
+            "nom collectif",
+            "strictement"
+          ]
+        },
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_2_famille__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Nom collectif) (Désuet) Ensemble formé par les parents, les enfants et les serviteurs d’une maisonnée.",
+          "leading_labels": [
+            "nom collectif",
+            "désuet"
+          ]
+        },
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_3_famille__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Nom collectif) (Au sens large) Ensemble des personnes ayant des liens de parenté par le sang ou par alliance.",
+          "leading_labels": [
+            "nom collectif",
+            "au sens large"
+          ]
+        },
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_4_famille__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Nom collectif) (Spécialement) Suite des individus nés d’une même souche.",
+          "leading_labels": [
+            "nom collectif",
+            "spécialement"
+          ]
+        },
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_5_famille__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Toutes les personnes qui vivent sous la protection d’un chef.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_6_famille__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Groupe, catégorie de choses ou d’êtres partageant des caractères communs.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_7_famille__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Collection indexée d’élément(s) d’un ensemble E. Rigoureusement, application d’un ensemble d’indices I dans E, notée formellement (x_i)_{i\\in I}.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        },
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_8_famille__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Biologie, Taxinomie) Taxon qui regroupe les genres qui présentent le plus de similitudes entre eux.",
+          "leading_labels": [
+            "en particulier",
+            "biologie",
+            "taxinomie"
+          ]
+        },
+        {
+          "entry_id": "famille__nom__1",
+          "sense_id": "__ws_9_famille__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Typographie) Ensemble homogène de polices apparentées, de style identique, ne différant que par la largeur, la graisse ou le caractère romain ou italique (information à préciser ou à vérifier).",
+          "leading_labels": [
+            "typographie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "1d3ede4f0a06e397a9c176c64b3833e9f05963f945b4086bc4fbc1e4ce898e0d",
+      "record_hash": "84cb280e5b8cdd4c2b3a18236f3960ccc7ede0f98c0a22833d6073595fbc197a"
+    },
+    {
+      "stable_lexeme_key": "soir|NOM",
+      "runtime_lexeme_id": 12037,
+      "lemma": "soir",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 548.206,
+        "lexique_frequency": 559.304,
+        "contextual_diversity": 71.72076
+      },
+      "current_proposed_sense": {
+        "entry_id": "soir__nom__1",
+        "sense_id": "__ws_1_soir__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Déclin du jour, dernières heures de la journée.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "soir__nom__1",
+          "sense_id": "__ws_1_soir__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Déclin du jour, dernières heures de la journée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "soir__nom__1",
+          "sense_id": "__ws_2_soir__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Période qui s’écoule entre le coucher de soleil et à minuit.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b89b5b63b60a6234d7387dc7d7d07c1f6dacf6efd018d2534567148c138090ce",
+      "record_hash": "ebfca48b1498b2d9c3c47bb280bba5803207e6f6126414cd4ea1d00ac3533882"
+    },
+    {
+      "stable_lexeme_key": "nuit|NOM",
+      "runtime_lexeme_id": 8765,
+      "lemma": "nuit",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 538.5295,
+        "lexique_frequency": 524.057,
+        "contextual_diversity": 71.15279
+      },
+      "current_proposed_sense": {
+        "entry_id": "nuit__nom__1",
+        "sense_id": "__ws_1_nuit__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Période qui s’écoule entre le coucher de soleil et le lever du soleil.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "nuit__nom__1",
+          "sense_id": "__ws_1_nuit__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Période qui s’écoule entre le coucher de soleil et le lever du soleil.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nuit__nom__1",
+          "sense_id": "__ws_2_nuit__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Période quotidienne durant laquelle le soleil est sous notre horizon et qu'il fait noir.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nuit__nom__1",
+          "sense_id": "__ws_3_nuit__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Obscurité, ténèbres.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "nuit__nom__1",
+          "sense_id": "__ws_4_nuit__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Symbole de destruction, d’oubli, de mort, de néant.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "4f5758e97459ae4fa7ebf9abe42ae11e316435c4dda2d94c69753da2a2e4df08",
+      "record_hash": "46a0a8a67a53af5bf8a2b891d27edf68b0639c877fc432d36da32583191d6311"
+    },
+    {
+      "stable_lexeme_key": "moment|NOM",
+      "runtime_lexeme_id": 8216,
+      "lemma": "moment",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 525.7507,
+        "lexique_frequency": 520.392,
+        "contextual_diversity": 79.20698
+      },
+      "current_proposed_sense": {
+        "entry_id": "moment__nom__1",
+        "sense_id": "__ws_1_moment__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Point dans le temps.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "moment__nom__1",
+          "sense_id": "__ws_1_moment__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Point dans le temps.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "moment__nom__1",
+          "sense_id": "__ws_2_moment__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Une certaine durée, qui n’est pas considérée comme très longue, mais malgré tout plus longue qu’un instant.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "moment__nom__1",
+          "sense_id": "__ws_3_moment__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Mécanique) Produit d’une force par le bras du levier, suivant lequel elle agit.",
+          "leading_labels": [
+            "mécanique"
+          ]
+        },
+        {
+          "entry_id": "moment__nom__1",
+          "sense_id": "__ws_4_moment__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Espérance mathématique, si elle existe, de la variable aléatoire X^r, où r est un entier naturel, X étant une variable aléatoire.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "26624e13271334816a530c59acd892d1f4fe6a8b205b9f280efd4b7467b00e2d",
+      "record_hash": "afae7dbf17111f40a091c761fd096ea42fc498d2846d5962ac71e61176db96fd"
+    },
+    {
+      "stable_lexeme_key": "chambre|NOM",
+      "runtime_lexeme_id": 2173,
+      "lemma": "chambre",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 507.5821,
+        "lexique_frequency": 251.304,
+        "contextual_diversity": 45.15769
+      },
+      "current_proposed_sense": {
+        "entry_id": "chambre__nom__1",
+        "sense_id": "__ws_1_chambre__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Construction) Toute pièce habitable d’une maison et principalement une chambre à coucher.",
+        "leading_labels": [
+          "construction"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_1_chambre__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Construction) Toute pièce habitable d’une maison et principalement une chambre à coucher.",
+          "leading_labels": [
+            "construction"
+          ]
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_2_chambre__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Logement dans une auberge, un hôtel, un hospice, etc.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_3_chambre__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Absolument) (Histoire de France) La chambre du roi.",
+          "leading_labels": [
+            "absolument",
+            "histoire de france"
+          ]
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_4_chambre__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Politique) Assemblée législative.",
+          "leading_labels": [
+            "politique"
+          ]
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_5_chambre__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Sections de certains tribunaux.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_6_chambre__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Assemblée qui s’occupe d’intérêts spéciaux ou de ce qui est relatif à la discipline d’un corps.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_7_chambre__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Cavité accidentelle ou pratiquées à dessein.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_8_chambre__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Vide qui s’est fait à la fonte, dans un canon, dans une cloche, lorsque la matière n’a pas coulé également partout.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_9_chambre__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) Espace qui, dans une bouche à feu, est réservé au logement de la gargousse, ou, qui dans une arme à feu portative, reçoit la cartouche.",
+          "leading_labels": [
+            "militaire"
+          ]
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_10_chambre__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Télécommunications) Cavité souterraine, accessible au niveau du sol par une trappe. Les chambres forment un réseau relié par des fourreaux. La chambre permet d’accéder aux câbles passant dans les fourreaux.",
+          "leading_labels": [
+            "télécommunications"
+          ]
+        },
+        {
+          "entry_id": "chambre__nom__1",
+          "sense_id": "__ws_11_chambre__nom__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "Endroit destiné à recevoir la charge de la mine, fourneau.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "3ed9365cfc6c6c87d832d84086dcd9e69fe1fbfc4f96177b8e9f0628de88f017",
+      "record_hash": "213565817c40a830d0bcebec747faede206ee40aba2432d84741d350be186d61"
+    },
+    {
+      "stable_lexeme_key": "côté|NOM",
+      "runtime_lexeme_id": 3535,
+      "lemma": "côté",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 486.882,
+        "lexique_frequency": 287.642,
+        "contextual_diversity": 59.08145
+      },
+      "current_proposed_sense": {
+        "entry_id": "côté__nom__1",
+        "sense_id": "__ws_1_côté__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Région des côtes, depuis l’aisselle jusqu’à la hanche.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_1_côté__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Région des côtes, depuis l’aisselle jusqu’à la hanche.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_2_côté__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Toute la partie droite ou gauche de l’homme ou de l’animal.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_3_côté__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) Les deux parties opposées d’un objet, ou son espace extérieur, à droite et à gauche.",
+          "leading_labels": [
+            "au pluriel"
+          ]
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_4_côté__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Flancs d’un vaisseau, d’un navire, à partir du plat-bord.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_5_côté__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) Les divers pans, des différentes faces que présente un objet.",
+          "leading_labels": [
+            "au pluriel"
+          ]
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_6_côté__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Face d'un objet plat.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_7_côté__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Partie de l'aspect d'une personne, d'une œuvre, d'une chose.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_8_côté__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Endroit, partie quelconque d’une chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_9_côté__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "Parti.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "côté__nom__1",
+          "sense_id": "__ws_10_côté__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "Ligne de parenté.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "5ff2d0bfc2e37abc3099d7c9615bc2003d7620fe8a0c725c0d4bb7ea3ecd7908",
+      "record_hash": "37b6c5dff4f6dc41279b2aa3bd07b296d93f27c389b5c1f882c3defc9fb52534"
+    },
+    {
+      "stable_lexeme_key": "nom|NOM",
+      "runtime_lexeme_id": 8674,
+      "lemma": "nom",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 482.213,
+        "lexique_frequency": 550.136,
+        "contextual_diversity": 74.43203
+      },
+      "current_proposed_sense": {
+        "entry_id": "nom__nom__1",
+        "sense_id": "__ws_1_nom__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Mot ou groupe de mots permettant de nommer un être ou une chose. Un nom peut être un nom commun, une locution nominale ou un nom propre.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_1_nom__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Mot ou groupe de mots permettant de nommer un être ou une chose. Un nom peut être un nom commun, une locution nominale ou un nom propre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_2_nom__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par ellipse) Nom de famille, partie du nom d’une personne transmis de parents à enfant.",
+          "leading_labels": [
+            "par ellipse"
+          ]
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_3_nom__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Pseudonyme.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_4_nom__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Grammaire) Mot désignant un être, une chose ou un concept qui peut se combiner avec un adjectif et un déterminant. Souvent y compris les noms propres.",
+          "leading_labels": [
+            "grammaire"
+          ]
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_5_nom__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Grammaire) (Désuet) Nom ou adjectif dans les langues européennes, qui s’appelait respectivement un nom substantif et un nom adjectif.",
+          "leading_labels": [
+            "grammaire",
+            "désuet"
+          ]
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_6_nom__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Naissance illustre, noblesse, maison noble.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_7_nom__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Qualification, épithète.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_8_nom__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Qualité, titre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_9_nom__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "Réputation, célébrité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_10_nom__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "Mot par opposition à la chose, apparence par opposition à la réalité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nom__nom__1",
+          "sense_id": "__ws_11_nom__nom__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "Suivi de « de » et de certaines expressions, est employé trivialement comme juron.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "237589a561ce24188f3b2775a26db42801fb8475f912d80effa6a0e950b7f117",
+      "record_hash": "39f6a1a32b5020c919a3a3ed24b0dbcc2ba7c79bca256f748da62afd11327d44"
+    },
+    {
+      "stable_lexeme_key": "voiture|NOM",
+      "runtime_lexeme_id": 13647,
+      "lemma": "voiture",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 456.4525,
+        "lexique_frequency": 422.921,
+        "contextual_diversity": 53.38028
+      },
+      "current_proposed_sense": {
+        "entry_id": "voiture__nom__1",
+        "sense_id": "__ws_1_voiture__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Véhicule consistant en une caisse montée sur des roues.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "voiture__nom__1",
+          "sense_id": "__ws_1_voiture__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Véhicule consistant en une caisse montée sur des roues.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "voiture__nom__1",
+          "sense_id": "__ws_2_voiture__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Automobile.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "voiture__nom__1",
+          "sense_id": "__ws_3_voiture__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Chemin de fer) Élément d’un train destiné au transport de passagers, par opposition au wagon qui est utilisé pour la marchandise.",
+          "leading_labels": [
+            "chemin de fer"
+          ]
+        },
+        {
+          "entry_id": "voiture__nom__1",
+          "sense_id": "__ws_4_voiture__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Fardeau.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "voiture__nom__1",
+          "sense_id": "__ws_5_voiture__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Mode de transport.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "voiture__nom__1",
+          "sense_id": "__ws_6_voiture__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) (Par métonymie) Quantité que représente le contenu d’une voiture.",
+          "leading_labels": [
+            "vieilli",
+            "par métonymie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "6e3977c14fb7a475093ea669717113f4cc4868797d72130a520e26af2df2e61d",
+      "record_hash": "745d68a20fb5fe1c1c59d049451223875ddca0c481230a7b8e0b7a5e8881f550"
+    },
+    {
+      "stable_lexeme_key": "matin|NOM",
+      "runtime_lexeme_id": 7935,
+      "lemma": "matin",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 451.2888,
+        "lexique_frequency": 253.443,
+        "contextual_diversity": 54.76271
+      },
+      "current_proposed_sense": {
+        "entry_id": "matin__nom__1",
+        "sense_id": "__ws_1_matin__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Les premières heures du jour.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "matin__nom__1",
+          "sense_id": "__ws_1_matin__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Les premières heures du jour.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "matin__nom__1",
+          "sense_id": "__ws_2_matin__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Tout le temps qui s’écoule depuis le moment où le soleil se lève jusqu’à midi ; matinée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "matin__nom__1",
+          "sense_id": "__ws_3_matin__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) En parlant des heures qui s’écoulent depuis minuit jusqu’à midi.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "matin__nom__1",
+          "sense_id": "__ws_4_matin__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Poétique) Commencement, début.",
+          "leading_labels": [
+            "poétique"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "843bf1cb7095e3791b22efd88f151ee39d3f4e1e00396d102e1d74e87d5156b9",
+      "record_hash": "5fb4c938ae7d6245abec82accd52d05e6d1f21c085aaed135fbcb1a8c4299bf5"
+    },
+    {
+      "stable_lexeme_key": "question|NOM",
+      "runtime_lexeme_id": 10563,
+      "lemma": "question",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 450.3313,
+        "lexique_frequency": 436.19,
+        "contextual_diversity": 64.54225
+      },
+      "current_proposed_sense": {
+        "entry_id": "question__nom__1",
+        "sense_id": "__ws_1_question__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Interrogation, demande que l’on fait pour s’informer de quelque chose.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "question__nom__1",
+          "sense_id": "__ws_1_question__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Interrogation, demande que l’on fait pour s’informer de quelque chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "question__nom__1",
+          "sense_id": "__ws_2_question__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Grammaire) Type de phrase pour demander une information, généralement avec un syntagme ou une particule interrogative, ou avec l’ordre des mots spécial. → voir phrase interrogative.",
+          "leading_labels": [
+            "grammaire"
+          ]
+        },
+        {
+          "entry_id": "question__nom__1",
+          "sense_id": "__ws_3_question__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Dans la narration littéraire) Phrase dont le but est d’inviter un auditeur, un lecteur à donner une explication, un renseignement, ou tout cas appelant une réponse.",
+          "leading_labels": [
+            "en particulier",
+            "dans la narration littéraire"
+          ]
+        },
+        {
+          "entry_id": "question__nom__1",
+          "sense_id": "__ws_4_question__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Interrogations que l’on adresse à un élève dans un examen.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "question__nom__1",
+          "sense_id": "__ws_5_question__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Proposition qu’il y a lieu d’examiner, de discuter, difficulté dont on cherche la solution.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "question__nom__1",
+          "sense_id": "__ws_6_question__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Politique) Affaire considérable soumise à l’examen du gouvernement, d’une assemblée, du public.",
+          "leading_labels": [
+            "politique"
+          ]
+        },
+        {
+          "entry_id": "question__nom__1",
+          "sense_id": "__ws_7_question__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire) Torture qui était infligée aux accusés, en matière criminelle, pour leur arracher des aveux.",
+          "leading_labels": [
+            "histoire"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "9fa022deea17bb08ea5a60b2b7213e40e153ef5c6a3896b5eabd3b4f62eca2d9",
+      "record_hash": "cd26741935fe266f6d1b37c42e6a93a62ec7448836a2b16491cec5e9c34a4cac"
+    },
+    {
+      "stable_lexeme_key": "exemple|NOM",
+      "runtime_lexeme_id": 4932,
+      "lemma": "exemple",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 417.8872,
+        "lexique_frequency": 68.614,
+        "contextual_diversity": 22.68218
+      },
+      "current_proposed_sense": {
+        "entry_id": "exemple__nom__1",
+        "sense_id": "__ws_1_exemple__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Ce qui peut servir de modèle, ce qui peut être imité.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "exemple__nom__1",
+          "sense_id": "__ws_1_exemple__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Ce qui peut servir de modèle, ce qui peut être imité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "exemple__nom__1",
+          "sense_id": "__ws_2_exemple__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Châtiment, peine infligée à quelqu’un et qui est un avertissement pour les autres.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "exemple__nom__1",
+          "sense_id": "__ws_3_exemple__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Chose qui est pareille à celle dont il s’agit et qui sert pour l’autoriser, pour la confirmer, ou seulement pour la faire bien connaître, pour en donner une idée plus exacte.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "exemple__nom__1",
+          "sense_id": "__ws_4_exemple__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Étude d’une situation sur laquelle s’appliquent des résultats plus généraux énoncés avant.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        },
+        {
+          "entry_id": "exemple__nom__1",
+          "sense_id": "__ws_5_exemple__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Calligraphie) Patron, modèle sur lequel l’écolier qui apprend à écrire forme ses caractères.",
+          "leading_labels": [
+            "calligraphie"
+          ]
+        },
+        {
+          "entry_id": "exemple__nom__1",
+          "sense_id": "__ws_6_exemple__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Par ellipse) Par exemple.",
+          "leading_labels": [
+            "par ellipse"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "7bf6ba6058112b30aa201e4d957cc309f6caaba186eec8afd0667fa1c85d76c5",
+      "record_hash": "bb6816533b567676b863a89da2f572497d44d6a3fece0053bea1ef7cff3162eb"
+    },
+    {
+      "stable_lexeme_key": "peur|NOM",
+      "runtime_lexeme_id": 9512,
+      "lemma": "peur",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 367.2602,
+        "lexique_frequency": 436.759,
+        "contextual_diversity": 70.15769
+      },
+      "current_proposed_sense": {
+        "entry_id": "peur__nom__1",
+        "sense_id": "__ws_1_peur__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Crainte, frayeur, émotion pénible produite par l’idée ou la vue d’un danger.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "peur__nom__1",
+          "sense_id": "__ws_1_peur__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Crainte, frayeur, émotion pénible produite par l’idée ou la vue d’un danger.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "peur__nom__1",
+          "sense_id": "__ws_2_peur__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Crainte faible ; appréhension.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "2fe47c29c351e52fea4e75f9909b046e17b98a983e9baf4f47dd888a4bccc380",
+      "record_hash": "022a336016f32c7303a0e82b640eae9c247c87bce4206c2213decc51262d5eff"
+    },
+    {
+      "stable_lexeme_key": "école|NOM",
+      "runtime_lexeme_id": 13838,
+      "lemma": "école",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 367.1976,
+        "lexique_frequency": 217.946,
+        "contextual_diversity": 36.62125
+      },
+      "current_proposed_sense": {
+        "entry_id": "école__nom__1",
+        "sense_id": "__ws_1_école__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Lieu dédié à l’apprentissage.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "école__nom__1",
+          "sense_id": "__ws_1_école__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Lieu dédié à l’apprentissage.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "école__nom__1",
+          "sense_id": "__ws_2_école__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Établissement où l’on enseigne les savoirs fondamentaux comme la lecture et l’écriture et qui est aussi désigné sous le nom d’école primaire.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "école__nom__1",
+          "sense_id": "__ws_3_école__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Tous les élèves d’un tel établissement, ou l’ensemble de ses professeurs et de ses employés.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "école__nom__1",
+          "sense_id": "__ws_4_école__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Ce qui est propre à former, à donner de l’expérience en quelque chose, à instruire.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "école__nom__1",
+          "sense_id": "__ws_5_école__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire) Enseignement de la théologie et de la philosophie, suivant la méthode et les principes reçus dans la plupart des anciennes universités.",
+          "leading_labels": [
+            "histoire"
+          ]
+        },
+        {
+          "entry_id": "école__nom__1",
+          "sense_id": "__ws_6_école__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Mouvement ou doctrine d’un philosophe ou d’un savant.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "école__nom__1",
+          "sense_id": "__ws_7_école__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Art, Littérature) Classe d’artistes qui travaillent ou qui ont travaillé selon les principes, à l’imitation d’un même maître, ou suivant les habitudes propres à certaines époques de l’art, à certains lieux.",
+          "leading_labels": [
+            "art",
+            "littérature"
+          ]
+        },
+        {
+          "entry_id": "école__nom__1",
+          "sense_id": "__ws_8_école__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Terme emprunté au jeu de trictrac : Faire une école, oublier de marquer les points que l’on gagne, ou en marquer mal à propos. Souvent employé au sens figuré : commettre une faute par inexpérience, ignorance ou étourderie.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "37a0d9d9cd8a555e3633b9f347603978cf102e7050ee43a0c847290944cc62fb",
+      "record_hash": "9cdca3c1c338e2abaf22a0f2a990e40ddbc3ad9ddbe19e0719cfc2164608302b"
+    },
+    {
+      "stable_lexeme_key": "effet|NOM",
+      "runtime_lexeme_id": 4495,
+      "lemma": "effet",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 366.0571,
+        "lexique_frequency": 129.756,
+        "contextual_diversity": 33.26852
+      },
+      "current_proposed_sense": {
+        "entry_id": "effet__nom__1",
+        "sense_id": "__ws_1_effet__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Ce qui est produit par quelque cause.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_1_effet__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Ce qui est produit par quelque cause.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_2_effet__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Billard, Sport) Sorte de rotation imprimée à l’objet que l’on lance (boule de pétanque, boule de quilles, …) ou que l’on frappe (ballon de football, balle de tennis, bille de billard, …) afin de modifier son mouvement ultérieur.",
+          "leading_labels": [
+            "billard",
+            "sport"
+          ]
+        },
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_3_effet__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Mécanique) Effort transmis par un mécanisme.",
+          "leading_labels": [
+            "mécanique"
+          ]
+        },
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_4_effet__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Art) (Littéraire) Ce qui frappe, de ce qui attire ou captive les regards ou l’attention.",
+          "leading_labels": [
+            "art",
+            "littéraire"
+          ]
+        },
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_5_effet__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Ce qui est destiné ou ce qui vise à produire de l’effet.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_6_effet__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Exécution d’une chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_7_effet__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Commerce) Billet à ordre, lettre de change, papier de crédit.",
+          "leading_labels": [
+            "commerce"
+          ]
+        },
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_8_effet__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) (Spécialement) Les biens, les objets meubles, ou censés tels d’après la loi.",
+          "leading_labels": [
+            "au pluriel",
+            "spécialement"
+          ]
+        },
+        {
+          "entry_id": "effet__nom__1",
+          "sense_id": "__ws_9_effet__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) (Spécialement) Objets meubles qui sont à l’usage d’une personne, il s’agit presque exclusivement aujourd’hui du linge et des vêtements.",
+          "leading_labels": [
+            "au pluriel",
+            "spécialement"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "60501dfe771fa14c8102a4bc6d8c08f8675cb2ed2e0ccffcec8dae4a7f80b750",
+      "record_hash": "c9e112d690b076b2a607da1b6a2b5b67600e2a005afb9d36dbfbb5d2cc5dee1c"
+    },
+    {
+      "stable_lexeme_key": "siècle|NOM",
+      "runtime_lexeme_id": 11998,
+      "lemma": "siècle",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 361.7502,
+        "lexique_frequency": 39.551,
+        "contextual_diversity": 8.70484
+      },
+      "current_proposed_sense": {
+        "entry_id": "siècle__nom__1",
+        "sense_id": "__ws_1_siècle__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Période de cent ans.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "siècle__nom__1",
+          "sense_id": "__ws_1_siècle__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Période de cent ans.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "siècle__nom__1",
+          "sense_id": "__ws_2_siècle__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Durée de cent années dans la logique du calendrier julien puis grégorien. Le ier siècle comprend les années 1–100, et le iie siècle, 101–200, etc. Nous sommes maintenant dans le xxie siècle des années 2001–2100. Note : Quand on écrit un ordinal de siècle en chiffres romains, on le met en petites capitales.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "siècle__nom__1",
+          "sense_id": "__ws_3_siècle__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Période plus ou moins longue.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "siècle__nom__1",
+          "sense_id": "__ws_4_siècle__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Temps rendu célèbre par le règne de quelque grand prince, ou par les actions, les ouvrages de quelque grand homme.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "siècle__nom__1",
+          "sense_id": "__ws_5_siècle__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Temps qui paraît long pour quelqu’un.",
+          "leading_labels": [
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "siècle__nom__1",
+          "sense_id": "__ws_6_siècle__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) (Religion) Vie civile et profane, opposée à l’état d’une vie chrétienne ou religieuse.",
+          "leading_labels": [
+            "vieilli",
+            "religion"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "15a314e71110d2aaff84de805e2cdacac4e69f089eb44f820cc63dddb3cdc8fb",
+      "record_hash": "a74ccd6f7a01af4ab8ee2cc9e19db986735d301018c1be848d4bc7dc117fbbc8"
+    },
+    {
+      "stable_lexeme_key": "langue|NOM",
+      "runtime_lexeme_id": 7335,
+      "lemma": "langue",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 349.1186,
+        "lexique_frequency": 51.763,
+        "contextual_diversity": 14.76424
+      },
+      "current_proposed_sense": {
+        "entry_id": "langue__nom__1",
+        "sense_id": "__ws_2_langue__nom__1",
+        "sense_number": "2",
+        "entry_rank": 1,
+        "definition_fr": "(Cuisine) Ce même organe d'un animal cuisiné pour l'alimentation humaine.",
+        "leading_labels": [
+          "cuisine"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_1_langue__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Anatomie) Organe musculaire charnu et mobile, situé à l’intérieur de la bouche, et permettant de percevoir le sens du goût et d’articuler certains sons.",
+          "leading_labels": [
+            "anatomie"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_2_langue__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Cuisine) Ce même organe d'un animal cuisiné pour l'alimentation humaine.",
+          "leading_labels": [
+            "cuisine"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_3_langue__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Chose qui a une forme longue, étroite et peu épaisse.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_4_langue__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Linguistique) Système d’expression orale, gestuelle ou écrite utilisé par un groupe de personnes (communauté linguistique) pour communiquer.",
+          "leading_labels": [
+            "linguistique"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_5_langue__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "La parole, le bagou, la tchatche.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_6_langue__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Langage (pas forcément parlé).",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_7_langue__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Vocabulaire ou syntaxe propres à tel ou tel écrivain ou telle ou telle personne.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_8_langue__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Canada) (Ichtyologie) Synonyme de plie cynoglosse (poisson).",
+          "leading_labels": [
+            "canada",
+            "ichtyologie"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_9_langue__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Glaciologie) Bande de glace descendant d’un glacier.",
+          "leading_labels": [
+            "glaciologie"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_10_langue__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Cartographie, Toponymie) Langue dans laquelle est réputée rédigée une carte, normalement mise en évidence par le titre et la légende.",
+          "leading_labels": [
+            "cartographie",
+            "toponymie"
+          ]
+        },
+        {
+          "entry_id": "langue__nom__1",
+          "sense_id": "__ws_11_langue__nom__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(Miroiterie) Longue fêlure sur une vitre ou un miroir, une fêlure courte se nomme une ammorce.",
+          "leading_labels": [
+            "miroiterie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "6e1a71cebded1f1f1edb82546a59473e1c407f9ee9da07b5c7acfe8d48969609",
+      "record_hash": "97823629246cce21c7012810ad93962f816485cd0be54ca138cfc713727e5ccb"
+    },
+    {
+      "stable_lexeme_key": "salle|NOM",
+      "runtime_lexeme_id": 11671,
+      "lemma": "salle",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 334.2111,
+        "lexique_frequency": 137.706,
+        "contextual_diversity": 33.93601
+      },
+      "current_proposed_sense": {
+        "entry_id": "salle__nom__1",
+        "sense_id": "__ws_1_salle__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Génériquement) Pièce d’une habitation ouverte aux visiteurs.",
+        "leading_labels": [
+          "génériquement"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_1_salle__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Génériquement) Pièce d’une habitation ouverte aux visiteurs.",
+          "leading_labels": [
+            "génériquement"
+          ]
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_2_salle__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Spécifiquement) Pièce de cette habitation à usage particulier : → voir salle d’eau, salle à manger et …",
+          "leading_labels": [
+            "spécifiquement"
+          ]
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_3_salle__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Espace pouvant recevoir plusieurs personnes pour une activité particulière : → voir salle de réunion",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_4_salle__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Lieu de regroupement provisoire. → voir salle d’attente, salle des pas perdus et …",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_5_salle__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Espace organisé pour cette activité particulière. → voir salle de conférence, salle de cinéma, salle de bal et …",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_6_salle__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Espace regroupant une collection d’objets : → voir salle d’armes, salle de jeux, salle des gabarits et …",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_7_salle__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Espace naturel souterrain de grande dimension.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_8_salle__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Lieu couvert par une végétation d’arbres.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_9_salle__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Théâtre) Partie où sont installés les spectateurs, par opposition à la scène où se produisent les artistes.",
+          "leading_labels": [
+            "théâtre"
+          ]
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_10_salle__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Par métonymie) Public présent assistant à cette activité.",
+          "leading_labels": [
+            "par métonymie"
+          ]
+        },
+        {
+          "entry_id": "salle__nom__1",
+          "sense_id": "__ws_11_salle__nom__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(Restauration) Partie où sont installés les clients d’un établissement de restauration, par opposition aux cuisines.",
+          "leading_labels": [
+            "restauration"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "992589a56c204ef108b1d34ebee471433496dcdae8c66547721698df92bee254",
+      "record_hash": "12743766a84df927dcc3fbc00ec1187cf7289c4a4c7dc90e0fae9762c3a50ff2"
+    },
+    {
+      "stable_lexeme_key": "semaine|NOM",
+      "runtime_lexeme_id": 11838,
+      "lemma": "semaine",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 320.4483,
+        "lexique_frequency": 333.437,
+        "contextual_diversity": 48.44305
+      },
+      "current_proposed_sense": {
+        "entry_id": "semaine__nom__1",
+        "sense_id": "__ws_1_semaine__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Séquence constituée des sept jours : lundi, mardi, mercredi, jeudi, vendredi, samedi et dimanche. Chaque date a un seul jour de la semaine dans cet ordre, mais le commencement de la semaine dépend de la tradition locale.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_1_semaine__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Séquence constituée des sept jours : lundi, mardi, mercredi, jeudi, vendredi, samedi et dimanche. Chaque date a un seul jour de la semaine dans cet ordre, mais le commencement de la semaine dépend de la tradition locale.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_2_semaine__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Une tranche de sept jours à partir de la date courante (semaine flottante).",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_3_semaine__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Période de cinq jours travaillés (du lundi au vendredi) au sein des sept jours de la semaine, par opposition à la fin de semaine (ou week-end).",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_4_semaine__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Temps légal de travail pendant une semaine.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_5_semaine__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Salaire obtenu au bout d’une semaine de travail.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_6_semaine__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Durée d’une campagne publicitaire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_7_semaine__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Littéraire) (Rare) Ensemble de sept objets de même nature.",
+          "leading_labels": [
+            "littéraire",
+            "rare"
+          ]
+        },
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_8_semaine__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Québec) Période de menstruation, règles.",
+          "leading_labels": [
+            "québec"
+          ]
+        },
+        {
+          "entry_id": "semaine__nom__1",
+          "sense_id": "__ws_9_semaine__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) Espèce de conciergerie assurée par une permanence à tour de rôle des sous-officiers et des hommes de troupe et qui dure une semaine.",
+          "leading_labels": [
+            "militaire"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "9532f4fd24e0c016265b16582e4fdc003c6d2f320af8ac372ddbd659a64fbf38",
+      "record_hash": "2f5c92f9f72274f936a99d975b20186c666b51b36f5d1b5246ade731223bcd57"
+    },
+    {
+      "stable_lexeme_key": "fête|NOM",
+      "runtime_lexeme_id": 5655,
+      "lemma": "fête",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 305.2002,
+        "lexique_frequency": 187.152,
+        "contextual_diversity": 32.62554
+      },
+      "current_proposed_sense": {
+        "entry_id": "fête__nom__1",
+        "sense_id": "__ws_2_fête__nom__1",
+        "sense_number": "2",
+        "entry_rank": 1,
+        "definition_fr": "(En particulier) (Christianisme) Célébration du service divin en commémoration de quelque mystère, ou en l’honneur de quelque saint.",
+        "leading_labels": [
+          "en particulier",
+          "christianisme"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "fête__nom__1",
+          "sense_id": "__ws_1_fête__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Religion) Jour consacré particulièrement à des actes de religion, cérémonies religieuses par lesquelles on célèbre ce jour.",
+          "leading_labels": [
+            "religion"
+          ]
+        },
+        {
+          "entry_id": "fête__nom__1",
+          "sense_id": "__ws_2_fête__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Christianisme) Célébration du service divin en commémoration de quelque mystère, ou en l’honneur de quelque saint.",
+          "leading_labels": [
+            "en particulier",
+            "christianisme"
+          ]
+        },
+        {
+          "entry_id": "fête__nom__1",
+          "sense_id": "__ws_3_fête__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Jour de la fête du saint dont une personne porte le prénom.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "fête__nom__1",
+          "sense_id": "__ws_4_fête__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Réjouissances publiques qui se font en certaines occasions extraordinaires. — Note d’usage : Dans ce sens, on l’emploie souvent au pluriel.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "fête__nom__1",
+          "sense_id": "__ws_5_fête__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Réjouissances qui se font dans des assemblées particulières.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "fête__nom__1",
+          "sense_id": "__ws_6_fête__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Suisse) (Canada) Anniversaire (fête annuelle du jour de la naissance d’un individu).",
+          "leading_labels": [
+            "suisse",
+            "canada"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "c2fa2e98e4df9e3850f92dce8d863aa8526dbac1aacbb4dc74a345e72f60cdd9",
+      "record_hash": "6b5a0e76af96c67653b9477bd551364692350a0356262ac194e073e9ae8f93d8"
+    },
+    {
+      "stable_lexeme_key": "problème|NOM",
+      "runtime_lexeme_id": 10065,
+      "lemma": "problème",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 301.4174,
+        "lexique_frequency": 580.383,
+        "contextual_diversity": 73.67422
+      },
+      "current_proposed_sense": {
+        "entry_id": "problème__nom__1",
+        "sense_id": "__ws_1_problème__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Question scientifique à résoudre.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "problème__nom__1",
+          "sense_id": "__ws_1_problème__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Question scientifique à résoudre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "problème__nom__1",
+          "sense_id": "__ws_2_problème__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Question difficile à résoudre.",
+          "leading_labels": [
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "problème__nom__1",
+          "sense_id": "__ws_3_problème__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Difficulté, ennui, souci.",
+          "leading_labels": [
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "problème__nom__1",
+          "sense_id": "__ws_4_problème__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Tout ce qui est difficile à concevoir, comme définir un caractère ou expliquer une conduite.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "problème__nom__1",
+          "sense_id": "__ws_5_problème__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Affaire embrouillée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "problème__nom__1",
+          "sense_id": "__ws_6_problème__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Jeu ou énigme publié dans la presse, grille de mots croisés, de mots fléchés, de sudoku, exercice d’échecs, de dames, de bridge.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "problème__nom__1",
+          "sense_id": "__ws_7_problème__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Composition artistique dans le domaine des échecs ou des dames.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "a57aa53ff34c626a45e843b51c885f66cccb857dfd0a01b0509b8ff14a5aa1ed",
+      "record_hash": "fc1e77c0afe6666a431fe96eefa4a6676f8af473f4806533ecfcdaef4526d455"
+    },
+    {
+      "stable_lexeme_key": "recherche|NOM",
+      "runtime_lexeme_id": 10784,
+      "lemma": "recherche",
+      "pos": "NOM",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 294.6085,
+        "lexique_frequency": 109.791,
+        "contextual_diversity": 26.64727
+      },
+      "current_proposed_sense": {
+        "entry_id": "recherche__nom__1",
+        "sense_id": "__ws_1_recherche__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Action de rechercher.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_1_recherche__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Action de rechercher.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_2_recherche__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Travaux de science et d’érudition. Publication de ces travaux.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_3_recherche__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Enquête.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_4_recherche__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Enquête judiciaire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_5_recherche__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Démarches que l’on fait en vue de se marier.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_6_recherche__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Soin, art, raffinement qu’on met dans certaines choses.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_7_recherche__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Couvreur) (Paveur) Réparation que l’on fait en remettant des tuiles, des ardoises ou des pavés aux endroits où il en manque.",
+          "leading_labels": [
+            "couvreur",
+            "paveur"
+          ]
+        },
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_8_recherche__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Foresterie) Opération par laquelle on s’assure des arbres qui manquent et qui doivent être remplacés.",
+          "leading_labels": [
+            "foresterie"
+          ]
+        },
+        {
+          "entry_id": "recherche__nom__1",
+          "sense_id": "__ws_9_recherche__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) Recherche de renseignements.",
+          "leading_labels": [
+            "militaire"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "3f707cf3858137becc9dc318bd49e5dc387019e21380224be76851e1e246a8a5",
+      "record_hash": "9cdc2a3a8355d1c2bdd39606dbbf3dd3f37d4052b1b2dc34d33b6b3d323a1b61"
+    }
+  ],
+  "artifact_hash": "8ba8b47a35fa59785c790a05f9d4dfe555a49bc701490de2bae4fd05ee858490"
+}

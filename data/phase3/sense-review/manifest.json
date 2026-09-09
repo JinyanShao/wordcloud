@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "scope": "Manifest for deterministic Phase 3 French sense-review packets; packet content is compact source-sense context only.",
+  "parent_phase3a_artifact_hash": "7789faf53c792615d2e0f3c0c0627d2fe48323ef98b712650b949f5b3c6b7f01",
+  "parent_phase3b_artifact_hash": "398f2536bbc7b40a972477f75c3b0f854c040d878ade62ab25b6f53f9ff4bf90",
+  "total_records": 500,
+  "tier_counts": {
+    "low": 34,
+    "medium": 318,
+    "high": 148
+  },
+  "packets": [
+    {
+      "filename": "low-sanity.json",
+      "record_count": 34,
+      "canonical_hash": "f2f800804f1488d21aaaf4318f538f9160087e7a9560633e2f1bd23189c88aff",
+      "first_stable_lexeme_key": "prêt|ADJ",
+      "last_stable_lexeme_key": "forcément|ADV"
+    },
+    {
+      "filename": "medium-01.json",
+      "record_count": 40,
+      "canonical_hash": "f44e1c60caa530dea4e1282b00f02fd822d81451ed0e4c15c41d19f4001b80b6",
+      "first_stable_lexeme_key": "nombreux|ADJ",
+      "last_stable_lexeme_key": "combien|ADV"
+    },
+    {
+      "filename": "medium-02.json",
+      "record_count": 40,
+      "canonical_hash": "8ba8b47a35fa59785c790a05f9d4dfe555a49bc701490de2bae4fd05ee858490",
+      "first_stable_lexeme_key": "cher|ADV",
+      "last_stable_lexeme_key": "recherche|NOM"
+    },
+    {
+      "filename": "medium-03.json",
+      "record_count": 40,
+      "canonical_hash": "8345ded98b62de89cae8e2eb1a10aeb2abcc9a6bd4b2eb8bb334cb058ba0ca7b",
+      "first_stable_lexeme_key": "besoin|NOM",
+      "last_stable_lexeme_key": "naître|VER"
+    },
+    {
+      "filename": "medium-04.json",
+      "record_count": 40,
+      "canonical_hash": "ff26d9f86a42530ebe7de262d1e0b812a4a2b51665794a0c6442a1443ed126c7",
+      "first_stable_lexeme_key": "écouter|VER",
+      "last_stable_lexeme_key": "élégant|ADJ"
+    },
+    {
+      "filename": "medium-05.json",
+      "record_count": 40,
+      "canonical_hash": "3d20003c4fed92539f902cc79585997845aa581d54a3f022668ad19a08de31ff",
+      "first_stable_lexeme_key": "lointain|ADJ",
+      "last_stable_lexeme_key": "naissance|NOM"
+    },
+    {
+      "filename": "medium-06.json",
+      "record_count": 40,
+      "canonical_hash": "1eef7999c24e3779e700ea894f0f8ba0dac99b7870980117310b128b424c3660",
+      "first_stable_lexeme_key": "escalier|NOM",
+      "last_stable_lexeme_key": "vérifier|VER"
+    },
+    {
+      "filename": "medium-07.json",
+      "record_count": 40,
+      "canonical_hash": "72bd59cbc57e4ce4f98cd6e6db5fc0daf08027161a4782801a6a15f2a241f9de",
+      "first_stable_lexeme_key": "évoluer|VER",
+      "last_stable_lexeme_key": "fort|ADV"
+    },
+    {
+      "filename": "medium-08.json",
+      "record_count": 38,
+      "canonical_hash": "1a506e7221a524bb28fda17ab248ae1b6b2d520c9b6dd6e045be52866acb7bb2",
+      "first_stable_lexeme_key": "parfaitement|ADV",
+      "last_stable_lexeme_key": "craindre|VER"
+    },
+    {
+      "filename": "high-01.json",
+      "record_count": 40,
+      "canonical_hash": "0942650b11099a5061abd17c680aff3e09a6ba37228a33e89aaf38629538b13b",
+      "first_stable_lexeme_key": "fort|ADJ",
+      "last_stable_lexeme_key": "jeu|NOM"
+    },
+    {
+      "filename": "high-02.json",
+      "record_count": 40,
+      "canonical_hash": "d168d3c3958b42e85b70cc84a14391551ad406ab6659f6f21c593fd06ddc87bb",
+      "first_stable_lexeme_key": "mort|NOM",
+      "last_stable_lexeme_key": "marcher|VER"
+    },
+    {
+      "filename": "high-03.json",
+      "record_count": 40,
+      "canonical_hash": "e7c45dd749c112380238f89863d4a5390f286db77914dddd02dae124248e34c2",
+      "first_stable_lexeme_key": "vif|ADJ",
+      "last_stable_lexeme_key": "dépendre|VER"
+    },
+    {
+      "filename": "high-04.json",
+      "record_count": 28,
+      "canonical_hash": "966920fd8691f4521d0739d361974e72b8c2d6b6696d2299572464fe79895d73",
+      "first_stable_lexeme_key": "déposer|VER",
+      "last_stable_lexeme_key": "étendre|VER"
+    }
+  ],
+  "artifact_hash": "04b9cd17c0166dd935473865b18b015a6d9df7a6cc206aecbb515d7b638e3f5c"
+}
