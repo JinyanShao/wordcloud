@@ -1,0 +1,3151 @@
+{
+  "schema_version": 1,
+  "scope": "Compact French learner-primary sense review facts only; no adjudication, Chinese candidates, examples, family relations, or learner prose.",
+  "parent_input_artifact_hash": "7789faf53c792615d2e0f3c0c0627d2fe48323ef98b712650b949f5b3c6b7f01",
+  "parent_risk_artifact_hash": "398f2536bbc7b40a972477f75c3b0f854c040d878ade62ab25b6f53f9ff4bf90",
+  "sense_selection_tier": "medium",
+  "items": [
+    {
+      "stable_lexeme_key": "écouter|VER",
+      "runtime_lexeme_id": 13862,
+      "lemma": "écouter",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 255.2969,
+        "lexique_frequency": 572.348,
+        "contextual_diversity": 57.99602
+      },
+      "current_proposed_sense": {
+        "entry_id": "écouter__verb__1",
+        "sense_id": "__ws_1_écouter__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Faire attention, prêter l’oreille pour entendre.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "écouter__verb__1",
+          "sense_id": "__ws_1_écouter__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Faire attention, prêter l’oreille pour entendre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "écouter__verb__1",
+          "sense_id": "__ws_2_écouter__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Prêter l’oreille, prêter attention avec plus ou moins de bienveillance.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "écouter__verb__1",
+          "sense_id": "__ws_3_écouter__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Donner quelque croyance, quelque consentement à ce qu’une personne propose ; prendre plaisir à l’entendre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "écouter__verb__1",
+          "sense_id": "__ws_4_écouter__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Obtempérer ou obéir à quelqu’un.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "écouter__verb__1",
+          "sense_id": "__ws_5_écouter__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Se laisser aller à un sentiment ou à une passion.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "écouter__verb__1",
+          "sense_id": "__ws_6_écouter__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Canada) Regarder (un film, la télévision).",
+          "leading_labels": [
+            "canada"
+          ]
+        },
+        {
+          "entry_id": "écouter__verb__1",
+          "sense_id": "__ws_7_écouter__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Parler lentement, avec apprêt en croyant bien dire.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        },
+        {
+          "entry_id": "écouter__verb__1",
+          "sense_id": "__ws_8_écouter__verb__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) S’inquiéter à tout propos de sa santé.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "8d906b48d42ae3f504d6d428732556e991e31190719c0e1804f2ea501bdb152d",
+      "record_hash": "b97e3fadea1cd5ac2220b449a95247e4148606e102d9bc35ab76b37e6f23449f"
+    },
+    {
+      "stable_lexeme_key": "boire|VER",
+      "runtime_lexeme_id": 1499,
+      "lemma": "boire",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 252.7749,
+        "lexique_frequency": 266.661,
+        "contextual_diversity": 33.83037
+      },
+      "current_proposed_sense": {
+        "entry_id": "boire__verb__1",
+        "sense_id": "__ws_1_boire__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Mettre un liquide dans sa bouche et l’avaler.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "boire__verb__1",
+          "sense_id": "__ws_1_boire__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Mettre un liquide dans sa bouche et l’avaler.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "boire__verb__1",
+          "sense_id": "__ws_2_boire__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Absorber avec avidité quelque chose d'immatériel.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "boire__verb__1",
+          "sense_id": "__ws_3_boire__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Franchir un obstacle avec facilité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "boire__verb__1",
+          "sense_id": "__ws_4_boire__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Boire de l’alcool avec excès, s’enivrer.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "boire__verb__1",
+          "sense_id": "__ws_5_boire__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Absorber du liquide.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "boire__verb__1",
+          "sense_id": "__ws_6_boire__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Par ellipse) Être sur le point de se noyer.",
+          "leading_labels": [
+            "par ellipse"
+          ]
+        },
+        {
+          "entry_id": "boire__verb__1",
+          "sense_id": "__ws_7_boire__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Porter un toast à.",
+          "leading_labels": [
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "boire__verb__1",
+          "sense_id": "__ws_8_boire__verb__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Pronominal) Être bu, pouvoir être bu.",
+          "leading_labels": [
+            "pronominal"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "56b8e31dfe345f36ac5fcacba8905ff947b1c43f2d0427919f337fa96aa71e42",
+      "record_hash": "83cbe702b5166acb7e876c01e2534621fe34b95a87e4f7559a17f0bce3a5f974"
+    },
+    {
+      "stable_lexeme_key": "exister|VER",
+      "runtime_lexeme_id": 4952,
+      "lemma": "exister",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 247.5077,
+        "lexique_frequency": 114.275,
+        "contextual_diversity": 23.17973
+      },
+      "current_proposed_sense": {
+        "entry_id": "exister__verb__1",
+        "sense_id": "__ws_1_exister__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Être actuellement, en acte ne pas être imaginé, en puissance, mais avoir une réalité.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "exister__verb__1",
+          "sense_id": "__ws_1_exister__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Être actuellement, en acte ne pas être imaginé, en puissance, mais avoir une réalité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "exister__verb__1",
+          "sense_id": "__ws_2_exister__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Être, se trouver ou avoir lieu actuellement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "exister__verb__1",
+          "sense_id": "__ws_3_exister__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Vivre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "exister__verb__1",
+          "sense_id": "__ws_4_exister__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Avec la négation : ne pas exister, au sens figuré) Ne pas avoir l’importance qu’on pense.",
+          "leading_labels": [
+            "sens figuré",
+            "avec la négation : ne pas exister",
+            "au sens figuré"
+          ]
+        },
+        {
+          "entry_id": "exister__verb__1",
+          "sense_id": "__ws_5_exister__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Philosophie) Être au monde sous une forme matérielle objective.",
+          "leading_labels": [
+            "philosophie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "e87434ede0c26d5a26dec3c33cacc323450611131cdea00802100049d23e9232",
+      "record_hash": "22f3f779dec430ff6b7b041637f78b3f850b3a45ab1fdda8021776b236f4ce65"
+    },
+    {
+      "stable_lexeme_key": "apprendre|VER",
+      "runtime_lexeme_id": 692,
+      "lemma": "apprendre",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 245.9543,
+        "lexique_frequency": 337.956,
+        "contextual_diversity": 38.63901
+      },
+      "current_proposed_sense": {
+        "entry_id": "apprendre__verb__1",
+        "sense_id": "__ws_1_apprendre__verb__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Acquérir une connaissance ou un savoir-faire.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "apprendre__verb__1",
+          "sense_id": "__ws_1_apprendre__verb__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Acquérir une connaissance ou un savoir-faire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "apprendre__verb__1",
+          "sense_id": "__ws_2_apprendre__verb__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Contracter une disposition ou une habitude.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "apprendre__verb__1",
+          "sense_id": "__ws_3_apprendre__verb__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Connaître par une information.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "apprendre__verb__1",
+          "sense_id": "__ws_4_apprendre__verb__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Retenir dans sa mémoire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "apprendre__verb__1",
+          "sense_id": "__ws_5_apprendre__verb__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Enseigner, donner quelque connaissance à une personne, faire savoir.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "apprendre__verb__1",
+          "sense_id": "__ws_6_apprendre__verb__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Éduquer par la menace.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "apprendre__verb__1",
+          "sense_id": "__ws_7_apprendre__verb__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Impersonnel) (Familier) Donner une leçon ; tenir lieu de punition.",
+          "leading_labels": [
+            "impersonnel",
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "apprendre__verb__1",
+          "sense_id": "__ws_8_apprendre__verb__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Développer ses connaissances.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "5727bcecc3b444412dadb4a61bd9b6a6b5d344a07814df3fbcedfa1ce122f40e",
+      "record_hash": "b328498aa14bb7f3c5a997a931efcbdc636fda72e728a26a42d900789e8477b7"
+    },
+    {
+      "stable_lexeme_key": "personnel|ADJ",
+      "runtime_lexeme_id": 9468,
+      "lemma": "personnel",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 82.4638,
+        "lexique_frequency": 71.18,
+        "contextual_diversity": 20.21127
+      },
+      "current_proposed_sense": {
+        "entry_id": "personnel__adj__1",
+        "sense_id": "__ws_1_personnel__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est propre et particulier à chaque personne.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "personnel__adj__1",
+          "sense_id": "__ws_1_personnel__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est propre et particulier à chaque personne.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "personnel__adj__1",
+          "sense_id": "__ws_2_personnel__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Droit) Relatif à une personne qui est redevable ou obligée en son propre nom, par opposition à réel.",
+          "leading_labels": [
+            "droit"
+          ]
+        },
+        {
+          "entry_id": "personnel__adj__1",
+          "sense_id": "__ws_3_personnel__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Finance) Individuel.",
+          "leading_labels": [
+            "finance"
+          ]
+        },
+        {
+          "entry_id": "personnel__adj__1",
+          "sense_id": "__ws_4_personnel__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Grammaire) Qui marque la personne grammaticale.",
+          "leading_labels": [
+            "grammaire"
+          ]
+        },
+        {
+          "entry_id": "personnel__adj__1",
+          "sense_id": "__ws_5_personnel__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Qui est égoïste, qui n’est occupé que de soi.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "59ec934d6a464a25e70711e1b3057c75a564fba5e22891d77b2830f0f0ff61db",
+      "record_hash": "d76844b8120b048c0e7cd07b7ef3683ed4876e37d0e68bbf86eacaa483ce652c"
+    },
+    {
+      "stable_lexeme_key": "immense|ADJ",
+      "runtime_lexeme_id": 6420,
+      "lemma": "immense",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 77.7246,
+        "lexique_frequency": 15.234,
+        "contextual_diversity": 5.3368
+      },
+      "current_proposed_sense": {
+        "entry_id": "immense__adj__1",
+        "sense_id": "__ws_1_immense__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est sans borne ou sans mesure ; dont l’étendue ou la grandeur sont infinies. — Note : En ce sens, il se dit proprement de Dieu.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "immense__adj__1",
+          "sense_id": "__ws_1_immense__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est sans borne ou sans mesure ; dont l’étendue ou la grandeur sont infinies. — Note : En ce sens, il se dit proprement de Dieu.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "immense__adj__1",
+          "sense_id": "__ws_2_immense__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui est d’une très grande étendue.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "immense__adj__1",
+          "sense_id": "__ws_3_immense__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui est très considérable en son genre.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "4a5e6c5acdf5cd4edeccd3f6873270097ce437e549c37815c20f1d2750ed6cec",
+      "record_hash": "88c7b2310276ef809189f2f05f28c3c017681d7d3f2dec60ed9b486ab9b26b5d"
+    },
+    {
+      "stable_lexeme_key": "lourd|ADJ",
+      "runtime_lexeme_id": 7562,
+      "lemma": "lourd",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 70.3614,
+        "lexique_frequency": 23.927,
+        "contextual_diversity": 9.11513
+      },
+      "current_proposed_sense": {
+        "entry_id": "lourd__adj__1",
+        "sense_id": "__ws_1_lourd__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Pesant ; dont le poids est élevé.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_1_lourd__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Pesant ; dont le poids est élevé.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_2_lourd__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Agriculture, Pédologie) Se dit d’un sol, d’une terre compacte et difficile à travailler, généralement riche en particules fines, notamment en argile.",
+          "leading_labels": [
+            "agriculture",
+            "pédologie"
+          ]
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_3_lourd__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui nécessite d’importants moyens.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_4_lourd__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui occasionne beaucoup de dépenses ou de durs sacrifices d’argent.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_5_lourd__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Qui est difficile et rude à faire, à assumer, à assurer.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_6_lourd__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui manque d'aisance dans ses mouvements.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_7_lourd__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Médecine) Qui est endolori et pénible à supporter, en parlant d’une partie du corps.",
+          "leading_labels": [
+            "sens figuré",
+            "médecine"
+          ]
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_8_lourd__adj__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Capiteux.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_9_lourd__adj__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Cuisine) Qualifie un aliment difficile à digérer.",
+          "leading_labels": [
+            "sens figuré",
+            "cuisine"
+          ]
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_10_lourd__adj__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Familier) Pesant, difficile à supporter, en parlant du comportement d’une personne.",
+          "leading_labels": [
+            "sens figuré",
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "lourd__adj__1",
+          "sense_id": "__ws_11_lourd__adj__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(Météorologie) Pesant, étouffant, menaçant, en parlant du temps, de l’atmosphère.",
+          "leading_labels": [
+            "météorologie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "419a324f8c98fd5e42a5ab60a92a8d6bad0c4cb9f25f3d35c50a977971d8b6fd",
+      "record_hash": "6aa43539c870ef73db2b6f6e9c40e4ebfa77ebe77606ce0f67627b1d87c23072"
+    },
+    {
+      "stable_lexeme_key": "quotidien|ADJ",
+      "runtime_lexeme_id": 10587,
+      "lemma": "quotidien",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 69.2632,
+        "lexique_frequency": 6.725,
+        "contextual_diversity": 2.55052
+      },
+      "current_proposed_sense": {
+        "entry_id": "quotidien__adj__1",
+        "sense_id": "__ws_1_quotidien__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "De chaque jour.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "quotidien__adj__1",
+          "sense_id": "__ws_1_quotidien__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "De chaque jour.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "quotidien__adj__1",
+          "sense_id": "__ws_2_quotidien__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Qualifie un journal qui paraît tous les jours de la semaine, sauf, souvent, le dimanche.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "3bde1e9e43f5802000301f3c8b0cf084cb6b315a481f65a63f6e40554747c3dc",
+      "record_hash": "1ac2058269b418e7c1383ec54a2facb127cb9e969e7de27bc5eabf84cc1ea4dc"
+    },
+    {
+      "stable_lexeme_key": "américain|ADJ",
+      "runtime_lexeme_id": 520,
+      "lemma": "américain",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 69.0877,
+        "lexique_frequency": 71.797,
+        "contextual_diversity": 11.66718
+      },
+      "current_proposed_sense": {
+        "entry_id": "américain__adj__1",
+        "sense_id": "__ws_1_américain__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Géographie) Relatif à l’Amérique.",
+        "leading_labels": [
+          "géographie"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "américain__adj__1",
+          "sense_id": "__ws_1_américain__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Géographie) Relatif à l’Amérique.",
+          "leading_labels": [
+            "géographie"
+          ]
+        },
+        {
+          "entry_id": "américain__adj__1",
+          "sense_id": "__ws_2_américain__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Viticulture) Qualifie les cépages des vignes issues de l’Amérique du Nord et que l’on utilise comme porte-greffes pour lutter contre le phylloxéra.",
+          "leading_labels": [
+            "en particulier",
+            "viticulture"
+          ]
+        },
+        {
+          "entry_id": "américain__adj__1",
+          "sense_id": "__ws_3_américain__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Géographie) Relatif aux États-Unis d’Amérique.",
+          "leading_labels": [
+            "géographie"
+          ]
+        },
+        {
+          "entry_id": "américain__adj__1",
+          "sense_id": "__ws_4_américain__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Relatif aux Amérindiens.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "8d3fdac8812bd750dd1871fc8df4ac1ab492a6a73d96300f4bbc5c5dcabdc8a3",
+      "record_hash": "b8a6a8b85cc57c7fc9788be6c31f2c82d36945a25ba5812ec7f1407c97725de4"
+    },
+    {
+      "stable_lexeme_key": "proche|ADJ",
+      "runtime_lexeme_id": 10074,
+      "lemma": "proche",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 63.509,
+        "lexique_frequency": 78.911,
+        "contextual_diversity": 21.63962
+      },
+      "current_proposed_sense": {
+        "entry_id": "proche__adj__1",
+        "sense_id": "__ws_1_proche__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est voisin, qui est près de quelqu’un, de quelque chose.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "proche__adj__1",
+          "sense_id": "__ws_1_proche__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est voisin, qui est près de quelqu’un, de quelque chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "proche__adj__1",
+          "sense_id": "__ws_2_proche__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui est près d’arriver, en parlant du temps qui passe.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "proche__adj__1",
+          "sense_id": "__ws_3_proche__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Avec une relation forte, en parlant de parenté ou d’amitié.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "proche__adj__1",
+          "sense_id": "__ws_4_proche__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui se ressemble, qui est peu différent.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "6624853d2646b21a2aed0894bdcab37ef73880b1544f6f9b201a01b3bbaf7d9c",
+      "record_hash": "e0fe942b8e0ef487ced3bc5cde642306a064e986e724b7d7ebdec5094ac26b72"
+    },
+    {
+      "stable_lexeme_key": "nécessaire|ADJ",
+      "runtime_lexeme_id": 8787,
+      "lemma": "nécessaire",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 62.087,
+        "lexique_frequency": 55.557,
+        "contextual_diversity": 19.80251
+      },
+      "current_proposed_sense": {
+        "entry_id": "nécessaire__adj__1",
+        "sense_id": "__ws_1_nécessaire__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui permet de réaliser une tâche.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "nécessaire__adj__1",
+          "sense_id": "__ws_1_nécessaire__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui permet de réaliser une tâche.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nécessaire__adj__1",
+          "sense_id": "__ws_2_nécessaire__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Dont on ne peut se passer ; qu’on ne peut éviter.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nécessaire__adj__1",
+          "sense_id": "__ws_3_nécessaire__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Philosophie) Qui ne peut pas ne pas être, par opposition à « contingent ».",
+          "leading_labels": [
+            "philosophie"
+          ]
+        },
+        {
+          "entry_id": "nécessaire__adj__1",
+          "sense_id": "__ws_4_nécessaire__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Qui est théoriquement indispensable pour qu’une proposition puisse être vraie.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "fa8b3cf6da4ca2c80e2677e58353d3c1e485e13707c10b5cffbda7f42186d775",
+      "record_hash": "132dae5634e1a607ff0bcfc472ee12724e25d6cb72543739d8069830597e02e1"
+    },
+    {
+      "stable_lexeme_key": "rare|ADJ",
+      "runtime_lexeme_id": 10713,
+      "lemma": "rare",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 61.7695,
+        "lexique_frequency": 34.256,
+        "contextual_diversity": 9.5989
+      },
+      "current_proposed_sense": {
+        "entry_id": "rare__adj__1",
+        "sense_id": "__ws_1_rare__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est en petit nombre ; qui se trouve difficilement.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "rare__adj__1",
+          "sense_id": "__ws_1_rare__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est en petit nombre ; qui se trouve difficilement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rare__adj__1",
+          "sense_id": "__ws_2_rare__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui est peu commun, peu courant.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "rare__adj__1",
+          "sense_id": "__ws_3_rare__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie une personne qui a un mérite extraordinaire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rare__adj__1",
+          "sense_id": "__ws_4_rare__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie une barbe clairsemée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rare__adj__1",
+          "sense_id": "__ws_5_rare__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Médecine) Qualifie du pouls, lorsqu’il bat moins de fois qu'à l'ordinaire, dans un temps donné.",
+          "leading_labels": [
+            "médecine"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "8a5737f1c667b2d0f9c1a173dacd3490fb8279a5b7e8a0ab53c8ba3825e9f95c",
+      "record_hash": "e7097ae7e6502ad5c9e53a3fcc26b927b48dcac5f44e3e77be4b53ecf504f92c"
+    },
+    {
+      "stable_lexeme_key": "malheureux|ADJ",
+      "runtime_lexeme_id": 7752,
+      "lemma": "malheureux",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 61.1689,
+        "lexique_frequency": 24.177,
+        "contextual_diversity": 6.93509
+      },
+      "current_proposed_sense": {
+        "entry_id": "malheureux__adj__1",
+        "sense_id": "__ws_1_malheureux__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui porte malheur ; qui annonce ou qui cause du malheur.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "malheureux__adj__1",
+          "sense_id": "__ws_1_malheureux__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui porte malheur ; qui annonce ou qui cause du malheur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "malheureux__adj__1",
+          "sense_id": "__ws_2_malheureux__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui est funeste, désastreux.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "malheureux__adj__1",
+          "sense_id": "__ws_3_malheureux__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui n’est pas heureux ; qui est frappé par le malheur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "malheureux__adj__1",
+          "sense_id": "__ws_4_malheureux__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui est misérable, digne de pitié.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "malheureux__adj__1",
+          "sense_id": "__ws_5_malheureux__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Qui est médiocre, de peu d’importance, négligeable.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "malheureux__adj__1",
+          "sense_id": "__ws_6_malheureux__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Médiocre, malhabile.",
+          "leading_labels": [
+            "par extension"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "e5561c01deb6da2ea1a584094f8a999f283e6a2a5180dca36dec013bc4bd4935",
+      "record_hash": "8dd637716d1b36cd6ba099db388346b469e837589bdd81629a17c29478bd384e"
+    },
+    {
+      "stable_lexeme_key": "précis|ADJ",
+      "runtime_lexeme_id": 10269,
+      "lemma": "précis",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 57.6419,
+        "lexique_frequency": 30.316,
+        "contextual_diversity": 8.46142
+      },
+      "current_proposed_sense": {
+        "entry_id": "précis__adj__1",
+        "sense_id": "__ws_1_précis__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est entièrement déterminé, qui ne laisse place à aucune incertitude.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "précis__adj__1",
+          "sense_id": "__ws_1_précis__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est entièrement déterminé, qui ne laisse place à aucune incertitude.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "précis__adj__1",
+          "sense_id": "__ws_2_précis__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "En parlant du discours ou du style, qui a de la précision, qui dit exactement ce qu’il faut, qui est net.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "précis__adj__1",
+          "sense_id": "__ws_3_précis__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Se dit aussi en ce sens des personnes.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "98927c64c8f708c087d6f9a7981fc62c5b6500ef6f678a3b124a76f5dc52f4d9",
+      "record_hash": "880898d7834a23d53c70d33da15645d12d97df08183a13a22aa907d3e00506b3"
+    },
+    {
+      "stable_lexeme_key": "traditionnel|ADJ",
+      "runtime_lexeme_id": 12989,
+      "lemma": "traditionnel",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 52.8357,
+        "lexique_frequency": 8.051,
+        "contextual_diversity": 1.4605
+      },
+      "current_proposed_sense": {
+        "entry_id": "traditionnel__adj__1",
+        "sense_id": "__ws_1_traditionnel__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est fondé sur la tradition.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "traditionnel__adj__1",
+          "sense_id": "__ws_1_traditionnel__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est fondé sur la tradition.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "traditionnel__adj__1",
+          "sense_id": "__ws_2_traditionnel__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Plus rare) Qui est attaché à la tradition.",
+          "leading_labels": [
+            "plus rare"
+          ]
+        },
+        {
+          "entry_id": "traditionnel__adj__1",
+          "sense_id": "__ws_3_traditionnel__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Habituel",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "traditionnel__adj__1",
+          "sense_id": "__ws_4_traditionnel__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Classique (par opposition à quelque chose de nouveau, souvent utilisé en publicité).",
+          "leading_labels": [
+            "par extension"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "f038ce13c2a0399be736bd65354b565cb216930a4a8fd2616d55a7e2abf87ff3",
+      "record_hash": "0bad2410c4706c83137c9c244505f83d80417fed52b1aa83ac54def802fb4926"
+    },
+    {
+      "stable_lexeme_key": "actif|ADJ",
+      "runtime_lexeme_id": 151,
+      "lemma": "actif",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 51.8914,
+        "lexique_frequency": 11.87,
+        "contextual_diversity": 3.18585
+      },
+      "current_proposed_sense": {
+        "entry_id": "actif__adj__1",
+        "sense_id": "__ws_1_actif__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui agit ou qui a la vertu d’agir.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "actif__adj__1",
+          "sense_id": "__ws_1_actif__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui agit ou qui a la vertu d’agir.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "actif__adj__1",
+          "sense_id": "__ws_2_actif__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui agit avec promptitude, avec énergie.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "actif__adj__1",
+          "sense_id": "__ws_3_actif__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui est diligent, laborieux.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "actif__adj__1",
+          "sense_id": "__ws_4_actif__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Religion) Qualifie une vie qui consiste dans les actions extérieures de piété, par opposition à la vie contemplative, qui consiste dans les sentiments et les affections de l’âme.",
+          "leading_labels": [
+            "religion"
+          ]
+        },
+        {
+          "entry_id": "actif__adj__1",
+          "sense_id": "__ws_5_actif__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Administration) Qualifie tout service public, sédentaire ou ambulant, qui est valable pour la retraite. Parfois par opposition à service sédentaire, et a alors proprement le sens de service ambulant.",
+          "leading_labels": [
+            "administration"
+          ]
+        },
+        {
+          "entry_id": "actif__adj__1",
+          "sense_id": "__ws_6_actif__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Grammaire) Dont le sujet exécute l’action.",
+          "leading_labels": [
+            "grammaire"
+          ]
+        },
+        {
+          "entry_id": "actif__adj__1",
+          "sense_id": "__ws_6.a_actif__adj__1",
+          "sense_number": "6.a",
+          "entry_rank": 1,
+          "definition_fr": "(Désuet) Se dit d'un verbe qui accepte ou attend un complément d'objet.",
+          "leading_labels": [
+            "désuet"
+          ]
+        },
+        {
+          "entry_id": "actif__adj__1",
+          "sense_id": "__ws_7_actif__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Qui dans le coït joue le rôle insertif.",
+          "leading_labels": [
+            "familier"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "25c05d75aec629b53fc5225f246dcc0c28ee2ce587b3dfdfc710b3d32a3f3e73",
+      "record_hash": "c65e6fd0932aac1e54ead954059021a1a962343dc0f56744b4cf923d628bad0c"
+    },
+    {
+      "stable_lexeme_key": "historique|ADJ",
+      "runtime_lexeme_id": 6177,
+      "lemma": "historique",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 51.7391,
+        "lexique_frequency": 10.231,
+        "contextual_diversity": 4.53919
+      },
+      "current_proposed_sense": {
+        "entry_id": "historique__adj__1",
+        "sense_id": "__ws_1_historique__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Relatif à l’histoire.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "historique__adj__1",
+          "sense_id": "__ws_1_historique__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Relatif à l’histoire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "historique__adj__1",
+          "sense_id": "__ws_2_historique__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Désuet) Qualifiait le nom d’un personnage qui avait quelque célébrité dans l’histoire.",
+          "leading_labels": [
+            "désuet"
+          ]
+        },
+        {
+          "entry_id": "historique__adj__1",
+          "sense_id": "__ws_3_historique__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Dont le sujet est tiré de l’histoire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "historique__adj__1",
+          "sense_id": "__ws_4_historique__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Réel : se dit d’actions, d’événements qui ne sont pas imaginaires, de faits qui ont réellement eu lieu.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "historique__adj__1",
+          "sense_id": "__ws_5_historique__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie ce qui marque l'Histoire.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "665091a2611b5e35c2ce9d7e5a7b8a2256c71b6dfa877371880ba6c6af183c9e",
+      "record_hash": "18cbaebc1375dd2dcea4f1371205ad4f1ba52bf0d352b1086bbedd0a0652225f"
+    },
+    {
+      "stable_lexeme_key": "populaire|ADJ",
+      "runtime_lexeme_id": 9853,
+      "lemma": "populaire",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 47.2924,
+        "lexique_frequency": 20.829,
+        "contextual_diversity": 6.56154
+      },
+      "current_proposed_sense": {
+        "entry_id": "populaire__adj__1",
+        "sense_id": "__ws_1_populaire__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui concerne le peuple ; qui appartient au peuple.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_1_populaire__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui concerne le peuple ; qui appartient au peuple.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_1.a_populaire__adj__1",
+          "sense_number": "1.a",
+          "entry_rank": 1,
+          "definition_fr": "En particulier, la partie du peuple la moins aisée et/ou la moins diplômée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_2_populaire__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui est répandu jusque dans le peuple.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_3_populaire__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Politique) Dont la souveraineté est dans les mains du peuple, en parlant de forme de gouvernement, d'État.",
+          "leading_labels": [
+            "en particulier",
+            "politique"
+          ]
+        },
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_4_populaire__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui fait impression sur le peuple, sur la multitude.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_5_populaire__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Qui est conforme aux goûts du peuple.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_6_populaire__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Qui plait au peuple.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_7_populaire__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Qui recherche et qui se concilie avec l’affectation du peuple.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "populaire__adj__1",
+          "sense_id": "__ws_8_populaire__adj__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Qui a les manières, le langage, etc., du peuple.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b1cbaa8d3e0d37bb5de76160f164e96a03e324f9e9c37db4f322228f93edab0f",
+      "record_hash": "eba1041ed9d49c3ec550d76b53f93b2902a12eb10bb83e8bcf39f514dbdc596b"
+    },
+    {
+      "stable_lexeme_key": "capable|ADJ",
+      "runtime_lexeme_id": 1942,
+      "lemma": "capable",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 47.1139,
+        "lexique_frequency": 84.766,
+        "contextual_diversity": 24.91274
+      },
+      "current_proposed_sense": {
+        "entry_id": "capable__adj__1",
+        "sense_id": "__ws_1_capable__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est en état de faire une chose ; qui a la capacité.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "capable__adj__1",
+          "sense_id": "__ws_1_capable__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est en état de faire une chose ; qui a la capacité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "capable__adj__1",
+          "sense_id": "__ws_2_capable__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Droit) Qui détient le droit ; qui jouit de la capacité légale.",
+          "leading_labels": [
+            "droit"
+          ]
+        },
+        {
+          "entry_id": "capable__adj__1",
+          "sense_id": "__ws_3_capable__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Absolument) Habile, intelligent.",
+          "leading_labels": [
+            "absolument"
+          ]
+        },
+        {
+          "entry_id": "capable__adj__1",
+          "sense_id": "__ws_4_capable__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Désuet) Qualifiait les choses considérées par rapport à leur capacité intérieure. — Note : Dans cette acception, il n’était guère usité qu’avec les verbes tenir ou contenir.",
+          "leading_labels": [
+            "désuet"
+          ]
+        },
+        {
+          "entry_id": "capable__adj__1",
+          "sense_id": "__ws_5_capable__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qualifie ce qu’une personne peut faire ou ne pas faire selon ses sentiments, ses possibilités.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "capable__adj__1",
+          "sense_id": "__ws_6_capable__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Algérie) Qualifie une personne ou une chose excellente.",
+          "leading_labels": [
+            "algérie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "d9830ba446dce96553e4a9922d70a8c39057ffa14b334f200a21211ee95ebaf1",
+      "record_hash": "5242940d988ede281505ccd1dd61cef7cf3d05b1652fbcb52e810fa0e230ac4a"
+    },
+    {
+      "stable_lexeme_key": "utile|ADJ",
+      "runtime_lexeme_id": 13333,
+      "lemma": "utile",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 45.9133,
+        "lexique_frequency": 47.199,
+        "contextual_diversity": 16.48653
+      },
+      "current_proposed_sense": {
+        "entry_id": "utile__adj__1",
+        "sense_id": "__ws_1_utile__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est profitable ou avantageux ; qui sert à quelque chose.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "utile__adj__1",
+          "sense_id": "__ws_1_utile__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est profitable ou avantageux ; qui sert à quelque chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "utile__adj__1",
+          "sense_id": "__ws_2_utile__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Commerce) Qualifie le rang des créanciers qui, d’après la date de leur hypothèque, seront payés sur les biens du débiteur.",
+          "leading_labels": [
+            "commerce"
+          ]
+        },
+        {
+          "entry_id": "utile__adj__1",
+          "sense_id": "__ws_3_utile__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Géographie) Qualifie la partie économiquement active d'un pays ou d’une nation.",
+          "leading_labels": [
+            "géographie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "c5a4ca6d7cebfe43a6a9a837f6137041ce542cc9e1c8fdd0aaedb06df979734f",
+      "record_hash": "8643ce37309ff6d1c142321f0b576061a941932135dfcf8cbdb2cd8bb65e546d"
+    },
+    {
+      "stable_lexeme_key": "mystérieux|ADJ",
+      "runtime_lexeme_id": 8428,
+      "lemma": "mystérieux",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 42.0481,
+        "lexique_frequency": 18.965,
+        "contextual_diversity": 4.50092
+      },
+      "current_proposed_sense": {
+        "entry_id": "mystérieux__adj__1",
+        "sense_id": "__ws_1_mystérieux__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui contient quelque mystère, quelque secret, quelque sens caché. Se dit proprement en matière de religion.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "mystérieux__adj__1",
+          "sense_id": "__ws_1_mystérieux__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui contient quelque mystère, quelque secret, quelque sens caché. Se dit proprement en matière de religion.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "mystérieux__adj__1",
+          "sense_id": "__ws_2_mystérieux__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Se dit en parlant des affaires humaines.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "mystérieux__adj__1",
+          "sense_id": "__ws_3_mystérieux__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Qui fait mystère de beaucoup de choses et souvent de choses qui n’en valent pas la peine.",
+          "leading_labels": [
+            "par extension"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "ecc5c5778c73631d4c6291b1a6779783fc58e72dc65fa1f0e45ec0538a2c61f8",
+      "record_hash": "95076ef520df4f95d6871b0db4ec736659cd878dfd96de4077132bae8d0d7c16"
+    },
+    {
+      "stable_lexeme_key": "précieux|ADJ",
+      "runtime_lexeme_id": 10265,
+      "lemma": "précieux",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 40.3754,
+        "lexique_frequency": 28.149,
+        "contextual_diversity": 7.1188
+      },
+      "current_proposed_sense": {
+        "entry_id": "précieux__adj__1",
+        "sense_id": "__ws_1_précieux__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est de grand prix.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "précieux__adj__1",
+          "sense_id": "__ws_1_précieux__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est de grand prix.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "précieux__adj__1",
+          "sense_id": "__ws_2_précieux__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qualifie les choses dont on peut tirer une grande utilité, un grand profit.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "précieux__adj__1",
+          "sense_id": "__ws_3_précieux__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Se dit de tout ce qui nous est cher et dont nous faisons un cas particulier.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "précieux__adj__1",
+          "sense_id": "__ws_3.a_précieux__adj__1",
+          "sense_number": "3.a",
+          "entry_rank": 1,
+          "definition_fr": "(Religion) Les écritures disent dans le même sens :",
+          "leading_labels": [
+            "religion"
+          ]
+        },
+        {
+          "entry_id": "précieux__adj__1",
+          "sense_id": "__ws_4_précieux__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Art) Ce qui est d’une délicatesse extrême.",
+          "leading_labels": [
+            "art"
+          ]
+        },
+        {
+          "entry_id": "précieux__adj__1",
+          "sense_id": "__ws_5_précieux__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Péjoratif) Qui est recherché, affecté, qui manque de simplicité, de naturel.",
+          "leading_labels": [
+            "péjoratif"
+          ]
+        },
+        {
+          "entry_id": "précieux__adj__1",
+          "sense_id": "__ws_6_précieux__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Foresterie, Menuiserie) Relatif à une essence relativement rare, car tolérant mal la présence proche d’autres pieds de même essence (essence asociale), poussant donc isolément.",
+          "leading_labels": [
+            "foresterie",
+            "menuiserie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "80291f1c0df86788f60aba327df3632663cf4f8bb702bffc843f843533626768",
+      "record_hash": "73bec8d5deba4373931aeb044ddac1ae16a4990f956a738f0b19631dda0e5cf2"
+    },
+    {
+      "stable_lexeme_key": "industriel|ADJ",
+      "runtime_lexeme_id": 6686,
+      "lemma": "industriel",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 39.6574,
+        "lexique_frequency": 6.149,
+        "contextual_diversity": 1.41611
+      },
+      "current_proposed_sense": {
+        "entry_id": "industriel__adj__1",
+        "sense_id": "__ws_1_industriel__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui appartient à l’industrie.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "industriel__adj__1",
+          "sense_id": "__ws_1_industriel__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui appartient à l’industrie.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "industriel__adj__1",
+          "sense_id": "__ws_2_industriel__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Où l’industrie est développée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "industriel__adj__1",
+          "sense_id": "__ws_3_industriel__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui provient de l’industrie.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "industriel__adj__1",
+          "sense_id": "__ws_4_industriel__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui est destiné à l’industrie.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "30d35b4db7796b5d414fc611c88ec67df5dd14326147ee03e23c81a6d2e6d961",
+      "record_hash": "1ac0f2bc7a31c7d480c74cf55eb90685849a0ba581f1036cf1b250f1565ec7d7"
+    },
+    {
+      "stable_lexeme_key": "féminin|ADJ",
+      "runtime_lexeme_id": 5639,
+      "lemma": "féminin",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 39.5185,
+        "lexique_frequency": 15.994,
+        "contextual_diversity": 2.72658
+      },
+      "current_proposed_sense": {
+        "entry_id": "féminin__adj__1",
+        "sense_id": "__ws_1_féminin__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Grammaire) Qualifie un des genres de mots. Il est généralement — mais pas toujours — lié aux femmes.",
+        "leading_labels": [
+          "grammaire"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "féminin__adj__1",
+          "sense_id": "__ws_1_féminin__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Grammaire) Qualifie un des genres de mots. Il est généralement — mais pas toujours — lié aux femmes.",
+          "leading_labels": [
+            "grammaire"
+          ]
+        },
+        {
+          "entry_id": "féminin__adj__1",
+          "sense_id": "__ws_2_féminin__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui est propre et particulier aux femmes.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "féminin__adj__1",
+          "sense_id": "__ws_3_féminin__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui ressemble aux femmes, ou qui tient des femmes.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "féminin__adj__1",
+          "sense_id": "__ws_4_féminin__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Marketing) Qui est destiné aux femmes.",
+          "leading_labels": [
+            "marketing"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "81dc89026a5c237d8d3f9142b9623af77f100e2a655710c2ed4c6ae9f764051f",
+      "record_hash": "70d1dbc7247404e846b5d4d2c15f54ef3a12e5b31f43da8c0d3a3f47be113999"
+    },
+    {
+      "stable_lexeme_key": "universitaire|ADJ",
+      "runtime_lexeme_id": 13307,
+      "lemma": "universitaire",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 38.7508,
+        "lexique_frequency": 4.94,
+        "contextual_diversity": 1.87385
+      },
+      "current_proposed_sense": {
+        "entry_id": "universitaire__adj__1",
+        "sense_id": "__ws_1_universitaire__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "De l’université, voire par extension de l’enseignement supérieur.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "universitaire__adj__1",
+          "sense_id": "__ws_1_universitaire__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "De l’université, voire par extension de l’enseignement supérieur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "universitaire__adj__1",
+          "sense_id": "__ws_2_universitaire__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Relatif à l’université.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "universitaire__adj__1",
+          "sense_id": "__ws_3_universitaire__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui appartient à l’université.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "6708ed84b1e5d28c65f3c53657f13bee3ac9b7222e37d3c2fd87b72a4899ba07",
+      "record_hash": "fff1280fc4aa4aef8dbb664a4cc3cc9d5afa788dc8919e8af39f69231470eae1"
+    },
+    {
+      "stable_lexeme_key": "classique|ADJ",
+      "runtime_lexeme_id": 2478,
+      "lemma": "classique",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 38.0659,
+        "lexique_frequency": 16.987,
+        "contextual_diversity": 8.1782
+      },
+      "current_proposed_sense": {
+        "entry_id": "classique__adj__1",
+        "sense_id": "__ws_1_classique__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Se dit généralement d’un auteur à qui l’excellence ou le temps ont donné autorité.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_1_classique__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Se dit généralement d’un auteur à qui l’excellence ou le temps ont donné autorité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_2_classique__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui relève d’une certaine esthétique, le classicisme, caractérisée par la recherche de l’équilibre et de la sobriété.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_3_classique__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Traditionnel et sans extravagance.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_4_classique__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui se rapporte à une période considérée comme particulièrement brillante ou équilibrée, et qui a servi de référence à des époques ultérieures.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_4.a_classique__adj__1",
+          "sense_number": "4.a",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) L’Antiquité classique : La Grèce et Rome jusqu’à 300 après J.-C. environ.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_4.b_classique__adj__1",
+          "sense_number": "4.b",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Les langues classiques : Le grec et le latin.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_4.c_classique__adj__1",
+          "sense_number": "4.c",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) La Grèce classique : Celle du Ve siècle avant J.-C. en particulier.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_4.d_classique__adj__1",
+          "sense_number": "4.d",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) L’époque classique : Généralement le XVIIe siècle, ou, dans un sens plus restreint, les années 1660–1670.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_5_classique__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Sans préjuger de la brillance des époques antérieures ou postérieures, se dit en particulier des œuvres, des auteurs, des écoles de la période qui va du XVIIe au XIXe siècle.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "classique__adj__1",
+          "sense_id": "__ws_6_classique__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Courant, banal.",
+          "leading_labels": [
+            "familier"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "ea0c2313fb19f8673ee4b88bc13c86166c67400ca33d2d470510f5402a930d25",
+      "record_hash": "b5cccf529211560d4e8a5ebcba709d468cf14d0aff16a451fac4eb0f8d418bdb"
+    },
+    {
+      "stable_lexeme_key": "étroit|ADJ",
+      "runtime_lexeme_id": 14181,
+      "lemma": "étroit",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 36.1944,
+        "lexique_frequency": 7.459,
+        "contextual_diversity": 1.75903
+      },
+      "current_proposed_sense": {
+        "entry_id": "étroit__adj__1",
+        "sense_id": "__ws_1_étroit__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "De petite largeur.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "étroit__adj__1",
+          "sense_id": "__ws_1_étroit__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "De petite largeur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "étroit__adj__1",
+          "sense_id": "__ws_2_étroit__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Familier) Qualifie une personne dont les vues, les idées ont peu d’étendue et qui se montre intolérante à l’égard de ce qu’elle ne comprend pas.",
+          "leading_labels": [
+            "sens figuré",
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "étroit__adj__1",
+          "sense_id": "__ws_3_étroit__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Restreint, en parlant d'une communauté.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "étroit__adj__1",
+          "sense_id": "__ws_4_étroit__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Intime.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "étroit__adj__1",
+          "sense_id": "__ws_5_étroit__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Vieilli) Qualifie une situation où l’aisance fait défaut, où les privations sont nécessaires.",
+          "leading_labels": [
+            "sens figuré",
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "étroit__adj__1",
+          "sense_id": "__ws_6_étroit__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Qui est selon la rigueur de la loi, de l’ordre, ou qui n’est pas susceptible d’extension.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "c78dee53fc64d84572bad1582dd76618fd7aa77cd38401cd0ec5513ee07c9cf4",
+      "record_hash": "a42cfb12d790590c7edaf18c000a1f8d9a4e1fe158ebddd005c43d65e73ba8f5"
+    },
+    {
+      "stable_lexeme_key": "double|ADJ",
+      "runtime_lexeme_id": 3922,
+      "lemma": "double",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 35.2914,
+        "lexique_frequency": 32.446,
+        "contextual_diversity": 17.0101
+      },
+      "current_proposed_sense": {
+        "entry_id": "double__adj__1",
+        "sense_id": "__ws_1_double__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui vaut, qui pèse ou qui contient deux fois autant.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "double__adj__1",
+          "sense_id": "__ws_1_double__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui vaut, qui pèse ou qui contient deux fois autant.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "double__adj__1",
+          "sense_id": "__ws_2_double__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Qui est composé de deux choses pareilles, ou analogues entre elles, ou seulement de même nature, de même espèce.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "double__adj__1",
+          "sense_id": "__ws_3_double__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Droit) Qualifie les actes ou les contrats dont on fait deux originaux semblables, pour en laisser un entre les mains de chacune des parties intéressées.",
+          "leading_labels": [
+            "droit"
+          ]
+        },
+        {
+          "entry_id": "double__adj__1",
+          "sense_id": "__ws_4_double__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Jeux) (Dominos) Qualifie le domino sur lequel apparaît deux valeurs semblables.",
+          "leading_labels": [
+            "jeux",
+            "dominos"
+          ]
+        },
+        {
+          "entry_id": "double__adj__1",
+          "sense_id": "__ws_5_double__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Botanique) Qualifie une fleur qui a acquis par la culture un plus grand nombre de pétales qu’elle n’en aurait eu dans l’état naturel.",
+          "leading_labels": [
+            "botanique"
+          ]
+        },
+        {
+          "entry_id": "double__adj__1",
+          "sense_id": "__ws_6_double__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Liturgie) Qualifie, dans les rubriques ecclésiastiques, certaines fêtes dont l’office est plus solennel que celui des autres.",
+          "leading_labels": [
+            "liturgie"
+          ]
+        },
+        {
+          "entry_id": "double__adj__1",
+          "sense_id": "__ws_7_double__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Vieilli) Qualifie les choses plus fortes, de qualité supérieure, de vertu plus efficace que les autres choses de même nature.",
+          "leading_labels": [
+            "sens figuré",
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "double__adj__1",
+          "sense_id": "__ws_8_double__adj__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui a de la duplicité.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "4c5bab21a35344c72bb38e413174276ffedb0cdc478229833e44b3c9ee6618b8",
+      "record_hash": "c90de5e66c0248a2c8343db08a71848c50d05fb71c9ba2d162b457cd5f124761"
+    },
+    {
+      "stable_lexeme_key": "musical|ADJ",
+      "runtime_lexeme_id": 8406,
+      "lemma": "musical",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 35.2525,
+        "lexique_frequency": 14.348,
+        "contextual_diversity": 2.24127
+      },
+      "current_proposed_sense": {
+        "entry_id": "musical__adj__1",
+        "sense_id": "__ws_1_musical__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui appartient ou qui est relatif à la musique.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "musical__adj__1",
+          "sense_id": "__ws_1_musical__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui appartient ou qui est relatif à la musique.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "musical__adj__1",
+          "sense_id": "__ws_2_musical__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui a une sonorité agréable à l’oreille.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "12f4e7c9aef933d287ad4796635d62ce052efa6e79066bef0e00333906d708d2",
+      "record_hash": "07a1f2d668de30fb846dbe67af0c225246352d254210898adf3b965857bd0bcd"
+    },
+    {
+      "stable_lexeme_key": "animal|ADJ",
+      "runtime_lexeme_id": 572,
+      "lemma": "animal",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 30.9023,
+        "lexique_frequency": 6.028,
+        "contextual_diversity": 12.61329
+      },
+      "current_proposed_sense": {
+        "entry_id": "animal__adj__1",
+        "sense_id": "__ws_1_animal__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui a trait aux animaux.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "animal__adj__1",
+          "sense_id": "__ws_1_animal__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui a trait aux animaux.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "animal__adj__1",
+          "sense_id": "__ws_2_animal__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Inhumain, sauvage, violent.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "animal__adj__1",
+          "sense_id": "__ws_3_animal__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Se dit quelquefois de ce qui en nous est matériel ou physique.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "animal__adj__1",
+          "sense_id": "__ws_4_animal__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Religion) Sensuel, charnel.",
+          "leading_labels": [
+            "religion"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "001491f97facb3628408f82c91dcbb26429e5cc2694c8fe739b879a6a7a8c68d",
+      "record_hash": "405be979e1c9b5681afe54b70694504b3f17c15346eff3bc28a48056f4b49838"
+    },
+    {
+      "stable_lexeme_key": "domestique|ADJ",
+      "runtime_lexeme_id": 3886,
+      "lemma": "domestique",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 28.4536,
+        "lexique_frequency": 5.839,
+        "contextual_diversity": 2.81384
+      },
+      "current_proposed_sense": {
+        "entry_id": "domestique__adj__1",
+        "sense_id": "__ws_1_domestique__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est de la maison ; qui appartient à la maison.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "domestique__adj__1",
+          "sense_id": "__ws_1_domestique__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est de la maison ; qui appartient à la maison.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "domestique__adj__1",
+          "sense_id": "__ws_2_domestique__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Relatif au ménage, à l'intérieur de la famille.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "domestique__adj__1",
+          "sense_id": "__ws_3_domestique__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Élevage) (Par extension) Qualifie les animaux qui vivent dans la demeure de l’homme, qui y sont élevés et nourris. → voir animal domestique.",
+          "leading_labels": [
+            "élevage",
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "domestique__adj__1",
+          "sense_id": "__ws_4_domestique__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Relatif à un pays ou à un peuple.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "fc28dc9775cee34de4161aaa93b75ea9f0332575e4be7eaea93a754e1bdbe3ad",
+      "record_hash": "74712f5b8d8b454702b93831c571a3c9dec8c0735ee1cad779fb215c9b2af9f2"
+    },
+    {
+      "stable_lexeme_key": "électrique|ADJ",
+      "runtime_lexeme_id": 13937,
+      "lemma": "électrique",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 28.4334,
+        "lexique_frequency": 22.734,
+        "contextual_diversity": 5.94305
+      },
+      "current_proposed_sense": {
+        "entry_id": "électrique__adj__1",
+        "sense_id": "__ws_1_électrique__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui se rapporte à l’électricité ; qui utilise l’énergie électrique.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "électrique__adj__1",
+          "sense_id": "__ws_1_électrique__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui se rapporte à l’électricité ; qui utilise l’énergie électrique.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "électrique__adj__1",
+          "sense_id": "__ws_2_électrique__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Qualifie une personne extrêmement énergique.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "électrique__adj__1",
+          "sense_id": "__ws_3_électrique__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qualifie des émotions aussi fortes qu’une décharge électrique.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "électrique__adj__1",
+          "sense_id": "__ws_4_électrique__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie la couleur de certaines manifestations de l’électricité. #2C75FF",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "94daefe7feb12d92ba3edd8c4ef783ecf456d4cd79f7d03ce0cfe7d61a290a46",
+      "record_hash": "fdb21ba131db712a3f882077506a17a9f9a658b1ac7c417526673bdfaa412e43"
+    },
+    {
+      "stable_lexeme_key": "rond|ADJ",
+      "runtime_lexeme_id": 11243,
+      "lemma": "rond",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 27.1298,
+        "lexique_frequency": 11.032,
+        "contextual_diversity": 6.13135
+      },
+      "current_proposed_sense": {
+        "entry_id": "rond__adj__1",
+        "sense_id": "__ws_1_rond__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "De forme circulaire.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_1_rond__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "De forme circulaire.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_2_rond__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui est cylindrique.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_3_rond__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "De forme sphérique.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_4_rond__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Qualifie un dos humain voûté.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_5_rond__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Légèrement gros, en parlant d’une personne.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_6_rond__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Plein, sans aspérité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_7_rond__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Sans fraction ; arrondi à une unité, une dizaine, une centaine, un millier.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_8_rond__adj__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Important en parlant d’argent ou de biens.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "rond__adj__1",
+          "sense_id": "__ws_9_rond__adj__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Ivre ; éméché.",
+          "leading_labels": [
+            "familier"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "248344062a68242a7a0bc289d44662e3884484a61d5bdfd69493e0a363ab12ae",
+      "record_hash": "4699a1d16a95507057f839796b5b69d2edc29bc8475e108b592d285d8ca11bbc"
+    },
+    {
+      "stable_lexeme_key": "fidèle|ADJ",
+      "runtime_lexeme_id": 5226,
+      "lemma": "fidèle",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 26.2405,
+        "lexique_frequency": 16.184,
+        "contextual_diversity": 5.64605
+      },
+      "current_proposed_sense": {
+        "entry_id": "fidèle__adj__1",
+        "sense_id": "__ws_1_fidèle__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui garde sa foi, à l’égard d’une personne ou d’une idée, qui est constant dans les affections, qui remplit ses devoirs, ses engagements.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_1_fidèle__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui garde sa foi, à l’égard d’une personne ou d’une idée, qui est constant dans les affections, qui remplit ses devoirs, ses engagements.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_2_fidèle__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Qui ne s’adonne pas aux amours extra-conjugales.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_3_fidèle__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui ne s’écarte pas de quelque chose ; qui n’y renonce pas.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_4_fidèle__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Vieilli) Qualifie un employé, un domestique qui a de la probité, de l’attachement pour ceux qu’il sert.",
+          "leading_labels": [
+            "en particulier",
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_5_fidèle__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie des actes, des sentiments où il y a de la fidélité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_6_fidèle__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Religion) Qui professe ce qui est considéré comme la vraie religion.",
+          "leading_labels": [
+            "religion"
+          ]
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_7_fidèle__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Qui est exact, qui ne s’écarte pas de la vérité, en parlant des personnes et des choses.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_8_fidèle__adj__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Qualifie une mémoire qui retient bien et avec exactitude ; ou le souvenir exact que l’on a d’une chose.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_9_fidèle__adj__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Métrologie) Qualifie une balance, un appareil de mesure, qui donne une mesure semblable de quantités égales.",
+          "leading_labels": [
+            "métrologie"
+          ]
+        },
+        {
+          "entry_id": "fidèle__adj__1",
+          "sense_id": "__ws_10_fidèle__adj__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui ne fait pas défaut.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "8f0cf5d61c71727080e3dcc27171aa7118706c3f230a9bdc6df4e8417c362e7a",
+      "record_hash": "d1cbb660594c90b117f4e158dce5fb0cb28da559bc2f75971c472c0163e1755d"
+    },
+    {
+      "stable_lexeme_key": "pratique|ADJ",
+      "runtime_lexeme_id": 9990,
+      "lemma": "pratique",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 26.2033,
+        "lexique_frequency": 12.899,
+        "contextual_diversity": 9.16105
+      },
+      "current_proposed_sense": {
+        "entry_id": "pratique__adj__1",
+        "sense_id": "__ws_1_pratique__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui ne s’arrête pas à la simple spéculation, qui tend, qui conduit à l’action, qui s’occupe de l’application.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "pratique__adj__1",
+          "sense_id": "__ws_1_pratique__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui ne s’arrête pas à la simple spéculation, qui tend, qui conduit à l’action, qui s’occupe de l’application.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "pratique__adj__1",
+          "sense_id": "__ws_2_pratique__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui est commode, aisé, utile, en parlant des choses.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "pratique__adj__1",
+          "sense_id": "__ws_3_pratique__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui a le sens des réalités et le goût de l’action en parlant des personnes.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "9e1a426334139c303f12f2fb10281a67b5e184264368345ae5f7b931ffe117b1",
+      "record_hash": "03f58059a7fa42133cf22ad28c89f8dc4c499be2a67833c1ab98e0ed4aac39fb"
+    },
+    {
+      "stable_lexeme_key": "nerveux|ADJ",
+      "runtime_lexeme_id": 8623,
+      "lemma": "nerveux",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 24.6991,
+        "lexique_frequency": 51.532,
+        "contextual_diversity": 12.7725
+      },
+      "current_proposed_sense": {
+        "entry_id": "nerveux__adj__1",
+        "sense_id": "__ws_1_nerveux__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Relatif aux nerfs et au système nerveux.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_1_nerveux__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Relatif aux nerfs et au système nerveux.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_2_nerveux__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie une personne qui a les nerfs sensibles ou irritables.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_3_nerveux__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie un état de nervosité accidentelle ou passagère.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_4_nerveux__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui a de bons nerfs ; qui a de la force dans les muscles.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_5_nerveux__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qualifie ce qui a de la fermeté, de la vigueur.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_6_nerveux__adj__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Qui est plein de nerfs et de muscles.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_7_nerveux__adj__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Cuisine) Qualifie une viande trop dure.",
+          "leading_labels": [
+            "cuisine"
+          ]
+        },
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_8_nerveux__adj__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Foresterie, Menuiserie) Qui tend à se déformer après l’abattage, en particulier lors de son utilisation en menuiserie.",
+          "leading_labels": [
+            "foresterie",
+            "menuiserie"
+          ]
+        },
+        {
+          "entry_id": "nerveux__adj__1",
+          "sense_id": "__ws_9_nerveux__adj__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "Qualifie un charbon particulièrement dur.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b672e48d4fc691b8276a415d958d5ed85104f875697b0afb2ba78535eca6d209",
+      "record_hash": "1a299058f931c656ded679eaa5221e5c0f1e192b5989d5cb980115e07c5097c2"
+    },
+    {
+      "stable_lexeme_key": "inconnu|ADJ",
+      "runtime_lexeme_id": 6602,
+      "lemma": "inconnu",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 24.3143,
+        "lexique_frequency": 20.316,
+        "contextual_diversity": 8.14146
+      },
+      "current_proposed_sense": {
+        "entry_id": "inconnu__adj__1",
+        "sense_id": "__ws_1_inconnu__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Que l’on ne connaît pas ; qui est ignoré.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "inconnu__adj__1",
+          "sense_id": "__ws_1_inconnu__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Que l’on ne connaît pas ; qui est ignoré.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "inconnu__adj__1",
+          "sense_id": "__ws_2_inconnu__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qu’on n’a pas encore éprouvé ou ressenti.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b09009fa6ba05a37d2c91028b34a064218738ff4453dc677a6e8868f3482b37a",
+      "record_hash": "961e9d4191f59f15f1e785b4e5873924aa1520d185c29f2f0748b57730b3e92d"
+    },
+    {
+      "stable_lexeme_key": "violent|ADJ",
+      "runtime_lexeme_id": 13567,
+      "lemma": "violent",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 24.1854,
+        "lexique_frequency": 26.601,
+        "contextual_diversity": 6.41151
+      },
+      "current_proposed_sense": {
+        "entry_id": "violent__adj__1",
+        "sense_id": "__ws_1_violent__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est impétueux, qui agit avec impétuosité, avec une force non contenue, en parlant des évènements, des choses ou des personnes et de leurs actes.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "violent__adj__1",
+          "sense_id": "__ws_1_violent__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est impétueux, qui agit avec impétuosité, avec une force non contenue, en parlant des évènements, des choses ou des personnes et de leurs actes.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "violent__adj__1",
+          "sense_id": "__ws_2_violent__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Météorologie) Qualifie un vent de tempête, ou tout autre phénomène météorologique qui cause beaucoup de dégâts.",
+          "leading_labels": [
+            "en particulier",
+            "météorologie"
+          ]
+        },
+        {
+          "entry_id": "violent__adj__1",
+          "sense_id": "__ws_3_violent__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) Qualifie une mort causée par force ou par quelque accident, et non par une cause naturelle et ordinaire.",
+          "leading_labels": [
+            "spécialement"
+          ]
+        },
+        {
+          "entry_id": "violent__adj__1",
+          "sense_id": "__ws_4_violent__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Qui emploie volontiers la violence par intérêt ou par goût, particulièrement la violence physique ou sexuelle.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "violent__adj__1",
+          "sense_id": "__ws_5_violent__adj__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Ironique) (Employé avec une négation) Pas compliqué, pépère.",
+          "leading_labels": [
+            "ironique",
+            "employé avec une négation"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "263ac695262466948e06458899a3ce011d61c9c53b7f149e719dbd37f1a6413e",
+      "record_hash": "79aa02ce950063324ab952b218b0971b5db5308ebb66560fb6299f7c675438c2"
+    },
+    {
+      "stable_lexeme_key": "royal|ADJ",
+      "runtime_lexeme_id": 11295,
+      "lemma": "royal",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 23.5407,
+        "lexique_frequency": 20.111,
+        "contextual_diversity": 3.32517
+      },
+      "current_proposed_sense": {
+        "entry_id": "royal__adj__1",
+        "sense_id": "__ws_1_royal__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui appartient ou qui est relatif à un roi.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "royal__adj__1",
+          "sense_id": "__ws_1_royal__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui appartient ou qui est relatif à un roi.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "royal__adj__1",
+          "sense_id": "__ws_2_royal__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "S’est dit aussi de certains établissements qui étaient, d’une manière spéciale, sous la surveillance ou sous la protection du roi.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "royal__adj__1",
+          "sense_id": "__ws_3_royal__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Qui est digne d’un roi.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "3c6237ef976035693be85b2820097b83195e15c3aa8a67cebae06f34e2bf4bf2",
+      "record_hash": "2747dda5c3f86b6391db44fa1b3428fb0c593a40c090726fafea340169714261"
+    },
+    {
+      "stable_lexeme_key": "élégant|ADJ",
+      "runtime_lexeme_id": 13972,
+      "lemma": "élégant",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 22.0142,
+        "lexique_frequency": 10.006,
+        "contextual_diversity": 2.74342
+      },
+      "current_proposed_sense": {
+        "entry_id": "élégant__adj__1",
+        "sense_id": "__ws_1_élégant__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui a de l’élégance.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "élégant__adj__1",
+          "sense_id": "__ws_1_élégant__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui a de l’élégance.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "élégant__adj__1",
+          "sense_id": "__ws_2_élégant__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) (Mélioratif) Qualifie une solution simple et satisfaisante.",
+          "leading_labels": [
+            "spécialement",
+            "mélioratif"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "48b9646c2355ca42af00d7f5b2962e32a5ffe8ade3a0795cc8826d5de5526502",
+      "record_hash": "222ba918ea9b066f4aedcade7a808e1b477b0ee4aa3f97a4db1d57944a596f95"
+    }
+  ],
+  "artifact_hash": "ff26d9f86a42530ebe7de262d1e0b812a4a2b51665794a0c6442a1443ed126c7"
+}

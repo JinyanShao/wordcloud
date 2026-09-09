@@ -1,0 +1,3711 @@
+{
+  "schema_version": 1,
+  "scope": "Compact French learner-primary sense review facts only; no adjudication, Chinese candidates, examples, family relations, or learner prose.",
+  "parent_input_artifact_hash": "7789faf53c792615d2e0f3c0c0627d2fe48323ef98b712650b949f5b3c6b7f01",
+  "parent_risk_artifact_hash": "398f2536bbc7b40a972477f75c3b0f854c040d878ade62ab25b6f53f9ff4bf90",
+  "sense_selection_tier": "medium",
+  "items": [
+    {
+      "stable_lexeme_key": "lointain|ADJ",
+      "runtime_lexeme_id": 7522,
+      "lemma": "lointain",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 20.7935,
+        "lexique_frequency": 7.816,
+        "contextual_diversity": 1.71464
+      },
+      "current_proposed_sense": {
+        "entry_id": "lointain__adj__1",
+        "sense_id": "__ws_1_lointain__adj__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Qui est fort éloigné du lieu où l’on est ou dont on parle.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "lointain__adj__1",
+          "sense_id": "__ws_1_lointain__adj__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Qui est fort éloigné du lieu où l’on est ou dont on parle.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "lointain__adj__1",
+          "sense_id": "__ws_2_lointain__adj__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Qui provient de loin.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "lointain__adj__1",
+          "sense_id": "__ws_3_lointain__adj__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Qui est fort éloigné dans le temps.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "lointain__adj__1",
+          "sense_id": "__ws_4_lointain__adj__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Qui semble être ailleurs, venir d'ailleurs, se diriger ailleurs.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "870324d597ded98de2faf6297fc7695b29f91a893334d0890fcf951b35cece09",
+      "record_hash": "de0b72b773966bebb9dac42aa4e9f3281000f4ee9ee5237eb60c40e3dde7de60"
+    },
+    {
+      "stable_lexeme_key": "notamment|ADV",
+      "runtime_lexeme_id": 8721,
+      "lemma": "notamment",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 82.8834,
+        "lexique_frequency": 2.741,
+        "contextual_diversity": 1.19412
+      },
+      "current_proposed_sense": {
+        "entry_id": "notamment__adv__1",
+        "sense_id": "__ws_1_notamment__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "D’une manière qui doit être notée, relevée.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "notamment__adv__1",
+          "sense_id": "__ws_1_notamment__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière qui doit être notée, relevée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "notamment__adv__1",
+          "sense_id": "__ws_2_notamment__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Entre autres.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "3cd710833f1660313350fd93026d150d75a5e0d70ed4e75191a36baa20bf37b3",
+      "record_hash": "1bc25efdf3830f8b44ea108f83012ef6dcc3fbcf6913e1520f9a19b7e2953dbb"
+    },
+    {
+      "stable_lexeme_key": "actuellement|ADV",
+      "runtime_lexeme_id": 162,
+      "lemma": "actuellement",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 58.758,
+        "lexique_frequency": 16.497,
+        "contextual_diversity": 6.71464
+      },
+      "current_proposed_sense": {
+        "entry_id": "actuellement__adv__1",
+        "sense_id": "__ws_1_actuellement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Au moment où l’on parle ; à présent ; présentement.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "actuellement__adv__1",
+          "sense_id": "__ws_1_actuellement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Au moment où l’on parle ; à présent ; présentement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "actuellement__adv__1",
+          "sense_id": "__ws_2_actuellement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Rare) En acte.",
+          "leading_labels": [
+            "rare"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "3e90efa79b5505d536dd51f048d2e86f0c4ceee77ae7f7128b902acff8d58cf0",
+      "record_hash": "26256b9b5812ed84056a9b710bf7f08871217cb5fb044d0edacf8a654f7b5d7e"
+    },
+    {
+      "stable_lexeme_key": "malheureusement|ADV",
+      "runtime_lexeme_id": 7751,
+      "lemma": "malheureusement",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 32.6697,
+        "lexique_frequency": 41.146,
+        "contextual_diversity": 16.07471
+      },
+      "current_proposed_sense": {
+        "entry_id": "malheureusement__adv__1",
+        "sense_id": "__ws_1_malheureusement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "D’une manière malheureuse.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "malheureusement__adv__1",
+          "sense_id": "__ws_1_malheureusement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière malheureuse.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "malheureusement__adv__1",
+          "sense_id": "__ws_2_malheureusement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Par malheur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "malheureusement__adv__1",
+          "sense_id": "__ws_3_malheureusement__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière malencontreuse ; par malchance.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "malheureusement__adv__1",
+          "sense_id": "__ws_4_malheureusement__adv__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Hélas.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "95973e24fee214310caf3b1e920e5db13aad7341b0c3147d57d441a2d4db6a58",
+      "record_hash": "c92a425267256f03454f4557d985fff1ea1d4c05a0c6398a90ba62817347d0a8"
+    },
+    {
+      "stable_lexeme_key": "dehors|ADV",
+      "runtime_lexeme_id": 3578,
+      "lemma": "dehors",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 20.2411,
+        "lexique_frequency": 175.902,
+        "contextual_diversity": 52.63319
+      },
+      "current_proposed_sense": {
+        "entry_id": "dehors__adv__1",
+        "sense_id": "__ws_1_dehors__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "À l’extérieur.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "dehors__adv__1",
+          "sense_id": "__ws_1_dehors__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "À l’extérieur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "dehors__adv__1",
+          "sense_id": "__ws_2_dehors__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Marine) En pleine mer, au large.",
+          "leading_labels": [
+            "en particulier",
+            "marine"
+          ]
+        },
+        {
+          "entry_id": "dehors__adv__1",
+          "sense_id": "__ws_3_dehors__adv__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sport) Hors des limites.",
+          "leading_labels": [
+            "sport"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "1090f678f17d23cd7a289f1c2424a42d6536ce152c1eac864810755880d1a4fe",
+      "record_hash": "81a1ed42d5cdb9897a34049b1a884ed2ea932f62d016bae60f17afd08ac33e47"
+    },
+    {
+      "stable_lexeme_key": "traditionnellement|ADV",
+      "runtime_lexeme_id": 12990,
+      "lemma": "traditionnellement",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 9.913,
+        "lexique_frequency": 0.734,
+        "contextual_diversity": 0.32456
+      },
+      "current_proposed_sense": {
+        "entry_id": "traditionnellement__adv__1",
+        "sense_id": "__ws_1_traditionnellement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Suivant la tradition, d'après la tradition.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "traditionnellement__adv__1",
+          "sense_id": "__ws_1_traditionnellement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Suivant la tradition, d'après la tradition.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "traditionnellement__adv__1",
+          "sense_id": "__ws_2_traditionnellement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Selon une vieille habitude.",
+          "leading_labels": [
+            "par extension"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "3ce274b6f2017546d76a869cf1b71f7a910e8b4f858b3167cc3bf3dffd8062b1",
+      "record_hash": "00a860c76716aca9d9fb5f353406584b019b684e9e804fcb10025e9f6e3f9f05"
+    },
+    {
+      "stable_lexeme_key": "spécialement|ADV",
+      "runtime_lexeme_id": 12233,
+      "lemma": "spécialement",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 8.9342,
+        "lexique_frequency": 10.111,
+        "contextual_diversity": 4.39069
+      },
+      "current_proposed_sense": {
+        "entry_id": "spécialement__adv__1",
+        "sense_id": "__ws_1_spécialement__adv__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "D’une manière spéciale, en désignant une personne, une chose particulière.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "spécialement__adv__1",
+          "sense_id": "__ws_1_spécialement__adv__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "D’une manière spéciale, en désignant une personne, une chose particulière.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "spécialement__adv__1",
+          "sense_id": "__ws_2_spécialement__adv__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Tout particulièrement.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "03e0462fd6c6a81d847d17ca525f10e848dba851d558290e25aa671c112d80c4",
+      "record_hash": "1473209302161a9c8022fe04514f992264ea786208124f865762021ccf1d4f34"
+    },
+    {
+      "stable_lexeme_key": "auteur|NOM",
+      "runtime_lexeme_id": 1052,
+      "lemma": "auteur",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 136.2989,
+        "lexique_frequency": 20.62,
+        "contextual_diversity": 5.07195
+      },
+      "current_proposed_sense": {
+        "entry_id": "auteur__nom__1",
+        "sense_id": "__ws_1_auteur__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Personne qui est à l’origine de quelque chose.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_1_auteur__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Personne qui est à l’origine de quelque chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_2_auteur__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Littérature) Personne qui a rédigé un ouvrage de littérature, de science ou d’art.",
+          "leading_labels": [
+            "littérature"
+          ]
+        },
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_3_auteur__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Production d’un auteur, ce qu’il a écrit.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_4_auteur__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Inventeur.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_5_auteur__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Source, celui de qui on a appris quelque nouvelle.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_6_auteur__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Droit) Personne de qui on tient quelque droit.",
+          "leading_labels": [
+            "droit"
+          ]
+        },
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_7_auteur__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Plus rare) Ascendant.",
+          "leading_labels": [
+            "plus rare"
+          ]
+        },
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_8_auteur__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Cartographie) (Documentation) Toute personne, groupe de personnes ou organisme, qui assume le choix de l’information présentée sur la carte, et le plus souvent a participé à sa conception et/ou au choix du mode de représentation.",
+          "leading_labels": [
+            "cartographie",
+            "documentation"
+          ]
+        },
+        {
+          "entry_id": "auteur__nom__1",
+          "sense_id": "__ws_9_auteur__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Cartographie) (Documentation) Au sens juridique, personne ou groupe de personnes physiques ou morales détentrices du droit d’auteur attaché à ce document.",
+          "leading_labels": [
+            "cartographie",
+            "documentation"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "fb6937a664e7611c151ab625e058385089607a3c3069456642f30399f5193e69",
+      "record_hash": "e85abe77cf9ff1bebc5f29572676a74c229405c5ccfb1acefcabbe5041ce5ffd"
+    },
+    {
+      "stable_lexeme_key": "enquête|NOM",
+      "runtime_lexeme_id": 4694,
+      "lemma": "enquête",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 114.0333,
+        "lexique_frequency": 75.908,
+        "contextual_diversity": 18.55634
+      },
+      "current_proposed_sense": {
+        "entry_id": "enquête__nom__1",
+        "sense_id": "__ws_1_enquête__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Recherche méthodique d’informations précises.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "enquête__nom__1",
+          "sense_id": "__ws_1_enquête__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Recherche méthodique d’informations précises.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "enquête__nom__1",
+          "sense_id": "__ws_1.a_enquête__nom__1",
+          "sense_number": "1.a",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Justice) Recherche, preuve qui se fait en justice par audition de témoins.",
+          "leading_labels": [
+            "en particulier",
+            "justice"
+          ]
+        },
+        {
+          "entry_id": "enquête__nom__1",
+          "sense_id": "__ws_1.b_enquête__nom__1",
+          "sense_number": "1.b",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Recherche faites par ordre de l’autorité.",
+          "leading_labels": [
+            "par extension"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "7fb60a26c6a9fa1b5795fa544685f378e5d3dc897f6a4419476f8a6f5ffe6c2f",
+      "record_hash": "75ff7be88a65ec227d0ed696f54feadc9b10691b0c25ed9f161d2f9403982c73"
+    },
+    {
+      "stable_lexeme_key": "sentiment|NOM",
+      "runtime_lexeme_id": 11867,
+      "lemma": "sentiment",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 113.4361,
+        "lexique_frequency": 85.747,
+        "contextual_diversity": 16.13288
+      },
+      "current_proposed_sense": {
+        "entry_id": "sentiment__nom__1",
+        "sense_id": "__ws_1_sentiment__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Psychologie) Faculté que nous avons d’apprécier, de sentir directement certaines choses sans le secours du raisonnement, de l’observation ou de l’expérience.",
+        "leading_labels": [
+          "psychologie"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "sentiment__nom__1",
+          "sense_id": "__ws_1_sentiment__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Psychologie) Faculté que nous avons d’apprécier, de sentir directement certaines choses sans le secours du raisonnement, de l’observation ou de l’expérience.",
+          "leading_labels": [
+            "psychologie"
+          ]
+        },
+        {
+          "entry_id": "sentiment__nom__1",
+          "sense_id": "__ws_2_sentiment__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Quelqu’une des affections, des passions, des émotions ; et généralement de tout phénomène de la vie affective.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sentiment__nom__1",
+          "sense_id": "__ws_3_sentiment__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Disposition à être facilement ému, touché ou attendri.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sentiment__nom__1",
+          "sense_id": "__ws_4_sentiment__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Action ou faculté de sentir, de recevoir des impressions.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "sentiment__nom__1",
+          "sense_id": "__ws_5_sentiment__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Opinion qu’on a de quelque chose ; ce qu’on en pense ; ce qu’on en pressent.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sentiment__nom__1",
+          "sense_id": "__ws_6_sentiment__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Chasse) Traces et odeurs laissées par un gibier.",
+          "leading_labels": [
+            "chasse"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b0a8285789d4706b67962ab404749c171c404fae863f4a2b92b7f4eeb6c119a5",
+      "record_hash": "2ce737962e1fa1813e3962791e09b60f9b11ccfcfd321814409cbf88df2b1f63"
+    },
+    {
+      "stable_lexeme_key": "moitié|NOM",
+      "runtime_lexeme_id": 8211,
+      "lemma": "moitié",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 113.2604,
+        "lexique_frequency": 79.038,
+        "contextual_diversity": 27.43111
+      },
+      "current_proposed_sense": {
+        "entry_id": "moitié__nom__1",
+        "sense_id": "__ws_1_moitié__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "L’une des parties d’un tout divisé, partagé également en deux.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "moitié__nom__1",
+          "sense_id": "__ws_1_moitié__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "L’une des parties d’un tout divisé, partagé également en deux.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "moitié__nom__1",
+          "sense_id": "__ws_2_moitié__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Plus courant) Portion, une part qui est à peu près de la moitié.",
+          "leading_labels": [
+            "plus courant"
+          ]
+        },
+        {
+          "entry_id": "moitié__nom__1",
+          "sense_id": "__ws_3_moitié__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Personne de petite taille.",
+          "leading_labels": [
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "moitié__nom__1",
+          "sense_id": "__ws_4_moitié__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Conjoint par rapport à sa conjointe, ou conjointe par rapport à son conjoint.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "87a713189a0f41c877e13c611484f47ecb15e09e316b2164f914143664535fc9",
+      "record_hash": "3e0aa8bd3e0f4e186c544cb7d56c43b95688403048d74364a026c2e236043750"
+    },
+    {
+      "stable_lexeme_key": "papier|NOM",
+      "runtime_lexeme_id": 9158,
+      "lemma": "papier",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 110.713,
+        "lexique_frequency": 93.231,
+        "contextual_diversity": 15.81598
+      },
+      "current_proposed_sense": {
+        "entry_id": "papier__nom__1",
+        "sense_id": "__ws_1_papier__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Papeterie) Matière faite à partir de la pâte de chiffons ou de fibres végétales étalée en couches minces que l’on fait sécher et qu’on débite par feuilles pour écrire, imprimer, envelopper, etc.",
+        "leading_labels": [
+          "papeterie"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_1_papier__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Papeterie) Matière faite à partir de la pâte de chiffons ou de fibres végétales étalée en couches minces que l’on fait sécher et qu’on débite par feuilles pour écrire, imprimer, envelopper, etc.",
+          "leading_labels": [
+            "papeterie"
+          ]
+        },
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_2_papier__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Par ellipse) Papier peint.",
+          "leading_labels": [
+            "en particulier",
+            "par ellipse"
+          ]
+        },
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_3_papier__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Feuille très mince d’une autre matière que celle du sens précédent.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_4_papier__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par métonymie) Document important de nature juridique, officielle, comptable, etc. — Note : Ce terme est généralement utilisé au pluriel.",
+          "leading_labels": [
+            "par métonymie"
+          ]
+        },
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_5_papier__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par métonymie) (Désuet) Journal ou revue.",
+          "leading_labels": [
+            "par métonymie",
+            "désuet"
+          ]
+        },
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_6_papier__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Par métonymie) Article ou éditorial de journal.",
+          "leading_labels": [
+            "par métonymie"
+          ]
+        },
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_7_papier__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Familier) Article d’une revue scientifique.",
+          "leading_labels": [
+            "en particulier",
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_8_papier__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Administration) (Généralement pluriel) (Par ellipse) Papier d’identité. → voir sans-papier.",
+          "leading_labels": [
+            "administration",
+            "généralement pluriel",
+            "par ellipse"
+          ]
+        },
+        {
+          "entry_id": "papier__nom__1",
+          "sense_id": "__ws_9_papier__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Vieilli) Lettres de change, traite, billet payable au porteur ou autre effets de cette nature représentant de l’argent comptant.",
+          "leading_labels": [
+            "vieilli"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "ad8a2f5aaec16df65c990cf5969e62455a26e642bbebf68c42b2fe4b7eb1e90e",
+      "record_hash": "9e117bdb9f179942c8522b52afae8a125be194b2c0fee366ce2b50a7c367abb2"
+    },
+    {
+      "stable_lexeme_key": "scène|NOM",
+      "runtime_lexeme_id": 11804,
+      "lemma": "scène",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 104.8298,
+        "lexique_frequency": 110.453,
+        "contextual_diversity": 21.83405
+      },
+      "current_proposed_sense": {
+        "entry_id": "scène__nom__1",
+        "sense_id": "__ws_1_scène__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Partie du théâtre où les acteurs jouent devant le public.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_1_scène__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Partie du théâtre où les acteurs jouent devant le public.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_2_scène__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Lieu de l’action qu’on représente sur le théâtre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_3_scène__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Art dramatique.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_4_scène__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Sous-partie d’un acte.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_5_scène__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Spectacle, aspect de la nature, d’un ensemble d’objets qui s’offre à la vue.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_6_scène__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Toute action qui offre quelque chose de vif, d’animé, d’intéressant, d’extraordinaire, qui fait impression.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_7_scène__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Querelle ; dispute ; colère.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_8_scène__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Démonstration affectée ; emphatique.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_9_scène__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Lieu où se déroule une action.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_10_scène__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Cartographie) Unité de découpage normalisée de l’information fournie par un système imageur spatioporté, aux fins d’identification, de traitement et de commercialisation.",
+          "leading_labels": [
+            "cartographie"
+          ]
+        },
+        {
+          "entry_id": "scène__nom__1",
+          "sense_id": "__ws_11_scène__nom__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(Télédétection spatiale) Surface observée correspondant à un lot de données auquel on applique le même prétraitement.",
+          "leading_labels": [
+            "télédétection spatiale"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "adec499d27129d721ec3564a3c6d349521e4973c05fd5f17469df2cc0a3dfd21",
+      "record_hash": "e2c277a8e7eee566959401cda4993a5570e5789bfd7aceba62f2c3b6638b5695"
+    },
+    {
+      "stable_lexeme_key": "gouvernement|NOM",
+      "runtime_lexeme_id": 5841,
+      "lemma": "gouvernement",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 104.6908,
+        "lexique_frequency": 71.152,
+        "contextual_diversity": 14.4902
+      },
+      "current_proposed_sense": {
+        "entry_id": "gouvernement__nom__1",
+        "sense_id": "__ws_1_gouvernement__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Action, charge, ou manière de gouverner, de régir, d’administrer quelque chose, en particulier dans le domaine politique.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "gouvernement__nom__1",
+          "sense_id": "__ws_1_gouvernement__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Action, charge, ou manière de gouverner, de régir, d’administrer quelque chose, en particulier dans le domaine politique.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "gouvernement__nom__1",
+          "sense_id": "__ws_2_gouvernement__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Pouvoir qui gouverne un État.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "gouvernement__nom__1",
+          "sense_id": "__ws_3_gouvernement__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Organisation ou structure politique de l’État.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "gouvernement__nom__1",
+          "sense_id": "__ws_4_gouvernement__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Nom collectif) Ceux qui gouvernent un état et particulièrement le pouvoir exécutif.",
+          "leading_labels": [
+            "nom collectif"
+          ]
+        },
+        {
+          "entry_id": "gouvernement__nom__1",
+          "sense_id": "__ws_5_gouvernement__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire) Charge de gouverneur dans une province, dans une ville, dans une place forte, dans une maison royale.",
+          "leading_labels": [
+            "histoire"
+          ]
+        },
+        {
+          "entry_id": "gouvernement__nom__1",
+          "sense_id": "__ws_6_gouvernement__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire) (Par extension) Territoire sous le pouvoir de ce gouverneur.",
+          "leading_labels": [
+            "histoire",
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "gouvernement__nom__1",
+          "sense_id": "__ws_7_gouvernement__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire) Charge de gouverneur chargé de l’éducation et de l’instruction d’un jeune prince, d’un jeune homme de grande famille.",
+          "leading_labels": [
+            "histoire"
+          ]
+        },
+        {
+          "entry_id": "gouvernement__nom__1",
+          "sense_id": "__ws_8_gouvernement__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Argot polytechnicien) Désigne dans l'argot de l’École Polytechnique l’épée d’ordonnance, car elle est fournie par l’État. [1] [2] On la nomme aussi tangente.",
+          "leading_labels": [
+            "argot polytechnicien"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "8277b5c9ea6c232a6ff3f3506c490548b81d9f52ac6e7e5d5e5ffb8a558b72d9",
+      "record_hash": "bfc7a1734227e7542b1def1fe215064ef49a2c32e7202bfe799fcd68ef7c217b"
+    },
+    {
+      "stable_lexeme_key": "niveau|NOM",
+      "runtime_lexeme_id": 8660,
+      "lemma": "niveau",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 104.0104,
+        "lexique_frequency": 70.68,
+        "contextual_diversity": 19.08145
+      },
+      "current_proposed_sense": {
+        "entry_id": "niveau__nom__1",
+        "sense_id": "__ws_1_niveau__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Maçonnerie) Outil servant à vérifier l’horizontalité d’une surface, d’un sol.",
+        "leading_labels": [
+          "maçonnerie"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "niveau__nom__1",
+          "sense_id": "__ws_1_niveau__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Maçonnerie) Outil servant à vérifier l’horizontalité d’une surface, d’un sol.",
+          "leading_labels": [
+            "maçonnerie"
+          ]
+        },
+        {
+          "entry_id": "niveau__nom__1",
+          "sense_id": "__ws_2_niveau__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Géographie, Géométrie) Degré d’élévation par rapport à un plan horizontal.",
+          "leading_labels": [
+            "géographie",
+            "géométrie"
+          ]
+        },
+        {
+          "entry_id": "niveau__nom__1",
+          "sense_id": "__ws_3_niveau__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Art, Mécanique) Degré de remplissage d'un réservoir.",
+          "leading_labels": [
+            "art",
+            "mécanique"
+          ]
+        },
+        {
+          "entry_id": "niveau__nom__1",
+          "sense_id": "__ws_4_niveau__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Degré d'évolution.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "niveau__nom__1",
+          "sense_id": "__ws_5_niveau__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Éducation, Sport) Degré de compétence ou de capacité.",
+          "leading_labels": [
+            "sens figuré",
+            "éducation",
+            "sport"
+          ]
+        },
+        {
+          "entry_id": "niveau__nom__1",
+          "sense_id": "__ws_6_niveau__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Étage.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "niveau__nom__1",
+          "sense_id": "__ws_7_niveau__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Jeux) Étape d’un jeu vidéo.",
+          "leading_labels": [
+            "jeux"
+          ]
+        },
+        {
+          "entry_id": "niveau__nom__1",
+          "sense_id": "__ws_8_niveau__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Chimie physique) (Par ellipse) Niveau d’énergie.",
+          "leading_labels": [
+            "chimie physique",
+            "par ellipse"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b1c7515affff6fd519fb625cec93164280d7cd98ac037eee3f30d5fb5d4aa887",
+      "record_hash": "dec8f89dd58fd70128f0038fd373c9be67f599b39eaa9cc58c37fd290838a6bd"
+    },
+    {
+      "stable_lexeme_key": "presse|NOM",
+      "runtime_lexeme_id": 10006,
+      "lemma": "presse",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 96.0544,
+        "lexique_frequency": 47.563,
+        "contextual_diversity": 15.83282
+      },
+      "current_proposed_sense": {
+        "entry_id": "presse__nom__1",
+        "sense_id": "__ws_1_presse__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Action de presser.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "presse__nom__1",
+          "sense_id": "__ws_1_presse__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Action de presser.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "presse__nom__1",
+          "sense_id": "__ws_2_presse__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Mécanisme qui, à l’aide d’un effort minime, permet d’exercer une pression considérable.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "presse__nom__1",
+          "sense_id": "__ws_3_presse__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Agriculture) Machine destinée à presser et mettre en balles ou ballots le foin, la paille.",
+          "leading_labels": [
+            "en particulier",
+            "agriculture"
+          ]
+        },
+        {
+          "entry_id": "presse__nom__1",
+          "sense_id": "__ws_4_presse__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Imprimerie) Machine au moyen de laquelle on imprime soit les feuilles d’un livre, soit des gravures, etc.",
+          "leading_labels": [
+            "imprimerie"
+          ]
+        },
+        {
+          "entry_id": "presse__nom__1",
+          "sense_id": "__ws_5_presse__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) (Collectif) (Journalisme) Ensemble des journaux.",
+          "leading_labels": [
+            "sens figuré",
+            "collectif",
+            "journalisme"
+          ]
+        },
+        {
+          "entry_id": "presse__nom__1",
+          "sense_id": "__ws_6_presse__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Foule, multitude de personnes qui se pressent les unes les autres dans un espace plus ou moins limité.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "presse__nom__1",
+          "sense_id": "__ws_7_presse__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Hâte, action de se hâter, fait d’être pressé, impatience.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "presse__nom__1",
+          "sense_id": "__ws_8_presse__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Méthode d’enrôlement forcé dans les forces armées.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "b8706f28c4521f9d9f0a9e466a74ba051ed5f8672d8d76b59a1702b078c95f7d",
+      "record_hash": "104ad13dcaa3214eb2cdd89ab52d507b768647b832bc7a94cd1d7d61507e98cc"
+    },
+    {
+      "stable_lexeme_key": "énergie|NOM",
+      "runtime_lexeme_id": 14010,
+      "lemma": "énergie",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 94.7276,
+        "lexique_frequency": 55.396,
+        "contextual_diversity": 12.95928
+      },
+      "current_proposed_sense": {
+        "entry_id": "énergie__nom__1",
+        "sense_id": "__ws_1_énergie__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Force en action.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "énergie__nom__1",
+          "sense_id": "__ws_1_énergie__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Force en action.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "énergie__nom__1",
+          "sense_id": "__ws_2_énergie__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Vigueur de caractère, ardeur dans l’action.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "énergie__nom__1",
+          "sense_id": "__ws_3_énergie__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Physique) Application d’une force sur une distance, capacité d'action.",
+          "leading_labels": [
+            "physique"
+          ]
+        },
+        {
+          "entry_id": "énergie__nom__1",
+          "sense_id": "__ws_4_énergie__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Secteur industriel qui produit l'électricité et les carburants pour les besoins de l’économie.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "énergie__nom__1",
+          "sense_id": "__ws_5_énergie__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Production de ce secteur.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "8526767e353ef92974a1051441c285c1d77ecde7e77aac400bc8c2268a09cb7e",
+      "record_hash": "da497dd92c2da3fd7849bcf46f15f4a05bad833b0f242ae74720dc27f8102d04"
+    },
+    {
+      "stable_lexeme_key": "maire|NOM",
+      "runtime_lexeme_id": 7712,
+      "lemma": "maire",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 93.4374,
+        "lexique_frequency": 30.253,
+        "contextual_diversity": 6.18953
+      },
+      "current_proposed_sense": {
+        "entry_id": "maire__nom__1",
+        "sense_id": "__ws_1_maire__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(France) (Canada) (Suisse) Premier officier municipal d’une commune, municipalité ou arrondissement, élu, en France, par les conseillers municipaux à l’issue des élections municipales, en Suisse, soit directement par le corps électoral (Jura), soit chaque année pour une année par le conseil municipal (Genève).",
+        "leading_labels": [
+          "france",
+          "canada",
+          "suisse"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "maire__nom__1",
+          "sense_id": "__ws_1_maire__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(France) (Canada) (Suisse) Premier officier municipal d’une commune, municipalité ou arrondissement, élu, en France, par les conseillers municipaux à l’issue des élections municipales, en Suisse, soit directement par le corps électoral (Jura), soit chaque année pour une année par le conseil municipal (Genève).",
+          "leading_labels": [
+            "france",
+            "canada",
+            "suisse"
+          ]
+        },
+        {
+          "entry_id": "maire__nom__1",
+          "sense_id": "__ws_2_maire__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire de France, Monarchie) Sorte de conseiller du roi qui, en fait, sous les mérovingiens, exerçait le pouvoir.",
+          "leading_labels": [
+            "histoire de france",
+            "monarchie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "a2bbda4c9ccc27dbf885eb2c1b30c42ac306c1dcaa095dca015f68bcdcf292b1",
+      "record_hash": "f539fcabe1dcc19334cbca9a4d3ad547f9870562417aeff9dc290e6af3012fab"
+    },
+    {
+      "stable_lexeme_key": "juge|NOM",
+      "runtime_lexeme_id": 7222,
+      "lemma": "juge",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 91.8851,
+        "lexique_frequency": 74.873,
+        "contextual_diversity": 15.21739
+      },
+      "current_proposed_sense": {
+        "entry_id": "juge__nom__1",
+        "sense_id": "__ws_1_juge__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Métier) (Justice) Magistrat investi par autorité publique du pouvoir de dire le droit ou reconnaître le fait et de la fonction d’appliquer la loi dans les litiges.",
+        "leading_labels": [
+          "métier",
+          "justice"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_1_juge__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Métier) (Justice) Magistrat investi par autorité publique du pouvoir de dire le droit ou reconnaître le fait et de la fonction d’appliquer la loi dans les litiges.",
+          "leading_labels": [
+            "métier",
+            "justice"
+          ]
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_2_juge__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Tribunal, absolument et collectivement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_3_juge__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Personne appelée à faire partie d’un jury.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_4_juge__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Arbitre, toute personne choisie pour prononcer sur un différend, ou au jugement, à l’opinion de laquelle on s’en rapporte sur quelque chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_5_juge__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Personne ou autorité qui juge.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_6_juge__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Celui, celle qui est capable de juger d’une chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_7_juge__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Se dit en parlant des sens, de la conscience, etc.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_8_juge__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Désuet) (Au féminin) Épouse d’un juge.",
+          "leading_labels": [
+            "désuet",
+            "au féminin"
+          ]
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_9_juge__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire, Religion) Il se dit aussi de certains magistrats suprêmes qui gouvernèrent le peuple juif durant la période qui commence à la mort de Josué et qui finit à la naissance de Samuel.",
+          "leading_labels": [
+            "histoire",
+            "religion"
+          ]
+        },
+        {
+          "entry_id": "juge__nom__1",
+          "sense_id": "__ws_10_juge__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Moyen Âge) (Noblesse) Souverain de l’un des judicats de Sardaigne.",
+          "leading_labels": [
+            "moyen âge",
+            "noblesse"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "26b39c0449d8ce49578828860bd1ec42eb6007342f97e33294e7562a720dc5d3",
+      "record_hash": "8709341b0369803e9c37202a7685142e80f16a9aa0833809ac2cd363d5d2b733"
+    },
+    {
+      "stable_lexeme_key": "impression|NOM",
+      "runtime_lexeme_id": 6497,
+      "lemma": "impression",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 89.1426,
+        "lexique_frequency": 97.744,
+        "contextual_diversity": 30.9752
+      },
+      "current_proposed_sense": {
+        "entry_id": "impression__nom__1",
+        "sense_id": "__ws_1_impression__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Action d’imprimer par laquelle une chose appliquée sur une autre y laisse une empreinte.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_1_impression__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Action d’imprimer par laquelle une chose appliquée sur une autre y laisse une empreinte.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_2_impression__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Imprimerie) Action d’imprimer un livre, un journal, etc.",
+          "leading_labels": [
+            "imprimerie"
+          ]
+        },
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_3_impression__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Rare) Édition.",
+          "leading_labels": [
+            "rare"
+          ]
+        },
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_4_impression__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Document imprimé.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_5_impression__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Effet que l’action d’une chose produit sur un corps.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_6_impression__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Rare) Ce qui reste de l’action qu’une chose a exercée sur un corps.",
+          "leading_labels": [
+            "rare"
+          ]
+        },
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_7_impression__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Effet qu’une cause quelconque produit dans le cœur ou dans l’esprit.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_8_impression__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Ensemble des actions physiologiques d’où résulte la sensation.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "impression__nom__1",
+          "sense_id": "__ws_9_impression__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Paléobotanique, Taphonomie) Fossile constitué par l’empreinte externe d’un végétal dans la roche, sans conservation notable de sa matière organique originelle.",
+          "leading_labels": [
+            "paléobotanique",
+            "taphonomie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "0bf221f1e0d4bf939fdb490c82e6e065f4664457559ae60529853514058ba35b",
+      "record_hash": "35f2295439f7dbb5fcce073c63eceeea8a4f410a987ceee605a0834e50180eed"
+    },
+    {
+      "stable_lexeme_key": "équipe|NOM",
+      "runtime_lexeme_id": 14099,
+      "lemma": "équipe",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 86.5892,
+        "lexique_frequency": 204.737,
+        "contextual_diversity": 35.75015
+      },
+      "current_proposed_sense": {
+        "entry_id": "équipe__nom__1",
+        "sense_id": "__ws_1_équipe__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Groupe de travailleurs attachés à un travail spécial.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "équipe__nom__1",
+          "sense_id": "__ws_1_équipe__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Groupe de travailleurs attachés à un travail spécial.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "équipe__nom__1",
+          "sense_id": "__ws_2_équipe__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Série de bateaux amarrés les uns aux autres, allant à la voile ou traînés par des hommes le long d’une rivière.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "équipe__nom__1",
+          "sense_id": "__ws_3_équipe__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Équipage d’un bateau, d’un canot de plaisance.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "équipe__nom__1",
+          "sense_id": "__ws_4_équipe__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Jeux) Ensemble de joueurs divisés en camps rivaux.",
+          "leading_labels": [
+            "jeux"
+          ]
+        },
+        {
+          "entry_id": "équipe__nom__1",
+          "sense_id": "__ws_5_équipe__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Sport) Groupe de sportifs qui agissent de concert pour une victoire commune.",
+          "leading_labels": [
+            "sport"
+          ]
+        },
+        {
+          "entry_id": "équipe__nom__1",
+          "sense_id": "__ws_6_équipe__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) Petit groupe de soldats, de même rang et souvent de compétences complémentaires.",
+          "leading_labels": [
+            "militaire"
+          ]
+        },
+        {
+          "entry_id": "équipe__nom__1",
+          "sense_id": "__ws_6.a_équipe__nom__1",
+          "sense_number": "6.a",
+          "entry_rank": 1,
+          "definition_fr": "(Sport) Un binôme de plongeurs évoluant ensemble pendant une plongée.",
+          "leading_labels": [
+            "sport"
+          ]
+        },
+        {
+          "entry_id": "équipe__nom__1",
+          "sense_id": "__ws_7_équipe__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Suisse) Groupe de personnes se trouvant rassemblées de manière plus ou moins fortuite.",
+          "leading_labels": [
+            "suisse"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "081cb2a602a7beff1b1ad97429537861e21509c1f97e9334614b5a5c37c7bdda",
+      "record_hash": "d6e7bf46756556b1af293306c822cb38a0b79dcdd5e2553be4c0f4d4c8094d15"
+    },
+    {
+      "stable_lexeme_key": "sang|NOM",
+      "runtime_lexeme_id": 11686,
+      "lemma": "sang",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 86.2135,
+        "lexique_frequency": 321.997,
+        "contextual_diversity": 54.82088
+      },
+      "current_proposed_sense": {
+        "entry_id": "sang__nom__1",
+        "sense_id": "__ws_2_sang__nom__1",
+        "sense_number": "2",
+        "entry_rank": 1,
+        "definition_fr": "(Sens figuré) Ce fluide qui coule dans les combats et les massacres.",
+        "leading_labels": [
+          "sens figuré"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "sang__nom__1",
+          "sense_id": "__ws_1_sang__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Anatomie) Organe liquide constitué de globules rouges, de cellules immunitaires (globules blancs) et de plaquettes sanguines, baignés dans le plasma sanguin et dont le rôle principal est le transport de l’oxygène, du dioxyde de carbone des nutriments et des déchets chez les vertébrés.",
+          "leading_labels": [
+            "anatomie"
+          ]
+        },
+        {
+          "entry_id": "sang__nom__1",
+          "sense_id": "__ws_2_sang__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Ce fluide qui coule dans les combats et les massacres.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "sang__nom__1",
+          "sense_id": "__ws_3_sang__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Race ; famille ; lignée ; lignage → voir liens du sang.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sang__nom__1",
+          "sense_id": "__ws_4_sang__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Essence d’un être définissant profondément le groupe auquel il appartient, comme à une race ou à une famille.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sang__nom__1",
+          "sense_id": "__ws_5_sang__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Enfants par rapport à leurs parents.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sang__nom__1",
+          "sense_id": "__ws_6_sang__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Hippologie) Race, en parlant des chevaux.",
+          "leading_labels": [
+            "hippologie"
+          ]
+        },
+        {
+          "entry_id": "sang__nom__1",
+          "sense_id": "__ws_7_sang__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Goûts, disposition innée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "sang__nom__1",
+          "sense_id": "__ws_8_sang__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Personne à qui l’on fait confiance, que l’on peut considérer comme faisant partie de sa famille.",
+          "leading_labels": [
+            "familier"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "ce1350113cdfdfc1627aaaae9d395b14fb5f484df8689fc005d3950bf4ce50db",
+      "record_hash": "cc01fd37cfb7be5ba6fa250b8ca799a80509ceb5800f060d1df5059d5b070c81"
+    },
+    {
+      "stable_lexeme_key": "mars|NOM",
+      "runtime_lexeme_id": 7896,
+      "lemma": "mars",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 86.1731,
+        "lexique_frequency": 9.041,
+        "contextual_diversity": 5.55113
+      },
+      "current_proposed_sense": {
+        "entry_id": "mars__nom__1",
+        "sense_id": "__ws_1_mars__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Troisième mois de l’année du calendrier grégorien, qui compte 31 jours.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "mars__nom__1",
+          "sense_id": "__ws_1_mars__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Troisième mois de l’année du calendrier grégorien, qui compte 31 jours.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "mars__nom__1",
+          "sense_id": "__ws_2_mars__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Poétique) La guerre.",
+          "leading_labels": [
+            "poétique"
+          ]
+        },
+        {
+          "entry_id": "mars__nom__1",
+          "sense_id": "__ws_3_mars__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Agriculture) (Au pluriel) (Vieilli) Nom collectif dans lequel on rangeait toutes les cultures secondaires semées au printemps, comme l’avoine, l’orge, la vesce, etc.",
+          "leading_labels": [
+            "agriculture",
+            "au pluriel",
+            "vieilli"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "6bfc34f5a1363c21eb7df9d2aa6efdf189d457969c678724887cfd6fd5e27cd5",
+      "record_hash": "527e233e9d691a1e195ef48f4e4de1556c4414c54ecebd40ac36e0b84edf68ee"
+    },
+    {
+      "stable_lexeme_key": "soldat|NOM",
+      "runtime_lexeme_id": 12045,
+      "lemma": "soldat",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 85.7998,
+        "lexique_frequency": 89.804,
+        "contextual_diversity": 9.91274
+      },
+      "current_proposed_sense": {
+        "entry_id": "soldat__nom__1",
+        "sense_id": "__ws_1_soldat__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Militaire) Celui qui sert dans une armée, et reçoit une solde.",
+        "leading_labels": [
+          "militaire"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "soldat__nom__1",
+          "sense_id": "__ws_1_soldat__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) Celui qui sert dans une armée, et reçoit une solde.",
+          "leading_labels": [
+            "militaire"
+          ]
+        },
+        {
+          "entry_id": "soldat__nom__1",
+          "sense_id": "__ws_2_soldat__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (France) Grade donné dans l’Armée de terre et l’Armée de l’air françaises, situé au plus bas de la hiérarchie, correspondant au matelot dans la Marine nationale française. Le code OTAN : OR-1.",
+          "leading_labels": [
+            "en particulier",
+            "france"
+          ]
+        },
+        {
+          "entry_id": "soldat__nom__1",
+          "sense_id": "__ws_3_soldat__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Canada) Grade des Forces armées canadiennes.",
+          "leading_labels": [
+            "en particulier",
+            "canada"
+          ]
+        },
+        {
+          "entry_id": "soldat__nom__1",
+          "sense_id": "__ws_4_soldat__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) Celui qui n’a pas de grade.",
+          "leading_labels": [
+            "en particulier"
+          ]
+        },
+        {
+          "entry_id": "soldat__nom__1",
+          "sense_id": "__ws_5_soldat__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(En général) Caractère, qualités, manières de ceux qui servent dans l’armée.",
+          "leading_labels": [
+            "en général"
+          ]
+        },
+        {
+          "entry_id": "soldat__nom__1",
+          "sense_id": "__ws_6_soldat__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Celui qui sert une cause, qui combat pour elle.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "e27ac3271d383b2d93ff32fca5ec968c63bb5acb9ae9041e53f9559b10468876",
+      "record_hash": "1a6382190312e77d4931ee0f3d92e9fe450e3055f8a557b1113fb057452e593d"
+    },
+    {
+      "stable_lexeme_key": "peau|NOM",
+      "runtime_lexeme_id": 9378,
+      "lemma": "peau",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 85.4304,
+        "lexique_frequency": 69.19,
+        "contextual_diversity": 21.53552
+      },
+      "current_proposed_sense": {
+        "entry_id": "peau__nom__1",
+        "sense_id": "__ws_2_peau__nom__1",
+        "sense_number": "2",
+        "entry_rank": 1,
+        "definition_fr": "(Par métonymie) La personne elle-même.",
+        "leading_labels": [
+          "par métonymie"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_1_peau__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Anatomie) Enveloppe d’un corps humain ou animal.",
+          "leading_labels": [
+            "anatomie"
+          ]
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_2_peau__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par métonymie) La personne elle-même.",
+          "leading_labels": [
+            "par métonymie"
+          ]
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_3_peau__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Dépouille de l’animal ; cuir.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_4_peau__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Parties tendineuses et coriaces qui se trouvent dans la viande.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_5_peau__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Enveloppe des fruits, amandes, oignons, etc.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_6_peau__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Croûte plus ou moins fine qui se forme sur les substances liquides ou onctueuses, par l’épaississement qui résulte de l’évaporation.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_7_peau__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Péjoratif) Personne méprisable.",
+          "leading_labels": [
+            "péjoratif"
+          ]
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_8_peau__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Technique) Partie externe d'une pièce composée d'un assemblage de matériaux.",
+          "leading_labels": [
+            "technique"
+          ]
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_9_peau__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "Femme de mauvaise vie, prostituée.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "peau__nom__1",
+          "sense_id": "__ws_10_peau__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Par ellipse) Peau de phoque.",
+          "leading_labels": [
+            "par ellipse"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "6d072b866cffea55174608ff482df9dbce8f5e38df34e0301279cbac93602934",
+      "record_hash": "c7552bbfab571ba56c002d119c641bb5a7ce278b332db01f1ab7038ba089c469"
+    },
+    {
+      "stable_lexeme_key": "émission|NOM",
+      "runtime_lexeme_id": 14000,
+      "lemma": "émission",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 83.994,
+        "lexique_frequency": 40.247,
+        "contextual_diversity": 7.23974
+      },
+      "current_proposed_sense": {
+        "entry_id": "émission__nom__1",
+        "sense_id": "__ws_1_émission__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Didactique) Action d’émettre ou résultat de cette action.",
+        "leading_labels": [
+          "didactique"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "émission__nom__1",
+          "sense_id": "__ws_1_émission__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Didactique) Action d’émettre ou résultat de cette action.",
+          "leading_labels": [
+            "didactique"
+          ]
+        },
+        {
+          "entry_id": "émission__nom__1",
+          "sense_id": "__ws_2_émission__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Médias) Présentation d'informations, de documentaires, de jeux, par la radio ou par la télévision.",
+          "leading_labels": [
+            "médias"
+          ]
+        },
+        {
+          "entry_id": "émission__nom__1",
+          "sense_id": "__ws_3_émission__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Médecine) Écoulement sous pression d'un liquide à l'extérieur du corps.",
+          "leading_labels": [
+            "médecine"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "75fa62c0a4b7b1c494f300966c9ed9836fe2a92d222cd1c592043e246ae415f0",
+      "record_hash": "a099cc0f2f7d69c4f3945b6fd595e67113221512c12bbaf90901dd3dcf5c3c45"
+    },
+    {
+      "stable_lexeme_key": "signe|NOM",
+      "runtime_lexeme_id": 11945,
+      "lemma": "signe",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 83.281,
+        "lexique_frequency": 80.408,
+        "contextual_diversity": 24.703
+      },
+      "current_proposed_sense": {
+        "entry_id": "signe__nom__1",
+        "sense_id": "__ws_1_signe__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Indice ou marque d’une chose.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_1_signe__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Indice ou marque d’une chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_2_signe__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Ce qui sert à représenter une chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_3_signe__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Certaines marques ou taches naturelles qu’on a sur la peau.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_4_signe__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Certaines démonstrations extérieures que l’on fait pour donner à connaître ce que l’on pense ou ce que l’on veut.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_5_signe__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Religion) Miracle.",
+          "leading_labels": [
+            "religion"
+          ]
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_6_signe__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) Phénomènes que l’on voit quelquefois dans le ciel et qu’on regarde comme des sortes de présages.",
+          "leading_labels": [
+            "au pluriel"
+          ]
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_7_signe__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Astronomie) Chacune des douze parties de l’écliptique que le Soleil semble parcourir dans l’intervalle d’une année tropique.",
+          "leading_labels": [
+            "astronomie"
+          ]
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_8_signe__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Métrologie) (Par extension) Unité de mesure d’angle plan, égale à la douzième partie du cercle, soit 30 degrés.",
+          "leading_labels": [
+            "métrologie",
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_9_signe__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Linguistique) Unité linguistique constituée d’une partie physique, matérielle, le signifiant, et d’une partie abstraite, conceptuelle, le signifié.",
+          "leading_labels": [
+            "linguistique"
+          ]
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_10_signe__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Édition, Typographie) Catégorie regroupant les lettres, signes de ponctuation et les espaces utilisés pour composer un texte. Le signe est une unité fréquemment utilisée pour quantifier le volume d'un texte, le travail à faire sur un texte (écriture, maquettage, traduction).",
+          "leading_labels": [
+            "édition",
+            "typographie"
+          ]
+        },
+        {
+          "entry_id": "signe__nom__1",
+          "sense_id": "__ws_11_signe__nom__1",
+          "sense_number": "11",
+          "entry_rank": 1,
+          "definition_fr": "(Québec) Évier.",
+          "leading_labels": [
+            "québec"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "94272d1e1405cd1c0abab4207f6a745ae7b973bc985c721922705275c2a9af3c",
+      "record_hash": "fc709658509f9b9cf4bba70c236a4e23d9ddbc15dfe988cdb5fb0f27ea9b41db"
+    },
+    {
+      "stable_lexeme_key": "difficulté|NOM",
+      "runtime_lexeme_id": 3702,
+      "lemma": "difficulté",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 81.9289,
+        "lexique_frequency": 17.858,
+        "contextual_diversity": 3.91304
+      },
+      "current_proposed_sense": {
+        "entry_id": "difficulté__nom__1",
+        "sense_id": "__ws_1_difficulté__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Ce qui rend une chose difficile.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_1_difficulté__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Ce qui rend une chose difficile.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_2_difficulté__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Manque de facilité pour quelque action que ce soit.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_3_difficulté__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) Misère.",
+          "leading_labels": [
+            "au pluriel"
+          ]
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_4_difficulté__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "Ce qu’il y a de difficile en quelque chose, obstacle, empêchement, traverse, opposition.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_5_difficulté__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par antiphrase) Pour marquer l’adhésion, le consentement.",
+          "leading_labels": [
+            "par antiphrase"
+          ]
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_6_difficulté__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Obscurité d’un texte, passage difficile à comprendre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_7_difficulté__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) (Musique) Morceaux de musique d’une exécution difficile.",
+          "leading_labels": [
+            "au pluriel",
+            "musique"
+          ]
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_8_difficulté__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Objection, raison alléguée contre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_9_difficulté__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) Problèmes embarrassants.",
+          "leading_labels": [
+            "au pluriel"
+          ]
+        },
+        {
+          "entry_id": "difficulté__nom__1",
+          "sense_id": "__ws_10_difficulté__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Différend, contestation.",
+          "leading_labels": [
+            "familier"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "501e41c000e5c0a19c831afc0ded2c90571322c8115584e4d26fde2640a6b3d4",
+      "record_hash": "44af4871a0605f6b7fa8cf712c7fffd876a92c81128db3f36a979bbbaf79a6a2"
+    },
+    {
+      "stable_lexeme_key": "échange|NOM",
+      "runtime_lexeme_id": 13804,
+      "lemma": "échange",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 80.0569,
+        "lexique_frequency": 37.367,
+        "contextual_diversity": 14.00337
+      },
+      "current_proposed_sense": {
+        "entry_id": "échange__nom__1",
+        "sense_id": "__ws_1_échange__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Action d’échanger une chose contre une autre reçue en contrepartie ; troc.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "échange__nom__1",
+          "sense_id": "__ws_1_échange__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Action d’échanger une chose contre une autre reçue en contrepartie ; troc.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "échange__nom__1",
+          "sense_id": "__ws_2_échange__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Flux réciproque entre des parties.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "échange__nom__1",
+          "sense_id": "__ws_3_échange__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) (Au pluriel) Commerce.",
+          "leading_labels": [
+            "spécialement",
+            "au pluriel"
+          ]
+        },
+        {
+          "entry_id": "échange__nom__1",
+          "sense_id": "__ws_4_échange__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Biologie) Passage, circulation de substances entre une cellule et le milieu extérieur.",
+          "leading_labels": [
+            "biologie"
+          ]
+        },
+        {
+          "entry_id": "échange__nom__1",
+          "sense_id": "__ws_5_échange__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Remise, communication ou envoi réciproque, surtout dans le langage diplomatique.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "échange__nom__1",
+          "sense_id": "__ws_6_échange__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Québec) Monnaie, notamment lorsqu'on parle de petite monnaie (pièces inférieures à 1 $). L'usage tend à être remplacé par le mot change, du même sens. Note : utilisé dans ce sens, le mot est féminin.",
+          "leading_labels": [
+            "québec"
+          ]
+        },
+        {
+          "entry_id": "échange__nom__1",
+          "sense_id": "__ws_7_échange__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Conversation entre des personnes ayant des avis différents.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "1bc9903baf8190f033c96ecb1cd98d061a034ed24d562e18cb7b33aac8d8c1eb",
+      "record_hash": "7521bdd11fccefac8e051c46090877b1a0878081d2281be4837486e30eee03b3"
+    },
+    {
+      "stable_lexeme_key": "relation|NOM",
+      "runtime_lexeme_id": 10897,
+      "lemma": "relation",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 79.6919,
+        "lexique_frequency": 112.525,
+        "contextual_diversity": 22.03919
+      },
+      "current_proposed_sense": {
+        "entry_id": "relation__nom__1",
+        "sense_id": "__ws_1_relation__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Lien, rapport d’une chose à une autre.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_1_relation__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Lien, rapport d’une chose à une autre.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_2_relation__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Interaction, liaison entre personnes ou entités.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_3_relation__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) Liaison affective ou amoureuse.",
+          "leading_labels": [
+            "spécialement"
+          ]
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_4_relation__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) (Familier) Personnes avec qui on est en rapport, sans être étroitement lié.",
+          "leading_labels": [
+            "par extension",
+            "familier"
+          ]
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_5_relation__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Personne, entité avec laquelle on a des liens utiles ou de confiance.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_6_relation__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Proposition qui lie un certain nombre d’éléments dans un ensemble.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_7_relation__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Sur un ensemble E, partie du produit cartésien de E par E. Expressions utilisées : relation symétrique, relation réflexive, relation transitive, relation d'ordre, relation d'équivalence.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_8_relation__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Action de relater ; récit ou narration qu’on fait de ce que l’on a vu ou entendu.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_9_relation__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) (Philosophie) Rapport qui est entre deux personnes, entre deux choses que l’on considère ensemble, et respectivement l’une à l’autre.",
+          "leading_labels": [
+            "spécialement",
+            "philosophie"
+          ]
+        },
+        {
+          "entry_id": "relation__nom__1",
+          "sense_id": "__ws_10_relation__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Bases de données) Lien entre des champs selon une clé : table de base de données relationnelle.",
+          "leading_labels": [
+            "bases de données"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "d6895bf42771e5452489811c88f084a2c099351dc5b3c8b92b67ae8d75e66b21",
+      "record_hash": "10ad0d28246ae4584a435fb1321697e6951da68800fe3960d4c7395e2dffe70d"
+    },
+    {
+      "stable_lexeme_key": "terrain|NOM",
+      "runtime_lexeme_id": 12775,
+      "lemma": "terrain",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 79.0324,
+        "lexique_frequency": 61.222,
+        "contextual_diversity": 17.05603
+      },
+      "current_proposed_sense": {
+        "entry_id": "terrain__nom__1",
+        "sense_id": "__ws_1_terrain__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Terre, sol considéré par rapport à sa nature, à sa composition, à sa forme.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "terrain__nom__1",
+          "sense_id": "__ws_1_terrain__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Terre, sol considéré par rapport à sa nature, à sa composition, à sa forme.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "terrain__nom__1",
+          "sense_id": "__ws_2_terrain__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Espace de terre, défini par son emplacement ou sa délimitation.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "terrain__nom__1",
+          "sense_id": "__ws_3_terrain__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par métonymie) Lieu où se déroule une action.",
+          "leading_labels": [
+            "par métonymie"
+          ]
+        },
+        {
+          "entry_id": "terrain__nom__1",
+          "sense_id": "__ws_4_terrain__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Spécialement) (Par ellipse) Terrain de jeu.",
+          "leading_labels": [
+            "spécialement",
+            "par ellipse"
+          ]
+        },
+        {
+          "entry_id": "terrain__nom__1",
+          "sense_id": "__ws_5_terrain__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Manège) Piste qu’on suit dans le manège.",
+          "leading_labels": [
+            "manège"
+          ]
+        },
+        {
+          "entry_id": "terrain__nom__1",
+          "sense_id": "__ws_6_terrain__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Géologie) Ensemble de différentes couches de terre par rapport à leur ancienneté et à leur nature.",
+          "leading_labels": [
+            "géologie"
+          ]
+        },
+        {
+          "entry_id": "terrain__nom__1",
+          "sense_id": "__ws_7_terrain__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Peinture) Ensemble des parties d’un paysage qui représentent la terre nue ou seulement revêtue d’herbes.",
+          "leading_labels": [
+            "peinture"
+          ]
+        },
+        {
+          "entry_id": "terrain__nom__1",
+          "sense_id": "__ws_8_terrain__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Ensemble de facteurs propices ou néfastes à quelque chose.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "76e192ab8aeaaadbb71c9ea7ffd3f2ef845ad02194c0e71f89053e0f24dacfbc",
+      "record_hash": "d820754c0506b96c1efd478f7d937873316953baf54aa3a647306b8f75ae8139"
+    },
+    {
+      "stable_lexeme_key": "occasion|NOM",
+      "runtime_lexeme_id": 8857,
+      "lemma": "occasion",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 78.9343,
+        "lexique_frequency": 60.028,
+        "contextual_diversity": 20.14238
+      },
+      "current_proposed_sense": {
+        "entry_id": "occasion__nom__1",
+        "sense_id": "__ws_1_occasion__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Rencontre, conjoncture ou concours fortuit et éphémère de circonstances qui favorise temporairement une entreprise, un dessein, etc.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "occasion__nom__1",
+          "sense_id": "__ws_1_occasion__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Rencontre, conjoncture ou concours fortuit et éphémère de circonstances qui favorise temporairement une entreprise, un dessein, etc.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "occasion__nom__1",
+          "sense_id": "__ws_2_occasion__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Ce qui donne lieu à une chose.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "occasion__nom__1",
+          "sense_id": "__ws_3_occasion__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Objet d’un prix moins élevé que celui des objets de même espèce, soit parce qu’il a déjà servi, soit pour toute autre raison.",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "0d26efe197cadcae65d86ac4fef8eed0e16738e319f7d08692ea1dcee0b25c75",
+      "record_hash": "bd42fd13614090680b996a6826d3b3f1b5a2d13dd9e0a8052843bab201900559"
+    },
+    {
+      "stable_lexeme_key": "robe|NOM",
+      "runtime_lexeme_id": 11207,
+      "lemma": "robe",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 77.8822,
+        "lexique_frequency": 7.386,
+        "contextual_diversity": 15.60778
+      },
+      "current_proposed_sense": {
+        "entry_id": "robe__nom__1",
+        "sense_id": "__ws_1_robe__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Habillement) Vêtement long, en forme de fourreau plus ou moins ample, qui enveloppe le corps, tient aux épaules et a des manches ou des ouvertures pour les bras.",
+        "leading_labels": [
+          "habillement"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_1_robe__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Habillement) Vêtement long, en forme de fourreau plus ou moins ample, qui enveloppe le corps, tient aux épaules et a des manches ou des ouvertures pour les bras.",
+          "leading_labels": [
+            "habillement"
+          ]
+        },
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_2_robe__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par métonymie) Profession de magistrat, d’avocat.",
+          "leading_labels": [
+            "par métonymie"
+          ]
+        },
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_3_robe__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Histoire) La noblesse de robe.",
+          "leading_labels": [
+            "histoire"
+          ]
+        },
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_4_robe__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par métonymie) Profession des ecclésiastiques, des religieux ; il est toujours précédé du possessif.",
+          "leading_labels": [
+            "par métonymie"
+          ]
+        },
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_5_robe__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Pelage ou apparence de quelques animaux, considéré sous le rapport de la couleur.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_6_robe__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Œnologie) Couleur du vin, allant du violet à l’ocre.",
+          "leading_labels": [
+            "œnologie"
+          ]
+        },
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_7_robe__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "Enveloppe de certains légumes ou de certains fruits.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_8_robe__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Feuille de tabac enveloppant un cigare.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "robe__nom__1",
+          "sense_id": "__ws_9_robe__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Métallurgie) (Musique) Partie centrale d’une cloche, la plus grande, qui transmet les vibrations.",
+          "leading_labels": [
+            "métallurgie",
+            "musique"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "afa3cb8aff8321f8a63a5a0b28daf9107827079f20cbdcd4ec79ba3c487d2598",
+      "record_hash": "868bf27ae797032999f52827bd1a9ef343b04176284378bcebdc083abb785a70"
+    },
+    {
+      "stable_lexeme_key": "doigt|NOM",
+      "runtime_lexeme_id": 3881,
+      "lemma": "doigt",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 73.9851,
+        "lexique_frequency": 77.741,
+        "contextual_diversity": 15.33987
+      },
+      "current_proposed_sense": {
+        "entry_id": "doigt__nom__1",
+        "sense_id": "__ws_2_doigt__nom__1",
+        "sense_number": "2",
+        "entry_rank": 1,
+        "definition_fr": "Partie du gant dans laquelle entre le doigt de la main ; → voir doigt de gant.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_1_doigt__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Anatomie) Extrémité articulée des mains de l’être humain.",
+          "leading_labels": [
+            "anatomie"
+          ]
+        },
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_2_doigt__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Partie du gant dans laquelle entre le doigt de la main ; → voir doigt de gant.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_3_doigt__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Orteil.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_4_doigt__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Extrémité plus ou moins agile et articulées d’un pied d’un animal.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_5_doigt__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Chacune des bananes d'un \"bouquet\" ou d'une \"main\".",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_6_doigt__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Métrologie) Mesure de longueur, approximativement le travers d’un doigt, soit 1,8 à 2 centimètres.",
+          "leading_labels": [
+            "métrologie"
+          ]
+        },
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_7_doigt__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Petite quantité ; → voir à deux doigts de.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_8_doigt__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(En particulier) (Lutte contre l’incendie) Subdivison latérale d'un front de feu dans un incendie ou un feu de forêt.",
+          "leading_labels": [
+            "en particulier",
+            "lutte contre l'incendie"
+          ]
+        },
+        {
+          "entry_id": "doigt__nom__1",
+          "sense_id": "__ws_9_doigt__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Par ellipse) Doigt d’honneur",
+          "leading_labels": [
+            "par ellipse"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "marked_predecessor_requires_adjudication",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "2577771d9d15b3b84878aff9af9951cdc96267a2f77b8b02a9c7e3960860c3a2",
+      "record_hash": "780ba3bb2c669d45e40619a49bb8b7d2b20af6ded9f0fadb9d670aae0915b5de"
+    },
+    {
+      "stable_lexeme_key": "contact|NOM",
+      "runtime_lexeme_id": 3011,
+      "lemma": "contact",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 72.3201,
+        "lexique_frequency": 81.006,
+        "contextual_diversity": 21.5447
+      },
+      "current_proposed_sense": {
+        "entry_id": "contact__nom__1",
+        "sense_id": "__ws_1_contact__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Action de toucher physiquement.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "contact__nom__1",
+          "sense_id": "__ws_1_contact__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Action de toucher physiquement.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "contact__nom__1",
+          "sense_id": "__ws_2_contact__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "État de deux ou plusieurs corps qui se touchent.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "contact__nom__1",
+          "sense_id": "__ws_3_contact__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Par analogie) Liaison ; relation ; communication.",
+          "leading_labels": [
+            "par analogie"
+          ]
+        },
+        {
+          "entry_id": "contact__nom__1",
+          "sense_id": "__ws_4_contact__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Personne avec laquelle on est en communication.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "contact__nom__1",
+          "sense_id": "__ws_5_contact__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Électricité) Jonction de deux conducteurs laissant ainsi passer le courant.",
+          "leading_labels": [
+            "électricité"
+          ]
+        },
+        {
+          "entry_id": "contact__nom__1",
+          "sense_id": "__ws_5.a_contact__nom__1",
+          "sense_number": "5.a",
+          "entry_rank": 1,
+          "definition_fr": "Dispositif ou élément de dispositif permettant cette jonction.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "contact__nom__1",
+          "sense_id": "__ws_6_contact__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) (Opérations) En opérations navales, unité ennemie ou non identifiée dont la présence a été décelée.",
+          "leading_labels": [
+            "militaire",
+            "opérations"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "0a0245d5c257a55b574439ddf048d788148b92fb62da45bbddd954abc7e5ccf2",
+      "record_hash": "a08e6f7cf80bccc0c404f8466409cacd41009475e6ef7e67bfb5f9f72d91925f"
+    },
+    {
+      "stable_lexeme_key": "union|NOM",
+      "runtime_lexeme_id": 13299,
+      "lemma": "union",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 72.1937,
+        "lexique_frequency": 16.801,
+        "contextual_diversity": 4.9801
+      },
+      "current_proposed_sense": {
+        "entry_id": "union__nom__1",
+        "sense_id": "__ws_1_union__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Mathématiques) Opérateur de la théorie des ensembles, qui regroupe au sein d'un même ensemble les éléments de deux ensembles. Désigne également l'opération (le fait d'unir deux ensembles) ainsi que le résultat de cette opération, c'est-à-dire l'ensemble contenant tous les éléments appartenant à deux autres ensembles.",
+        "leading_labels": [
+          "mathématiques"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "union__nom__1",
+          "sense_id": "__ws_1_union__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Mathématiques) Opérateur de la théorie des ensembles, qui regroupe au sein d'un même ensemble les éléments de deux ensembles. Désigne également l'opération (le fait d'unir deux ensembles) ainsi que le résultat de cette opération, c'est-à-dire l'ensemble contenant tous les éléments appartenant à deux autres ensembles.",
+          "leading_labels": [
+            "mathématiques"
+          ]
+        },
+        {
+          "entry_id": "union__nom__1",
+          "sense_id": "__ws_2_union__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "Liaison établie entre deux ou plusieurs choses de manière qu’elles ne forment qu’un seul tout.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "union__nom__1",
+          "sense_id": "__ws_3_union__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Concorde, bonne intelligence, liaison étroite, conformité d’efforts.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "union__nom__1",
+          "sense_id": "__ws_4_union__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Absolument) Mariage.",
+          "leading_labels": [
+            "absolument"
+          ]
+        },
+        {
+          "entry_id": "union__nom__1",
+          "sense_id": "__ws_5_union__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Rapport sexuel.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "union__nom__1",
+          "sense_id": "__ws_6_union__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Jonction de deux ou de plusieurs choses qui de leur nature étaient séparées.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "union__nom__1",
+          "sense_id": "__ws_7_union__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Économie, Politique) Groupement d’individus, de sociétés ou de collectivités qui s’associent en vue d’un certain but.",
+          "leading_labels": [
+            "économie",
+            "politique"
+          ]
+        },
+        {
+          "entry_id": "union__nom__1",
+          "sense_id": "__ws_8_union__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "Rare, l'Union européenne",
+          "leading_labels": []
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "definition_complex_or_opaque",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "8064c181c7dd909d19017f2939c26676975a3b1427b43c61bb8e8257e232da02",
+      "record_hash": "7d2b9f7fe65bfe374e70878afa901aedb7303f1601ed91eca394513d7311073b"
+    },
+    {
+      "stable_lexeme_key": "économie|NOM",
+      "runtime_lexeme_id": 13847,
+      "lemma": "économie",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 71.9294,
+        "lexique_frequency": 18.37,
+        "contextual_diversity": 3.40937
+      },
+      "current_proposed_sense": {
+        "entry_id": "économie__nom__1",
+        "sense_id": "__ws_1_économie__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Épargne dans la dépense.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_1_économie__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Épargne dans la dépense.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_2_économie__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Au pluriel) Épargne mise en réserve.",
+          "leading_labels": [
+            "au pluriel"
+          ]
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_3_économie__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Réduction (de quelque chose assimilable à un effort, un cout) obtenue par une façon différente de procéder.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_4_économie__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "L’ordre, la règle que l’on apporte dans la conduite d’un ménage, dans la dépense d’une maison, dans l’administration d’un bien.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_5_économie__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Ensemble cohérent des flux de biens, de services, de finances au sein d’un groupe humain.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_6_économie__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Discipline des sciences sociales qui étudie l'allocation des ressources rares à des fins alternatives.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_7_économie__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Ensemble de doctrines de gestion des flux de biens, de services, de finances, que l'on applique à des groupes humains.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_8_économie__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Harmonie qui existe entre les différentes parties, les différentes qualités d’un corps organisé.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_9_économie__nom__1",
+          "sense_number": "9",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Disposition des parties d’un dessin, d’un tableau ; distribution ou plan d’un ouvrage d’esprit et, en général, toute coordination de parties, quel que soit l’ensemble qu’elles contribuent à former.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "économie__nom__1",
+          "sense_id": "__ws_10_économie__nom__1",
+          "sense_number": "10",
+          "entry_rank": 1,
+          "definition_fr": "(Catholicisme) Étude de la manifestation et déroulement du dessein de Dieu.",
+          "leading_labels": [
+            "catholicisme"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "773be05cd222ae0f7e2c92a7f245604c5d730247d9d2dcb63315b11fbd96947a",
+      "record_hash": "2731b8849a1f69cf4b3e3d7c4bbf98aef6287483d851160a7ac1dcf6e791c5bf"
+    },
+    {
+      "stable_lexeme_key": "chiffre|NOM",
+      "runtime_lexeme_id": 2308,
+      "lemma": "chiffre",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 71.1588,
+        "lexique_frequency": 28.291,
+        "contextual_diversity": 6.52786
+      },
+      "current_proposed_sense": {
+        "entry_id": "chiffre__nom__1",
+        "sense_id": "__ws_1_chiffre__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "Caractère utilisé pour écrire les nombres.",
+        "leading_labels": []
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "chiffre__nom__1",
+          "sense_id": "__ws_1_chiffre__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "Caractère utilisé pour écrire les nombres.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "chiffre__nom__1",
+          "sense_id": "__ws_2_chiffre__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Tout nombre.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "chiffre__nom__1",
+          "sense_id": "__ws_3_chiffre__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "Encodage, manière secrète d’écrire par le moyen de certains caractères numériques ou de lettres dont on est convenu avec ceux à qui l’on écrit.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "chiffre__nom__1",
+          "sense_id": "__ws_4_chiffre__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) Code secret pour la transmission des dépêches militaires.",
+          "leading_labels": [
+            "militaire"
+          ]
+        },
+        {
+          "entry_id": "chiffre__nom__1",
+          "sense_id": "__ws_5_chiffre__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Service d'une armée ou d'une ambassade chargée de coder les dépêches.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "chiffre__nom__1",
+          "sense_id": "__ws_6_chiffre__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "Ornement composé d’une ou de plusieurs initiales de prénoms, de noms, destiné à être apposé sur un objet personnel.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "chiffre__nom__1",
+          "sense_id": "__ws_7_chiffre__nom__1",
+          "sense_number": "7",
+          "entry_rank": 1,
+          "definition_fr": "(Musique) Se dit des signes numériques placés au-dessus ou au-dessous des notes de la basse pour indiquer les accords qu’elles doivent porter.",
+          "leading_labels": [
+            "musique"
+          ]
+        },
+        {
+          "entry_id": "chiffre__nom__1",
+          "sense_id": "__ws_8_chiffre__nom__1",
+          "sense_number": "8",
+          "entry_rank": 1,
+          "definition_fr": "(Lépidoptérologie) Papillon de la famille des nymphalidés, dont les ailes sont de couleur orangé vif, ornementé de taches et de traits.Les deux faces d'un chiffre (8).",
+          "leading_labels": [
+            "lépidoptérologie"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "9e917e82ccbece4d3cd29d363456698fde63d45dbbf49219b63d4e6f358dc74a",
+      "record_hash": "d468a9f66b761659c2aefb5e3081a6f8e64a15e0409111d7603dc83a49639a9e"
+    },
+    {
+      "stable_lexeme_key": "prisonnier|NOM",
+      "runtime_lexeme_id": 10048,
+      "lemma": "prisonnier",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 69.0505,
+        "lexique_frequency": 36.25,
+        "contextual_diversity": 7.08359
+      },
+      "current_proposed_sense": {
+        "entry_id": "prisonnier__nom__1",
+        "sense_id": "__ws_1_prisonnier__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Prison) Personne qui est arrêtée pour être mise en prison, ou qui y est détenue.",
+        "leading_labels": [
+          "prison"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "prisonnier__nom__1",
+          "sense_id": "__ws_1_prisonnier__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Prison) Personne qui est arrêtée pour être mise en prison, ou qui y est détenue.",
+          "leading_labels": [
+            "prison"
+          ]
+        },
+        {
+          "entry_id": "prisonnier__nom__1",
+          "sense_id": "__ws_2_prisonnier__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Militaire) Celui qui a été pris à la guerre.",
+          "leading_labels": [
+            "militaire"
+          ]
+        },
+        {
+          "entry_id": "prisonnier__nom__1",
+          "sense_id": "__ws_3_prisonnier__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Sens figuré) Personne qui a perdu sa liberté d’action.",
+          "leading_labels": [
+            "sens figuré"
+          ]
+        },
+        {
+          "entry_id": "prisonnier__nom__1",
+          "sense_id": "__ws_4_prisonnier__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Mécanique) Tenon en forme de queue-d’aronde qui se déplace dans une glissière qui lui sert de guide.",
+          "leading_labels": [
+            "mécanique"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "e38b9024c2d76d44a0347620a6d05546a85606cac1215fa9eca0fd6250c89017",
+      "record_hash": "54e19aef0b4ebde7a38bb4747dfeb830adfd3804cc9dcbf412c689912a31ad80"
+    },
+    {
+      "stable_lexeme_key": "naissance|NOM",
+      "runtime_lexeme_id": 8562,
+      "lemma": "naissance",
+      "pos": "NOM",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 68.789,
+        "lexique_frequency": 37.114,
+        "contextual_diversity": 12.65156
+      },
+      "current_proposed_sense": {
+        "entry_id": "naissance__nom__1",
+        "sense_id": "__ws_1_naissance__nom__1",
+        "sense_number": "1",
+        "entry_rank": 1,
+        "definition_fr": "(Famille) Venue d’un être à la vie.",
+        "leading_labels": [
+          "famille"
+        ]
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "naissance__nom__1",
+          "sense_id": "__ws_1_naissance__nom__1",
+          "sense_number": "1",
+          "entry_rank": 1,
+          "definition_fr": "(Famille) Venue d’un être à la vie.",
+          "leading_labels": [
+            "famille"
+          ]
+        },
+        {
+          "entry_id": "naissance__nom__1",
+          "sense_id": "__ws_2_naissance__nom__1",
+          "sense_number": "2",
+          "entry_rank": 1,
+          "definition_fr": "(Famille) Origine ; extraction.",
+          "leading_labels": [
+            "famille"
+          ]
+        },
+        {
+          "entry_id": "naissance__nom__1",
+          "sense_id": "__ws_3_naissance__nom__1",
+          "sense_number": "3",
+          "entry_rank": 1,
+          "definition_fr": "(Absolument) (Vieilli) Noblesse.",
+          "leading_labels": [
+            "absolument",
+            "vieilli"
+          ]
+        },
+        {
+          "entry_id": "naissance__nom__1",
+          "sense_id": "__ws_4_naissance__nom__1",
+          "sense_number": "4",
+          "entry_rank": 1,
+          "definition_fr": "(Par extension) Commencement.",
+          "leading_labels": [
+            "par extension"
+          ]
+        },
+        {
+          "entry_id": "naissance__nom__1",
+          "sense_id": "__ws_5_naissance__nom__1",
+          "sense_number": "5",
+          "entry_rank": 1,
+          "definition_fr": "Point, endroit où apparaît pour la première fois une chose qui se prolonge ensuite dans une certaine direction.",
+          "leading_labels": []
+        },
+        {
+          "entry_id": "naissance__nom__1",
+          "sense_id": "__ws_6_naissance__nom__1",
+          "sense_number": "6",
+          "entry_rank": 1,
+          "definition_fr": "(Architecture) Commencement, là où prend appui un objet.",
+          "leading_labels": [
+            "architecture"
+          ]
+        }
+      ],
+      "sense_selection_flags": [
+        "competing_unmarked_ordinary_sense",
+        "many_senses",
+        "source_order_only_tie"
+      ],
+      "sense_selection_tier": "medium",
+      "current_proposal_rationale": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "parent_input_hash": "20a5ed6932b51e6b7f91dd72c75491f71c20989ac76f17ad2c91ec8830eff80a",
+      "record_hash": "fc6fab84001b61613226c99297bf27843088a2da1cdd992101f99a2c6e09cbc5"
+    }
+  ],
+  "artifact_hash": "3d20003c4fed92539f902cc79585997845aa581d54a3f022668ad19a08de31ff"
+}
