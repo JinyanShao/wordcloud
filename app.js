@@ -68,6 +68,7 @@
     label: row[6], explanation: row[7], confidence: row[8], review: row[9], kind: "official",
   }));
   const learnerRelationsByPair = new Map();
+  const learnerSenseByLexeme = new Map(LEARNER_SENSE_CONTENT.records.map((record) => [String(record.lexeme_id), record]));
   const learnerPatterns = LEARNER_CONTENT.observed_patterns;
   for (const relation of Object.values(LEARNER_CONTENT.relations)) {
     const key = [relation.a_id, relation.b_id].sort((a, b) => a - b).join("|");
@@ -827,6 +828,18 @@
     </section>`;
   }
 
+  function renderLearnerSense(node) {
+    const record = learnerSenseByLexeme.get(String(node.id));
+    if (!record) return "";
+    return `<section class="panel-section learner-sense-section">
+      <h3>学习提示 · 已审核</h3>
+      <p class="learner-gloss"><span>中文提示</span>${escapeHtml(record.gloss_zh_short)}</p>
+      <p class="learner-example"><span>例句 · 学习示例</span><span lang="fr">${escapeHtml(record.example_fr)}</span><small>${escapeHtml(record.example_zh)}</small></p>
+      ${record.usage_note_zh ? `<p class="word-note">${escapeHtml(record.usage_note_zh)}</p>` : ""}
+      <p class="learner-boundary">法语义项保留为来源事实；中文提示与例句是学习辅助。</p>
+    </section>`;
+  }
+
   function renderPanel(node) {
     if (node.status === "sample") {
       const [pos,rule,example,translation] = familyWords[node.word];
@@ -858,6 +871,7 @@
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
       ${renderFamily(node)}
       ${renderSenseGroups(node)}
+      ${renderLearnerSense(node)}
       ${reviewed.length ? `<section class="panel-section"><h3>项目审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}

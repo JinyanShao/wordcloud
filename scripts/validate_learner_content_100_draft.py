@@ -18,7 +18,8 @@ def main():
    if key==BLOCKED:
     if item['content_status']!='blocked' or any(item.get(k) for k in ('gloss_zh_short','example_fr','example_zh')): errors.append('blocked travers contains learner content')
     continue
-   if choice['selection_status']!='reviewed' or item['selection_status']!='reviewed' or item['content_status']!='ai_draft': errors.append(f'status mismatch {key}')
+   if choice['selection_status']!='reviewed' or item['selection_status']!='reviewed' or item['content_status']!='reviewed': errors.append(f'status mismatch {key}')
+   if item.get('review_provenance')!={'review_status':'external_semantic_reviewed','review_version':'phase2c-100-semantic-review-v1'}: errors.append(f'missing review provenance {key}')
    selected=choice['primary_learner_sense']
    if ident['entry_id']!=selected['entry_id'] or ident['sense_id']!=selected['sense_id']: errors.append(f'sense binding mismatch {key}')
    row=conn.execute('SELECT 1 FROM lexeme_senses WHERE id=? AND entry_id=? AND lexeme_id=?',(ident['sense_id'],ident['entry_id'],ident['runtime_lexeme_id'])).fetchone()
@@ -35,5 +36,5 @@ def main():
    if choices[key]['primary_learner_sense']!={'entry_id':entry,'sense_id':sense}: errors.append(f'override missing {key}')
  finally: conn.close()
  if errors: raise SystemExit('\n'.join(errors))
- print(json.dumps({'ok':True,'selected':99,'blocked':1,'semantic_review':'required for ai_draft prose'}))
+ print(json.dumps({'ok':True,'reviewed':99,'blocked':1,'semantic_review':'external semantic review recorded'}))
 if __name__=='__main__': main()
