@@ -1,0 +1,1129 @@
+{
+  "schema_version": 1,
+  "parent_artifact_hash": "7789faf53c792615d2e0f3c0c0627d2fe48323ef98b712650b949f5b3c6b7f01",
+  "risk_tier": "low_risk",
+  "items": [
+    {
+      "stable_lexeme_key": "nombreux|ADJ",
+      "runtime_lexeme_id": 8678,
+      "lemma": "nombreux",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 398.7173,
+        "lexique_frequency": 45.614,
+        "contextual_diversity": 10.86191
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "nombreux__adj__1",
+          "sense_id": "__ws_1_nombreux__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Qui est en grand nombre ; qui est formé d’un grand nombre d’éléments.",
+          "sourced_examples": [
+            "Le garde champêtre, armé d’un fusil que lui avait confié le maire, et suivi d’un cortège nombreux, s’avança jusqu’à dix pas du chien.",
+            "Ici, nous avons eu cinq morts la nuit dernière; ils sont si nombreux dans les autres ambulances que les imams ne suffisent plus à leur toilette funèbre ni les fossoyeurs à leur ensevelissement."
+          ],
+          "leading_labels": []
+        },
+        {
+          "entry_id": "nombreux__adj__1",
+          "sense_id": "__ws_2_nombreux__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "entry_rank": 1,
+          "definition_fr": "(Soutenu) Qui est harmonieux, qui flatte l’oreille par un choix heureux et une habile disposition des mots, en parlant du style.",
+          "sourced_examples": [
+            "C’est inimaginable comme la plupart des écrivains actuels écrivent mal. Les autres ne nourrissent pas leurs phrases, sujet verbe attribut. C’est tout. Il n’y a plus de style nombreux.",
+            "Un beau dimanche matin, rétabli comme par miracle et inspiré par les souffrances créatrices d’un long repliement, il déchaînait les orgues d’un élan sublime et impitoyable, en faisant donner à la fois toute la tuyauterie dans un cri nombreux, passionné, un vrai rugissement de la colère de Dieu, qui ébranlait la cathédrale."
+          ],
+          "leading_labels": [
+            "soutenu"
+          ]
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "nombreux__adj__1",
+        "sense_id": "__ws_1_nombreux__adj__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Qui est en grand nombre ; qui est formé d’un grand nombre d’éléments.",
+        "sourced_examples": [
+          "Le garde champêtre, armé d’un fusil que lui avait confié le maire, et suivi d’un cortège nombreux, s’avança jusqu’à dix pas du chien.",
+          "Ici, nous avons eu cinq morts la nuit dernière; ils sont si nombreux dans les autres ambulances que les imams ne suffisent plus à leur toilette funèbre ni les fossoyeurs à leur ensevelissement."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [
+        {
+          "entry_id": "nombreux__adj__1",
+          "sense_id": "__ws_2_nombreux__adj__1",
+          "sense_number": "2",
+          "source_order": 2,
+          "entry_rank": 1,
+          "definition_fr": "(Soutenu) Qui est harmonieux, qui flatte l’oreille par un choix heureux et une habile disposition des mots, en parlant du style.",
+          "sourced_examples": [
+            "C’est inimaginable comme la plupart des écrivains actuels écrivent mal. Les autres ne nourrissent pas leurs phrases, sujet verbe attribut. C’est tout. Il n’y a plus de style nombreux.",
+            "Un beau dimanche matin, rétabli comme par miracle et inspiré par les souffrances créatrices d’un long repliement, il déchaînait les orgues d’un élan sublime et impitoyable, en faisant donner à la fois toute la tuyauterie dans un cri nombreux, passionné, un vrai rugissement de la colère de Dieu, qui ébranlait la cathédrale."
+          ],
+          "leading_labels": [
+            "soutenu"
+          ]
+        }
+      ],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "nombreux|ADJ|nombre|NOM|suffixation",
+          "subtype": "suffixation",
+          "direction": "8677->8678",
+          "label": "后缀 · -eux",
+          "source_boundary": "demonette_2:sourced"
+        }
+      ],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "2279668a4c87da42a6486a348628cb7859d109479a67db3736793737e1af21c0"
+    },
+    {
+      "stable_lexeme_key": "prêt|ADJ",
+      "runtime_lexeme_id": 10368,
+      "lemma": "prêt",
+      "pos": "ADJ",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 157.5273,
+        "lexique_frequency": 347.956,
+        "contextual_diversity": 53.35579
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "prêt__adj__1",
+          "sense_id": "__ws_1_prêt__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Qui est en état de faire, de dire, de recevoir, d’entendre quelque chose ; qui est disposé, préparé à quelque chose.",
+          "sourced_examples": [
+            "Il y a beaucoup de scandales de diverse nature prêts à éclater, sans compter ceux qui sont déjà publics.",
+            "En sommes, tu restes alors tout près de lui, mais également tout prêt pour lui."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "prêt__adj__1",
+        "sense_id": "__ws_1_prêt__adj__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Qui est en état de faire, de dire, de recevoir, d’entendre quelque chose ; qui est disposé, préparé à quelque chose.",
+        "sourced_examples": [
+          "Il y a beaucoup de scandales de diverse nature prêts à éclater, sans compter ceux qui sont déjà publics.",
+          "En sommes, tu restes alors tout près de lui, mais également tout prêt pour lui."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "apprêter|VER|prêt|ADJ|prefixation",
+          "subtype": "prefixation",
+          "direction": "10368->713",
+          "label": "前缀 · a-",
+          "source_boundary": "demonette_2:sourced"
+        },
+        {
+          "stable_relation_key": "prêter|VER|prêt|ADJ|conversion",
+          "subtype": "conversion",
+          "direction": "10368->10370",
+          "label": "词性转换",
+          "source_boundary": "demonette_2:sourced"
+        }
+      ],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "15c6ffb799b15a308ea3dc3e3b8fde30fb90a7a9e10271b0d0a0cd1f4ec96f69"
+    },
+    {
+      "stable_lexeme_key": "autour|ADV",
+      "runtime_lexeme_id": 1092,
+      "lemma": "autour",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 247.707,
+        "lexique_frequency": 96.633,
+        "contextual_diversity": 31.85395
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "autour__adv__1",
+          "sense_id": "__ws_1_autour__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Aux alentours ; aux environs.",
+          "sourced_examples": [
+            "Elle est boisée tout autour, la boisure de la fenêtre est ornée d’une sculpture dorée.",
+            "[…], et la pluie se met à tomber en torrents, inondant le camp et envahissant nos tentes, malgré les profondes rigoles que j'ai fait creuser autour."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "autour__adv__1",
+        "sense_id": "__ws_1_autour__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Aux alentours ; aux environs.",
+        "sourced_examples": [
+          "Elle est boisée tout autour, la boisure de la fenêtre est ornée d’une sculpture dorée.",
+          "[…], et la pluie se met à tomber en torrents, inondant le camp et envahissant nos tentes, malgré les profondes rigoles que j'ai fait creuser autour."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "184c1a39dbd86b20891cd27cf61a57731ff0bbb46c8d14dab2717da8603bdea5"
+    },
+    {
+      "stable_lexeme_key": "soudain|ADV",
+      "runtime_lexeme_id": 12120,
+      "lemma": "soudain",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 111.7598,
+        "lexique_frequency": 14.044,
+        "contextual_diversity": 8.60839
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "soudain__adv__1",
+          "sense_id": "__ws_1_soudain__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Dans le même instant ; aussitôt ; tout d’un coup.",
+          "sourced_examples": [
+            "La partie repart, les clients sadiques s’approchent, soudain intéressés de voir un froggy en situation délicate, et arrive mon tour.",
+            "Soudain, la chaîne du vélo casse alors que je suis tout près du village de Voves en Eure-et-Loir, à une vingtaine de kilomètres de Chartres."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "soudain__adv__1",
+        "sense_id": "__ws_1_soudain__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Dans le même instant ; aussitôt ; tout d’un coup.",
+        "sourced_examples": [
+          "La partie repart, les clients sadiques s’approchent, soudain intéressés de voir un froggy en situation délicate, et arrive mon tour.",
+          "Soudain, la chaîne du vélo casse alors que je suis tout près du village de Voves en Eure-et-Loir, à une vingtaine de kilomètres de Chartres."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "29dfde36172c7c72ffbbeadb13f8a5275c2379277f623e99b5db8b7dc44d11ad"
+    },
+    {
+      "stable_lexeme_key": "aussitôt|ADV",
+      "runtime_lexeme_id": 1047,
+      "lemma": "aussitôt",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 94.6729,
+        "lexique_frequency": 8.658,
+        "contextual_diversity": 3.58849
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "aussitôt__adv__1",
+          "sense_id": "__ws_1_aussitôt__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Dans le moment même ; sur l’heure.",
+          "sourced_examples": [
+            "Le juge expliqua sans répondre au prévenu que, s’il avait subi la flétrissure infligée alors par les lois aux condamnés aux travaux forcés, en lui frappant l’épaule les lettres reparaîtraient aussitôt.",
+            "A mesure qu’augmentait les émissions de papier-monnaie, s’accentuait la dépréciation du mark, et de plus en plus les particuliers s’efforçaient, quand ils recevaient de billets, de les échanger aussitôt contre des marchandises."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "aussitôt__adv__1",
+        "sense_id": "__ws_1_aussitôt__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Dans le moment même ; sur l’heure.",
+        "sourced_examples": [
+          "Le juge expliqua sans répondre au prévenu que, s’il avait subi la flétrissure infligée alors par les lois aux condamnés aux travaux forcés, en lui frappant l’épaule les lettres reparaîtraient aussitôt.",
+          "A mesure qu’augmentait les émissions de papier-monnaie, s’accentuait la dépréciation du mark, et de plus en plus les particuliers s’efforçaient, quand ils recevaient de billets, de les échanger aussitôt contre des marchandises."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "7cfb5984245d9f0b487c776e1528429b8da0f663234208ea66fd468d389d9f8c"
+    },
+    {
+      "stable_lexeme_key": "finalement|ADV",
+      "runtime_lexeme_id": 5266,
+      "lemma": "finalement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 86.7238,
+        "lexique_frequency": 54.481,
+        "contextual_diversity": 19.88824
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "finalement__adv__1",
+          "sense_id": "__ws_1_finalement__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Pour en finir ; en dernier résultat ; en dernier lieu.",
+          "sourced_examples": [
+            "C'était la première fois qu'il se risquait au Montparnasse. Ses regards inspectèrent la salle et, finalement, se fixèrent sur la grosse nuque puissante de Feempje.",
+            "Les groupes ukrainiens, mexicains, lettons et lituaniens, qui devaient y participer, n’ont finalement pas pu être présents pour entonner la Marseillaise."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "finalement__adv__1",
+        "sense_id": "__ws_1_finalement__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Pour en finir ; en dernier résultat ; en dernier lieu.",
+        "sourced_examples": [
+          "C'était la première fois qu'il se risquait au Montparnasse. Ses regards inspectèrent la salle et, finalement, se fixèrent sur la grosse nuque puissante de Feempje.",
+          "Les groupes ukrainiens, mexicains, lettons et lituaniens, qui devaient y participer, n’ont finalement pas pu être présents pour entonner la Marseillaise."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [
+        {
+          "translation_stable_ref": "dbnary_fr:__tr_zho_1_finalement__adv__1",
+          "candidate_class": "sense_mapped_candidate",
+          "chinese_written_form": "终于",
+          "target_language_code": "zho",
+          "learner_language_eligibility": "default_learner_chinese",
+          "translation_gloss": "Pour en finir, en dernier résultat, en dernier lieu.",
+          "mapped_sense_id": "__ws_1_finalement__adv__1",
+          "ambiguity_reasons": []
+        }
+      ],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "candidate_mapping_known_structural_only",
+        "cefr_lexeme_level_only"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "candidate_mapping_known_structural_only; cefr_lexeme_level_only",
+      "input_hash": "6c0dcf779cb94c50be6b3147cb0529ef7265855d70b4ca8f33b02defb8468140"
+    },
+    {
+      "stable_lexeme_key": "lentement|ADV",
+      "runtime_lexeme_id": 7389,
+      "lemma": "lentement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 71.0801,
+        "lexique_frequency": 20.899,
+        "contextual_diversity": 8.02511
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "lentement__adv__1",
+          "sense_id": "__ws_1_lentement__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "De manière lente, peu rapide.",
+          "sourced_examples": [
+            "Tout d’un coup, lentement, comme une gueule, s’ouvrirent les deux battants des portes.",
+            "On procède à l'incubation des œufs en les exposant à une température artificielle qui doit être élevée lentement et graduellement depuis 12° jusqu'à 25° ou 30°."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "lentement__adv__1",
+        "sense_id": "__ws_1_lentement__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "De manière lente, peu rapide.",
+        "sourced_examples": [
+          "Tout d’un coup, lentement, comme une gueule, s’ouvrirent les deux battants des portes.",
+          "On procède à l'incubation des œufs en les exposant à une température artificielle qui doit être élevée lentement et graduellement depuis 12° jusqu'à 25° ou 30°."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "75a6836b10e3156abade2a360ff9d7a443783544d52c0091526a0e0a806db0b6"
+    },
+    {
+      "stable_lexeme_key": "auprès|ADV",
+      "runtime_lexeme_id": 1038,
+      "lemma": "auprès",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 66.3769,
+        "lexique_frequency": 0.215,
+        "contextual_diversity": 11.34415
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "auprès__adv__1",
+          "sense_id": "__ws_1_auprès__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Tout proche, tout contre, à côté…",
+          "sourced_examples": [
+            "J’étais si plein de mon amour qu’à peine entendais-je, auprès, quelque autre expression que la sienne.",
+            "Sur le bord du fleuve, […], il rencontra un autre aéroplane qui lui parut à peine endommagé. […]. Aucun aviateur, mort ou vivant, ne se trouvait auprès."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "auprès__adv__1",
+        "sense_id": "__ws_1_auprès__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Tout proche, tout contre, à côté…",
+        "sourced_examples": [
+          "J’étais si plein de mon amour qu’à peine entendais-je, auprès, quelque autre expression que la sienne.",
+          "Sur le bord du fleuve, […], il rencontra un autre aéroplane qui lui parut à peine endommagé. […]. Aucun aviateur, mort ou vivant, ne se trouvait auprès."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "ada1a82af5d1f025d7e31cf8d81b3b2727515ec97229c542893a1e19b1d28be3"
+    },
+    {
+      "stable_lexeme_key": "exactement|ADV",
+      "runtime_lexeme_id": 4886,
+      "lemma": "exactement",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 49.1771,
+        "lexique_frequency": 191.085,
+        "contextual_diversity": 51.14053
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "exactement__adv__1",
+          "sense_id": "__ws_1_exactement__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "D’une manière exacte, correctement précise.",
+          "sourced_examples": [
+            "Comme toutes les réformes monétaires, la stabilisation de la monnaie allemande a provoqué une crise économique, ou plus exactement, elle n'a pas suffi à en préserver le Reich.",
+            "Par contre nous nous sommes attaché à représenter l’orographie et l’hydrographie de la région aussi exactement qu'il nous a été possible de le faire."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "exactement__adv__1",
+        "sense_id": "__ws_1_exactement__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "D’une manière exacte, correctement précise.",
+        "sourced_examples": [
+          "Comme toutes les réformes monétaires, la stabilisation de la monnaie allemande a provoqué une crise économique, ou plus exactement, elle n'a pas suffi à en préserver le Reich.",
+          "Par contre nous nous sommes attaché à représenter l’orographie et l’hydrographie de la région aussi exactement qu'il nous a été possible de le faire."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "36cb53cc9ec5e1d1491c7386671e4c95042245aed5655b7d4b55ffc03dfa5174"
+    },
+    {
+      "stable_lexeme_key": "ben|ADV",
+      "runtime_lexeme_id": 1354,
+      "lemma": "ben",
+      "pos": "ADV",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 33.9074,
+        "lexique_frequency": 22.0,
+        "contextual_diversity": 20.46999
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "ben__adv__1",
+          "sense_id": "__ws_1_ben__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "(Familier) Déformation de bien.",
+          "sourced_examples": [
+            "Pourtant l'a ben falluJ'ai pris mon sac et je suis venu",
+            "— Le chien Finaud est une bonne bête, mais si tu rencontrais du mauvais monde, te défendrait-il ben ?"
+          ],
+          "leading_labels": [
+            "familier"
+          ]
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "ben__adv__1",
+        "sense_id": "__ws_1_ben__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "(Familier) Déformation de bien.",
+        "sourced_examples": [
+          "Pourtant l'a ben falluJ'ai pris mon sac et je suis venu",
+          "— Le chien Finaud est une bonne bête, mais si tu rencontrais du mauvais monde, te défendrait-il ben ?"
+        ],
+        "leading_labels": [
+          "familier"
+        ]
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "e3cc2dad42a1275d15f6f0442f813cfaf038e33e3b0d10b7d8dcae6768bd9c1e"
+    },
+    {
+      "stable_lexeme_key": "choisir|VER",
+      "runtime_lexeme_id": 2328,
+      "lemma": "choisir",
+      "pos": "VER",
+      "cefr": "A1",
+      "frequency_signals": {
+        "flelex_frequency": 275.1907,
+        "lexique_frequency": 191.288,
+        "contextual_diversity": 24.48561
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "choisir__verb__1",
+          "sense_id": "__ws_1_choisir__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Faire un choix ; prendre une personne ou une chose de préférence à une autre ou à plusieurs autres.",
+          "sourced_examples": [
+            "On ne s'étonnera donc pas que l'astronome de Greenwich eût été choisi pour opérer dans la circonstance suivante qui intéressait au plus haut point la science sélénographique.",
+            "Dans le pays de production ou d’élève, tout le monde est à peu près apte à choisir un cheval."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "choisir__verb__1",
+        "sense_id": "__ws_1_choisir__verb__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Faire un choix ; prendre une personne ou une chose de préférence à une autre ou à plusieurs autres.",
+        "sourced_examples": [
+          "On ne s'étonnera donc pas que l'astronome de Greenwich eût été choisi pour opérer dans la circonstance suivante qui intéressait au plus haut point la science sélénographique.",
+          "Dans le pays de production ou d’élève, tout le monde est à peu près apte à choisir un cheval."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "choisir|VER|choix|NOM|conversion",
+          "subtype": "conversion",
+          "direction": null,
+          "label": "词性转换",
+          "source_boundary": "demonette_2:sourced"
+        }
+      ],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "48633bc38f50218178eab956c6543da8a2ec4df49b9aeb3f1f9507257b2d4829"
+    },
+    {
+      "stable_lexeme_key": "suivant|ADJ",
+      "runtime_lexeme_id": 12403,
+      "lemma": "suivant",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 69.337,
+        "lexique_frequency": 30.278,
+        "contextual_diversity": 13.45224
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "suivant__adj__1",
+          "sense_id": "__ws_1_suivant__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Qui est après, qui vient après.",
+          "sourced_examples": [
+            "Je m'assis et écrivis une lettre cordiale: monsieur Saito se réjouissait à l'idée de jouer au golf le dimanche suivant avec monsieur Johnson et lui envoyait ses amitiés.",
+            "Ceci explique qu'une pente déjà skiée sans encombre puisse partir en avalanche au passage du skieur suivant."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "suivant__adj__1",
+        "sense_id": "__ws_1_suivant__adj__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Qui est après, qui vient après.",
+        "sourced_examples": [
+          "Je m'assis et écrivis une lettre cordiale: monsieur Saito se réjouissait à l'idée de jouer au golf le dimanche suivant avec monsieur Johnson et lui envoyait ses amitiés.",
+          "Ceci explique qu'une pente déjà skiée sans encombre puisse partir en avalanche au passage du skieur suivant."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "suivant|ADJ|suivre|VER|conversion",
+          "subtype": "conversion",
+          "direction": "12407->12403",
+          "label": "词性转换",
+          "source_boundary": "demonette_2:sourced"
+        }
+      ],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "3f7a7b4f9d99798d0897953c94e69fe2c8f02eb6a1238017712aeb3de29850ac"
+    },
+    {
+      "stable_lexeme_key": "touristique|ADJ",
+      "runtime_lexeme_id": 12949,
+      "lemma": "touristique",
+      "pos": "ADJ",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 19.9901,
+        "lexique_frequency": 2.218,
+        "contextual_diversity": 0.73637
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "touristique__adj__1",
+          "sense_id": "__ws_1_touristique__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Qui s’adresse aux touristes.",
+          "sourced_examples": [
+            "Le lac des Settons est un pôle touristique majeur du Morvan. A cheval sur les communes de Montsauche et de Moux, ce site sait allier divertissements et dépaysement.",
+            "La Réunion est le seul département de France où existent des circuits touristiques réguliers en hélicoptère, qui ont été étudiés pour vous en mettre plein la vue."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "touristique__adj__1",
+        "sense_id": "__ws_1_touristique__adj__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Qui s’adresse aux touristes.",
+        "sourced_examples": [
+          "Le lac des Settons est un pôle touristique majeur du Morvan. A cheval sur les communes de Montsauche et de Moux, ce site sait allier divertissements et dépaysement.",
+          "La Réunion est le seul département de France où existent des circuits touristiques réguliers en hélicoptère, qui ont été étudiés pour vous en mettre plein la vue."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "touriste|NOM|touristique|ADJ|suffixation",
+          "subtype": "suffixation",
+          "direction": "12948->12949",
+          "label": "后缀 · -istique",
+          "source_boundary": "demonette_2:sourced"
+        }
+      ],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "69f0784f9c6c3c62e18600d10510d7f399e6285f79b7c2523736a0027776c78b"
+    },
+    {
+      "stable_lexeme_key": "tranquillement|ADV",
+      "runtime_lexeme_id": 13024,
+      "lemma": "tranquillement",
+      "pos": "ADV",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 23.6132,
+        "lexique_frequency": 8.69,
+        "contextual_diversity": 3.77679
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "tranquillement__adv__1",
+          "sense_id": "__ws_1_tranquillement__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "D’une manière tranquille ; avec tranquillité.",
+          "sourced_examples": [
+            "Le départ du défenseur devrait au moins permettre à John Textor de passer plus tranquillement son grand oral devant la DNCG, ce mercredi.",
+            "Mais, saperlotte ! tâchons donc que tout ça se passe tranquillement; ça vaudrait beaucoup mieux. Puisque nous avons le suffrage universel, il n’y a plus besoin de coups de fusil."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "tranquillement__adv__1",
+        "sense_id": "__ws_1_tranquillement__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "D’une manière tranquille ; avec tranquillité.",
+        "sourced_examples": [
+          "Le départ du défenseur devrait au moins permettre à John Textor de passer plus tranquillement son grand oral devant la DNCG, ce mercredi.",
+          "Mais, saperlotte ! tâchons donc que tout ça se passe tranquillement; ça vaudrait beaucoup mieux. Puisque nous avons le suffrage universel, il n’y a plus besoin de coups de fusil."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "06f6d334fe4fde188352bd81712adcce2c34d3d29c443b7b3b0599b620ae7501"
+    },
+    {
+      "stable_lexeme_key": "exclamer|VER",
+      "runtime_lexeme_id": 4915,
+      "lemma": "exclamer",
+      "pos": "VER",
+      "cefr": "A2",
+      "frequency_signals": {
+        "flelex_frequency": 34.1582,
+        "lexique_frequency": 0.456,
+        "contextual_diversity": 0.05971
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "exclamer__verb__1",
+          "sense_id": "__ws_1_exclamer__verb__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "(Utilisé uniquement dans s’exclamer) Pousser des exclamations.",
+          "sourced_examples": [
+            "Qu’ont-ils donc à s’exclamer ?",
+            "Il n’y a pas tant à s’exclamer."
+          ],
+          "leading_labels": [
+            "utilisé uniquement dans s'exclamer"
+          ]
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "exclamer__verb__1",
+        "sense_id": "__ws_1_exclamer__verb__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "(Utilisé uniquement dans s’exclamer) Pousser des exclamations.",
+        "sourced_examples": [
+          "Qu’ont-ils donc à s’exclamer ?",
+          "Il n’y a pas tant à s’exclamer."
+        ],
+        "leading_labels": [
+          "utilisé uniquement dans s'exclamer"
+        ]
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "5e2a5ce3fa52727958d8d8bb1686205e64486fa48b3bd2ec921b3c4aae0f7b7f"
+    },
+    {
+      "stable_lexeme_key": "familial|ADJ",
+      "runtime_lexeme_id": 5091,
+      "lemma": "familial",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 77.279,
+        "lexique_frequency": 21.405,
+        "contextual_diversity": 4.11666
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "familial__adj__1",
+          "sense_id": "__ws_1_familial__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Qui est relatif à la famille.",
+          "sourced_examples": [
+            "D’une manière générale, on peut poser en principe que les institutions matrimoniales et familiales, toujours établies en vue de favoriser la conservation de la forme sociale du moment, ont surtout un point de départ économique.",
+            "Il est issu d'une famille d'artisans opiniâtres au travail, mais il a plus d’envergure que ses ancêtres. Du moulin familial il fera une grande minoterie, […]."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "familial__adj__1",
+        "sense_id": "__ws_1_familial__adj__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Qui est relatif à la famille.",
+        "sourced_examples": [
+          "D’une manière générale, on peut poser en principe que les institutions matrimoniales et familiales, toujours établies en vue de favoriser la conservation de la forme sociale du moment, ont surtout un point de départ économique.",
+          "Il est issu d'une famille d'artisans opiniâtres au travail, mais il a plus d’envergure que ses ancêtres. Du moulin familial il fera une grande minoterie, […]."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "familial|ADJ|famille|NOM|suffixation",
+          "subtype": "suffixation",
+          "direction": "5098->5091",
+          "label": "后缀 · -al",
+          "source_boundary": "demonette_2:sourced"
+        }
+      ],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "837d393f86ec83fa984dd7de941cc083cb81e42ac3a204707606568a7591e043"
+    },
+    {
+      "stable_lexeme_key": "technique|ADJ",
+      "runtime_lexeme_id": 12716,
+      "lemma": "technique",
+      "pos": "ADJ",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 43.7268,
+        "lexique_frequency": 15.94,
+        "contextual_diversity": 7.79241
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "technique__adj__1",
+          "sense_id": "__ws_1_technique__adj__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Qui est propre, particulier à un métier, à un art.",
+          "sourced_examples": [
+            "C'est un \"tour de force technique\", ont vanté dans un article de commentaire deux chercheurs, Michael Beauchamp et Daniel Yoshor, de l'Université de Pennsylvanie.",
+            "Terme technique."
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "technique__adj__1",
+        "sense_id": "__ws_1_technique__adj__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Qui est propre, particulier à un métier, à un art.",
+        "sourced_examples": [
+          "C'est un \"tour de force technique\", ont vanté dans un article de commentaire deux chercheurs, Michael Beauchamp et Daniel Yoshor, de l'Université de Pennsylvanie.",
+          "Terme technique."
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [
+        {
+          "stable_relation_key": "technicien|NOM|technique|ADJ|suffixation",
+          "subtype": "suffixation",
+          "direction": "12716->12714",
+          "label": "后缀 · -ien",
+          "source_boundary": "demonette_2:sourced"
+        }
+      ],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "62c8152b52d273aa5901a600e57b009ea04f428ea5209d1f32af8d41449e8c58"
+    },
+    {
+      "stable_lexeme_key": "autrefois|ADV",
+      "runtime_lexeme_id": 1094,
+      "lemma": "autrefois",
+      "pos": "ADV",
+      "cefr": "B1",
+      "frequency_signals": {
+        "flelex_frequency": 43.1506,
+        "lexique_frequency": 15.487,
+        "contextual_diversity": 5.8665
+      },
+      "all_source_senses": [
+        {
+          "entry_id": "autrefois__adv__1",
+          "sense_id": "__ws_1_autrefois__adv__1",
+          "sense_number": "1",
+          "source_order": 1,
+          "entry_rank": 1,
+          "definition_fr": "Anciennement ; jadis ; au temps passé.",
+          "sourced_examples": [
+            "L’Inde autrefois nous donna l’anémone, De nos jardins ornement printanier.",
+            "Mais tout cela était si loin et l’homme qu’il était devenu ressemblait si peu au jeune officier d’autrefois…"
+          ],
+          "leading_labels": []
+        }
+      ],
+      "proposed_primary_learner_sense": {
+        "entry_id": "autrefois__adv__1",
+        "sense_id": "__ws_1_autrefois__adv__1",
+        "sense_number": "1",
+        "source_order": 1,
+        "entry_rank": 1,
+        "definition_fr": "Anciennement ; jadis ; au temps passé.",
+        "sourced_examples": [
+          "L’Inde autrefois nous donna l’anémone, De nos jardins ornement printanier.",
+          "Mais tout cela était si loin et l’homme qu’il était devenu ressemblait si peu au jeune officier d’autrefois…"
+        ],
+        "leading_labels": []
+      },
+      "selection_status": "needs_semantic_review",
+      "selection_reason": "candidate-independent source-label, entry-surface, then source-order proposal",
+      "uncertainty": "mechanical proposal; semantic fitness and real frequency require review",
+      "source_order_only_choice": false,
+      "capitalization_variant": false,
+      "proposal_policy_flags": [],
+      "competing_source_senses": [],
+      "selected_sense_chinese_candidates": [],
+      "relevant_sourced_family_relations": [],
+      "risk_flags": [
+        "cefr_lexeme_level_only",
+        "no_default_chinese_candidate"
+      ],
+      "risk_tier": "low_risk",
+      "risk_rationale": "cefr_lexeme_level_only; no_default_chinese_candidate",
+      "input_hash": "85c662643db28c59c4dd1bba1d3676ead23a960339504d4df7506491822c48a0"
+    }
+  ],
+  "artifact_hash": "a25e1392311fffe88a2b2875c004b7d15bc968f41bc5fa93e02b2d93aee1d402"
+}
