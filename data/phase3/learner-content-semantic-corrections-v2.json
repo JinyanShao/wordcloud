@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "Sparse learner-content correction overlay corresponding exactly to learner-sense-selection-corrections-v2.json. Apply after the 150 authored overlay and the five 349 authored overlays. Only these corrected records replace prior semantic content.",
+  "authoring_provenance": {
+    "authoring_surface": "ChatGPT external semantic authoring",
+    "actual_model": "GPT-5.6 Sol",
+    "status": "external_semantic_authored",
+    "policy": "Regenerate learner-facing content only for v2 corrected exact senses; do not retain prose authored for superseded senses."
+  },
+  "items": [
+    {"key":"combien|ADV","sense_id":"__ws_1_combien__adv__1","gloss_zh_short":"多少；多么","usage_note_zh":"常用于询问数量、程度或价格。","example_fr":"Combien coûte ce livre ?","example_zh":"这本书多少钱？"},
+    {"key":"langue|NOM","sense_id":"__ws_4_langue__nom__1","gloss_zh_short":"语言","usage_note_zh":"此义项指一个群体用来交流的语言系统。","example_fr":"Le français est une langue romane.","example_zh":"法语是一种罗曼语。"},
+    {"key":"fait|NOM","sense_id":"__ws_3_fait__nom__1","gloss_zh_short":"事实；客观事实","usage_note_zh":null,"example_fr":"C’est un fait bien connu.","example_zh":"这是一个众所周知的事实。"},
+    {"key":"histoire|NOM","sense_id":"__ws_8_histoire__nom__1","gloss_zh_short":"故事；经历","usage_note_zh":"此义项指讲述出来的故事、冒险或经历。","example_fr":"Elle raconte une histoire aux enfants.","example_zh":"她给孩子们讲一个故事。"},
+    {"key":"classique|ADJ","sense_id":"__ws_3_classique__adj__1","gloss_zh_short":"传统的；经典款的；不花哨的","usage_note_zh":null,"example_fr":"Il préfère un style classique et simple.","example_zh":"他更喜欢传统而简洁的风格。"},
+    {"key":"appeler|VER","sense_id":"__ws_22_appeler__verb__1","gloss_zh_short":"叫作；名叫","usage_note_zh":"此义项使用代词式 s’appeler。","example_fr":"Je m’appelle Léa.","example_zh":"我叫蕾娅。"},
+    {"key":"impression|NOM","sense_id":"__ws_7_impression__nom__1","gloss_zh_short":"印象；感觉","usage_note_zh":"常用结构：avoir l’impression que + 从句。","example_fr":"J’ai l’impression qu’il va pleuvoir.","example_zh":"我感觉要下雨了。"},
+    {"key":"sang|NOM","sense_id":"__ws_1_sang__nom__1","gloss_zh_short":"血；血液","usage_note_zh":null,"example_fr":"Il y a du sang sur sa main.","example_zh":"他的手上有血。"},
+    {"key":"peau|NOM","sense_id":"__ws_1_peau__nom__1","gloss_zh_short":"皮肤","usage_note_zh":null,"example_fr":"Le soleil peut abîmer la peau.","example_zh":"太阳可能伤害皮肤。"},
+    {"key":"émission|NOM","sense_id":"__ws_2_émission__nom__1","gloss_zh_short":"节目；广播或电视节目","usage_note_zh":null,"example_fr":"Je regarde cette émission chaque semaine.","example_zh":"我每周都看这个节目。"},
+    {"key":"évoquer|VER","sense_id":"__ws_4_évoquer__verb__1","gloss_zh_short":"使想起；唤起","usage_note_zh":null,"example_fr":"Cette photo évoque mon enfance.","example_zh":"这张照片让我想起童年。"},
+    {"key":"animer|VER","sense_id":"__ws_2_animer__verb__1","gloss_zh_short":"使活跃；使有生气","usage_note_zh":null,"example_fr":"La musique anime la fête.","example_zh":"音乐让聚会热闹起来。"},
+    {"key":"illustrer|VER","sense_id":"__ws_3_illustrer__verb__1","gloss_zh_short":"用例子说明；举例说明","usage_note_zh":null,"example_fr":"Cet exemple illustre bien la règle.","example_zh":"这个例子很好地说明了这条规则。"},
+    {"key":"engager|VER","sense_id":"__ws_6_engager__verb__1","gloss_zh_short":"雇用；聘用","usage_note_zh":"此义项指通过合同提供工作或职位。","example_fr":"L’entreprise engage deux nouveaux employés.","example_zh":"公司雇用了两名新员工。"}
+  ],
+  "summary": {"records":14,"sense_reselection":14,"source_reuse":0,"ai_authored":14}
+}
