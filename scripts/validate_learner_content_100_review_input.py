@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from build_learner_content_100_review_input import CANDIDATES, DATED, OUT, REVIEW_DIR, build, digest
+from build_learner_content_100_review_input import CANDIDATES, DATED, OUT, REVIEW_DIR, build, compact_packet, digest
 
 
 def main() -> None:
@@ -32,6 +32,11 @@ def main() -> None:
         joined.extend(packet["items"])
     if joined != items:
         raise SystemExit("review packets do not exactly reconstruct main artifact")
+    for index in range(1, 5):
+        path = REVIEW_DIR / "compact" / f"learner-content-100-compact-part-{index:02}.json"
+        compact = json.loads(path.read_text(encoding="utf-8"))
+        if compact != compact_packet(payload, index):
+            raise SystemExit(f"compact packet is not an exact deterministic projection: {index}")
     mismatched_structural = 0
     antenna = None
     for item in items:
