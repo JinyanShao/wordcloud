@@ -834,7 +834,7 @@
     const record = learnerSenseByLexeme.get(String(node.id));
     if (!record) return "";
     return `<section class="panel-section learner-sense-section">
-      <h3>学习提示 · 对应法语义项 ${record.entry_rank > 1 ? `${record.entry_rank}.` : ''}${escapeHtml(record.sense_number)} · 已审核</h3>
+      <h3>学习提示 · 对应法语义项 ${record.entry_rank > 1 ? `${record.entry_rank}.` : ''}${escapeHtml(record.sense_number)}${record.content_status === 'reviewed' ? ' · 已审核' : ''}</h3>
       <p class="learner-gloss"><span>中文提示</span>${escapeHtml(record.gloss_zh_short)}</p>
       <p class="learner-example"><span>例句 · 学习示例</span><span lang="fr">${escapeHtml(record.example_fr)}</span><small>${escapeHtml(record.example_zh)}</small></p>
       ${record.usage_note_zh ? `<p class="word-note">${escapeHtml(record.usage_note_zh)}</p>` : ""}
