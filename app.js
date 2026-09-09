@@ -68,6 +68,7 @@
     label: row[6], explanation: row[7], confidence: row[8], review: row[9], kind: "official",
   }));
   const learnerRelationsByPair = new Map();
+  const learnerSenseByLexeme = new Map(LEARNER_SENSE_CONTENT.records.map((record) => [String(record.lexeme_id), record]));
   const learnerPatterns = LEARNER_CONTENT.observed_patterns;
   for (const relation of Object.values(LEARNER_CONTENT.relations)) {
     const key = [relation.a_id, relation.b_id].sort((a, b) => a - b).join("|");
@@ -811,11 +812,13 @@
 
   function renderSenseGroups(node) {
     const groups = GRAPH_SENSES[node.id] || [];
+    const learner = learnerSenseByLexeme.get(String(node.id));
     if (!groups.length) return `<p class="candidate-note">暂缺法语义项；构词关系不能代替词义解释。</p>`;
     const flattened = groups.flatMap((group, groupIndex) => group.senses.map((sense) => ({ ...sense, groupIndex, sourceUrl: group.sourceUrl })));
-    const renderItems = (items) => items.map((sense) => `
-      <li><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><p>${escapeHtml(sense.definition)}</p></li>
-    `).join("");
+    const renderItems = (items) => items.map((sense) => {
+      const matching = learner && Number(groups[sense.groupIndex]?.entry) === Number(learner.entry_rank) && String(sense.number) === String(learner.sense_number);
+      return `<li${matching ? ' class="learner-sense-match"' : ''}><span>${groups.length > 1 ? `${sense.groupIndex + 1}.${escapeHtml(sense.number)}` : escapeHtml(sense.number)}</span><p>${escapeHtml(sense.definition)}${matching ? '<small>学习提示对应此义项</small>' : ''}</p></li>`;
+    }).join("");
     const visible = flattened.slice(0, 5);
     const hidden = flattened.slice(5);
     const sourceUrl = groups[0]?.sourceUrl;
@@ -824,6 +827,18 @@
       <ol class="sense-list">${renderItems(visible)}</ol>
       ${hidden.length ? `<details class="sense-more"><summary>查看其余 ${hidden.length} 个义项</summary><ol class="sense-list continued">${renderItems(hidden)}</ol></details>` : ""}
       ${sourceUrl ? `<a class="sense-source" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">Wiktionnaire 来源 ↗</a>` : ""}
+    </section>`;
+  }
+
+  function renderLearnerSense(node) {
+    const record = learnerSenseByLexeme.get(String(node.id));
+    if (!record) return "";
+    return `<section class="panel-section learner-sense-section">
+      <h3>学习提示 · 对应法语义项 ${record.entry_rank > 1 ? `${record.entry_rank}.` : ''}${escapeHtml(record.sense_number)} · 已审核</h3>
+      <p class="learner-gloss"><span>中文提示</span>${escapeHtml(record.gloss_zh_short)}</p>
+      <p class="learner-example"><span>例句 · 学习示例</span><span lang="fr">${escapeHtml(record.example_fr)}</span><small>${escapeHtml(record.example_zh)}</small></p>
+      ${record.usage_note_zh ? `<p class="word-note">${escapeHtml(record.usage_note_zh)}</p>` : ""}
+      <p class="learner-boundary">法语义项保留为来源事实；中文提示与例句是学习辅助。</p>
     </section>`;
   }
 
@@ -858,6 +873,7 @@
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
       ${renderFamily(node)}
       ${renderSenseGroups(node)}
+      ${renderLearnerSense(node)}
       ${reviewed.length ? `<section class="panel-section"><h3>项目审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
