@@ -20,7 +20,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Validate reviewed learner runtime
-        run: pnpm learner:sense:check
+        run: |
+          python3 scripts/validate_learner_sense_reviewed_source.py
+          python3 scripts/validate_learner_sense_runtime.py
 
       - name: Validate static runtime
         run: |
