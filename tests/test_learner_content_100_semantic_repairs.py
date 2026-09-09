@@ -13,4 +13,7 @@ class SemanticRepairTests(unittest.TestCase):
   values=' '.join(' '.join(v) for v in TEXT.values())
   for text in ('Il n’y a personne ici.','Tu peux entrer.','sait nager','prends le train','mon manteau','document au professeur','élève ses enfants'):
    self.assertNotIn(text,values)
+ def test_final_four_repairs_are_exact(self):
+  expected={'vieux|ADJ':('年长的；年龄较大的','Mon frère est plus vieux que moi.','我哥哥比我年长。'),'sûr|ADJ':('确定的；无疑的','Ce fait est sûr.','这件事是确定无疑的。'),'maison|NOM':('房子；住宅','Cette maison a trois étages.','这栋房子有三层。'),'temps|NOM':('时间；时光','Le temps passe vite.','时间过得很快。')}
+  for key,value in expected.items(): self.assertEqual(TEXT[key],value,key)
 if __name__=='__main__': unittest.main()

@@ -11,7 +11,7 @@
         "sense_id": "__ws_1_grand__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "大的；高的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -27,6 +27,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -37,7 +41,7 @@
         "sense_id": "__ws_1_petit__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "小的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -53,6 +57,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -63,7 +71,7 @@
         "sense_id": "__ws_1_bon__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "好的；质量好的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -79,6 +87,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -89,7 +101,7 @@
         "sense_id": "__ws_1_nouveau__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "新的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -105,6 +117,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -115,7 +131,7 @@
         "sense_id": "__ws_1_jeune__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "年轻的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -131,6 +147,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -141,7 +161,7 @@
         "sense_id": "__ws_1_seul__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "独自的；单独的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -157,6 +177,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -167,7 +191,7 @@
         "sense_id": "__ws_1_français__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "法国的；法国人的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -183,6 +207,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -193,7 +221,7 @@
         "sense_id": "__ws_1_beau__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "美丽的；好看的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -209,6 +237,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -219,7 +251,7 @@
         "sense_id": "__ws_1_dernier__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "最后的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -235,6 +267,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -245,12 +281,12 @@
         "sense_id": "__ws_1_sûr__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
-      "gloss_zh_short": "确定的；可靠的",
+      "content_status": "reviewed",
+      "gloss_zh_short": "确定的；无疑的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
-      "example_fr": "Tu es sûr de la réponse ?",
-      "example_zh": "你确定这个答案吗？",
+      "example_fr": "Ce fait est sûr.",
+      "example_zh": "这件事是确定无疑的。",
       "example_source_type": "ai_generated",
       "gloss_source_strategy": "ai_gap_fill",
       "used_candidate_refs": [],
@@ -261,6 +297,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -271,12 +311,12 @@
         "sense_id": "__ws_1_vieux__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
-      "gloss_zh_short": "旧的；年老的",
+      "content_status": "reviewed",
+      "gloss_zh_short": "年长的；年龄较大的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
-      "example_fr": "Cette voiture est vieille.",
-      "example_zh": "这辆车很旧。",
+      "example_fr": "Mon frère est plus vieux que moi.",
+      "example_zh": "我哥哥比我年长。",
       "example_source_type": "ai_generated",
       "gloss_source_strategy": "ai_gap_fill",
       "used_candidate_refs": [],
@@ -287,6 +327,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -297,7 +341,7 @@
         "sense_id": "__ws_1_vrai__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "真的；真实的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -313,6 +357,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -323,7 +371,7 @@
         "sense_id": "__ws_1_aujourd’hui__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "今天",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -339,6 +387,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -349,7 +401,7 @@
         "sense_id": "__ws_1_près__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "近；靠近",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -365,6 +417,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -375,7 +431,7 @@
         "sense_id": "__ws_1_peut-être__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "也许",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -391,6 +447,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -401,7 +461,7 @@
         "sense_id": "__ws_1_mieux__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "更好地",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -417,6 +477,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -427,7 +491,7 @@
         "sense_id": "__ws_1_surtout__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "尤其；特别",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -443,6 +507,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -453,7 +521,7 @@
         "sense_id": "__ws_1_loin__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "远",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -469,6 +537,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -479,7 +551,7 @@
         "sense_id": "__ws_2_d’abord__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "首先；起初",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -495,6 +567,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -505,7 +581,7 @@
         "sense_id": "__ws_1_an__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "年",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -521,6 +597,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -531,7 +611,7 @@
         "sense_id": "__ws_1_homme__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "男人；成年男性",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -547,6 +627,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -557,7 +641,7 @@
         "sense_id": "__ws_1_jour__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "天；一天",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -573,6 +657,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -583,7 +671,7 @@
         "sense_id": "__ws_1_femme__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "女人；成年女性",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -599,6 +687,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -609,7 +701,7 @@
         "sense_id": "__ws_1_heure__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "小时",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -625,6 +717,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -635,12 +731,12 @@
         "sense_id": "__ws_1_temps__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
-      "gloss_zh_short": "时间",
+      "content_status": "reviewed",
+      "gloss_zh_short": "时间；时光",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
-      "example_fr": "Je n’ai pas le temps.",
-      "example_zh": "我没有时间。",
+      "example_fr": "Le temps passe vite.",
+      "example_zh": "时间过得很快。",
       "example_source_type": "ai_generated",
       "gloss_source_strategy": "ai_gap_fill",
       "used_candidate_refs": [],
@@ -651,6 +747,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -661,7 +761,7 @@
         "sense_id": "__ws_5_monde__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "世界",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -679,6 +779,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -689,7 +793,7 @@
         "sense_id": "__ws_3_vie__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "一生；生命历程",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -705,6 +809,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -715,7 +823,7 @@
         "sense_id": "__ws_1_enfant__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "孩子",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -731,6 +839,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -741,7 +853,7 @@
         "sense_id": "__ws_1_chose__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "东西；事情",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -757,6 +869,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -767,7 +883,7 @@
         "sense_id": "__ws_1_personne__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "人；个人",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -783,6 +899,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -793,7 +913,7 @@
         "sense_id": "__ws_1_année__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "年",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -809,6 +929,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -819,12 +943,12 @@
         "sense_id": "__ws_1_maison__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
-      "gloss_zh_short": "房子；家",
+      "content_status": "reviewed",
+      "gloss_zh_short": "房子；住宅",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
-      "example_fr": "Ils rentrent à la maison.",
-      "example_zh": "他们回家。",
+      "example_fr": "Cette maison a trois étages.",
+      "example_zh": "这栋房子有三层。",
       "example_source_type": "ai_generated",
       "gloss_source_strategy": "ai_gap_fill",
       "used_candidate_refs": [],
@@ -835,6 +959,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -845,7 +973,7 @@
         "sense_id": "__ws_1_pays__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "国家",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -861,6 +989,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -871,7 +1003,7 @@
         "sense_id": "__ws_1_être__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "是；处于",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -887,6 +1019,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -897,7 +1033,7 @@
         "sense_id": "__ws_1_avoir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "有",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -913,6 +1049,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -923,7 +1063,7 @@
         "sense_id": "__ws_4_faire__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "做；进行",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -939,6 +1079,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -949,7 +1093,7 @@
         "sense_id": "__ws_1_aller__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "去",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -965,6 +1109,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -975,7 +1123,7 @@
         "sense_id": "__ws_1_dire__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "说；告诉",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -991,6 +1139,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1001,7 +1153,7 @@
         "sense_id": "__ws_1_pouvoir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "能；能够",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1017,6 +1169,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1027,7 +1183,7 @@
         "sense_id": "__ws_1_voir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "看见；见到",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1043,6 +1199,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1053,7 +1213,7 @@
         "sense_id": "__ws_1_vouloir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "想；打算",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1069,6 +1229,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1079,7 +1243,7 @@
         "sense_id": "__ws_1_savoir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "知道；知晓",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1095,6 +1259,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1105,7 +1273,7 @@
         "sense_id": "__ws_1_venir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "来",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1121,6 +1289,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1131,7 +1303,7 @@
         "sense_id": "__ws_1_prendre__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "拿；抓取",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1147,6 +1319,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1157,7 +1333,7 @@
         "sense_id": "__ws_2_devoir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "必须；应该",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1175,6 +1351,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1185,7 +1365,7 @@
         "sense_id": "__ws_1_passer__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "经过；穿过",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1201,6 +1381,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1211,7 +1395,7 @@
         "sense_id": "__ws_1_trouver__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "找到；发现",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1227,6 +1411,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1237,7 +1425,7 @@
         "sense_id": "__ws_1_parler__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "说话；讲话",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1253,6 +1441,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1263,7 +1455,7 @@
         "sense_id": "__ws_1_falloir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "需要；必须",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1279,6 +1471,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1289,7 +1485,7 @@
         "sense_id": "__ws_1_mettre__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "放；放置",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1305,6 +1501,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1315,7 +1515,7 @@
         "sense_id": "__ws_1_social__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "社会的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1331,6 +1531,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1341,7 +1545,7 @@
         "sense_id": "__ws_1_haut__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "高的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1357,6 +1561,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1367,7 +1575,7 @@
         "sense_id": "__ws_1_présent__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "在场的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1383,6 +1591,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1393,7 +1605,7 @@
         "sense_id": "__ws_1_naturel__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "自然的；与自然有关的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1409,6 +1621,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1419,7 +1635,7 @@
         "sense_id": "__ws_3_économique__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "经济的；与经济有关的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1435,6 +1651,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1445,7 +1665,7 @@
         "sense_id": "__ws_1_entier__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "整个的；完整的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1461,6 +1681,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1471,7 +1695,7 @@
         "sense_id": "__ws_1_parisien__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "巴黎的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1487,6 +1711,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1497,7 +1725,7 @@
         "sense_id": "__ws_2_inquiet__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "不安的；焦虑的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1513,6 +1741,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1523,7 +1755,7 @@
         "sense_id": "__ws_2_cependant__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "然而；不过",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1541,6 +1773,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1551,7 +1787,7 @@
         "sense_id": "__ws_1_simplement__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "简单地；简明地",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1567,6 +1803,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1577,7 +1817,7 @@
         "sense_id": "__ws_1_particulièrement__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "格外地；显著地",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1593,6 +1833,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1603,7 +1847,7 @@
         "sense_id": "__ws_1_ailleurs__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "在别处；到别处",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1619,6 +1863,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1629,7 +1877,7 @@
         "sense_id": "__ws_7_point__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "点；地点；位置",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1647,6 +1895,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1657,7 +1909,7 @@
         "sense_id": "__ws_2_corps__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "身体；躯体",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1673,6 +1925,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1683,7 +1939,7 @@
         "sense_id": "__ws_1_doute__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "怀疑；疑问",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1699,6 +1955,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1709,7 +1969,7 @@
         "sense_id": "__ws_1_loi__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "法律；法律规定",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1725,6 +1985,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1735,7 +1999,7 @@
         "sense_id": "__ws_1_fond__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "底部；深处",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1751,6 +2015,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1761,7 +2029,7 @@
         "sense_id": "__ws_6_emploi__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "工作；职位；就业",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1777,6 +2045,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1787,7 +2059,7 @@
         "sense_id": "__ws_1_développement__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "发展",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1803,6 +2075,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1813,7 +2089,7 @@
         "sense_id": "__ws_1_instant__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "瞬间；片刻",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1829,6 +2105,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1839,7 +2119,7 @@
         "sense_id": "__ws_1_tuer__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "杀死",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1855,6 +2135,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1865,7 +2149,7 @@
         "sense_id": "__ws_1_agir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "行动；采取行动",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1881,6 +2165,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1891,7 +2179,7 @@
         "sense_id": "__ws_1_pousser__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "推；推动",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1907,6 +2195,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1917,7 +2209,7 @@
         "sense_id": "__ws_1_lancer__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "扔；投掷",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1933,6 +2225,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1943,7 +2239,7 @@
         "sense_id": "__ws_1_mener__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "带；带领",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1959,6 +2255,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1969,7 +2269,7 @@
         "sense_id": "__ws_1_déclarer__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "声明；表明",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -1985,6 +2285,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -1995,7 +2299,7 @@
         "sense_id": "__ws_3_développer__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "发展；使发展",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2011,6 +2315,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2021,7 +2329,7 @@
         "sense_id": "__ws_1_suffire__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "足够；够用",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2037,6 +2345,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2047,7 +2359,7 @@
         "sense_id": "__ws_1_obliger__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "迫使；要求",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2063,6 +2375,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2073,7 +2389,7 @@
         "sense_id": "__ws_2_étonner__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "使惊讶",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2089,6 +2405,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2099,7 +2419,7 @@
         "sense_id": "__ws_1_pauvre__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "贫穷的；贫困的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2115,6 +2435,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2125,7 +2449,7 @@
         "sense_id": "__ws_1_professionnel__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "职业的；与职业有关的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2141,6 +2465,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2151,7 +2479,7 @@
         "sense_id": "__ws_1_actuel__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "当前的；现在的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2167,6 +2495,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2177,7 +2509,7 @@
         "sense_id": "__ws_1_public__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "公共的；公有的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2193,6 +2525,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2203,7 +2539,7 @@
         "sense_id": "__ws_1_lors__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "在……时；当时",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2219,6 +2555,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2229,7 +2569,7 @@
         "sense_id": "__ws_1_que__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "多么；何等",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2245,6 +2585,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2255,7 +2599,7 @@
         "sense_id": "__ws_3_rapport__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "关系；关联",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2271,6 +2615,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2281,7 +2629,7 @@
         "sense_id": "__ws_1_regard__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "目光；注视",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2297,6 +2645,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2307,7 +2659,7 @@
         "sense_id": "__ws_1_chef__nom__2"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "负责人；领导",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2323,6 +2675,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2356,7 +2712,7 @@
         "sense_id": "__ws_1_obtenir__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "获得；得到",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2372,6 +2728,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2382,7 +2742,7 @@
         "sense_id": "__ws_1_remettre__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "放回；重新放到原处",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2398,6 +2758,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2408,7 +2772,7 @@
         "sense_id": "__ws_4_paraître__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "好像；似乎；看起来",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2426,6 +2790,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2436,7 +2804,7 @@
         "sense_id": "__ws_1_élever__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "抬高；举起",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2452,6 +2820,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2462,7 +2834,7 @@
         "sense_id": "__ws_3_assurer__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "确保；保证",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2478,6 +2850,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2488,7 +2864,7 @@
         "sense_id": "__ws_1_moindre__adj__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "较小的；更小的",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2504,6 +2880,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2514,7 +2894,7 @@
         "sense_id": "__ws_1_au-delà__adv__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "在更远处；在……另一边",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2530,6 +2910,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2540,7 +2924,7 @@
         "sense_id": "__ws_1_terme__nom__2"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "术语；用语；词",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2556,6 +2940,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2566,7 +2954,7 @@
         "sense_id": "__ws_6_antenne__nom__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "天线",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2584,6 +2972,10 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": "external_semantic_review; DBnary structural mapped_sense_id remains stale/misaligned"
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     },
     {
@@ -2594,7 +2986,7 @@
         "sense_id": "__ws_1_constituer__verb__1"
       },
       "selection_status": "reviewed",
-      "content_status": "ai_draft",
+      "content_status": "reviewed",
       "gloss_zh_short": "构成；组成",
       "usage_note_zh": null,
       "relation_explanation_zh": null,
@@ -2610,8 +3002,12 @@
         "generation_version": "phase2c-100-draft-v1",
         "selection_artifact_hash": "fc0924a5344ef2d8ab08e34579f5f8e43b0c0317dc193a0e322766b2c1231fc8",
         "external_semantic_binding": null
+      },
+      "review_provenance": {
+        "review_status": "external_semantic_reviewed",
+        "review_version": "phase2c-100-semantic-review-v1"
       }
     }
   ],
-  "artifact_hash": "7e3ae7e341717429dfb8056d94035f7a5ee61788bdf228dfb7a6bf3559ce1a5a"
+  "artifact_hash": "1e08190e719b88661fb1c7181bf0b7c89ec8ec8dd0aad60b956809c19a49b09f"
 }
