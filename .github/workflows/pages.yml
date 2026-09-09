@@ -19,6 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Validate reviewed learner runtime
+        run: pnpm learner:sense:check
+
       - name: Validate static runtime
         run: |
           python3 scripts/build_summary.py --check-docs
@@ -46,7 +49,7 @@ jobs:
         run: |
           mkdir dist
           mkdir -p dist/data
-          cp index.html app.js styles.css graph-data.js learner-content.js data.js dict.js dist/
+          cp index.html app.js styles.css graph-data.js learner-content.js learner-sense-content.js data.js dict.js dist/
           cp data/build-summary.json dist/data/
           touch dist/.nojekyll
 
