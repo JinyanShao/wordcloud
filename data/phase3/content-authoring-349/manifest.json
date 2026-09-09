@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "scope": "Deterministic compact packets for remaining Phase 3 external semantic authoring; no learner prose.",
+  "total": 349,
+  "frozen_selection_source_hash": "9cfceebd7b75af563efda786ec4880ea87ad92cf305c3a6e58b179965afaf67c",
+  "excluded_150_input_hash": "a121bed5efbaca94bafe4b8e7d285f9961a7fb465732b14e4dcaae98965e7acb",
+  "blocked_key": "cesse|NOM",
+  "packets": [
+    {
+      "filename": "part-01.jsonl",
+      "record_count": 70,
+      "first_stable_lexeme_key": "meilleur|ADJ",
+      "last_stable_lexeme_key": "voiture|NOM",
+      "sha256": "1e603e925566f10af9e22b940d89744fc70bc67ebde6f90c5597b45bbcba52e2"
+    },
+    {
+      "filename": "part-02.jsonl",
+      "record_count": 70,
+      "first_stable_lexeme_key": "question|NOM",
+      "last_stable_lexeme_key": "jouer|VER",
+      "sha256": "4c9c8fb0e5ddcfaefe6755d98e7fcf905be3984699addc11283167fc86a32a4a"
+    },
+    {
+      "filename": "part-03.jsonl",
+      "record_count": 70,
+      "first_stable_lexeme_key": "rentrer|VER",
+      "last_stable_lexeme_key": "scène|NOM",
+      "sha256": "5e56d1873647e7078da273794f15ced1b999d8810d8309db5e7fd99ea8500519"
+    },
+    {
+      "filename": "part-04.jsonl",
+      "record_count": 70,
+      "first_stable_lexeme_key": "gouvernement|NOM",
+      "last_stable_lexeme_key": "adapter|VER",
+      "sha256": "3e94045ecfa4e24f7bb4c571de26090eb2b369ff74b23d0aafab63421b283b2f"
+    },
+    {
+      "filename": "part-05.jsonl",
+      "record_count": 69,
+      "first_stable_lexeme_key": "convaincre|VER",
+      "last_stable_lexeme_key": "atteindre|VER",
+      "sha256": "2065895d06446f71af5e26a991cde26adc6c5f3ad914ac700c2f8fc3cf867046"
+    }
+  ],
+  "union_sha256": "2a76e40fe9df78df9cf1f3058a6a477a1943a30c7f98ebada8dda2325e1d73f4",
+  "artifact_hash": "aa119e9312312f1c6fb5bc65a622572cb81e048591a8ab7ea4b2cff5f4a6b590"
+}
