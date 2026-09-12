@@ -24,7 +24,9 @@
 - 4231 个 sourced-family members 没有 learner aid；现有 410 条 learner aids 有 sourced family，188 条没有。
 - 没有生产点击、完成或留存数据；CEFR、FLELex、Lexique、contextual diversity、多义性和 family 连通性只是静态排序 proxy，不能称作用户需求。
 
-## 高频缺口（每组展示前 12；完整前 50 在 JSON）
+## Raw frequency-ranked gaps（非 production-ready；每组展示前 12，完整前 50 在 JSON）
+
+该列表只按 FLELex、Lexique 和 contextual diversity 排序；raw frequency rank 不等于 learner-priority semantic rank。`source_sense_count = 0` 的词不能直接进入 exact-sense production，已知 blocked records 也不能进入 production candidate set。
 
 ### A1
 
