@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "scope": "Phase 4B compact French-sense review candidates; no primary sense is proposed.",
+  "total": 160,
+  "cefr_distribution": {
+    "A1": 50,
+    "A2": 35,
+    "B1": 50,
+    "B2": 25
+  },
+  "pos_distribution": {
+    "NOM": 96,
+    "VER": 50,
+    "ADJ": 13,
+    "ADV": 1
+  },
+  "family_member_count": 114,
+  "review_flag_counts": {
+    "many_source_senses": 36,
+    "marked_or_specialized_sense_present": 85,
+    "same_lemma_multiple_pos": 15,
+    "very_polysemous": 10,
+    "single_source_sense": 12
+  },
+  "source_ready_filtering": {
+    "raw_missing_by_cefr": {
+      "B1": 1621,
+      "B2": 4218,
+      "A1": 825,
+      "A2": 417
+    },
+    "source_ready_by_cefr": {
+      "B1": 1616,
+      "B2": 4198,
+      "A1": 817,
+      "A2": 412
+    },
+    "selected_by_cefr": {
+      "A1": 50,
+      "A2": 35,
+      "B1": 50,
+      "B2": 25
+    },
+    "no_source_sense": 36,
+    "blocked": 2
+  },
+  "blocked_exclusions": [
+    "cesse|NOM",
+    "travers|NOM"
+  ],
+  "selection_policy": "Stratified CEFR quotas A1=50, A2=35, B1=50, B2=25; within each CEFR sort by FLELex desc, Lexique desc, contextual diversity desc, stable key. Enforce NOM <= 96 by same-CEFR frequency-ranked non-NOM replacement. Sourced family membership is metadata only.",
+  "input_hashes": {
+    "eligible-lexicon.csv": "5e294c4c74111a23a84b8b5750db77047437ab511e7271698db156707632fc2f",
+    "learner-sense-content.js": "b18fbdf241a78beedd41f3085b16b03ce00c87583e3a9a78afa60463be07a46e",
+    "dbnary-approved.json": "9ea4a9483201661802e4185998483911edf893a41d7cb87e3a8712645be530fb",
+    "graph-data.js": "81364e2b82d1cb04fe0ca39f8b82356f4837c918f74edaec7ebb9a40fe07c88d",
+    "product-gap-audit.json": "968bddcd09cf9e61b7a5793fba56b55dd7890b3dc2fd589070a1d477e3653731"
+  },
+  "jsonl_sha256": "44c278769a5078389d3cc6408e2c6bf5395ddcb2df9513eb0eba8655fa66beba",
+  "candidate_union_hash": "4a4b958679fefbf540fc790e3635fa7ac7e8c91513d91062f26f7669a68b936e"
+}
