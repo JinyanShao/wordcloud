@@ -69,6 +69,17 @@
   }));
   const learnerRelationsByPair = new Map();
   const learnerSenseByLexeme = new Map(LEARNER_SENSE_CONTENT.records.map((record) => [String(record.lexeme_id), record]));
+  const ALIGNMENT_LABEL = { transparent: "可以直接联想", shifted: "意思有变化", opaque: "不要机械推导" };
+  const phase5RelationsByLexeme = new Map();
+  for (const family of (typeof PHASE5_FAMILY_PROTOTYPE !== "undefined" ? PHASE5_FAMILY_PROTOTYPE.families : [])) {
+    for (const relation of family.relations) {
+      const entry = { family, relation };
+      for (const id of [String(relation.fromLexemeId), String(relation.toLexemeId)]) {
+        if (!phase5RelationsByLexeme.has(id)) phase5RelationsByLexeme.set(id, []);
+        phase5RelationsByLexeme.get(id).push(entry);
+      }
+    }
+  }
   const learnerPatterns = LEARNER_CONTENT.observed_patterns;
   for (const relation of Object.values(LEARNER_CONTENT.relations)) {
     const key = [relation.a_id, relation.b_id].sort((a, b) => a - b).join("|");
@@ -146,6 +157,34 @@
       }).join("")}</div></details>`;
     }).join("");
     return `<section class="panel-section family-section"><h3>一起认识 · ${memberIds.length} 个词</h3><div class="relation-list">${links}</div><p class="candidate-note">当前收录的部分词族；间接成员不表示彼此直接派生。</p>${patterns?`<h3>同结构的其他词族</h3>${patterns}<p class="candidate-note">这是多个来源确认词族中观察到的相同结构，不表示可机械套用的规则。</p>`:""}<a class="sense-source" href="https://demonette.fr/" target="_blank" rel="noopener noreferrer">构词来源：Démonette 2 · CC BY-SA 4.0 ↗</a></section>`;
+  }
+
+  function renderFamilyLearning(node) {
+    const entries = phase5RelationsByLexeme.get(node.id);
+    if (!entries || !entries.length) return "";
+    const cards = entries.map(({ relation }) => {
+      const fromId = String(relation.fromLexemeId), toId = String(relation.toLexemeId);
+      const otherId = node.id === fromId ? toId : fromId;
+      const fromNode = nodeById.get(fromId), toNode = nodeById.get(toId);
+      const fromPos = posNames[fromNode?.pos] || fromNode?.pos || "";
+      const toPos = posNames[toNode?.pos] || toNode?.pos || "";
+      const alignment = relation.alignment;
+      return `<article class="family-learning-card">
+        <button class="family-learning-pair" data-node="${escapeHtml(otherId)}"><strong>${escapeHtml(relation.fromLemma)}</strong><span> → </span><strong>${escapeHtml(relation.toLemma)}</strong></button>
+        <p class="family-learning-meta">构词：${escapeHtml(relation.morphologyLabel)} · 词性：${escapeHtml(fromPos)} → ${escapeHtml(toPos)}</p>
+        <p class="alignment-tag align-${escapeHtml(alignment)}">${escapeHtml(ALIGNMENT_LABEL[alignment] || alignment)}</p>
+        <details class="family-learning-reveal">
+          <summary>${escapeHtml(relation.promptZh)} <span class="reveal-cta">→ 看答案</span></summary>
+          <p class="family-learning-answer">${escapeHtml(relation.answerZh)}</p>
+          <p class="family-learning-explanation">${escapeHtml(relation.explanationZh)}</p>
+        </details>
+      </article>`;
+    }).join("");
+    return `<section class="panel-section family-learning-section">
+      <h3>词族学习 · ${entries.length} 组</h3>
+      <div class="family-learning-list">${cards}</div>
+      <p class="candidate-note">构词关系来自 Démonette 2 的来源事实；语义判断、解释和互动问题是本原型的教学解读，用于验证学习路径，不代表词典释义。</p>
+    </section>`;
   }
 
   let personal = loadPersonal();
@@ -871,9 +910,10 @@
       <div class="word-meta"><span>${escapeHtml(node.pos)}</span><span>${escapeHtml(badge)}</span></div>
       <p class="word-gloss"><span>中文提示 · 可能不完整</span>${escapeHtml(node.gloss || "暂无")}</p>
       ${node.note ? `<p class="word-note">${escapeHtml(node.note)}</p>` : ""}
-      ${renderFamily(node)}
       ${renderSenseGroups(node)}
       ${renderLearnerSense(node)}
+      ${renderFamilyLearning(node)}
+      ${renderFamily(node)}
       ${reviewed.length ? `<section class="panel-section"><h3>项目审校关系 · ${reviewed.length}</h3><div class="relation-list">${reviewed.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${sourced.length ? `<section class="panel-section"><h3>来源确认关系 · ${sourced.length}</h3><div class="relation-list">${sourced.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
       ${mine.length ? `<section class="panel-section"><h3>我的关系 · ${mine.length}</h3><div class="relation-list">${mine.map(({ edge, node: other }) => relationButton(other, edge)).join("")}</div></section>` : ""}
