@@ -2,7 +2,7 @@
 
 Live Demo: https://jinyanshao.github.io/wordcloud/
 
-An interactive French vocabulary graph demo built from DBnary/Wiktionary-derived lexical data.
+An interactive French vocabulary graph demo built from DBnary/Wiktionary-derived lexical data. Built while learning French myself, not as an academic exercise — this project doubles as evidence of a long-term commitment to living and working in French-speaking Switzerland.
 
 ## Engineering Summary
 
